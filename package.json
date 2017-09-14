@@ -1,0 +1,28 @@
+{
+  "name": "pages",
+  "version": "0.0.1",
+  "description": "Pages for Master theme",
+  "main": "index.html",
+  "author": "Ashish Singh",
+  "license": "MIT",
+  "dependencies": {
+    
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.8",
+    "gulp-autoprefixer": "^4.0.0",
+    "yarn-run-all": "^3.1.1"
+  },
+  "scripts": {
+    "css": "postcss -o style.css src/css/style.css --map.annotation style.css.map --config .postcss.json -u autoprefixer -u postcss-partial-import -u postcss-custom-properties -u postcss-csso",
+    "build": "npm-run-all --parallel css"
+  }
+}

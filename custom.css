@@ -1,0 +1,195 @@
+@import 'common.css';
+body {
+  background: #b0d4c8;
+  font-family: 'Open Sans', sans-serif;
+}
+.topNavigation {
+  background: #326a69;
+  padding: 15px 0;
+}
+.navbar {
+  padding: 0;
+}
+
+.topNavigation .navbar-nav li a {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 5px;
+  display: inline-block;
+}
+.topNavigation .navbar-nav li {
+  width: 146px;
+  text-align: center;
+}
+.topNavigation .navbar-nav li .btn-secondary {
+  padding: 5px 10px;
+  color: #000000;
+  /*width: 100%;*/
+}
+.topNavigation .navbar-nav li:first-child, 
+.topNavigation .navbar-nav li:last-child {
+  width: auto;
+}
+.navbar-brand {
+  padding: 0;
+}
+
+.page-content-wrap {
+  padding-top: 110px
+}
+
+.topTagsWrap span{
+  color: #326a69;
+  font-size: 15px;
+}
+
+.topNavigation .navbar-nav li.loginSignUpWrap,
+.topNavigation .navbar-nav li.loginSignUpWrap a {
+  color: #a6df20;
+}
+
+.ourAchievementsWrap {
+  padding-top: 85px;
+}
+
+.ourAchievementsWrap h3 {
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.signaturesCalculationsWrap {
+  float: left;
+  width: 35%;
+  margin-top: 15px;
+  position: relative;
+}
+
+.ourAchievementsWrap h3 {
+  color: #004d53;
+}
+
+.signaturesCalculations {
+  height: 350px;
+  border-left: solid 1px #333;
+  transform: rotate(165deg);
+  position: relative;
+}
+
+
+.signaturesCalculations:after,
+.signaturesCalculations:before {
+  content: " ";
+  border-top: solid 1px #333333;
+  width: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.signaturesCalculations:after {
+  bottom: 0;
+  top: auto;
+}
+
+.signaturesInfo {
+  float: right;
+  width: 60%;
+  position: relative;
+}
+
+.signaturesInfo h4 {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: 700;
+  padding-left: 45px;
+  float: left;
+  border-top: solid 1px #8db8af;
+  padding-top: 30px;
+}
+.signaturesInfo h4 span {
+  font-size: 15px;
+  color: #007e7b;
+}
+
+.calculatorIndicator {
+  width: 3px;
+  height: 250px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+.addNameListText {
+  font-size: 32px;
+  font-weight: 700;
+  width: 250px;
+  color: #007e7a;
+  line-height: 32px;
+  position: absolute;
+  bottom: 80px;
+  left: 50px;
+}
+.companyLogo {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: -110px;
+  right: 100px;
+}
+.companyLogo img {
+  width: 100%;
+  height: 100%;
+}
+.signedPetitionInfo {
+  width: 70%;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 700;
+  color: #005552;
+  padding-top: 30px;
+}
+.signedPetitionInfo .companyName {
+  color: #ad2330;
+}
+.goalPercentage {
+  width: 70%;
+  text-align: right;
+  color: #017e7a;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.goalPercentage span {
+  color: #fff;
+}
+.whatYouCanDoWrap {
+  margin: 65px 0;
+}
+.whatYouCanDoWrap h3 {
+  padding-bottom: 50px;
+  border-bottom: solid 1px #017e7a;
+}
+
+.whatYouCanDoWrap .col-md-6 {
+  padding-top: 30px;
+}
+.canDoSteps .stepInfoWrap {
+  border-left: solid 1px #bddac8;
+}
+.canDoSteps .active .stepNumber {
+  display: inline-block;
+  width: 127px;
+  height: 127px;
+  vertical-align: middle;
+  line-height: 130px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 70px;
+  background: #017e7a;
+  border-radius: 50%;
+  color: #aed4c7;
+}

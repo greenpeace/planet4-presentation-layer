@@ -1,0 +1,445 @@
+.hero-img-wrap {
+  background-image: url("images/clouds_1140.png");
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.page-content-wrap {
+  padding-top: 100px;
+  .fixed-element {
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    h1 {
+      color: $blue-heading;
+    }
+    &.sticky {
+      position: fixed;
+      font-size: 24px;
+      width: 100%;
+      text-align: left;
+      z-index: 500;
+      top: 0;
+      background: $fixed-nav-bg;
+      opacity: 0.95;
+      padding: 5px 0;
+      h1 {
+        display: inline-block;
+        font-size: 35px;
+        color: $white;
+      }
+    }
+  }
+  .top-tags-wrap {
+    span {
+      color: $percentage-text;
+      font-size: 15px;
+    }
+  }
+  .about-info {
+    h2 {
+      margin-top: 30px;
+      color: $blue-heading;
+    }
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  .home-page-carousel-wrap {
+    .carousel-caption {
+      text-align: left;
+      left: auto;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      padding: 30px 200px 30px 50px;
+      background : -moz-linear-gradient(66.31% -110.5% -120deg,rgba(10, 51, 81, 0) 0%,rgba(10, 51, 81, 1) 100%);
+      background : -webkit-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
+      background : -webkit-gradient(linear,66.31% -110.5% ,33.69% 210.5% ,color-stop(0,rgba(10, 51, 81, 0) ),color-stop(1,rgba(10, 51, 81, 1) ));
+      background : -o-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
+      background : -ms-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351', endColorstr='#0A3351' ,GradientType=0)";
+      background : linear-gradient(210deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351',endColorstr='#0A3351' , GradientType=1);
+    }
+    .carousel-indicators {
+      li {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: $white;
+        margin: 0 15px;
+        cursor: pointer;
+        &.active {
+          background: #A6DF21;
+        }
+      }
+    }
+    .carousel-indicators {
+      right: 0;
+      bottom: 30px;
+      left: auto;
+      margin-right: 5%;
+    }
+  }
+}
+.can-do-steps {
+  .step-info-wrap {
+    cursor: pointer;
+    margin-top: 35px;
+    .step-number {
+      display: inline-block;
+      width: 126px;
+      height: 126px;
+      vertical-align: middle;
+      line-height: 128px;
+      text-align: center;
+      font-size: 70px;
+      background: $step-normal-bg;
+      border-radius: 50%;
+      color: $active;
+      font-size : 70px;
+      text-transform : uppercase;
+      font-weight: 500;
+    }
+    .step-info {
+      h5 {
+        font-size : 22px;
+        line-height : normal;
+        font-weight: 500;
+        color : $steps-deactive-text;
+        padding: 20px 0 0 0;
+      }
+      p {
+        color: $blue-text;
+        font-size: 14px;
+        opacity: 0.75;
+      }
+      .blue-button {
+        width: 100%;
+      }
+      .steps-information {
+        padding: 55px 0 0 15px;
+        border-left: solid 2px #bddac8;
+        min-height: 495px;
+        float: left;
+        margin-top: -35px;
+      }
+    }
+  }
+
+  .active {
+    .step-info-wrap {
+      .step-number {
+        background: $percentage-text;
+        color: $active;
+      }
+      .step-info {
+        h5 {
+          color : $darkb-blue-text;
+        }
+        p {
+          color: $blue-text;
+        }
+      }
+    }
+  }
+}
+  .what-you-can-do-wrapper {
+    background: $container-bg;
+    h3 {
+      padding: 50px 0 0;
+      color: $blue-heading;
+    }
+    .col-md-6 {
+      padding-top: 30px;
+    }
+  } 
+
+  
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 575px) {
+  .container {
+    padding: 0 10px;
+  }
+  .page-content-wrap {
+    padding-top: 80px;
+    .fixed-element {
+       h1 {
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 50px;
+      }
+    }
+    h2 {
+      font-size: 25px;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+    .home-page-carousel-wrap {
+      .carousel-caption {
+        padding: 30px;
+        h3 {
+          font-size: 18px;
+          line-height: normal;
+        }
+        p {
+          line-height: normal;
+          font-size: 12px;
+        }
+      }
+      .carousel-indicators {
+        bottom: 5px;
+        li {
+          margin: 0 5px;
+        }
+      } 
+    }
+  }
+  .can-do-steps-mobile {
+    margin: 15px 15px 0 0;
+    width: 100%;
+    .card-header {
+      background: #c7dcd3;
+      border: none;
+      h5 {
+        a {
+          color: $percentage-text;
+          font-weight: 500;
+          font-size: 15px;
+          text-decoration: none;
+          &:hover {
+            text-decoration: none;
+          } 
+        }
+      }
+    }
+    .card {
+      background: none;
+      border: none;
+      box-shadow: none;
+      .card-header {
+        padding: 10px 10px 5px 10px;
+        margin-bottom: 10px;
+      }
+      .info-with-image-wrap {
+        .accordion-image-wrap {
+          float: left;
+        }
+        .mobile-accordion-info {
+          width: 43%;
+          float: left;
+          margin-left: 10px;
+          color: $percentage-text;
+          font-size: 14px;
+        }
+      }
+      .card-block {
+        color: $percentage-text;
+        font-size: 14px;
+        padding: 15px 10px 15px;
+        border-bottom: solid 1px #c7dcd3;
+        margin-bottom: 10px;
+      }
+      .step-number {
+        font-size: 18px;
+        font-weight: 700;
+        color: #dc9509;
+        line-height: 28px;
+        padding-right: 5px;
+        float: left;
+        vertical-align: bottom;
+      }
+    }
+  }
+  .what-you-can-do-wrapper {
+    h3 {
+      padding-top: 20px;
+    }
+    .col-md-6 {
+      padding-top: 0;
+    }
+    .add-action-list-wrap {
+      margin: 20px 0 0;
+      .btn-primary {
+        width: 60%;
+      }
+      .yellow-button {
+        width: 35%;
+        margin-left: 15px;
+      }
+    }
+    .friends-take-action-button {
+      width: 100%;
+      padding: 20px 0;
+      .btn-primary {
+        display: block;
+      }
+    }
+  } 
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .page-content-wrap {
+    padding-top: 50px;
+    .fixed-element{
+      &.sticky{
+        width: 100%;
+        h1 {
+          font-size: 25px;
+        }
+      }  
+    }
+  }
+  .can-do-steps-mobile {
+    margin: 15px 15px 0 15px;
+    width: 100%;
+    .card-header {
+      background: #c7dcd3;
+      border: none;
+      h5 {
+        a {
+          color: $percentage-text;
+          font-weight: 500;
+          font-size: 15px;
+          text-decoration: none;
+          &:hover {
+            text-decoration: none;
+          } 
+        }
+      }
+    }
+    .card {
+      background: none;
+      border: none;
+      box-shadow: none;
+      .card-header {
+        padding: 10px 10px 5px 10px;
+        margin-bottom: 10px;
+      }
+      .info-with-image-wrap {
+        .accordion-image-wrap {
+          float: left;
+        }
+        .mobile-accordion-info {
+          width: 50%;
+          float: left;
+          margin-left: 10px;
+          color: $percentage-text;
+          font-size: 14px;
+        }
+      }
+      .card-block {
+        color: $percentage-text;
+        font-size: 14px;
+        padding: 15px 20px;
+        border-bottom: solid 1px #c7dcd3;
+        margin-bottom: 10px;
+      }
+      .step-number {
+        font-size: 18px;
+        font-weight: 700;
+        color: #dc9509;
+        line-height: 28px;
+        padding-right: 5px;
+        float: left;
+        vertical-align: bottom;
+      }
+    }
+  }
+  .what-you-can-do-wrapper {
+    h3 {
+      padding-top: 20px;
+    }
+    .col-md-6 {
+      padding-top: 0;
+    }
+    .add-action-list-wrap {
+      margin: 20px 0 0;
+      .btn-primary {
+        width: 60%;
+      }
+      .yellow-button {
+        width: 37%;
+        margin-left: 15px;
+      }
+    }
+    .friends-take-action-button {
+      width: 100%;
+      padding: 20px 0;
+      .btn-primary {
+        display: block;
+      }
+    }
+  } 
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .page-content-wrap {
+    margin-top: -7px;
+    .fixed-element{
+      &.sticky {
+        top: 0;
+      }
+    }
+  }
+  .sub-navigation-md {
+    width: 100%;
+    background: $fixed-nav-bg;
+    opacity: 0.8;
+    text-align: center;
+    padding: 12px 0;
+    ul {
+      margin: 0;
+    }
+    li {
+      width: 33.33%;
+      float: left;
+      line-height: 38px;
+      &:first-child {
+        border-right: solid 2px $border-color;
+      }
+      a {
+        color: $white;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      &.donate-btn {
+        a {
+          background: $secondary-button;
+          color: $black;
+          width: 180px;
+          text-align: center;
+        }
+      }
+    }
+    &.sticky {
+      position: fixed;
+      top: 0;
+      opacity: 0.8;
+      z-index: 500;
+      transition-duration: .5s;
+      background: $top-nav;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .can-do-steps {
+    @include clearfix;
+    margin-top: 35px;
+    .step-info-wrap {
+      margin: 0 0 25px 0;
+      .step-number {
+        width: 97px;
+        height: 97px;
+        line-height: 97px;
+        font-size: 54px;
+        float: left;
+      }
+    }
+  }
+}

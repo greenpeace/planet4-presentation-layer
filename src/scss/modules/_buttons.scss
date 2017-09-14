@@ -1,0 +1,132 @@
+/******************************************************************
+Site Name: Planet4 Master theme
+Author: Ashish Singh(ashish.singh@greepeace.org)
+
+Stylesheet: Button Styles
+******************************************************************/
+
+%btn {
+  display: inline-block;
+  position: relative;
+  font-family: $roboto;
+  text-decoration: none;
+  color: $white;
+  font-size: 0.9em;
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: normal;
+  padding: 0 24px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  @include transition(background-color 0.14s ease-in-out);
+
+  // hovering on the btn
+  &:hover, &:focus {
+    color: $white;
+    text-decoration: none;
+    outline: none;
+  } // end hover
+
+  // clicking on the button
+  &:active {
+    top: 1px; // adds a tiny hop to the click
+  } // end active
+
+} // end .button
+
+/*
+ * Primary Call to action button
+ */
+.primary-cta-btn {
+  @extend %btn; // here we load the btn defaults
+  background-color: $blue;
+
+  &:hover,
+  &:focus {
+    background-color: darken($blue, 4%);
+  } // end hover
+
+  &:active {
+    background-color: darken($blue, 5%);
+  } // end active
+
+} // end primary-cta-button
+
+.btn-primary {
+  background: $primary-button;
+  border-color: $primary-button;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background: $primary-button-hover;
+  border-color: $primary-button;
+}
+
+.btn-secondary {
+  background: $secondary-button;
+  border-color: $secondary-button;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.btn-secondary:hover {
+  background: $secondary-button-hover;
+  border-color: $secondary-button-hover;
+}
+
+.yellow-button {
+  border-color: $yellow-button;
+  color: $yellow-button-color;
+  background: $yellow-button;
+  text-transform: uppercase;
+}
+.yellow-button:hover {
+  background-color: $yellow-button-hover;
+  border-color: $yellow-button;
+  color: $yellow-button-color;
+}
+
+.styled-select {
+  overflow: hidden;
+  background: url('images/select-arrow.jpg') no-repeat 100% 13px;
+  padding-right: 15px;
+  select {
+    background: transparent;
+    padding: 5px;
+    font-size: 16px;
+    color: $white;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+    option {
+      background: transparent;
+      color: $black;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.blue-button {
+  background: #AFD4C7;
+  color: #0A3351;
+  border: solid 1px #0A3351;
+  text-transform: uppercase;
+  &:hover {
+    background: #0A3351;
+    color: $white;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &:active {
+    background: #3B5C74;
+  }
+}

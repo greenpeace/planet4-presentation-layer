@@ -1,0 +1,57 @@
+#footer {
+  padding: 50px 0;
+  background: $blue-bg;
+  a {
+    color: $blue-bg-anchor;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .footer-social-media {
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 10px;
+      i {
+        font-size: 30px;
+        color: $white;
+      }
+    }
+  }
+  .footer-links {
+    text-align: center;
+    li {
+      display: inline-block;
+      font-size: 22px;
+      color: $white;
+      a {
+        text-transform: uppercase;
+        color: $white;
+        transition: 0.5s;
+        margin: 0 5px;
+        &:hover {
+          color: $blue-bg-anchor;
+        }
+      }
+    }
+  }
+  p {
+    color: $white;
+    &.copyright-text {
+      font-size: 11px;
+      color: $white;
+      margin: 20px 0;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+  #footer {
+    .footer-links {
+      li {
+        display: block;
+      }
+    }
+  }
+}

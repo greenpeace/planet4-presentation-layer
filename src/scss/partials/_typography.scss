@@ -1,0 +1,43 @@
+/******************************************************************
+Site Name: Planet 4 Master Theme
+Author: Ashish Singh(ashish.singh@greenpeace.org)
+
+Stylesheet: Typography
+
+Import a Font or Icons
+
+******************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+// font stacks
+$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+$roboto:            "Roboto", sans-serif;
+
+/*
+some nice typographical defaults
+more here: http://www.newnet-soft.com/blog/csstypography
+*/
+p {
+  -ms-word-wrap: break-word;
+     word-break: break-word; //non-standart css for webkit
+      word-wrap: break-word;
+  // cleaning up the ragged lines and breaks
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
+  // sets a minimum number of characters before and after the break
+  -webkit-hyphenate-before: 2;
+   -webkit-hyphenate-after: 3;
+           hyphenate-lines: 3;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
