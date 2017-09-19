@@ -15,13 +15,17 @@
       <div class="container-fluid">
         <div class="row">
           <div class="navbar navbar-toggleable-md navbar-light">
-            <div class="mobile-header-wrap hidden-lg-up">
-              <span class="menu">
-                    Menu
-              </span>
-              <div class="mobile-menus">
-                  <ul>
+            <div class="mobile-header-wrap hidden-lg-up row">
+              <div class="col text-left">
+                <span class="menu">
+                  Menu
+                  <i class="fa fa-bars"></i>
+                  <i class="fa fa-times"></i>
+                </span>
+                <div class="mobile-menus">
+                  <ul class="list-unstyled">
                     <li>
+                      <img class="country-icon" src="images/country-icon.png" alt=""/>
                       <div class="select-country styled-select">
                          <select>
                             <option>Here is the first option</option>
@@ -29,40 +33,33 @@
                          </select>
                       </div>
                     </li>
-                    <li class="nav-item active hidden-md-down hidden-lg-down">
+                    <li class="nav-item active">
                       <a href="#">ACT</a>
                     </li>
-                    <li class="nav-item hidden-md-down hidden-lg-down">
+                    <li class="nav-item">
                       <a href="#">EXPLORE</a>
                     </li>
-                    <li class="nav-item hidden-md-down hidden-lg-down">
-                      <a href="#" class="btn btn-secondary">DONATE</a>
-                    </li>
-                    <li class="nav-item loginSignUpWrap">
-                      <i class="fa fa-user-circle-o"></i>
-                      <a href="#">Log in</a> <span> / </span>
-                      <a href="#">Sign up</a>
-                    </li>
-                    <li class="nav-item nav-search-wrap">
-                      <form class="form">
-                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                        <button class="top-nav-search-btn" type="submit"><i class="fa fa-search"></i></button>
-                      </form>
-                    </li>
                   </ul>
+                  <a href="#" class="btn btn-secondary">DONATE</a>
+                </div>
               </div>
-              <a class="navbar-brand" href="#"><img src="images/greenpeace-logo.png" alt="greenpeace" />
-              <div class="mobile-search-wrap">
-                 <a href="#" id="searchtoggl"><i class="fa fa-search fa-lg"></i></a> 
-                <div id="searchbar" class="clearfix">
-                  <form id="searchform">
-                    <button type="submit" id="searchsubmit" class="fa fa-search fa-4x"></button>
-                    <input type="search" name="s" class="mobile-search-input" placeholder="" autocomplete="off">
-                  </form>
+              <div class="col">
+                <a class="navbar-brand" href="#"><img src="images/greenpeace-logo.png" alt="greenpeace" /></a>
+              </div>
+              <div class="col text-right">
+                 <div id="search" class="mobile-search-wrap">
+                  <div class="search-link">
+                    <a href="#search" id="search-trigger"><i class="fa fa-search fa-lg"></i></a> 
+                  </div>
+                  <div class="search-box">
+                    <form action="/search" id="search_form">
+                        <input placeholder="Search" type="text" />
+                        <input id="search-submit" type="submit" class="btn btn-green" value="Search" />
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
-
             <div class="col-lg-3 col-xl-2 hidden-md-down">
               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -128,19 +125,28 @@
     <div id="take-action clearfix" class="page-content-wrap">
       <div class="fixed-element clearfix">
         <div class="container">
-          <h1>Show You're a food warrior</h1>
-          <span class="pull-right hidden-xs-down">
-            <a href="javascript:void(0)" class="btn btn-primary">Add to my action list</a>
-            <a href="javascript:void(0)" class="btn yellow-button">share</a>
-          </span>
+          <!-- Page Header Block starts -->
+          <div class="page-header col-md-8 col-lg-8 col-sm-12">
+            <div class="top-tags-wrap">
+              <span>#TagName 1</span>
+              <span>#TagName 2</span>
+              <span>#TagName 3</span>
+            </div>
+            <h1>Show You're a food warrior</h1>
+            <!-- More markup to follow for header block -->
+          </div> <!-- Page Header block ends -->
+          
+          <!-- Commented out the header buttons for now will move it to other section
+               once that is finalised -->
+          <!-- <div class="action-buttons">
+            <span class="pull-right hidden-xs-down">
+              <a href="javascript:void(0)" class="btn btn-primary">Add to my action list</a>
+              <a href="javascript:void(0)" class="btn yellow-button">share</a>
+            </span>
+          </div> -->
         </div>
       </div>
       <div class="container">
-        <div class="top-tags-wrap">
-          <span>#TagName 1</span>
-          <span>#TagName 2</span>
-          <span>#TagName 3</span>
-        </div>
         <div class="row about-info">
           <div class="col-md-6 col-lg-6 col-sm-12">
               <h2>Why this matters</h2>
@@ -159,21 +165,21 @@
         </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <img class="d-block img-fluid" src="images/carousel-img.jpg" alt="First slide">
+              <img src="images/carousel-img.jpg" alt="First slide">
               <div class="carousel-caption">
                 <h3>Rainbow Warrior at the Great Barrier Reef.</h3>
                 <p>The ship was on the Great Barrier Reef as UNESCO passed a decision to keep the Reef on a watching brief due to the impacts of industrialisation, agricultural run off & climate change.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="images/carousel-img.jpg"  alt="Second slide">
+              <img src="images/carousel-img.jpg"  alt="Second slide">
               <div class="carousel-caption d-none d-md-block">
                 <h3>Caption</h3>
                 <p>Credit</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="images/carousel-img.jpg"  alt="Third slide">
+              <img src="images/carousel-img.jpg"  alt="Third slide">
               <div class="carousel-caption">
                 <h3>Caption</h3>
                 <p>Credit</p>
@@ -338,6 +344,23 @@
       </div>
     </div>
   </div>
+  <div class="eager-wrap">
+    <div class="container">
+      <div class="eager-for-more hidden-md-down">
+        <h2>Eager for more ?</h2>
+        <h5>Read about climate and cows.</h5>
+        <a href="#" class="btn btn-primary">Read report</a>
+      </div>
+    </div>
+    <div class="eager-wrap-mobile hidden-lg-up">
+      <div class="container">
+        <img src="images/cowman-mobile.jpg" alt="">
+        <h3>Eager for more ?</h3>
+        <h4>Read about climate and cows.</h4>
+        <a href="#" class="btn btn-primary">Read Cows are anywhere</a>
+      </div>
+    </div>
+  </div>
   <div id="footer">
     <div class="container">
       <div class="row justify-content-center">
@@ -366,7 +389,9 @@
 
 <!-- JS Libs that we include -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
 <!-- File for all the custom JS that we write -->
 <!-- <script type="text/javascript" src="custom.js"></script> -->
 <!-- <script type="text/javascript" src="take-action.js"></script> -->
@@ -388,77 +413,58 @@
     $(".step-info-wrap").click(function(){
       $('.step-info-wrap').parent('.col-md-3').removeClass('active');
       $(this).parent().addClass('active');
-      
+
       $(".steps-action").slideUp();
       $(this).find(".steps-action").slideToggle();
     })
-
-    $(function(){
-      var $searchlink = $('#searchtoggl i');
-      var $searchbar  = $('#searchbar');
-      
-      $('#header .fa-search').on('click', function(e){
-        e.preventDefault();
-        
-        if($(this).attr('id') == 'searchtoggl') {
-          if(!$searchbar.is(":visible")) { 
-            // if invisible we switch the icon to appear collapsable
-            $searchlink.removeClass('fa-search').addClass('fa-search-minus');
-          } else {
-            // if visible we switch the icon to appear as a toggle
-            $searchlink.removeClass('fa-search-minus').addClass('fa-search');
-          }
-          
-          $searchbar.slideToggle(300, function(){
-            // callback after search bar animation
-          });
-        }
-      });
-      
-      $('#searchform').submit(function(e){
-        e.preventDefault(); // stop form submission
-      });
-    });
   });
 
   // Hide Header on on scroll down
-if($( window ).width() <= 768) {
-  var didScroll;
-  var lastScrollTop = 0;
-  var delta = 5;
-  var navbarHeight = $('.top-navigation').outerHeight();
-  $(window).scroll(function(event){
-      didScroll = true;
-  });
-  setInterval(function() {
-      if (didScroll) {
-          hasScrolled();
-          didScroll = false;
-      }
-  }, 250);
-  function hasScrolled() {
-      var st = $(this).scrollTop();
-      if(Math.abs(lastScrollTop - st) <= delta)
-          return;
-      if (st > lastScrollTop && st > navbarHeight){
-          $('.top-navigation').removeClass('nav-down').addClass('nav-up');
-      } else {
-          if(st + $(window).height() < $(document).height()) {
-              $('.top-navigation').removeClass('nav-up').addClass('nav-down');
-          }
-      }
-      lastScrollTop = st;
-  }
-
-  $('.menu').click(function() {
-    var $slider = $('.mobile-menus');
-    $slider.animate({
-      left: parseInt($slider.css('left'),10) == -300 ?
-       0 : -300
+  if($( window ).width() <= 768) {
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('.top-navigation').outerHeight();
+    $(window).scroll(function(event){
+        didScroll = true;
     });
-  });
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return;
+        if (st > lastScrollTop && st > navbarHeight){
+            $('.top-navigation').removeClass('nav-down').addClass('nav-up');
+        } else {
+            if(st + $(window).height() < $(document).height()) {
+                $('.top-navigation').removeClass('nav-up').addClass('nav-down');
+            }
+        }
+        lastScrollTop = st;
+    }
 
-};
+    $('.menu').click(function() {
+      var $slider = $('.mobile-menus');
+      $(this).toggleClass('active');
+      $slider.animate({
+        left: parseInt($slider.css('left'),10) == -320 ?
+         0 : -320
+      });
+    });
+
+    var $searchBox = $('#search .search-box');
+    var $searchTrigger = $('#search-trigger');
+
+    $searchTrigger.on('click', function(e) {
+        $searchBox.slideToggle();
+        e.preventDefault();
+    });
+  };
 </script>
 </body>
 </html>
