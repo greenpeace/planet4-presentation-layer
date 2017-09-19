@@ -3,9 +3,11 @@ Planet4 Presentation Layer
 Holds all the styling and markup for the pages of Planet4 Master Theme.
 
 * Install bower globally using npm 
-`npm install -b bower`
+`npm install -global bower`
 
 Install gulp
+
+`npm install --global gulp`
 
 Once both are installed run following commands to install dependencies
 
