@@ -1,3 +1,79 @@
+.mobile-header-wrap {
+  padding: 0 15px;
+  .menu {
+    width: 80px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    background: #457575;
+    text-align: center;
+    color: #ffffff;
+    .fa {
+      &.fa-times {
+        display: none;
+      }
+    }
+    &.active {
+      .fa-bars {
+        display: none;
+      }
+      .fa-times {
+        display: inline-block;
+      }
+    }
+  }
+  .mobile-search-wrap {
+    text-align: right;
+    margin-top: 5px;
+  }
+}
+
+.mobile-menus {
+  background: #02484e;
+  width: 300px; 
+  position: fixed; 
+  left: -320px; 
+  top: 57px;
+  padding: 20px 20px 20px 0;
+  z-index: 5000;
+  height: calc(100vh - 58px);
+  .btn-secondary {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 7%;
+  }
+}
+
+.country-icon {
+  width: 28px;
+  height: 28px;
+  float: left;
+}
+.styled-select {
+  overflow: hidden;
+  background: url('images/down-arrow-green.png') no-repeat 100% 13px;
+  }
+
+.search-box {
+  display: none;
+  position: absolute;
+  top: 46px;
+  right: 0;
+  width: 320px;
+  padding: 10px 5px;
+  background: #02484e;
+  input[type="text"] {
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    line-height: 38px;
+    float: left;
+  }
+}
+
 #header {
   &.top-navigation {
     background: $top-nav;
@@ -7,6 +83,7 @@
     opacity: 0.8;
     .navbar-brand {
       padding: 0;
+      margin: 0;
     }
     .navbar {
       padding: 0;
@@ -91,7 +168,6 @@
 @media (max-width: 575px) {
   #header {
     .navbar-brand {
-      margin: 0;
       img {
         width: 100%;
       }
@@ -107,8 +183,7 @@
         li {
           text-align: left;
           border-bottom: solid 1px $border-color;
-          padding-bottom: 10px;
-          margin-bottom: 10px;
+          padding: 10px 0 10px 15px;
           &.loginSignUpWrap {
             i {
               margin-right: 10px;
@@ -116,6 +191,12 @@
           }
           &.nav-search-wrap {
             width: 100%;
+          }
+          &.active {
+            border-left: solid 5px $black;
+          }
+          .styled-select {
+            margin-top: 0;
           }
         }
       }
@@ -135,7 +216,6 @@
       margin-top: 15px;
     }
     .mobile-header-wrap {
-      width: 100%;
       text-align: center;
     }
   }
@@ -241,13 +321,3 @@
 
 }
 
-.mobile-header-wrap {
-  padding: 0 15px;
-  .menu,
-  .navbar-brand,
-  .mobile-search-wrap {
-    width: 30%;
-    float: left;
-  }
-}
-.mobile-menus{width:300px; height:200px;border:2px solid #666; position:fixed; left:-300px; top: 60px;}

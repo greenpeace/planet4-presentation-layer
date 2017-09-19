@@ -120,7 +120,7 @@
       }
       .steps-information {
         padding: 55px 0 0 15px;
-        border-left: solid 2px #bddac8;
+        border-left: solid 2px $light-border;
         min-height: 495px;
         float: left;
         margin-top: -35px;
@@ -145,20 +145,48 @@
     }
   }
 }
-  .what-you-can-do-wrapper {
-    background: $container-bg;
-    h3 {
-      padding: 50px 0 0;
-      color: $blue-heading;
-    }
-    .col-md-6 {
-      padding-top: 30px;
-    }
-  } 
+.what-you-can-do-wrapper {
+  background: $container-bg;
+  h3 {
+    padding: 50px 0 0;
+    color: $blue-heading;
+  }
+  .col-md-6 {
+    padding-top: 30px;
+  }
+}
 
-  
+.eager-wrap-mobile {
+  background: #b0d4c8;
+  padding: 20px 0;
+  border-top: solid 1px #c7dcd3;
+  h3 {
+    color: #004d51;
+    font-weight: 700;
+    margin: 15px 0 0 0;
+    padding: 5px 0;
+    line-height: normal;
+  }
+  h4 {
+    color: #12757a;
+    font-weight: 400;
+    font-size: 21px;
+    margin-bottom: 10px;
+    padding: 5px 0;
+  }
+  .btn-primary {
+    width: 100%;
+  }
+} 
+ 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 575px) {
+@media (max-width: 575px) {
+  .hero-img-wrap {
+    background-image: url("images/clouds_576.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+  }
   .container {
     padding: 0 10px;
   }
@@ -166,7 +194,7 @@
     padding-top: 80px;
     .fixed-element {
        h1 {
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 400;
         line-height: 50px;
       }
@@ -225,6 +253,10 @@
       .info-with-image-wrap {
         .accordion-image-wrap {
           float: left;
+          width: 50%;
+          img {
+            width: 100%;
+          }
         }
         .mobile-accordion-info {
           width: 43%;
@@ -262,7 +294,7 @@
     .add-action-list-wrap {
       margin: 20px 0 0;
       .btn-primary {
-        width: 60%;
+        width: 59%;
       }
       .yellow-button {
         width: 35%;
@@ -276,11 +308,24 @@
         display: block;
       }
     }
+  }
+  .eager-wrap {
+    .eager-for-more {
+      &:before {
+        border: none;
+      }
+    }
   } 
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .hero-img-wrap {
+    background-image: url("images/clouds_768.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+  }
   .page-content-wrap {
     padding-top: 50px;
     .fixed-element{
@@ -372,11 +417,24 @@
         display: block;
       }
     }
-  } 
+  }
+  .eager-wrap {
+    .eager-for-more {
+      &:before {
+        border: none;
+      }
+    }
+  }  
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .hero-img-wrap {
+    background-image: url("images/clouds_1140.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+  }
   .page-content-wrap {
     margin-top: -7px;
     .fixed-element{
@@ -424,15 +482,68 @@
       background: $top-nav;
     }
   }
+  .eager-wrap {
+    .eager-for-more {
+      &:before {
+        border: solid 1px $light-border;
+        content: " ";
+        position: absolute;
+        left: 125px;
+        top: -140px;
+        height: 140px;
+      }
+    }
+  }
+  .eager-wrap {
+    background: url("images/eager-bg1.jpg") center center no-repeat;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    .eager-for-more {
+      position: absolute;
+      right: 0;
+      top: 135px;
+      background: $white;
+      opacity: 0.8;
+      padding: 50px 30px;
+      width: 350px;
+      text-align: center;
+      h2 {
+        color: #004d51;
+        font-weight: 700;
+      }
+      h5 {
+        color: #12757a;
+        font-weight: 400;
+        font-size: 21px;
+      }
+      &:before {
+        border: solid 1px $light-border;
+        content: " ";
+        position: absolute;
+        left: 125px;
+        top: -140px;
+        height: 140px;
+      }
+      .btn-primary {
+        width: 200px;
+      }
+    }
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .hero-img-wrap {
+    background-image: url("images/clouds_1200.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+  }
   .can-do-steps {
     @include clearfix;
     margin-top: 35px;
     .step-info-wrap {
-      margin: 0 0 25px 0;
       .step-number {
         width: 97px;
         height: 97px;
@@ -440,6 +551,52 @@
         font-size: 54px;
         float: left;
       }
+    }
+  }
+  .eager-wrap {
+    background: url("images/eager-bg.jpg") center center no-repeat;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    .eager-for-more {
+      position: absolute;
+      right: 0;
+      top: 135px;
+      background: $white;
+      opacity: 0.8;
+      padding: 50px 30px;
+      width: 350px;
+      text-align: center;
+      h2 {
+        color: #004d51;
+        font-weight: 700;
+      }
+      h5 {
+        color: #12757a;
+        font-weight: 400;
+        font-size: 21px;
+      }
+      &:before {
+        border: solid 1px $light-border;
+        content: " ";
+        position: absolute;
+        left: 80px;
+        top: -140px;
+        height: 140px;
+      }
+      .btn-primary {
+        width: 200px;
+      }
+    }
+    &:before {
+      content: " ";
+      background: $blue-bg;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 350px;
+      width: 100%;
+      opacity: 0.3;
     }
   }
 }

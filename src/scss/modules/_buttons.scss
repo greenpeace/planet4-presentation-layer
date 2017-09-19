@@ -89,6 +89,11 @@ Stylesheet: Button Styles
   color: $yellow-button-color;
 }
 
+.btn-green {
+  background: #65cb00;
+  color: $white;
+}
+
 .styled-select {
   overflow: hidden;
   background: url('images/select-arrow.jpg') no-repeat 100% 13px;
@@ -103,6 +108,7 @@ Stylesheet: Button Styles
     border-radius: 0;
     height: 34px;
     -webkit-appearance: none;
+    width: 240px;
     option {
       background: transparent;
       color: $black;
@@ -114,10 +120,11 @@ Stylesheet: Button Styles
 }
 
 .blue-button {
-  background: #AFD4C7;
+  background: $secondary-button-bg;
   color: #0A3351;
   border: solid 1px #0A3351;
   text-transform: uppercase;
+  font-weight: 500;
   &:hover {
     background: #0A3351;
     color: $white;

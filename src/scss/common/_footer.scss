@@ -37,10 +37,12 @@
   }
   p {
     color: $white;
+    margin-bottom: 0;
     &.copyright-text {
       font-size: 11px;
       color: $white;
       margin: 20px 0;
+      text-align: center;
     }
   }
 }
@@ -48,6 +50,7 @@
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
   #footer {
+    padding: 20px 0;
     .footer-links {
       li {
         display: block;
