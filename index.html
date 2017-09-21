@@ -135,7 +135,7 @@
             <h1>Show You're a food warrior</h1>
             <!-- More markup to follow for header block -->
           </div> <!-- Page Header block ends -->
-          
+
           <!-- Commented out the header buttons for now will move it to other section
                once that is finalised -->
           <!-- <div class="action-buttons">
@@ -200,10 +200,10 @@
   </div>
   <div class="what-you-can-do-wrapper">
     <div class="container">
-    <div class="hidden-lg-up add-action-list-wrap">
-      <a href="javascript:void(0)" class="btn btn-primary">Add to my action list</a>
-      <a href="javascript:void(0)" class="btn yellow-button">share</a>
-    </div>
+      <div class="hidden-lg-up add-action-list-wrap">
+        <a href="javascript:void(0)" class="btn btn-primary">Add to my action list</a>
+        <a href="javascript:void(0)" class="btn yellow-button">share</a>
+      </div>
       <h3>What you can do </h3>
       <div class="row">
         <div class="col-md-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</div>
@@ -354,7 +354,7 @@
     </div>
     <div class="eager-wrap-mobile hidden-lg-up">
       <div class="container">
-        <img src="images/cowman-mobile.jpg" alt="">
+        <img src="images/eager-bg.jpg" class="mobile-image" alt="Eager for more">
         <h3>Eager for more ?</h3>
         <h4>Read about climate and cows.</h4>
         <a href="#" class="btn btn-primary">Read Cows are anywhere</a>
@@ -413,7 +413,7 @@
     $(".step-info-wrap").click(function(){
       $('.step-info-wrap').parent('.col-md-3').removeClass('active');
       $(this).parent().addClass('active');
-
+      
       $(".steps-action").slideUp();
       $(this).find(".steps-action").slideToggle();
     })
