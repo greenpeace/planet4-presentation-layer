@@ -36,7 +36,6 @@ CSS3 GRADIENTS
   background-image: linear-gradient(to bottom, $from, $to);
 }
 
-
 @mixin clearfix() {
   &::after {
     display: block;

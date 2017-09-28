@@ -7,7 +7,7 @@
     line-height: 35px;
     background: #457575;
     text-align: center;
-    color: #ffffff;
+    color: $white;
     .fa {
       &.fa-times {
         display: none;
@@ -24,16 +24,19 @@
   }
   .mobile-search-wrap {
     text-align: right;
-    margin-top: 5px;
   }
 }
 
-.mobile-menus {
-  background: #02484e;
+  .mobile-menus {
+  background: #234448; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #234448 0%, #2b5459 50%, #356268 50%, #356268 50%, #356268 51%, #2b5459 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #234448 0%,#2b5459 50%,#356268 50%,#356268 50%,#356268 51%,#2b5459 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(124deg, #234448 0%,#2b5459 50%,#356268 50%,#356268 50%,#356268 51%,#2b5459 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#234448', endColorstr='#2b5459',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */    
   width: 300px; 
   position: fixed; 
   left: -320px; 
-  top: 57px;
+  top: 58px;
   padding: 20px 20px 20px 0;
   z-index: 5000;
   height: calc(100vh - 58px);
@@ -89,7 +92,7 @@
       padding: 0;
       width: 100%;
       li {
-        width: 150px;
+        width: 16.66%;
         text-align: center;
         position: relative;
         line-height: 22px;
@@ -97,7 +100,6 @@
           color: $white;
           font-size: 16px;
           display: inline-block;
-          margin-top: 7px;
           &:hover {
             transition: 0.5s;
             color: $blue-bg-anchor;
@@ -105,14 +107,9 @@
           }  
         }
         .btn-secondary {
-          padding: 7px 26px;
           font-size: 12px;
           color: $black;
           margin-top: 3px;
-        }
-        &:first-child,
-        &:last-child {
-          width: auto;
         }
         &.loginSignUpWrap {
           color: $nav-link;
@@ -126,7 +123,7 @@
           }
           a {
             color: $nav-link;
-            font-size: 18px;
+            font-size: 16px;
             margin: 9px 2px 0;
             &:hover {
               transition: 0.5s;
@@ -147,9 +144,6 @@
             border-radius: 0;
             padding: 10px;
           }
-        }
-        .styled-select {
-          margin-top: 5px;
         }
       }
     }
@@ -184,6 +178,7 @@
           text-align: left;
           border-bottom: solid 1px $border-color;
           padding: 10px 0 10px 15px;
+          width: auto;
           &.loginSignUpWrap {
             i {
               margin-right: 10px;
@@ -318,6 +313,21 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
+  #header.top-navigation {
+    .navbar {
+      li {
+        &.big-screen-nav-link {
+          margin-top: 8px;
+        }
+        .btn-secondary {
+          height: 42px;
+          line-height: 42px;
+          margin: 0;
+        }
+      }
+    }
+    .navbar-nav {
+      width: 100%;
+    }
+  }
 }
-

@@ -25,7 +25,7 @@
 
 /** STYLES */
 .eager-wrap-mobile {
-  background: #b0d4c8;
+  background: $body-bg;
   padding: 20px 0;
   border-top: solid 1px #c7dcd3;
   .mobile-image {
@@ -58,16 +58,6 @@
   height: 350px;
   width: 100%;
   position: relative; 
-  &:before {
-    content: " ";
-    background: $blue-bg;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 350px;
-    width: 100%;
-    opacity: 0.3;
-  }
 }
 
 @mixin background-opacity {
@@ -108,7 +98,6 @@
   .eager-wrap {
     @include happy-background-image;
     .eager-for-more {
-      @include background-opacity;
       position: absolute;
       right: 0;
       top: 135px;
@@ -136,16 +125,34 @@
 @media (min-width: 1200px) { 
   .eager-wrap {
     @include happy-background-image;
+    &:before {
+      content: "";
+      background: #8abdc0;
+      height: 350px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.6;
+    }
     .eager-for-more {
-      @include background-opacity;
       position: absolute;
       right: 0;
-      top: 135px;
-      background: $container-bg;
-      opacity: 0.6;
-      padding: 50px 30px;
+      top: 145px;
+      background: rgba(255,255,255,0.4);
+      padding: 40px 30px;
       width: 350px;
       text-align: center;
+      opacity: inherit;
+      // Not being used now.
+      // &:after {
+      //   content: "";
+      //   border-left: solid 1px $light-border;
+      //   height: 171px;
+      //   position: absolute;
+      //   left: 80px;
+      //   top: -170px;
+      // }
       h2 {
         color: #004d51;
         font-weight: 700;

@@ -27,6 +27,12 @@
         font-size: 35px;
         color: $white;
       }
+      .top-tags-wrap {
+        span {
+          color: $white;
+          display: none;
+        }
+      }
     }
   }
   .top-tags-wrap {
@@ -63,6 +69,10 @@
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351',endColorstr='#0A3351' , GradientType=1);
     }
     .carousel-indicators {
+      right: 0;
+      bottom: 30px;
+      left: auto;
+      margin-right: 5%;
       li {
         width: 12px;
         height: 12px;
@@ -71,16 +81,49 @@
         margin: 0 15px;
         cursor: pointer;
         &.active {
-          background: #A6DF21;
+          background: $carousel-active;
         }
       }
     }
-    .carousel-indicators {
-      right: 0;
-      bottom: 30px;
-      left: auto;
-      margin-right: 5%;
+    .carousel-control-prev,
+    .carousel-control-next {
+      opacity: 1;
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-image: none;
+        border: solid 1px $white;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: block;
+        text-align: center;
+        background-color: $carr-arrow;
+        opacity: 0.4;
+        i {
+          background: url("images/sprite.png");
+          height: 32px;
+          width: 22px;
+          vertical-align: middle;
+          display: inline-block;
+          margin: 6px 2px 0 0;
+        }
+      }
+      .carousel-control-next-icon {
+        i {
+          background-position: -21px 1px;
+        }
+      }
     }
+  }
+}
+.what-you-can-do-wrapper {
+  background: $container-bg;
+  h3 {
+    padding: 50px 0 0;
+    color: $blue-heading;
+  }
+  .col-md-6 {
+    padding-top: 30px;
   }
 }
 .can-do-steps {
@@ -120,10 +163,15 @@
       }
       .steps-information {
         padding: 55px 0 0 15px;
-        border-left: solid 2px $light-border;
+        border-left: solid 1px $light-border;
         min-height: 495px;
         float: left;
         margin-top: -35px;
+      }
+    }
+    &:hover {
+      .step-number {
+        background: $step-number-hover;
       }
     }
   }
@@ -145,16 +193,24 @@
     }
   }
 }
-.what-you-can-do-wrapper {
-  background: $container-bg;
-  h3 {
-    padding: 50px 0 0;
-    color: $blue-heading;
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .can-do-steps {
+    @include clearfix;
+    margin-top: 35px;
+    .step-info-wrap {
+      .step-number {
+        width: 97px;
+        height: 97px;
+        line-height: 97px;
+        font-size: 54px;
+        float: left;
+      }
+    }
   }
-  .col-md-6 {
-    padding-top: 30px;
-  }
-}
+ }
+
+ 
  
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
@@ -171,9 +227,9 @@
     padding-top: 80px;
     .fixed-element {
        h1 {
-        font-size: 45px;
+        font-size: 40px;
         font-weight: 400;
-        line-height: 50px;
+        line-height: 40px;
       }
     }
     h2 {
@@ -198,6 +254,17 @@
         li {
           margin: 0 5px;
         }
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          height: 40px;
+          width: 40px;
+          i {
+            margin: 2px 2px 0 0;
+          }
+        }
       } 
     }
   }
@@ -205,7 +272,7 @@
     margin: 15px 15px 0 0;
     width: 100%;
     .card-header {
-      background: #c7dcd3;
+      background: $card-header-bg;
       border: none;
       h5 {
         a {
@@ -247,13 +314,13 @@
         color: $percentage-text;
         font-size: 14px;
         padding: 15px 10px 15px;
-        border-bottom: solid 1px #c7dcd3;
+        border-bottom: solid 1px $card-header-bg;
         margin-bottom: 10px;
       }
       .step-number {
         font-size: 18px;
         font-weight: 700;
-        color: #dc9509;
+        color: $step-number;
         line-height: 28px;
         padding-right: 5px;
         float: left;
@@ -271,10 +338,12 @@
     .add-action-list-wrap {
       margin: 20px 0 0;
       .btn-primary {
-        width: 59%;
+        width: 57%;
+        font-size: 12px;
       }
       .yellow-button {
         width: 35%;
+        font-size: 12px;
         margin-left: 15px;
       }
     }
@@ -311,7 +380,7 @@
     margin: 15px 15px 0 15px;
     width: 100%;
     .card-header {
-      background: #c7dcd3;
+      background: $card-header-bg;
       border: none;
       h5 {
         a {
@@ -349,13 +418,13 @@
         color: $percentage-text;
         font-size: 14px;
         padding: 15px 20px;
-        border-bottom: solid 1px #c7dcd3;
+        border-bottom: solid 1px $card-header-bg;
         margin-bottom: 10px;
       }
       .step-number {
         font-size: 18px;
         font-weight: 700;
-        color: #dc9509;
+        color: $step-number;
         line-height: 28px;
         padding-right: 5px;
         float: left;
@@ -454,18 +523,5 @@
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
-  }
-  .can-do-steps {
-    @include clearfix;
-    margin-top: 35px;
-    .step-info-wrap {
-      .step-number {
-        width: 97px;
-        height: 97px;
-        line-height: 97px;
-        font-size: 54px;
-        float: left;
-      }
-    }
   }
 }
