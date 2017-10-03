@@ -10,7 +10,94 @@
       <span>#TagName 2</span>
       <span>#TagName 3</span>
     </div>
-    <h1>Show You're a food warrior</h1>
-    <!-- More markup to follow for header block -->
+    <h1>What you do matters</h1>
+      <h3>A billion acts of courage can spark a brighter tomorrow.</h3>
+      <p>Tart liquorice sweet roll pastry croissant toffee mufﬁn tiramisu. Marshmallow tootsie roll sugar plum powder oatcake ginger bread. Cupcake cookie cotton candy chocolate cake oat ice sweet roll pastry croissant toffee mufﬁn tiramisu. </p>
+    <div class="row clearfix">
+      <div class="col-md-4">
+      <a href="#" class="btn btn-small btn-medium btn-primary btn-block">Take action</a>
+      </div>
+    </div>
   </div> <!-- Page Header block ends -->
 */
+.main-header{
+  color: #152431;
+  padding-top: 120px;
+  padding-bottom: 70px;
+  h1{
+    font-size: 4rem;
+    margin-bottom: 48px;
+  }
+  h3{
+    font-size: 2.75rem;
+    margin-bottom: 56px;
+  }
+  p{
+    font-size: 1.375rem;  
+    margin-bottom: 72px;
+  }
+
+}
+
+
+ 
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+  .main-header{
+    padding-top: 120px;
+    padding-bottom: 80px;
+    h1{
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+    }
+    h3{
+      font-size: 1.375rem;
+      margin-bottom: 130px;
+    }
+    p{
+      display: none;
+    }
+
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .main-header{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h1{
+      font-size: 3rem;
+      margin-bottom: 40px;
+    }
+    h3{
+      font-size: 1.5rem;
+      margin-bottom: 50px;
+    }
+    p{
+      font-size: 1.1875rem;
+    }
+
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .main-header{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    h1{
+      font-size: 3.5rem;
+      margin-bottom: 50px;
+    }
+    h3{
+      font-size: 1.875rem;
+      margin-bottom: 50px;
+    }
+    p{
+      font-size: 1.25rem;
+    }
+
+  }
+
+}

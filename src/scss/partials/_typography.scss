@@ -8,11 +8,13 @@ Import a Font or Icons
 
 ******************************************************************/
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700&subset=latin-ext');
 
 // font stacks
 $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
 $roboto:            "Roboto", sans-serif;
+$lora:              "Lora", serif;
 
 /*
 some nice typographical defaults
@@ -30,6 +32,7 @@ p {
   -webkit-hyphenate-before: 2;
    -webkit-hyphenate-after: 3;
            hyphenate-lines: 3;
+  font-family: $lora;           
 }
 
 h1 {
