@@ -40,6 +40,20 @@
       color: $percentage-text;
       font-size: 15px;
     }
+    .category-topic-title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .category-topic-title-seprater {
+      background: $percentage-text;
+      width: 5px;
+      height: 5px;
+      display: inline-block;;
+      border-radius: 5px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
   }
   .about-info {
     h2 {
@@ -219,9 +233,6 @@
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
-  }
-  .container {
-    padding: 0 10px;
   }
   .page-content-wrap {
     padding-top: 80px;

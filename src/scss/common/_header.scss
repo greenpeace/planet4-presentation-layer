@@ -46,39 +46,37 @@
   .main-header{
     padding-top: 120px;
     padding-bottom: 80px;
-    h1{
-      font-size: 2.5rem;
-      margin-bottom: 50px;
-    }
-    h3{
-      font-size: 1.375rem;
-      margin-bottom: 130px;
-    }
-    p{
-      display: none;
-    }
-
-  }
+	    h1{
+	      font-size: 2.5rem;
+	      margin-bottom: 50px;
+	    }
+	    h3{
+	      font-size: 1.375rem;
+	      margin-bottom: 130px;
+	    }
+	    p{
+	      display: none;
+	    }
+	} 
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .main-header{
-    padding-top: 80px;
+  	padding-top: 80px;
     padding-bottom: 80px;
-    h1{
-      font-size: 3rem;
-      margin-bottom: 40px;
-    }
-    h3{
-      font-size: 1.5rem;
-      margin-bottom: 50px;
-    }
-    p{
-      font-size: 1.1875rem;
-    }
-
-  }
+	    h1{
+	      font-size: 3rem;
+	      margin-bottom: 40px;
+	    }
+	    h3{
+	      font-size: 1.5rem;
+	      margin-bottom: 50px;
+	    }
+	    p{
+	      font-size: 1.1875rem;
+	    }
+	}   
 }
 
 // Large devices (desktops, 992px and up)
@@ -86,18 +84,18 @@
   .main-header{
     padding-top: 100px;
     padding-bottom: 80px;
-    h1{
-      font-size: 3.5rem;
-      margin-bottom: 50px;
-    }
-    h3{
-      font-size: 1.875rem;
-      margin-bottom: 50px;
-    }
-    p{
-      font-size: 1.25rem;
-    }
+	    h1{
+	      font-size: 3.5rem;
+	      margin-bottom: 50px;
+	    }
+	    h3{
+	      font-size: 1.875rem;
+	      margin-bottom: 50px;
+	    }
+	    p{
+	      font-size: 1.25rem;
+	    }
 
-  }
+  	}
 
 }

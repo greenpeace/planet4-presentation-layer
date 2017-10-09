@@ -26,6 +26,10 @@
 @import "common/split-three-column";
 @import "common/_news-section";
 @import "common/_header";
+@import "common/_carousel";
+@import "common/_subscribe-block";
+@import "common/_subheader";
+@import "common/_covers";
 
 
 // Import pages and common responsiveness
@@ -42,7 +46,9 @@
 body {
   background: $body-bg;
   font-family: $roboto;
-
+  &.brown-bg {
+    background: $brown-bg;
+  }
   // /* Gradient */
   // TODO: Gradient would come at a later phase
   // background: #ebf1f6;

@@ -47,6 +47,12 @@
   }
 }
 
+.brown-bg {
+  #footer {
+  background: $header-footer-bg;
+  }
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
   #footer {

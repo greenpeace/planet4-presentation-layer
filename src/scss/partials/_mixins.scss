@@ -43,3 +43,25 @@ CSS3 GRADIENTS
     clear: both;
   }
 }
+
+@mixin background-before-opacity($color) {
+  &:before {
+    content: " ";
+    background: ($color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+  }
+}
+
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat, $size: cover) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+        size: $size;
+    }
+}

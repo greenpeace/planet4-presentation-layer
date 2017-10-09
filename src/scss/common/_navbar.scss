@@ -1,3 +1,4 @@
+
 .mobile-header-wrap {
   padding: 0 15px;
   .menu {
@@ -148,6 +149,13 @@
       }
     }
   }
+}
+.brown-bg {
+  #header {
+    &.top-navigation {
+      background: $header-footer-bg;
+    }    
+  }  
 }
 
 .fixedElement {
