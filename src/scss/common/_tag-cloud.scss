@@ -4,20 +4,20 @@
     <div class="tag-cloud-title">
       <h2>Tag Cloud</h2>
       <div class="tag-cloud-list">
-        <span class="tag-small">#Cows</span>
-        <span class="tag-big">#TagBig</span>
-        <span class="tag-small">#Cows</span>
-        <span class="tag-mid">#Bees</span>
-        <span class="tag-xsmall">#TagSmall</span>
-        <span class="tag-mid">#Bees</span>
-        <span class="tag-big">#GolderRice</span>
-        <span class="tag-small">#Cows</span>
-        <span class="tag-big">#TagBig</span>
-        <span class="tag-xsmall">#Cows</span>
-        <span class="tag-mid">#Bees</span>
-        <span class="tag-small">#TagSmall</span>
-        <span class="tag-mid">#Bees</span>
-        <span class="tag-big">#GolderRice</span>
+        <a href="#" class="tag-small">#Cows</a>
+        <a href="#" class="tag-big">#TagBig</a>
+        <a href="#" class="tag-small">#Cows</a>
+        <a href="#" class="tag-mid">#Bees</a>
+        <a href="#" class="tag-xsmall">#TagSmall</a>
+        <a href="#" class="tag-mid">#Bees</a>
+        <a href="#" class="tag-big">#GolderRice</a>
+        <a href="#" class="tag-small">#Cows</a>
+        <a href="#" class="tag-big">#TagBig</a>
+        <a href="#" class="tag-xsmall">#Cows</a>
+        <a href="#" class="tag-mid">#Bees</a>
+        <a href="#" class="tag-small">#TagSmall</a>
+        <a href="#" class="tag-mid">#Bees</a>
+        <a href="#" class="tag-big">#GolderRice</a>
       </div>
     </div>
   </div>
@@ -26,13 +26,15 @@
 
 .tag-cloud {
   padding-top: 104px;
-  color: brown;
   .tag-cloud-title {
     h2 {
+      color: #200721;
       font-size: 2rem;
     }
     .tag-cloud-list {
-      span {
+      a {
+        color: $brown-bg-tags-link;
+        text-decoration: none;
         margin-right: 5px;
         &.tag-xsmall {
           font-size: 0.75rem;

@@ -146,6 +146,24 @@ Stylesheet: Button Styles
     background: #3B5C74;
   }
 }
+.btn-transparent {
+  background: transparent;
+  color: #0A3351;
+  border: solid 1px #0A3351;
+  text-transform: uppercase;
+  font-weight: 500;
+  &:hover {
+    background: #0A3351;
+    color: $white;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &:active {
+    background: #3B5C74;
+  }
+}
 
 
 // Small devices (landscape phones, 576px and up)
