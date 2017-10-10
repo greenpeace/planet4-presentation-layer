@@ -1,104 +1,132 @@
 /*<!-- Covers Start -->*/
 
+/*  <div class="covers-block">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6">
+      <div class="cover-card card-one">
+        <span class="cover-card-tag">#HashTag</span>
+        <h2 class="cover-card-heading">Show you’re a food warrior</h2>
+        <button class="btn btn-primary btn-transparent btn-block cover-card-btn">TAKE ACTION</button>
+      </div>
+    </div> 
+    <div class="col-lg-4 col-md-6">
+      <div class="cover-card card-two dark-card-bg">
+        <span class="cover-card-tag">#HashTag</span>
+        <h2 class="cover-card-heading">Sumartran Tiger</h2>
+        <button class="btn btn-primary btn-transparent btn-block cover-card-btn">TAKE ACTION</button>
+      </div>
+    </div> 
+    <div class="col-lg-4 col-md-6">
+      <div class="cover-card card-three dark-card-bg">
+        <span class="cover-card-tag">#HashTag</span>
+        <h2 class="cover-card-heading">Tell Resolute you are watching</h2>
+        <button class="btn btn-primary btn-transparent btn-block cover-card-btn">TAKE ACTION</button>
+      </div>
+    </div> 
+  </div>
+</div>
+</div>*/
+
 /*  <!-- Covers End -->*/
 
 /* CSS for covers */
 
 .covers-block {
-  	.cover-card {
-  		min-height: 440px;
-  		padding: 32px 15px;
-		margin-bottom: 32px;
-		position: relative;
-		&:hover {
-    		@include background-before-opacity(#385924);
-    		.cover-card-btn {
-			  background: $primary-button;
-			  border-color: $primary-button;
-    		}
-		}
-		&.card-one {
-			@include background('images/covers-card-one.png');
-		}
-		&.card-two {
-			@include background('images/covers-card-two.png');
-		}
-		&.card-three {
-			@include background('images/covers-card-three.png');
-		}
-		.cover-card-btn {
-			background: transparent;
-			color: $white;
-			border-color: $white;
-			padding: 10px;
-			position: absolute;
-			bottom: 0;
-			margin: 15px 0;
-			width: 91.43%;
-		}
-		&.dark-card-bg {
-			color: $white;
-		}
-		h2 {
-			font-size: 1.75rem;
-			margin-bottom: 32px;
-		}
-		p {
-			font-size: 1.25rem;
-			line-height: 2rem;
-		}
-		.cover-card-tag {
-			color: $brown-bg-tags-text;
-			display: inline-block;
-			margin-bottom: 8px;
-		}
-	}
+ .cover-card {
+  min-height: 440px;
+  padding: 32px 15px;
+  margin-bottom: 32px;
+  position: relative;
+  &:hover {
+   @include background-before-opacity(#385924);
+   .cover-card-btn {
+   background: $primary-button;
+   border-color: $primary-button;
+   }
+  }
+  &.card-one {
+   @include background('images/covers-card-one.png');
+  }
+  &.card-two {
+   @include background('images/covers-card-two.png');
+  }
+  &.card-three {
+   @include background('images/covers-card-three.png');
+  }
+  .cover-card-btn {
+   background: transparent;
+   color: $white;
+   border-color: $white;
+   padding: 10px;
+   position: absolute;
+   bottom: 0;
+   margin: 15px 0;
+   width: 91.43%;
+  }
+  &.dark-card-bg {
+   color: $white;
+  }
+  h2 {
+   font-size: 1.75rem;
+   margin-bottom: 32px;
+  }
+  p {
+   font-size: 1.25rem;
+   line-height: 2rem;
+  }
+  .cover-card-tag {
+   color: $brown-bg-tags-text;
+   display: inline-block;
+   margin-bottom: 8px;
+  }
+}
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
-  	.covers-block {
-  		.cover-card {
-  			.cover-card-btn.btn-transparent {
-  				width: 89.66%;
-  			}
-  		}
-  	}	
+.covers-block {
+  .cover-card {
+   .cover-card-btn.btn-transparent {
+    width: 89.66%;
+   }
+ }
+}   
 }
 
 // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) {
-  	.covers-block {
-  		.cover-card {
-  			.cover-card-btn {
-  				width: 90.91%;
-  			}
-  		}
-  	}	
+@media (min-width: 768px) {
+.covers-block {
+ .cover-card {
+  .cover-card-btn {
+  width: 90.91%;
   }
+ }
+}   
+}
 
 // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) {
-  	.covers-block {
-  		.cover-card {
-  			.cover-card-btn{
-  				width: 89.66%;
-  			}
-  		}
-  	}	
+@media (min-width: 992px) {
+.covers-block {
+ .cover-card {
+  .cover-card-btn{
+   width: 89.66%;
   }
-  
+ }
+}   
+}
+
 // Extra large devices (large desktops, 1200px and up)
-  @media (min-width: 1200px) {
-  	.covers-block {
-  		.cover-card {
-  			min-height: 440px;
-  			padding: 32px 15px;
-  			margin-bottom: 32px;
-  			position: relative;
-  			.cover-card-btn{
-  				width: 91.43%;
-  			}
-  		}
-  	}
+@media (min-width: 1200px) {
+.covers-block {
+ .cover-card {
+  min-height: 440px;
+  padding: 32px 15px;
+  margin-bottom: 32px;
+  position: relative;
+  .cover-card-btn{
+   width: 91.43%;
   }
+ }
+}
+}

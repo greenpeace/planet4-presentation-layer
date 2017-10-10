@@ -370,6 +370,30 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .can-do-steps {
+    .step-info-wrap {
+      position: relative;
+      .step-info {
+        .steps-information {
+          min-height: 330px;
+          width: 50%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin-left: 140px;
+          margin-top: 20px;
+          border: 0;
+          padding-top: 0;
+          div {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: -200px;
+          }
+        }  
+      }
+    }
+  } 
   .hero-img-wrap {
     background-image: url("images/clouds_768.png");
     background-repeat: no-repeat;
@@ -467,7 +491,7 @@
         display: block;
       }
     }
-  }
+  } 
 }
 
 // Large devices (desktops, 992px and up)
@@ -523,6 +547,78 @@
       z-index: 500;
       transition-duration: .5s;
       background: $top-nav;
+    }
+  }
+  .can-do-steps {
+    .step-info-wrap {
+      cursor: pointer;
+      margin-top: 35px;
+      .step-number {
+        display: inline-block;
+        width: 126px;
+        height: 126px;
+        vertical-align: middle;
+        line-height: 128px;
+        text-align: center;
+        font-size: 70px;
+        background: $step-normal-bg;
+        border-radius: 50%;
+        color: $active;
+        font-size : 70px;
+        text-transform : uppercase;
+        font-weight: 500;
+      }
+      .step-info {
+        h5 {
+          font-size : 22px;
+          line-height : normal;
+          font-weight: 500;
+          color : $steps-deactive-text;
+          padding: 20px 0 0 0;
+        }
+        p {
+          color: $blue-text;
+          font-size: 14px;
+          opacity: 0.75;
+        }
+        .blue-button {
+          width: 100%;
+        }
+        .steps-information {
+          padding: 55px 0 0 15px;
+          border-left: solid 1px $light-border;
+          min-height: 495px;
+          float: left;
+          margin-top: -35px;
+          margin-left: 0;
+          width: auto;
+          position: relative;
+          div {
+            position: relative;
+          }
+        }
+      }
+      &:hover {
+        .step-number {
+          background: $step-number-hover;
+        }
+      }
+    }
+    .active {
+      .step-info-wrap {
+        .step-number {
+          background: $percentage-text;
+          color: $active;
+        }
+        .step-info {
+          h5 {
+            color : $darkb-blue-text;
+          }
+          p {
+            color: $blue-text;
+          }
+        }
+      }
     }
   }
 }
