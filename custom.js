@@ -1,3 +1,19 @@
+  $(document).ready(function() {
+    $(".steps-action").hide();
+    $(".step-info-wrap").click(function(){
+    if($(this).parent().hasClass('active')){
+      $(this).parent().removeClass('active');
+       $(this).find(".steps-action").slideUp();
+       $(".steps-action").slideUp();
+      }
+    else {
+      $('.col-lg-3').removeClass('active');
+      $(this).parent().addClass('active');
+       $(".steps-action").slideUp();
+       $(this).find(".steps-action").slideDown();
+      }
+  });
+});
   $(window).scroll(function() {
     if ($(this).scrollTop() > 130){  
         $('.fixed-element, .md-navigation').addClass("sticky");
@@ -8,6 +24,7 @@
   });
 // Footer JS goes in this
 // Header JS goes in this.
+
 // Returns width of browser viewport
 if($( window ).width() >= 768) {
   $(window).scroll(function() {
@@ -18,42 +35,66 @@ if($( window ).width() >= 768) {
         $('.fixed-element, .md-navigation').removeClass("sticky");
     }
   });
-  $(document).ready(function() {
-    $(".steps-action").hide();
-    $(".step-info-wrap").click(function(){
-      $('.step-info-wrap').parent('.col-md-3').removeClass('active');
-      $(this).parent().addClass('active');
-      
-      $(".steps-action").slideUp();
-      $(this).find(".steps-action").slideToggle();
-    })
+};
 
-    $(function(){
-      var $searchlink = $('#searchtoggl i');
-      var $searchbar  = $('#searchbar');
-      
-      $('.mobile-search-wrap .fa-search').on('click', function(e){
-        e.preventDefault();
-        
-        if($(this).attr('id') == 'searchtoggl') {
-          if(!$searchbar.is(":visible")) { 
-            // if invisible we switch the icon to appear collapsable
-            $searchlink.removeClass('fa-search').addClass('fa-search-minus');
-          } else {
-            // if visible we switch the icon to appear as a toggle
-            $searchlink.removeClass('fa-search-minus').addClass('fa-search');
+// Hide Header on on scroll down
+if($( window ).width() <= 768) {
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('.top-navigation').outerHeight();
+  $(window).scroll(function(event){
+      didScroll = true;
+  });
+  setInterval(function() {
+      if (didScroll) {
+          hasScrolled();
+          didScroll = false;
+      }
+  }, 250);
+  function hasScrolled() {
+      var st = $(this).scrollTop();
+      if(Math.abs(lastScrollTop - st) <= delta)
+          return;
+      if (st > lastScrollTop && st > navbarHeight){
+          $('.top-navigation').removeClass('nav-down').addClass('nav-up');
+      } else {
+          if(st + $(window).height() < $(document).height()) {
+              $('.top-navigation').removeClass('nav-up').addClass('nav-down');
           }
-          
-          $searchbar.slideToggle(300, function(){
-            // callback after search bar animation
-          });
-        }
-      });
-      
-      $('#searchform').submit(function(e){
-        e.preventDefault(); // stop form submission
-      });
+      }
+      lastScrollTop = st;
+  }
+  var $slider = $('.mobile-menus');
+  $(document).click(function() {
+    if($('.menu').hasClass('active')){
+    //Hide the menus if visible
+    $slider.animate({
+      left: parseInt($slider.css('left'),10) == 0 ?
+       -320 : 0
+    });
+    $('.menu').removeClass('active');
+    }
+    if($('.search-box').hasClass('active')){
+    //Hide the search if visible
+    $searchBox.slideToggle().toggleClass('active');;
+    }
+  });
+
+  $('.menu').click(function() {
+    event.stopPropagation();
+    $(this).toggleClass('active');
+    $slider.animate({
+      left: parseInt($slider.css('left'),10) == -320 ?
+       0 : -320
     });
   });
-}
 
+  var $searchBox = $('#search .search-box');
+  var $searchTrigger = $('#search-trigger');
+
+  $searchTrigger.on('click', function(e) {
+    event.stopPropagation();
+      $searchBox.slideToggle().toggleClass('active');
+  });
+};

@@ -57,7 +57,7 @@ CSS3 GRADIENTS
   }
 }
 
-@mixin background($imgpath,$position:0 0,$repeat: no-repeat, $size: cover) {
+@mixin background($imgpath,$position:center,$repeat: no-repeat, $size: cover) {
     background: {
         image: url($imgpath);
         position: $position;
