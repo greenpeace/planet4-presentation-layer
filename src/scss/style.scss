@@ -3,6 +3,7 @@
 @import "partials/typography";
 @import "partials/custom";
 @import "partials/mixins";
+@import "partials/font-icon";
 @import "modules/buttons";
 
 // Customising bootstrap variables
@@ -24,14 +25,15 @@
 @import "common/content-two-column";
 @import "common/split-box-out";
 @import "common/split-three-column";
-@import "common/_news-section";
-@import "common/_header";
-@import "common/_carousel";
-@import "common/_subscribe-block";
-@import "common/_subheader";
-@import "common/_covers";
-@import "common/_block-media";
-@import "common/_tag-cloud";
+@import "common/news-section";
+@import "common/header";
+@import "common/carousel";
+@import "common/subscribe-block";
+@import "common/subheader";
+@import "common/covers";
+@import "common/block-media";
+@import "common/tag-cloud";
+@import "common/four-column-content";
 
 
 // Import pages and common responsiveness

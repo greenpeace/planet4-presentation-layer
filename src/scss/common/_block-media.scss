@@ -1,6 +1,7 @@
 /*Block Media Start */
 
-/*<div class="container">
+/*
+<div class="container">
   <div class="block-media">
     
   </div>
@@ -9,34 +10,31 @@
 /*Block Media End*/
 
 .block-media {
-@include background('images/achievemets-infographics.png');
-height: 465px;
-margin: 104px 0 72px 0;
+  @include background('images/achievemets-infographics.png');
+  height: 465px;
+  margin: 104px 0 72px 0;
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
   .block-media {
-  @include background('images/xs-achievemets-infographics.png');
-  height: 228px;
-  margin: 48px 0 40px 0;
-}
+    height: 201px;
+    margin: 48px 0 40px 0;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .block-media {
-  @include background('images/md-achievemets-infographics.png');
-  height: 448px;
-  margin: 104px 0 72px 0;
+    height: 410px;
+    margin: 104px 0 72px 0;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .block-media {
-  @include background('images/achievemets-infographics.png');
-  height: 390px;
-  margin: 104px 0 72px 0;
-}
+    height: 390px;
+    margin: 104px 0 72px 0;
+  }
 } 
