@@ -64,15 +64,15 @@
       display: block;
      }
     }
-    &.card-one {
+    // &.card-one {
      @include background('images/covers-card-one.png');
-    }
-    &.card-two {
-     @include background('images/covers-card-two.png');
-    }
-    &.card-three {
-     @include background('images/covers-card-three.png');
-    }
+    // }
+    // &.card-two {
+    //  @include background('images/covers-card-two.png');
+    // }
+    // &.card-three {
+    //  @include background('images/covers-card-three.png');
+    // }
     .cover-card-btn {
      background: transparent;
      color: $white;

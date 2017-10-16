@@ -1,5 +1,5 @@
-/*  <!-- Subscriber Block Start -->*/
-/*  <div class="subscribe-block-wrap">
+  /*Happy Point Block Start*/
+  /*<div class="happy-point-block-wrap">
     <div class="container">
         <div class="col-md-6 offset-md-6 pt-20">
           <h2>Get action alerts in your inbox</h2>
@@ -8,24 +8,24 @@
         </div>
     </div>
   </div>*/
-/*  <!-- Subcriber Block End -->*/
+  /*Happy Point Block End*/
 
 // Mixins because extending is not possible inside media queries
-@mixin subscribe-block-background-image {
-  background: url("images/subscribe-block-bg.jpg") center center no-repeat;
+@mixin happy-point-block-background-image {
+  background: url("images/happy-point-block-bg.jpg") center center no-repeat;
   background-size: cover; 
   height: 620px;
   width: 100%;
   position: relative; 
 }
 
-.subscribe-block-wrap {
-    @include subscribe-block-background-image;
+.happy-point-block-wrap {
+    @include happy-point-block-background-image;
     @include background-before-opacity(#D6E6F2);
   }
 
 @media (max-width: 575px) {
-  .subscribe-block-wrap {
+  .happy-point-block-wrap {
     height: 470px;
     .pt-20 {
       padding-top: 100px;
@@ -50,7 +50,7 @@
 }
 
 @media (min-width: 768px) { 
-  .subscribe-block-wrap {
+  .happy-point-block-wrap {
     height: 470px;
     .pt-20 {
       padding-top: 100px;
@@ -74,7 +74,7 @@
 }
 
 @media (min-width: 992px) { 
-  .subscribe-block-wrap {
+  .happy-point-block-wrap {
     height: 470px;
     .pt-20 {
       padding-top: 100px;
@@ -97,8 +97,8 @@
   }
 }
 @media (min-width: 1200px) { 
-  .subscribe-block-wrap {
-    @include subscribe-block-background-image;
+  .happy-point-block-wrap {
+    @include happy-point-block-background-image;
     @include background-before-opacity(#D6E6F2);
     .pt-20 {
       padding-top: 300px;
