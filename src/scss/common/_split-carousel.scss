@@ -1,0 +1,274 @@
+/* 
+<!-- Split Carousel Block Start -->
+  <div class="container">
+    <div class="split-carousel-wrap">
+      <h1>Our ships in action</h1>
+      <div id="carousel-wrapper" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-wrapper" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-wrapper" data-slide-to="1"></li>
+          <li data-target="#carousel-wrapper" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <h5 class="carousal-item-credit">© Jeff Tan / Greenpeace</h5>
+            <img src="images/carousel-img1.jpg" alt="First slide">
+            <div class="carousel-caption">
+              <h3>Rainbow Warrior at the Great Barrier Reef.</h3>
+              <p>The ship was on the Great Barrier Reef as UNESCO passed a decision to keep the Reef on a watching brief due to the impacts of industrialisation, agricultural run off & climate change.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <h5 class="carousal-item-credit">© John Deo / Greenpeace</h5>
+            <img src="images/carousel-img.jpg"  alt="Second slide">
+            <div class="carousel-caption">
+              <h3>Caption</h3>
+              <p>Credit</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <h5 class="carousal-item-credit">© Person Name / Greenpeace</h5>
+           <img src="images/GP028BP.jpg"  alt="Third slide">
+            <div class="carousel-caption">
+              <h3>Caption</h3>
+              <p>Credit</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-wrapper" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true">
+          <i></i>
+          </span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-wrapper" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true">
+          <i></i>
+          </span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div> 
+  <!-- Split Carousel Block End -->
+*/
+.split-carousel-wrap {
+    padding-top: 100px;
+    overflow: hidden;
+      h1 {
+        font-size: 2.375rem;
+        color: #152431;
+        margin-bottom: 40px; 
+      }
+      .carousel-item {
+        .carousal-item-credit {
+          position: absolute;
+          right: 0;
+          top: 0;
+          color: $white;
+          font-size: 0.875rem;
+          margin: 15px;
+          font-weight: normal;
+        }
+      }
+      .carousel-item.active,
+      .carousel-item-next,
+      .carousel-item-prev {
+        display: block;
+        img{
+          width: 100%;
+        }
+      }
+      .carousel-caption {
+        text-align: left;
+        left: auto;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        padding: 30px 200px 30px 50px;
+        background : -moz-linear-gradient(66.31% -110.5% -120deg,rgba(10, 51, 81, 0) 0%,rgba(10, 51, 81, 1) 100%);
+        background : -webkit-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
+        background : -webkit-gradient(linear,66.31% -110.5% ,33.69% 210.5% ,color-stop(0,rgba(10, 51, 81, 0) ),color-stop(1,rgba(10, 51, 81, 1) ));
+        background : -o-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
+        background : -ms-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351', endColorstr='#0A3351' ,GradientType=0)";
+        background : linear-gradient(210deg, rgba(10, 51, 81, 0.2) 0%, rgba(10, 51, 81, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351',endColorstr='#0A3351' , GradientType=1);
+      }
+      .carousel-indicators {
+        right: 0;
+        bottom: 30px;
+        left: auto;
+        margin-right: 5%;
+        li {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: $white;
+          margin: 0 15px;
+          cursor: pointer;
+          &.active {
+            background: $carousel-active;
+          }
+        }
+      }
+      .carousel-control-next {
+        background: #000;
+        width: 30%;
+        margin-right: -12%;
+        -webkit-transform:skew(-200deg);
+        -moz-transform:skew(-200deg);
+        transform:skew(-200deg);
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          -webkit-transform:skew(200deg);
+          -moz-transform:skew(200deg);
+          transform:skew(200deg);
+          margin-right: 30%;
+        } 
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        opacity: 1;
+        height: 100%;
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          background-image: none;
+          border: solid 1px $white;
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          display: block;
+          text-align: center;
+          background-color: $carr-arrow;
+          opacity: 0.4;
+          i {
+            background: url("images/sprite.png");
+            height: 32px;
+            width: 22px;
+            vertical-align: middle;
+            display: inline-block;
+            margin: 6px 2px 0 0;
+          }
+        }
+        .carousel-control-next-icon {
+          i {
+            background-position: -21px 1px;
+          }
+        }
+      }
+  }
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+    .split-carousel-wrap {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      overflow: hidden;
+        h1 {
+          font-size:  2.125rem;
+          margin-left: 0px;
+          margin-bottom: 40px;
+        }
+        .carousel-indicators {
+          bottom: 195px;
+          right: 22%;
+        }
+        .carousel-item {
+          margin-bottom: 195px;
+        }
+        .carousel-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        padding: 20px 15px 20px;
+        color: #fff;
+        margin-bottom: -195px;
+        width: 100%;
+        height: 195px;
+          h3 {
+            font-size: 1.0625rem;
+          }
+          p {
+            font-size: 0.8125rem;
+          }
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+          top: -25%; 
+          background: none !important;
+        }
+      }  
+  }
+
+
+// Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    .split-carousel-wrap {
+      overflow: hidden;
+      padding-top: 70px;
+      padding-bottom: 70px;
+        h1 {
+          font-size:  2.125rem;
+          margin-left: 0px;
+          margin-bottom: 40px;
+        }
+        .carousel-indicators {
+          bottom: 10px;
+        }
+        .carousel-caption {
+          padding: 20px 30px;
+          h3 {
+            font-size: 1.0625rem;
+          }
+          p {
+            font-size: 0.8125rem;
+          }
+        } 
+      }  
+  }
+
+// Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .split-carousel-wrap {
+      overflow: hidden;
+        h1 {
+          font-size:  2.125rem;
+          margin-left: 0px;
+          margin-bottom: 40px;
+        }
+        .carousel-caption {
+          padding: 20px 30px;
+          h3 {
+            font-size: 1.0625rem;
+          }
+          p {
+            font-size: 0.8125rem;
+          }
+        } 
+      }  
+  }
+
+// Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    .split-carousel-wrap {
+      overflow: hidden;
+      padding-top: 104px;
+      padding-bottom: 104px;
+        h1 {
+          font-size:  2.125rem;
+          margin-left: 0px;
+          margin-bottom: 40px;
+        }
+        .carousel-caption {
+          padding: 20px 30px;
+          h3 {
+            font-size: 1.0625rem;
+          }
+          p {
+            font-size: 0.8125rem;
+          }
+        } 
+      }  
+  }

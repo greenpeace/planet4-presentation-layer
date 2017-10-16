@@ -1,3 +1,47 @@
+/*
+<!-- Split Two Coloumn Start -->
+<div class="split-two-column hidden-sm-down">
+  <div class="split-two-column-skewed-left">
+    <div class="part-left">
+      <h2>Detox</h2>
+      <h5>A trip for life, and for peace": that’s how Irving Stowe, one of the co-founders of Greenpeace, described the plan to sail a boat to the Arctic Ocean to stop the testing of a nuclear bomb. Irving didn’t know it then.</h5>
+      <a href="#">Learn More about this issue</a>
+    </div>
+    <div class="unskewed--left">
+    </div>
+  </div>
+  <div class="split-two-column-skewed-right">
+    <!-- working on  -->
+    <div class="part-right">
+      <a href="#">#DetoxOutdoor</a>
+      <h5 class="hidden-lg-down">A trip for life, and for peace": that’s how Irving Stowe, one of the co-founders of Greenpeace, described the plan to sail a boat to the Arctic Ocean to stop the testing of a nuclear bomb. </h5>
+      <button class="btn btn-small btn-medium btn-primary btn-block">SUPPORT THIS CAMPAIGN</button>
+    </div>
+    <div class="unskewed--right">
+    </div>
+  </div>
+</div>
+<div class="split-two-column-mobile-view hidden-sm-up">
+  <ul class="list-unstyled">
+    <li class="list-one-item">
+      <a href="#" class="">
+        Detox
+      </a>
+    </li>
+    <li class="list-one-item">
+      <a href="#" class="">
+        Detox
+      </a>
+    </li>
+    <li class="list-one-item">
+      <a href="#" class="">
+        Detox
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- Split Two Coloumn Start -->
+*/  
 .split-two-column {
   background: #000;
   color: #fff;
@@ -6,7 +50,6 @@
   display: flex;
   position: relative;
   overflow: hidden;
-  @include background-before-opacity(#000);
   .split-two-column-skewed-right,
   .split-two-column-skewed-left {
     top: 0;
@@ -79,6 +122,204 @@
   }
 }
 
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+  .split-two-column-mobile-view {
+    ul { 
+      margin-top: 105px;
+      li {
+        display: block;
+        width: 100%;
+        height: 105px;
+        margin-bottom: 2px;
+        position: relative;
+        &.list-one-item {
+          @include background('images/GP04JE6.jpg');
+        }
+        a {
+          font-size: 2.25rem;
+          display: block;
+          padding: 25px 15px;  
+          color: $white;
+          text-decoration: none;
+          &:after {
+            font-family: 'greenpeace-icon';
+            content: '\e901';    
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            color: #FFD204;
+            top: 0;
+            right: 0;
+            margin: 30px;
+          }
+        }
+      }
+    }  
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .split-two-column {
+    height: 350px;
+    .split-two-column-skewed-right,
+    .split-two-column-skewed-left {
+      .unskewed--left,
+      .unskewed--right {
+        height: 100%;
+        width: 135%;
+      }
+    }
+    .split-two-column-skewed-left {
+      .part-left{
+        right: 0;
+        margin: 5% 21%;
+        h2 {
+          font-size: 3rem;
+        }
+        h5 {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+        a {
+          font-size: 1rem;
+          text-decoration: none;
+          color: $yellow-button;
+        }
+      }
+    }
+    .split-two-column-skewed-right {
+      right: -25%;
+      .unskewed--right {
+        background-image: url(images/GP028BP.jpg);
+        right: 0;
+      }
+      .part-right {
+        left: 0;
+        margin-left: 12%;
+        margin-top: 20%;
+        h5 {
+          font-size: 1.25rem;
+          line-height: 2rem;
+        }
+        a {
+          color: $brown-bg-tags-text;
+          font-size: 1.75rem;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .split-two-column {
+    height: 450px;
+    .split-two-column-skewed-right,
+    .split-two-column-skewed-left {
+      .unskewed--left,
+      .unskewed--right {
+        height: 100%;
+        width: 135%;
+      }
+    }
+    .split-two-column-skewed-left {
+      .part-left{
+        right: 0;
+        margin: 10% 20% 0 0;
+        h2 {
+          font-size: 4rem;
+        }
+        h5 {
+          font-size: 1.25rem;
+          line-height: 2rem;
+        }
+        a {
+          font-size: 1.25rem;
+          text-decoration: none;
+          color: $yellow-button;
+        }
+      }
+    }
+    .split-two-column-skewed-right {
+      right: -25%;
+      .unskewed--right {
+        background-image: url(images/GP028BP.jpg);
+        right: 0;
+      }
+      .part-right {
+        left: 0;
+        margin-left: 12%;
+        margin-top: 20%;
+        h5 {
+          font-size: 1.25rem;
+          line-height: 2rem;
+        }
+        a {
+          color: $brown-bg-tags-text;
+          font-size: 1.75rem;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .split-two-column {
+    height: 600px;
+    .split-two-column-skewed-right,
+    .split-two-column-skewed-left {
+      .unskewed--left,
+      .unskewed--right {
+        height: 100%;
+        width: 135%;
+      }
+    }
+    .split-two-column-skewed-left {
+      .part-left{
+        right: 0;
+        margin: 12%;
+        h2 {
+          font-size: 4rem;
+        }
+        h5 {
+          font-size: 1.25rem;
+          line-height: 2rem;
+        }
+        a {
+          font-size: 1.25rem;
+          text-decoration: none;
+          color: $yellow-button;
+        }
+      }
+    }
+    .split-two-column-skewed-right {
+      right: -25%;
+      .unskewed--right {
+        background-image: url(images/GP028BP.jpg);
+        right: 0;
+      }
+      .part-right {
+        left: 0;
+        margin-left: 14%;
+        margin-top: 20%;
+        h5 {
+          font-size: 1.25rem;
+          line-height: 2rem;
+        }
+        a {
+          color: $brown-bg-tags-text;
+          font-size: 1.75rem;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
 
 
 
