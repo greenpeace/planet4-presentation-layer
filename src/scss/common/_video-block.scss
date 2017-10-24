@@ -1,0 +1,85 @@
+/*
+<!-- Video Block Start -->
+
+<div class="container">
+  <div class="video-block">
+    <h1>Whats at risk</h1>
+    <div class="video-section">
+      <iframe id="ytplayer" type="text/html" width="100%" height="100%"
+      src="https://www.youtube.com/embed/wNN-Yl-SBTM?autoplay=1"
+      frameborder="0" allowfullscreen> </iframe>
+    </div>  
+  </div>
+</div>
+
+<!-- Video Block End -->
+*/
+
+
+.video-block {
+  padding-top: 104px;
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 64px;
+  }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+  .video-block {
+    padding-top: 72px;
+    h1 {
+      font-size: 1.625rem;
+      margin-bottom: 40px;
+    }
+    .video-section {
+      height: 240px;
+    }
+  }
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .video-block {
+    padding-top: 104px;
+    h1 {
+      font-size: 2.125rem;
+      margin-bottom: 48px;
+    }
+    .video-section {
+      height: 400px;
+    }
+  }
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .video-block {
+    padding-top: 88px;
+    h1 {
+      font-size: 2.125rem;
+      margin-bottom: 48px;
+    }
+    .video-section {
+      height: 530px;
+    }
+  }
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .video-block {
+    padding-top: 104px;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 64px;
+    }
+    .video-section {
+      height: 630px;
+    }
+  }
+}
