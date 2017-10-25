@@ -1,0 +1,43 @@
+
+.campaign-thumbnail-block {
+  margin-top: 72px;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 48px;
+  }
+  .thumbnail-largeview-container {
+    .thumbnail-large {
+      min-height: 260px;
+      margin-bottom: 30px;
+      position: relative;
+      @include background-before-opacity(rgba(22,22,22,0.65));
+      &:hover {
+       &:before {
+        opacity:0.1;
+       }
+      }
+      &.largeview-one {
+        @include background('images/GP028BP.jpg');
+      }
+      &.largeview-two {
+        @include background('images/article-first.png');
+      }
+      &.largeview-three {
+        @include background('images/article-third.png');
+      }
+      a {
+        text-align: center;
+        font-size: 1.25rem;
+        color: $yellow-button;
+        padding-top: 200px;
+        display: block;
+        font-weight: bold;
+        position: relative;
+        z-index: 2;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
