@@ -192,6 +192,12 @@
 
   .active {
     .step-info-wrap {
+      .steps-action {
+        .secondary-button {
+          background-color: #0A3351;
+          color: #fff;
+        }
+      }
       .step-number {
         background: $percentage-text;
         color: $active;
