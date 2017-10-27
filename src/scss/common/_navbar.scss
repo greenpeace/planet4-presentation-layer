@@ -349,19 +349,6 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px) {
-  #header.top-navigation {
-    position: fixed;
-    .navbar-nav {
-      li {
-        width: auto;
-      }
-    }
-  }
-  .sub-navigation-md {
-    position: fixed;
-    top: 64px;
-    z-index: 500;
-  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
