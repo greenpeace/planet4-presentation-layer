@@ -1,6 +1,6 @@
 
 .mobile-header-wrap {
-  padding: 0 15px;
+  padding: 10px 15px;
   .menu {
     width: 80px;
     height: 35px;
@@ -57,6 +57,7 @@
   width: 28px;
   height: 28px;
   float: left;
+  margin: 6px 10px 0 0;
 }
 .styled-select {
   overflow: hidden;
@@ -83,7 +84,7 @@
 #header {
   &.top-navigation {
     background: $top-nav;
-    padding: 11px 0;
+    padding: 0;
     width: 100%;
     z-index: 500;
     opacity: 0.8;
@@ -100,15 +101,29 @@
         text-align: center;
         position: relative;
         line-height: 22px;
+        padding: 11px 0;
+        &.big-screen-nav-link {
+          &:hover {
+            transition: 0.5s;
+            border-bottom: 3px solid #fff;
+            a {
+              color: $white;
+              text-decoration: none;
+            }
+          }
+          &.active {
+            transition: 0.5s;
+            border-bottom: 3px solid $blue-bg-anchor;
+            a {
+              color: $blue-bg-anchor;
+              text-decoration: none;
+            }
+          }
+        }   
         a {
           color: $white;
           font-size: 16px;
-          display: inline-block;
-          &:hover {
-            transition: 0.5s;
-            color: $blue-bg-anchor;
-            text-decoration: none;
-          }  
+          display: inline-block; 
         }
         .btn-secondary {
           font-size: 12px;
@@ -142,7 +157,7 @@
             background: none;
             border: none;
             position: absolute;
-            top: 8px;
+            top: 18px;
             right: 15px;
           }
           .form-control {
@@ -150,10 +165,117 @@
             padding: 10px;
           }
         }
+        &.active-li {
+          background-color: #03484f;
+          .country-select-dropdown {
+            &:before {
+              -ms-transform: rotate(180deg); /* IE 9 */
+              -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+              transform: rotate(180deg);
+            }
+          }  
+        }
+      }
+      .country-select-dropdown {
+        position: relative;
+        &:before {
+          content: "";
+          width:18px;
+          height: 15px;
+          background: url('images/down-arrow-green.png');
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin-top: 12px;
+          margin-right: 12px;
+        }
+        .selected-option {
+          font-size: 0.9rem;
+          color: $white;
+          line-height: 40px;
+          display: block;
+          position: relative;
+          padding-right: 24px;
+        }
+      }
+      .country-select-box {
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 920px;
+        z-index: 1;
+        margin-top: 13px;
+        background: $blue-bg;
+        padding: 20px 20px 20px 70px;
+        margin-left: -100%;
+        .country-selection-option {
+          height: 350px;
+          overflow-y: scroll;
+          &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: $blue-bg;
+          }
+          &::-webkit-scrollbar {
+            width: 4px;
+          }
+          &::-webkit-scrollbar-thumb {
+            background-color: #4d8b42;
+          }
+          .country-option-box {
+            color: $white;
+            text-align: left;
+            font-size: 0.9rem;
+            line-height: 24px;
+            width: 100%;
+            .default-lang {
+              margin-bottom: 20px;
+              display: inline-block;
+              padding-left: 20px;
+            }
+            .country-list {
+              display: -ms-flexbox;
+              -ms-flex-direction: column;
+              -ms-flex-wrap: wrap;
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+              /*NEED TO INCRESE THESE HEIGHT ACCORDING TO RECORDS*/
+              height: 2500px; 
+              ul {
+                width: 33.33%;
+                margin-bottom: 20px;
+                padding-left: 20px;
+                display: inline-block;
+                vertical-align: top;
+                li {
+                  width: 100%;
+                  text-align: left;
+                  cursor: pointer;
+                  line-height: 24px;
+                  padding: 0;
+                  &.active {
+                    color: #a4df23;
+                  }
+                  &.list-title {
+                    position: relative;
+                    .country-alphabet {
+                      position: absolute;
+                      left: 0;
+                      top: 0;
+                      z-index: 1;
+                      margin-left: -20px;
+                    }
+                  }
+                }
+              }  
+            }
+          }
+        }
       }
     }
   }
 }
+
 .brown-bg {
   #header {
     &.top-navigation {
@@ -186,6 +308,22 @@
         top: -60px;
       }
       .navbar {
+        .country-select-box {
+          width: 300px;
+          padding: 10px 20px 0 35px;
+          margin-left: 0;
+          .country-selection-option {
+            height: 400px;
+            .country-option-box {            
+              .country-list {
+                height: auto;
+                ul {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
         li {
           text-align: left;
           border-bottom: solid 1px $border-color;
@@ -204,6 +342,9 @@
           }
           .styled-select {
             margin-top: 0;
+          }
+          &.active-li {
+            background-color: transparent;
           }
         }
       }
@@ -283,6 +424,22 @@
     }
     &.top-navigation {
       .mobile-menus {
+        .country-select-box {
+          width: 300px;
+          padding: 10px 20px 0 35px;
+          margin-left: 0;
+          .country-selection-option {
+            height: 400px;
+            .country-option-box {            
+              .country-list {
+                height: auto;
+                ul {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
         li {
           text-align: left;
           border-bottom: solid 1px $border-color;
@@ -301,6 +458,9 @@
           }
           .styled-select {
             margin-top: 0;
+          }
+          &.active-li {
+            background-color: transparent;
           }
         }
       }
@@ -349,6 +509,24 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px) {
+  #header.top-navigation {
+    .navbar {
+      li {
+        width: 29%;
+        &.big-screen-nav-link {
+          margin-top: 12px;
+        }
+        .btn-secondary {
+          height: 42px;
+          line-height: 42px;
+          margin: 0;
+        }
+      }
+    }
+    .navbar-nav {
+      width: 100%;
+    }
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -358,7 +536,7 @@
     .navbar {
       li {
         &.big-screen-nav-link {
-          margin-top: 8px;
+          margin-top: 12px;
         }
         .btn-secondary {
           height: 42px;

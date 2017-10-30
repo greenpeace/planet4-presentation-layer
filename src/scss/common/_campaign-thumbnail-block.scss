@@ -1,3 +1,33 @@
+/*
+<!-- Campaign Thumbnail Block Start -->
+<div class="container">
+  <div class="campaign-thumbnail-block">
+    <h2>Our Campaigns</h2>
+    <div class="row thumbnail-largeview-container">
+      <div class="col-md-4">
+        <div class="thumbnail-large">
+          <img src="images/GP028BP.jpg">
+          <a href="#">#DetoxOutdoor</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail-large">
+          <img src="images/article-first.png">
+          <a href="#">#SaveMahan</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail-large">
+          <img src="images/article-third.png">
+          <a href="#">#KeepItInTheGround</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+  <!-- Campaign Thumbnail Block End -->
+*/
+
 
 .campaign-thumbnail-block {
   margin-top: 72px;
@@ -7,7 +37,6 @@
   }
   .thumbnail-largeview-container {
     .thumbnail-large {
-      min-height: 260px;
       margin-bottom: 30px;
       position: relative;
       @include background-before-opacity(rgba(22,22,22,0.65));
@@ -16,24 +45,23 @@
         opacity:0.1;
        }
       }
-      &.largeview-one {
-        @include background('images/GP028BP.jpg');
-      }
-      &.largeview-two {
-        @include background('images/article-first.png');
-      }
-      &.largeview-three {
-        @include background('images/article-third.png');
+      img {
+        width: 100%;
+        min-height: 260px;
+        object-fit: cover;
       }
       a {
         text-align: center;
         font-size: 1.25rem;
         color: $yellow-button;
-        padding-top: 200px;
-        display: block;
         font-weight: bold;
-        position: relative;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
         z-index: 2;
+        margin-bottom: 40px;
+        text-shadow: 1px 1px #000;
         &:hover {
           text-decoration: none;
         }
