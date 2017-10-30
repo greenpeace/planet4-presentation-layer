@@ -229,6 +229,14 @@
     }
   }
  }
+ .can-do-steps-mobile {
+    .card {
+      background: none;
+      .card-header {
+        background: $card-header-bg;
+      } 
+    }
+ }
 
  
  

@@ -54,15 +54,12 @@
        -o-transform: skew(10deg); 
      } 
      .first-column { 
-       @include background('images/splitone.jpg',left center); 
        left: -40px; 
      } 
      .second-column { 
-       @include background('images/splittwo.jpg',left center); 
        left: 35px; 
      } 
      .third-column { 
-       @include background('images/splitthree.jpg',left center); 
        left: 35px; 
        right: -40px; 
      } 
