@@ -7,25 +7,32 @@
           <p>
             We live in a world where people are making the conscious decision to eat more delicious, creative plant-rich dishes and better meat.  Governments are convinced that more plants and better meat is the new normal and make sure this new standard is translated into policies. The handful of corporations that are driving forward the current broken meat system have changed their practices and policies to create a sustainable future for our agricultural and livestock systems.
           </p>
-        </div> 
-        <div class="three-column-images row"> 
-          <div class="col"> 
-            <div class="first-column split-image"></div> 
-          </div> 
-          <div class="col"> 
-            <div class="second-column split-image"></div> 
-          </div> 
-          <div class="col"> 
-            <div class="third-column split-image"></div> 
-          </div> 
-        </div> 
-      </div> 
-    </div>       
-  </div> 
+        </div>
+        <div class="three-column-images row">
+          <div class="col">
+            <div class="first-column split-image">
+              <img src="images/splitone.jpg">
+            </div>
+          </div>
+          <div class="col">
+            <div class="second-column split-image">
+              <img src="images/splittwo.jpg">
+            </div>
+          </div>
+          <div class="col">
+            <div class="third-column split-image">
+              <img src="images/splitthree.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>      
+  </div>
   <!-- Split Three Column End--> 
   */
   
 .split-three-column { 
+  margin-top: 104px;
   .three-column-box { 
     .three-column-info { 
        h2 { 
@@ -40,28 +47,155 @@
      } 
      .three-column-images { 
        overflow: hidden; 
-       min-height: 400px; 
+       min-height: 430px; 
+       position: relative;
      } 
      .split-image { 
-       border: 1px solid white; 
-       position: absolute; 
-       top: -30px; 
-       left: -75px; 
-       right: -30px; 
-       bottom: -30px; 
-       -webkit-transform: skew(10deg); 
-       -moz-transform: skew(10deg); 
-       -o-transform: skew(10deg); 
+        position: absolute;
      } 
-     .first-column { 
-       left: -40px; 
+     .first-column {
+      img {
+      }    
      } 
      .second-column { 
-       left: 35px; 
+        -webkit-transform: skew(25deg); 
+        -moz-transform: skew(25deg); 
+        -o-transform: skew(25deg); 
+        border-left: 10px solid $brown-bg; 
+        border-right: 10px solid $brown-bg;
+        z-index: 2;
+        width: 100%;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+      img {
+        -webkit-transform: skew(-25deg); 
+        -moz-transform: skew(-25deg); 
+        -o-transform: skew(-25deg); 
+        margin-left: -150px;
+      }   
      } 
      .third-column { 
-       left: 35px; 
-       right: -40px; 
+      right: -165px;
+      img {
+      }   
      } 
    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .split-three-column { 
+    .three-column-box { 
+      .three-column-info { 
+         h2 { 
+           font-size: 2.5rem; 
+           margin-bottom: 64px; 
+         } 
+         p { 
+           font-size: 1.375rem; 
+           line-height: 2.25rem; 
+           margin-bottom: 40px; 
+         } 
+       } 
+       .three-column-images { 
+         overflow: hidden; 
+         min-height: 330px; 
+         position: relative;
+       } 
+       .split-image { 
+          position: absolute;
+       } 
+       .first-column {
+          margin-left: -80px;
+          margin-right: -130px;
+        img {
+        }    
+       } 
+       .second-column { 
+          -webkit-transform: skew(25deg); 
+          -moz-transform: skew(25deg); 
+          -o-transform: skew(25deg); 
+          border-left: 10px solid $brown-bg; 
+          border-right: 10px solid $brown-bg;
+          z-index: 2;
+          width: 100%;
+          left: 0;
+          top: 0;
+          overflow: hidden;
+        img {
+          -webkit-transform: skew(-25deg); 
+          -moz-transform: skew(-25deg); 
+          -o-transform: skew(-25deg); 
+          margin-left: -150px;
+        }   
+       } 
+       .third-column { 
+        right: -165px;
+        img {
+        }   
+       } 
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .split-three-column { 
+    .three-column-box { 
+      .three-column-info { 
+         h2 { 
+           font-size: 2.5rem; 
+           margin-bottom: 64px; 
+         } 
+         p { 
+           font-size: 1.375rem; 
+           line-height: 2.25rem; 
+           margin-bottom: 40px; 
+         } 
+       } 
+       .three-column-images { 
+         overflow: hidden; 
+         min-height: 430px; 
+         position: relative;
+       } 
+       .split-image { 
+          position: absolute;
+       } 
+       .first-column {
+        img {
+        }    
+       } 
+       .second-column { 
+          -webkit-transform: skew(25deg); 
+          -moz-transform: skew(25deg); 
+          -o-transform: skew(25deg); 
+          border-left: 10px solid $brown-bg; 
+          border-right: 10px solid $brown-bg;
+          z-index: 2;
+          width: 100%;
+          left: 0;
+          top: 0;
+          overflow: hidden;
+        img {
+          -webkit-transform: skew(-25deg); 
+          -moz-transform: skew(-25deg); 
+          -o-transform: skew(-25deg); 
+          margin-left: -150px;
+        }   
+       } 
+       .third-column { 
+        right: -165px;
+        img {
+        }   
+       } 
+    }
+  }
 }
