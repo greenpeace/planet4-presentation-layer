@@ -1,0 +1,190 @@
+/*
+<!-- Author Block Start -->
+<div class="container clearfix">
+  <div class="author-block">
+    <div class="skewbox author-info">
+      <div class="author-info-inner">
+        <h2 class="author-info-heading">ABOUT THE AUTHOR</h2>
+        <h5 class="author-name">Sarah King</h5>
+        <p class="author-info-brief">
+          Senior Oceans Strategist at Greenpeace Canada, Sarah is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        </p>
+      </div>
+    </div>
+    <div class="skewbox author-img">
+      <img class="author-pic" src="images/author-image.jpg">
+    </div>
+  </div>
+</div>
+<!-- Author Block End -->
+*/
+
+.author-block {
+  margin-top: 104px;
+  width: 80%;
+  float: left;
+  display: block;
+  overflow: hidden;
+  .skewbox {
+    width: 50%;
+    height: 300px;
+    float: left;
+    &.author-info {
+      background: #E2E5E8;
+      z-index:1;
+      padding: 40px 0 0 32px;
+      @include skew($bg: #E2E5E8, $deg: 25deg, $right: -70px, $width: 155px);
+      .author-info-inner {
+        h2 {
+          font-size: 1.25rem;
+          font-weight: bold;
+          margin-bottom: 16px;
+        }
+        h5 {
+          font-size: 1.03125rem;
+          font-weight: 500;
+          color: #E51538;
+          margin-bottom: 40px;
+        }
+        p {
+          font-size: 1.0625rem;
+        }
+      }
+
+    }
+    &.author-img {
+      img {
+        height: 300px;
+        width: auto;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+  .author-block {
+    margin-top: 56px;
+    width: 100%;
+    float: left;
+    display: block;
+    .skewbox {
+      width: 100%;
+      height: 300px;
+      float: left;
+      &.author-info {
+        background: #E2E5E8;
+        z-index:1;
+        padding: 20px;
+        @include skew($bg: #E2E5E8, $deg: 0deg, $right: 0px, $width: 0px);
+        .author-info-inner {
+          h2 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+          }
+          h5 {
+            font-size: 1.03125rem;
+            margin-bottom: 40px;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+
+      }
+      &.author-img {
+        img {
+          height: 266px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .author-block {
+    margin-top: 56px;
+    width: 100%;
+    float: left;
+    display: block;
+    .skewbox {
+      width: 50%;
+      height: 300px;
+      float: left;
+      &.author-info {
+        background: #E2E5E8;
+        z-index:1;
+        padding: 40px 0 0 32px;
+        @include skew($bg: #E2E5E8, $deg: 25deg, $right: -70px, $width: 155px);
+        .author-info-inner {
+          h2 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+          }
+          h5 {
+            font-size: 1.03125rem;
+            margin-bottom: 40px;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+
+      }
+      &.author-img {
+        img {
+          height: 300px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .author-block {
+    margin-top: 56px;
+    width: 80%;
+    float: left;
+    display: block;
+    .skewbox {
+      width: 50%;
+      height: 300px;
+      float: left;
+      &.author-info {
+        background: #E2E5E8;
+        z-index:1;
+        padding: 40px 0 0 32px;
+        @include skew($bg: #E2E5E8, $deg: 25deg, $right: -70px, $width: 155px);
+        .author-info-inner {
+          h2 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+          }
+          h5 {
+            font-size: 1.03125rem;
+            margin-bottom: 40px;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+
+      }
+      &.author-img {
+        img {
+          height: 300px;
+          width: auto;
+        }
+      }
+    }
+  }
+} 
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
