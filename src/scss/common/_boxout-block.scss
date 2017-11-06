@@ -1,0 +1,168 @@
+/*<!-- boxout-block Start -->*/
+
+/*  <!-- boxout-block End -->*/
+
+/* CSS for covers */
+
+.boxout-block {
+  width: 400px;
+  .boxout-block-card {
+    min-height: 500px;
+    padding: 32px 15px;
+    margin-bottom: 32px;
+    position: relative;
+    // &.card-one {
+     @include background('images/boxout-block.jpg', top);
+    // }
+    // &.card-two {
+    //  @include background('images/covers-card-two.png');
+    // }
+    // &.card-three {
+    //  @include background('images/covers-card-three.png');
+    // }
+    .boxout-block-card-btn {
+     background: $primary-button;
+     border-color: $primary-button;
+     color: $white;
+     padding: 10px;
+    }
+    h2 {
+     font-size: rem(36);
+     margin-top: 128px;
+     margin-bottom: 32px;
+     position: relative;
+     color: $white;
+    }
+    p {
+     font-size: rem(22);
+     line-height: 2rem;
+     color: $white;
+     position: relative;
+     margin-bottom: 60px;
+    }
+    .boxout-block-card-tag {
+      color: $white;
+      display: inline-block;
+      margin-bottom: 8px;
+      position: relative;
+      text-decoration: none;
+      font-size:rem(20);
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+  .boxout-block {
+    width: 100%;
+    .boxout-block-card {
+      min-height: 500px;
+      padding: 32px 15px;
+      margin-bottom: 32px;
+      .boxout-block-card-btn {
+       padding: 10px;
+      }
+      h2 {
+       font-size: rem(28);
+       margin-top: 128px;
+       margin-bottom: 32px;
+      }
+      p {
+       font-size: rem(20);
+       line-height: 2rem;
+       margin-bottom: 60px;
+      }
+      .boxout-block-card-tag {
+        margin-bottom: 8px;
+        font-size:rem(16);
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .boxout-block {
+    width: 400px;
+    .boxout-block-card {
+      min-height: 500px;
+      padding: 32px 15px;
+      margin-bottom: 32px;
+      .boxout-block-card-btn {
+       padding: 10px;
+      }
+      h2 {
+       font-size: rem(36);
+       margin-top: 128px;
+       margin-bottom: 32px;
+      }
+      p {
+       font-size: rem(22);
+       line-height: 2rem;
+       margin-bottom: 60px;
+      }
+      .boxout-block-card-tag {
+        margin-bottom: 8px;
+        font-size:rem(20);
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .boxout-block {
+    width: 400px;
+    .boxout-block-card {
+      min-height: 500px;
+      padding: 32px 15px;
+      margin-bottom: 32px;
+      .boxout-block-card-btn {
+       padding: 10px;
+      }
+      h2 {
+       font-size: rem(36);
+       margin-top: 128px;
+       margin-bottom: 32px;
+      }
+      p {
+       font-size: rem(22);
+       line-height: 2rem;
+       margin-bottom: 60px;
+      }
+      .boxout-block-card-tag {
+        margin-bottom: 8px;
+        font-size:rem(20);
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .boxout-block {
+    width: 400px;
+    .boxout-block-card {
+      min-height: 500px;
+      padding: 32px 15px;
+      margin-bottom: 32px;
+      .boxout-block-card-btn {
+       padding: 10px;
+      }
+      h2 {
+       font-size: rem(36);
+       margin-top: 128px;
+       margin-bottom: 32px;
+      }
+      p {
+       font-size: rem(22);
+       line-height: 2rem;
+       margin-bottom: 60px;
+      }
+      .boxout-block-card-tag {
+        margin-bottom: 8px;
+        font-size:rem(20);
+      }
+    }
+  }
+}
