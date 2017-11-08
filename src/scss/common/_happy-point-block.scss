@@ -159,14 +159,13 @@
   .happy-point-block-wrap {
     @include happy-point-block-background-image;
     @include background-before-opacity(#D6E6F2);
-    .pt-20 {
-      padding-top: 350px;
-    }
     h2 {
       font-size: 2.25rem;
+      margin-bottom: rem(35);
     }
     h5 {
       font-size: 1.125rem;
+      margin-bottom: rem(40);
     }
     .subscriber-btn {
       margin-top: 0px;
