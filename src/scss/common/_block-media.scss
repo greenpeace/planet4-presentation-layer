@@ -10,7 +10,7 @@
 /*Block Media End*/
 
 .block-media {
-  @include background('images/achievemets-infographics.png', center, no-repeat, contain);
+  @include background('images/achievemets-infographics.png');
   height: 465px;
   margin: 104px 0 72px 0;
 }
