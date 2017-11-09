@@ -40,6 +40,7 @@ h1, h2 {
 }
 
 h1 {
+  letter-spacing: -1.5px;
   @media #{ $mq-xl-up } {
     font-size: rem(66);
     line-height: rem(85.8);
@@ -51,6 +52,6 @@ h2 {
   @media #{ $mq-xl-up } {
     font-size: rem(38);
     line-height: rem(49.4);
-    margin-bottom: rem(40);
+    margin-bottom: rem(24);
   }
 }

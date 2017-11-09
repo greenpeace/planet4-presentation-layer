@@ -36,12 +36,11 @@
     }
   }
   .top-tags-wrap {
-    span {
-      color: $percentage-text;
-      font-size: 15px;
-    }
+    font-size: rem(20);
+    line-height: rem(26);
+    color: $blue-heading;
+
     .category-topic-title {
-      font-size: 1rem;
       font-weight: bold;
       margin-right: 5px;
     }
@@ -378,12 +377,6 @@
           margin-top: 20px;
           border: 0;
           padding-top: 0;
-          div {
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin-right: -200px;
-          }
         }  
       }
     }
@@ -586,9 +579,6 @@
           margin-left: 0;
           width: auto;
           position: relative;
-          div {
-            position: relative;
-          }
         }
       }
       &:hover {
@@ -616,12 +606,16 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .page-content-wrap {
-    padding-top: 186px;
-    .about-info p {
-      font-size: rem(22);
-      line-height: rem(38);
-      color: $dark-para-text;
+    padding-top: 200px;
+    .about-info {
+      margin-bottom: rem(72);
+      p {
+        font-size: rem(22);
+        line-height: rem(38);
+        color: $dark-para-text;
+      }
     }
+
   }
 
   .what-you-can-do-wrapper  {
@@ -661,9 +655,9 @@
         }
 
         h5 {
-          font-size: rem(38);
-          line-height: rem(30);
-          margin-bottom: rem(24);
+          font-size: rem(24);
+          line-height: rem(31.2);
+          margin-bottom: rem(7);
         }
       }
     }
