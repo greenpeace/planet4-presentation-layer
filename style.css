@@ -142,7 +142,7 @@ Stylesheet: Button Styles
 /* This should change later to include just  the components that are needed. */
 .mobile-header-wrap { padding: 10px 15px; }
 
-.mobile-header-wrap .menu { width: 80px; height: 35px; display: inline-block; line-height: 35px; background: rgba(0, 0, 0, 0.5); text-align: center; color: #ffffff; border-radius: 5px; }
+.mobile-header-wrap .menu { width: 80px; height: 35px; display: inline-block; line-height: 35px; background: rgba(0, 0, 0, 0.1); text-align: center; color: #ffffff; border-radius: 5px; }
 
 .mobile-header-wrap .menu .fa.fa-times { display: none; }
 
