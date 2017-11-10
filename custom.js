@@ -131,6 +131,10 @@ $(function() {
      $('#search-type button').removeClass("active");
     $(this).addClass("active");
     });
+
+  $('.btn-filter').click(function() {
+  	$('#filtermodal').modal('show');
+    });
 });
 // First Index
 currentIndex = $('.carousel-item.active').next('.carousel-item').find('img').attr('src');
