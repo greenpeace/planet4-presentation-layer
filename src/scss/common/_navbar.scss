@@ -253,8 +253,15 @@
                   cursor: pointer;
                   line-height: 24px;
                   padding: 0;
+                  a {
+                    font-size: rem(14);
+                    text-decoration: none;
+                  }
                   &.active {
                     color: #a4df23;
+                    a {
+                      color: #a4df23;
+                    }
                   }
                   &.list-title {
                     position: relative;

@@ -126,6 +126,12 @@ if($( window ).width() <= 768) {
       $searchBox.slideToggle().toggleClass('active');
   });
 };
+$(function() {
+  $('#search-type button').click(function() {
+     $('#search-type button').removeClass("active");
+    $(this).addClass("active");
+    });
+});
 // First Index
 currentIndex = $('.carousel-item.active').next('.carousel-item').find('img').attr('src');
 

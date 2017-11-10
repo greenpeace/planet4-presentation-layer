@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Searh Without Result :: Greenpeace 2017</title>
+  <title>Search Without Result :: Greenpeace 2017</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -751,67 +751,72 @@
             <li>Search our archive. You'll be redirected to the archive site.</li>
           </ul>
         </div>
-        <div class="search-bar">
-          <form>
-            <div class="row">
-              <div class="col-md-5">
-                <input type="search" class="form-control mb-2 mb-sm-0" id="" placeholder="">
-              </div>
-              <div class="col-md-4">
-                <div class="btn-group btn-block" role="group" aria-label="">
-                  <button type="button" class="btn btn-secondary btn-medium active">This Site</button>
-                  <button type="button" class="btn btn-secondary btn-medium">Archive</button>
+        <div class="col-md-12">
+          <div class="search-bar">
+            <form>
+              <div class="row">
+                <div class="col-md-5">
+                  <input type="search" class="form-control mb-2 mb-sm-0" id="" placeholder="">
+                </div>
+                <div class="col-md-4">
+                  <div class="btn-group btn-block" role="group" aria-label="" id="search-type">
+                    <button type="button" class="btn btn-secondary btn-medium active">This Site</button>
+                    <button type="button" class="btn btn-secondary btn-medium">Archive</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <button type="submit" class="btn btn-primary btn-medium search-btn btn-block"><i class="fa icon-search"></i> Search</button>
                 </div>
               </div>
-              <div class="col-md-3">
-                <button type="submit" class="btn btn-primary btn-medium search-btn btn-block"><i class="fa fa-search fa-lg"></i> Search</button>
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>  
         </div>  
       </div>
       <div class="search-filter-results row clearfix">
         <div class="col-lg-4">
-          <div class="filter-sidebar hidden-md-down">
-            <div id="filter-sidebar-options" data-children=".filteritem">
+          <div class="filter-sidebar">
+            <div class="filter-button hidden-lg-up">
+              <button class="btn btn-filter disabled"><i class="icon-filter"></i> Filters</button>
+            </div>
+            <div id="filter-sidebar-options" class="hidden-md-down">
             <h4>Refine your search</h4>
               <div class="filteritem">
-                <a data-toggle="collapse" data-parent="#filter-sidebar-options" href="#item-issue" aria-expanded="true">
+                <a data-toggle="collapse" href="#item-issue" aria-expanded="true">
                 ISSUE <span></span>
                 </a>
                 <div id="item-issue" class="collapse show" role="tabpanel">
                   <ul class="list-unstyled">
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Climate & Energy (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Detox (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Forests (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Food (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Oceans (0)</span>
                       </label>
@@ -820,42 +825,42 @@
                 </div>
               </div>
               <div class="filteritem">
-                <a data-toggle="collapse" data-parent="#filter-sidebar-options" href="#item-campaign" aria-expanded="false" class="collapsed">
+                <a data-toggle="collapse" href="#item-campaign" aria-expanded="false" class="collapsed">
                 campaign <span></span>
                 </a>
                 <div id="item-campaign" class="collapse" role="tabpanel">
                   <ul class="list-unstyled">
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
@@ -864,42 +869,42 @@
                 </div>
               </div>
               <div class="filteritem">
-                <a data-toggle="collapse" data-parent="#filter-sidebar-options" href="#item-category" aria-expanded="false" class="collapsed">
+                <a data-toggle="collapse" href="#item-category" aria-expanded="false" class="collapsed">
                 CATEGORY <span></span>
                 </a>
                 <div id="item-category" class="collapse" role="tabpanel">
                   <ul class="list-unstyled">
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
@@ -908,42 +913,42 @@
                 </div>
               </div>
               <div class="filteritem">
-                <a data-toggle="collapse" data-parent="#filter-sidebar-options" href="#item-content" aria-expanded="false" class="collapsed">
+                <a data-toggle="collapse" href="#item-content" aria-expanded="false" class="collapsed">
                 CONTENT TYPE <span></span>
                 </a>
                 <div id="item-content" class="collapse" role="tabpanel">
                   <ul class="list-unstyled">
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
                     </li>
                     <li>
                       <label class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input">
+                        <input type="checkbox" class="custom-control-input" disabled>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Option (0)</span>
                       </label>
@@ -958,8 +963,8 @@
           <div class="result-area">
             <div class="sort-filter clearfix">
               <div class="float-right">
-                <label class="mr-sm-2" for="inlineFormCustomSelectPref">Sort by</label>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelectPref">
+                <label class="mr-sm-2" for="">Sort by</label>
+                <select class="" id="">
                   <option selected>Most relevant</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>

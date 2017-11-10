@@ -1,23 +1,295 @@
-/*<!-- Search block Start -->*/
+/*<!-- Search block Start -->
 
-/*  <!-- Search block End -->*/
+  <div class="search-block">
+    <div class="container">
+      <div class="without-search-result row clearfix">
+        <div class="col-md-12">
+          <h2 class="result-statement">0 results for <span>'lake imolr protector'</span></h2>
+          <p class="search-info">We're sorry we couldn't find any matches for your search term.</p>
+          <ul class="search-help-info">
+            <li>Check for typos, and try your search again</li> 
+            <li>Try searching for somthing else</li>
+            <li>Search our archive. You'll be redirected to the archive site.</li>
+          </ul>
+        </div>
+        <div class="col-md-12">
+          <div class="search-bar">
+            <form>
+              <div class="row">
+                <div class="col-md-5">
+                  <input type="search" class="form-control mb-2 mb-sm-0" id="" placeholder="">
+                </div>
+                <div class="col-md-4">
+                  <div class="btn-group btn-block" role="group" aria-label="" id="search-type">
+                    <button type="button" class="btn btn-secondary btn-medium active">This Site</button>
+                    <button type="button" class="btn btn-secondary btn-medium">Archive</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <button type="submit" class="btn btn-primary btn-medium search-btn btn-block"><i class="fa icon-search"></i> Search</button>
+                </div>
+              </div>
+            </form>
+          </div>  
+        </div>  
+      </div>
+      <div class="search-filter-results row clearfix">
+        <div class="col-lg-4">
+          <div class="filter-sidebar">
+            <div class="filter-button hidden-lg-up">
+              <button class="btn btn-filter disabled"><i class="icon-filter"></i> Filters</button>
+            </div>
+            <div id="filter-sidebar-options" class="hidden-md-down">
+            <h4>Refine your search</h4>
+              <div class="filteritem">
+                <a data-toggle="collapse" href="#item-issue" aria-expanded="true">
+                ISSUE <span></span>
+                </a>
+                <div id="item-issue" class="collapse show" role="tabpanel">
+                  <ul class="list-unstyled">
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Climate & Energy (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Detox (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Forests (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Food (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Oceans (0)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filteritem">
+                <a data-toggle="collapse" href="#item-campaign" aria-expanded="false" class="collapsed">
+                campaign <span></span>
+                </a>
+                <div id="item-campaign" class="collapse" role="tabpanel">
+                  <ul class="list-unstyled">
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filteritem">
+                <a data-toggle="collapse" href="#item-category" aria-expanded="false" class="collapsed">
+                CATEGORY <span></span>
+                </a>
+                <div id="item-category" class="collapse" role="tabpanel">
+                  <ul class="list-unstyled">
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filteritem">
+                <a data-toggle="collapse" href="#item-content" aria-expanded="false" class="collapsed">
+                CONTENT TYPE <span></span>
+                </a>
+                <div id="item-content" class="collapse" role="tabpanel">
+                  <ul class="list-unstyled">
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" disabled>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Option (0)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="result-area">
+            <div class="sort-filter clearfix">
+              <div class="float-right">
+                <label class="mr-sm-2" for="">Sort by</label>
+                <select class="" id="">
+                  <option selected>Most relevant</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>  
+            </div>
+            <div class="search-result-list">
+              
+            </div>
+            <div class="suggested-search-terms">
+              <h3>Suggested search terms</h3>
+              <div class="suggested-list row">
+                <div class="col-md-4">
+                  <ul class="list-unstyled">
+                    <li><a href="#"> agriculture</a></li>
+                    <li><a href="#"> food</a></li>
+                    <li><a href="#"> organic</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="list-unstyled">
+                    <li><a href="#"> agriculture</a></li>
+                    <li><a href="#"> food</a></li>
+                    <li><a href="#"> organic</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="list-unstyled">
+                    <li><a href="#"> agriculture</a></li>
+                    <li><a href="#"> food</a></li>
+                    <li><a href="#"> organic</a></li>
+                  </ul>
+                </div>  
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Search block End -->*/
 
 /* CSS for covers */
 
 .search-block {
-  padding-top: 104px;
+  padding-top: 64px;
+  background: #ECF0F6;
   .without-search-result {
+    margin-top: 120px;
     .search-help-info {
       font-size: rem(22);
       font-family: $lora;
       color: #666666;
+      line-height: 40px;
+      margin-bottom: 40px;
+      padding-left: 50px;
     }
     .search-bar {
       width: 100%;
-      background: #E6E6E6;
+      background: #EBEEF1;
       padding: 32px;
       border-radius: 5px;
-      border: 1px solid #6E98BB;
+      border: 1px solid #CEDBE7;
       input {
         height: 56px;
         line-height: 56px;
@@ -30,6 +302,7 @@
           color: #4D4D4D;
           text-transform: capitalize;
           width: 50%;
+          cursor: pointer;
           &.active {
             background-color: #0E538E;
             border-color: transparent;
@@ -43,10 +316,18 @@
               height: 8px;
               border-radius: 5px;
               background-color: #fff;
-              margin-top: 23px;
+              margin-top: 25px;
               margin-left: 12px;
 
             }
+            &:hover {
+              z-index: 2;
+              background-color: #0E538E;
+            }
+          }
+          &:hover {
+            z-index: 0;
+            background-color: #CFDDE8;
           }
         }
       }
@@ -58,12 +339,38 @@
           font-size: rem(18);
           font-weight: normal;
           line-height: 0;
+          float: left;
+          margin-top: 27px;
         }
+      }
+      .search-btn {
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  .search-result {
+    margin-top: 120px;
+    .search-tag {
+      font-size: rem(22);
+      font-style: normal;
+      color: #002341;
+      border: 1px solid #002341;
+      border-radius: 6px;
+      padding: 0px 20px;
+      display: inline-block;
+      width: 190px;
+      margin-left: 10px; 
+      line-height: 42px;
+      i {
+        font-size: rem(12);
+        float: right;
+        line-height: 40px;
       }
     }
   }
   .result-statement {
     font-size: rem(66);
+    margin-bottom: 40px;
   }
   .search-info {
     font-size: rem(32);
@@ -74,6 +381,7 @@
   .search-filter-results {
     margin-top: 64px;
     .filter-sidebar {
+      position: relative;
       h4 {
         font-size: rem(28);
         margin-bottom: 48px;
@@ -98,7 +406,7 @@
             height: 14px;
             right: 0;
             top: 0;
-            background-color: #fff;
+            background-color: transparent;
             margin: 16px;
             &:before,
             &:after {
@@ -128,6 +436,7 @@
             }
           } 
           &.collapsed {
+            border-bottom-width: 2px;
             span {
               &:before { 
                 transform: rotate(180deg); 
@@ -144,7 +453,42 @@
             display: block;
             .custom-control-description {
               font-size: rem(18);
-              color: #999999;
+              color: #333333;
+            }
+          }
+        }
+      }
+      .filter-button {
+        position: absolute;
+        top:0;
+        left: 0;
+        margin-top: -14px;
+        z-index: 2;
+        .btn-filter {
+          background: $primary-button;
+          font-size: rem(16);
+          font-weight: bold;
+          padding: 0 10px;
+          height: 48px;
+          width: 150px;
+          text-transform: uppercase;
+          line-height: 48px;
+          color: $white;
+          i {
+            font-size: rem(20);
+            vertical-align: middle;
+            margin-right: 20px;
+          }
+          &:hover {
+            background: $primary-button-hover;
+            color: #fff;
+            cursor: pointer;
+          }
+          &.disabled {
+            background: #B9BBBC;
+            &:hover {
+              color: #fff;
+              cursor: not-allowed;
             }
           }
         }
@@ -159,15 +503,32 @@
         select {
           height: 44px;
           width: 270px;
-          margin-top: -10px;
           font-size: rem(22);
+          padding: 0 10px;
+          border-radius: 6px;
+          border-color: #6E98BB;
+          background: #F1F4F8;
         }
         div {
           margin-top: -7px;
         }
       }
       .search-result-list {
-        height: 400px;
+        height: 208px;
+      }
+      .multiple-search-result {
+        height: 100%;
+        padding-top: 32px;
+        ul {
+          li {
+            margin-bottom: 32px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            img {
+              width: 25%;
+            }
+          }
+        }
       }
       .suggested-search-terms {
         margin: 104px 0;
@@ -178,11 +539,13 @@
         .suggested-list {
           background: #F2F2F2;
           padding: 32px 17px;
+          margin: 0;
           li {
             a {
               color: #0E538E;
               text-decoration: none;
               font-size: rem(22);
+              line-height: 42px;
             }
           }
         }
@@ -194,17 +557,532 @@
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
   .search-block {
+    padding-top: 56px;
+    .without-search-result {
+      margin-top: 48px;
+      .search-help-info {
+        font-size: rem(16);
+        line-height: 28px;
+        margin-bottom: 24px;
+        padding-left: 20px;
+      }
+      .search-bar {
+        width: 100%;
+        padding: 24px 15px;
+        input {
+          height: 44px;
+          line-height: 44px;
+          font-size: rem(16);
+        }
+        .btn-group {
+          .btn-secondary {
+            width: 50%;
+            margin-bottom: 10px;
+            &.active {
+              &:before {
+                margin-top: 18px;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+        .search-btn, .btn-secondary {
+          font-size: rem(16);
+          height: 44px;
+          line-height: 44px;
+          i {
+            font-size: rem(18);
+            margin-top: 22px;
+          }
+        }
+      }
+    }
+    .result-statement {
+      font-size: rem(28);
+      margin-bottom: 8px;
+    }
+    .search-info {
+      font-size: rem(16);
+      margin-bottom: 24px;
+    }
+    .search-filter-results {
+      margin-top: 64px;
+      .filter-sidebar {
+        h4 {
+          font-size: rem(28);
+          margin-bottom: 48px;
+        }
+        .filteritem {
+          a {
+            border: 1px solid #6E98BB;
+            border-top: 0;
+            border-bottom-width: 4px;
+            padding: 11px 30px;
+            font-size: rem(20);
+            font-weight: bold;
+            margin-bottom: 32px;  
+          }
+          ul {
+            li {
+              height: 42px;
+              .custom-control-description {
+                font-size: rem(18);
+              }
+            }
+          }
+        }
+        .filter-button {
+          margin-top: 29px;
+          .btn-filter {
+            font-size: rem(16);
+            padding: 0 10px;
+            height: 40px;
+            width: 130px;
+            line-height: 40px;
+            i {
+              font-size: rem(20);
+              vertical-align: middle;
+              margin-right: 20px;
+            }
+            &:hover {
+              color: #000;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .result-area {
+        .sort-filter {
+          width: 50%;
+          float: right;
+          label {
+            font-size: rem(18);
+            font-weight: bold;
+            margin-right: 90px;
+          }
+          select {
+            height: 40px;
+            width: 151px;
+            font-size: rem(16);
+            padding: 0 10px;
+          }
+          div {
+            margin-top: -7px;
+            text-align: right;
+          }
+        }
+        .search-result-list {
+          height: 150px;
+        }
+        .suggested-search-terms {
+          margin: 104px 0;
+          h3 {
+            font-size: rem(26);
+            margin-bottom: 16px;
+          }
+          .suggested-list {
+            padding: 32px 17px;
+            margin: 0;
+            ul { margin-bottom: 0; }
+            li {
+              text-align: center;
+              a {
+                font-size: rem(18);
+                line-height: 42px;
+              }
+            }
+          }
+        }
+      }
+    }  
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .search-block {
+    padding-top: 64px;
+    .without-search-result {
+      margin-top: 0px;
+      .search-help-info {
+        font-size: rem(18);
+        line-height: 33px;
+        margin-bottom: 32px;
+        padding-left: 20px;
+      }
+      .search-bar {
+        width: 100%;
+        padding: 26px 15px;
+        input {
+          height: 44px;
+          line-height: 44px;
+          font-size: rem(16);
+        }
+        .btn-group {
+          .btn-secondary {
+            width: 50%;
+            &.active {
+              &:before {
+                margin-top: 18px;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+        .search-btn, .btn-secondary {
+          font-size: rem(16);
+          height: 44px;
+          line-height: 44px;
+          i {
+            font-size: rem(16);
+            margin-top: 22px;
+          }
+        }
+      }
+    }    
+    .search-result {
+      margin-top: 0px;
+      .search-tag {
+        font-size: rem(22);
+        padding: 0px 20px;
+        width: 190px;
+        margin-left: 10px; 
+        line-height: 38px;
+        i {
+          font-size: rem(12);
+          line-height: 36px;
+        }
+      }
+    }
+    .result-statement {
+      font-size: rem(48);
+      margin-bottom: 24px;
+    }
+    .search-info {
+      font-size: rem(18);
+      margin-bottom: 24px;
+    }
+    .search-filter-results {
+      margin-top: 64px;
+      .filter-sidebar {
+        h4 {
+          font-size: rem(26);
+          margin-bottom: 48px;
+        }
+        .filteritem {
+          a {
+            border: 1px solid #6E98BB;
+            border-top: 0;
+            border-bottom-width: 4px;
+            padding: 13px 30px;
+            font-size: rem(18);
+            font-weight: bold;
+            margin-bottom: 32px;  
+          }
+          ul {
+            li {
+              height: 42px;
+              .custom-control-description {
+                font-size: rem(16);
+              }
+            }
+          }
+        }
+      }
+      .result-area {
+        .sort-filter {
+          label {
+            font-size: rem(18);
+            font-weight: bold;
+          }
+          select {
+            height: 40px;
+            width: 210px;
+            font-size: rem(16);
+            padding: 0 10px;
+          }
+          div {
+            margin-top: -7px;
+          }
+        }
+        .search-result-list {
+          height: 120px;
+        }
+        .suggested-search-terms {
+          margin: 104px 0;
+          h3 {
+            font-size: rem(34);
+            margin-bottom: 16px;
+          }
+          .suggested-list {
+            padding: 32px 17px;
+            margin: 0;
+            li {
+              a {
+                font-size: rem(22);
+                line-height: 34px;
+              }
+            }
+          }
+        }
+      }
+    }  
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .search-block {
+    padding-top: 64px;
+    .without-search-result {
+      margin-top: 94px;
+      .search-help-info {
+        font-size: rem(20);
+        line-height: 34px;
+        margin-bottom: 45px;
+        padding-left: 30px;
+      }
+      .search-bar {
+        width: 100%;
+        padding: 32px;
+        input {
+          height: 56px;
+          line-height: 56px;
+          font-size: rem(18);
+        }
+        .btn-group {
+          .btn-secondary {
+            width: 50%;
+            &.active {
+              &:before {
+                margin-top: 25px;
+                margin-left: 12px;
+              }
+            }
+          }
+        }
+        .search-btn, .btn-secondary {
+          font-size: rem(18);
+          height: 56px;
+          line-height: 56px;
+          i {
+            font-size: rem(18);
+            margin-top: 27px;
+          }
+        }
+      }
+    }
+    .search-result {
+      margin-top: 94px;
+      .search-tag {
+        font-size: rem(22);
+        padding: 0px 20px;
+        width: 190px;
+        margin-left: 10px; 
+        line-height: 38px;
+        i {
+          font-size: rem(12);
+          line-height: 36px;
+        }
+      }
+    }
+    .result-statement {
+      font-size: rem(56);
+      margin-bottom: 30px;
+    }
+    .search-info {
+      font-size: rem(28);
+      margin-bottom: 32px;
+    }
+    .search-filter-results {
+      margin-top: 64px;
+      .filter-sidebar {
+        h4 {
+          font-size: rem(26);
+          margin-bottom: 48px;
+        }
+        .filteritem {
+          a {
+            border: 1px solid #6E98BB;
+            border-top: 0;
+            border-bottom-width: 4px;
+            padding: 13px 30px;
+            font-size: rem(18);
+            font-weight: bold;
+            margin-bottom: 32px;  
+          }
+          ul {
+            li {
+              height: 42px;
+              .custom-control-description {
+                font-size: rem(16);
+              }
+            }
+          }
+        }
+      }
+      .result-area {
+        .sort-filter {
+          label {
+            font-size: rem(26);
+            font-weight: bold;
+          }
+          select {
+            height: 44px;
+            width: 224px;
+            font-size: rem(20);
+            padding: 0 10px;
+          }
+          div {
+            margin-top: -7px;
+          }
+        }
+        .search-result-list {
+          height: 235px;
+        }
+        .suggested-search-terms {
+          margin: 104px 0;
+          h3 {
+            font-size: rem(36);
+            margin-bottom: 16px;
+          }
+          .suggested-list {
+            padding: 32px 17px;
+            margin: 0;
+            li {
+              a {
+                font-size: rem(18);
+                line-height: 34px;
+              }
+            }
+          }
+        }
+      }
+    }  
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .search-block {
+    padding-top: 64px;
+    .without-search-result {
+      margin-top: 120px;
+      .search-help-info {
+        font-size: rem(22);
+        line-height: 40px;
+        margin-bottom: 40px;
+        padding-left: 50px;
+      }
+      .search-bar {
+        width: 100%;
+        padding: 32px;
+        input {
+          height: 56px;
+          line-height: 56px;
+          font-size: rem(18);
+        }
+        .btn-group {
+          .btn-secondary {
+            width: 50%;
+          }
+        }
+        .search-btn, .btn-secondary {
+          font-size: rem(18);
+          height: 56px;
+          line-height: 56px;
+          i {
+            font-size: rem(18);
+            margin-top: 27px;
+          }
+        }
+      }
+    }
+    .search-result {
+      margin-top: 120px;
+      .search-tag {
+        font-size: rem(22);
+        padding: 0px 20px;
+        width: 190px;
+        margin-left: 10px; 
+        line-height: 42px;
+        i {
+          font-size: rem(12);
+          line-height: 40px;
+        }
+      }
+    }
+    .result-statement {
+      font-size: rem(66);
+      margin-bottom: 40px;
+    }
+    .search-info {
+      font-size: rem(32);
+    }
+    .search-filter-results {
+      margin-top: 64px;
+      .filter-sidebar {
+        h4 {
+          font-size: rem(28);
+          margin-bottom: 48px;
+        }
+        .filteritem {
+          a {
+            border: 1px solid #6E98BB;
+            border-top: 0;
+            border-bottom-width: 4px;
+            padding: 11px 30px;
+            font-size: rem(20);
+            font-weight: bold;
+            margin-bottom: 32px;  
+          }
+          ul {
+            li {
+              height: 42px;
+              .custom-control-description {
+                font-size: rem(18);
+              }
+            }
+          }
+        }
+      }
+      .result-area {
+        .sort-filter {
+          label {
+            font-size: rem(28);
+            font-weight: bold;
+          }
+          select {
+            height: 44px;
+            width: 270px;
+            font-size: rem(22);
+            padding: 0 10px;
+          }
+          div {
+            margin-top: -7px;
+          }
+        }
+        .search-result-list {
+          height: 208px;
+        }
+        .suggested-search-terms {
+          margin: 104px 0;
+          h3 {
+            font-size: rem(38);
+            margin-bottom: 16px;
+          }
+          .suggested-list {
+            padding: 32px 17px;
+            margin: 0;
+            li {
+              a {
+                font-size: rem(22);
+                line-height: 42px;
+              }
+            }
+          }
+        }
+      }
+    }  
+  }
 }

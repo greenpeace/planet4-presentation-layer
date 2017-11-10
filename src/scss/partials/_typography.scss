@@ -35,23 +35,12 @@ p {
   font-family: $lora;           
 }
 
-h1, h2 {
-  font-weight: bold;
-}
-
 h1 {
-  letter-spacing: -1.5px;
-  @media #{ $mq-xl-up } {
-    font-size: rem(66);
-    line-height: rem(85.8);
-    margin-bottom: rem(48);
-  }
+  font-size: 55px;
+  font-weight: 700;
 }
 
 h2 {
-  @media #{ $mq-xl-up } {
-    font-size: rem(38);
-    line-height: rem(49.4);
-    margin-bottom: rem(24);
-  }
+  font-size: 35px;
+  font-weight: 700;
 }
