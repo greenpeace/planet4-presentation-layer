@@ -55,14 +55,14 @@ $('.country-select-box .country-list li').click(function(){
 
 // Returns width of browser viewport
 if($( window ).width() >= 768) {
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 130){  
-        $('.fixed-element, .md-navigation').addClass("sticky");
-    }
-    else{
-        $('.fixed-element, .md-navigation').removeClass("sticky");
-    }
-  });
+  // $(window).scroll(function() {
+  //   if ($(this).scrollTop() > 130){  
+  //       $('.fixed-element, .md-navigation').addClass("sticky");
+  //   }
+  //   else{
+  //       $('.fixed-element, .md-navigation').removeClass("sticky");
+  //   }
+  // });
 };
 
 // Hide Header on on scroll down
