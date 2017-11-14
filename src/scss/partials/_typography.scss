@@ -22,25 +22,61 @@ more here: http://www.newnet-soft.com/blog/csstypography
 */
 p {
   -ms-word-wrap: break-word;
-     word-break: break-word; //non-standart css for webkit
-      word-wrap: break-word;
+  word-break: break-word; //non-standart css for webkit
+  word-wrap: break-word;
   // cleaning up the ragged lines and breaks
   -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-          hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
   // sets a minimum number of characters before and after the break
   -webkit-hyphenate-before: 2;
-   -webkit-hyphenate-after: 3;
-           hyphenate-lines: 3;
-  font-family: $lora;           
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3;
+  font-family: $lora;
+}
+
+h1, h2 {
+  font-weight: bold;
 }
 
 h1 {
-  font-size: 55px;
-  font-weight: 700;
+  letter-spacing: -1.5px;
+  font-size: rem(40);
+  line-height: rem(48.8);
+  margin-bottom: rem(30);
+
+  @media #{ $mq-lg-up } {
+    font-size: rem(56);
+    line-height: rem(67.55);
+    margin-bottom: rem(48);
+  }
+  @media #{ $mq-xl-up } {
+    font-size: rem(66);
+    line-height: rem(85.8);
+    margin-bottom: rem(48);
+  }
 }
 
 h2 {
-  font-size: 35px;
-  font-weight: 700;
+  font-size: rem(26);
+  line-height: rem(36);
+  margin-bottom: rem(5);
+
+  @media #{ $mq-md-up } {
+    font-size: rem(34);
+    line-height: rem(36);
+    margin-bottom: rem(5);
+  }
+
+  @media #{ $mq-lg-up } {
+    font-size: rem(36);
+    line-height: rem(46.8);
+    margin-bottom: rem(5);
+  }
+
+  @media #{ $mq-xl-up } {
+    font-size: rem(38);
+    line-height: rem(49.4);
+    margin-bottom: rem(24);
+  }
 }
