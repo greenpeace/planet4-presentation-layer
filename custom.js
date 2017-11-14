@@ -42,14 +42,14 @@ $('.country-select-box .country-list li').click(function(){
   $(this).addClass('active');
 });
 
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 130){  
-        $('.fixed-element, .md-navigation').addClass("sticky");
-    }
-    else{
-        $('.fixed-element, .md-navigation').removeClass("sticky");
-    }
-  });
+  // $(window).scroll(function() {
+  //   if ($(this).scrollTop() > 130){  
+  //       $('.fixed-element, .md-navigation').addClass("sticky");
+  //   }
+  //   else{
+  //       $('.fixed-element, .md-navigation').removeClass("sticky");
+  //   }
+  // });
 // Footer JS goes in this
 // Header JS goes in this.
 
@@ -130,6 +130,10 @@ $(function() {
   $('#search-type button').click(function() {
      $('#search-type button').removeClass("active");
     $(this).addClass("active");
+    });
+
+  $('.btn-filter').click(function() {
+  	$('#filtermodal').modal('show');
     });
 });
 // First Index
