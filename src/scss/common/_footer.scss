@@ -24,6 +24,7 @@
       display: inline-block;
       font-size: 22px;
       color: $white;
+      margin-bottom: 32px;
       a {
         text-transform: uppercase;
         color: $white;
@@ -35,6 +36,40 @@
       }
     }
   }
+
+  .gp-year {
+    font-family: $roboto;
+    font-size: rem(14);
+    color: $white;
+  }
+
+  .footer-links-secondary {
+    margin-top: 56px;
+    @media #{ $mq-md-up } {
+      margin-top: 0;
+    }
+    color: #d8d8d8;
+    text-align: center;
+    li {
+      margin-bottom: 24px;
+      @media #{ $mq-md-up } {
+        display: inline-block;
+        span { margin: 0 5px; }
+      }
+    }
+    a {
+      color: #d8d8d8;
+      text-transform: uppercase;
+      font-size: rem(16);
+      @media #{ $mq-md-up } {
+        font-size: rem(14);
+      }
+      @media #{ $mq-lg-up } {
+        font-size: rem(16);
+      }
+    }
+  }
+
   p {
     color: $white;
     margin-bottom: 0;
