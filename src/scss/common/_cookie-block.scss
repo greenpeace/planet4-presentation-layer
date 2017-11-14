@@ -1,0 +1,119 @@
+
+.cookie-block {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background: #C0DBE2 url("images/cookie-right-gradient.png") no-repeat right;
+  max-height: 50px;
+  p {
+    font-size: rem(17);
+    font-weight: 500;
+    color: #094464;
+    margin: 0;
+    text-align: center;
+    font-family: $roboto;
+    line-height: 30px;
+  }
+  a {
+    font-size: rem(17);
+    font-weight: bold;
+    color: #094464;
+    text-decoration: none;
+  }
+  .btn {
+    height: 32px;
+    line-height: 32px;
+    font-size: rem(15);
+    font-weight: 500;
+    color: #094464;
+    background: #E4F2F9;
+    border: 1px solid #004766;
+    width: 100%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    &:hover {
+      cursor: pointer;
+      background: #004766;
+      color: #fff;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+  .cookie-block {
+    max-height: 120px;
+    background: #C0DBE2 url("images/cookie-right-gradient-sm.png") no-repeat right;
+    div.col-9 {
+      margin: 0 auto;
+      max-width: 95%;
+      flex: 95%;
+    }
+    div.col {
+      margin: 0 auto;
+      max-width: 95%;
+    }
+    p {
+      font-size: rem(14);
+      text-align: left;
+      line-height: 16.8px;
+      margin-bottom: 10px;
+    }
+    a {
+      font-size: rem(14);
+    }  
+  }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cookie-block {
+    max-height: 56px;
+    background: #C0DBE2 url("images/cookie-right-gradient-md.png") no-repeat right;
+    p {
+      font-size: rem(15);
+      text-align: left;
+      line-height: 18px;
+    }
+    a {
+      font-size: rem(15);
+    }  
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cookie-block {
+    max-height: 50px;
+    background: #C0DBE2 url("images/cookie-right-gradient.png") no-repeat right;
+    p {
+      font-size: rem(14.5);
+      text-align: center;
+      line-height: 30px;
+    }
+    a {
+      font-size: rem(14.5);
+    }  
+  }
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cookie-block {
+    max-height: 50px;
+    background: #C0DBE2 url("images/cookie-right-gradient.png") no-repeat right;
+    p {
+      font-size: rem(17);
+      text-align: center;
+      line-height: 30px;
+    }
+    a {
+      font-size: rem(17);
+    }  
+  }
+}
+
