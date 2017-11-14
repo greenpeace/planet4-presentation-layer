@@ -1,6 +1,9 @@
 
 .mobile-header-wrap {
   padding: 10px 15px;
+  .search-link {
+    padding-top: 4px;
+  }
   .menu {
     width: 80px;
     height: 35px;
@@ -92,6 +95,10 @@
     .navbar-brand {
       padding: 0;
       margin: 0;
+
+      img {
+        height: 20px;
+      }
     }
     .navbar {
       padding: 0;
@@ -101,7 +108,7 @@
         text-align: center;
         position: relative;
         line-height: 22px;
-        padding: 11px 0;
+
         &.big-screen-nav-link {
           &:hover {
             transition: 0.5s;
@@ -121,6 +128,7 @@
           }
         }   
         a {
+          font-weight: 500;
           color: $white;
           font-size: 16px;
           display: inline-block; 
@@ -157,7 +165,7 @@
             background: none;
             border: none;
             position: absolute;
-            top: 18px;
+            top: 9px;
             right: 15px;
           }
           .form-control {
@@ -168,7 +176,7 @@
         &.active-li {
           background-color: #03484f;
           .country-select-dropdown {
-            &:before {
+            & > span:after {
               -ms-transform: rotate(180deg); /* IE 9 */
               -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
               transform: rotate(180deg);
@@ -177,17 +185,16 @@
         }
       }
       .country-select-dropdown {
-        position: relative;
-        &:before {
+        & > span:after {
           content: "";
-          width:18px;
-          height: 15px;
-          background: url('images/down-arrow-green.png');
-          position: absolute;
-          top: 0;
-          right: 0;
-          margin-top: 12px;
-          margin-right: 12px;
+          width: 8px;
+          height: 8px;
+          background-repeat: no-repeat;
+          background-image: url('images/down-arrow-green.png');
+          background-position: center;
+          background-size: contain;
+          display: inline-block;
+          margin-left: 10px;
         }
         .selected-option {
           font-size: 0.9rem;
@@ -300,135 +307,130 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
-  #header {
-    .navbar-brand {
-      img {
-        width: 100%;
-      }
-    }
-    &.top-navigation {
-      position: fixed;
-      transition: top 0.2s ease-in-out;
-      top: 0;
-      &.nav-up {
-        top: -60px;
-      }
-      .navbar {
-        .country-select-box {
-          width: 300px;
-          padding: 10px 20px 0 35px;
-          margin-left: 0;
-          .country-selection-option {
-            height: 400px;
-            .country-option-box {            
-              .country-list {
-                height: auto;
-                ul {
-                  width: 100%;
-                }
-              }
-            }
-          }
-        }
-        li {
-          text-align: left;
-          border-bottom: solid 1px $border-color;
-          padding: 10px 0 10px 15px;
-          width: auto;
-          &.loginSignUpWrap {
-            i {
-              margin-right: 10px;
-            }
-          }
-          &.nav-search-wrap {
-            width: 100%;
-          }
-          &.active {
-            border-left: solid 5px $black;
-          }
-          .styled-select {
-            margin-top: 0;
-          }
-          &.active-li {
-            background-color: transparent;
-          }
-        }
-      }
-    }
-  }
-  .navbar-light {
-    width: 100%;
-    .navbar-toggler {
-      height: auto;
-      padding: 10px 20px;
-      background: #F2A781;
-      color: $white;
-      font-size: 14px;
-      text-transform: uppercase;
-    }
-    .navbar-nav {
-      margin-top: 15px;
-    }
-    .mobile-header-wrap {
-      text-align: center;
-    }
-  }
-
-  .mobile-search-wrap {
-    .fa {
-      color: #66CB00;
-    }
-    .mobile-search-input {
-      display: block;
-      width: 88%;
-      border: 0;
-      outline: none;
-      padding: 0;
-      font-size: 14px;
-      font-weight: bold;
-      color: #676767;
-    }
-
-    #searchsubmit {
-      display: block;
-      float: right;
-      background: none;
-      color: #717171;
-      border: 0;
-      outline: none;
-      cursor: pointer;
-      font-size: 15px;
-    }
-
-    #searchbar {
-      display: none;
-      position: absolute;
-      left: 0;
-      top: 48px;
-      width: 100%;
-      padding: 10px 20px;
-      border-top: 1px solid #d8d8d8;
-      z-index: 9999;
-      background: #fff;
-      -webkit-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
-      -moz-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
-      box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
-    }
-  }
-  .mobile-search-wrap {
-    display: inline-block;
-  }
+@media (min-width: 575px) {
+  //#header {
+  //  .navbar-brand {
+  //    img {
+  //      width: 100%;
+  //    }
+  //  }
+  //  &.top-navigation {
+  //    position: fixed;
+  //    transition: top 0.2s ease-in-out;
+  //    top: 0;
+  //    &.nav-up {
+  //      top: -60px;
+  //    }
+  //    .navbar {
+  //      .country-select-box {
+  //        width: 300px;
+  //        padding: 10px 20px 0 35px;
+  //        margin-left: 0;
+  //        .country-selection-option {
+  //          height: 400px;
+  //          .country-option-box {
+  //            .country-list {
+  //              height: auto;
+  //              ul {
+  //                width: 100%;
+  //              }
+  //            }
+  //          }
+  //        }
+  //      }
+  //      li {
+  //        text-align: left;
+  //        border-bottom: solid 1px $border-color;
+  //        padding: 10px 0 10px 15px;
+  //        width: auto;
+  //        &.loginSignUpWrap {
+  //          i {
+  //            margin-right: 10px;
+  //          }
+  //        }
+  //        &.nav-search-wrap {
+  //          width: 100%;
+  //        }
+  //        &.active {
+  //          border-left: solid 5px $black;
+  //        }
+  //        .styled-select {
+  //          margin-top: 0;
+  //        }
+  //        &.active-li {
+  //          background-color: transparent;
+  //        }
+  //      }
+  //    }
+  //  }
+  //}
+  //.navbar-light {
+  //  width: 100%;
+  //  .navbar-toggler {
+  //    height: auto;
+  //    padding: 10px 20px;
+  //    background: #F2A781;
+  //    color: $white;
+  //    font-size: 14px;
+  //    text-transform: uppercase;
+  //  }
+  //  .navbar-nav {
+  //    margin-top: 15px;
+  //  }
+  //  .mobile-header-wrap {
+  //    text-align: center;
+  //  }
+  //}
+  //
+  //.mobile-search-wrap {
+  //  .fa {
+  //    color: #66CB00;
+  //  }
+  //  .mobile-search-input {
+  //    display: block;
+  //    width: 88%;
+  //    border: 0;
+  //    outline: none;
+  //    padding: 0;
+  //    font-size: 14px;
+  //    font-weight: bold;
+  //    color: #676767;
+  //  }
+  //
+  //  #searchsubmit {
+  //    display: block;
+  //    float: right;
+  //    background: none;
+  //    color: #717171;
+  //    border: 0;
+  //    outline: none;
+  //    cursor: pointer;
+  //    font-size: 15px;
+  //  }
+  //
+  //  #searchbar {
+  //    display: none;
+  //    position: absolute;
+  //    left: 0;
+  //    top: 48px;
+  //    width: 100%;
+  //    padding: 10px 20px;
+  //    border-top: 1px solid #d8d8d8;
+  //    z-index: 9999;
+  //    background: #fff;
+  //    -webkit-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
+  //    -moz-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
+  //    box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
+  //  }
+  //}
+  //.mobile-search-wrap {
+  //  display: inline-block;
+  //}
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   #header {
-    .navbar-brand {
-      img {
-        width: 100%;
-      }
-    }
     &.top-navigation {
       .mobile-menus {
         .country-select-box {
@@ -515,18 +517,18 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #header.top-navigation {
     .navbar {
       li {
-        width: 29%;
-        &.big-screen-nav-link {
-          margin-top: 12px;
+        a {
+          font-size: 18px;
         }
+
         .btn-secondary {
-          height: 42px;
-          line-height: 42px;
-          margin: 0;
+          height: rem(32);
+          line-height: rem(32);
+          font-size: rem(16);
         }
       }
     }
@@ -540,15 +542,24 @@
 @media (min-width: 1200px) {
   #header.top-navigation {
     position: fixed;
+    padding: 12px 0;
+    top: 0;
+    .navbar-brand {
+      padding: 0;
+      margin: 0;
+
+      img {
+        height: 26px;
+      }
+    }
     .navbar {
       li {
         &.big-screen-nav-link {
           margin-top: 12px;
         }
         .btn-secondary {
-          height: 42px;
-          line-height: 42px;
-          margin: 0;
+          height: rem(36);
+          line-height: rem(36);
         }
       }
     }
