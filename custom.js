@@ -32,6 +32,11 @@ $(function() {
 //       }
 //   });
 // });
+$(".cookie-block").show();
+$("#hidecookie").click(function () {
+	$(".cookie-block").slideUp("slow");
+});
+
 $('.country-select-dropdown').click(function(){
   $(this).parent().toggleClass('active-li');
   $('.country-select-box').toggle();
