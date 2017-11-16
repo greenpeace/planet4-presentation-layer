@@ -1399,7 +1399,7 @@ Stylesheet: Button Styles
 
 .filter-modal .modal-dialog .closebtn i { font-size: 0.75rem; }
 
-@media (max-width: 575px) { .search-block { padding-top: 56px; }
+@media (max-width: 767px) { .search-block { padding-top: 56px; }
   .search-block .without-search-result { margin-top: 48px; }
   .search-block .without-search-result .search-help-info { font-size: 1rem; line-height: 28px; margin-bottom: 24px; padding-left: 20px; }
   .search-block .without-search-result .search-bar { width: 100%; padding: 24px 15px; }
