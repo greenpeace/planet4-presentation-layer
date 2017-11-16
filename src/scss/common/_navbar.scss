@@ -95,9 +95,6 @@
     .navbar-brand {
       padding: 0;
       margin: 0;
-      img {
-        height: 20px;
-      }
     }
     .navbar {
       padding: 0;
@@ -159,12 +156,13 @@
             }
           }
         &.nav-search-wrap {
-          width: 35%;
+          width: 30%;
+          margin-left: 20px;
           .top-nav-search-btn {
             background: none;
             border: none;
             position: absolute;
-            top: 9px;
+            top: 18px;
             right: 15px;
           }
           .form-control {
@@ -530,6 +528,7 @@
   #header.top-navigation {
     .navbar {
       li {
+        width: 35%;
         a {
           font-size: 18px;
         }
@@ -537,9 +536,10 @@
           margin-top: 12px;
         }
         .btn-secondary {
-          height: rem(32);
-          line-height: rem(32);
+          height: 42px;
+          line-height: 42px;
           font-size: rem(16);
+          margin: 0;
         }
       }
     }
@@ -553,14 +553,11 @@
 @media (min-width: 1200px) {
   #header.top-navigation {
     position: fixed;
-    padding: 12px 0;
+    padding: 0;
     top: 0;
     .navbar-brand {
       padding: 0;
       margin: 0;
-      img {
-        height: 26px;
-      }
     }
     .navbar {
       li {
@@ -569,7 +566,9 @@
         }
         .btn-secondary {
           height: rem(36);
-          line-height: rem(36);
+          line-height: 42px;
+          min-height: 42px;
+          margin: 0;
         }
       }
     }
