@@ -1,17 +1,36 @@
-// First Index
-currentIndex = $('.carousel-item.active').next('.carousel-item').find('img').attr('src');
+// Index for #carousel-wrapper-header
+currentIndexheader = $('#carousel-wrapper-header .carousel-item.active').next('.carousel-item').find('img').attr('src');
 
-$('#carousel-wrapper').on('slid.bs.carousel', function () {
-  currentIndex = $('.carousel-item.active').next('.carousel-item');
-  var e = currentIndex.find('img').attr('src');
+$('#carousel-wrapper-header').on('slid.bs.carousel', function () {
+  currentIndexheader = $('#carousel-wrapper-header .carousel-item.active').next('.carousel-item');
+  var e = currentIndexheader.find('img').attr('src');
   // Last Index
   if(e === 'undefined' || e === undefined) {
-    currentIndex = $('.carousel-item').first('.carousel-item').find('img').attr('src');
+    currentIndexheader = $('#carousel-wrapper-header .carousel-item').first('.carousel-item').find('img').attr('src');
   } else {
-    currentIndex = currentIndex.find('img').attr('src');
+    currentIndexheader = currentIndexheader.find('img').attr('src');
   }
-  $('.split-carousel-wrap a.carousel-control-next').css('background-image', 'url(' + currentIndex + ')');
+  $('#carousel-wrapper-header a.carousel-control-next').css('background-image', 'url(' + currentIndexheader + ')');
 
 });
 
-  $('.split-carousel-wrap a.carousel-control-next').css('background-image', 'url(' + currentIndex + ')');
+  $('#carousel-wrapper-header a.carousel-control-next').css('background-image', 'url(' + currentIndexheader + ')');
+
+
+  // Index for carousel-wrapper-header
+currentIndexnotheader = $('#carousel-wrapper-not-header .carousel-item.active').next('.carousel-item').find('img').attr('src');
+
+$('#carousel-wrapper-not-header').on('slid.bs.carousel', function () {
+  currentIndexnotheader = $('#carousel-wrapper-not-header .carousel-item.active').next('.carousel-item');
+  var e = currentIndexnotheader.find('img').attr('src');
+  // Last Index
+  if(e === 'undefined' || e === undefined) {
+    currentIndexnotheader = $('#carousel-wrapper-not-header .carousel-item').first('.carousel-item').find('img').attr('src');
+  } else {
+    currentIndexnotheader = currentIndexnotheader.find('img').attr('src');
+  }
+  $('#carousel-wrapper-not-header a.carousel-control-next').css('background-image', 'url(' + currentIndexnotheader + ')');
+
+});
+
+  $('#carousel-wrapper-not-header a.carousel-control-next').css('background-image', 'url(' + currentIndexnotheader + ')');

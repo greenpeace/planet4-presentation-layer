@@ -1,3 +1,108 @@
-/* 
- * Content 2 column is the same
- */
+
+.content-two-column-block {
+  padding-top: 80px;
+  h2 {
+    font-size: rem(26);
+    font-weight: bold;
+    line-height: 33px;
+    margin-bottom: 24px;
+    width: 60%;
+  }
+  p {
+    font-size: rem(17);
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
+  .btn {
+    margin-bottom: 80px;
+    width: 100%;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  .content-two-column-block {
+    padding-top: 80px;
+    h2 {
+      font-size: rem(26);
+      font-weight: bold;
+      line-height: 33px;
+      margin-bottom: 24px;
+      width: 60%;
+    }
+    p {
+      font-size: rem(17);
+      line-height: 28px;
+      margin-bottom: 32px;
+    }
+    .btn {
+      margin-bottom: 80px;
+      width: 100%;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  .content-two-column-block {
+    padding-top: 80px;
+    h2 {
+      font-size: rem(34);
+      line-height: 46px;
+      margin-bottom: 32px;
+      width: 80%;
+    }
+    p {
+      font-size: rem(19);
+      line-height: 33px;
+      margin-bottom: 48px;
+    }
+    .btn {
+      margin-bottom: 80px;
+      width: 50%;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  .content-two-column-block {
+    padding-top: 80px;
+    h2 {
+      font-size: rem(36);
+      line-height: 46px;
+      margin-bottom: 48px;
+      width: 80%;
+    }
+    p {
+      font-size: rem(20);
+      line-height: 34px;
+      margin-bottom: 48px;
+    }
+    .btn {
+      margin-bottom: 80px;
+      width: 80%;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  .content-two-column-block {
+    padding-top: 104px;
+    h2 {
+      font-size: rem(38);
+      line-height: 49px;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: rem(22);
+      line-height: 38px;
+      margin-bottom: 72px;
+    }
+    .btn {
+      margin-bottom: 104px;
+      width: 60%;
+    }
+  }
+}
