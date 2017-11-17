@@ -161,7 +161,22 @@ Stylesheet: Button Styles
     background: #3B5C74;
   }
 }
-
+.btn-normal {
+  height: 40px;
+  line-height: 40px;
+  font-size: rem(14);
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-light-blue {
+  background: #D9F0F6;
+  color: #144363;
+  border: 1px solid #144363;
+  &:hover {
+    background: #B2E1ED;
+  }
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
@@ -185,6 +200,11 @@ Stylesheet: Button Styles
       line-height: 48px;
     }
   }
+  .btn-normal {
+    height: 48px;
+    line-height: 48px;
+    font-size: rem(16);
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -196,6 +216,11 @@ Stylesheet: Button Styles
       height: 48px;
       line-height: 48px;
     }
+  }
+  .btn-normal {
+    height: 48px;
+    line-height: 48px;
+    font-size: rem(18);
   }
 }
 
@@ -217,5 +242,10 @@ Stylesheet: Button Styles
     &.secondary-button {
       padding: 0 30px;
     }
+  }
+  .btn-normal {
+    height: 52px;
+    line-height: 52px;
+    font-size: rem(18);
   }
 }
