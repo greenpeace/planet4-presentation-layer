@@ -46,7 +46,7 @@
 
 .happy-point-block-wrap {
     @include happy-point-block-background-image;
-    @include background-before-opacity(#D6E6F2);
+    @include background-before-opacity($light-blue-bg);
     p {
       font-family: roboto;
       font-size: 0.8rem;
@@ -158,7 +158,7 @@
 @media (min-width: 1200px) { 
   .happy-point-block-wrap {
     @include happy-point-block-background-image;
-    @include background-before-opacity(#D6E6F2);
+    @include background-before-opacity($light-blue-bg);
     .pt-20 {
       padding-top: 350px;
     }

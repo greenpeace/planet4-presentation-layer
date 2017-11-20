@@ -108,7 +108,7 @@
         &.big-screen-nav-link {
           &:hover {
             transition: 0.5s;
-            border-bottom: 3px solid #fff;
+            border-bottom: 3px solid $white;
             a {
               color: $white;
               text-decoration: none;
@@ -171,7 +171,7 @@
           }
         }
         &.active-li {
-          background-color: #03484f;
+          background-color: $blue-bg;
           .country-select-dropdown {
             & > span:after {
               -ms-transform: rotate(180deg); /* IE 9 */
@@ -515,7 +515,7 @@
       padding: 10px 20px;
       border-top: 1px solid #d8d8d8;
       z-index: 9999;
-      background: #fff;
+      background: $white;
       -webkit-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
       -moz-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
       box-shadow: -1px 2px 2px rgba(0,0,0,0.2);

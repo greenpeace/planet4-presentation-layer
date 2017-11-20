@@ -853,7 +853,7 @@
               width: 8px;
               height: 8px;
               border-radius: 5px;
-              background-color: #fff;
+              background-color: $white;
               margin-top: 25px;
               margin-left: 12px;
 
@@ -936,7 +936,7 @@
           text-transform: uppercase;
           text-decoration: none;
           font-size: rem(20);
-          color: #030403;
+          color: $header-footer-bg;
           font-weight: bold;
           margin-bottom: 32px;
           position: relative;
@@ -952,7 +952,7 @@
             &:after {
               content: "";
               position: absolute;
-              background-color: #000;
+              background-color: $black;
               transition: transform 0.25s ease-out;
             }
             /* verticle line */
@@ -993,7 +993,7 @@
             display: block;
             .custom-control-description {
               font-size: rem(18);
-              color: #333333;
+              color: $border;
             }
           }
         }
@@ -1021,13 +1021,13 @@
           }
           &:hover {
             background: $primary-button-hover;
-            color: #fff;
+            color: $white;
             cursor: pointer;
           }
           &.disabled {
             background: #B9BBBC;
             &:hover {
-              color: #fff;
+              color: $white;
               cursor: not-allowed;
             }
           }
@@ -1069,7 +1069,7 @@
             text-align: center;
             width: 100%;
             background: #0A3351;
-            color: #fff;
+            color: $white;
           }
         }
       }  
@@ -1182,7 +1182,7 @@
               .action-btn {
                 height: 56px;
                 line-height: 56px;
-                border: 1px solid #030403;
+                border: 1px solid $header-footer-bg;
                 text-transform: uppercase;
                 cursor: pointer;
                 i {
@@ -1248,11 +1248,11 @@
       .btnact {
         .cancelbtn {
           min-width: 45%;
-          border-color: #F36D3A;
-          color: #F36D3A;
+          border-color: $primary-button;
+          color: $primary-button;
           &:hover {
             background: transparent;
-            color: #000;
+            color: $black;
           }
         }
         .applybtn {
@@ -1382,7 +1382,7 @@
               margin-right: 20px;
             }
             &:hover {
-              color: #000;
+              color: $black;
               cursor: pointer;
             }
           }
@@ -1505,7 +1505,7 @@
               .action-btn {
                 height: 56px;
                 line-height: 56px;
-                border: 1px solid #030403;
+                border: 1px solid $header-footer-bg;
                 text-transform: uppercase;
                 cursor: pointer;
                 i {
@@ -1572,11 +1572,11 @@
         .btnact {
           .cancelbtn {
             min-width: 45%;
-            border-color: #F36D3A;
-            color: #F36D3A;
+            border-color: $primary-button;
+            color: $primary-button;
             &:hover {
               background: transparent;
-              color: #000;
+              color: $black;
             }
           }
           .applybtn {
