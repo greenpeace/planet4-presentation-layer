@@ -18,12 +18,15 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",
     "gulp-uglifycss": "^1.0.8",
+    "reload": "^2.2.2",
     "yarn-run-all": "^3.1.1"
   },
   "scripts": {
     "css": "postcss -o style.css src/css/style.css --map.annotation style.css.map --config .postcss.json -u autoprefixer -u postcss-partial-import -u postcss-custom-properties -u postcss-csso",
     "gulp": "gulp",
     "gulp:styles": "gulp styles",
+    "serve": "reload -b",
+    "start": "npm-run-all --parallel serve gulp",
     "build": "npm-run-all --parallel css"
   }
 }

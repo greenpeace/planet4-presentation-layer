@@ -16,21 +16,26 @@ npm run gulp:styles
 
 To watch SCSS files and rebuild the CSS whenever a `.scss` source file changes, use
 
-```sh
+```
 npm run gulp
 ```
 
-This will automatically re-compile your CSS whenever a `.scss` source file changes, but you will still have to manually reload the browser tab to see the change. Auto reload is not present so far.
+### Auto-reloading development server
 
-### Using Gulp globally
+To start a local development server that will auto-rebuild SCSS and reload your page whenever the HTML or styles change, run
 
-This project uses locally-installed `gulp` & `npm` scripts to simplify setup, but at times it may be beneficial to have direct command-line access to `gulp` itself. You can install the `gulp` CLI using [these "getting started" instructions]((https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
+```
+npm start
+```
+
+### Using Gulp directly
+
+This project uses a locally-installed `gulp` with [`npm` scripts](https://docs.npmjs.com/misc/scripts) to simplify setup, but at times it may be useful to have direct command-line access to `gulp` itself. You can install the `gulp` CLI using [these "getting started" instructions]((https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
 This table shows the corresponding `gulp` commands for each `npm` command:
 
-Task | `npm` command | corresponding CLI command
+Task | `npm` command | `gulp` command
 ---- | ------------- | -------------------------
-Install NPM dependencies | `npm install` | _n/a_
 Compile SCSS to CSS | `npm run gulp:styles` | `gulp styles`
 Start Gulp watch task to auto-rebuild SCSS | `npm run gulp` | `gulp`
 
