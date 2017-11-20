@@ -809,8 +809,9 @@
 
 /* CSS for covers */
 
-$search-grey: #666;
-$search-blue: #0E538E;
+$search-grey:  #666;
+$search-blue:  #0E538E;
+$search-black: #1A1A1A;
 
 .search-block {
   padding-top: 64px;
@@ -1157,7 +1158,7 @@ $search-blue: #0E538E;
               }
               .search-result-item-headline {
                 font-size: rem(26);
-                color: #1A1A1A;
+                color: $search-black;
                 text-decoration: none;
                 font-weight: 500;
                 display: block;
@@ -1173,7 +1174,7 @@ $search-blue: #0E538E;
               }
               .search-result-item-content {
                 font-size: rem(18);
-                color: #1A1A1A;
+                color: $search-black;
                 line-height: 30px;
                 margin-bottom: 0;
               }  
@@ -1470,7 +1471,7 @@ $search-blue: #0E538E;
               }
               .search-result-item-headline {
                 font-size: rem(18);
-                color: #1A1A1A;
+                color: $search-black;
                 text-decoration: none;
                 font-weight: 500;
                 display: block;
@@ -1485,7 +1486,7 @@ $search-blue: #0E538E;
               }
               .search-result-item-content {
                 font-size: rem(18);
-                color: #1A1A1A;
+                color: $search-black;
                 line-height: 30px;
                 display: none;
               }  
