@@ -5,6 +5,37 @@ Author: Ashish Singh(ashish.singh@greenpeace.org)
 Stylesheet: Mixins Stylesheet
 ******************************************************************/
 
+/*********************
+ Media Queries
+*********************/
+
+// Mobile-only
+@mixin mobile-only {
+  @media (max-width: #{$small-width}) {
+    @content;
+  }
+}
+
+// Tablet & Up
+@mixin medium-and-up {
+  @media (min-width: #{$medium-width}) {
+    @content;
+  }
+}
+
+// Small Desktop & Up
+@mixin large-and-up {
+  @media (min-width: #{$large-width}) {
+    @content;
+  }
+}
+
+// Large Desktop & Up
+@mixin x-large-and-up {
+  @media (min-width: #{$extra-large-width}) {
+    @content;
+  }
+}
 
 /*********************
 TRANSITION
