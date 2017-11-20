@@ -1,31 +1,51 @@
+# Planet 4 Presentation Layer
 
+## Local Installation
 
-* Install bower globally using npm 
-`npm install -b bower`
+Execute these two `npm` commands to install project dependencies
 
-Install gulp also using this link https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
+```
+npm install
+npm run bower
+```
 
-Once both are installed then run following commands to install dependencies
+To compile the SCSS source to CSS, use
 
-`npm install`
+```
+npm run gulp:styles
+```
 
-`bower install`
+To watch SCSS files and rebuild the CSS whenever a `.scss` source file changes, use
 
-To compile scss to css use
+```sh
+npm run gulp
+```
 
-`bower styles`
+This will automatically re-compile your CSS whenever a `.scss` source file changes, but you will still have to manually reload the browser tab to see the change. Auto reload is not present so far.
 
-To keep watching changes in .scss and compile them use
+### Using Bower & Gulp globally
 
-`bower`
+This project uses locally-installed build tools & `npm` scripts to simplify setup, but at times it may be beneficial to have full access to build tools like `gulp` or `bower`. If you wish to use these command-line utilities directly, you can install them globally:
 
-Once you make any change in scss file you will get compilation but then you have releod the browser and to see that change. Auto reload is not present so far.
+- To install the `bower` command line utility, run `npm install -g bower`.
+- To install the `gulp` command line utility, [follow these Gulp "getting started" instructions]((https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
-Coding buidelines are very important here in this project and delivery depends on that.
+### Command Reference
+
+This table shows the corresponding `bower` and `gulp` commands for each `npm` command.
+
+Task | `npm` command | corresponding CLI command
+---- | ------------- | -------------------------
+Install NPM dependencies | `npm install` | _n/a_
+Install Bower dependencies | `npm run bower` | `bower install`
+Compile SCSS to CSS | `npm run gulp:styles` | `gulp styles`
+Start Gulp watch task to auto-rebuild SCSS | `npm run gulp` | `gulp`
+
+## Coding Guidelines
+
+Coding guidelines are very important here in this project and delivery depends on that.
 
 * (CSS Coding practices)[https://make.wordpress.org/core/handbook/best-practices/coding-standards/css/]
 * (JS Coding practices)[https://make.wordpress.org/core/handbook/best-practices/coding-standards/javascript/]
 * CSS Naming variables (1)[https://blog.toughbyte.com/blabla-9fd86eae4e6c] (2)[https://medium.com/@drublic/css-naming-conventions-less-rules-more-fun-12af220e949b]
 * Naming convention (1)[http://thesassway.com/advanced/modular-css-naming-conventions]
-
-
