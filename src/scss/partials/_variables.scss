@@ -23,25 +23,17 @@ $purple:    #200721;
 $active:                #aed4c7;
 $blue-bg-anchor:        #30a7af;
 $blue-bg:               #03484f;
-$blue-btn:              #0EC2DE; // Once
 $blue-btn-border:       #064364; // Duplicate
 $blue-heading:          #004950;
 $blue-text:             #12757B;
-$body-bg:               #b0d4c8; // Once
 $border-color:          #07403a;
-$border:                $grey;   // Once
-$brown-bg-tags-link:    #E88D75; // Once
 $brown-bg-tags-text:    $yellow;
 $brown-bg:              #FAF7EC;
 $card-header-bg:        #c7dcd3;
 $carr-arrow:            $med-blue;
-$container-bg:          #AFD4C7; // Once
-$dark-para-text:        #011D1E; // Once
 $darkb-blue-text:       #264042;
 $fixed-nav-bg:          #247670;
-$green-link-hover:      #77dd11; // Once
 $header-footer-bg:      #030403;
-$heading:               #004d53; // Once
 $light-blue-bg:         #D6E6F2;
 $light-blue:            #67B2AF;
 $nav-link:              #a6df20;
@@ -49,17 +41,27 @@ $para-text:             #005552;
 $percentage-text:       #017e7a;
 $primary-button:        #F36D3A;
 $primary-button-hover:  #e02d00;
-$secondary-button-bg:   #9fd0c8; // Once
 $secondary-button-hover:#9af9f3;
 $secondary-button:      #86eee7;
 $step-normal-bg:        #E4E7DA;
-$step-number-hover:     #42b3aa; // Once
-$step-number:           #dc9509; // Once
 $steps-deactive-text:   #06747A;
 $top-nav:               #1e5f65;
 $yellow-button-color:   #301c01;
 $yellow-button-hover:   #fac235;
 $yellow-button:         $yellow;
+
+// Used once.
+$blue-btn:              #0EC2DE;
+$body-bg:               #b0d4c8;
+$border:                $grey;
+$brown-bg-tags-link:    #E88D75;
+$container-bg:          #AFD4C7;
+$dark-para-text:        #011D1E;
+$green-link-hover:      #77dd11;
+$heading:               #004d53;
+$secondary-button-bg:   #9fd0c8;
+$step-number-hover:     #42b3aa;
+$step-number:           #dc9509;
 
 // As-of-yet-unused.
 $blue-btn-hover:        #064364; // Duplicate
