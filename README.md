@@ -6,7 +6,6 @@ Execute these two `npm` commands to install project dependencies
 
 ```
 npm install
-npm run bower
 ```
 
 To compile the SCSS source to CSS, use
@@ -23,21 +22,15 @@ npm run gulp
 
 This will automatically re-compile your CSS whenever a `.scss` source file changes, but you will still have to manually reload the browser tab to see the change. Auto reload is not present so far.
 
-### Using Bower & Gulp globally
+### Using Gulp globally
 
-This project uses locally-installed build tools & `npm` scripts to simplify setup, but at times it may be beneficial to have full access to build tools like `gulp` or `bower`. If you wish to use these command-line utilities directly, you can install them globally:
+This project uses locally-installed `gulp` & `npm` scripts to simplify setup, but at times it may be beneficial to have direct command-line access to `gulp` itself. You can install the `gulp` CLI using [these "getting started" instructions]((https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
-- To install the `bower` command line utility, run `npm install -g bower`.
-- To install the `gulp` command line utility, [follow these Gulp "getting started" instructions]((https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
-
-### Command Reference
-
-This table shows the corresponding `bower` and `gulp` commands for each `npm` command.
+This table shows the corresponding `gulp` commands for each `npm` command:
 
 Task | `npm` command | corresponding CLI command
 ---- | ------------- | -------------------------
 Install NPM dependencies | `npm install` | _n/a_
-Install Bower dependencies | `npm run bower` | `bower install`
 Compile SCSS to CSS | `npm run gulp:styles` | `gulp styles`
 Start Gulp watch task to auto-rebuild SCSS | `npm run gulp` | `gulp`
 
