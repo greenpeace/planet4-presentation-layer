@@ -809,6 +809,9 @@
 
 /* CSS for covers */
 
+$search-grey: #666;
+$search-blue: #0E538E;
+
 .search-block {
   padding-top: 64px;
   background: #ECF0F6;
@@ -817,7 +820,7 @@
     .search-help-info {
       font-size: rem(22);
       font-family: $lora;
-      color: #666666;
+      color: $search-grey;
       line-height: 40px;
       margin-bottom: 40px;
       padding-left: 50px;
@@ -842,7 +845,7 @@
           width: 50%;
           cursor: pointer;
           &.active {
-            background-color: #0E538E;
+            background-color: $search-blue;
             border-color: transparent;
             color: $white;
             &:before {
@@ -860,7 +863,7 @@
             }
             &:hover {
               z-index: 2;
-              background-color: #0E538E;
+              background-color: $search-blue;
             }
           }
           &:hover {
@@ -914,7 +917,7 @@
     font-size: rem(32);
     font-family: $roboto;
     font-style: italic;
-    color: #666666;
+    color: $search-grey;
     line-height: normal;
   }
   .search-filter-results {
@@ -1068,7 +1071,7 @@
           .clearall {
             text-align: center;
             width: 100%;
-            background: #0A3351;
+            background: $med-blue;
             color: $white;
           }
         }
@@ -1123,7 +1126,7 @@
                   display: inline-block;
                 }
                 .search-result-item-head {
-                  color: #0E538E;
+                  color: $search-blue;
                   font-weight: bold;
                   text-decoration: none;
                   margin-right: 30px;
@@ -1136,7 +1139,7 @@
                     width: 8px;
                     height: 8px;
                     border-radius: 5px;
-                    background-color: #0E538E;
+                    background-color: $search-blue;
                     margin-right: -20px;
                     margin-top: 5px;
                   }
@@ -1145,7 +1148,7 @@
                   }
                 }
                 .search-result-item-tag {
-                  color: #0E538E;
+                  color: $search-blue;
                   text-decoration: none;
                   &:hover {
                     color: #1680DA;
@@ -1225,7 +1228,7 @@
           margin: 0;
           li {
             a {
-              color: #0E538E;
+              color: $search-blue;
               text-decoration: none;
               font-size: rem(22);
               line-height: 42px;
@@ -1442,7 +1445,7 @@
                   display: inline-block;
                 }
                 .search-result-item-head {
-                  color: #0E538E;
+                  color: $search-blue;
                   font-weight: bold;
                   text-decoration: none;
                   margin-right: 20px;
@@ -1455,13 +1458,13 @@
                     width: 8px;
                     height: 8px;
                     border-radius: 5px;
-                    background-color: #0E538E;
+                    background-color: $search-blue;
                     margin-right: -15px;
                     margin-top: 5px;
                   }
                 }
                 .search-result-item-tag {
-                  color: #0E538E;
+                  color: $search-blue;
                   text-decoration: none;
                 }
               }

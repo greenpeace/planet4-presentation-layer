@@ -9,12 +9,15 @@ base values, and defaults.
 ******************************************************************/
 
 // Colors.
-$black:  #000;
-$white:  #fff;
-$grey:   #333;
-$red:    #ad2330;
-$yellow: #FFD204;
-$blue:   #2980b9;
+$black:     #000;
+$white:     #fff;
+$grey:      #333;
+$red:       #ad2330;
+$yellow:    #FFD204;
+$blue:      #2980b9;
+$med-blue:  #0A3351;
+$dark-blue: #152431;
+$purple:    #200721;
 
 // Used colors
 $active:                #aed4c7;
@@ -31,7 +34,7 @@ $brown-bg-tags-link:    #E88D75; // Once
 $brown-bg-tags-text:    $yellow;
 $brown-bg:              #FAF7EC;
 $card-header-bg:        #c7dcd3;
-$carr-arrow:            #0a3351; // Need to evaluate this color more.
+$carr-arrow:            $med-blue;
 $container-bg:          #AFD4C7; // Once
 $dark-para-text:        #011D1E; // Once
 $darkb-blue-text:       #264042;
