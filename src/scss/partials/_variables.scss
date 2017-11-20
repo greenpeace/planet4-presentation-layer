@@ -66,10 +66,10 @@ $yellow-button:         #FFD204;
 
 
 // Media queries
-$small-width = 575px;
-$medium-width = 768px;
-$large-width = 1024px;
-$extra-large-width = 1438px;
+$small-width: 575px;
+$medium-width: 768px;
+$large-width: 1024px;
+$extra-large-width: 1438px;
 
 $mq-sm-up: "screen and ( min-width: 575px )" !default;
 $mq-md-up: "screen and ( min-width: 768px )" !default;
