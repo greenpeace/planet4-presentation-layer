@@ -26,7 +26,7 @@
 
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
   .video-block {
     padding-top: 72px;
     h1 {
@@ -41,7 +41,7 @@
 
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .video-block {
     padding-top: 104px;
     h1 {
@@ -56,7 +56,7 @@
 
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   .video-block {
     padding-top: 88px;
     h1 {
@@ -71,7 +71,7 @@
 
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@include large-large-and-up {
   .video-block {
     padding-top: 104px;
     h1 {

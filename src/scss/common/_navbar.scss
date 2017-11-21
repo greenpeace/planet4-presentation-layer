@@ -305,7 +305,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 575px) {
+@include mobile-only {
   // #header {
   //   .navbar-brand {
   //     img {
@@ -431,7 +431,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   #header {
     .navbar-brand {
       img {
@@ -524,7 +524,7 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   #header.top-navigation {
     .navbar {
       li {
@@ -550,7 +550,7 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@include large-large-and-up {
   #header.top-navigation {
     position: fixed;
     padding: 0;

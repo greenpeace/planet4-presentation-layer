@@ -146,7 +146,7 @@
 
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+ @include mobile-only {
   .four-coloum-content {
     h2 {
       font-size: rem(36);
@@ -167,7 +167,7 @@
 
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .four-coloum-content {
     h2 {
       font-size: rem(36);

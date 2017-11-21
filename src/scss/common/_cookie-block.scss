@@ -44,7 +44,7 @@ $cookie-blue: #094464;
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
   .cookie-block {
     max-height: 120px;
     background: $cookie-bkg url("images/cookie-right-gradient-sm.png") no-repeat right;
@@ -71,7 +71,7 @@ $cookie-blue: #094464;
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .cookie-block {
     max-height: 56px;
     background: $cookie-bkg url("images/cookie-right-gradient-md.png") no-repeat right;
@@ -87,7 +87,7 @@ $cookie-blue: #094464;
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   .cookie-block {
     max-height: 50px;
     background: $cookie-bkg url("images/cookie-right-gradient.png") no-repeat right;
@@ -104,7 +104,7 @@ $cookie-blue: #094464;
 
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@include large-large-and-up {
   .cookie-block {
     max-height: 50px;
     background: $cookie-bkg url("images/cookie-right-gradient.png") no-repeat right;

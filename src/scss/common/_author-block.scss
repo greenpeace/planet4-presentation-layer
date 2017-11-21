@@ -65,7 +65,7 @@ $author-grey: #E2E5E8;
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
   .author-block {
     margin-top: 56px;
     width: 100%;
@@ -106,7 +106,7 @@ $author-grey: #E2E5E8;
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .author-block {
     margin-top: 56px;
     width: 100%;
@@ -147,7 +147,7 @@ $author-grey: #E2E5E8;
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   .author-block {
     margin-top: 56px;
     width: 80%;
@@ -186,7 +186,3 @@ $author-grey: #E2E5E8;
     }
   }
 } 
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-}

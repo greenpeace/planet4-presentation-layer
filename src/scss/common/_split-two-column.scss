@@ -134,7 +134,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
   .split-two-column-mobile-view {
     ul { 
       margin-top: 105px;
@@ -171,7 +171,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .split-two-column {
     height: 430px;
     .split-two-column-skewed-left {
@@ -217,7 +217,7 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   .split-two-column {
     height: 440px;
     .split-two-column-skewed-left {
@@ -263,7 +263,7 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@include large-large-and-up {
   .split-two-column {
     height: 616px;
     .split-two-column-skewed-left {

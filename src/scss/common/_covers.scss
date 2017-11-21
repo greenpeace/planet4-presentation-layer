@@ -109,7 +109,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
   .covers-block {
     .cover-card {
      .cover-card-btn.btn-transparent {
@@ -120,7 +120,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .covers-block {
     .cover-card {
       .cover-card-btn {
@@ -131,7 +131,7 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   .covers-block {
     .cover-card {
       .cover-card-btn {
@@ -142,7 +142,7 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@include large-large-and-up {
   .covers-block {
     .cover-card {
       min-height: 440px;

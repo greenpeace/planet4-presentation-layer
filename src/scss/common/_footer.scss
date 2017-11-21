@@ -45,14 +45,14 @@
 
   .footer-links-secondary {
     margin-top: 56px;
-    @media #{ $mq-md-up } {
+    @include medium-and-up {
       margin-top: 0;
     }
     color: #d8d8d8;
     text-align: center;
     li {
       margin-bottom: 24px;
-      @media #{ $mq-md-up } {
+      @include medium-and-up {
         display: inline-block;
         span { margin: 0 5px; }
       }
@@ -61,10 +61,10 @@
       color: #d8d8d8;
       text-transform: uppercase;
       font-size: rem(16);
-      @media #{ $mq-md-up } {
+      @include medium-and-up {
         font-size: rem(14);
       }
-      @media #{ $mq-lg-up } {
+      @include large-and-up {
         font-size: rem(16);
       }
     }
@@ -89,7 +89,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
   #footer {
     padding: 20px 0;
     .footer-links {
