@@ -49,7 +49,7 @@
     @include background-before-opacity($light-blue-bg);
     p {
       font-family: roboto;
-      font-size: 0.8rem;
+      font-size: rem(13);
       line-height: 1rem;
       color: #868e96;
     }
@@ -73,12 +73,12 @@
       padding-right: 0;
     }
     h2 {
-      font-size: 1.625rem;
+      font-size: rem(26);
       line-height: 2rem;
       margin-bottom: 24px;
     }
     h5 {
-      font-size: 1rem;
+      font-size: rem(16);
       line-height: 1.5rem;
     }
     .subscriber-btn {
@@ -107,12 +107,12 @@
       padding-right: 0;
     }
     h2 {
-      font-size: 1.75rem;
+      font-size: rem(28);
       line-height: 2.125rem;
       margin-bottom: 8px;
     }
     h5 {
-      font-size: 1.125rem;
+      font-size: rem(18);
       line-height: 1.75rem;
     }
     .subscriber-btn {
@@ -135,12 +135,12 @@
       padding-right: 0;
     }
     h2 {
-      font-size: 2.125rem;
+      font-size: rem(34);
       line-height: 2.125rem;
       margin-bottom: 24px;
     }
     h5 {
-      font-size: 1.125rem;
+      font-size: rem(18);
       line-height: 1.5rem;
     }
     .subscriber-btn {
@@ -163,10 +163,10 @@
       padding-top: 350px;
     }
     h2 {
-      font-size: 2.25rem;
+      font-size: rem(36);
     }
     h5 {
-      font-size: 1.125rem;
+      font-size: rem(18);
     }
     .subscriber-btn {
       margin-top: 0;

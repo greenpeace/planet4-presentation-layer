@@ -25,15 +25,15 @@
   padding-top: 120px;
   padding-bottom: 70px;
   h1{
-    font-size: 4rem;
+    font-size: rem(64);
     margin-bottom: 48px;
   }
   h3{
-    font-size: 2.75rem;
+    font-size: rem(44);
     margin-bottom: 56px;
   }
   p{
-    font-size: 1.375rem;  
+    font-size: rem(22);
     margin-bottom: 72px;
   }
 
@@ -47,11 +47,11 @@
     padding-top: 120px;
     padding-bottom: 80px;
 	    h1{
-	      font-size: 2.5rem;
+	      font-size: rem(40);
 	      margin-bottom: 50px;
 	    }
 	    h3{
-	      font-size: 1.375rem;
+	      font-size: rem(22);
 	      margin-bottom: 130px;
 	    }
 	    p{
@@ -66,15 +66,15 @@
   	padding-top: 80px;
     padding-bottom: 80px;
 	    h1{
-	      font-size: 3rem;
+	      font-size: rem(48);
 	      margin-bottom: 40px;
 	    }
 	    h3{
-	      font-size: 1.5rem;
+	      font-size: rem(24);
 	      margin-bottom: 50px;
 	    }
 	    p{
-	      font-size: 1.1875rem;
+	      font-size: rem(27.5);
 	    }
 	}   
 }
@@ -85,15 +85,15 @@
     padding-top: 100px;
     padding-bottom: 80px;
 	    h1{
-	      font-size: 3.5rem;
+	      font-size: rem(56);
 	      margin-bottom: 50px;
 	    }
 	    h3{
-	      font-size: 1.875rem;
+	      font-size: rem(30);
 	      margin-bottom: 50px;
 	    }
 	    p{
-	      font-size: 1.25rem;
+	      font-size: rem(20);
 	    }
 
   	}

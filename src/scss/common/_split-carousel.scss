@@ -67,7 +67,7 @@
           right: 0;
           top: 0;
           color: $white;
-          font-size: 0.875rem;
+          font-size: rem(14);
           margin: 15px 130px;
           font-weight: normal;
         }
@@ -190,7 +190,7 @@
   .split-carousel-wrap {
     overflow: hidden;
       h1 {
-        font-size:  rem(26);
+        font-size: rem(26);
         margin-left: 0;
         margin-bottom: 40px;
         line-height: 30px;
@@ -208,7 +208,7 @@
           font-size: rem(17);
         }
         p {
-          font-size: 0.8125rem;
+          font-size: rem(13);
         }
       }
       .carousel-control-prev,
@@ -259,7 +259,7 @@
       // padding-top: 70px;
       // padding-bottom: 70px;
         h1 {
-          font-size:  rem(34);
+          font-size: rem(34);
           margin-left: 0;
           margin-bottom: 40px;
           line-height: 40px;
@@ -270,10 +270,10 @@
         .carousel-caption {
           padding: 20px 30px;
           h3 {
-            font-size: 1.0625rem;
+            font-size: rem(17);
           }
           p {
-            font-size: 0.8125rem;
+            font-size: rem(13);
           }
         }
         &.not-header {
@@ -318,7 +318,7 @@
     .split-carousel-wrap {
       overflow: hidden;
         h1 {
-          font-size:  rem(36);
+          font-size: rem(36);
           margin-left: 0;
           margin-bottom: 40px;
           line-height: 42px;
@@ -326,10 +326,10 @@
         .carousel-caption {
           padding: 20px 30px;
           h3 {
-            font-size: 1.0625rem;
+            font-size: rem(17);
           }
           p {
-            font-size: 0.8125rem;
+            font-size: rem(13);
           }
         } 
           &.not-header {
@@ -376,17 +376,17 @@
       // padding-top: 104px;
       // padding-bottom: 104px;
         h1 {
-          font-size:  rem(38);
+          font-size: rem(38);
           margin-left: 0;
           margin-bottom: 40px;
         }
         .carousel-caption {
           padding: 20px 30px;
           h3 {
-            font-size: 1.0625rem;
+            font-size: rem(17);
           }
           p {
-            font-size: 0.8125rem;
+            font-size: rem(13);
           }
         }
         &.not-header {
