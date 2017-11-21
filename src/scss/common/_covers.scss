@@ -49,7 +49,7 @@
 .cover-card {
   min-height: 440px;
   flex-basis: 100%;
-  padding: 32px 15px;
+  padding: 32px 15px 60px;
   margin-bottom: 32px;
   position: relative;
   box-shadow: 0 0 10px rgba(0,0,0,.35);
@@ -88,7 +88,7 @@
     margin-bottom: 32px;
     max-width: 80%;
     transition: color 100ms linear;
-  }
+  } 
   p {
     font-size: rem(20);
     font-weight: 300;
@@ -101,6 +101,7 @@
   @include large-and-up {
     box-shadow: none;
     transition: box-shadow 150ms linear;
+    padding-bottom: 70px;
   }
 }
 
