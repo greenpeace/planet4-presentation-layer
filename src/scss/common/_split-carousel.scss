@@ -191,7 +191,7 @@
     overflow: hidden;
       h1 {
         font-size:  rem(26);
-        margin-left: 0px;
+        margin-left: 0;
         margin-bottom: 40px;
         line-height: 30px;
       }
@@ -217,11 +217,11 @@
         background: none !important;
       }
       &.not-header {
-        margin-bottom: 0px;
-        padding-bottom: 0px;
+        margin-bottom: 0;
+        padding-bottom: 0;
         .carousel-inner{
           .carousel-item-credit {
-            margin: -20px 0px;
+            margin: -20px 0;
             color: #6D6D6D;
             font-size: rem(11);
           }
@@ -241,7 +241,7 @@
         }
         .carousel-control-prev,
         .carousel-control-next {
-          top: 0%; 
+          top: 0;
         }
         .carousel-indicators {
           bottom: 0;
@@ -260,7 +260,7 @@
       // padding-bottom: 70px;
         h1 {
           font-size:  rem(34);
-          margin-left: 0px;
+          margin-left: 0;
           margin-bottom: 40px;
           line-height: 40px;
         }
@@ -277,7 +277,7 @@
           }
         }
         &.not-header {
-          margin-bottom: 0px;
+          margin-bottom: 0;
           padding-bottom: 195px;
           .carousel-inner{
             .carousel-item-credit {
@@ -303,7 +303,7 @@
           }
           .carousel-control-prev,
           .carousel-control-next {
-            top: 0%; 
+            top: 0;
           }
           .carousel-indicators {
             bottom: -170px;
@@ -319,7 +319,7 @@
       overflow: hidden;
         h1 {
           font-size:  rem(36);
-          margin-left: 0px;
+          margin-left: 0;
           margin-bottom: 40px;
           line-height: 42px;
         }
@@ -333,7 +333,7 @@
           }
         } 
           &.not-header {
-          margin-bottom: 0px;
+          margin-bottom: 0;
           padding-bottom: 195px;
           .carousel-inner{
             .carousel-item-credit {
@@ -359,7 +359,7 @@
           }
           .carousel-control-prev,
           .carousel-control-next {
-            top: 0%; 
+            top: 0;
           }
           .carousel-indicators {
             bottom: -170px;
@@ -377,7 +377,7 @@
       // padding-bottom: 104px;
         h1 {
           font-size:  rem(38);
-          margin-left: 0px;
+          margin-left: 0;
           margin-bottom: 40px;
         }
         .carousel-caption {
@@ -390,7 +390,7 @@
           }
         }
         &.not-header {
-        margin-bottom: 0px;
+        margin-bottom: 0;
         padding-bottom: 195px;
         .carousel-inner{
           .carousel-item-credit {
@@ -416,7 +416,7 @@
         }
         .carousel-control-prev,
         .carousel-control-next {
-          top: 0%; 
+          top: 0;
         }
         .carousel-indicators {
           bottom: -170px;
