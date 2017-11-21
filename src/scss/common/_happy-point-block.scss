@@ -48,7 +48,7 @@
     @include happy-point-block-background-image;
     @include background-before-opacity($light-blue-bg);
     p {
-      font-family: roboto;
+      font-family: $roboto;
       font-size: rem(13);
       line-height: 1rem;
       color: #868e96;
