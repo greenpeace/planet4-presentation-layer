@@ -62,7 +62,7 @@
     }
   }
 
-@media (max-width: 575px) {
+  @include mobile-only {
   .happy-point-block-wrap {
     height: 470px;
     padding-left: 15px;
@@ -98,7 +98,7 @@
   }
 }
 
-@media (min-width: 768px) { 
+@include medium-and-up {
   .happy-point-block-wrap {
     height: 470px;
     .pt-20 {
@@ -126,7 +126,7 @@
   }
 }
 
-@media (min-width: 992px) { 
+@include medium-large-and-up {
   .happy-point-block-wrap {
     height: 470px;
     .pt-20 {
@@ -155,7 +155,7 @@
     }
   }
 }
-@media (min-width: 1200px) { 
+@include large-large-and-up {
   .happy-point-block-wrap {
     @include happy-point-block-background-image;
     @include background-before-opacity(#D6E6F2);

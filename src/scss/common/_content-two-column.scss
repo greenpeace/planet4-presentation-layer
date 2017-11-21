@@ -20,7 +20,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
+@include small-and-up {
   .content-two-column-block {
     padding-top: 80px;
     h2 {
@@ -43,7 +43,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
+@include medium-and-up {
   .content-two-column-block {
     padding-top: 80px;
     h2 {
@@ -65,7 +65,7 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
+@include medium-large-and-up {
   .content-two-column-block {
     padding-top: 80px;
     h2 {
@@ -87,7 +87,7 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
+@include large-large-and-up {
   .content-two-column-block {
     padding-top: 104px;
     h2 {

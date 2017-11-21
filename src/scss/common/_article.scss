@@ -210,7 +210,8 @@
   } 
 
 }
-@media (max-width: 575px) {
+
+@include mobile-only {
   .article {
     padding-top: 70px;
   }

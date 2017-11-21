@@ -1275,7 +1275,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
   .search-block {
     padding-top: 56px;
     .without-search-result {
@@ -1600,7 +1600,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .search-block {
     padding-top: 64px;
     .without-search-result {
@@ -1756,7 +1756,7 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   .search-block {
     padding-top: 64px;
     .without-search-result {
@@ -1888,7 +1888,7 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@include large-large-and-up {
   .search-block {
     padding-top: 64px;
     .without-search-result {

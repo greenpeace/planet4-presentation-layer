@@ -186,7 +186,7 @@
     background: $light-blue-bg;
   }
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
   .split-carousel-wrap {
     overflow: hidden;
       h1 {
@@ -253,7 +253,7 @@
 
 
 // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) {
+  @include medium-and-up {
     .split-carousel-wrap {
       overflow: hidden;
       // padding-top: 70px;
@@ -314,7 +314,7 @@
   }
 
 // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) {
+  @include medium-large-and-up {
     .split-carousel-wrap {
       overflow: hidden;
         h1 {
@@ -370,7 +370,7 @@
   }
 
 // Extra large devices (large desktops, 1200px and up)
-  @media (min-width: 1200px) {
+  @include large-large-and-up {
     .split-carousel-wrap {
       overflow: hidden;
       // padding-top: 104px;

@@ -12,7 +12,7 @@
 /* CSS for subheader */
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
 	.subheader {
 		padding: 48px 0 32px 0; 
 		h2 {
@@ -27,7 +27,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) {
+@include medium-and-up {
 	.subheader {
 		padding: 72px 0 48px 0; 
 		h2 {
@@ -39,10 +39,10 @@
 			line-height: 1.625rem;
 		}
 	}
-  }
+}
 
 // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) {
+@include medium-large-and-up {
 	.subheader {
 		padding: 104px 0 40px 0; 
 		h2 {
@@ -54,10 +54,10 @@
 			line-height: 1.625rem;
 		}
 	}
-  }
+}
   
 // Extra large devices (large desktops, 1200px and up)
-  @media (min-width: 1200px) {
+@include large-large-and-up {
   	.subheader {
 		padding: 104px 0 72px 0; 
 		h2 {
@@ -69,4 +69,4 @@
 			line-height: 1.625rem;
 		}
 	}
-  }
+}

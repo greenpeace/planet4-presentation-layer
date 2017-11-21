@@ -9,28 +9,49 @@ Stylesheet: Mixins Stylesheet
  Media Queries
 *********************/
 
-// Mobile-only
+// Mobile-only (up to 575px)
 @mixin mobile-only {
   @media (max-width: #{$small-width}) {
     @content;
   }
 }
 
-// Tablet & Up
+// Mobile & Up (greater than to 575px)
+@mixin small-and-up {
+  @media (min-width: #{$small-width}) {
+    @content;
+  }
+}
+
+// Tablet & Up (greater than 768px)
 @mixin medium-and-up {
   @media (min-width: #{$medium-width}) {
     @content;
   }
 }
 
-// Small Desktop & Up
+// Large Tablet & Up (greater than 992px)
+@mixin medium-large-and-up {
+  @media (min-width: #{$medium-large-width}) {
+    @content;
+  }
+}
+
+// Small Desktop & Up (greater than 1024px)
 @mixin large-and-up {
   @media (min-width: #{$large-width}) {
     @content;
   }
 }
 
-// Large Desktop & Up
+// Medium Tablet & Up (greater than 1200px)
+@mixin large-large-and-up {
+  @media (min-width: #{$large-large-width}) {
+    @content;
+  }
+}
+
+// Large Desktop & Up (greater than 1438px)
 @mixin x-large-and-up {
   @media (min-width: #{$extra-large-width}) {
     @content;

@@ -16,7 +16,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
   .block-media {
     height: 201px;
     margin: 48px 0 40px 0;
@@ -24,7 +24,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .block-media {
     height: 410px;
     margin: 104px 0 72px 0;
@@ -32,7 +32,7 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   .block-media {
     height: 390px;
     margin: 104px 0 72px 0;
