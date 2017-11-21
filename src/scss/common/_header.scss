@@ -20,50 +20,6 @@
     </div>
   </div> <!-- Page Header block ends -->
 */
-.main-header{
-  color: $dark-blue;
-  padding-top: 120px;
-	padding-bottom: 80px;
-	h1{
-		font-size: rem(40);
-		margin-bottom: 50px;
-	}
-	h3{
-		font-size: rem(22);
-		margin-bottom: 130px;
-	}
-	p{
-		display: none;
-	}
-
-	@include medium-and-up {
-		padding-top: 80px;
-		h1{
-			font-size: rem(48);
-			margin-bottom: 40px;
-		}
-		h3{
-			font-size: rem(24);
-		}
-		p{
-			font-size: rem(27.5);
-		}
-	}
-
-	@include medium-large-and-up {
-		padding-top: 100px;
-		h1{
-			font-size: rem(56);
-			margin-bottom: 50px;
-		}
-		h3{
-			font-size: rem(30);
-		}
-		p{
-			font-size: rem(20);
-		}
-	}
-}
 
 .page-header {
 
