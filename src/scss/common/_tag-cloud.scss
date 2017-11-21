@@ -29,7 +29,7 @@
   .tag-cloud-title {
     h2 {
       color: #200721;
-      font-size: 2rem;
+      font-size: rem(32);
     }
     .tag-cloud-list {
       a {
@@ -37,16 +37,16 @@
         text-decoration: none;
         margin-right: 5px;
         &.tag-xsmall {
-          font-size: 0.75rem;
+          font-size: rem(12);
         }
         &.tag-small {
-          font-size: 1rem;
+          font-size: rem(16);
         }
         &.tag-mid {
-          font-size: 1.5rem;
+          font-size: rem(24);
         }
         &.tag-big {
-          font-size: 1.75rem;
+          font-size: rem(28);
         }
       }
     }

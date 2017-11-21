@@ -36,18 +36,18 @@
       @include skew($bg: #E2E5E8, $deg: 25deg, $right: -70px, $width: 155px);
       .author-info-inner {
         h2 {
-          font-size: 1.25rem;
+          font-size: rem(20);
           font-weight: bold;
           margin-bottom: 16px;
         }
         h5 {
-          font-size: 1.03125rem;
+          font-size: rem(16.5);
           font-weight: 500;
           color: #E51538;
           margin-bottom: 40px;
         }
         p {
-          font-size: 1.0625rem;
+          font-size: rem(17);
         }
       }
 
@@ -80,15 +80,15 @@
         @include skew($bg: #E2E5E8, $deg: 0deg, $right: 0px, $width: 0px);
         .author-info-inner {
           h2 {
-            font-size: 1rem;
+            font-size: rem(16);
             margin-bottom: 8px;
           }
           h5 {
-            font-size: 1.03125rem;
+            font-size: rem(16.5);
             margin-bottom: 40px;
           }
           p {
-            font-size: 1rem;
+            font-size: rem(16);
           }
         }
 
@@ -121,15 +121,15 @@
         @include skew($bg: #E2E5E8, $deg: 25deg, $right: -70px, $width: 155px);
         .author-info-inner {
           h2 {
-            font-size: 1rem;
+            font-size: rem(16);
             margin-bottom: 8px;
           }
           h5 {
-            font-size: 1.03125rem;
+            font-size: rem(16.5);
             margin-bottom: 40px;
           }
           p {
-            font-size: 1rem;
+            font-size: rem(16);
           }
         }
 
@@ -162,15 +162,15 @@
         @include skew($bg: #E2E5E8, $deg: 25deg, $right: -70px, $width: 155px);
         .author-info-inner {
           h2 {
-            font-size: 1rem;
+            font-size: rem(16);
             margin-bottom: 8px;
           }
           h5 {
-            font-size: 1.03125rem;
+            font-size: rem(16.5);
             margin-bottom: 40px;
           }
           p {
-            font-size: 1rem;
+            font-size: rem(16);
           }
         }
 
