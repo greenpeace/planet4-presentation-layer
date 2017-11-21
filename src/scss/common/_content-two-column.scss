@@ -1,42 +1,43 @@
 
 .content-two-column-block {
-  padding-top: 80px;
+  padding-top: 46px;
   h2 {
     font-size: rem(26);
     font-weight: bold;
-    line-height: 33px;
-    margin-bottom: 24px;
+    line-height: 31.2px;
+    margin-bottom: 20px;
     width: 60%;
   }
   p {
     font-size: rem(17);
-    line-height: 28px;
-    margin-bottom: 32px;
+    line-height: 28.9px;
+    margin-bottom: 37px;
   }
   .btn {
-    margin-bottom: 80px;
+    margin-bottom: 59px;
     width: 100%;
+    line-height: normal;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
   .content-two-column-block {
-    padding-top: 80px;
+    padding-top: 46px;
     h2 {
       font-size: rem(26);
       font-weight: bold;
-      line-height: 33px;
-      margin-bottom: 24px;
+      line-height: 31.2px;
+      margin-bottom: 20px;
       width: 60%;
     }
     p {
       font-size: rem(17);
-      line-height: 28px;
-      margin-bottom: 32px;
+      line-height: 28.9px;
+      margin-bottom: 37px;
     }
     .btn {
-      margin-bottom: 80px;
+      margin-bottom: 59px;
       width: 100%;
     }
   }
@@ -45,20 +46,20 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
   .content-two-column-block {
-    padding-top: 80px;
+    padding-top: 74px;
     h2 {
       font-size: rem(34);
       line-height: 46px;
-      margin-bottom: 32px;
+      margin-bottom: 21px;
       width: 80%;
     }
     p {
       font-size: rem(19);
       line-height: 33px;
-      margin-bottom: 48px;
+      margin-bottom: 46px;
     }
     .btn {
-      margin-bottom: 80px;
+      margin-bottom: 73px;
       width: 50%;
     }
   }
@@ -67,20 +68,20 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
   .content-two-column-block {
-    padding-top: 80px;
+    padding-top: 85px;
     h2 {
       font-size: rem(36);
-      line-height: 46px;
-      margin-bottom: 48px;
+      line-height: 46.8px;
+      margin-bottom: 25px;
       width: 80%;
     }
     p {
       font-size: rem(20);
       line-height: 34px;
-      margin-bottom: 48px;
+      margin-bottom: 56px;
     }
     .btn {
-      margin-bottom: 80px;
+      margin-bottom: 99.16px;
       width: 80%;
     }
   }
@@ -89,19 +90,19 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
   .content-two-column-block {
-    padding-top: 104px;
+    padding-top: 108px;
     h2 {
       font-size: rem(38);
-      line-height: 49px;
-      margin-bottom: 40px;
+      line-height: 49.4px;
+      margin-bottom: 32px;
     }
     p {
       font-size: rem(22);
       line-height: 38px;
-      margin-bottom: 72px;
+      margin-bottom: 69px;
     }
     .btn {
-      margin-bottom: 104px;
+      margin-bottom: 119px;
       width: 60%;
     }
   }
