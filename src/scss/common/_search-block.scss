@@ -809,6 +809,10 @@
 
 /* CSS for covers */
 
+$search-grey:  #666;
+$search-blue:  #0E538E;
+$search-black: #1A1A1A;
+
 .search-block {
   padding-top: 64px;
   background: #ECF0F6;
@@ -817,7 +821,7 @@
     .search-help-info {
       font-size: rem(22);
       font-family: $lora;
-      color: #666666;
+      color: $search-grey;
       line-height: 40px;
       margin-bottom: 40px;
       padding-left: 50px;
@@ -842,7 +846,7 @@
           width: 50%;
           cursor: pointer;
           &.active {
-            background-color: #0E538E;
+            background-color: $search-blue;
             border-color: transparent;
             color: $white;
             &:before {
@@ -853,14 +857,14 @@
               width: 8px;
               height: 8px;
               border-radius: 5px;
-              background-color: #fff;
+              background-color: $white;
               margin-top: 25px;
               margin-left: 12px;
 
             }
             &:hover {
               z-index: 2;
-              background-color: #0E538E;
+              background-color: $search-blue;
             }
           }
           &:hover {
@@ -882,7 +886,7 @@
         }
       }
       .search-btn {
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
       }
     }
   }
@@ -894,7 +898,7 @@
       color: #002341;
       border: 1px solid #002341;
       border-radius: 6px;
-      padding: 0px 20px;
+      padding: 0 20px;
       display: inline-block;
       width: 190px;
       margin-left: 10px; 
@@ -914,7 +918,7 @@
     font-size: rem(32);
     font-family: $roboto;
     font-style: italic;
-    color: #666666;
+    color: $search-grey;
     line-height: normal;
   }
   .search-filter-results {
@@ -936,7 +940,7 @@
           text-transform: uppercase;
           text-decoration: none;
           font-size: rem(20);
-          color: #030403;
+          color: $header-footer-bg;
           font-weight: bold;
           margin-bottom: 32px;
           position: relative;
@@ -952,7 +956,7 @@
             &:after {
               content: "";
               position: absolute;
-              background-color: #000;
+              background-color: $black;
               transition: transform 0.25s ease-out;
             }
             /* verticle line */
@@ -993,7 +997,7 @@
             display: block;
             .custom-control-description {
               font-size: rem(18);
-              color: #333333;
+              color: $border;
             }
           }
         }
@@ -1021,13 +1025,13 @@
           }
           &:hover {
             background: $primary-button-hover;
-            color: #fff;
+            color: $white;
             cursor: pointer;
           }
           &.disabled {
             background: #B9BBBC;
             &:hover {
-              color: #fff;
+              color: $white;
               cursor: not-allowed;
             }
           }
@@ -1068,8 +1072,8 @@
           .clearall {
             text-align: center;
             width: 100%;
-            background: #0A3351;
-            color: #fff;
+            background: $med-blue;
+            color: $white;
           }
         }
       }  
@@ -1123,7 +1127,7 @@
                   display: inline-block;
                 }
                 .search-result-item-head {
-                  color: #0E538E;
+                  color: $search-blue;
                   font-weight: bold;
                   text-decoration: none;
                   margin-right: 30px;
@@ -1136,7 +1140,7 @@
                     width: 8px;
                     height: 8px;
                     border-radius: 5px;
-                    background-color: #0E538E;
+                    background-color: $search-blue;
                     margin-right: -20px;
                     margin-top: 5px;
                   }
@@ -1145,7 +1149,7 @@
                   }
                 }
                 .search-result-item-tag {
-                  color: #0E538E;
+                  color: $search-blue;
                   text-decoration: none;
                   &:hover {
                     color: #1680DA;
@@ -1154,7 +1158,7 @@
               }
               .search-result-item-headline {
                 font-size: rem(26);
-                color: #1A1A1A;
+                color: $search-black;
                 text-decoration: none;
                 font-weight: 500;
                 display: block;
@@ -1170,7 +1174,7 @@
               }
               .search-result-item-content {
                 font-size: rem(18);
-                color: #1A1A1A;
+                color: $search-black;
                 line-height: 30px;
                 margin-bottom: 0;
               }  
@@ -1182,7 +1186,7 @@
               .action-btn {
                 height: 56px;
                 line-height: 56px;
-                border: 1px solid #030403;
+                border: 1px solid $header-footer-bg;
                 text-transform: uppercase;
                 cursor: pointer;
                 i {
@@ -1225,7 +1229,7 @@
           margin: 0;
           li {
             a {
-              color: #0E538E;
+              color: $search-blue;
               text-decoration: none;
               font-size: rem(22);
               line-height: 42px;
@@ -1248,11 +1252,11 @@
       .btnact {
         .cancelbtn {
           min-width: 45%;
-          border-color: #F36D3A;
-          color: #F36D3A;
+          border-color: $primary-button;
+          color: $primary-button;
           &:hover {
             background: transparent;
-            color: #000;
+            color: $black;
           }
         }
         .applybtn {
@@ -1318,7 +1322,7 @@
       }
     }
     .search-result {
-      margin-top: 0px;
+      margin-top: 0;
       .search-tag {
         font-size: rem(14);
         width: 114px;
@@ -1340,7 +1344,7 @@
     }
     .search-info {
       font-size: rem(16);
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
     .search-filter-results {
       margin-top: 48px;
@@ -1382,7 +1386,7 @@
               margin-right: 20px;
             }
             &:hover {
-              color: #000;
+              color: $black;
               cursor: pointer;
             }
           }
@@ -1421,16 +1425,16 @@
             margin-bottom: 32px;
             border-bottom: 1px solid #ddd;
             position: relative;
-            padding: 15px 0px;
-            margin: 0px 15px;
+            padding: 15px 0;
+            margin: 0 15px;
             .search-result-item-image, .blank-block {
               width: 0;
-              margin-right: 0px;
+              margin-right: 0;
             }
             .search-result-item-body {
               width: 100%;
               .search-result-tags {
-                margin-bottom: 0px;
+                margin-bottom: 0;
                 font-size: rem(14);
                 .search-result-item-title {
                   background: #CCCCCC;
@@ -1442,7 +1446,7 @@
                   display: inline-block;
                 }
                 .search-result-item-head {
-                  color: #0E538E;
+                  color: $search-blue;
                   font-weight: bold;
                   text-decoration: none;
                   margin-right: 20px;
@@ -1455,23 +1459,23 @@
                     width: 8px;
                     height: 8px;
                     border-radius: 5px;
-                    background-color: #0E538E;
+                    background-color: $search-blue;
                     margin-right: -15px;
                     margin-top: 5px;
                   }
                 }
                 .search-result-item-tag {
-                  color: #0E538E;
+                  color: $search-blue;
                   text-decoration: none;
                 }
               }
               .search-result-item-headline {
                 font-size: rem(18);
-                color: #1A1A1A;
+                color: $search-black;
                 text-decoration: none;
                 font-weight: 500;
                 display: block;
-                margin-bottom: 0px;
+                margin-bottom: 0;
               }
               .search-result-item-info {
                 font-size: rem(16);
@@ -1482,7 +1486,7 @@
               }
               .search-result-item-content {
                 font-size: rem(18);
-                color: #1A1A1A;
+                color: $search-black;
                 line-height: 30px;
                 display: none;
               }  
@@ -1505,7 +1509,7 @@
               .action-btn {
                 height: 56px;
                 line-height: 56px;
-                border: 1px solid #030403;
+                border: 1px solid $header-footer-bg;
                 text-transform: uppercase;
                 cursor: pointer;
                 i {
@@ -1520,7 +1524,7 @@
               padding: 24px 15px;
               padding-bottom: 30px;
               margin: 0;
-              box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
               .search-result-item-headline {
                 font-size: rem(24);
                 margin-bottom: 40px;
@@ -1572,11 +1576,11 @@
         .btnact {
           .cancelbtn {
             min-width: 45%;
-            border-color: #F36D3A;
-            color: #F36D3A;
+            border-color: $primary-button;
+            color: $primary-button;
             &:hover {
               background: transparent;
-              color: #000;
+              color: $black;
             }
           }
           .applybtn {
@@ -1604,7 +1608,7 @@
   .search-block {
     padding-top: 64px;
     .without-search-result {
-      margin-top: 0px;
+      margin-top: 0;
       .search-help-info {
         font-size: rem(18);
         line-height: 33px;
@@ -1642,10 +1646,10 @@
       }
     }    
     .search-result {
-      margin-top: 0px;
+      margin-top: 0;
       .search-tag {
         font-size: rem(22);
-        padding: 0px 20px;
+        padding: 0 20px;
         width: 190px;
         margin-left: 10px; 
         line-height: 38px;
@@ -1661,7 +1665,7 @@
     }
     .search-info {
       font-size: rem(18);
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
     .search-filter-results {
       margin-top: 104px;
@@ -1798,10 +1802,10 @@
       }
     }
     .search-result {
-      margin-top: 0px;
+      margin-top: 0;
       .search-tag {
         font-size: rem(22);
-        padding: 0px 20px;
+        padding: 0 20px;
         width: 190px;
         margin-left: 10px; 
         line-height: 38px;
@@ -1817,7 +1821,7 @@
     }
     .search-info {
       font-size: rem(28);
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
     .search-filter-results {
       margin-top: 104px;
@@ -1927,7 +1931,7 @@
       margin-top: 120px;
       .search-tag {
         font-size: rem(22);
-        padding: 0px 20px;
+        padding: 0 20px;
         width: 190px;
         margin-left: 10px; 
         line-height: 42px;

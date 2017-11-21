@@ -45,8 +45,8 @@
   <!-- Split Two Coloumn End -->
 */  
 .split-two-column {
-  background: #000;
-  color: #fff;
+  background: $black;
+  color: $white;
   padding: 2em;
   height: 616px;
   display: flex;
@@ -159,7 +159,7 @@
             height: 20px;
             width: 20px;
             position: absolute;
-            color: #FFD204;
+            color: $yellow-button;
             top: 0;
             right: 0;
             margin: 30px;
@@ -177,7 +177,7 @@
     .split-two-column-skewed-left {
       .part-left{
         width: 51%;
-        margin: 64px -8px 0 0px;
+        margin: 64px -8px 0 0;
         h2 {
           font-size: rem(48);
           margin-bottom: 72px;
@@ -223,7 +223,7 @@
     .split-two-column-skewed-left {
       .part-left{
         width: 40%;
-        margin: 72px 73px 0 0px;
+        margin: 72px 73px 0 0;
         h2 {
           font-size: rem(56);
           margin-bottom: 72px;
@@ -231,7 +231,7 @@
         h5 {
           font-size: rem(18);
           line-height: 2rem;
-          margin-bottom: 0px;
+          margin-bottom: 0;
         }
         a {
           font-size: rem(18);

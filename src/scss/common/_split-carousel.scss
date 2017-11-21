@@ -57,7 +57,7 @@
     overflow: hidden;
       h1 {
         font-size: rem(38);
-        color: #152431;
+        color: $dark-blue;
         margin-bottom: 40px; 
         line-height: 45px;
       }
@@ -114,7 +114,7 @@
         }
       }
       .carousel-control-next {
-        background: #000;
+        background: $black;
         width: 33%;
         margin-right: -12%;
         -webkit-transform:skew(-200deg);
@@ -191,7 +191,7 @@
     overflow: hidden;
       h1 {
         font-size: rem(26);
-        margin-left: 0px;
+        margin-left: 0;
         margin-bottom: 40px;
         line-height: 30px;
       }
@@ -203,7 +203,7 @@
       bottom: 0;
       left: 0;
       z-index: 10;
-      color: #fff;
+      color: $white;
         h3 {
           font-size: rem(17);
         }
@@ -217,11 +217,11 @@
         background: none !important;
       }
       &.not-header {
-        margin-bottom: 0px;
-        padding-bottom: 0px;
+        margin-bottom: 0;
+        padding-bottom: 0;
         .carousel-inner{
           .carousel-item-credit {
-            margin: -20px 0px;
+            margin: -20px 0;
             color: #6D6D6D;
             font-size: rem(11);
           }
@@ -241,7 +241,7 @@
         }
         .carousel-control-prev,
         .carousel-control-next {
-          top: 0%; 
+          top: 0;
         }
         .carousel-indicators {
           bottom: 0;
@@ -260,7 +260,7 @@
       // padding-bottom: 70px;
         h1 {
           font-size: rem(34);
-          margin-left: 0px;
+          margin-left: 0;
           margin-bottom: 40px;
           line-height: 40px;
         }
@@ -277,12 +277,12 @@
           }
         }
         &.not-header {
-          margin-bottom: 0px;
+          margin-bottom: 0;
           padding-bottom: 195px;
           .carousel-inner{
             .carousel-item-credit {
               margin: 10px 80px;
-              color: #fff;
+              color: $white;
               font-size: rem(12);
             }
             .carousel-caption {
@@ -303,7 +303,7 @@
           }
           .carousel-control-prev,
           .carousel-control-next {
-            top: 0%; 
+            top: 0;
           }
           .carousel-indicators {
             bottom: -170px;
@@ -319,7 +319,7 @@
       overflow: hidden;
         h1 {
           font-size: rem(36);
-          margin-left: 0px;
+          margin-left: 0;
           margin-bottom: 40px;
           line-height: 42px;
         }
@@ -333,12 +333,12 @@
           }
         } 
           &.not-header {
-          margin-bottom: 0px;
+          margin-bottom: 0;
           padding-bottom: 195px;
           .carousel-inner{
             .carousel-item-credit {
               margin: 10px 110px;
-              color: #fff;
+              color: $white;
               font-size: rem(13);
             }
             .carousel-caption {
@@ -359,7 +359,7 @@
           }
           .carousel-control-prev,
           .carousel-control-next {
-            top: 0%; 
+            top: 0;
           }
           .carousel-indicators {
             bottom: -170px;
@@ -377,7 +377,7 @@
       // padding-bottom: 104px;
         h1 {
           font-size: rem(38);
-          margin-left: 0px;
+          margin-left: 0;
           margin-bottom: 40px;
         }
         .carousel-caption {
@@ -390,12 +390,12 @@
           }
         }
         &.not-header {
-        margin-bottom: 0px;
+        margin-bottom: 0;
         padding-bottom: 195px;
         .carousel-inner{
           .carousel-item-credit {
             margin: 16px 130px;
-            color: #fff;
+            color: $white;
             font-size: rem(14);
           }
           .carousel-caption {
@@ -416,7 +416,7 @@
         }
         .carousel-control-prev,
         .carousel-control-next {
-          top: 0%; 
+          top: 0;
         }
         .carousel-indicators {
           bottom: -170px;
