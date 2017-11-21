@@ -127,12 +127,12 @@ Stylesheet: Button Styles
 
 .secondary-button {
   background: $secondary-button-bg;
-  color: #0A3351;
-  border: solid 1px #0A3351;
+  color: $med-blue;
+  border: solid 1px $med-blue;
   text-transform: uppercase;
   font-weight: 500;
   &:hover {
-    background: #0A3351;
+    background: $med-blue;
     color: $white;
   }
   &:focus {
@@ -145,12 +145,12 @@ Stylesheet: Button Styles
 }
 .btn-transparent {
   background: transparent;
-  color: #0A3351;
-  border: solid 1px #0A3351;
+  color: $med-blue;
+  border: solid 1px $med-blue;
   text-transform: uppercase;
   font-weight: 500;
   &:hover {
-    background: #0A3351;
+    background: $med-blue;
     color: $white;
   }
   &:focus {

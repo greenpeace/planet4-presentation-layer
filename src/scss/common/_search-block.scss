@@ -809,6 +809,10 @@
 
 /* CSS for covers */
 
+$search-grey:  #666;
+$search-blue:  #0E538E;
+$search-black: #1A1A1A;
+
 .search-block {
   padding-top: 64px;
   background: #ECF0F6;
@@ -817,7 +821,7 @@
     .search-help-info {
       font-size: rem(22);
       font-family: $lora;
-      color: #666666;
+      color: $search-grey;
       line-height: 40px;
       margin-bottom: 40px;
       padding-left: 50px;
@@ -842,7 +846,7 @@
           width: 50%;
           cursor: pointer;
           &.active {
-            background-color: #0E538E;
+            background-color: $search-blue;
             border-color: transparent;
             color: $white;
             &:before {
@@ -853,14 +857,14 @@
               width: 8px;
               height: 8px;
               border-radius: 5px;
-              background-color: #fff;
+              background-color: $white;
               margin-top: 25px;
               margin-left: 12px;
 
             }
             &:hover {
               z-index: 2;
-              background-color: #0E538E;
+              background-color: $search-blue;
             }
           }
           &:hover {
@@ -914,7 +918,7 @@
     font-size: rem(32);
     font-family: $roboto;
     font-style: italic;
-    color: #666666;
+    color: $search-grey;
     line-height: normal;
   }
   .search-filter-results {
@@ -936,7 +940,7 @@
           text-transform: uppercase;
           text-decoration: none;
           font-size: rem(20);
-          color: #030403;
+          color: $header-footer-bg;
           font-weight: bold;
           margin-bottom: 32px;
           position: relative;
@@ -952,7 +956,7 @@
             &:after {
               content: "";
               position: absolute;
-              background-color: #000;
+              background-color: $black;
               transition: transform 0.25s ease-out;
             }
             /* verticle line */
@@ -993,7 +997,7 @@
             display: block;
             .custom-control-description {
               font-size: rem(18);
-              color: #333333;
+              color: $border;
             }
           }
         }
@@ -1021,13 +1025,13 @@
           }
           &:hover {
             background: $primary-button-hover;
-            color: #fff;
+            color: $white;
             cursor: pointer;
           }
           &.disabled {
             background: #B9BBBC;
             &:hover {
-              color: #fff;
+              color: $white;
               cursor: not-allowed;
             }
           }
@@ -1068,8 +1072,8 @@
           .clearall {
             text-align: center;
             width: 100%;
-            background: #0A3351;
-            color: #fff;
+            background: $med-blue;
+            color: $white;
           }
         }
       }  
@@ -1123,7 +1127,7 @@
                   display: inline-block;
                 }
                 .search-result-item-head {
-                  color: #0E538E;
+                  color: $search-blue;
                   font-weight: bold;
                   text-decoration: none;
                   margin-right: 30px;
@@ -1136,7 +1140,7 @@
                     width: 8px;
                     height: 8px;
                     border-radius: 5px;
-                    background-color: #0E538E;
+                    background-color: $search-blue;
                     margin-right: -20px;
                     margin-top: 5px;
                   }
@@ -1145,7 +1149,7 @@
                   }
                 }
                 .search-result-item-tag {
-                  color: #0E538E;
+                  color: $search-blue;
                   text-decoration: none;
                   &:hover {
                     color: #1680DA;
@@ -1154,7 +1158,7 @@
               }
               .search-result-item-headline {
                 font-size: rem(26);
-                color: #1A1A1A;
+                color: $search-black;
                 text-decoration: none;
                 font-weight: 500;
                 display: block;
@@ -1170,7 +1174,7 @@
               }
               .search-result-item-content {
                 font-size: rem(18);
-                color: #1A1A1A;
+                color: $search-black;
                 line-height: 30px;
                 margin-bottom: 0;
               }  
@@ -1182,7 +1186,7 @@
               .action-btn {
                 height: 56px;
                 line-height: 56px;
-                border: 1px solid #030403;
+                border: 1px solid $header-footer-bg;
                 text-transform: uppercase;
                 cursor: pointer;
                 i {
@@ -1225,7 +1229,7 @@
           margin: 0;
           li {
             a {
-              color: #0E538E;
+              color: $search-blue;
               text-decoration: none;
               font-size: rem(22);
               line-height: 42px;
@@ -1248,11 +1252,11 @@
       .btnact {
         .cancelbtn {
           min-width: 45%;
-          border-color: #F36D3A;
-          color: #F36D3A;
+          border-color: $primary-button;
+          color: $primary-button;
           &:hover {
             background: transparent;
-            color: #000;
+            color: $black;
           }
         }
         .applybtn {
@@ -1382,7 +1386,7 @@
               margin-right: 20px;
             }
             &:hover {
-              color: #000;
+              color: $black;
               cursor: pointer;
             }
           }
@@ -1442,7 +1446,7 @@
                   display: inline-block;
                 }
                 .search-result-item-head {
-                  color: #0E538E;
+                  color: $search-blue;
                   font-weight: bold;
                   text-decoration: none;
                   margin-right: 20px;
@@ -1455,19 +1459,19 @@
                     width: 8px;
                     height: 8px;
                     border-radius: 5px;
-                    background-color: #0E538E;
+                    background-color: $search-blue;
                     margin-right: -15px;
                     margin-top: 5px;
                   }
                 }
                 .search-result-item-tag {
-                  color: #0E538E;
+                  color: $search-blue;
                   text-decoration: none;
                 }
               }
               .search-result-item-headline {
                 font-size: rem(18);
-                color: #1A1A1A;
+                color: $search-black;
                 text-decoration: none;
                 font-weight: 500;
                 display: block;
@@ -1482,7 +1486,7 @@
               }
               .search-result-item-content {
                 font-size: rem(18);
-                color: #1A1A1A;
+                color: $search-black;
                 line-height: 30px;
                 display: none;
               }  
@@ -1505,7 +1509,7 @@
               .action-btn {
                 height: 56px;
                 line-height: 56px;
-                border: 1px solid #030403;
+                border: 1px solid $header-footer-bg;
                 text-transform: uppercase;
                 cursor: pointer;
                 i {
@@ -1572,11 +1576,11 @@
         .btnact {
           .cancelbtn {
             min-width: 45%;
-            border-color: #F36D3A;
-            color: #F36D3A;
+            border-color: $primary-button;
+            color: $primary-button;
             &:hover {
               background: transparent;
-              color: #000;
+              color: $black;
             }
           }
           .applybtn {

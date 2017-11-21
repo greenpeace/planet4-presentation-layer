@@ -70,7 +70,7 @@ CSS3 GRADIENTS
 Skew mixin
 *********************/
 
-@mixin skew($side: right, $deg: -20deg, $right: -15px, $left: -15px, $width: 30px, $bg: #fff) {
+@mixin skew($side: right, $deg: -20deg, $right: -15px, $left: -15px, $width: 30px, $bg: $white) {
     position: relative;
 
     &:before {
