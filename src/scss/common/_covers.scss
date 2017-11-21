@@ -48,47 +48,72 @@
 
 .cover-card {
   min-height: 440px;
+  flex-basis: 100%;
   padding: 32px 15px;
   margin-bottom: 32px;
   position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,.35);
+  background-size: cover;
+  background-position: center;
+  &:before {
+    content: "";
+    opacity: 0;
+    transition: opacity 100ms linear;
+  }
   &:hover {
     @include background-before-opacity(#385924);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    h2 {
+      color: $white
+    }
     p {
-      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+    .cover-card-btn {
+      background-color: $primary-button;
+      border-color: $primary-button;
     }
   }
   &.dark-card-bg {
     color: $white;
   }
+  & > * {
+    position: relative;
+  }
   h2 {
     font-size: rem(28);
+    line-height: 1.2;
+    font-weight: 500;
     margin-bottom: 32px;
-    position: relative;
+    max-width: 80%;
+    transition: color 100ms linear;
   }
   p {
     font-size: rem(20);
-    line-height: 2rem;
+    font-weight: 300;
+    line-height: 1.6;
     color: $white;
-    position: relative;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 150ms linear;
   }
-}
-
-.cover-card-btn {
-  background: $primary-button;
-  border-color: $primary-button;
+  @include large-and-up {
+    box-shadow: none;
+    transition: box-shadow 150ms linear;
+  }
 }
 
 .cover-card-tag {
   color: $brown-bg-tags-text;
+  font-weight: 300;
   display: inline-block;
   margin-bottom: 8px;
-  position: relative;
   text-decoration: none;
 }
 
 .cover-card-btn {
-  background: transparent;
+  background: rgba(255,255,255,.2);
   color: $white;
   border-color: $white;
   padding: 10px;
@@ -96,14 +121,5 @@
   bottom: 0;
   margin: 15px 0;
   width: 90%;
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@include large-large-and-up {
-  .cover-card {
-    min-height: 440px;
-    padding: 32px 15px;
-    margin-bottom: 32px;
-    position: relative;
-  }
+  cursor: pointer;
 }
