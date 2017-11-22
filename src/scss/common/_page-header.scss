@@ -65,10 +65,16 @@
 
 .page-header-title {
 	font-size: rem(40);
+	max-width: 80%;
+	margin-bottom: 0;
 }
 
 .page-header-subtitle {
 	font-size: rem(22);
+	line-height: 1.4;
+	font-weight: 300;
+	max-width: 80%;
+	margin: 20px 0;
 }
 
 .page-header-content {
