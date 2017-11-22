@@ -99,15 +99,15 @@
         h1 {
         font-size: rem(40);
         margin-bottom: 48px;
-        width: 70%;
+        width: 50%;
         line-height: normal;
         font-weight: bold;
         }
         h3 {
         font-size: rem(22);
-        margin-bottom: 74px;
+        margin-bottom: 99px;
         line-height: 30px;
-        width: 70%;
+        width: 55%;
         }
         p {
         font-size: 1.375rem;  
@@ -133,32 +133,18 @@
     top: 0;
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-      background-image: none;
-      border: solid 1px $white;
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
       display: block;
       text-align: center;
-      background-color: $carr-arrow;
-      opacity: 0.4;
       -webkit-transform:skew(208deg);
       -moz-transform:skew(208deg);
       transform:skew(208deg);
       margin-right: 45%;
-      i {
-        background: url("images/sprite.png");
-        height: 32px;
-        width: 22px;
-        vertical-align: middle;
-        display: inline-block;
-        margin: 6px 2px 0 0;
-      }
+      width: 70px;
+      height: 65px;
+      cursor: pointer;
     }
     .carousel-control-next-icon {
-      i {
-        background-position: -21px 1px;
-      }
+      background: url("images/carousel-marker-next-l.png");
     }
   }
 
@@ -194,6 +180,7 @@
 
 @media (min-width: 310px) {
   .split-carousel-wrap.carousel-header {
+    // overflow: visible !important; 
     padding-top: 0px;
     .carousel-item {
       .carousel-caption {
@@ -210,15 +197,15 @@
           }
           h3 {
             font-size: rem(22);
-            margin-bottom: 144px;
+            margin-bottom: 146px;
             line-height: 35px;
-            width: 50%;
+            width: 100%;
           }
           p {
             font-size: rem(19);
             margin-bottom: 36px;
             line-height: 33px;
-            width: 60%;
+            width: 70%;
             display: none;
           }
         }
@@ -227,7 +214,7 @@
     .carousel-item.active img, 
     .carousel-item-next img,
     .carousel-item-prev img {
-      max-height: 588px;
+      max-height: 468px;
     }
     .carousel-control-next {
       top :0;
@@ -240,8 +227,30 @@
     .carousel-indicators {
       margin-right: 34%;
       right: 0 !important;
-      bottom: 0;
+      bottom: 20px;
     } 
+  }
+}
+
+// Very specific media query for button placement half 
+// above and below image
+@media screen and (min-width: 310px) and (max-width: 768px) {
+  .split-carousel-wrap {
+    .carousel-inner {
+      overflow: visible !important;
+    }
+    .carousel-header {
+      overflow: visible !important; 
+    }
+    .page-header {
+      height: 100%;
+      .row {
+        display: block;
+        bottom: -20px;
+        position: absolute;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -264,7 +273,7 @@
           }
           h3 {
             font-size: rem(22);
-            margin-bottom: 144px;
+            margin-bottom: 154px;
             line-height: 35px;
             width: 50%;
           }
@@ -281,7 +290,7 @@
     .carousel-item.active img, 
     .carousel-item-next img,
     .carousel-item-prev img {
-      max-height: 588px;
+      max-height: 454px;
     }
     .carousel-control-next {
       top :0;
@@ -343,7 +352,10 @@
     .carousel-control-next {
       top :0;
       .carousel-control-next-icon {
-        margin-right: 63px;
+        margin-right: 113px;
+        background: url("images/carousel-marker-next-l.png");
+        width: 70px;
+        height: 65px;
       }
     }      
     .carousel-indicators {
@@ -398,7 +410,10 @@
     .carousel-control-next {
       top :0;
       .carousel-control-next-icon {
-        margin-right: 83px;
+        margin-right: 133px;
+        background: url("images/carousel-marker-next-l.png");
+        width: 70px;
+        height: 65px;
       }
     }      
     .carousel-indicators {
@@ -431,6 +446,7 @@
           }
           h3 {
             font-size: rem(44);
+            font-weight: 400;
             margin-bottom: 41px;
             line-height: 52px;
             width: 60%;
@@ -454,6 +470,9 @@
       top :0;
       .carousel-control-next-icon {
         margin-right: 45%;
+        background: url("images/carousel-marker-next.png");
+        width: 90px;
+        height: 90px;
       }
     }      
     .carousel-indicators {

@@ -53,16 +53,16 @@
   <!-- Split Carousel Block End -->
 */
 .split-carousel-wrap {
-      h1 {
-        font-size: rem(38);
-        color: #152431;
-        margin-bottom: 40px; 
-        line-height: 45px;
-      }
+    h1 {
+      font-size: rem(26);
+      color: #152431;
+      margin-bottom: 17px; 
+      line-height: normal;
+    }
     &.not-header {
     padding-top: 0;
     overflow: hidden;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-bottom: 153px;
       .carousel-item {
         .carousel-item-credit {
@@ -70,9 +70,10 @@
           right: 0;
           top: 0;
           color: $white;
-          font-size: 0.875rem;
-          margin: 15px;
+          font-size: rem(11);
+          margin: -20px 15px 15px;
           font-weight: normal;
+          color: #5A5A5A;
         }
       }
       .carousel-item.active,
@@ -118,16 +119,17 @@
       }
       .carousel-control-next {
         background: #000;
-        width: 33%;
-        margin-right: -12%;
-        -webkit-transform:skew(-200deg);
-        -moz-transform:skew(-200deg);
-        transform:skew(-200deg);
+        width: 50%;
+        margin-right: -25%;
+        -webkit-transform:skew(-205deg);
+        -moz-transform:skew(-205deg);
+        transform:skew(-205deg);
+        background-position: right;
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
-          -webkit-transform:skew(200deg);
-          -moz-transform:skew(200deg);
-          transform:skew(200deg);
+          -webkit-transform:skew(205deg);
+          -moz-transform:skew(205deg);
+          transform:skew(205deg);
           margin-right: 30%;
         } 
       }
@@ -197,7 +199,7 @@
       .carousel-inner{
         .carousel-item-credit {
           margin: 10px 80px;
-          color: #fff;
+          color: $white;
           font-size: rem(12);
         }
         .carousel-caption {
@@ -282,17 +284,17 @@
     .split-carousel-wrap {
         h1 {
           font-size:  rem(36);
-          margin-left: 0px;
+          margin-left: 0;
           margin-bottom: 25px;
           line-height: normal;
         }
           &.not-header {
-          margin-bottom: 0px;
+          margin-bottom: 0;
           padding-bottom: 143px;
           .carousel-inner{
             .carousel-item-credit {
               margin: 10px 110px;
-              color: #fff;
+              color: $white;
               font-size: rem(13);
             }
             .carousel-caption {
@@ -329,16 +331,16 @@
 // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) {
     .split-carousel-wrap {
-        h1 {
-          font-size:  rem(38);
-          margin-left: 0px;
-          margin-bottom: 30px;
-          line-height: normal;
-        }
-        &.not-header {
-        margin-bottom: 0px;
-        padding-bottom: 195px;
-        .carousel-inner{
+      h1 {
+        font-size:  rem(38);
+        margin-left: 0px;
+        margin-bottom: 30px;
+        line-height: normal;
+      }
+      &.not-header {
+      margin-bottom: 0px;
+      padding-bottom: 195px;
+        .carousel-inner {
           .carousel-item-credit {
             margin: 16px 130px;
             color: #fff;
@@ -373,5 +375,5 @@
           margin-right: 29px;
         }
       }   
-      }  
+    }  
   }

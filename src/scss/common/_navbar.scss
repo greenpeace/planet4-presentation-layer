@@ -14,6 +14,7 @@
     color: $white;
     border-radius: 5px;
     .fa {
+      &.fa-bars,
       &.fa-times {
         display: none;
       }
@@ -301,6 +302,12 @@
     top: 20px;
     right: 120px;
     z-index: 5;
+  }
+}
+
+.mobile-search-wrap {
+  .fa {
+    color: #66CB00;
   }
 }
 

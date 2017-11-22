@@ -179,11 +179,11 @@ Stylesheet: Button Styles
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@media (min-width: 575px) {
   .btn {
     padding: 0 15px;
     &.btn-small {
-      font-size: 14px;
+      font-size: rem(14);
       height: 40px;
       line-height: 40px;
     }
@@ -195,7 +195,7 @@ Stylesheet: Button Styles
   .btn {
     padding: 0 15px;
     &.btn-medium {
-      font-size: 16px;
+      font-size: rem(16);
       height: 48px;
       line-height: 48px;
     }
@@ -212,7 +212,7 @@ Stylesheet: Button Styles
   .btn {
     padding: 0 15px;
     &.btn-medium {
-      font-size: 16px;
+      font-size: rem(16);
       height: 48px;
       line-height: 48px;
     }
@@ -229,13 +229,12 @@ Stylesheet: Button Styles
   .btn {
     padding: 0 15px;
     &.btn-medium {
-      font-size: 18px;
+      font-size: rem(18);
       height: 56px;
       line-height: 56px;
     }
 
     &.btn-primary, &.yellow-button {
-      line-height: rem(50);
       padding: 0 50px;
     }
 
