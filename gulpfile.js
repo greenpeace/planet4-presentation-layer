@@ -86,7 +86,12 @@ gulp.task('styles', function () {
       // outputStyle: 'nested',
       // outputStyle: 'expanded',
       precision: 10
-    } ) )
+    } ).on( 'error', function ( error ) {
+			notify.onError( {
+				title: 'Error linting SCSS! 😱',
+				message: error.message,
+			} )( error );
+		} ) )
     .pipe( sourcemaps.write( { includeContent: false } ) )
     .pipe( sourcemaps.init( { loadMaps: true } ) )
     .pipe( autoprefixer() )
