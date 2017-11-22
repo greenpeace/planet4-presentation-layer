@@ -88,7 +88,7 @@ gulp.task('styles', function () {
       precision: 10
     } ).on( 'error', function ( error ) {
 			notify.onError( {
-				title: 'Error linting scripts! 😱',
+				title: 'Error linting SCSS! 😱',
 				message: error.message,
 			} )( error );
 		} ) )
