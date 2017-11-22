@@ -22,9 +22,55 @@
 */
 
 .page-header {
-
+	color: $white;
+	padding: 50px 0;
 }
 
-.page-header__background {
+.page-header-background {
+	top: 0;
+	bottom: 0;
 	position: absolute;
+	max-width: 100%;
+	z-index: 0;
+
+	&:after {
+		content: "";
+		// Add gradient here to go from full tan to transparent.
+	}
+}
+
+.top-page-tags {
+	font-size: rem(14);
+}
+
+.top-tag {
+	color: $yellow;
+	font-weight: 300;
+
+	&:after {
+		content: "\2022";
+		padding: 0 10px;
+		pointer-events: none;
+	}
+
+	&:last-of-type:after {
+		display: none;
+	}
+}
+
+.top-tag--category {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.page-header-title {
+	font-size: rem(40);
+}
+
+.page-header-subtitle {
+	font-size: rem(22);
+}
+
+.page-header-content {
+	display: none;
 }
