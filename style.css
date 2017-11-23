@@ -1003,7 +1003,7 @@ Stylesheet: Button Styles
   .split-carousel-wrap.carousel-header .carousel-item .carousel-caption .main-header p { font-size: 1.1875rem; margin-bottom: 36px; line-height: 33px; width: 62%; display: block; }
   .split-carousel-wrap.carousel-header .carousel-item.active img, .split-carousel-wrap.carousel-header .carousel-item-next img, .split-carousel-wrap.carousel-header .carousel-item-prev img { max-height: 588px; }
   .split-carousel-wrap.carousel-header .carousel-control-next { top: 0; }
-  .split-carousel-wrap.carousel-header .carousel-control-next .carousel-control-next-icon { margin-right: 113px; background: url("images/carousel-marker-next-l.png"); width: 56px; height: 56px; }
+  .split-carousel-wrap.carousel-header .carousel-control-next .carousel-control-next-icon { margin-right: 113px; background: url("images/carousel-marker-next-l.png"); width: 66px; height: 66px; }
   .split-carousel-wrap.carousel-header .carousel-indicators { margin-right: 40px; margin-bottom: 54px; bottom: 0; right: 0; } }
 
 @media (min-width: 992px) { .split-carousel-wrap.carousel-header { padding-top: 0; }
@@ -1014,7 +1014,7 @@ Stylesheet: Button Styles
   .split-carousel-wrap.carousel-header .carousel-item .carousel-caption .main-header p { font-size: 1.25rem; margin-bottom: 48px; line-height: 34px; width: 62%; display: block; }
   .split-carousel-wrap.carousel-header .carousel-item.active img, .split-carousel-wrap.carousel-header .carousel-item-next img, .split-carousel-wrap.carousel-header .carousel-item-prev img { max-height: 588px; }
   .split-carousel-wrap.carousel-header .carousel-control-next { top: 0; }
-  .split-carousel-wrap.carousel-header .carousel-control-next .carousel-control-next-icon { margin-right: 133px; background: url("images/carousel-marker-next-l.png"); width: 62px; height: 62px; }
+  .split-carousel-wrap.carousel-header .carousel-control-next .carousel-control-next-icon { margin-right: 133px; background: url("images/carousel-marker-next-l.png"); width: 66px; height: 66px; }
   .split-carousel-wrap.carousel-header .carousel-indicators { margin-right: 30px; margin-bottom: 32px; bottom: 0; right: 0; } }
 
 @media (min-width: 1200px) { .split-carousel-wrap.carousel-header { padding-top: 64px; }
