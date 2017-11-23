@@ -171,6 +171,7 @@
 @include medium-and-up {
   .split-two-column {
     height: 430px;
+    margin-bottom: 18px;
     .split-two-column-skewed-left {
       .part-left{
         width: 51%;
@@ -178,10 +179,11 @@
         h2 {
           font-size: rem(48);
           margin-bottom: 72px;
+          font-weight:500;
         }
         h5 {
           font-size: rem(18);
-          line-height: 2rem;
+          line-height: 1.7rem;
           margin-bottom: 10px;
         }
         a {
@@ -197,16 +199,20 @@
       }
       .part-right {
         width: 53%;
-        margin-left: 120px;
-        margin-top: 185px;
+        margin-left: 126px;
+        margin-top: 174px;
         h5 {
           font-size: rem(18);
-          line-height: 2rem;
+          line-height: 1.7rem;
           margin-bottom: 10px;
         }
         a {
           font-size: rem(28);
-          margin-bottom: 40px;
+          margin-bottom: 34px;
+        }
+        button {
+          width: auto;
+          padding: 0 32px;
         }
       }
     }
