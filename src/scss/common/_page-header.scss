@@ -5,17 +5,20 @@
 
 /* HEADER BLOCK HTML
   <div class="page-header col-md-8 col-lg-8 col-sm-12">
-    <div class="top-tags-wrap">
-      <span>#TagName 1</span>
-      <span>#TagName 2</span>
-      <span>#TagName 3</span>
+    <div class="page-header-background">
+      <img src="images/act-header.jpg" class="page-header-image" />
     </div>
-    <h1>What you do matters</h1>
-      <h3>A billion acts of courage can spark a brighter tomorrow.</h3>
-      <p>Tart liquorice sweet roll pastry croissant toffee mufﬁn tiramisu. Marshmallow tootsie roll sugar plum powder oatcake ginger bread. Cupcake cookie cotton candy chocolate cake oat ice sweet roll pastry croissant toffee mufﬁn tiramisu. </p>
-    <div class="row clearfix">
-      <div class="col-md-4">
-      <a href="#" class="btn btn-small btn-medium btn-primary btn-block">Take action</a>
+    <div class="container">
+			<div class="top-tags-wrap">
+				<a class="top-tag top-tag--category" href="#">Forests</a>
+				<a class="top-tag top-tag--hashtag" href="#">#Wetlands</a>
+			</div>
+    	<h1 class="page-header-title">What you do matters</h1>
+      	<h3 class="page-header-subtitle">A billion acts of courage can spark a brighter tomorrow.</h3>
+      	<p class="page-header-content">Tart liquorice sweet roll pastry croissant toffee mufﬁn tiramisu. Marshmallow tootsie roll sugar plum powder oatcake ginger bread. Cupcake cookie cotton candy chocolate cake oat ice sweet roll pastry croissant toffee mufﬁn tiramisu. </p>
+    	<div class="row">
+     	 <div class="col-md-4">
+     	 <a href="#" class="btn btn-medium btn-primary page-header-btn">Take action</a>
       </div>
     </div>
   </div> <!-- Page Header block ends -->
@@ -29,6 +32,8 @@
 
 .page-header-background {
 	position: absolute;
+	z-index: 0;
+	top: 0;
 
 	&:after {
 		content: "";
@@ -48,10 +53,7 @@
 }
 
 .page-header-image {
-	top: 0;
-	bottom: 0;
 	max-width: 100%;
-	z-index: 0;
 }
 
 .top-page-tags {
