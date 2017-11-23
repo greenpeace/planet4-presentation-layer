@@ -1,57 +1,3 @@
-/* 
-<!-- Split Carousel Block Start -->
-  <div class="container">
-    <div class="split-carousel-wrap">
-      <h1>Our ships in action</h1>
-      <div id="carousel-wrapper" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-wrapper" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-wrapper" data-slide-to="1"></li>
-          <li data-target="#carousel-wrapper" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <h5 class="carousel-item-credit">© Jeff Tan / Greenpeace</h5>
-            <img src="images/carousel-img1.jpg" alt="First slide">
-            <div class="carousel-caption">
-              <h3>Rainbow Warrior at the Great Barrier Reef.</h3>
-              <p>The ship was on the Great Barrier Reef as UNESCO passed a decision to keep the Reef on a watching brief due to the impacts of industrialisation, agricultural run off & climate change.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <h5 class="carousel-item-credit">© John Deo / Greenpeace</h5>
-            <img src="images/carousel-img.jpg"  alt="Second slide">
-            <div class="carousel-caption">
-              <h3>Caption</h3>
-              <p>Credit</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <h5 class="carousel-item-credit">© Person Name / Greenpeace</h5>
-           <img src="images/GP028BP.jpg"  alt="Third slide">
-            <div class="carousel-caption">
-              <h3>Caption</h3>
-              <p>Credit</p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carousel-wrapper" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true">
-          <i></i>
-          </span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-wrapper" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true">
-          <i></i>
-          </span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-  </div> 
-  <!-- Split Carousel Block End -->
-*/
 .split-carousel-wrap {
   h1 {
     font-size: rem(26);
@@ -69,7 +15,6 @@
         position: absolute;
         right: 0;
         top: 0;
-        color: $white;
         font-size: rem(11);
         margin: -20px 15px 15px;
         font-weight: normal;
@@ -91,14 +36,7 @@
       right: 0;
       width: 100%;
       padding: 30px 200px 30px 50px;
-      background : -moz-linear-gradient(66.31% -110.5% -120deg,rgba(10, 51, 81, 0) 0%,rgba(10, 51, 81, 1) 100%);
-      background : -webkit-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
-      background : -webkit-gradient(linear,66.31% -110.5% ,33.69% 210.5% ,color-stop(0,rgba(10, 51, 81, 0) ),color-stop(1,rgba(10, 51, 81, 1) ));
-      background : -o-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
-      background : -ms-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
-      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351', endColorstr='#0A3351' ,GradientType=0)";
       background : linear-gradient(210deg, rgba(10, 51, 81, 0.2) 0%, rgba(10, 51, 81, 1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351',endColorstr='#0A3351' , GradientType=1);
     }
     .carousel-indicators {
       right: 0;
@@ -121,14 +59,10 @@
       background: $black;
       width: 50%;
       margin-right: -25%;
-      -webkit-transform:skew(-205deg);
-      -moz-transform:skew(-205deg);
       transform:skew(-205deg);
       background-position: right;
       .carousel-control-prev-icon,
       .carousel-control-next-icon {
-        -webkit-transform:skew(205deg);
-        -moz-transform:skew(205deg);
         transform:skew(205deg);
         margin-right: 30%;
       } 
@@ -186,7 +120,8 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@include mobile-only {
+// @include mobile-only {
+@media (max-width: $medium-width) {
   .split-carousel-wrap {
     h1 {
       font-size:  rem(34);
@@ -199,9 +134,10 @@
       padding-bottom: 129px;
       .carousel-inner{
         .carousel-item-credit {
-          margin: 10px 80px;
-          color: $white;
+          margin: 10px 12px;
           font-size: rem(12);
+          position: relative;
+          text-align: right;
         }
         .carousel-caption {
           bottom: 0;

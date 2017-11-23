@@ -32,13 +32,9 @@
     text-align: right;
   }
 }
-
-  .mobile-menus {
+.mobile-menus {
   background: #234448; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #234448 0%, #2b5459 50%, #356268 50%, #356268 50%, #356268 51%, #2b5459 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #234448 0%,#2b5459 50%,#356268 50%,#356268 50%,#356268 51%,#2b5459 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(124deg, #234448 0%,#2b5459 50%,#356268 50%,#356268 50%,#356268 51%,#2b5459 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#234448', endColorstr='#2b5459',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */    
   width: 300px; 
   position: fixed; 
   left: -320px; 
@@ -159,6 +155,10 @@
         &.nav-search-wrap {
           width: 30%;
           margin-left: 20px;
+          color: $search-text-colour;
+          input::-webkit-input-placeholder {
+            color: $search-text-colour;
+          }
           .top-nav-search-btn {
             background: none;
             border: none;
