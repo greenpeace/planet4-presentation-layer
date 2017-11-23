@@ -229,16 +229,17 @@
         margin: 72px 73px 0 0;
         h2 {
           font-size: rem(56);
-          margin-bottom: 72px;
+          margin-bottom: 70px;
         }
         h5 {
           font-size: rem(18);
-          line-height: 2rem;
-          margin-bottom: 0;
+          line-height: 1.7rem;
+          margin-bottom: 5px;
         }
         a {
+          font-weight: normal;
           font-size: rem(18);
-          line-height: 2rem;
+          line-height: 1.7rem;
         }
       }
     }
@@ -249,7 +250,7 @@
       }
       .part-right {
         width: 45%;
-        margin-left: 140px;
+        margin-left: 157px;
         margin-top: 135px;
         h5 {
           font-size: rem(18);
@@ -258,7 +259,12 @@
         }
         a {
           font-size: rem(40);
-          margin-bottom: 20px;
+          margin-bottom: 13px;
+        }
+        button {
+          padding: 0 73px;
+          font-size: rem(17);
+          font-weight: bold;
         }
       }
     }
