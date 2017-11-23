@@ -24,19 +24,34 @@
 .page-header {
 	color: $white;
 	padding: 50px 0;
+	position: relative;
 }
 
 .page-header-background {
-	top: 0;
-	bottom: 0;
 	position: absolute;
-	max-width: 100%;
-	z-index: 0;
 
 	&:after {
 		content: "";
-		// Add gradient here to go from full tan to transparent.
+		display: block;
+		position: absolute;
+		z-index: 0;
+		height: 75%;
+		bottom: -.5%;
+		left: 0;
+		right: 0;
+		@include linear-gradient( 360deg, $body-bg 0%, transparent 100% );
+
+		.brown-bg & {
+			@include linear-gradient( 360deg, $brown-bg 0%, transparent 100% );
+		}
 	}
+}
+
+.page-header-image {
+	top: 0;
+	bottom: 0;
+	max-width: 100%;
+	z-index: 0;
 }
 
 .top-page-tags {
