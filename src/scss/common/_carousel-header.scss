@@ -16,23 +16,23 @@
         padding-top: 69px;
         padding-bottom: 70px;
         h1 {
-        font-size: rem(40);
-        margin-bottom: 48px;
-        width: 50%;
-        line-height: normal;
-        font-weight: bold;
+          font-size: rem(40);
+          margin-bottom: 48px;
+          width: 55%;
+          line-height: normal;
+          font-weight: bold;
         }
         h3 {
-        font-size: rem(22);
-        margin-bottom: 99px;
-        line-height: 30px;
-        width: 55%;
+          font-size: rem(22);
+          margin-bottom: 99px;
+          line-height: 30px;
+          width: 55%;
         }
         p {
-        font-size: rem(22);
-        margin-bottom: 72px;
-        width: 60%;
-        line-height: normal;
+          font-size: rem(22);
+          margin-bottom: 72px;
+          width: 60%;
+          line-height: normal;
         }
       }
     }
@@ -54,22 +54,22 @@
     .carousel-control-next-icon {
       display: block;
       text-align: center;
-      transform:skew(208deg);
-      margin-right: 45%;
-      width: 70px;
-      height: 65px;
+      transform:skew(198deg);
+      margin-right: 25%;
+      width: 40px;
+      height: 40px;
       cursor: pointer;
     }
     .carousel-control-next-icon {
-      background: url("images/carousel-marker-next-l.png");
+      background: url("images/carousel-marker-next-sm.png");
     }
   }
 
   .carousel-control-next {
     background: $black;
-    width: 45%;
-    margin-right: -20%;
-    transform:skew(-208deg);
+    width: 75%;
+    margin-right: -35%;
+    transform:skew(-198deg);
   }
   .carousel-control-prev {
     display: none;
@@ -88,81 +88,6 @@
       cursor: pointer;
       &.active {
         background: #9BD25C;
-      }
-    }
-  }
-}
-
-@media (min-width: 310px) {
-  .split-carousel-wrap.carousel-header {
-    padding-top: 0px;
-    .carousel-item {
-      .carousel-caption {
-        height: 100%;
-        padding: 0;
-        .main-header {
-          padding-top: 69px;
-          padding-bottom: 54px;
-          h1 {
-            font-size: rem(40);
-            margin-bottom: 20px;
-            line-height: 53px;
-            width: 80%;
-          }
-          h3 {
-            font-size: rem(22);
-            margin-bottom: 146px;
-            line-height: 35px;
-            width: 100%;
-          }
-          p {
-            font-size: rem(19);
-            margin-bottom: 36px;
-            line-height: 33px;
-            width: 70%;
-            display: none;
-          }
-        }
-      }
-    }
-    .carousel-item.active img, 
-    .carousel-item-next img,
-    .carousel-item-prev img {
-      max-height: 468px;
-    }
-    .carousel-control-next {
-      top :0;
-      width: 50%;
-      margin-right: -25%;
-      .carousel-control-next-icon {
-        margin-right: 63px;
-      }
-    }       
-    .carousel-indicators {
-      margin-right: 34%;
-      right: 0 !important;
-      bottom: 46px;
-    } 
-  }
-}
-
-// Very specific media query for button placement half 
-// above and below image
-@media screen and (min-width: 310px) and (max-width: 768px) {
-  .split-carousel-wrap {
-    .carousel-inner {
-      overflow: visible !important;
-    }
-    .carousel-header {
-      overflow: visible !important; 
-    }
-    .page-header {
-      height: 100%;
-      .row {
-        display: block;
-        bottom: 10px;
-        position: absolute;
-        width: 100%;
       }
     }
   }
@@ -271,8 +196,8 @@
       .carousel-control-next-icon {
         margin-right: 113px;
         background: url("images/carousel-marker-next-l.png");
-        width: 70px;
-        height: 65px;
+        width: 56px;
+        height: 56px;
       }
     }      
     .carousel-indicators {
@@ -330,8 +255,8 @@
       .carousel-control-next-icon {
         margin-right: 133px;
         background: url("images/carousel-marker-next-l.png");
-        width: 70px;
-        height: 65px;
+        width: 62px;
+        height: 62px;
       }
     }      
     .carousel-indicators {
