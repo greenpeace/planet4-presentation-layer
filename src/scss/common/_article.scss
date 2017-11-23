@@ -128,10 +128,11 @@
 .article {
   padding-top: 60px;
   h3 {
-    color: $dark-blue;
+    color: $article-heading-color;
     margin: 0;
     font-size: rem(26);
     font-weight: bold;
+    text-transform: uppercase;
   }
   .topicwise-article-section {
     .topicwise-article-list {
@@ -142,14 +143,14 @@
         }
         .topicwise-article-body {
           a.article-headline {
-            color: #2B092C;
+            color: $article-anchor;
             font-size: rem(20);
             font-weight: medium;
             text-decoration: none;
             line-height: normal;
           }
           .topicwise-article-tags {
-            color: #258CCB;
+            color: $tag-color;
             .article-topic-title {
               font-size: rem(14);
               font-weight: bold;
@@ -157,7 +158,7 @@
               text-decoration: none;
             }
             .article-topic-title-seprater {
-              background: #258CCB;
+              background: $tag-color;
               width: 5px;
               height: 5px;
               display: inline-block;;
@@ -206,12 +207,6 @@
   }
 }
 
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 575px) {
-}
-
-
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .article {
@@ -242,7 +237,7 @@
                 margin-right: 5px;
               }
               .article-topic-title-seprater {
-                background: #258CCB;
+                background: $tag-color;
                 width: 5px;
                 height: 5px;
               }
@@ -270,7 +265,7 @@
   .article {
     padding-top: 79px;
     h3 {
-      color: #152431;
+      color: $article-heading-color;
       margin: 0;
       font-size: rem(36);
     }
@@ -284,7 +279,7 @@
             width: 33.33%;
           }
           .topicwise-article-body {
-            padding-top: 0px;
+            padding-top: 0;
             a.article-headline {
               font-size: rem(30);
             }
@@ -324,7 +319,7 @@
   .article {
     padding-top: 103px;
     h3 {
-      color: #152431;
+      color: $article-heading-color;
       margin: 0;
       font-size: rem(38);
     }
@@ -338,7 +333,7 @@
             width: 33.33%;
           }
           .topicwise-article-body {
-            padding-top: 0px;
+            padding-top: 0;
             a.article-headline {
               font-size: rem(32);
             }

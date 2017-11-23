@@ -83,7 +83,7 @@
       bottom: 0;
       right: 0;
       width: 100%;
-      padding-top: 0px;
+      padding-top: 0;
       background : -moz-linear-gradient(66.31% -110.5% -120deg,rgba(136, 196, 213, 0) 0%,rgba(184, 216, 232, 1) 100%);
       background : -webkit-linear-gradient(-120deg, rgba(136, 196, 213, 0) 0%, rgba(184, 216, 232, 1) 100%);
       background : -webkit-gradient(linear,66.31% -110.5% ,33.69% 210.5% ,color-stop(0,rgba(184, 216, 232, 0) ),color-stop(1,rgba(220, 240, 246, 1) ));
@@ -93,7 +93,7 @@
       background : linear-gradient(210deg, rgba(136, 196, 213, 0.2) 0%, rgba(184, 216, 232, 1) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351',endColorstr='#0A3351' , GradientType=1);
       .main-header {
-        color: $dark-blue;
+        color: $article-heading-color;
         padding-top: 69px;
         padding-bottom: 70px;
         h1 {
@@ -163,7 +163,7 @@
     right: 35%;
     bottom: 80px;
     left: auto;
-    margin-right: 0%;
+    margin-right: 0;
     li {
       width: 12px;
       height: 12px;
@@ -257,7 +257,7 @@
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
   .split-carousel-wrap.carousel-header {
-    padding-top: 0px;
+    padding-top: 0;
     .carousel-item {
       .carousel-caption {
         height: 100%;
@@ -313,7 +313,7 @@
 // Medium devices (tablets, 768px and up)
 @include medium-and-up {
   .split-carousel-wrap.carousel-header {
-    padding-top: 0px;
+    padding-top: 0;
     .carousel-item {
       img {
       }
@@ -373,7 +373,7 @@
 // Large devices (desktops, 992px and up)
 @include medium-large-and-up {
   .split-carousel-wrap.carousel-header {
-    padding-top: 0px;
+    padding-top: 0;
     .carousel-item {
       img {
       }
