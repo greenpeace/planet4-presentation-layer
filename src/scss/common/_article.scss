@@ -132,7 +132,6 @@
     margin: 0;
     font-size: rem(26);
     font-weight: bold;
-    text-transform: uppercase;
   }
   .topicwise-article-section {
     .topicwise-article-list {
@@ -156,6 +155,7 @@
               font-weight: bold;
               margin-right: 5px;
               text-decoration: none;
+              text-transform: uppercase;
             }
             .article-topic-title-seprater {
               background: $tag-color;
