@@ -1,3 +1,4 @@
+
 .split-carousel-wrap.carousel-header {
   padding-top: 0;
   overflow: hidden;
@@ -24,7 +25,7 @@
         }
         h3 {
           font-size: rem(22);
-          margin-bottom: 99px;
+          // margin-bottom: 0;
           line-height: 30px;
           width: 55%;
         }
@@ -76,7 +77,7 @@
   }
   .carousel-indicators {
     right: 35%;
-    bottom: 80px;
+    bottom: 48px;
     left: auto;
     margin-right: 0;
     li {
@@ -88,6 +89,26 @@
       cursor: pointer;
       &.active {
         background: #9BD25C;
+      }
+    }
+  }
+}
+
+// Temp fix for button placement
+@media screen and (min-width: 310px) and (max-width: 768px) {
+  .carousel-caption {
+    padding-bottom: 0;
+    .main-header {
+      position: relative;
+      padding-bottom: 0;
+      height: 100%;
+      h3 {
+        margin-bottom: 0;
+      }
+      .action-button {
+        bottom: 10px;
+        position: absolute;
+        margin-left: -15px;
       }
     }
   }
@@ -113,7 +134,7 @@
           h3 {
             font-size: rem(22);
             font-weight: 300;  
-            margin-bottom: 154px;
+            // margin-bottom: 0;
             line-height: 35px;
             width: 50%;
           }
