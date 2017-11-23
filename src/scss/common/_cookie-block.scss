@@ -1,3 +1,5 @@
+$cookie-bkg: #C0DBE2;
+$cookie-blue: #094464;
 
 .cookie-block {
   display: none;
@@ -6,12 +8,12 @@
   left: 0;
   width: 100%;
   padding: 10px 0;
-  background: #C0DBE2 url("images/cookie-right-gradient.png") no-repeat right;
+  background: $cookie-bkg url("images/cookie-right-gradient.png") no-repeat right;
   max-height: 50px;
   p {
     font-size: rem(17);
     font-weight: 500;
-    color: #094464;
+    color: $cookie-blue;
     margin: 0;
     text-align: center;
     font-family: $roboto;
@@ -20,7 +22,7 @@
   a {
     font-size: rem(17);
     font-weight: bold;
-    color: #094464;
+    color: $cookie-blue;
     text-decoration: none;
   }
   .btn {
@@ -28,24 +30,24 @@
     line-height: 32px;
     font-size: rem(15);
     font-weight: 500;
-    color: #094464;
+    color: $cookie-blue;
     background: #E4F2F9;
     border: 1px solid #004766;
     width: 100%;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     &:hover {
       cursor: pointer;
       background: #004766;
-      color: #fff;
+      color: $white;
     }
   }
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
   .cookie-block {
     max-height: 120px;
-    background: #C0DBE2 url("images/cookie-right-gradient-sm.png") no-repeat right;
+    background: $cookie-bkg url("images/cookie-right-gradient-sm.png") no-repeat right;
     div.col-9 {
       margin: 0 auto;
       max-width: 95%;
@@ -69,10 +71,10 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .cookie-block {
     max-height: 56px;
-    background: #C0DBE2 url("images/cookie-right-gradient-md.png") no-repeat right;
+    background: $cookie-bkg url("images/cookie-right-gradient-md.png") no-repeat right;
     p {
       font-size: rem(15);
       text-align: left;
@@ -85,10 +87,10 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   .cookie-block {
     max-height: 50px;
-    background: #C0DBE2 url("images/cookie-right-gradient.png") no-repeat right;
+    background: $cookie-bkg url("images/cookie-right-gradient.png") no-repeat right;
     p {
       font-size: rem(14.5);
       text-align: center;
@@ -102,10 +104,10 @@
 
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@include large-large-and-up {
   .cookie-block {
     max-height: 50px;
-    background: #C0DBE2 url("images/cookie-right-gradient.png") no-repeat right;
+    background: $cookie-bkg url("images/cookie-right-gradient.png") no-repeat right;
     p {
       font-size: rem(17);
       text-align: center;

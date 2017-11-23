@@ -45,12 +45,12 @@ h1 {
   line-height: rem(48.8);
   margin-bottom: rem(30);
 
-  @media #{ $mq-lg-up } {
+  @include large-and-up {
     font-size: rem(56);
     line-height: rem(67.55);
     margin-bottom: rem(48);
   }
-  @media #{ $mq-xl-up } {
+  @include x-large-and-up {
     font-size: rem(66);
     line-height: rem(85.8);
     margin-bottom: rem(48);
@@ -62,19 +62,19 @@ h2 {
   line-height: rem(36);
   margin-bottom: rem(5);
 
-  @media #{ $mq-md-up } {
+  @include medium-and-up {
     font-size: rem(34);
     line-height: rem(36);
     margin-bottom: rem(5);
   }
 
-  @media #{ $mq-lg-up } {
+  @include large-and-up {
     font-size: rem(36);
     line-height: rem(46.8);
     margin-bottom: rem(5);
   }
 
-  @media #{ $mq-xl-up } {
+  @include x-large-and-up {
     font-size: rem(38);
     line-height: rem(49.4);
     margin-bottom: rem(24);

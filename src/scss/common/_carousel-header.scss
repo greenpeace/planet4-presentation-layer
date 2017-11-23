@@ -93,7 +93,7 @@
       background : linear-gradient(210deg, rgba(136, 196, 213, 0.2) 0%, rgba(184, 216, 232, 1) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351',endColorstr='#0A3351' , GradientType=1);
       .main-header {
-        color: #152431;
+        color: $dark-blue;
         padding-top: 69px;
         padding-bottom: 70px;
         h1 {
@@ -110,7 +110,7 @@
         width: 55%;
         }
         p {
-        font-size: 1.375rem;  
+        font-size: rem(22);
         margin-bottom: 72px;
         width: 60%;
         line-height: normal;
@@ -273,6 +273,7 @@
           }
           h3 {
             font-size: rem(22);
+            font-weight: 300;  
             margin-bottom: 154px;
             line-height: 35px;
             width: 50%;
@@ -310,7 +311,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .split-carousel-wrap.carousel-header {
     padding-top: 0px;
     .carousel-item {
@@ -327,12 +328,14 @@
             margin-bottom: 20px;
             line-height: 53px;
             width: 80%;
+            font-weight: bold;
           }
           h3 {
             font-size: rem(24);
             margin-bottom: 34px;
             line-height: 35px;
             width: 50%;
+            font-weight: 300;
           }
           p {
             font-size: rem(19);
@@ -368,7 +371,7 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   .split-carousel-wrap.carousel-header {
     padding-top: 0px;
     .carousel-item {
@@ -390,6 +393,7 @@
             font-size: rem(30);
             margin-bottom: 40px;
             line-height: 40px;
+            font-weight: 400;
             width: 60%;
           }
           p {
@@ -426,7 +430,7 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@include large-large-and-up {
   .split-carousel-wrap.carousel-header {
     padding-top: 64px;
     .carousel-item {

@@ -12,61 +12,61 @@
 /* CSS for subheader */
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
 	.subheader {
 		padding: 48px 0 32px 0; 
 		h2 {
-			font-size: 1.625rem;
+			font-size: rem(26);
 			margin-bottom: 32px;
 		}
 		p {
-			font-size: 1rem;
+			font-size: rem(16);
 			line-height: 1.5rem;
 		}
 	}
 }
 
 // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) {
+@include medium-and-up {
 	.subheader {
 		padding: 72px 0 48px 0; 
 		h2 {
-			font-size: 2.125rem;
+			font-size: rem(34);
 			margin-bottom: 24px;
 		}
 		p {
-			font-size: 1.25rem;
+			font-size: rem(20);
 			line-height: 1.625rem;
 		}
 	}
-  }
+}
 
 // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) {
+@include medium-large-and-up {
 	.subheader {
 		padding: 104px 0 40px 0; 
 		h2 {
-			font-size: 2.25rem;
+			font-size: rem(36);
 			margin-bottom: 40px;
 		}
 		p {
-			font-size: 1.25rem;
+			font-size: rem(20);
 			line-height: 1.625rem;
 		}
 	}
-  }
+}
   
 // Extra large devices (large desktops, 1200px and up)
-  @media (min-width: 1200px) {
+@include large-large-and-up {
   	.subheader {
 		padding: 104px 0 72px 0; 
 		h2 {
-			font-size: 2.375rem;
+			font-size: rem(38);
 			margin-bottom: 40px;
 		}
 		p {
-			font-size: 1.375rem;
+			font-size: rem(22);
 			line-height: 1.625rem;
 		}
 	}
-  }
+}

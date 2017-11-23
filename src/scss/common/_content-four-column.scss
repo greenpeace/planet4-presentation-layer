@@ -85,10 +85,10 @@
  /*Block Four Column Content End */
 
 .four-coloum-content {
-  color: #200721;
+  color: $purple;
   padding: 104px 0 0 0;
   h2 {
-    font-size: 2.5rem;
+    font-size: rem(40);
     margin: 0;
 
   }
@@ -119,11 +119,11 @@
         margin: 0;
       }
       p {
-        font-size: 1rem; 
+        font-size: rem(16);
         line-height: 1.875rem;
         font-family: roboto;
         &.publication-date {
-          font-size: 0.9rem; 
+          font-size: rem(14.5);
           font-style: italic;
           margin-bottom: 20px;
           color: #868e96;
@@ -131,7 +131,7 @@
       } 
       a {
         color: $blue-text;
-        font-size: 14px;
+        font-size: rem(14);
         opacity: 0.75;
         text-decoration: underline; 
       }
@@ -146,10 +146,10 @@
 
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+ @include mobile-only {
   .four-coloum-content {
     h2 {
-      font-size: 2.25rem;
+      font-size: rem(36);
     }
     .four-coloum-content-info {
       h4 {
@@ -167,10 +167,10 @@
 
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .four-coloum-content {
     h2 {
-      font-size: 2.25rem;
+      font-size: rem(36);
     }
     .four-coloum-content-info {
       h4 {

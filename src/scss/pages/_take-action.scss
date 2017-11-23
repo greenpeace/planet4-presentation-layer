@@ -40,17 +40,17 @@
     line-height: rem(16.8);
     color: $blue-heading;
 
-    @media #{ $mq-md-up } {
+    @include medium-and-up {
       font-size: rem(16);
       line-height: rem(22);
     }
 
-    @media #{ $mq-lg-up } {
+    @include large-and-up {
       font-size: rem(18);
       line-height: rem(22);
     }
 
-    @media #{ $mq-xl-up } {
+    @include x-large-and-up {
       font-size: rem(20);
       line-height: rem(26);
     }
@@ -78,17 +78,17 @@
       font-size: rem(17);
       line-height: rem(28.9);
 
-      @media #{ $mq-md-up } {
+      @include medium-and-up {
         font-size: rem(19);
         line-height: rem(33);
       }
 
-      @media #{ $mq-lg-up } {
+      @include large-and-up {
         font-size: rem(20);
         line-height: rem(34);
       }
 
-      @media #{ $mq-xl-up } {
+      @include x-large-and-up {
         font-size: rem(22);
         line-height: rem(38);
       }
@@ -174,17 +174,17 @@
     font-size: rem(17);
     line-height: rem(28.9);
 
-    @media #{ $mq-md-up } {
+    @include medium-and-up {
       font-size: rem(19);
       line-height: rem(33);
     }
 
-    @media #{ $mq-lg-up } {
+    @include large-and-up {
       font-size: rem(20);
       line-height: rem(34);
     }
 
-    @media #{ $mq-xl-up } {
+    @include x-large-and-up {
       font-size: rem(22);
       line-height: rem(38);
     }
@@ -218,20 +218,20 @@
         font-weight: 700;
         color: $percentage-text;
 
-        @media #{ $mq-md-up } {
+        @include medium-and-up {
           font-weight: 500;
           color: $darkb-blue-text;
           font-size: rem(20);
           line-height: rem(30);
         }
 
-        @media #{ $mq-lg-up } {
+        @include large-and-up {
           padding-top: 48px;
           font-size: rem(22);
           line-height: rem(30);
         }
 
-        @media #{ $mq-xl-up } {
+        @include x-large-and-up {
           font-size: rem(24);
           line-height: rem(31);
           color: $heading;
@@ -266,8 +266,8 @@
     .step-info-wrap {
       .steps-action {
         .secondary-button {
-          background-color: #0A3351;
-          color: #fff;
+          background-color: $med-blue;
+          color: $white;
         }
       }
       .step-number {
@@ -360,7 +360,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 575px) {
+@include small-and-up {
   .hero-img-wrap {
     background-image: url("images/clouds_576.png");
     background-repeat: no-repeat;
@@ -436,7 +436,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .can-do-steps {
     margin-bottom: 50px;
     .step-info-wrap {
@@ -492,7 +492,7 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   .hero-img-wrap {
     background-image: url("images/clouds_1140.png");
     background-repeat: no-repeat;
@@ -595,7 +595,7 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@include large-large-and-up {
   .page-content-wrap {
     padding-top: 200px;
     .about-info {

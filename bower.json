@@ -1,7 +1,0 @@
-{
-  "name": "planet4-master-theme",
-  "dependencies": {
-    "bootstrap": "4.0.0-alpha.6",
-    "font-awesome": "fontawesome#^4.7.0"
-  }
-}

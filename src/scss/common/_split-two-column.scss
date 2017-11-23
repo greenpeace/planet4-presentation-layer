@@ -45,8 +45,8 @@
   <!-- Split Two Coloumn End -->
 */  
 .split-two-column {
-  background: #000;
-  color: #fff;
+  background: $black;
+  color: $white;
   padding: 2em;
   height: 616px;
   display: flex;
@@ -87,17 +87,17 @@
       right: 0;
       margin: 92px 0 0 166px;
       h2 {
-        font-size: 4.125rem;
+        font-size: rem(66);
         margin-bottom: 54px;
       }
       h5 {
-        font-size: 1.375rem;
+        font-size: rem(22);
         line-height: 2.2rem;
         font-weight: normal;
         margin-bottom: 48px;
       }
       a {
-        font-size: 1.375rem;
+        font-size: rem(22);
         color: $yellow-button;
         text-decoration: underline;
         font-weight: bold;
@@ -123,7 +123,7 @@
       }
       a {
         color: $brown-bg-tags-text;
-        font-size: 2.375rem;
+        font-size: rem(38);
         font-weight: bold;
         text-decoration: none;
         margin-bottom: 20px;
@@ -134,7 +134,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
   .split-two-column-mobile-view {
     ul { 
       margin-top: 105px;
@@ -148,7 +148,7 @@
           @include background('images/GP04JE6.jpg');
         }
         a {
-          font-size: 2.25rem;
+          font-size: rem(36);
           display: block;
           padding: 25px 15px;  
           color: $white;
@@ -159,7 +159,7 @@
             height: 20px;
             width: 20px;
             position: absolute;
-            color: #FFD204;
+            color: $yellow-button;
             top: 0;
             right: 0;
             margin: 30px;
@@ -171,24 +171,24 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .split-two-column {
     height: 430px;
     .split-two-column-skewed-left {
       .part-left{
         width: 51%;
-        margin: 64px -8px 0 0px;
+        margin: 64px -8px 0 0;
         h2 {
-          font-size: 3rem;
+          font-size: rem(48);
           margin-bottom: 72px;
         }
         h5 {
-          font-size: 1.125rem;
+          font-size: rem(18);
           line-height: 2rem;
           margin-bottom: 10px;
         }
         a {
-          font-size: 1.125rem;
+          font-size: rem(18);
           line-height: 2rem;
         }
       }
@@ -203,12 +203,12 @@
         margin-left: 120px;
         margin-top: 185px;
         h5 {
-          font-size: 1.125rem;
+          font-size: rem(18);
           line-height: 2rem;
           margin-bottom: 10px;
         }
         a {
-          font-size: 1.75rem;
+          font-size: rem(28);
           margin-bottom: 40px;
         }
       }
@@ -217,24 +217,24 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   .split-two-column {
     height: 440px;
     .split-two-column-skewed-left {
       .part-left{
         width: 40%;
-        margin: 72px 73px 0 0px;
+        margin: 72px 73px 0 0;
         h2 {
-          font-size: 3.5rem;
+          font-size: rem(56);
           margin-bottom: 72px;
         }
         h5 {
-          font-size: 1.125rem;
+          font-size: rem(18);
           line-height: 2rem;
-          margin-bottom: 0px;
+          margin-bottom: 0;
         }
         a {
-          font-size: 1.125rem;
+          font-size: rem(18);
           line-height: 2rem;
         }
       }
@@ -249,12 +249,12 @@
         margin-left: 140px;
         margin-top: 135px;
         h5 {
-          font-size: 1.125rem;
+          font-size: rem(18);
           line-height: 2rem;
           margin-bottom: 10px;
         }
         a {
-          font-size: 2.5rem;
+          font-size: rem(40);
           margin-bottom: 20px;
         }
       }
@@ -263,23 +263,23 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@include large-large-and-up {
   .split-two-column {
     height: 616px;
     .split-two-column-skewed-left {
       .part-left{
         margin: 92px 0 0 166px;
         h2 {
-          font-size: 4.125rem;
+          font-size: rem(66);
           margin-bottom: 54px;
         }
         h5 {
-          font-size: 1.375rem;
+          font-size: rem(22);
           line-height: 2.2rem;
           margin-bottom: 48px;
         }
         a {
-          font-size: 1.375rem;
+          font-size: rem(22);
           line-height: 2.2rem;
         }
       }
@@ -293,12 +293,12 @@
         margin-left: 160px;
         margin-top: 215px;
         h5 {
-          font-size: 1.375rem;
+          font-size: rem(22);
           line-height: 2.2rem;
           margin-bottom: 40px;
         }
         a {
-          font-size: 2.375rem;
+          font-size: rem(38);
           margin-bottom: 20px;
         }
       }

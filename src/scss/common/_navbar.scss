@@ -109,7 +109,7 @@
         &.big-screen-nav-link {
           &:hover {
             transition: 0.5s;
-            border-bottom: 3px solid #fff;
+            border-bottom: 3px solid $white;
             a {
               color: $white;
               text-decoration: none;
@@ -126,11 +126,11 @@
         }   
         a {
           color: $white;
-          font-size: 16px;
+          font-size: rem(16);
           display: inline-block; 
         }
         .btn-secondary {
-          font-size: 12px;
+          font-size: rem(12);
           color: $black;
           margin-top: 3px;
         }
@@ -143,12 +143,12 @@
           i {
             display: inline-block;
             float: left;
-            font-size: 30px;
+            font-size: rem(30);
             margin-top: 5px;
           }
           a {
             color: $nav-link;
-            font-size: 16px;
+            font-size: rem(16);
             margin: 9px 2px 0;
             &:hover {
               transition: 0.5s;
@@ -172,7 +172,7 @@
           }
         }
         &.active-li {
-          background-color: #03484f;
+          background-color: $blue-bg;
           .country-select-dropdown {
             & > span:after {
               -ms-transform: rotate(180deg); /* IE 9 */
@@ -196,7 +196,7 @@
           margin-left: 10px;
         }
         .selected-option {
-          font-size: 0.9rem;
+          font-size: rem(14.5);
           color: $white;
           line-height: 40px;
           display: block;
@@ -230,7 +230,7 @@
           .country-option-box {
             color: $white;
             text-align: left;
-            font-size: 0.9rem;
+            font-size: rem(14.5);
             line-height: 24px;
             width: 100%;
             .default-lang {
@@ -312,7 +312,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 575px) {
+@include mobile-only {
   // #header {
   //   .navbar-brand {
   //     img {
@@ -376,7 +376,7 @@
   //     padding: 10px 20px;
   //     background: #F2A781;
   //     color: $white;
-  //     font-size: 14px;
+  //     font-size: rem(14);
   //     text-transform: uppercase;
   //   }
   //   .navbar-nav {
@@ -398,7 +398,7 @@
   //     border: 0;
   //     outline: none;
   //     padding: 0;
-  //     font-size: 14px;
+  //     font-size: rem(14);
   //     font-weight: bold;
   //     color: #676767;
   //   }
@@ -411,7 +411,7 @@
   //     border: 0;
   //     outline: none;
   //     cursor: pointer;
-  //     font-size: 15px;
+  //     font-size: rem(15);
   //   }
   //   #searchbar {
   //     display: none;
@@ -438,7 +438,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   #header {
     .navbar-brand {
       img {
@@ -499,7 +499,7 @@
       border: 0;
       outline: none;
       padding: 0;
-      font-size: 14px;
+      font-size: rem(14);
       font-weight: bold;
       color: #676767;
     }
@@ -511,7 +511,7 @@
       border: 0;
       outline: none;
       cursor: pointer;
-      font-size: 15px;
+      font-size: rem(15);
     }
     #searchbar {
       display: none;
@@ -522,7 +522,7 @@
       padding: 10px 20px;
       border-top: 1px solid #d8d8d8;
       z-index: 9999;
-      background: #fff;
+      background: $white;
       -webkit-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
       -moz-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
       box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
@@ -531,13 +531,13 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   #header.top-navigation {
     .navbar {
       li {
         width: 35%;
         a {
-          font-size: 18px;
+          font-size: rem(18);
         }
         &.big-screen-nav-link {
           margin-top: 12px;
@@ -557,7 +557,7 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@include large-large-and-up {
   #header.top-navigation {
     position: fixed;
     padding: 0;

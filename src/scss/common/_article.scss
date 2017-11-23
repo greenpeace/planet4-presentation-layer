@@ -128,7 +128,7 @@
 .article {
   padding-top: 60px;
   h3 {
-    color: #152431;
+    color: $dark-blue;
     margin: 0;
     font-size: rem(26);
     font-weight: bold;
@@ -144,7 +144,7 @@
           a.article-headline {
             color: #2B092C;
             font-size: rem(20);
-            font-weight: 500;
+            font-weight: medium;
             text-decoration: none;
             line-height: normal;
           }
@@ -188,7 +188,7 @@
         .topicwise-article-body {
           padding: 22px 14px;
           h4.article-headline {
-            font-size: 1.25rem;
+            font-size: rem(20);
           }
           .topicwise-article-tags {
             margin-bottom: 9px;

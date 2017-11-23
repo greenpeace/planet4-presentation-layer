@@ -19,6 +19,8 @@
 <!-- Author Block End -->
 */
 
+$author-grey: #E2E5E8;
+
 .author-block {
   margin-top: 104px;
   width: 80%;
@@ -30,24 +32,24 @@
     height: 300px;
     float: left;
     &.author-info {
-      background: #E2E5E8;
+      background: $author-grey;
       z-index:1;
       padding: 40px 0 0 32px;
-      @include skew($bg: #E2E5E8, $deg: 25deg, $right: -70px, $width: 155px);
+      @include skew($bg: $author-grey, $deg: 25deg, $right: -70px, $width: 155px);
       .author-info-inner {
         h2 {
-          font-size: 1.25rem;
+          font-size: rem(20);
           font-weight: bold;
           margin-bottom: 16px;
         }
         h5 {
-          font-size: 1.03125rem;
+          font-size: rem(16.5);
           font-weight: 500;
           color: #E51538;
           margin-bottom: 40px;
         }
         p {
-          font-size: 1.0625rem;
+          font-size: rem(17);
         }
       }
 
@@ -63,7 +65,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
   .author-block {
     margin-top: 56px;
     width: 100%;
@@ -74,21 +76,21 @@
       height: 300px;
       float: left;
       &.author-info {
-        background: #E2E5E8;
+        background: $author-grey;
         z-index:1;
         padding: 20px;
-        @include skew($bg: #E2E5E8, $deg: 0deg, $right: 0px, $width: 0px);
+        @include skew($bg: $author-grey, $deg: 0deg, $right: 0px, $width: 0px);
         .author-info-inner {
           h2 {
-            font-size: 1rem;
+            font-size: rem(16);
             margin-bottom: 8px;
           }
           h5 {
-            font-size: 1.03125rem;
+            font-size: rem(16.5);
             margin-bottom: 40px;
           }
           p {
-            font-size: 1rem;
+            font-size: rem(16);
           }
         }
 
@@ -104,7 +106,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .author-block {
     margin-top: 56px;
     width: 100%;
@@ -115,21 +117,21 @@
       height: 300px;
       float: left;
       &.author-info {
-        background: #E2E5E8;
+        background: $author-grey;
         z-index:1;
         padding: 40px 0 0 32px;
-        @include skew($bg: #E2E5E8, $deg: 25deg, $right: -70px, $width: 155px);
+        @include skew($bg: $author-grey, $deg: 25deg, $right: -70px, $width: 155px);
         .author-info-inner {
           h2 {
-            font-size: 1rem;
+            font-size: rem(16);
             margin-bottom: 8px;
           }
           h5 {
-            font-size: 1.03125rem;
+            font-size: rem(16.5);
             margin-bottom: 40px;
           }
           p {
-            font-size: 1rem;
+            font-size: rem(16);
           }
         }
 
@@ -145,7 +147,7 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   .author-block {
     margin-top: 56px;
     width: 80%;
@@ -156,21 +158,21 @@
       height: 300px;
       float: left;
       &.author-info {
-        background: #E2E5E8;
+        background: $author-grey;
         z-index:1;
         padding: 40px 0 0 32px;
-        @include skew($bg: #E2E5E8, $deg: 25deg, $right: -70px, $width: 155px);
+        @include skew($bg: $author-grey, $deg: 25deg, $right: -70px, $width: 155px);
         .author-info-inner {
           h2 {
-            font-size: 1rem;
+            font-size: rem(16);
             margin-bottom: 8px;
           }
           h5 {
-            font-size: 1.03125rem;
+            font-size: rem(16.5);
             margin-bottom: 40px;
           }
           p {
-            font-size: 1rem;
+            font-size: rem(16);
           }
         }
 
@@ -184,7 +186,3 @@
     }
   }
 } 
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-}

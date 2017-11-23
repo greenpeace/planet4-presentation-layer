@@ -52,7 +52,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
   .boxout-block {
     width: 100%;
     .boxout-block-card {
@@ -81,7 +81,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .boxout-block {
     width: 400px;
     .boxout-block-card {
@@ -110,7 +110,7 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   .boxout-block {
     width: 400px;
     .boxout-block-card {
@@ -139,7 +139,7 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@include large-large-and-up {
   .boxout-block {
     width: 400px;
     .boxout-block-card {

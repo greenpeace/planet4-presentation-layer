@@ -53,140 +53,140 @@
   <!-- Split Carousel Block End -->
 */
 .split-carousel-wrap {
-    h1 {
-      font-size: rem(26);
-      color: #152431;
-      margin-bottom: 17px; 
-      line-height: normal;
-    }
-    &.not-header {
-    padding-top: 0;
-    overflow: hidden;
-    margin-bottom: 0;
-    padding-bottom: 153px;
-      .carousel-item {
-        .carousel-item-credit {
-          position: absolute;
-          right: 0;
-          top: 0;
-          color: $white;
-          font-size: rem(11);
-          margin: -20px 15px 15px;
-          font-weight: normal;
-          color: #5A5A5A;
-        }
-      }
-      .carousel-item.active,
-      .carousel-item-next,
-      .carousel-item-prev {
-        display: block;
-        img{
-          width: 100%;
-        }
-      }
-      .carousel-caption {
-        text-align: left;
-        left: auto;
-        bottom: 0;
+  h1 {
+    font-size: rem(26);
+    color: #152431;
+    margin-bottom: 17px; 
+    line-height: normal;
+  }
+  &.not-header {
+  padding-top: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding-bottom: 153px;
+    .carousel-item {
+      .carousel-item-credit {
+        position: absolute;
         right: 0;
+        top: 0;
+        color: $white;
+        font-size: rem(11);
+        margin: -20px 15px 15px;
+        font-weight: normal;
+        color: #5A5A5A;
+      }
+    }
+    .carousel-item.active,
+    .carousel-item-next,
+    .carousel-item-prev {
+      display: block;
+      img{
         width: 100%;
-        padding: 30px 200px 30px 50px;
-        background : -moz-linear-gradient(66.31% -110.5% -120deg,rgba(10, 51, 81, 0) 0%,rgba(10, 51, 81, 1) 100%);
-        background : -webkit-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
-        background : -webkit-gradient(linear,66.31% -110.5% ,33.69% 210.5% ,color-stop(0,rgba(10, 51, 81, 0) ),color-stop(1,rgba(10, 51, 81, 1) ));
-        background : -o-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
-        background : -ms-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
-        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351', endColorstr='#0A3351' ,GradientType=0)";
-        background : linear-gradient(210deg, rgba(10, 51, 81, 0.2) 0%, rgba(10, 51, 81, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351',endColorstr='#0A3351' , GradientType=1);
-      }
-      .carousel-indicators {
-        right: 0;
-        bottom: 0;
-        left: auto;
-        margin-right: 33%;
-        li {
-          width: 12px;
-          height: 12px;
-          border-radius: 50%;
-          background: $white;
-          margin: 0 15px;
-          cursor: pointer;
-          &.active {
-            background: $carousel-active;
-          }
-        }
-      }
-      .carousel-control-next {
-        background: #000;
-        width: 50%;
-        margin-right: -25%;
-        -webkit-transform:skew(-205deg);
-        -moz-transform:skew(-205deg);
-        transform:skew(-205deg);
-        background-position: right;
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-          -webkit-transform:skew(205deg);
-          -moz-transform:skew(205deg);
-          transform:skew(205deg);
-          margin-right: 30%;
-        } 
-      }
-      .carousel-control-prev,
-      .carousel-control-next {
-        opacity: 1;
-        height: 100%;
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-          background-image: none;
-          border: solid 1px $white;
-          height: 50px;
-          width: 50px;
-          border-radius: 50%;
-          display: block;
-          text-align: center;
-          background-color: $carr-arrow;
-          opacity: 0.4;
-          i {
-            background: url("images/sprite.png");
-            height: 32px;
-            width: 22px;
-            vertical-align: middle;
-            display: inline-block;
-            margin: 6px 2px 0 0;
-          }
-        }
-        .carousel-control-next-icon {
-          i {
-            background-position: -21px 1px;
-          }
-        }
-      }
-      .carousel-inner {
-        overflow: initial;
-        .carousel-caption {
-          bottom: -152px;
-          height: 153px;
-          padding: 18px 15px;
-          h3 {
-            font-size: rem(17);
-          }
-          p {
-            font-size: rem(13);
-            width: 100%;
-            font-family: $roboto;
-          }
-        } 
       }
     }
+    .carousel-caption {
+      text-align: left;
+      left: auto;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      padding: 30px 200px 30px 50px;
+      background : -moz-linear-gradient(66.31% -110.5% -120deg,rgba(10, 51, 81, 0) 0%,rgba(10, 51, 81, 1) 100%);
+      background : -webkit-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
+      background : -webkit-gradient(linear,66.31% -110.5% ,33.69% 210.5% ,color-stop(0,rgba(10, 51, 81, 0) ),color-stop(1,rgba(10, 51, 81, 1) ));
+      background : -o-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
+      background : -ms-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351', endColorstr='#0A3351' ,GradientType=0)";
+      background : linear-gradient(210deg, rgba(10, 51, 81, 0.2) 0%, rgba(10, 51, 81, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351',endColorstr='#0A3351' , GradientType=1);
+    }
+    .carousel-indicators {
+      right: 0;
+      bottom: 0;
+      left: auto;
+      margin-right: 33%;
+      li {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: $white;
+        margin: 0 15px;
+        cursor: pointer;
+        &.active {
+          background: $carousel-active;
+        }
+      }
+    }
+    .carousel-control-next {
+      background: #000;
+      width: 50%;
+      margin-right: -25%;
+      -webkit-transform:skew(-205deg);
+      -moz-transform:skew(-205deg);
+      transform:skew(-205deg);
+      background-position: right;
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        -webkit-transform:skew(205deg);
+        -moz-transform:skew(205deg);
+        transform:skew(205deg);
+        margin-right: 30%;
+      } 
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      opacity: 1;
+      height: 100%;
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-image: none;
+        border: solid 1px $white;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: block;
+        text-align: center;
+        background-color: $carr-arrow;
+        opacity: 0.4;
+        i {
+          background: url("images/sprite.png");
+          height: 32px;
+          width: 22px;
+          vertical-align: middle;
+          display: inline-block;
+          margin: 6px 2px 0 0;
+        }
+      }
+      .carousel-control-next-icon {
+        i {
+          background-position: -21px 1px;
+        }
+      }
+    }
+    .carousel-inner {
+      overflow: initial;
+      .carousel-caption {
+        bottom: -152px;
+        height: 153px;
+        padding: 18px 15px;
+        h3 {
+          font-size: rem(17);
+        }
+        p {
+          font-size: rem(13);
+          width: 100%;
+          font-family: $roboto;
+        }
+      } 
+    }
   }
-  .light-blue-bg {
-    background: $light-blue-bg;
-  }
+}
+.light-blue-bg {
+  background: $light-blue-bg;
+}
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 575px) {
-.split-carousel-wrap {
+@include mobile-only {
+  .split-carousel-wrap {
     h1 {
       font-size:  rem(34);
       margin-left: 0px;
@@ -231,10 +231,9 @@
   }  
 }
 
-
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-.split-carousel-wrap {
+@include medium-and-up {
+  .split-carousel-wrap {
     h1 {
       font-size:  rem(34);
       margin-left: 0px;
@@ -280,88 +279,38 @@
 }
 
 // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) {
-    .split-carousel-wrap {
-        h1 {
-          font-size:  rem(36);
-          margin-left: 0;
-          margin-bottom: 25px;
-          line-height: normal;
-        }
-          &.not-header {
-          margin-bottom: 0;
-          padding-bottom: 143px;
-          .carousel-inner{
-            .carousel-item-credit {
-              margin: 10px 110px;
-              color: $white;
-              font-size: rem(13);
-            }
-            .carousel-caption {
-              bottom: 0;
-              margin-bottom: -143px;
-              width: 100%;
-              height: 144px;
-              padding: 26px 45px;
-              h3 {
-                font-size: rem(20);
-                line-height: normal;
-                margin-bottom: 10px;
-              }
-              p {
-                font-size: rem(16);
-                width: 80%;
-                line-height: 24px;
-              }
-            }
-          }
-          .carousel-control-prev,
-          .carousel-control-next {
-            top: 0%; 
-          }
-          .carousel-indicators {
-            bottom: -128px;
-            right: 0;
-            margin-right: 29px;
-          }
-        }  
-      }  
-  }
-
-// Extra large devices (large desktops, 1200px and up)
-  @media (min-width: 1200px) {
-    .split-carousel-wrap {
+@include medium-large-and-up {
+  .split-carousel-wrap {
       h1 {
-        font-size:  rem(38);
-        margin-left: 0px;
-        margin-bottom: 30px;
+        font-size:  rem(36);
+        margin-left: 0;
+        margin-bottom: 25px;
         line-height: normal;
       }
-      &.not-header {
-      margin-bottom: 0px;
-      padding-bottom: 195px;
-        .carousel-inner {
+        &.not-header {
+        margin-bottom: 0;
+        padding-bottom: 143px;
+        .carousel-inner{
           .carousel-item-credit {
-            margin: 16px 130px;
-            color: #fff;
-            font-size: rem(14);
+            margin: 10px 110px;
+            color: $white;
+            font-size: rem(13);
           }
           .carousel-caption {
             bottom: 0;
-            margin-bottom: -194px;
+            margin-bottom: -143px;
             width: 100%;
-            height: 195px;
-            padding: 31px 96px;
+            height: 144px;
+            padding: 26px 45px;
             h3 {
-              font-size: rem(22);
-              margin-bottom: 15px;
+              font-size: rem(20);
               line-height: normal;
+              margin-bottom: 10px;
             }
             p {
-              font-size: rem(17);
-              width: 60%;
+              font-size: rem(16);
+              width: 80%;
               line-height: 24px;
-              margin-bottom: 0;
             }
           }
         }
@@ -370,10 +319,60 @@
           top: 0%; 
         }
         .carousel-indicators {
-          bottom: -170px;
+          bottom: -128px;
           right: 0;
           margin-right: 29px;
         }
-      }   
+      }  
     }  
-  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@include large-large-and-up {
+  .split-carousel-wrap {
+    h1 {
+      font-size:  rem(38);
+      margin-left: 0px;
+      margin-bottom: 30px;
+      line-height: normal;
+    }
+    &.not-header {
+    margin-bottom: 0px;
+    padding-bottom: 195px;
+      .carousel-inner {
+        .carousel-item-credit {
+          margin: 16px 130px;
+          color: #fff;
+          font-size: rem(14);
+        }
+        .carousel-caption {
+          bottom: 0;
+          margin-bottom: -194px;
+          width: 100%;
+          height: 195px;
+          padding: 31px 96px;
+          h3 {
+            font-size: rem(22);
+            margin-bottom: 15px;
+            line-height: normal;
+          }
+          p {
+            font-size: rem(17);
+            width: 60%;
+            line-height: 24px;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        top: 0%; 
+      }
+      .carousel-indicators {
+        bottom: -170px;
+        right: 0;
+        margin-right: 29px;
+      }
+    }   
+  }  
+}

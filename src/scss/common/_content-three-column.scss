@@ -36,14 +36,14 @@
   .three-column-box { 
     .three-column-info { 
        h2 { 
-         font-size: 2.5rem; 
+         font-size: rem(40);
          margin-bottom: 64px; 
          font-weight: bold;
        } 
        p { 
-         font-size: 1.375rem; 
+         font-size: rem(22);
          line-height: 2.25rem; 
-         margin-bottom: 0px; 
+         margin-bottom: 0;
        } 
      } 
      .three-column-images { 
@@ -86,17 +86,17 @@
 
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@include mobile-only {
   .split-three-column { 
     margin-top: 48px;
     .three-column-box { 
       .three-column-info { 
          h2 { 
-           font-size: 1.625rem; 
+           font-size: rem(26);
            margin-bottom: 32px; 
          } 
          p { 
-           font-size: 1.0625rem; 
+           font-size: rem(17);
            line-height: 1.25rem; 
            margin-bottom: 40px; 
          } 
@@ -148,16 +148,16 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include medium-and-up {
   .split-three-column { 
     .three-column-box { 
       .three-column-info { 
          h2 { 
-           font-size: 2.1875rem; 
+           font-size: rem(35);
            margin-bottom: 64px; 
          } 
          p { 
-           font-size: 1.1875rem; 
+           font-size: rem(27.5);
            line-height: 2.25rem; 
            margin-bottom: 40px; 
            &:last-child {
@@ -212,18 +212,18 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include medium-large-and-up {
   .split-three-column { 
     .three-column-box { 
       .three-column-info { 
          h2 { 
-           font-size: 2.5rem; 
+           font-size: rem(40);
            margin-bottom: 64px; 
          } 
          p { 
-           font-size: 1.375rem; 
+           font-size: rem(22);
            line-height: 2.25rem; 
-           margin-bottom: 0px; 
+           margin-bottom: 0;
            &:last-child {
             margin-bottom: 100px;
            }
@@ -276,18 +276,18 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@include large-large-and-up {
   .split-three-column { 
     .three-column-box { 
       .three-column-info { 
          h2 { 
-           font-size: 2.5rem; 
+           font-size: rem(40);
            margin-bottom: 64px; 
          } 
          p { 
-           font-size: 1.375rem; 
+           font-size: rem(22);
            line-height: 2.25rem; 
-           margin-bottom: 0px; 
+           margin-bottom: 0;
          } 
        } 
        .three-column-images { 

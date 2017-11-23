@@ -32,7 +32,7 @@
 .campaign-thumbnail-block {
   margin-top: 72px;
   h2 {
-    font-size: 2rem;
+    font-size: rem(32);
     margin-bottom: 48px;
   }
   .thumbnail-largeview-container {
@@ -52,7 +52,7 @@
       }
       a {
         text-align: center;
-        font-size: 1.25rem;
+        font-size: rem(20);
         color: $yellow-button;
         font-weight: bold;
         position: absolute;
@@ -61,7 +61,7 @@
         width: 100%;
         z-index: 2;
         margin-bottom: 40px;
-        text-shadow: 1px 1px #000;
+        text-shadow: 1px 1px $black;
         &:hover {
           text-decoration: none;
         }
