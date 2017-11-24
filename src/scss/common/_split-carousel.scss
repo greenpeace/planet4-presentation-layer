@@ -60,7 +60,7 @@
       background: $black;
       width: 45%;
       margin-right: -25%;
-      transform:skew(-198deg);
+      transform:skew(-209deg);
       background-position: right;
     }
     .carousel-control-prev-icon,
@@ -74,7 +74,7 @@
       opacity: 1;
       height: 100%;
       .carousel-control-next-icon {
-        transform:skew(198deg);
+        transform:skew(209deg);
         margin-right: 45%;
         background: url("images/carousel-marker-next-sm.png");
       }
