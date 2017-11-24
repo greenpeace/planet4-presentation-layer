@@ -261,7 +261,7 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include large-and-up {
   .article {
     padding-top: 79px;
     h3 {
@@ -315,7 +315,7 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@include large-large-and-up {
   .article {
     padding-top: 103px;
     h3 {
