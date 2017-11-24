@@ -17,7 +17,7 @@
 
 
 .video-block {
-  padding-top: 104px;
+  padding-top: 80px;
   h1 {
     font-size: rem(40);
     margin-bottom: 64px;
@@ -43,7 +43,7 @@
 // Medium devices (tablets, 768px and up)
 @include medium-and-up {
   .video-block {
-    padding-top: 104px;
+    
     h1 {
       font-size: rem(34);
       margin-bottom: 48px;
@@ -58,7 +58,7 @@
 // Large devices (desktops, 992px and up)
 @include medium-large-and-up {
   .video-block {
-    padding-top: 88px;
+    
     h1 {
       font-size: rem(34);
       margin-bottom: 48px;
@@ -73,7 +73,7 @@
 // Extra large devices (large desktops, 1200px and up)
 @include large-large-and-up {
   .video-block {
-    padding-top: 104px;
+    
     h1 {
       font-size: rem(40);
       margin-bottom: 64px;
