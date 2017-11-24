@@ -52,6 +52,7 @@
   display: flex;
   position: relative;
   overflow: hidden;
+  margin-bottom: 25px;
   .split-two-column-skewed-right,
   .split-two-column-skewed-left {
     top: 0;
@@ -277,10 +278,10 @@
     height: 616px;
     .split-two-column-skewed-left {
       .part-left{
-        margin: 92px 0 0 166px;
+        margin: 99px 0 0 166px;
         h2 {
           font-size: rem(66);
-          margin-bottom: 54px;
+          margin-bottom: 63px;
         }
         h5 {
           font-size: rem(22);
@@ -300,15 +301,19 @@
       }
       .part-right {
         margin-left: 160px;
-        margin-top: 215px;
+        margin-top: 210px;
         h5 {
           font-size: rem(22);
           line-height: 2.2rem;
-          margin-bottom: 40px;
+          margin-bottom: 32px;
         }
         a {
           font-size: rem(38);
           margin-bottom: 20px;
+        }
+        button {
+          font-weight: 500;
+          padding: 0 65px;
         }
       }
     }
