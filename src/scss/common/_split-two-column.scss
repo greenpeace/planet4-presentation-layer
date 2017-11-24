@@ -276,9 +276,10 @@
 @include large-large-and-up {
   .split-two-column {
     height: 616px;
+    margin-bottom: 25px;
     .split-two-column-skewed-left {
       .part-left{
-        margin: 99px 0 0 166px;
+        margin: 104px 0 0 166px;
         h2 {
           font-size: rem(66);
           margin-bottom: 63px;
