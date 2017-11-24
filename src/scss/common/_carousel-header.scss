@@ -25,7 +25,6 @@
         }
         h3 {
           font-size: rem(22);
-          // margin-bottom: 0;
           line-height: 30px;
           width: 55%;
         }
@@ -204,6 +203,9 @@
             width: 62%;
             display: block;
           }
+          .action-button {
+            padding-left: 0;
+          }
         }
       }
     }
@@ -263,6 +265,9 @@
             width: 62%;
             display: block;
           }
+          .action-button {
+            padding-left: 0;
+          }
         }
       }
     }
@@ -321,6 +326,9 @@
             line-height: 38px;
             width: 62%;
             display: block;
+          }
+          .action-button {
+            padding-left: 0;
           }
         }
       }
