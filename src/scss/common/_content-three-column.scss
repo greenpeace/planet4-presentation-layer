@@ -114,18 +114,18 @@
 	.split-three-column { 
 		.three-column-box { 
 			.three-column-info { 
-				 h2 { 
-					 font-size: rem(35);
-					 margin-bottom: 64px; 
-				 } 
-				 p { 
-					 font-size: rem(27.5);
-					 line-height: 2.25rem; 
-					 margin-bottom: 40px; 
-					 &:last-child {
+				h2 { 
+					font-size: rem(35);
+					margin-bottom: 64px; 
+				} 
+				p { 
+					font-size: rem(27.5);
+					line-height: 2.25rem; 
+					margin-bottom: 40px; 
+					&:last-child {
 						margin-bottom: 72px;
-					 }
-				 } 
+					}
+				} 
 			 } 
 			 .three-column-images { 
 				 overflow: hidden; 
@@ -138,15 +138,12 @@
 						object-fit: cover;
 						height: 330px;
 					}    
-			 } 
-			 .first-column {
-					margin-left: -50px;
-					margin-right: -130px;
-				img {
-
-				}    
-			 } 
-			 .second-column { 
+			} 
+			.first-column {
+				margin-left: -50px;
+				margin-right: -130px; 
+			} 
+			.second-column { 
 					-webkit-transform: skew(25deg); 
 					-moz-transform: skew(25deg); 
 					-o-transform: skew(25deg); 
