@@ -67,10 +67,12 @@
 		.three-column-box { 
 			
 			.three-column-info { 
+
 				h2 { 
 					font-size: rem(26);
 					margin-bottom: 32px; 
 				} 
+
 				p { 
 					font-size: rem(17);
 					line-height: 1.25rem; 
@@ -79,7 +81,7 @@
 			} 
 
 			.three-column-images { 
-				overflow: hidden; 
+				
 				min-height: 184px; 
 				position: relative;
 			} 
@@ -148,9 +150,8 @@
 			}
 
 			.three-column-images { 
-				 overflow: hidden; 
-				 min-height: 330px; 
-				 position: relative;
+				min-height: 330px; 
+				position: relative;
 			}
 
 			.split-image { 
