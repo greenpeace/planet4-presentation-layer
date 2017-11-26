@@ -3,27 +3,6 @@
  * a CTA button is present
  */
 
-/* HEADER BLOCK HTML
-  <div class="page-header col-md-8 col-lg-8 col-sm-12">
-    <div class="page-header-background">
-      <img src="images/act-header.jpg" class="page-header-image" />
-    </div>
-    <div class="container">
-			<div class="top-tags-wrap">
-				<a class="top-tag top-tag--category" href="#">Forests</a>
-				<a class="top-tag top-tag--hashtag" href="#">#Wetlands</a>
-			</div>
-    	<h1 class="page-header-title">What you do matters</h1>
-      	<h3 class="page-header-subtitle">A billion acts of courage can spark a brighter tomorrow.</h3>
-      	<p class="page-header-content">Tart liquorice sweet roll pastry croissant toffee mufﬁn tiramisu. Marshmallow tootsie roll sugar plum powder oatcake ginger bread. Cupcake cookie cotton candy chocolate cake oat ice sweet roll pastry croissant toffee mufﬁn tiramisu. </p>
-    	<div class="row">
-     	 <div class="col-md-4">
-     	 <a href="#" class="btn btn-medium btn-primary page-header-btn">Take action</a>
-      </div>
-    </div>
-  </div> <!-- Page Header block ends -->
-*/
-
 .page-header {
 	color: $white;
 	padding: 50px 0;
@@ -100,5 +79,5 @@
 }
 
 .page-header-content {
-	font-size: rem(17);
+	display: none;
 }

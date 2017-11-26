@@ -1,5 +1,10 @@
+/*
+ * Campaign Thumbnail Block 
+ */
+
 .campaign-thumbnail-block {
 	margin-top: 72px;
+	margin-bottom: 6rem;
 	
 	h2 {
 		font-size: rem(38);
@@ -7,12 +12,14 @@
 	}
 
 	.thumbnail-largeview-container {
+		
 		.thumbnail-large {
 			margin-bottom: 30px;
-	  		position: relative;
-	  		@include background-before-opacity(rgba(22,22,22,0.65));
+			position: relative;
+			@include background-before-opacity(rgba(22,22,22,0.65));
 		
 			&:hover {
+				
 				&:before {
 					opacity:0.1;
 				}
@@ -41,5 +48,5 @@
 				}
 		  	}
 		}
-  	}
+	}
 }

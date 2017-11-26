@@ -1,23 +1,33 @@
+/* 
+ * Content Three Column
+ */
+
 .split-three-column { 
 	margin-top: 104px;
+	
 	.three-column-box { 
+	
 		.three-column-info { 
+	
 			h2 { 
 				font-size: rem(40);
 				margin-bottom: 64px; 
 				font-weight: bold;
 			} 
+			
 			p { 
 				font-size: rem(22);
 				line-height: 2.25rem; 
 				margin-bottom: 2rem;
 			} 
 		} 
+
 		.three-column-images { 
 			overflow: hidden; 
 			min-height: 430px; 
 			position: relative;
-		 } 
+		} 
+
 		.split-image { 
 			position: absolute;
 		}
@@ -39,7 +49,8 @@
 				-o-transform: skew(-25deg); 
 				margin-left: -150px;
 			}   
-		} 
+		}
+		 
 		.third-column { 
 			right: -165px;  
 		} 
