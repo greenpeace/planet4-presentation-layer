@@ -183,24 +183,27 @@
 
 // Large devices (desktops, 992px and up)
 @include medium-large-and-up {
+	
 	.split-three-column { 
+	
 		.three-column-box { 
+	
 			.three-column-info { 
 				
-				p {
-					font-size: rem(22);
-					line-height: 2.25rem; 
+				p { 
 					 
 					&:last-child {
 						margin-bottom: 100px;
 					}
 				} 
 			} 
+
 			.three-column-images { 
 				overflow: hidden; 
 				min-height: 330px; 
 				position: relative;
 			}
+
 			.split-image { 
 				position: absolute;
 				img {
@@ -208,10 +211,12 @@
 					height: 330px;
 				} 
 			}
+
 			.first-column {
 				margin-left: -50px;
 				margin-right: -130px;
-			 } 
+			} 
+
 			.second-column { 
 				-webkit-transform: skew(25deg); 
 				-moz-transform: skew(25deg); 
@@ -229,7 +234,8 @@
 					-o-transform: skew(-25deg); 
 					margin-left: -90px;
 				}   
-			} 
+			}
+			 
 			.third-column { 
 				right: -110px; 
 			} 
@@ -239,20 +245,22 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @include large-large-and-up {
+	
 	.split-three-column { 
+	
 		.three-column-box { 
+	
 			.three-column-info { 
 				
-				p {
-					font-size: rem(22);
-					line-height: 2.25rem;
-				} 
+			
 			} 
+
 			.three-column-images { 
 				overflow: hidden; 
 				min-height: 430px; 
 				position: relative;
 			} 
+
 			.split-image { 
 				position: absolute;
 				img {
@@ -260,10 +268,12 @@
 					height: 430px;
 				}    
 			} 
+
 			.first-column {
 				margin-left: -50px;
 				margin-right: -130px;
 			}
+
 			.second-column { 
 				-webkit-transform: skew(25deg); 
 				-moz-transform: skew(25deg); 
@@ -282,6 +292,7 @@
 					margin-left: -115px;
 				}
 			} 
+
 			.third-column { 
 				right: -150px; 
 			} 
