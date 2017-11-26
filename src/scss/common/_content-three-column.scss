@@ -60,123 +60,134 @@
 
 // Small devices (landscape phones, 576px and up)
 @include mobile-only {
+	
 	.split-three-column { 
 		margin-top: 48px;
+		
 		.three-column-box { 
+			
 			.three-column-info { 
-				 h2 { 
-					 font-size: rem(26);
-					 margin-bottom: 32px; 
-				 } 
-				 p { 
-					 font-size: rem(17);
-					 line-height: 1.25rem; 
-					 margin-bottom: 40px; 
-				 } 
-			 } 
-			 .three-column-images { 
-				 overflow: hidden; 
-				 min-height: 184px; 
-				 position: relative;
-			 } 
-			 .split-image { 
-					position: absolute;
-					img {
-						object-fit: cover;
-						height: 184px;
-					}    
-			 } 
-			 .first-column {
-					margin-left: -50px;
-					margin-right: -130px;
-				img {
+				h2 { 
+					font-size: rem(26);
+					margin-bottom: 32px; 
+				} 
+				p { 
+					font-size: rem(17);
+					line-height: 1.25rem; 
+					margin-bottom: 40px; 
+				} 
+			} 
 
+			.three-column-images { 
+				overflow: hidden; 
+				min-height: 184px; 
+				position: relative;
+			} 
+
+			.split-image { 
+				position: absolute;
+				img {
+					object-fit: cover;
+					height: 184px;
 				}    
-			 } 
-			 .second-column { 
-					-webkit-transform: skew(25deg); 
-					-moz-transform: skew(25deg); 
-					-o-transform: skew(25deg); 
-					border-left: 10px solid $brown-bg; 
-					border-right: 10px solid $brown-bg;
-					z-index: 2;
-					width: 130%;
-					left: 0;
-					top: 0;
-					overflow: hidden;
+			} 
+
+			.first-column {
+				margin-left: -50px;
+				margin-right: -130px;  
+			} 
+
+			.second-column { 
+				-webkit-transform: skew(25deg); 
+				-moz-transform: skew(25deg); 
+				-o-transform: skew(25deg); 
+				border-left: 10px solid $brown-bg; 
+				border-right: 10px solid $brown-bg;
+				z-index: 2;
+				width: 130%;
+				left: 0;
+				top: 0;
+				overflow: hidden;
 				img {
 					-webkit-transform: skew(-25deg); 
 					-moz-transform: skew(-25deg); 
 					-o-transform: skew(-25deg); 
 					margin-left: -70px;
-				}   
-			 } 
-			 .third-column { 
-				right: -120px;
-				img {
-				}   
-			 } 
+				} 
+			} 
+			.third-column { 
+				right: -120px;  
+			} 
 		}
 	}
 }
 
 // Medium devices (tablets, 768px and up)
 @include medium-and-up {
+	
 	.split-three-column { 
+		
 		.three-column-box { 
+			
 			.three-column-info { 
+				
 				h2 { 
 					font-size: rem(35);
 					margin-bottom: 64px; 
 				} 
+
 				p { 
 					font-size: rem(27.5);
 					line-height: 2.25rem; 
 					margin-bottom: 40px; 
+
 					&:last-child {
 						margin-bottom: 72px;
 					}
 				} 
-			 } 
-			 .three-column-images { 
+			}
+
+			.three-column-images { 
 				 overflow: hidden; 
 				 min-height: 330px; 
 				 position: relative;
-			 } 
-			 .split-image { 
-					position: absolute;
-					img {
-						object-fit: cover;
-						height: 330px;
-					}    
+			}
+
+			.split-image { 
+				position: absolute;
+				img {
+					object-fit: cover;
+					height: 330px;
+				}    
 			} 
+
 			.first-column {
 				margin-left: -50px;
 				margin-right: -130px; 
 			} 
+
 			.second-column { 
-					-webkit-transform: skew(25deg); 
-					-moz-transform: skew(25deg); 
-					-o-transform: skew(25deg); 
-					border-left: 10px solid $brown-bg; 
-					border-right: 10px solid $brown-bg;
-					z-index: 2;
-					width: 110%;
-					left: 0;
-					top: 0;
-					overflow: hidden;
+				-webkit-transform: skew(25deg); 
+				-moz-transform: skew(25deg); 
+				-o-transform: skew(25deg); 
+				border-left: 10px solid $brown-bg; 
+				border-right: 10px solid $brown-bg;
+				z-index: 2;
+				width: 110%;
+				left: 0;
+				top: 0;
+				overflow: hidden;
 				img {
 					-webkit-transform: skew(-25deg); 
 					-moz-transform: skew(-25deg); 
 					-o-transform: skew(-25deg); 
 					margin-left: -90px;
 				}   
-			 } 
-			 .third-column { 
+			} 
+
+			.third-column { 
 				right: -190px;
-				img {
-				}   
-			 } 
+			} 
 		}
 	}
 }
@@ -190,8 +201,7 @@
 	
 			.three-column-info { 
 				
-				p { 
-					 
+				p {
 					&:last-child {
 						margin-bottom: 100px;
 					}
@@ -235,7 +245,7 @@
 					margin-left: -90px;
 				}   
 			}
-			 
+
 			.third-column { 
 				right: -110px; 
 			} 
