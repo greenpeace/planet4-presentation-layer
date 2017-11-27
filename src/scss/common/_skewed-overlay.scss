@@ -1,0 +1,23 @@
+.skewed-overlay {
+	pointer-events: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	overflow: hidden;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		@include skewed-gradient(
+			transparent,
+			transparentize($black, .7),
+			transparentize($black, .65),
+			transparentize($black, .6),
+			transparentize($black, .35)
+		);
+	}
+}

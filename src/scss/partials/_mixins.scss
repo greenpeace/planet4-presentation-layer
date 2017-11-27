@@ -84,6 +84,25 @@ TRANSITION
   background: linear-gradient($direction, $color-stops); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
+/**
+ * Create a gradient with hard stops that lines up
+ *
+ * Colors layout from top-right to bottom-left.
+ */
+@mixin skewed-gradient( $color1, $color2, $color3, $color4, $color5 ) {
+  @include linear-gradient(
+    225deg,
+    #{$color1} 10%,
+    #{$color2} 10%,
+    #{$color2} 25%,
+    #{$color3} 25%,
+    #{$color3} 80%,
+    #{$color4} 80%,
+    #{$color4} 95%,
+    #{$color5} 95%
+  );
+}
+
 @mixin clearfix() {
   &::after {
     display: block;
