@@ -62,7 +62,7 @@
   }
   &:hover {
     @include background-before-opacity(#385924);
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    box-shadow: 0 0 10px transparentize($black, .5);
     h2 {
       color: $white
     }
@@ -111,10 +111,13 @@
   display: inline-block;
   margin-bottom: 8px;
   text-decoration: none;
+  &:hover {
+    color: $yellow;
+  }
 }
 
 .cover-card-btn {
-  background: rgba(255,255,255,.2);
+  background: transparentize($white, .8);
   color: $white;
   border-color: $white;
   padding: 10px;
