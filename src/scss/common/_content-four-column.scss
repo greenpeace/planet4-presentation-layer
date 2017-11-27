@@ -1,181 +1,123 @@
- /*Block Four Column Content Start*/
 /*
+ * Content Four Column 
+ *
+ */
 
-  <div class="four-coloum-content">
-    <div class="container">
-      <h2>Publications</h2>
-      <div class="row">
-          <div class="col-md-4 col-lg-3 col-xl-3">
-            <div class="four-coloum-content-wrap clearfix">
-              <div class="four-coloum-content-info">
-                <div class="four-coloum-content-symbol">
-                  <img src="images/four-column-content-one-img.png"> 
-                </div>
-                <div class="four-coloum-content-information hidden-xs-down">
-                  <h4>Sick of Too Many Cows </h4>
-                  <p class="publication-date">July 7 2017</p>
-                  <p>Read how intensive livestock farming could be endangering our health</p>
-                </div>
-                <!-- <div class="four-coloum-content-action mt-3">
-                  <a href="#">See what we stand for</a>
-                </div> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3 col-xl-3">
-            <div class="four-coloum-content-wrap clearfix">
-              <div class="four-coloum-content-info">
-                <div class="four-coloum-content-symbol">
-                  <img src="images/four-column-content-two-img.png">
-                </div>
-                <div class="four-coloum-content-information hidden-xs-down">
-                  <h4>Sick of Too Many Cows </h4>
-                  <p class="publication-date">July 7 2017</p>
-                  <p>Read how intensive livestock farming could be endangering our health</p>
-                </div>
-                <!-- <div class="four-coloum-content-action mt-3">
-                  <a href="#">See what we stand for</a>
-                </div> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3 col-xl-3">
-            <div class="four-coloum-content-wrap clearfix">
-              <div class="four-coloum-content-info">
-                <div class="four-coloum-content-symbol dark-img">
-                  <img src="images/four-column-content-three-img.png"> 
-                </div>
-                <div class="four-coloum-content-information hidden-xs-down">
-                  <h4>Sick of Too Many Cows </h4>
-                  <p class="publication-date">July 7 2017</p>
-                  <p>Read how intensive livestock farming could be endangering our health</p>
-                </div>
-                <!-- <div class="four-coloum-content-action mt-3">
-                  <a href="#">See what we stand for</a>
-                </div> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3 col-xl-3">
-            <div class="four-coloum-content-wrap clearfix">
-              <div class="four-coloum-content-info">
-                <div class="four-coloum-content-symbol dark-img">
-                  <img src="images/four-column-content-four-img.png"> 
-                </div>
-                <div class="four-coloum-content-information hidden-xs-down">
-                  <h4>Sick of Too Many Cows </h4>
-                  <p class="publication-date">July 7 2017</p>
-                  <p>Read how intensive livestock farming could be endangering our health</p>
-                </div>
-                <!-- <div class="four-coloum-content-action mt-3">
-                  <a href="#">See what we stand for</a>
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-md-4 col-lg-3 col-xl-3 mb-5">
-          <a href="#" class="btn btn-block btn-medium btn-small btn-transparent">LOAD X MORE...</a>
-        </div>
-        </div>
-    </div>
-  </div>
-*/
- /*Block Four Column Content End */
+.four-coloum-content {	
+	color: $purple;
+	padding: 104px 0 0 0;
+	
+	h2 {
+		font-size: rem(40);
+		margin: 0;
+	}
 
-.four-coloum-content {
-  color: $purple;
-  padding: 104px 0 0 0;
-  h2 {
-    font-size: rem(40);
-    margin: 0;
+	.four-coloum-content-wrap {
 
-  }
-  .four-coloum-content-wrap{
-    .four-coloum-content-symbol {
-      position: relative;
-      margin: 32px 0 32px 0;
-      -webkit-box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
-      -moz-box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
-      box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
-      img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-      }
-      &.dark-img {
-          a {
-            color: $white;
-          }
-        }
-    }
-    .four-coloum-content-info {
-      h4 {
-        font-size : 1.5rem;
-        line-height: 1.875rem;
-        font-weight: 600;
-        padding: 0;
-        margin: 0;
-      }
-      p {
-        font-size: rem(16);
-        line-height: 1.875rem;
-        font-family: roboto;
-        &.publication-date {
-          font-size: rem(14.5);
-          font-style: italic;
-          margin-bottom: 20px;
-          color: #868e96;
-        }
-      } 
-      a {
-        color: $blue-text;
-        font-size: rem(14);
-        opacity: 0.75;
-        text-decoration: underline; 
-      }
-      .blue-button { 
-        width: 100%; 
-      }
-      .four-coloum-content-information {
-      }
-    }
-  }
+		.four-coloum-content-symbol {
+			position: relative;
+			margin: 32px 0 32px 0;
+			-webkit-box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
+			-moz-box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
+			box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
+		
+			img {
+				width: 100%;
+				height: auto;
+				object-fit: cover;
+			}
+
+			&.dark-img {
+		
+				a {
+					color: $white;
+				}
+		
+			}
+		}
+
+		.four-coloum-content-info {
+			
+			h4 {
+				font-size : 1.5rem;
+				line-height: 1.875rem;
+				font-weight: 600;
+				padding: 0;
+				margin: 0;
+			}
+
+			p {
+				font-size: rem(16);
+				line-height: 1.875rem;
+				font-family: roboto;
+				
+				&.publication-date {
+					font-size: rem(14.5);
+					font-style: italic;
+					margin-bottom: 20px;
+					color: #868e96;
+				}
+	  		} 
+
+			a {
+				color: $blue-text;
+				font-size: rem(14);
+				opacity: 0.75;
+				text-decoration: underline; 
+			}
+
+			.blue-button { 
+				width: 100%; 
+			}
+			
+			.four-coloum-content-information {
+
+			}
+		}
+	}
 }
 
 
 // Small devices (landscape phones, 576px and up)
- @include mobile-only {
-  .four-coloum-content {
-    h2 {
-      font-size: rem(36);
-    }
-    .four-coloum-content-info {
-      h4 {
-        font-size : 1.5rem;
-      }
-    }
-    .four-coloum-content-wrap{
-      .four-coloum-content-symbol {
-        margin: 20px 0;
-        img {height: 363px;}
-      }
-    }    
-  }
+@include mobile-only {
+	.four-coloum-content {
+		
+		h2 {
+			font-size: rem(36);
+		}
+		
+		.four-coloum-content-info {
+			
+			h4 {
+				font-size : 1.5rem;
+			}
+		}
+
+		.four-coloum-content-wrap {
+		
+			.four-coloum-content-symbol {
+				margin: 20px 0;
+
+				img {
+					height: 363px;
+				}
+			}
+		}
+		
+	}
 }
 
 
 // Medium devices (tablets, 768px and up)
 @include medium-and-up {
   .four-coloum-content {
-    h2 {
-      font-size: rem(36);
-    }
-    .four-coloum-content-info {
-      h4 {
-        font-size : 1.5rem;
-      }
-    }
+	h2 {
+	  font-size: rem(36);
+	}
+	.four-coloum-content-info {
+	  h4 {
+		font-size : 1.5rem;
+	  }
+	}
   }
 }
