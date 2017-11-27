@@ -163,32 +163,36 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @include large-large-and-up {
-  .four-coloum {
-	h2{
-	  text-align: left; 
-	  font-size: rem(56);
-	  line-height: 68px;
-	  margin-top: 104px;
-	  margin-bottom: 80px;
-	  }
-	  .four-coloum-wrap{
-		.four-coloum-symbol{
-			text-align: left;
-			margin-bottom: 56px;
-		  }
-		.four-coloum-info{  
-		 h5 {
-		  text-align: left;
-		  margin-bottom: 32px;
-		 }
-		 p {
-		  margin-bottom: 48px;
-		 }
-		.four-coloum-information {
-		  min-height: 220px;
-		  // padding: 20px 0;
+	.four-coloum {
+		h2 {
+			text-align: left; 
+			font-size: rem(56);
+			line-height: 68px;
+			margin-top: 104px;
+			margin-bottom: 80px;
 		}
-	  }
+
+		.four-coloum-wrap {
+			
+			.four-coloum-symbol {
+				text-align: left;
+				margin-bottom: 56px;
+			}
+
+			.four-coloum-info {  
+				h5 {
+					text-align: left;
+					margin-bottom: 32px;
+				}
+
+				p {
+					margin-bottom: 48px;
+				}
+
+				.four-coloum-information {
+					min-height: 220px;
+				}
+			}
+		}
 	}
-  }
 }
