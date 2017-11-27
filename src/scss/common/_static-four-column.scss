@@ -1,10 +1,9 @@
 /* 
  * Content 4 column is the here
- *  
  */
 
 .four-coloum {
-	
+
 	h2 {
 		font-size: rem(30);
 		color: $steps-deactive-text;
@@ -50,6 +49,7 @@
 
 		}
 	}
+
 }
 
 @include small-and-up {

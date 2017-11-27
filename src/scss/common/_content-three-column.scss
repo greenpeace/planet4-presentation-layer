@@ -57,7 +57,6 @@
 	 }
 }
 
-
 // Small devices (landscape phones, 576px and up)
 @include mobile-only {
 	
@@ -259,12 +258,7 @@
 	
 	.split-three-column { 
 	
-		.three-column-box { 
-	
-			.three-column-info { 
-				
-			
-			} 
+		.three-column-box {
 
 			.three-column-images { 
 				overflow: hidden; 

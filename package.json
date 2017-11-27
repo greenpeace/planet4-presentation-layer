@@ -28,5 +28,10 @@
     "serve": "reload -b",
     "start": "npm-run-all --parallel serve gulp",
     "build": "npm-run-all --parallel css"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "IE >= 9"
+  ]
 }
