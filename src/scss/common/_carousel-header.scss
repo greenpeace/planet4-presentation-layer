@@ -22,18 +22,29 @@
           width: 55%;
           line-height: normal;
           font-weight: bold;
+          color: $black;
         }
         h3 {
           font-size: rem(22);
           line-height: 30px;
           font-weight: 400;
           width: 55%;
+          color: $grey;
         }
         p {
           font-size: rem(22);
           margin-bottom: 72px;
           width: 60%;
           line-height: normal;
+          color: $dark-shade-black;
+        }
+        .action-button {
+          .btn {
+            font-weight: 700;
+            -webkit-box-shadow: 0 2px 5px $shadow-color;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+            -moz-box-shadow:    0 2px 5px $shadow-color;  /* Firefox 3.5 - 3.6 */
+            box-shadow:         0 2px 5px $shadow-color;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+          }
         }
       }
     }
@@ -62,7 +73,7 @@
       cursor: pointer;
     }
     .carousel-control-next-icon {
-      background: url("images/carousel-marker-next-sm.png");
+      background: url("images/carousel-marker-next.png");
     }
   }
 
@@ -76,19 +87,19 @@
     display: none;
   }
   .carousel-indicators {
-    right: 35%;
+    right: 42%;
     bottom: 48px;
     left: auto;
     margin-right: 0;
     li {
-      width: 12px;
-      height: 12px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
       background: $white;
-      margin: 0 15px;
+      margin: 0 8px;
       cursor: pointer;
       &.active {
-        background: #9BD25C;
+        background: $carousel-indi-color;
       }
     }
   }
@@ -157,13 +168,21 @@
       margin-right: -25%;
       .carousel-control-next-icon {
         margin-right: 63px;
+        background: url("images/carousel-marker-next-S-M.png");
+        width: 45px;
+        height: 45px;
       }
     }       
     .carousel-indicators {
-     margin-right: 42%;
-     margin-bottom: 54px;
-     bottom: 0;
-     right: 0;
+      margin-right: 42%;
+      margin-bottom: 54px;
+      bottom: 0;
+      right: 0;
+      li{
+        width: 8px;
+        height: 8px;
+        margin: 0 8px;
+      }
     } 
   }  
 }
@@ -215,16 +234,21 @@
       top :0;
       .carousel-control-next-icon {
         margin-right: 113px;
-        background: url("images/carousel-marker-next-l.png");
-        width: 66px;
-        height: 66px;
+        background: url("images/carousel-marker-next-S-M.png");
+        width: 45px;
+        height: 45px;
       }
     }      
     .carousel-indicators {
-     margin-right: 40px;
-     margin-bottom: 54px;
-     bottom: 0;
-     right: 0;
+      margin-right: 40px;
+      margin-bottom: 54px;
+      bottom: 0;
+      right: 0;
+      li{
+        width: 12px;
+        height: 12px;
+        margin: 0 12px;
+      }
     } 
   }  
 }
@@ -249,10 +273,10 @@
             width: 60%;
           }
           h3 {
-            font-size: rem(30);
+            font-size: rem(44);
             margin-bottom: 40px;
-            line-height: 40px;
-            width: 60%;
+            line-height: 3.3rem;
+            width: 50%;
           }
           p {
             font-size: rem(20);
@@ -276,16 +300,24 @@
       top :0;
       .carousel-control-next-icon {
         margin-right: 133px;
-        background: url("images/carousel-marker-next-l.png");
-        width: 66px;
-        height: 66px;
+        background: url("images/carousel-marker-next.png");
+        width: 65px;
+        height: 65px;
+        &:hover {
+          background-position-x: 66px;        
+        }
       }
     }      
     .carousel-indicators {
-     margin-right: 30px;
-     margin-bottom: 32px;
-     bottom: 0;
-     right: 0;
+      margin-right: 30px;
+      margin-bottom: 32px;
+      bottom: 0;
+      right: 0;
+      li{
+        width: 12px;
+        height: 12px;
+        margin: 0 12px;
+      }
     } 
   }  
 }
@@ -311,9 +343,9 @@
           }
           h3 {
             font-size: rem(44);
-            margin-bottom: 41px;
-            line-height: 52px;
-            width: 60%;
+            margin-bottom: 40px;
+            line-height: 3.3rem;
+            width: 50%;
           }
           p {
             font-size: rem(22);
@@ -338,8 +370,11 @@
       .carousel-control-next-icon {
         margin-right: 45%;
         background: url("images/carousel-marker-next.png");
-        width: 90px;
-        height: 90px;
+        width: 65px;
+        height: 65px;
+        &:hover {
+          background-position-x: 66px;        
+        }
       }
     }      
     .carousel-indicators {
@@ -347,6 +382,11 @@
       margin-bottom: 50px;
       bottom: 0;
       right: 0;
+      li{
+        width: 12px;
+        height: 12px;
+        margin: 0 12px;
+      }
     } 
   }  
 }

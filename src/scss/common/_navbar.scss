@@ -83,7 +83,7 @@
 
 #header {
   &.top-navigation {
-    background: $top-nav;
+    background: $blue-top-nav;
     padding: 0;
     width: 100%;
     z-index: 500;
@@ -102,6 +102,7 @@
         position: relative;
         line-height: 22px;
         padding: 11px 0;
+        margin-top: 0;
         &.big-screen-nav-link {
           &:hover {
             transition: 0.5s;
@@ -119,16 +120,21 @@
               text-decoration: none;
             }
           }
-        }   
+        }  
+        &.donatebtn {
+          width: 15%;
+        } 
         a {
           color: $white;
           font-size: rem(16);
           display: inline-block; 
+          line-height: 40px;
         }
         .btn-secondary {
           font-size: rem(12);
           color: $black;
           margin-top: 3px;
+          font-weight: 500;
         }
         &.loginSignUpWrap {
           color: $nav-link;
@@ -165,6 +171,7 @@
             position: absolute;
             top: 18px;
             right: 15px;
+            font-size: 20px;
           }
           .form-control {
             border-radius: 0;
@@ -535,12 +542,11 @@
   #header.top-navigation {
     .navbar {
       li {
-        width: 35%;
+        width: 25%;
         a {
           font-size: rem(18);
         }
         &.big-screen-nav-link {
-          margin-top: 12px;
         }
         .btn-secondary {
           height: 42px;
@@ -568,9 +574,7 @@
     }
     .navbar {
       li {
-        &.big-screen-nav-link {
-          margin-top: 12px;
-        }
+        width: 20%;
         .btn-secondary {
           height: rem(36);
           line-height: 42px;

@@ -17,7 +17,7 @@
         top: 0;
         color: $white;
         font-size: rem(11);
-        margin: -20px 15px 15px;
+        margin: -20px 5px 15px 15px;
         font-weight: normal;
         color: $credit-color;
       }
@@ -65,8 +65,8 @@
     }
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-      width: 40px;
-      height: 40px;
+      width: 45px;
+      height: 45px;
       background: none;
     } 
     .carousel-control-prev,
@@ -76,10 +76,15 @@
       .carousel-control-next-icon {
         transform:skew(209deg);
         margin-right: 45%;
-        background: url("images/carousel-marker-next-sm.png");
+        background: url("images/carousel-marker-next-S-M.png");
       }
       .carousel-control-prev-icon {
-        background: url("images/carousel-marker-prv-sm-left.png");
+        background: url("images/carousel-marker-next-S-M.png");
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
       }
     }
     .carousel-inner {
@@ -125,7 +130,7 @@
       padding-bottom: 129px;
       .carousel-inner{
         .carousel-item-credit {
-          margin: 10px 80px;
+          margin: 10px 30px 80px;
           color: $white;
           font-size: rem(12);
         }
@@ -172,7 +177,7 @@
       padding-bottom: 129px;
       .carousel-inner{
         .carousel-item-credit {
-          margin: 10px 80px;
+          margin: 10px 30px 80px;
           color: $white;
           font-size: rem(12);
         }
@@ -197,14 +202,19 @@
         top: 0; 
         .carousel-control-next-icon {
           margin-right: 45%;
-          height: 65px;
-          width: 65px;
-          background: url("images/carousel-marker-next-l.png");
+          height: 45px;
+          width: 45px;
+          background: url("images/carousel-marker-next-S-M.png");
         }
         .carousel-control-prev-icon {
-          height: 65px;
-          width: 65px;
-          background: url("images/carousel-marker-prv-l-left.png");
+          background: url("images/carousel-marker-next-S-M.png");
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+          height: 45px;
+          width: 45px;
         }
       }
       .carousel-indicators {
@@ -229,14 +239,14 @@
       font-size:  rem(36);
       margin-left: 0;
       margin-bottom: 25px;
-      line-height: normal;
+      line-height: 2.7rem;
     }
       &.not-header {
       margin-bottom: 0;
       padding-bottom: 143px;
       .carousel-inner{
         .carousel-item-credit {
-          margin: 10px 110px;
+          margin: 10px 50px 110px;
           color: $white;
           font-size: rem(13);
         }
@@ -264,12 +274,23 @@
           margin-right: 45%;
           height: 65px;
           width: 65px;
-          background: url("images/carousel-marker-next-l.png");
+          background: url("images/carousel-marker-next.png");
+          &:hover{
+            background-position-x:65px;
+          }
         }
         .carousel-control-prev-icon {
+          background: url("images/carousel-marker-next.png");
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
           height: 65px;
           width: 65px;
-          background: url("images/carousel-marker-prv-l-left.png");
+          &:hover{
+            background-position-x:65px;
+          }
         }
         top: 0; 
       }
@@ -295,7 +316,7 @@
       font-size:  rem(38);
       margin-left: 0;
       margin-bottom: 30px;
-      line-height: normal;
+      line-height: 2.7rem;
     }
     &.not-header {
     margin-bottom: 0;
@@ -329,14 +350,19 @@
       .carousel-control-next {
         .carousel-control-next-icon {
           margin-right: 45%;
-          height: 90px;
-          width: 90px;
+          height: 65px;
+          width: 65px;
           background: url("images/carousel-marker-next.png");
         }
         .carousel-control-prev-icon {
-          height: 90px;
-          width: 90px;
-          background: url("images/carousel-marker-prv-left.png");
+          background: url("images/carousel-marker-next.png");
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+          height: 65px;
+          width: 65px;
         }
         top: 0; 
       }

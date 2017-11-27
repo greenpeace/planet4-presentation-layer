@@ -57,6 +57,7 @@
 */
 
 body {
+  overflow-x: hidden;
   // background: $body-bg;
   font-family: $roboto;
   &.brown-bg {

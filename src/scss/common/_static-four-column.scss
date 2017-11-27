@@ -75,7 +75,7 @@
   padding-bottom: 59px;
   h2 {
     font-size: rem(30);
-    color: $steps-deactive-text;
+    color: $four-column-heading;
     line-height: 36px;
     text-align: center;
     margin-bottom: 45px;
@@ -92,11 +92,11 @@
         font-size : rem(20);
         line-height : normal;
         font-weight: bold;
-        color : $steps-deactive-text;
+        color : $four-column-heading;
         margin-bottom: 17px;
       }
       p, a{
-        color: $blue-text;
+        color: $four-column-heading;
         font-size: rem(15);
         line-height: 25px;
       }

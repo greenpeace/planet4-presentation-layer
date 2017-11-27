@@ -5,21 +5,30 @@
     margin: 0;
     font-size: rem(26);
     font-weight: bold;
+    color: $black;
   }
   .topicwise-article-section {
     .topicwise-article-list {
       margin: 0;
       .topicwise-article-list-item {
         .topicwise-article-image {
-          width: 33.33%;
+        display: block; 
+        width: 33.33%;
+          img{
+             width: 100%; 
+             padding-right: 0;
+          }
         }
         .topicwise-article-body {
           a.article-headline {
-            color: $article-anchor;
+            color: $black;
             font-size: rem(20);
             font-weight: medium;
             text-decoration: none;
             line-height: normal;
+            &:hover {
+              text-decoration: underline;
+            }
           }
           .topicwise-article-tags {
             color: $tag-color;
@@ -29,6 +38,10 @@
               margin-right: 5px;
               text-decoration: none;
               text-transform: uppercase;
+              color: $article-tag;
+              &:hover {
+                text-decoration: underline;
+              }
             }
             .article-topic-title-seprater {
               background: $tag-color;
@@ -43,11 +56,19 @@
               font-size: rem(14);
               margin-right: 5px;
               text-decoration: none;
+              color: $article-tag;
+              &:hover {
+                text-decoration: underline;
+              }
             }
           }
           .article-write-info {
             font-style: italic;
             margin-bottom: 20px;
+            color: $shadow-color;
+          }
+          .article-content {
+            color: $dark-shade-black;
           }
         } 
       }
@@ -95,6 +116,10 @@
           margin-top: 20px;
           .topicwise-article-image {
             width: 33.33%;
+            img{
+               width: 100%; 
+               padding-right: 15px;
+            }
           }
           .topicwise-article-body {
             padding-top: 23px;
@@ -138,6 +163,7 @@
       color: $article-heading-color;
       margin: 0;
       font-size: rem(36);
+      line-height: 2.7rem;
     }
     .topicwise-article-section {
       .topicwise-article-list {
@@ -147,6 +173,10 @@
           margin-top: 33px;
           .topicwise-article-image {
             width: 33.33%;
+            img{
+               width: 100%; 
+               padding-right: 15px;
+            }
           }
           .topicwise-article-body {
             padding-top: 0;
@@ -192,6 +222,7 @@
       color: $article-heading-color;
       margin: 0;
       font-size: rem(38);
+      line-height: 2.7rem;
     }
     .topicwise-article-section {
       .topicwise-article-list {
@@ -201,6 +232,10 @@
           margin-top: 40px;
           .topicwise-article-image {
             width: 33.33%;
+            img{
+               width: 100%; 
+               padding-right: 15px;
+            }
           }
           .topicwise-article-body {
             padding-top: 0;

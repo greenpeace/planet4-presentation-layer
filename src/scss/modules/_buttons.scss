@@ -165,16 +165,18 @@ Stylesheet: Button Styles
   height: 40px;
   line-height: 40px;
   font-size: rem(14);
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: $roboto;
 }
 .btn-light-blue {
   background: #ADDBEA;
-  color: #144363;
-  border: 1px solid #144363;
+  color: $blue-top-nav;
+  border: 1px solid $blue-top-nav;
   &:hover {
-    background: #B2E1ED;
+    color: $white;
+    background: $blue-top-nav;
   }
 }
 
