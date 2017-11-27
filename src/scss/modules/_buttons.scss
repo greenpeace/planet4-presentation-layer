@@ -190,6 +190,22 @@ Stylesheet: Button Styles
   }
 }
 
+@include small-and-up {
+  .btn {
+    padding: 0 15px;
+    &.btn-small {
+      font-size: rem(14);
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+  .btn-normal {
+    height: 40px;
+    line-height: 40px;
+    font-size: rem(14);
+  }
+}
+
 // Medium devices (tablets, 768px and up)
 @include medium-and-up {
   .btn {
@@ -212,14 +228,14 @@ Stylesheet: Button Styles
   .btn {
     padding: 0 15px;
     &.btn-medium {
-      font-size: rem(16);
-      height: 48px;
-      line-height: 48px;
+      font-size: rem(18);
+      height: 52px;
+      line-height: 52px;
     }
   }
   .btn-normal {
-    height: 48px;
-    line-height: 48px;
+    height: 52px;
+    line-height: 52px;
     font-size: rem(18);
   }
 }
