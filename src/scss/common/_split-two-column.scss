@@ -138,7 +138,7 @@
 @include mobile-only {
   .split-two-column-mobile-view {
     ul {
-      margin: 10px 0; // TBD
+      margin: 10px 0;
       li {
         display: block;
         width: 100%;
@@ -184,7 +184,7 @@
         }
         h5 {
           font-size: rem(18);
-          line-height: 1.7rem;
+          line-height: 1.7;
           margin-bottom: 10px;
         }
         a {
