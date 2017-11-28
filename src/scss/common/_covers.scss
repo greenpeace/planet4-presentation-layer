@@ -13,7 +13,7 @@
     transition: opacity 100ms linear;
   }
   &:hover {
-    @include background-before-opacity(#385924);
+    @include background-before-opacity($green-80);
     box-shadow: 0 0 10px transparentize($black, .5);
     h2 {
       color: $white
