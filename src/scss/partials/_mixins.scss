@@ -91,9 +91,9 @@ TRANSITION
  */
 @mixin skewed-gradient( $color1, $color2, $color3, $color4, $color5 ) {
   @include linear-gradient(
-    225deg,
-    #{$color1} 10%,
-    #{$color2} 10%,
+    245deg,
+    #{$color1} 5%,
+    #{$color2} 5%,
     #{$color2} 25%,
     #{$color3} 25%,
     #{$color3} 80%,
@@ -101,6 +101,20 @@ TRANSITION
     #{$color4} 95%,
     #{$color5} 95%
   );
+
+  @include large-and-up {
+    @include linear-gradient(
+      245deg,
+      #{$color1} 10%,
+      #{$color2} 10%,
+      #{$color2} 35%,
+      #{$color3} 35%,
+      #{$color3} 80%,
+      #{$color4} 80%,
+      #{$color4} 95%,
+      #{$color5} 95%
+    );
+  }
 }
 
 @mixin clearfix() {

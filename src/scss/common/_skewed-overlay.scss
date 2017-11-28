@@ -3,9 +3,18 @@
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	top: 0;
 	z-index: 1;
 	overflow: hidden;
+	mask-image: linear-gradient(
+								170deg,
+								rgba(0,0,0,1),
+								rgba(0,0,0,1),
+								rgba(0,0,0,.2),
+								rgba(0,0,0,0)
+							);
+	mask-size: 100%;
+	mask-repeat: no-repeat;
+	mask-position: left top;
 
 	&:before {
 		content: "";
@@ -14,10 +23,10 @@
 		height: 100%;
 		@include skewed-gradient(
 			transparent,
+			transparentize($black, .8),
+			transparentize($black, .75),
 			transparentize($black, .7),
-			transparentize($black, .65),
-			transparentize($black, .6),
-			transparentize($black, .35)
+			transparentize($black, .65)
 		);
 	}
 }

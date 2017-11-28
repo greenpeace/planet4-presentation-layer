@@ -1,6 +1,9 @@
 #footer {
   padding: 50px 0;
   background: $blue-bg;
+  position: relative;
+  z-index: 2;
+
   a {
     color: $blue-bg-anchor;
     &:hover {

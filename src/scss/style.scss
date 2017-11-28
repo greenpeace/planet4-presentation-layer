@@ -65,3 +65,8 @@ body {
     background: $brown-bg;
   }
 }
+
+.container > * {
+  position: relative;
+  z-index: 2;
+}
