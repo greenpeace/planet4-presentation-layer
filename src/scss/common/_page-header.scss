@@ -50,11 +50,19 @@
 .top-tag {
 	color: $yellow;
 	font-weight: 300;
+	margin-right: 20px;
+	position: relative;
 
 	&:after {
 		content: "\2022";
-		padding: 0 10px;
 		pointer-events: none;
+		display: inline-block;
+		position: absolute;
+		right: -15px;
+	}
+
+	&:hover {
+		color: $yellow;
 	}
 
 	&:last-of-type:after {
