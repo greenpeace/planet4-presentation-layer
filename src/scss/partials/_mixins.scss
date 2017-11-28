@@ -98,7 +98,7 @@ CSS3 GRADIENTS
 
 @mixin background-before-opacity($color) {
   &:before {
-    content: " ";
+    content: "";
     background: ($color);
     position: absolute;
     left: 0;
