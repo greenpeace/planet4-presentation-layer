@@ -19,12 +19,12 @@
 				line-height: 1.25rem; 
 				margin-bottom: 40px; 
 			} 
-		} 
+		}
 
 		.three-column-images { 
-			
 			min-height: 184px; 
 			position: relative;
+			overflow: hidden;
 		} 
 
 		.split-image { 
@@ -32,8 +32,8 @@
 			img {
 				object-fit: cover;
 				height: 184px;
-			}    
-		} 
+			}
+		}
 
 		.first-column {
 			margin-left: -50px;
@@ -92,7 +92,6 @@
 
 			.three-column-images { 
 				min-height: 330px; 
-				position: relative;
 			}
 
 			.split-image { 
@@ -150,11 +149,7 @@
 				} 
 			} 
 
-			.three-column-images { 
-				overflow: hidden; 
-				min-height: 330px; 
-				position: relative;
-			}
+			
 
 			.split-image { 
 				position: absolute;
@@ -218,10 +213,8 @@
 			} 
 
 			.three-column-images { 
-				overflow: hidden; 
 				min-height: 430px; 
-				position: relative;
-			} 
+			}
 
 			.split-image { 
 				position: absolute;
