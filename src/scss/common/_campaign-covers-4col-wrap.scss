@@ -1,6 +1,6 @@
 .campaign-covers-4col-wrap {
 	position: relative;
-	background-color: #e0ddd4;
+	background-color: $light-grey;
 	&:before {
 		@include large-large-and-up {
 			content: "";

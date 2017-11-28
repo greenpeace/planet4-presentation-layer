@@ -45,19 +45,32 @@
 			border-left: 10px solid $brown-bg; 
 			border-right: 10px solid $brown-bg;
 			z-index: 2;
-			width: 130%;
+			width: 120%;
 			left: 0;
 			top: 0;
 			overflow: hidden;
 			img {
 				transform: skew(-25deg); 
-				margin-left: -70px;
+				margin-left: -40px;
 			} 
 		} 
+
 		.third-column { 
-			right: -120px;  
+			z-index: 1;
+			right: -100px;  
 		} 
 	}
+}
+
+// Small devices ( 575px and up )
+@include small-and-up {
+	.split-three-column { 
+		.three-column-box { 
+			.third-column { 
+				right: -85px;  
+			}
+		}
+	} 
 }
 
 
@@ -188,7 +201,7 @@
 				img {
 					object-fit: cover;
 					height: 430px;
-				}    
+				}
 			} 
 
 			.first-column {
@@ -212,7 +225,7 @@
 			} 
 
 			.third-column { 
-				right: -165px;  
+				right: -155px;  
 			}  
 		}
 	}
