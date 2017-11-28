@@ -3,10 +3,18 @@
  * a CTA button is present
  */
 
+.header-wrapper {
+	height: 0;
+}
+
 .page-header {
 	color: $white;
-	padding: 50px 0;
+	padding: 110px 0 50px;
 	position: relative;
+
+	@include large-and-up {
+		padding-top: 170px;
+	}
 }
 
 .page-header-background {
