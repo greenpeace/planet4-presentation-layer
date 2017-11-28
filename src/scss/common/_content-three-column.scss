@@ -111,11 +111,6 @@
 				}    
 			} 
 
-			.first-column {
-				margin-left: -50px;
-				margin-right: -130px; 
-			} 
-
 			.second-column { 
 				width: 110%;
 				img {
@@ -153,11 +148,6 @@
 					height: 330px;
 				} 
 			}
-
-			.first-column {
-				margin-left: -50px;
-				margin-right: -130px;
-			} 
 
 			.second-column { 
 				width: 110%;  
@@ -202,26 +192,10 @@
 					object-fit: cover;
 					height: 430px;
 				}
-			} 
-
-			.first-column {
-				margin-left: -50px;
-				margin-right: -130px;
 			}
 
 			.second-column { 
-				
-				z-index: 2;
 				width: 100%;
-				left: 0;
-				top: 0;
-				overflow: hidden;
-				img {
-					-webkit-transform: skew(-25deg); 
-					-moz-transform: skew(-25deg); 
-					-o-transform: skew(-25deg); 
-					margin-left: -150px;
-				}
 			} 
 
 			.third-column { 
