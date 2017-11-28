@@ -65,8 +65,12 @@
 		color: $yellow;
 	}
 
-	&:last-of-type:after {
-		display: none;
+	&:last-of-type {
+		margin-right: 0;
+
+		&:after {
+			display: none;
+		}
 	}
 }
 
