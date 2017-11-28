@@ -41,9 +41,7 @@
 		} 
 
 		.second-column { 
-			-webkit-transform: skew(25deg); 
-			-moz-transform: skew(25deg); 
-			-o-transform: skew(25deg); 
+			transform: skew(25deg); 
 			border-left: 10px solid $brown-bg; 
 			border-right: 10px solid $brown-bg;
 			z-index: 2;
@@ -52,9 +50,7 @@
 			top: 0;
 			overflow: hidden;
 			img {
-				-webkit-transform: skew(-25deg); 
-				-moz-transform: skew(-25deg); 
-				-o-transform: skew(-25deg); 
+				transform: skew(-25deg); 
 				margin-left: -70px;
 			} 
 		} 
@@ -108,20 +104,8 @@
 			} 
 
 			.second-column { 
-				-webkit-transform: skew(25deg); 
-				-moz-transform: skew(25deg); 
-				-o-transform: skew(25deg); 
-				border-left: 10px solid $brown-bg; 
-				border-right: 10px solid $brown-bg;
-				z-index: 2;
 				width: 110%;
-				left: 0;
-				top: 0;
-				overflow: hidden;
 				img {
-					-webkit-transform: skew(-25deg); 
-					-moz-transform: skew(-25deg); 
-					-o-transform: skew(-25deg); 
 					margin-left: -90px;
 				}   
 			} 
@@ -149,8 +133,6 @@
 				} 
 			} 
 
-			
-
 			.split-image { 
 				position: absolute;
 				img {
@@ -165,22 +147,7 @@
 			} 
 
 			.second-column { 
-				-webkit-transform: skew(25deg); 
-				-moz-transform: skew(25deg); 
-				-o-transform: skew(25deg); 
-				border-left: 10px solid $brown-bg; 
-				border-right: 10px solid $brown-bg;
-				z-index: 2;
-				width: 110%;
-				left: 0;
-				top: 0;
-				overflow: hidden;
-				img {
-					-webkit-transform: skew(-25deg); 
-					-moz-transform: skew(-25deg); 
-					-o-transform: skew(-25deg); 
-					margin-left: -90px;
-				}   
+				width: 110%;  
 			}
 
 			.third-column { 
@@ -230,11 +197,7 @@
 			}
 
 			.second-column { 
-				-webkit-transform: skew(25deg); 
-				-moz-transform: skew(25deg); 
-				-o-transform: skew(25deg); 
-				border-left: 10px solid $brown-bg; 
-				border-right: 10px solid $brown-bg;
+				
 				z-index: 2;
 				width: 100%;
 				left: 0;
