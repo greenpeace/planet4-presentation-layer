@@ -30,13 +30,16 @@
 				margin-bottom: 24px;
 			}
 
-			p, a {
+			p, 
+			a {
 				color: $blue-text;
 				font-size: rem(15);
 				line-height: 25px;
 			}
 
-			a { text-decoration: underline; }
+			a { 
+				text-decoration: underline; 
+			}
 
 			.blue-button { 
 				width: 100%; 
