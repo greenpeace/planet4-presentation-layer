@@ -1,4 +1,9 @@
 .comment-form {
+	display: block;
+	padding-bottom: 60px;
+	margin-bottom: 60px;
+	border-bottom: 1px solid $grey-40;
+
 	label {
 		font-size: rem(18);
 		font-weight: 500;
@@ -68,7 +73,7 @@
 	::-moz-placeholder,
 	:-ms-input-placeholder,
 	:-moz-placeholder {
-		color: #999999;
+		color: $grey-40;
 	}
 }
 
