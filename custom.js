@@ -204,3 +204,13 @@ $('#carousel-wrapper-not-header').on('slid.bs.carousel', function () {
 });
 
   $('#carousel-wrapper-not-header a.carousel-control-next').css('background-image', 'url(' + currentIndexnotheader + ')');
+
+
+$('.publications-slider').slick({
+  infinite: false,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false
+});
+  

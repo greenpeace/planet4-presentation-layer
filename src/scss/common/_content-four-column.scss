@@ -11,6 +11,16 @@
 		color: $grey;
 	}
 
+	.row {
+
+	}
+	
+	.col-md-4 {
+		width: 157px;
+	}
+
+
+
 	.four-coloum-content-wrap {
 
 		.four-coloum-content-symbol {
@@ -84,9 +94,8 @@
 		.four-coloum-content-wrap{
 			.four-coloum-content-symbol {
 				margin: 20px 0;
-				img {height: 363px;}
 			}
-		}    
+		}
 	}
 }
 
