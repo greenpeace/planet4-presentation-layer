@@ -78,15 +78,13 @@
 
 	.four-coloum-content {
 		
-		.four-coloum-content-info {
-			h4 {
-				font-size : 1.5rem;
-			}
-		}
+		
 		.four-coloum-content-wrap{
+			
 			.four-coloum-content-symbol {
 				margin: 20px 0;
 			}
+
 		}
 	}
 }
@@ -100,10 +98,13 @@
 		h2 {
 			font-size: rem(36);
 		}
+		
+		.four-coloum-content-wrap {
+			.four-coloum-content-info {
 
-		.four-coloum-content-info {
-			h4 {
-				font-size : 1.5rem;
+				h4 {
+					font-size : 1.5rem;
+				}
 			}
 		}
 		
