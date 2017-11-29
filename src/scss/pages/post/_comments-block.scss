@@ -1,43 +1,52 @@
 .comments-block {
   margin-top: 50px;
   padding: 40px 15px;
-  border-top: 1px solid #092856;
-  background: #E3E3E3;
+  border-top: 1px solid $black;
+  background: transparentize($grey-10, .5);
 
-  h2 {
-    font-size: rem(32);
-    margin-bottom: 40px;
-
-    @include x-large-and-up {
-      margin-bottom: 56px;
-    }
-  }
-
-  @include small-and-up {
-    padding: 60px 48px;
+  @include medium-and-up {
+    padding: 50px 30px;
   }
 
   @include large-and-up {
     margin-top: 64px;
+    padding: 60px 48px;
+  }
+}
+
+.comments-block-title {
+  font-size: rem(32);
+  font-weight: 500;
+  margin: 40px 0;
+
+  @include x-large-and-up {
+    margin-bottom: 56px;
   }
 }
 
 .single-comment {
-  margin-bottom: 64px;
+  margin: 32px 0;
+  padding-bottom: 32px;
+  border-bottom: 1px solid $grey-40;
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
 }
 
 .single-comment-title {
   font-size: rem(22);
-  margin-bottom: 40px;
-  font-weight: bold;
-  color: #3C3C3B;
+  margin-top: 0;
+  font-weight: 500;
+  color: $black;
 }
 
 .single-comment-text {
   font-size: rem(18);
   font-family: $roboto;
-  margin-bottom: 40px;
-  color: #706F6F;
+  font-weight: 300;
+  margin: 30px 0 20px;
+  color: $grey-60;
 }
 
 .single-comment-meta {
@@ -45,9 +54,15 @@
   font-weight: 500;
   color: $black;
   text-decoration: none;
+  display: block;
 
-  &:first-child:after {
-    content: '/';
-    padding-left: 5px;
+  & > * {
+    display: inline-block;
+    margin-bottom: 0;
+
+    &:first-child:after {
+      content: '/';
+      padding-left: 5px;
+    }
   }
 }
