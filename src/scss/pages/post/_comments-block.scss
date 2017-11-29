@@ -4,97 +4,47 @@
     font-size: rem(40);
     margin-bottom: 56px;
   }
+
   .comments-block-inner {
     background: #E3E3E3;
     border-top: 1px solid #092856;
     padding: 60px 48px;
-    .form-section {
-      form {
-        h3 {
-          font-size: rem(22);
-          margin-bottom: 56px;
-        }
-        .form-group {
-          margin-bottom: 32px;
-          label {
-            font-size: rem(18);
-            font-weight: 500;
-          }
-          textarea {
-            border:none;
-            background: #D9D9D9;
-            font-size: rem(22);
-            border-radius: 0;
-            margin-bottom: 56px;
-          }
-          input {
-            border-left: none;
-            border-top: none;
-            border-right: none;
-            border-bottom: 1px solid #706F6F;
-            background: transparent;
-            border-radius: 0;
-            padding: 0;
-            font-size: rem(22);
-            font-weight: normal;
-            width: 50%;
-          }
-          ::-webkit-input-placeholder,
-          ::-moz-placeholder,
-          :-ms-input-placeholder,
-          :-moz-placeholder {
-            color: #999999;
-          }
-        }
-        .mt-64 {
-          margin-top: 64px;
-        }
-        .mb-0 {
-          margin-bottom: 0;
-        }
-        .btn {
-          width: 25%;
-          height: 52px;
-          line-height: 52px;
-          font-weight: bold;
-        }
-      }
 
-    }
     hr {
       background: #999999;
       margin-bottom: 40px;
       margin-top: 64px;
     }
+
     .comments-section {
       .single-comment {
         margin-bottom: 64px;
+
         h3.comment-heading {
           font-size: rem(22);
           margin-bottom: 40px;
           font-weight: bold;
           color: #3C3C3B;
         }
+
         p.comment-text {
           font-size: rem(18);
           font-family: $roboto;
           margin-bottom: 32px;
           color: #706F6F;
         }
+
         a {
           font-size: rem(18);
           font-weight: 500;
           color: $black;
           text-decoration: none;
+
           &.author-info {
             &::after {
               content: '/';
               padding-left: 5px;
             }
-
-          }
-          &.comment-date {
-
           }
         }
       }
@@ -112,37 +62,6 @@
     }
     .comments-block-inner {
       padding: 40px 15px;
-      .form-section {
-        form {
-          h3 {
-            font-size: rem(22);
-            margin-bottom: 40px;
-          }
-          .form-group {
-            margin-bottom: 32px;
-            label {
-              font-size: rem(18);
-            }
-            textarea {
-              margin-bottom: 40px;
-            }
-            input {
-              font-size: rem(22);
-              width: 100%;
-            }
-          }
-          .mt-64 {
-            margin-top: 64px;
-          }
-          .mb-0 {
-            margin-bottom: 0;
-          }
-          .btn {
-            width: 100%;
-          }
-        }
-
-      }
       hr {
         margin-bottom: 32px;
         margin-top: 40px;
@@ -160,10 +79,6 @@
           }
           a {
             font-size: rem(18);
-            &.author-info {
-            }
-            &.comment-date {
-            }
           }
         }
       }
@@ -181,41 +96,12 @@
     }
     .comments-block-inner {
       padding: 40px 15px;
-      .form-section {
-        form {
-          h3 {
-            font-size: rem(22);
-            margin-bottom: 40px;
-          }
-          .form-group {
-            margin-bottom: 32px;
-            label {
-              font-size: rem(18);
-            }
-            textarea {
-              margin-bottom: 40px;
-            }
-            input {
-              font-size: rem(22);
-              width: 80%;
-            }
-          }
-          .mt-64 {
-            margin-top: 64px;
-          }
-          .mb-0 {
-            margin-bottom: 0;
-          }
-          .btn {
-            width: 50%;
-          }
-        }
 
-      }
       hr {
         margin-bottom: 32px;
         margin-top: 40px;
       }
+
       .comments-section {
         .single-comment {
           margin-bottom: 64px;
@@ -229,10 +115,6 @@
           }
           a {
             font-size: rem(18);
-            &.author-info {
-            }
-            &.comment-date {
-            }
           }
         }
       }
@@ -240,140 +122,26 @@
   }
 }
 
-// Large devices (desktops, 992px and up)
 @include medium-large-and-up {
   .comments-block {
     padding-top: 104px;
+
     h2 {
-      font-size: rem(40);
       margin-bottom: 56px;
     }
+
     .comments-block-inner {
       padding: 60px 48px;
-      .form-section {
-        form {
-          h3 {
-            font-size: rem(22);
-            margin-bottom: 56px;
-          }
-          .form-group {
-            margin-bottom: 32px;
-            label {
-              font-size: rem(18);
-            }
-            textarea {
-              margin-bottom: 40px;
-            }
-            input {
-              font-size: rem(22);
-              width: 50%;
-            }
-          }
-          .mt-64 {
-            margin-top: 64px;
-          }
-          .mb-0 {
-            margin-bottom: 0;
-          }
-          .btn {
-            width: 25%;
-          }
-        }
-
-      }
       hr {
         margin-bottom: 40px;
         margin-top: 64px;
-      }
-      .comments-section {
-        .single-comment {
-          margin-bottom: 64px;
-          h3.comment-heading {
-            font-size: rem(22);
-            margin-bottom: 40px;
-          }
-          p.comment-text {
-            font-size: rem(18);
-            margin-bottom: 32px;
-          }
-          a {
-            font-size: rem(18);
-            &.author-info {
-            }
-            &.comment-date {
-            }
-          }
-        }
       }
     }
   }
 } 
 
-// Extra large devices (large desktops, 1200px and up)
 @include large-large-and-up {
   .comments-block {
     padding-top: 64px;
-    h2 {
-      font-size: rem(40);
-      margin-bottom: 56px;
-    }
-    .comments-block-inner {
-      padding: 60px 48px;
-      .form-section {
-        form {
-          h3 {
-            font-size: rem(22);
-            margin-bottom: 40px;
-          }
-          .form-group {
-            margin-bottom: 32px;
-            label {
-              font-size: rem(18);
-            }
-            textarea {
-              margin-bottom: 40px;
-            }
-            input {
-              font-size: rem(22);
-              width: 50%;
-            }
-          }
-          .mt-64 {
-            margin-top: 64px;
-          }
-          .mb-0 {
-            margin-bottom: 0;
-          }
-          .btn {
-            width: 25%;
-          }
-        }
-
-      }
-      hr {
-        margin-bottom: 40px;
-        margin-top: 64px;
-      }
-      .comments-section {
-        .single-comment {
-          margin-bottom: 64px;
-          h3.comment-heading {
-            font-size: rem(22);
-            margin-bottom: 40px;
-          }
-          p.comment-text {
-            font-size: rem(18);
-            margin-bottom: 32px;
-          }
-          a {
-            font-size: rem(18);
-            &.author-info {
-            }
-            &.comment-date {
-            }
-          }
-        }
-      }
-    }
   }
 }
