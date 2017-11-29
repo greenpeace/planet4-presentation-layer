@@ -60,6 +60,11 @@ body {
   overflow-x: hidden;
   background: $body-bg;
   font-family: $roboto;
+
+  &.white-bg {
+    background-color: $white;
+  }
+
   &.brown-bg {
     background: $brown-bg;
   }
