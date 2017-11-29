@@ -11,13 +11,19 @@
 	h2 {
 		font-size: rem(26);
 		margin-bottom: 1.2rem;
+		padding-left: 15px;
+	}
+
+	.container {
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.thumbnail-largeview-container {
 		
 		.thumbnail-large {
 			margin-bottom: 5px;
-			max-height: 90px;
+			max-height: 70px;
 			position: relative;
 			overflow: hidden;
 			@include background-before-opacity(rgba(22,22,22,0.65));
@@ -39,13 +45,13 @@
 				text-align: center;
 				font-size: rem(20);
 				color: $yellow;
-				font-weight: bold;
+				font-weight: 400;
 				position: absolute;
 				left: 0;
 				bottom: 0;
 				width: 100%;
 				z-index: 2;
-				margin-bottom: 28px;
+				margin-bottom: 18px;
 				text-shadow: 1px 1px $black;
 				&:hover {
 				  text-decoration: none;
@@ -59,9 +65,15 @@
 
 	.campaign-thumbnail-block {
 
+		.container {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
 		h2 {
 			font-size: rem(38);
 			margin-bottom: 2.2rem;
+			padding-left: 0;
 		}
 
 		.thumbnail-largeview-container {
