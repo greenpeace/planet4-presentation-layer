@@ -1,8 +1,15 @@
 .video-block {
 	padding-top: 80px;
+	
 	h2 {
 		font-size: rem(26);
 		margin-bottom: 2rem;
+		padding-left: 15px;
+	}
+
+	.container {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -10,9 +17,15 @@
 // Small devices ( 575px and up )
 @include small-and-up {
 	.video-block {
+
+		h2 {
+			padding-left: 0px;
+		}
+
 		.video-section {
 			height: 240px;
 		}
+
 	}
 }
 
