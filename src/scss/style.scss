@@ -57,10 +57,14 @@
 */
 
 body {
+  overflow-x: hidden;
   background: $body-bg;
   font-family: $roboto;
   &.brown-bg {
     background: $brown-bg;
+  }
+  &.home-page-bg {
+    background-image: repeating-linear-gradient(-61deg, rgba(212, 236, 244, 0) 0%, rgba(197, 223, 239, 0.69) 950px, rgba(188, 215, 236, 1) 952px);
   }
   // /* Gradient */
   // TODO: Gradient would come at a later phase
