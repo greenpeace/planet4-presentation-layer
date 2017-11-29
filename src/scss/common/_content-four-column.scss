@@ -4,8 +4,11 @@
   h2 {
     font-size: rem(40);
     margin: 0;
-
   }
+  a {
+    color: $grey;
+  }
+
   .four-coloum-content-wrap{
     .four-coloum-content-symbol {
       position: relative;
