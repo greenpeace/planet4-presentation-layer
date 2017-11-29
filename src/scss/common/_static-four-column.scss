@@ -1,231 +1,195 @@
-/* 
- * Content 4 column is the here
- *  
- */
-
-/*
-<!-- Four Coloum Start -->
-  <div class="four-coloum">
-    <div class="container">
-      <h2>We aim to ensure </br>the ability of the earth </br>to nurture life in all its diversity. </h2>
-      <div class="row">
-          <div class="col-md-3 col-lg-3 col-xl-3">
-            <div class="four-coloum-wrap clearfix">
-              <div class="four-coloum-symbol"><img src="images/bird.png"></div>
-              <div class="four-coloum-info">
-                <div class="four-coloum-information">
-                  <h5>Values</h5>
-                  <p>Greenpeace uses non-violent, creative confrontation to expose global environmental problems, and to force the solutions which are essential to a green and peaceful future.</p>
-                  <div class="four-coloum-action">
-                    <a href="#">See what we stand for</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-lg-3 col-xl-3">
-            <div class="four-coloum-wrap clearfix">
-              <div class="four-coloum-symbol"><img src="images/ship.png"></div>
-              <div class="four-coloum-info">
-                <div class="four-coloum-information">
-                  <h5>Histroy</h5>
-                  <p>"A trip for life, and for peace": that’s how Irving Stowe, one of the co-founders of Greenpeace, described the plan to sail a boat to the Arctic Ocean to stop the testing of a nuclear bomb. Irving didn’t know it then, but the trip would last for decades and change the world.</p>
-                  <div class="four-coloum-action">
-                    <a href="#">Learn about our history</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-lg-3 col-xl-3">
-            <div class="four-coloum-wrap clearfix">
-              <div class="four-coloum-symbol"><img src="images/tree.png"></div>
-              <div class="four-coloum-info">
-                <div class="four-coloum-information">
-                  <h5>Organisation</h5>
-                  <p>Greenpeace's governance, ﬁnancial and legal structuresreﬂects our fundamental respect for global democratic principles and our need to maintain a high level of internationalism and coordination.</p>
-                  <div class="four-coloum-action">
-                    <a href="#">See how we’re organized</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-lg-3 col-xl-3">
-            <div class="four-coloum-wrap clearfix">
-              <div class="four-coloum-symbol"><img src="images/globe.png"></div>
-              <div class="four-coloum-info">
-                <div class="four-coloum-information">
-                  <h5>Offices</h5>
-                  <p>Tart liquorice sweet roll pastry croissant toffee mufﬁn tiramisu. Marshmallow tootsie roll sugar plum powder oat cake gingerbread. Cupcake cookie cotton candy chocolate cake oat cake marshmallow fruitcake candy canes.</p>
-                  <div class="four-coloum-action">
-                    <a href="#">Check our global locations</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-*/
-
-
 .four-coloum {
-  h2 {
-    font-size: rem(30);
-    color: $steps-deactive-text;
-    line-height: 36px;
-    text-align: center;
-    margin: 80px 0;
-  }
-  .four-coloum-wrap{
-    .four-coloum-symbol {
-      text-align: center;
-      margin-bottom: 16px;
-    }
-    .four-coloum-info {
-      h5 {
-        text-align: center;
-        font-size : 22px;
-        line-height : normal;
-        font-weight: 500;
-        color : $steps-deactive-text;
-        margin-bottom: 24px;
-      }
-      p, a{
-        color: $blue-text;
-        font-size: rem(15);
-        line-height: 25px;
-      }
-      a { text-decoration: underline; }
-      .blue-button { 
-        width: 100%; 
-      }
-      .four-coloum-information {
-        float: left;
-        min-height: 230px;
-      }
-    }
-  }
+
+	h2 {
+		font-size: rem(30);
+		color: $steps-deactive-text;
+		line-height: 36px;
+		text-align: center;
+		margin: 80px 0;
+	}
+
+	.four-coloum-wrap {
+		
+		.four-coloum-symbol {
+			text-align: center;
+			margin-bottom: 16px;
+		}
+
+		.four-coloum-info {
+
+			h5 {
+				text-align: center;
+				font-size : 22px;
+				line-height : normal;
+				font-weight: 500;
+				color : $steps-deactive-text;
+				margin-bottom: 24px;
+			}
+
+			p, 
+			a {
+				color: $blue-text;
+				font-size: rem(15);
+				line-height: 25px;
+			}
+
+			a { 
+				text-decoration: underline; 
+			}
+
+			.blue-button { 
+				width: 100%; 
+			}
+
+			.four-coloum-information {
+				float: left;
+				min-height: 230px;
+			}
+
+		}
+	}
 }
 
 @include small-and-up {
-  .four-coloum {
-    h2{
-      text-align: center; 
-      font-size: rem(29);
-      }
-      .four-coloum-wrap{
-        .four-coloum-symbol{
-            text-align: left;
-          }
-        .four-coloum-info{  
-         h5 {
-          text-align: center;
-         }
-        .four-coloum-information {
-          min-height: 320px;
-          // padding: 20px 0;
-        }
-      }
-    }
-  }
+	
+	.four-coloum {
+		
+		h2 {
+			text-align: center; 
+			font-size: rem(29);
+		}
+		
+		.four-coloum-wrap {
+			.four-coloum-symbol {
+				text-align: left;
+			}
+
+			.four-coloum-info {  
+				
+				h5 {
+					text-align: center;
+				}
+
+				.four-coloum-information {
+					min-height: 320px;
+				}
+			}
+		}
+	}
 }  
 
 // Medium devices (tablets, 768px and up)
 @include medium-and-up {
-  .four-coloum {
-    h2{
-      text-align: center; 
-      font-size: rem(43);
-      line-height: 53px;
-      margin-top: 104px;
-      margin-bottom: 104px;
-      }
-      .four-coloum-wrap{
-        margin-bottom: 80px;
-        .four-coloum-symbol{
-            text-align: left;
-            margin-bottom: 32px;
-          }
-        .four-coloum-info{  
-         h5 {
-          text-align: left;
-          margin-bottom: 40px;
-         }
-         p {
-          margin-bottom: 24px;
-         }
-        .four-coloum-information {
-          min-height: 220px;
-          // padding: 20px 0;
-        }
-      }
-    }
-  }
+
+	.four-coloum {
+		
+		h2 {
+			text-align: center; 
+			font-size: rem(43);
+			line-height: 53px;
+			margin-top: 104px;
+			margin-bottom: 104px;
+		}
+
+		.four-coloum-wrap {
+			margin-bottom: 80px;
+			
+			.four-coloum-symbol {
+				text-align: left;
+				margin-bottom: 32px;
+			}
+
+			.four-coloum-info{  
+
+				h5 {
+					text-align: left;
+					margin-bottom: 40px;
+				}
+				
+				p {
+					margin-bottom: 24px;
+				}
+			
+				.four-coloum-information {
+					min-height: 220px;
+				}
+	
+	  		}
+		}
+  	}
 }
+
 // Large devices (desktops, 992px and up)
 @include medium-large-and-up {
-  .four-coloum {
-    h2{
-      text-align: left; 
-      font-size: rem(48);
-      line-height: 56px;
-      margin-top: 104px;
-      margin-bottom: 160px;
-      }
-      .four-coloum-wrap{
-        .four-coloum-symbol{
-            text-align: left;
-            margin-bottom: 32px;
-          }
-        .four-coloum-info{  
-         h5 {
-          text-align: left;
-          margin-bottom: 16px;
-         }
-         p {
-          margin-bottom: 24px;
-         }
-        .four-coloum-information {
-          min-height: 220px;
-          // padding: 20px 0;
-        }
-      }
-    }
-  }
+
+	.four-coloum {
+	
+		h2 {
+			text-align: left; 
+			font-size: rem(48);
+			line-height: 56px;
+			margin-top: 104px;
+			margin-bottom: 160px;
+		}
+
+		.four-coloum-wrap {
+			
+			.four-coloum-symbol {
+				text-align: left;
+				margin-bottom: 32px;
+			}
+
+			.four-coloum-info {
+				
+				h5 {
+					text-align: left;
+		  			margin-bottom: 16px;
+		  		}
+
+		  		p {
+		  			margin-bottom: 24px;
+		  		}
+
+				.four-coloum-information {
+					min-height: 220px;
+				}
+		  	}
+		}
+	}
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @include large-large-and-up {
-  .four-coloum {
-    h2{
-      text-align: left; 
-      font-size: rem(56);
-      line-height: 68px;
-      margin-top: 104px;
-      margin-bottom: 80px;
-      }
-      .four-coloum-wrap{
-        .four-coloum-symbol{
-            text-align: left;
-            margin-bottom: 56px;
-          }
-        .four-coloum-info{  
-         h5 {
-          text-align: left;
-          margin-bottom: 32px;
-         }
-         p {
-          margin-bottom: 48px;
-         }
-        .four-coloum-information {
-          min-height: 220px;
-          // padding: 20px 0;
-        }
-      }
-    }
-  }
+	.four-coloum {
+		h2 {
+			text-align: left; 
+			font-size: rem(56);
+			line-height: 68px;
+			margin-top: 104px;
+			margin-bottom: 80px;
+		}
+
+		.four-coloum-wrap {
+			
+			.four-coloum-symbol {
+				text-align: left;
+				margin-bottom: 56px;
+			}
+
+			.four-coloum-info {  
+				h5 {
+					text-align: left;
+					margin-bottom: 32px;
+				}
+
+				p {
+					margin-bottom: 48px;
+				}
+
+				.four-coloum-information {
+					min-height: 220px;
+				}
+			}
+		}
+	}
 }

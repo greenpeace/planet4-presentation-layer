@@ -39,15 +39,16 @@
 @import "common/campaign-thumbnail-block";
 @import "common/content-three-column";
 @import "common/comments-block";
-@import "common/author-block";
 @import "common/post-block";
 @import "common/boxout-block";
 @import "common/search-block";
 @import "common/cookie-block";
+@import "common/campaign-covers-4col-wrap";
 @import "common/skewed-overlay";
 
 
-// Import pages and common responsiveness
+// Page-specific styles
+@import "pages/post/author-block";
 @import "pages/take-action"; // TODO: Break this down into blocks
 
 /* 
@@ -58,11 +59,16 @@
 */
 
 body {
+  overflow-x: hidden;
   background: $body-bg;
   font-family: $roboto;
   position: relative;
   &.brown-bg {
     background: $brown-bg;
+  }
+
+  &.home-page-bg {
+    background-image: repeating-linear-gradient(-61deg, rgba(212, 236, 244, 0) 0%, rgba(197, 223, 239, 0.69) 950px, rgba(188, 215, 236, 1) 952px);
   }
 }
 
