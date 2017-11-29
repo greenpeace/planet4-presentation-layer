@@ -1,7 +1,3 @@
-$author-grey: #E2E5E8;
-$author-block-breakpoint: 650px;
-
-
 .author-block {
   margin: 55px 0;
   overflow: hidden;
@@ -13,18 +9,18 @@ $author-block-breakpoint: 650px;
 }
 
 .author-block-info {
-  background: $author-grey;
+  background: $grey-20;
   padding: 35px 20px;
 
   @include medium-and-up {
     padding: 25px;
     position: relative;
     z-index: 1;
-    @include skew($bg: $author-grey, $deg: 25deg, $right: -25%, $width: 50%);
+    @include skew($bg: $grey-20, $deg: 25deg, $right: -25%, $width: 50%);
   }
 
   @include large-and-up {
-    @include skew($bg: $author-grey, $deg: 25deg, $right: -15%, $width: 40%);
+    @include skew($bg: $grey-20, $deg: 25deg, $right: -15%, $width: 40%);
   }
 }
 
@@ -41,7 +37,7 @@ $author-block-breakpoint: 650px;
 .author-block-info-name {
   font-size: rem(17);
   font-weight: bold;
-  color: #E51538;
+  color: $crimson;
   margin-bottom: 40px;
 
   a {
