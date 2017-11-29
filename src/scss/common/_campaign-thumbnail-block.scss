@@ -16,8 +16,10 @@
 	.thumbnail-largeview-container {
 		
 		.thumbnail-large {
-			margin-bottom: 30px;
+			margin-bottom: 5px;
+			max-height: 90px;
 			position: relative;
+			overflow: hidden;
 			@include background-before-opacity(rgba(22,22,22,0.65));
 		
 			&:hover {
@@ -43,12 +45,35 @@
 				bottom: 0;
 				width: 100%;
 				z-index: 2;
-				margin-bottom: 40px;
+				margin-bottom: 28px;
 				text-shadow: 1px 1px $black;
 				&:hover {
 				  text-decoration: none;
 				}
 		  	}
+
 		}
 	}
+
+}
+
+
+
+@include medium-and-up {
+
+	.campaign-thumbnail-block {
+
+		.thumbnail-largeview-container {
+
+			.thumbnail-large {
+				margin-bottom: 30px;
+				max-height: 100%;
+			}
+
+			span.yellow-cta {
+				margin-bottom: 40px;
+			}
+		}
+	}
+
 }
