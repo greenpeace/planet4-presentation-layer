@@ -8,11 +8,18 @@
   justify-content: space-between;
   background-color: transparentize($white, .7);
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
-  margin: 40px 0;
+  margin: 30px 0;
 
   .tag-item {
     color: $blue-80;
+  }
 
+  &:first-of-type {
+    margin-top: 10px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 10px;
   }
 
   a {
@@ -26,6 +33,7 @@
   @include large-and-up {
     background-color: transparent;
     box-shadow: none;
+    margin: 40px 0;
 
     .tag-item {
       font-size: rem(18);
