@@ -1,6 +1,6 @@
 .four-coloum-content {
 	color: $purple;
-	padding: 104px 0 0 0;
+	padding: 80px 0 0 0;
 	
 	h2 {
 		font-size: rem(26);
@@ -19,10 +19,8 @@
 
 		.four-coloum-content-symbol {
 			position: relative;
-			margin: 32px 0 32px 0;
-			-webkit-box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
-			-moz-box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
-			box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
+			margin: 32px 0 24px 0;
+			box-shadow: 0px 5px 20px 0px rgba(114,114,114,0.5);
 			
 			img {
 				width: 100%;
@@ -40,8 +38,7 @@
 		.four-coloum-content-info {
 
 			h4 {
-				font-size : 1.5rem;
-				line-height: 1.875rem;
+				font-size : rem(16);
 				font-weight: 600;
 				padding: 0;
 				margin: 0;
@@ -76,7 +73,7 @@
 
 
 // Small devices (landscape phones, 576px and up)
- @include mobile-only {
+ @include small-and-up {
 
 	.four-coloum-content {
 		

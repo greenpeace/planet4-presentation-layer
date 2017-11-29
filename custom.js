@@ -234,4 +234,3 @@ $('.publications-slider').slick({
     }
   ]
 });
-  
