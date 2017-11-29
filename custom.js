@@ -209,7 +209,7 @@ $('#carousel-wrapper-not-header').on('slid.bs.carousel', function () {
 $('.publications-slider').slick({
   infinite: false,
   mobileFirst: true,
-  slidesToShow: 2,
+  slidesToShow: 2.2,
   slidesToScroll: 1,
   arrows: false,
   dots: false,
