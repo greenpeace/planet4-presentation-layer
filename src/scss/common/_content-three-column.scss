@@ -11,12 +11,14 @@
 
 			h2 { 
 				font-size: rem(26);
+				color: $purple;
 				margin-bottom: 22px; 
 			} 
 
 			p { 
 				font-size: rem(17);
 				line-height: 1.25rem; 
+				color: $purple;
 				margin-bottom: 40px; 
 			} 
 		}
@@ -84,7 +86,7 @@
 			
 			.three-column-info { 
 				padding-top: 40px;
-				
+
 				h2 { 
 					font-size: rem(35);
 					margin-bottom: 50px; 
@@ -131,7 +133,7 @@
 @include medium-large-and-up {
 	
 	.split-three-column { 
-	
+
 		.three-column-box { 
 
 			.split-image { 
@@ -157,7 +159,8 @@
 @include large-large-and-up {
 	
 	.split-three-column { 
-		margin-top: 104px;
+
+		margin-top: 350px;
 		
 		.three-column-box {
 

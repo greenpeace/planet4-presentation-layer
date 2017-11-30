@@ -45,7 +45,7 @@
 @import "common/cookie-block";
 @import "common/campaign-covers-4col-wrap";
 @import "common/skewed-overlay";
-
+@import "common/sharethis";
 
 // Import pages and common responsiveness
 
@@ -59,6 +59,12 @@
  * JS Coding guidelines to be followed : https://make.wordpress.org/core/handbook/best-practices/coding-standards/javascript/
  * 
 */
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 body {
   overflow-x: hidden;
