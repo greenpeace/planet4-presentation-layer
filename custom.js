@@ -4,6 +4,10 @@ $(function() {
     return false;
     });
 });
+
+$('.topicwise-article-image, .article-headline, .article-content').hover(function(){
+ $(this).parents('.topicwise-article-list-item').toggleClass('imghover');
+});
   $(document).ready(function() {
     $(".step-info-wrap").click(function(){
     if($(this).parent().hasClass('active')){
@@ -186,6 +190,7 @@ $('#carousel-wrapper-header').on('slid.bs.carousel', function () {
 
   $('#carousel-wrapper-header a.carousel-control-next').css('background-image', 'url(' + currentIndexheader + ')');
 
+<<<<<<< HEAD
 
   // Index for carousel-wrapper-header
 currentIndexnotheader = $('#carousel-wrapper-not-header .carousel-item.active').next('.carousel-item').find('img').attr('src');
@@ -234,3 +239,5 @@ $('.publications-slider').slick({
     }
   ]
 });
+=======
+>>>>>>> skewed-overlay

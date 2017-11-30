@@ -23,7 +23,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-arrow-marker .path1:before {
+  content: "\e905";
+  color: rgb(0, 0, 0);
+  opacity: 0.25;
+}
+.icon-arrow-marker .path2:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
 .icon-doc-ic:before {
   content: "\e900";
 }

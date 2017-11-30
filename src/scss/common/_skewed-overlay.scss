@@ -1,0 +1,32 @@
+.skewed-overlay {
+	pointer-events: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+	mask-image: linear-gradient(
+								170deg,
+								rgba(0,0,0,1),
+								rgba(0,0,0,1),
+								rgba(0,0,0,.2),
+								rgba(0,0,0,0)
+							);
+	mask-size: 100%;
+	mask-repeat: no-repeat;
+	mask-position: left top;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		@include skewed-gradient(
+			transparent,
+			transparentize($black, .8),
+			transparentize($black, .75),
+			transparentize($black, .7),
+			transparentize($black, .65)
+		);
+	}
+}
