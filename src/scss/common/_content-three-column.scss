@@ -50,6 +50,12 @@
 			min-height: 184px; 
 			position: relative;
 			overflow: hidden;
+
+			@include medium-and-up {
+				min-height: 330px; 
+				margin-left: 0;
+			    margin-right: 0;
+			}
 		} 
 
 		.split-image { 
@@ -57,6 +63,9 @@
 			img {
 				object-fit: cover;
 				height: 184px;
+				@include medium-and-up {
+					height: 330px;
+				}
 			}
 		}
 
@@ -103,17 +112,14 @@
 		
 		.three-column-box { 
 
-			.three-column-images { 
-				min-height: 330px; 
-			}
 
-			.split-image { 
-				position: absolute;
-				img {
-					object-fit: cover;
-					height: 330px;
-				}    
-			} 
+			// .split-image { 
+			// 	position: absolute;
+			// 	img {
+			// 		object-fit: cover;
+			// 		height: 330px;
+			// 	}    
+			// } 
 
 			.second-column { 
 				width: 110%;
