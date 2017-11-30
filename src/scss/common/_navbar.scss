@@ -1,4 +1,3 @@
-
 .mobile-header-wrap {
   padding: 10px 15px;
   .search-link {
@@ -14,6 +13,7 @@
     color: $white;
     border-radius: 5px;
     .fa {
+      &.fa-bars,
       &.fa-times {
         display: none;
       }
@@ -31,13 +31,9 @@
     text-align: right;
   }
 }
-
-  .mobile-menus {
+.mobile-menus {
   background: #234448; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #234448 0%, #2b5459 50%, #356268 50%, #356268 50%, #356268 51%, #2b5459 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #234448 0%,#2b5459 50%,#356268 50%,#356268 50%,#356268 51%,#2b5459 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(124deg, #234448 0%,#2b5459 50%,#356268 50%,#356268 50%,#356268 51%,#2b5459 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#234448', endColorstr='#2b5459',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */    
   width: 300px; 
   position: fixed; 
   left: -320px; 
@@ -86,29 +82,32 @@
 
 #header {
   &.top-navigation {
-    background: $top-nav;
+    background: $blue-top-nav;
     padding: 0;
     width: 100%;
     z-index: 500;
     opacity: 0.8;
     position: relative;
     .navbar-brand {
-      padding: 0;
+      padding: 0 11px 0 15px;
       margin: 0;
     }
     .navbar {
       padding: 0;
       width: 100%;
       li {
-        width: 16.66%;
-        text-align: center;
+        width: 20%;
+        text-align: left;
         position: relative;
         line-height: 22px;
         padding: 11px 0;
+        margin-top: 0;
+        margin-right: 15px;
         &.big-screen-nav-link {
+          text-align: center;
           &:hover {
             transition: 0.5s;
-            border-bottom: 3px solid $white;
+            border-bottom: 2px solid $white;
             a {
               color: $white;
               text-decoration: none;
@@ -122,16 +121,21 @@
               text-decoration: none;
             }
           }
-        }   
+        }  
+        &.donatebtn {
+          width: 15%;
+        } 
         a {
           color: $white;
           font-size: rem(16);
           display: inline-block; 
+          line-height: 40px;
         }
         .btn-secondary {
           font-size: rem(12);
           color: $black;
           margin-top: 3px;
+          font-weight: 500;
         }
         &.loginSignUpWrap {
           color: $nav-link;
@@ -157,13 +161,22 @@
           }
         &.nav-search-wrap {
           width: 30%;
-          margin-left: 20px;
+          color: $search-text-colour;
+          input::-webkit-input-placeholder {
+            color: $search-text-colour;
+          }
           .top-nav-search-btn {
             background: none;
             border: none;
             position: absolute;
             top: 18px;
             right: 15px;
+            font-size: 20px; 
+            i {
+              vertical-align: middle;
+              font-size: 1.3rem;
+              margin-right: -10px;
+            }
           }
           .form-control {
             border-radius: 0;
@@ -171,7 +184,7 @@
           }
         }
         &.active-li {
-          background-color: $blue-bg;
+          background-color: $hover-nav;
           .country-select-dropdown {
             & > span:after {
               -ms-transform: rotate(180deg); /* IE 9 */
@@ -182,6 +195,7 @@
         }
       }
       .country-select-dropdown {
+        padding-left: 15px;
         position: relative;
         & > span:after {
           content: "";
@@ -201,6 +215,7 @@
           display: block;
           position: relative;
           padding-right: 24px;
+          cursor: pointer;
         }
       }
       .country-select-box {
@@ -212,7 +227,7 @@
         margin-top: 13px;
         background: $blue-bg;
         padding: 20px 20px 20px 70px;
-        margin-left: -100%;
+        margin-left: -65%;
         .country-selection-option {
           height: 350px;
           overflow-y: scroll;
@@ -285,22 +300,27 @@
         }
       }
     }
+    .pr-15 {
+      padding-right: 15px;
+    }
+    .pl-15 {
+      padding-left: 15px;
+    }
   }
 }
 
-.brown-bg {
-  #header {
-    &.top-navigation {
-      background: $header-footer-bg;
-    }    
-  }  
-}
 
 .fixedElement {
   &.fixed {
     top: 20px;
     right: 120px;
     z-index: 5;
+  }
+}
+
+.mobile-search-wrap {
+  .fa {
+    color: #66CB00;
   }
 }
 
@@ -528,12 +548,11 @@
   #header.top-navigation {
     .navbar {
       li {
-        width: 35%;
+        width: 28%;
         a {
           font-size: rem(18);
         }
         &.big-screen-nav-link {
-          margin-top: 12px;
         }
         .btn-secondary {
           height: 42px;
@@ -556,14 +575,12 @@
     padding: 0;
     top: 0;
     .navbar-brand {
-      padding: 0;
+      padding: 0 25px 0 15px;
       margin: 0;
     }
     .navbar {
       li {
-        &.big-screen-nav-link {
-          margin-top: 12px;
-        }
+        width: 20%;
         .btn-secondary {
           height: rem(36);
           line-height: 42px;
