@@ -203,7 +203,7 @@ $('#carousel-wrapper-not-header').on('slid.bs.carousel', function () {
 
 });
 
-  $('#carousel-wrapper-not-header a.carousel-control-next').css('background-image', 'url(' + currentIndexnotheader + ')');
+$('#carousel-wrapper-not-header a.carousel-control-next').css('background-image', 'url(' + currentIndexnotheader + ')');
 
 
 $('.publications-slider').slick({
