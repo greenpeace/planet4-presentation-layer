@@ -640,11 +640,11 @@ Stylesheet: Button Styles
 
 .cover-card-btn { background: rgba(255, 255, 255, 0.2); color: #fff; border-color: #fff; padding: 10px; position: absolute; bottom: 0; margin: 15px 0; width: 90%; cursor: pointer; }
 
-.block-media { background-image: url("images/infographic.png"); background-position: center; background-repeat: no-repeat; background-size: cover; min-height: 260px; }
+.block-media { background-image: url("images/infographic.png"); background-position: center; background-repeat: no-repeat; background-size: cover; min-height: 250px; }
 
 @media (min-width: 768px) { .block-media { min-height: 550px; } }
 
-@media (min-width: 992px) { .block-media { min-height: 700px; } }
+@media (min-width: 992px) { .block-media { min-height: 625px; } }
 
 .tag-cloud { padding-top: 104px; }
 

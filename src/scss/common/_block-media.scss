@@ -1,12 +1,12 @@
 .block-media {
 	@include background('images/infographic.png');
-	min-height: 260px;
+	min-height: 250px;
 
 	@include medium-and-up {
 		min-height: 550px;
 	}
 
 	@include medium-large-and-up {
-		min-height: 700px;
+		min-height: 625px;
 	}
 }
