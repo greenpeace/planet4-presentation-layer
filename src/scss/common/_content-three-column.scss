@@ -11,7 +11,7 @@
 
 			h2 { 
 				font-size: rem(26);
-				margin-bottom: 32px; 
+				margin-bottom: 22px; 
 			} 
 
 			p { 
@@ -62,6 +62,7 @@
 	}
 }
 
+
 // Small devices ( 575px and up )
 @include small-and-up {
 	.split-three-column { 
@@ -82,10 +83,11 @@
 		.three-column-box { 
 			
 			.three-column-info { 
+				padding-top: 40px;
 				
 				h2 { 
 					font-size: rem(35);
-					margin-bottom: 64px; 
+					margin-bottom: 50px; 
 				} 
 
 				p { 
@@ -131,15 +133,6 @@
 	.split-three-column { 
 	
 		.three-column-box { 
-	
-			.three-column-info { 
-				
-				p {
-					&:last-child {
-						margin-bottom: 100px;
-					}
-				} 
-			} 
 
 			.split-image { 
 				position: absolute;
