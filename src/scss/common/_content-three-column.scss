@@ -13,6 +13,11 @@
 				font-size: rem(26);
 				color: $purple;
 				margin-bottom: 22px; 
+
+				@include medium-and-up {
+					font-size: rem(35);
+					margin-bottom: 50px; 
+				}
 			} 
 
 			p { 
@@ -20,7 +25,25 @@
 				line-height: 1.25rem; 
 				color: $purple;
 				margin-bottom: 40px; 
+
+				@include medium-and-up {
+					font-size: rem(20);
+					line-height: 2.25rem; 
+					margin-bottom: 40px; 
+					&:last-child {
+						margin-bottom: 72px;
+					}
+				}
+
+				@include large-and-up {
+					margin-bottom: 5rem;
+				}
+
 			} 
+
+			@include medium-and-up {
+				padding-top: 40px;
+			}
 		}
 
 		.three-column-images { 
@@ -60,21 +83,17 @@
 		.third-column { 
 			z-index: 1;
 			right: -100px;  
+			@include small-and-up {
+				right: -85px; 
+			}
 		} 
+	}
+
+	@include large-large-and-up {
+		margin-top: 340px;
 	}
 }
 
-
-// Small devices ( 575px and up )
-@include small-and-up {
-	.split-three-column { 
-		.three-column-box { 
-			.third-column { 
-				right: -85px;  
-			}
-		}
-	} 
-}
 
 
 // Medium devices (tablets, 768px and up)
@@ -83,25 +102,6 @@
 	.split-three-column { 
 		
 		.three-column-box { 
-			
-			.three-column-info { 
-				padding-top: 40px;
-
-				h2 { 
-					font-size: rem(35);
-					margin-bottom: 50px; 
-				} 
-
-				p { 
-					font-size: rem(20);
-					line-height: 2.25rem; 
-					margin-bottom: 40px; 
-
-					&:last-child {
-						margin-bottom: 72px;
-					}
-				} 
-			}
 
 			.three-column-images { 
 				min-height: 330px; 
@@ -159,8 +159,6 @@
 @include large-large-and-up {
 	
 	.split-three-column { 
-
-		margin-top: 350px;
 		
 		.three-column-box {
 
@@ -171,9 +169,6 @@
 					font-weight: bold;
 				} 
 				
-				p { 
-					margin-bottom: 2rem;
-				}
 			} 
 
 			.three-column-images { 
