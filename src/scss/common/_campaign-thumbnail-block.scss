@@ -71,7 +71,7 @@
 		}
 
 		h2 {
-			font-size: rem(38);
+			font-size: rem(34);
 			margin-bottom: 2.2rem;
 			padding-left: 0;
 		}
@@ -88,4 +88,19 @@
 			}
 		}
 	}
+}
+
+
+// Large devices (desktops, 992px and up)
+@include medium-large-and-up {
+
+	.campaign-thumbnail-block {
+
+		h2 {
+			font-size: rem(38);
+		}
+
+	}
+
+
 }

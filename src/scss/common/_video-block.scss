@@ -34,7 +34,7 @@
 @include medium-and-up {
 	.video-block {
 		h2 {
-			font-size: rem(38);
+			font-size: rem(34);
 		}
 		.video-section {
 			height: 400px;
@@ -46,6 +46,9 @@
 // Large devices (desktops, 992px and up)
 @include medium-large-and-up {
 	.video-block {
+		h2 {
+			font-size: rem(38);
+		}
 		.video-section {
 			height: 530px;
 		}

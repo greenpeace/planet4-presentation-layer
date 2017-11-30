@@ -96,9 +96,9 @@
 	.four-coloum-content {
 		
 		h2 {
-			font-size: rem(36);
+			font-size: rem(34);
 		}
-		
+
 		.four-coloum-content-wrap {
 			.four-coloum-content-info {
 
@@ -109,4 +109,17 @@
 		}
 		
 	}
+}
+
+
+// Large devices (desktops, 992px and up)
+@include medium-large-and-up {
+
+	.four-coloum-content {
+
+		h2 {
+			font-size: rem(38);
+		}
+	}
+
 }
