@@ -61,7 +61,6 @@
 			    margin-right: 0;
 			}
 
-
 			@include large-large-and-up {
 				min-height: 430px; 
 			}
@@ -104,6 +103,14 @@
 				@include medium-and-up {
 					margin-left: -90px;
 				}
+
+				@include medium-large-and-up {
+					margin-left: -90px;
+				}
+
+				@include large-large-and-up {
+					margin-left: -100px;
+				}
 			} 
 
 			@include medium-and-up {
@@ -111,7 +118,7 @@
 			}
 
 			@include medium-large-and-up {
-				width: 110%;  
+				width: 100%;  
 			}
 
 			@include large-large-and-up {
@@ -136,8 +143,15 @@
 			}
 
 			@include large-large-and-up {
-				right: -155px; 
+				right: -150px; 
+
 			} 
+
+			img {
+				@include medium-large-and-up{
+					margin-right: 66px;
+				}
+			}
 		} 
 	}
 
