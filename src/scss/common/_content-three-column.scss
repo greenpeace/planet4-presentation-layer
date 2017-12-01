@@ -19,6 +19,10 @@
 					margin-bottom: 50px; 
 				}
 
+				@include medium-large-and-up {
+					font-size: rem(38);
+				}
+
 				@include large-large-and-up {
 					font-size: rem(40);
 				}
