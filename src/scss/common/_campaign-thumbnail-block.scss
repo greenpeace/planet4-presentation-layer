@@ -37,8 +37,8 @@
 
 			img {
 				width: 100%;
-				min-height: 260px;
-				object-fit: cover;
+				max-height: 260px;
+				height: auto;
 			}
 
 			.yellow-cta {
@@ -60,9 +60,7 @@
 		}
 	}
 }
-
 @include medium-and-up {
-
 	.campaign-thumbnail-block {
 
 		.container {
@@ -99,8 +97,5 @@
 		h2 {
 			font-size: rem(38);
 		}
-
 	}
-
-
 }
