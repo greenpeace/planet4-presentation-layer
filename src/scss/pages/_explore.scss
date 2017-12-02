@@ -1,0 +1,36 @@
+.page-explore-page {
+	.page-header-subtitle {
+		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.85);
+	}
+
+	.page-header-content {
+		margin-bottom: 5rem;
+		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.85);
+	}
+
+	.main-content-intro {
+		color: $black;
+		
+		p {
+			font-size: rem(17);
+			margin-bottom: 3rem;
+			@include small-and-up {
+				font-size: rem(19);
+			}
+
+			@include medium-large-and-up {
+				font-size: rem(20);
+			}
+
+			@include large-large-and-up {
+				font-size: rem(22);
+			}
+		}
+
+		@include small-and-up {
+			color: $white;
+		}
+	}
+
+
+}
