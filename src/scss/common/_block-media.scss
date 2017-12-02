@@ -1,12 +1,6 @@
 .block-media {
-	@include background('images/infographic.png');
-	min-height: 250px;
-
-	@include medium-and-up {
-		min-height: 550px;
-	}
-
-	@include medium-large-and-up {
-		min-height: 625px;
+	img {
+		width: 100%;
+		object-fit: cover;
 	}
 }
