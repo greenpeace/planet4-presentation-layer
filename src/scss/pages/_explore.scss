@@ -9,12 +9,19 @@
 	}
 
 	.page-header-content {
-		margin-bottom: 5rem;
+		margin-bottom: 3rem;
 		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.85);
+		
+		@include medium-large-and-up {
+			margin-bottom: 5rem;
+		}
 	}
 
 	.page-header-btn {
-		margin-bottom: 4rem;
+		margin-bottom: 1rem;
+		@include medium-large-and-up {
+			margin-bottom: 4rem;
+		}
 	}
 
 	.main-content-intro {
@@ -23,7 +30,7 @@
 		h2 {
 			margin-bottom: 1.5rem;
 		}
-		
+
 		p {
 			font-size: rem(17);
 			margin-bottom: 3rem;
@@ -39,7 +46,6 @@
 				font-size: rem(22);
 			}
 		}
-
 		@include small-and-up {
 			color: $white;
 		}
