@@ -41,7 +41,7 @@
 				object-fit: cover;
 			}
 
-			span.yellow-cta {
+			.yellow-cta {
 				text-align: center;
 				font-size: rem(20);
 				color: $yellow;
@@ -54,7 +54,7 @@
 				margin-bottom: 18px;
 				text-shadow: 1px 1px $black;
 				&:hover {
-				  text-decoration: none;
+					text-decoration: none;
 				}
 		  	}
 		}
