@@ -1,4 +1,9 @@
 .page-explore-page {
+
+	#header.top-navigation {
+		background: $black;
+	}
+
 	.page-header-subtitle {
 		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.85);
 	}
@@ -31,6 +36,4 @@
 			color: $white;
 		}
 	}
-
-
 }
