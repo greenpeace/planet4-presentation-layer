@@ -18,7 +18,11 @@
 	}
 
 	.page-header-btn {
-		margin-bottom: 1rem;
+		margin-bottom: 0;
+		
+		@include medium-and-up {
+			margin-bottom: 1rem;
+		}
 		@include medium-large-and-up {
 			margin-bottom: 4rem;
 		}
