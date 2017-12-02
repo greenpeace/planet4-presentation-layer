@@ -13,9 +13,15 @@
 		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.85);
 	}
 
+	.page-header-btn {
+		margin-bottom: 4rem;
+	}
+
 	.main-content-intro {
 		color: $black;
-		
+		h2 {
+			margin-bottom: 1.5rem;
+		}
 		p {
 			font-size: rem(17);
 			margin-bottom: 3rem;
