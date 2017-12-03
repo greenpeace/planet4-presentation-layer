@@ -67,44 +67,49 @@
 				font-weight: bold;
 			}
 		}
-	&:after {
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  content: "";
-	  display: block;
-	  height: 100%;
-	  width: 100%;
-	  background: rgba(23, 23, 23, 0.4392156862745098);
-	}
-  }
 
-  .split-two-column-skewed-right {
-	right: -17%;
-	.unskewed--right {
-	  background-image: url(images/GP028BP.jpg);
-	  right: 0;
-	  left: 20%;
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			background: rgba(23, 23, 23, 0.4392156862745098);
+		}
 	}
-	.part-right {
-	  left: 0;
-	  margin-left: 160px;
-	  margin-top: 215px;
-	  h5 {
-		line-height: 2.2rem;
-		margin-bottom: 40px;
-		font-weight: normal;
-	  }
-	  a {
-		color: $brown-bg-tags-text;
-		font-size: rem(38);
-		font-weight: bold;
-		text-decoration: none;
-		margin-bottom: 20px;
-		display: block;
-	  }
+
+	.split-two-column-skewed-right {
+		right: -17%;
+
+		.unskewed--right {
+			background-image: url(images/GP028BP.jpg);
+			right: 0;
+			left: 20%;
+		}
+
+		.part-right {
+			left: 0;
+			margin-left: 160px;
+			margin-top: 215px;
+
+			h5 {
+				line-height: 2.2rem;
+				margin-bottom: 40px;
+				font-weight: normal;
+			}
+
+			a {
+				color: $brown-bg-tags-text;
+				font-size: rem(38);
+				font-weight: bold;
+				text-decoration: none;
+				margin-bottom: 20px;
+				display: block;
+			}
+		}
 	}
-  }
 }
 
 // Small devices (landscape phones, 576px and up)
