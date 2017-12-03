@@ -110,6 +110,18 @@
 				display: block;
 			}
 		}
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 25%;
+			height: 100%;
+			background: rgba( 240, 240, 240, 0.12 );
+			z-index: 1;
+		}
 	}
 }
 
