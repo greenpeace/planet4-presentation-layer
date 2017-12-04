@@ -1,5 +1,5 @@
 .split-carousel-wrap.carousel-header {
-  padding-top: 0;
+  padding-top: 55px;
   overflow: hidden;
   .carousel-item {
     .carousel-caption {
@@ -125,7 +125,7 @@
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
   .split-carousel-wrap.carousel-header {
-    padding-top: 0;
+    padding-top: 55px;
     .carousel-item {
       .carousel-caption {
         height: 100%;
@@ -187,7 +187,7 @@
 // Medium devices (tablets, 768px and up)
 @include medium-and-up {
   .split-carousel-wrap.carousel-header {
-    padding-top: 0;
+    padding-top: 55px;
     .carousel-item {
       .carousel-caption {
         height: 100%;
@@ -251,7 +251,7 @@
 // Large devices (desktops, 992px and up)
 @include medium-large-and-up {
   .split-carousel-wrap.carousel-header {
-    padding-top: 0;
+    padding-top: 64px;
     .carousel-item {
       .carousel-caption {
         height: 100%;
