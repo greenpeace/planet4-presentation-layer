@@ -38,7 +38,6 @@
 @import "common/video-block";
 @import "common/campaign-thumbnail-block";
 @import "common/content-three-column";
-@import "common/comments-block";
 @import "common/post-block";
 @import "common/boxout-block";
 @import "common/search-block";
@@ -50,6 +49,8 @@
 // Page-specific styles
 @import "pages/post/author-block";
 @import "pages/take-action"; // TODO: Break this down into blocks
+@import "pages/post/comments-block";
+@import "pages/post/comments-form";
 @import "pages/issue";
 
 /* 
