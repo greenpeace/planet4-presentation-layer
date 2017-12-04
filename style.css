@@ -53,7 +53,7 @@ h1 { letter-spacing: -1.5px; font-size: 2.5rem; line-height: 3.05rem; margin-bot
 
 @media (min-width: 1024px) { h1 { font-size: 3.5rem; line-height: 4.221875rem; margin-bottom: 3rem; } }
 
-@media (min-width: 1500px) { h1 { font-size: 4.125rem; line-height: 5.3625rem; margin-bottom: 3rem; } }
+@media (min-width: 1600px) { h1 { font-size: 4.125rem; line-height: 5.3625rem; margin-bottom: 3rem; } }
 
 h2 { font-size: 1.625rem; line-height: 2.25rem; margin-bottom: 0.3125rem; }
 
@@ -61,7 +61,7 @@ h2 { font-size: 1.625rem; line-height: 2.25rem; margin-bottom: 0.3125rem; }
 
 @media (min-width: 1024px) { h2 { font-size: 2.25rem; line-height: 2.925rem; margin-bottom: 0.3125rem; } }
 
-@media (min-width: 1500px) { h2 { font-size: 2.375rem; line-height: 3.0875rem; margin-bottom: 1.5rem; } }
+@media (min-width: 1600px) { h2 { font-size: 2.375rem; line-height: 3.0875rem; margin-bottom: 1.5rem; } }
 
 .visible-md-only, .md-navigation { display: none; }
 
@@ -165,7 +165,7 @@ Stylesheet: Button Styles
   .btn.btn-medium { font-size: 1.125rem; height: 52px; line-height: 52px; }
   .btn-normal { height: 52px; line-height: 52px; font-size: 1.125rem; } }
 
-@media (min-width: 1200px) { .btn { padding: 0 15px; }
+@media (min-width: 1480px) { .btn { padding: 0 15px; }
   .btn.btn-medium { font-size: 1.125rem; height: 56px; line-height: 56px; }
   .btn.btn-primary, .btn.yellow-button { padding: 0 50px; }
   .btn.secondary-button { padding: 0 30px; }
@@ -311,7 +311,7 @@ Stylesheet: Button Styles
   #header.top-navigation .navbar li .btn-secondary { height: 42px; line-height: 42px; font-size: 1rem; margin: 0; }
   #header.top-navigation .navbar-nav { width: 100%; } }
 
-@media (min-width: 1200px) { #header.top-navigation { position: fixed; padding: 0; top: 0; }
+@media (min-width: 1480px) { #header.top-navigation { position: fixed; padding: 0; top: 0; }
   #header.top-navigation .navbar-brand { padding: 0 25px 0 15px; margin: 0; }
   #header.top-navigation .navbar li { width: 20%; }
   #header.top-navigation .navbar li .btn-secondary { height: 2.25rem; line-height: 42px; min-height: 42px; margin: 0; }
@@ -393,7 +393,7 @@ Stylesheet: Button Styles
   .happy-point-block-wrap .subscriber-btn { margin-top: 0; margin-bottom: 16px; width: 100%; height: 42px; line-height: 42px; }
   .happy-point-block-wrap p { text-align: left; } }
 
-@media (min-width: 1200px) { .happy-point-block-wrap { background: url("images/happy-point-block-bg.jpg") center center no-repeat; background-size: cover; height: 620px; width: 100%; position: relative; }
+@media (min-width: 1480px) { .happy-point-block-wrap { background: url("images/happy-point-block-bg.jpg") center center no-repeat; background-size: cover; height: 620px; width: 100%; position: relative; }
   .happy-point-block-wrap:before { content: ""; background: #D6E6F2; position: absolute; left: 0; top: 0; height: 100%; width: 100%; opacity: 0.6; }
   .happy-point-block-wrap .pt-20 { padding-top: 350px; }
   .happy-point-block-wrap h2 { font-size: 2.25rem; }
@@ -475,7 +475,7 @@ Stylesheet: Button Styles
   .four-coloum .four-coloum-wrap .four-coloum-info p { margin-bottom: 24px; }
   .four-coloum .four-coloum-wrap .four-coloum-info .four-coloum-information { min-height: 220px; } }
 
-@media (min-width: 1200px) { .four-coloum h2 { text-align: left; font-size: 3.5rem; line-height: 68px; margin-top: 104px; margin-bottom: 80px; }
+@media (min-width: 1480px) { .four-coloum h2 { text-align: left; font-size: 3.5rem; line-height: 68px; margin-top: 104px; margin-bottom: 80px; }
   .four-coloum .four-coloum-wrap .four-coloum-symbol { text-align: left; margin-bottom: 56px; }
   .four-coloum .four-coloum-wrap .four-coloum-info h5 { text-align: left; margin-bottom: 32px; }
   .four-coloum .four-coloum-wrap .four-coloum-info p { margin-bottom: 48px; }
@@ -504,7 +504,7 @@ Stylesheet: Button Styles
   .content-two-column-block p { font-size: 1.25rem; line-height: 34px; margin-bottom: 56px; }
   .content-two-column-block .btn { margin-bottom: 99px; width: 80%; } }
 
-@media (min-width: 1200px) { .content-two-column-block { padding-top: 108px; }
+@media (min-width: 1480px) { .content-two-column-block { padding-top: 108px; }
   .content-two-column-block h2 { font-size: 2.375rem; margin-bottom: 32px; }
   .content-two-column-block p { font-size: 1.375rem; line-height: 38px; margin-bottom: 69px; }
   .content-two-column-block .btn { margin-bottom: 119px; width: 60%; } }
@@ -581,7 +581,7 @@ Stylesheet: Button Styles
   .article .topicwise-article-section .topicwise-article-list .topicwise-article-list-item .topicwise-article-body .article-write-info { margin-top: 5px; margin-bottom: 10px; }
   .article .topicwise-article-section .topicwise-article-list .topicwise-article-list-item .topicwise-article-body .article-content { font-size: 1.25rem; line-height: 32px; display: block; margin-bottom: 0; } }
 
-@media (min-width: 1200px) { .article { padding-top: 103px; }
+@media (min-width: 1480px) { .article { padding-top: 103px; }
   .article h3 { color: #000; margin: 0; font-size: 2.375rem; }
   .article .topicwise-article-section .topicwise-article-list { margin: 0; }
   .article .topicwise-article-section .topicwise-article-list .topicwise-article-list-item { -webkit-box-shadow: none; box-shadow: none; margin-top: 40px; }
@@ -606,7 +606,7 @@ Stylesheet: Button Styles
 
 @media (min-width: 1024px) { .page-header .container > *:not(.row) { max-width: 70%; } }
 
-@media (min-width: 1500px) { .page-header .container > *:not(.row) { max-width: 50%; } }
+@media (min-width: 1600px) { .page-header .container > *:not(.row) { max-width: 50%; } }
 
 .page-header-background { position: absolute; z-index: 0; top: 0; right: 0; left: 0; }
 
@@ -636,7 +636,7 @@ Stylesheet: Button Styles
 
 @media (min-width: 1024px) { .page-header-title { font-size: 3.5rem; } }
 
-@media (min-width: 1500px) { .page-header-title { font-size: 4.125rem; } }
+@media (min-width: 1600px) { .page-header-title { font-size: 4.125rem; } }
 
 .page-header-subtitle { font-size: 1.375rem; line-height: 1.4; font-weight: 300; max-width: 80%; margin: 20px 0; }
 
@@ -644,7 +644,7 @@ Stylesheet: Button Styles
 
 @media (min-width: 1024px) { .page-header-subtitle { font-size: 1.875rem; } }
 
-@media (min-width: 1500px) { .page-header-subtitle { font-size: 2.75rem; } }
+@media (min-width: 1600px) { .page-header-subtitle { font-size: 2.75rem; } }
 
 .page-header-btn { display: block; width: 100%; }
 
@@ -654,7 +654,7 @@ Stylesheet: Button Styles
 
 @media (min-width: 1024px) { .page-header-content { font-size: 1.25rem; } }
 
-@media (min-width: 1500px) { .page-header-content { font-size: 1.375rem; } }
+@media (min-width: 1600px) { .page-header-content { font-size: 1.375rem; } }
 
 .carousel-wrap { padding-top: 100px; }
 
@@ -703,7 +703,7 @@ Stylesheet: Button Styles
   .carousel-wrap .carousel-caption h3 { font-size: 1.0625rem; }
   .carousel-wrap .carousel-caption p { font-size: 0.8125rem; } }
 
-@media (min-width: 1200px) { .carousel-wrap { padding-top: 104px; padding-bottom: 104px; }
+@media (min-width: 1480px) { .carousel-wrap { padding-top: 104px; padding-bottom: 104px; }
   .carousel-wrap h1 { font-size: 2.125rem; margin-left: 0; margin-bottom: 40px; }
   .carousel-wrap .carousel-caption { padding: 20px 30px; }
   .carousel-wrap .carousel-caption h3 { font-size: 1.0625rem; }
@@ -721,7 +721,7 @@ Stylesheet: Button Styles
   .subheader h2 { font-size: 2.25rem; margin-bottom: 40px; }
   .subheader p { font-size: 1.25rem; line-height: 1.625rem; } }
 
-@media (min-width: 1200px) { .subheader { padding: 104px 0 72px 0; }
+@media (min-width: 1480px) { .subheader { padding: 104px 0 72px 0; }
   .subheader h2 { font-size: 2.375rem; margin-bottom: 40px; }
   .subheader p { font-size: 1.375rem; line-height: 1.625rem; } }
 
@@ -865,7 +865,7 @@ Stylesheet: Button Styles
   .split-two-column .split-two-column-skewed-right .part-right a { font-size: 2.5rem; margin-bottom: 13px; }
   .split-two-column .split-two-column-skewed-right .part-right button { padding: 0 73px; font-size: 1.0625rem; font-weight: bold; } }
 
-@media (min-width: 1200px) { .split-two-column { height: 616px; margin-bottom: 25px; }
+@media (min-width: 1480px) { .split-two-column { height: 616px; margin-bottom: 25px; }
   .split-two-column .split-two-column-skewed-left .part-left { margin: 104px 0 0 166px; }
   .split-two-column .split-two-column-skewed-left .part-left h2 { font-size: 4.125rem; margin-bottom: 63px; }
   .split-two-column .split-two-column-skewed-left .part-left h5 { font-size: 1.375rem; line-height: 2.2rem; margin-bottom: 48px; }
@@ -958,7 +958,7 @@ Stylesheet: Button Styles
   .px0 { padding: 0 15px !important; }
   .ml-15 { margin-left: 0; } }
 
-@media (min-width: 1200px) { .split-carousel-wrap h1 { font-size: 2.375rem; margin-left: 0; margin-bottom: 30px; }
+@media (min-width: 1480px) { .split-carousel-wrap h1 { font-size: 2.375rem; margin-left: 0; margin-bottom: 30px; }
   .split-carousel-wrap.not-header { margin-bottom: 0; padding-bottom: 195px; }
   .split-carousel-wrap.not-header .carousel-inner .carousel-item-credit { margin: 16px 15px; color: #fff; font-size: 0.875rem; }
   .split-carousel-wrap.not-header .carousel-inner .carousel-caption { bottom: 0; margin-bottom: -194px; width: 100%; height: 195px; padding: 31px 96px; }
@@ -1047,7 +1047,7 @@ Stylesheet: Button Styles
   .split-carousel-wrap.carousel-header .carousel-indicators { margin-right: 30px; margin-bottom: 32px; bottom: 0; right: 0; }
   .split-carousel-wrap.carousel-header .carousel-indicators li { width: 12px; height: 12px; margin: 0 12px; } }
 
-@media (min-width: 1200px) { .split-carousel-wrap.carousel-header { padding-top: 64px; }
+@media (min-width: 1480px) { .split-carousel-wrap.carousel-header { padding-top: 64px; }
   .split-carousel-wrap.carousel-header .carousel-item .carousel-caption { height: 100%; padding: 0; }
   .split-carousel-wrap.carousel-header .carousel-item .carousel-caption .main-header { padding-top: 116px; padding-bottom: 50px; }
   .split-carousel-wrap.carousel-header .carousel-item .carousel-caption .main-header h1 { font-size: 4.125rem; margin-bottom: 33px; line-height: 63px; width: 60%; }
@@ -1073,7 +1073,7 @@ Stylesheet: Button Styles
 
 @media (min-width: 992px) { .video-block .video-section { height: 530px; } }
 
-@media (min-width: 1200px) { .video-block h2 { font-size: 2.5rem; margin-bottom: 64px; }
+@media (min-width: 1480px) { .video-block h2 { font-size: 2.5rem; margin-bottom: 64px; }
   .video-block .video-section { height: 630px; } }
 
 /* Campaign Thumbnail Block  */
@@ -1132,7 +1132,7 @@ Stylesheet: Button Styles
   .split-three-column .three-column-box .second-column { width: 110%; }
   .split-three-column .three-column-box .third-column { right: -110px; } }
 
-@media (min-width: 1200px) { .split-three-column { margin-top: 104px; }
+@media (min-width: 1480px) { .split-three-column { margin-top: 104px; }
   .split-three-column .three-column-box .three-column-info h2 { font-size: 2.5rem; font-weight: bold; }
   .split-three-column .three-column-box .three-column-info p { font-size: 1.375rem; margin-bottom: 2rem; }
   .split-three-column .three-column-box .three-column-images { min-height: 430px; }
@@ -1228,7 +1228,7 @@ Stylesheet: Button Styles
   .comments-block .comments-block-inner .comments-section .single-comment p.comment-text { font-size: 1.125rem; margin-bottom: 32px; }
   .comments-block .comments-block-inner .comments-section .single-comment a { font-size: 1.125rem; } }
 
-@media (min-width: 1200px) { .comments-block { padding-top: 64px; }
+@media (min-width: 1480px) { .comments-block { padding-top: 64px; }
   .comments-block h2 { font-size: 2.5rem; margin-bottom: 56px; }
   .comments-block .comments-block-inner { padding: 60px 48px; }
   .comments-block .comments-block-inner .form-section form h3 { font-size: 1.375rem; margin-bottom: 40px; }
@@ -1282,7 +1282,7 @@ Stylesheet: Button Styles
   .boxout-block .boxout-block-card p { font-size: 1.375rem; line-height: 2rem; margin-bottom: 60px; }
   .boxout-block .boxout-block-card .boxout-block-card-tag { margin-bottom: 8px; font-size: 1.25rem; } }
 
-@media (min-width: 1200px) { .boxout-block { width: 400px; }
+@media (min-width: 1480px) { .boxout-block { width: 400px; }
   .boxout-block .boxout-block-card { min-height: 500px; padding: 32px 15px; margin-bottom: 32px; }
   .boxout-block .boxout-block-card .boxout-block-card-btn { padding: 10px; }
   .boxout-block .boxout-block-card h2 { font-size: 2.25rem; margin-top: 128px; margin-bottom: 32px; }
@@ -1574,7 +1574,7 @@ Stylesheet: Button Styles
   .search-block .search-filter-results .result-area .suggested-search-terms .suggested-list { padding: 32px 17px; margin: 0; }
   .search-block .search-filter-results .result-area .suggested-search-terms .suggested-list li a { font-size: 1.125rem; line-height: 34px; } }
 
-@media (min-width: 1200px) { .search-block { padding-top: 64px; }
+@media (min-width: 1480px) { .search-block { padding-top: 64px; }
   .search-block .without-search-result { margin-top: 120px; }
   .search-block .without-search-result .search-help-info { font-size: 1.375rem; line-height: 40px; margin-bottom: 40px; padding-left: 50px; }
   .search-block .without-search-result .search-bar { width: 100%; padding: 32px; }
@@ -1625,13 +1625,13 @@ Stylesheet: Button Styles
   .cookie-block p { font-size: 0.90625rem; text-align: center; line-height: 30px; }
   .cookie-block a { font-size: 0.90625rem; } }
 
-@media (min-width: 1200px) { .cookie-block { max-height: 50px; background: #C0DBE2 url("images/cookie-right-gradient.png") no-repeat right; }
+@media (min-width: 1480px) { .cookie-block { max-height: 50px; background: #C0DBE2 url("images/cookie-right-gradient.png") no-repeat right; }
   .cookie-block p { font-size: 1.0625rem; text-align: center; line-height: 30px; }
   .cookie-block a { font-size: 1.0625rem; } }
 
 .campaign-covers-4col-wrap { position: relative; background-color: #e0ddd4; }
 
-@media (min-width: 1200px) { .campaign-covers-4col-wrap:before { content: ""; position: absolute; top: 0; left: -70%; width: 100%; height: 100%; -webkit-transform: skew(25deg); -ms-transform: skew(25deg); transform: skew(25deg); background-image: -webkit-gradient(linear, left top, left bottom, from(#cdc8c4), to(#dedbd2)); background-image: linear-gradient(to bottom, #cdc8c4, #dedbd2); } }
+@media (min-width: 1480px) { .campaign-covers-4col-wrap:before { content: ""; position: absolute; top: 0; left: -70%; width: 100%; height: 100%; -webkit-transform: skew(25deg); -ms-transform: skew(25deg); transform: skew(25deg); background-image: -webkit-gradient(linear, left top, left bottom, from(#cdc8c4), to(#dedbd2)); background-image: linear-gradient(to bottom, #cdc8c4, #dedbd2); } }
 
 .skewed-overlay { pointer-events: none; height: 100%; width: 100%; position: absolute; z-index: 1; overflow: hidden; -webkit-mask-image: linear-gradient(170deg, black, black, rgba(0, 0, 0, 0.2), transparent); mask-image: linear-gradient(170deg, black, black, rgba(0, 0, 0, 0.2), transparent); -webkit-mask-size: 100%; mask-size: 100%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: left top; mask-position: left top; }
 
@@ -1689,7 +1689,7 @@ Stylesheet: Button Styles
 
 @media (min-width: 1024px) { .page-content-wrap .top-tags-wrap { font-size: 1.125rem; line-height: 1.375rem; } }
 
-@media (min-width: 1500px) { .page-content-wrap .top-tags-wrap { font-size: 1.25rem; line-height: 1.625rem; } }
+@media (min-width: 1600px) { .page-content-wrap .top-tags-wrap { font-size: 1.25rem; line-height: 1.625rem; } }
 
 .page-content-wrap .top-tags-wrap .category-topic-title { font-weight: bold; margin-right: 5px; }
 
@@ -1703,7 +1703,7 @@ Stylesheet: Button Styles
 
 @media (min-width: 1024px) { .page-content-wrap .about-info p { font-size: 1.25rem; line-height: 2.125rem; } }
 
-@media (min-width: 1500px) { .page-content-wrap .about-info p { font-size: 1.375rem; line-height: 2.375rem; } }
+@media (min-width: 1600px) { .page-content-wrap .about-info p { font-size: 1.375rem; line-height: 2.375rem; } }
 
 .page-content-wrap .home-page-carousel-wrap .carousel-caption { text-align: left; left: auto; bottom: 0; right: 0; width: 100%; padding: 30px 200px 30px 50px; background: -ms-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, #0a3351 100%); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351', endColorstr='#0A3351' ,GradientType=0)"; background: linear-gradient(210deg, rgba(10, 51, 81, 0) 0%, #0a3351 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351', endColorstr='#0A3351', GradientType=1); }
 
@@ -1733,7 +1733,7 @@ Stylesheet: Button Styles
 
 @media (min-width: 1024px) { .what-you-can-do-wrapper p { font-size: 1.25rem; line-height: 2.125rem; } }
 
-@media (min-width: 1500px) { .what-you-can-do-wrapper p { font-size: 1.375rem; line-height: 2.375rem; } }
+@media (min-width: 1600px) { .what-you-can-do-wrapper p { font-size: 1.375rem; line-height: 2.375rem; } }
 
 .can-do-steps .step-info-wrap { cursor: pointer; margin-top: 35px; }
 
@@ -1745,7 +1745,7 @@ Stylesheet: Button Styles
 
 @media (min-width: 1024px) { .can-do-steps .step-info-wrap .step-info h5 { padding-top: 48px; font-size: 1.375rem; line-height: 1.875rem; } }
 
-@media (min-width: 1500px) { .can-do-steps .step-info-wrap .step-info h5 { font-size: 1.5rem; line-height: 1.9375rem; color: #004d53; } }
+@media (min-width: 1600px) { .can-do-steps .step-info-wrap .step-info h5 { font-size: 1.5rem; line-height: 1.9375rem; color: #004d53; } }
 
 .can-do-steps .step-info-wrap .step-info p { font-family: "Roboto", sans-serif; color: #12757B; font-size: 0.875rem; opacity: 0.75; }
 
@@ -1839,7 +1839,7 @@ Stylesheet: Button Styles
   .can-do-steps .active .step-info-wrap .step-number { background: #017e7a; color: #aed4c7; }
   .can-do-steps .active .step-info-wrap .step-info p { color: #12757B; } }
 
-@media (min-width: 1200px) { .page-content-wrap { padding-top: 200px; }
+@media (min-width: 1480px) { .page-content-wrap { padding-top: 200px; }
   .page-content-wrap .about-info { margin-bottom: 72px; }
   .what-you-can-do-wrapper { margin-bottom: 120px; }
   .hero-img-wrap { background-image: url("images/clouds_1200.png"); background-repeat: no-repeat; background-position: center; background-size: cover; }
