@@ -50,6 +50,7 @@
 // Page-specific styles
 @import "pages/post/author-block";
 @import "pages/take-action"; // TODO: Break this down into blocks
+@import "pages/issue";
 
 /* 
  *
@@ -57,6 +58,12 @@
  * JS Coding guidelines to be followed : https://make.wordpress.org/core/handbook/best-practices/coding-standards/javascript/
  * 
 */
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 body {
   overflow-x: hidden;
