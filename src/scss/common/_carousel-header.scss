@@ -17,7 +17,7 @@
         padding-bottom: 70px;
         h1 {
           font-size: rem(40);
-          margin-bottom: 48px;
+          margin-bottom: 27px;
           width: 55%;
           line-height: normal;
           font-weight: bold;
@@ -85,7 +85,7 @@
   }
   .carousel-indicators {
     right: 42%;
-    bottom: 48px;
+    bottom: 79px;
     left: auto;
     margin-right: 0;
     li {
@@ -172,8 +172,6 @@
     }       
     .carousel-indicators {
       margin-right: 42%;
-      margin-bottom: 60px;
-      bottom: 0;
       right: 0;
       li{
         width: 8px;
@@ -287,7 +285,7 @@
     .carousel-item.active img, 
     .carousel-item-next img,
     .carousel-item-prev img {
-      max-height: 588px;
+      max-height: 660px;
     }
     .carousel-control-next {
       top :0;
@@ -334,7 +332,7 @@
           }
           h3 {
             font-size: rem(44);
-            margin-bottom: 40px;
+            margin-bottom: 51px;
             line-height: 1.2;
             width: 50%;
           }
@@ -382,83 +380,3 @@
   }  
 }
 
-// Main header styles
-.main-header{
-  color: $dark-blue;
-  padding-top: 120px;
-  padding-bottom: 70px;
-  h1{
-    font-size: rem(64);
-    margin-bottom: 48px;
-  }
-  h3{
-    font-size: rem(44);
-    margin-bottom: 56px;
-  }
-  p{
-    font-size: rem(22);
-    margin-bottom: 72px;
-  }
-
-}
-
-
- 
-// Small devices (landscape phones, 576px and up)
-@include mobile-only {
-  .main-header{
-    padding-top: 120px;
-    padding-bottom: 80px;
-      h1{
-        font-size: rem(40);
-        margin-bottom: 50px;
-      }
-      h3{
-        font-size: rem(22);
-        margin-bottom: 130px;
-      }
-      p{
-        display: none;
-      }
-  } 
-}
-
-// Medium devices (tablets, 768px and up)
-@include medium-and-up {
-  .main-header{
-    padding-top: 80px;
-    padding-bottom: 80px;
-      h1{
-        font-size: rem(48);
-        margin-bottom: 40px;
-      }
-      h3{
-        font-size: rem(24);
-        margin-bottom: 50px;
-      }
-      p{
-        font-size: rem(27.5);
-      }
-  }   
-}
-
-// Large devices (desktops, 992px and up)
-@include medium-large-and-up {
-  .main-header{
-    padding-top: 100px;
-    padding-bottom: 80px;
-      h1{
-        font-size: rem(56);
-        margin-bottom: 50px;
-      }
-      h3{
-        font-size: rem(30);
-        margin-bottom: 50px;
-      }
-      p{
-        font-size: rem(20);
-      }
-
-    }
-
-}
