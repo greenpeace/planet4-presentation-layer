@@ -6,9 +6,11 @@
 	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+	<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a1dff4b3ab783001260564c&product=inline-share-buttons"></script>
 </head>
-<body class="brown-bg">
-
+<body class="brown-bg page-issue-page">
+	<div class="skewed-overlay"></div>
 	<div class="hero-img-wrap">
 		<div id="header" class="top-navigation">
 			<!-- Main container for main headline -->
@@ -340,10 +342,10 @@
 											</div>
 										</li>
 										<li class="nav-item active act-nav-link">
-											<a href="act.html">ACT</a>
+											<a href="act.html">Act</a>
 										</li>
 										<li class="nav-item explore-nav-link">
-											<a href="explore.html">EXPLORE</a>
+											<a href="explore.html">Explore</a>
 										</li>
 									</ul>
 									<a href="#" class="btn btn-small btn-medium btn-secondary">DONATE</a>
@@ -691,10 +693,10 @@
 											</div>
 										</li>
 										<li class="nav-item hidden-md-down hidden-lg-down big-screen-nav-link">
-											<a href="act.html">ACT</a>
+											<a href="act.html">Act</a>
 										</li>
 										<li class="nav-item hidden-md-down hidden-lg-down big-screen-nav-link">
-											<a href="explore.html">EXPLORE</a>
+											<a href="explore.html">Explore</a>
 										</li>
 										<li class="nav-item hidden-md-down hidden-lg-down">
 											<a href="#" class="btn btn-small btn-medium btn-secondary btn-block">DONATE</a>
@@ -720,6 +722,8 @@
 		</div>
 		<div class="clearfix"></div>
 	</div>  
+	
+	
 
 	<!-- Header Start -->
 	<div class="page-header">
@@ -732,9 +736,8 @@
 				<h3 class="page-header-subtitle">Our food, our future.</h3>
 				<p class="page-header-content">Tart liquorice sweet roll pastry croissant toffee muffin tiramisu. Marshmallow tootsie roll sugar plum powder oatcake gingerbread. Cupcake cookie cotton candy chocolate cake oat ice cream sweet roll pastry croissant toffee muffin tiramisu. Marsh mallow tootsie roll sugar plum powder oatcake gingerbread. Cupcake cookie cotton.</p>
 			</div>
-			<div class="pull-right">
-				<button class="btn btn-primary">Follow</button>
-				<button class="btn yellow-button">Share</button>
+			<div class="pull-right hidden-sm-down">
+				<div class="sharethis-inline-share-buttons"></div>
 			</div>
 		</div>
 		
@@ -781,8 +784,9 @@
 	</div>
 	<!-- Content Three Column End-->
 	<!-- Video Block Start -->
-	<div class="container">
-		<div class="video-block">
+	
+	<div class="video-block">
+		<div class="container">
 			<h2>Whats at risk</h2>
 			<div class="video-section">
 				<iframe id="ytplayer" type="text/html" width="100%" height="100%"
@@ -792,144 +796,149 @@
 		</div>
 	</div>
 	<!-- Video Block End -->
-
-
+	<!-- Media/Infographic Block Start-->
+	<div class="block-media">
+		<img src="images/infographic.png" alt="Our Achievements Infographic">
+	</div>
+	<!-- End Media Block -->
 	<!-- Campaign, Covers, 4 Column Wrap Start -->
 	<div class="campaign-covers-4col-wrap">	
 
 		<!-- Campaign Thumbnail Block Start -->
 		<div class="campaign-thumbnail-block">
-		 	<div class="container">
+			<div class="container">
 				<h2>Our Campaigns</h2>
 				<div class="row thumbnail-largeview-container">
 					<div class="col-md-4">
-						<div class="thumbnail-large">
-							<img src="images/GP028BP.jpg">
-							<a href="#">#DetoxOutdoor</a>
-						</div>
+						<a href="#">
+							<div class="thumbnail-large">
+								<img src="images/GP028BP.jpg">
+								<span class="yellow-cta" href="#">#DetoxOutdoor</span>
+							</div>
+						</a>
 					</div>
 					<div class="col-md-4">
-						<div class="thumbnail-large">
-							<img src="images/article-first.png">
-							<a href="#">#SaveMahan</a>
-						</div>
+						<a href="#">
+							<div class="thumbnail-large">
+								<img src="images/article-first.png">
+								<span class="yellow-cta" href="#">#SaveMahan</span>
+							</div>	
+						</a>
 					</div>
 					<div class="col-md-4">
-						<div class="thumbnail-large">
-							<img src="images/article-third.png">
-							<a href="#">#KeepItInTheGround</a>
-						</div>
+						<a href="#">
+							<div class="thumbnail-large">
+								<img src="images/article-third.png">
+								<span class="yellow-cta" href="#">#KeepItInTheGround</span>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>  
 		<!-- Campaign Thumbnail Block End -->
 
-
-
 		<!-- Covers Start -->
 		<div class="covers-block">
 			<div class="container">
 				<h2>What You Can Do</h2>
 				<div class="row">
-				<div class="col-lg-4 col-md-6">
-				  <div class="cover-card card-one">
-					<a href="#" class="cover-card-tag">#HashTag</a>
-					<h2 class="cover-card-heading">Show you're a food warrior</h2>
-					<p>Cupcake cookie cotton candy chocolate cake oat ice sweet roll pastry croissant toffee mufﬁn tiramisu. Marsh mallow tootsie roll sugar plum powder oatcake gingerbread. </p>
-					<button class="btn btn-primary btn-transparent btn-block cover-card-btn">TAKE ACTION</button>
-				  </div>
-				</div> 
-				<div class="col-lg-4 col-md-6">
-				  <div class="cover-card card-two dark-card-bg">
-					<a href="#"  class="cover-card-tag">#HashTag</a>
-					<h2 class="cover-card-heading">Sumartran Tiger</h2>
-					<p>Cupcake cookie cotton candy chocolate cake oat ice sweet roll pastry croissant toffee mufﬁn tiramisu. Marsh mallow tootsie roll sugar plum powder oatcake gingerbread. </p>
-					<button class="btn btn-primary btn-transparent btn-block cover-card-btn">TAKE ACTION</button>
-				  </div>
-				</div> 
-				<div class="col-lg-4 col-md-6">
-				  <div class="cover-card card-three dark-card-bg">
-					<a href="#"  class="cover-card-tag">#HashTag</a>
-					<h2 class="cover-card-heading">Tell Resolute you are watching</h2>
-					<p>Cupcake cookie cotton candy chocolate cake oat ice sweet roll pastry croissant toffee mufﬁn tiramisu. Marsh mallow tootsie roll sugar plum powder oatcake gingerbread. </p>
-					<button class="btn btn-primary btn-transparent btn-block cover-card-btn">TAKE ACTION</button>
-				  </div>
+					<div class="col-lg-4 col-md-6">
+					  <div class="cover-card card-one" style="background-image: url( 'images/covers-card-one.png');">
+						<a href="#" class="cover-card-tag">#HashTag</a>
+						<h2 class="cover-card-heading">Show you're a food warrior</h2>
+						<p>Cupcake cookie cotton candy chocolate cake oat ice sweet roll pastry croissant toffee mufﬁn tiramisu. Marsh mallow tootsie roll sugar plum powder oatcake gingerbread. </p>
+						<button class="btn btn-primary btn-transparent btn-block cover-card-btn">TAKE ACTION</button>
+					  </div>
+					</div> 
+					<div class="col-lg-4 col-md-6">
+					  <div class="cover-card card-two dark-card-bg" style="background-image: url( 'images/covers-card-two.png');">
+						<a href="#"  class="cover-card-tag">#HashTag</a>
+						<h2 class="cover-card-heading">Sumartran Tiger</h2>
+						<p>Cupcake cookie cotton candy chocolate cake oat ice sweet roll pastry croissant toffee mufﬁn tiramisu. Marsh mallow tootsie roll sugar plum powder oatcake gingerbread. </p>
+						<button class="btn btn-primary btn-transparent btn-block cover-card-btn">TAKE ACTION</button>
+					  </div>
+					</div> 
+					<div class="col-lg-4 col-md-6">
+					  <div class="cover-card card-three dark-card-bg" style="background-image: url( 'images/covers-card-three.png');">
+						<a href="#"  class="cover-card-tag">#HashTag</a>
+						<h2 class="cover-card-heading">Tell Resolute you are watching</h2>
+						<p>Cupcake cookie cotton candy chocolate cake oat ice sweet roll pastry croissant toffee mufﬁn tiramisu. Marsh mallow tootsie roll sugar plum powder oatcake gingerbread. </p>
+						<button class="btn btn-primary btn-transparent btn-block cover-card-btn">TAKE ACTION</button>
+					  </div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
 
 		<!-- Block Four Column Content Start-->
 		<div class="four-coloum-content">
 			<div class="container">
 				<h2>Publications</h2>
-				<div class="row">
+					<div class="publications-slider row">
 						<div class="col-md-4 col-lg-3 col-xl-3">
-							<div class="four-coloum-content-wrap clearfix">
-								<div class="four-coloum-content-info">
-									<div class="four-coloum-content-symbol">
-										<img src="images/four-column-content-one-img.png"> 
+							<a href="#">
+								<div class="four-coloum-content-wrap clearfix">
+									<div class="four-coloum-content-info">
+										<div class="four-coloum-content-symbol">
+											<img src="images/four-column-content-one-img.png"> 
+										</div>
+										<div class="four-coloum-content-information">
+											<h4>Sick of Too Many Cows </h4>
+											<p class="publication-date">July 2017</p>
+											<p class="hidden-sm-down">Read how intensive livestock farming could be endangering our health</p>
+										</div>
 									</div>
-									<div class="four-coloum-content-information hidden-xs-down">
-										<h4>Sick of Too Many Cows </h4>
-										<p class="publication-date">July 7 2017</p>
-										<p>Read how intensive livestock farming could be endangering our health</p>
-									</div>
-									<!-- <div class="four-coloum-content-action mt-3">
-										<a href="#">See what we stand for</a>
-									</div> -->
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="col-md-4 col-lg-3 col-xl-3">
-							<div class="four-coloum-content-wrap clearfix">
-								<div class="four-coloum-content-info">
-									<div class="four-coloum-content-symbol">
-										<img src="images/four-column-content-two-img.png">
+							<a href="#">
+								<div class="four-coloum-content-wrap clearfix">
+									<div class="four-coloum-content-info">
+										<div class="four-coloum-content-symbol">
+											<img src="images/four-column-content-two-img.png">
+										</div>
+										<div class="four-coloum-content-information">
+											<h4>Bees & Pesticides</h4>
+											<p class="publication-date">July 2017</p>
+											<p class="hidden-sm-down">Tart liquorice sweet roll pastry croissant plum powder toffee muffin tiramisu.</p>
+										</div>
 									</div>
-									<div class="four-coloum-content-information hidden-xs-down">
-										<h4>Sick of Too Many Cows </h4>
-										<p class="publication-date">July 7 2017</p>
-										<p>Read how intensive livestock farming could be endangering our health</p>
-									</div>
-									<!-- <div class="four-coloum-content-action mt-3">
-										<a href="#">See what we stand for</a>
-									</div> -->
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="col-md-4 col-lg-3 col-xl-3">
-							<div class="four-coloum-content-wrap clearfix">
-								<div class="four-coloum-content-info">
-									<div class="four-coloum-content-symbol dark-img">
-										<img src="images/four-column-content-three-img.png"> 
+							<a href="#">
+								<div class="four-coloum-content-wrap clearfix">
+									<div class="four-coloum-content-info">
+										<div class="four-coloum-content-symbol dark-img">
+											<img src="images/four-column-content-three-img.png"> 
+										</div>
+										<div class="four-coloum-content-information">
+											<h4>Fruits of the rain forest</h4>
+											<p class="publication-date">July 2017</p>
+											<p class="hidden-sm-down">Tart liquorice sweet roll pastry croissant plum powder toffee muffin tiramisu.</p>
+										</div>
 									</div>
-									<div class="four-coloum-content-information hidden-xs-down">
-										<h4>Sick of Too Many Cows </h4>
-										<p class="publication-date">July 7 2017</p>
-										<p>Read how intensive livestock farming could be endangering our health</p>
-									</div>
-									<!-- <div class="four-coloum-content-action mt-3">
-										<a href="#">See what we stand for</a>
-									</div> -->
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="col-md-4 col-lg-3 col-xl-3">
-							<div class="four-coloum-content-wrap clearfix">
-								<div class="four-coloum-content-info">
-									<div class="four-coloum-content-symbol dark-img">
-										<img src="images/four-column-content-four-img.png"> 
-									</div>
-									<div class="four-coloum-content-information hidden-xs-down">
-										<h4>Sick of Too Many Cows </h4>
-										<p class="publication-date">July 7 2017</p>
-										<p>Read how intensive livestock farming could be endangering our health</p>
+							<a href="#">
+								<div class="four-coloum-content-wrap clearfix">
+									<div class="four-coloum-content-info">
+										<div class="four-coloum-content-symbol dark-img">
+											<img src="images/four-column-content-four-img.png"> 
+										</div>
+										<div class="four-coloum-content-information">
+											<h4>Grow your Community</h4>
+											<p class="publication-date">July 2017</p>
+											<p class="hidden-sm-down">Tart liquorice sweet roll pastry croissant plum powder toffee muffin tiramisu.</p>
+										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 					<div class="row mt-5">
@@ -944,6 +953,106 @@
 	</div>
 	<!-- Campaign, Covers, 4 Column Wrap End -->
 
+	<!-- Article Listing Start -->
+	<section class="article-listing page-section">
+		<div class="container">
+			<div class="row">
+				<header class="col-md-12 article-listing-intro">
+					<h3 class="page-section-header">Related Stories</h3>
+				</header>
+				<div class="article-list-section clearfix col-md-12">
+					<article class="article-list-item">
+						<a href="#" class="article-list-item-image">
+							<img src="images/article-first.png" alt="article image placeholder">
+						</a>
+
+						<div class="article-list-item-body">
+							<ul class="tags-list article-list-item-tags">
+								<li class="tag-item tag-item--main"><a href="#">News</a></li>
+								<li class="tag-item"><a href="#">#Forests</a></li>
+								<li class="tag-item"><a href="#">#Water</a></li>
+								<li class="tag-item"><a href="#">#News</a></li>
+							</ul>
+
+							<header>
+								<h4 class="article-list-item-headline"><a href="#">Dam decision huge victory test a 2 liner just to make sure it feels nice</a></h4>
+
+								<p class="article-list-item-meta">
+									<span class="article-list-item-author">by <a href="#">Author</a></span>
+									<time class="article-list-item-date" datetime="">July 6, 2017</time>
+								</p>
+							</header>
+
+							<p class="article-list-item-content">Tart liquorice sweet roll pastry croissant toffee mufﬁn tiramisu. Marshmallow tootsie roll sugar plum powder oatcake gingerbread. Cupcake cookie cotton candy chocolate</p>
+						</div>
+					</article>
+
+					<article class="article-list-item">
+						<a href="#" class="article-list-item-image">
+							<img src="images/article-second.png" alt="article image placeholder">
+						</a>
+
+						<div class="article-list-item-body">
+							<ul class="tags-list article-list-item-tags">
+								<li class="tag-item tag-item--main"><a href="#">Story</a></li>
+								<li class="tag-item"><a href="#">#Forests</a></li>
+								<li class="tag-item"><a href="#">#Water</a></li>
+								<li class="tag-item"><a href="#">#News</a></li>
+							</ul>
+
+							<header>
+								<h4 class="article-list-item-headline"><a href="#">100,000 say no to Arctic Oil</a></h4>
+
+								<p class="article-list-item-meta">
+									<span class="article-list-item-author">by <a href="#">Author</a></span>
+									<time class="article-list-item-date" datetime="">July 6, 2017</time>
+								</p>
+							</header>
+
+							<p class="article-list-item-content">Tart liquorice sweet roll pastry croissant toffee mufﬁn tiramisu. Marshmallow tootsie roll sugar plum powder oatcake gingerbread. Cupcake cookie cotton candy chocolate</p>
+						</div>
+					</article>
+
+					<article class="article-list-item">
+						<a href="#" class="article-list-item-image">
+							<img src="images/article-third.png" alt="article image placeholder">
+						</a>
+
+						<div class="article-list-item-body">
+							<ul class="tags-list article-list-item-tags">
+								<li class="tag-item tag-item--main"><a href="#">Publications</a></li>
+								<li class="tag-item"><a href="#">#Forests</a></li>
+								<li class="tag-item"><a href="#">#Water</a></li>
+								<li class="tag-item"><a href="#">#News</a></li>
+							</ul>
+
+							<header>
+								<h4 class="article-list-item-headline"><a href="#">Solar powered community</a></h4>
+
+								<p class="article-list-item-meta">
+									<span class="article-list-item-author">by <a href="#">Author</a></span>
+									<time class="article-list-item-date" datetime="">July 6, 2017</time>
+								</p>
+							</header>
+
+							<p class="article-list-item-content">Tart liquorice sweet roll pastry croissant toffee mufﬁn tiramisu. Marshmallow tootsie roll sugar plum powder oatcake gingerbread. Cupcake cookie cotton candy chocolate</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Article Listing End -->
+
+	<!-- Happy Point Block Start -->
+	<div class="happy-point-block-wrap">
+		<div class="container">
+			<div class="col-md-6 offset-md-6 pt-20">
+				<iframe src="https://act.greenpeace.org/page/16112/subscribe/1?mode=DEMO" allowtransparency="true" frameborder="0" scrolling="no" width="100%" height="295"></iframe>
+			</div>
+		</div>
+	</div>
+	<!-- Happy Point Block End -->
 
 	<div id="footer">
 		<div class="container">
@@ -975,6 +1084,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/41nzFpr53nxSSGLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <!-- File for all the custom JS that we write -->
 <script type="text/javascript" src="custom.js"></script>
