@@ -20,21 +20,25 @@
 				color : $steps-deactive-text;
 				margin-bottom: 24px;
 			}
-			p, 
-			a {
-				color: $blue-text;
+			p {
+				color: #1a1a1a;
 				font-size: rem(15);
 				line-height: 25px;
 			}
-			a { 
-				text-decoration: underline; 
-			}
+			
 			.blue-button { 
 				width: 100%; 
 			}
 			.four-coloum-information {
 				float: left;
 				min-height: 230px;
+				a { 
+					text-decoration: none; 
+					color: $blue-text;
+				}
+				a:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
