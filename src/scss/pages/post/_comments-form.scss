@@ -3,7 +3,7 @@
 	padding-bottom: 60px;
 	border-bottom: 1px solid $grey-40;
 
-	fieldset {
+	.form-group {
 		margin-bottom: 32px;
 
 		@include small-and-up {
