@@ -19,8 +19,6 @@ $med-blue:  #0A3351;
 $dark-blue: #152431;
 $purple:    #200721;
 
-
-
 // Used colors
 $active:                #aed4c7;
 $blue-bg-anchor:        #30a7af;
@@ -42,7 +40,7 @@ $nav-link:              #a6df20;
 $para-text:             #005552;
 $percentage-text:       #017e7a;
 $primary-button:        #F36D3A;
-$primary-button-hover:  #e02d00;
+$primary-button-hover:  #ee562d;
 $secondary-button-hover:#9af9f3;
 $secondary-button:      #86eee7;
 $step-normal-bg:        #E4E7DA;
@@ -52,6 +50,7 @@ $yellow-button-color:   #301c01;
 $yellow-button-hover:   #fac235;
 $yellow-button:         $yellow;
 $light-grey:            #e0ddd4;
+$publish-date-grey:     #676767;
 
 // Used once.
 $blue-btn:              #0EC2DE;
@@ -65,6 +64,7 @@ $heading:               #004d53;
 $secondary-button-bg:   #9fd0c8;
 $step-number-hover:     #42b3aa;
 $step-number:           #dc9509;
+$brown-header:          #5C1F10;
 
 // As-of-yet-unused.
 $blue-btn-hover:        #064364; // Duplicate
@@ -84,11 +84,28 @@ $grey-60:     #666;
 $grey-40:     #999;
 $grey-20:     #ccc;
 $grey-10:     #e5e5e5;
+$crimson:     #e51538;
+$blue-80:     #3290de;
+
+
+// Colors to be fixed/addressed:
+$article-anchor:        #2B092C;
+$article-heading-color:	#152431;
+$credit-color:          #5A5A5A;
+$search-text-colour:    #115247;
+$blue-top-nav:          #074365;
+$dark-shade-black:      #1a1a1a;
+$carousel-indi-color:   #8BCC49;
+$shadow-color:          #666666;
+$article-tag:           #3290de;
+$four-column-heading:   #186A70;
+$hover-nav:             #052A30;
+$tag-color:             #258CCB;
 
 // Media queries
 $small-width: 575px;
 $medium-width: 768px;
 $medium-large-width: 992px;
 $large-width: 1024px;
-$large-large-width: 1200px;
-$extra-large-width: 1438px;
+$large-large-width: 1480px;
+$extra-large-width: 1538px;

@@ -1,9 +1,3 @@
-$(function() {
-  $('li.article-mobile-view').css('cursor', 'pointer').click(function() {
-    window.location.href = "#";
-    return false;
-    });
-});
   $(document).ready(function() {
     $(".step-info-wrap").click(function(){
     if($(this).parent().hasClass('active')){
@@ -159,6 +153,36 @@ if($( window ).width() <= 768) {
   });
 };
 $(function() {
+  $('.publications-slider').slick({
+    infinite: false,
+    mobileFirst: true,
+    slidesToShow: 2.2,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: "unslick"
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+});
+$(function() {
   $('#search-type button').click(function() {
      $('#search-type button').removeClass("active");
     $(this).addClass("active");
@@ -186,21 +210,3 @@ $('#carousel-wrapper-header').on('slid.bs.carousel', function () {
 
   $('#carousel-wrapper-header a.carousel-control-next').css('background-image', 'url(' + currentIndexheader + ')');
 
-
-  // Index for carousel-wrapper-header
-currentIndexnotheader = $('#carousel-wrapper-not-header .carousel-item.active').next('.carousel-item').find('img').attr('src');
-
-$('#carousel-wrapper-not-header').on('slid.bs.carousel', function () {
-  currentIndexnotheader = $('#carousel-wrapper-not-header .carousel-item.active').next('.carousel-item');
-  var e = currentIndexnotheader.find('img').attr('src');
-  // Last Index
-  if(e === 'undefined' || e === undefined) {
-    currentIndexnotheader = $('#carousel-wrapper-not-header .carousel-item').first('.carousel-item').find('img').attr('src');
-  } else {
-    currentIndexnotheader = currentIndexnotheader.find('img').attr('src');
-  }
-  $('#carousel-wrapper-not-header a.carousel-control-next').css('background-image', 'url(' + currentIndexnotheader + ')');
-
-});
-
-  $('#carousel-wrapper-not-header a.carousel-control-next').css('background-image', 'url(' + currentIndexnotheader + ')');

@@ -1,3 +1,4 @@
+
 // Mixins because extending is not possible inside media queries
 @mixin happy-point-block-background-image {
   background: url("images/happy-point-block-bg.jpg") center center no-repeat;
@@ -13,8 +14,8 @@
     p {
       font-family: $roboto;
       font-size: rem(13);
-      line-height: 1rem;
-      color: #868e96;
+      line-height: 1.15rem;
+      color: $shadow-color;
     }
     form {
       input, .custom-select {
@@ -25,9 +26,8 @@
     }
   }
 
-  @include mobile-only {
+@media (max-width: 767px) {
   .happy-point-block-wrap {
-    height: 470px;
     padding-left: 15px;
     padding-right: 15px;
     .pt-20 {
@@ -63,7 +63,7 @@
 
 @include medium-and-up {
   .happy-point-block-wrap {
-    height: 470px;
+    min-height: 470px;
     .pt-20 {
       padding-top: 250px;
       padding-left: 0;
@@ -73,6 +73,7 @@
       font-size: rem(28);
       line-height: 2.125rem;
       margin-bottom: 8px;
+      color:$black;
     }
     h5 {
       font-size: rem(18);
@@ -91,7 +92,7 @@
 
 @include medium-large-and-up {
   .happy-point-block-wrap {
-    height: 470px;
+    
     .pt-20 {
       padding-top: 260px;
       padding-left: 0;
@@ -143,3 +144,151 @@
     }
   }
 }
+
+  .subscribe-form {
+      margin-left: -15px;
+      position: relative;
+    }
+    .subscribe-form label {
+      display: none;
+    }
+    .subscribe-form .en__field {
+      width: 41%;
+      float: left;
+      padding: 0 15px;
+    }
+    .subscribe-form .en__field__input {
+      width: 100%;
+      height: 42px; 
+      border-radius: 0;
+      border:0;
+      padding: 10px;
+      font-weight: 400;
+      box-shadow: 0 2px 5px $shadow-color;
+    }
+    .subscribe-form .en__field--select {
+      width: 33%;
+      float: left;
+      padding: 0 15px;
+    }
+    .subscribe-form .en__submit {
+      width: 25%;
+      float: left;
+      padding: 0 15px;
+    }
+    .subscribe-form .en__submit button {
+      background-color: #F36D3A;
+      height: 42px;
+      line-height: 42px;
+      color: #fff;
+      text-transform: uppercase;
+      width: 100%;
+      font-size: 16px;
+      border: 1px solid transparent;
+      padding: 0 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px $shadow-color;
+    }
+    .subscribe-form .en__submit button:hover {
+      background-color: #e02d00;
+    }
+    .subscribe-text {
+      float: right;
+      width: 24%;
+      padding-right: 15px;
+    }
+    @media (max-width: 575px) {
+      .subscribe-form .en__field {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .subscribe-form .en__submit {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .subscribe-form .en__submit button {
+        width: 100%;
+      }
+      .subscribe-text {
+        float: right;
+        width: 94%;
+        padding-right: 15px;
+      }
+    }
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      .subscribe-form .en__field {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .subscribe-form .en__submit {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .subscribe-form .en__submit button {
+        width: 100%;
+      }
+      .subscribe-text {
+        float: right;
+        width: 94%;
+        padding-right: 15px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .subscribe-form .en__field {
+        width: 50%;
+        margin-bottom: 16px;
+      }
+      .subscribe-form .en__submit {
+        width: 357px;
+        margin: 0 auto 10px auto;
+        float: none;
+      }
+      .subscribe-text {
+        float: right;
+        width: 100%;
+        padding-right: 15px;
+      }
+    }
+    
+    @media (min-width: 992px) {
+      .subscribe-form .en__field {
+        width: 41%;
+        margin-bottom: 16px;
+      }
+      .subscribe-form .en__field--select {
+        width: 33%;
+      }
+      .subscribe-form .en__submit {
+        width: 25%;
+        margin-bottom: 10px;
+        float: left;
+      }
+      .subscribe-text {
+        float: right;
+        width: 24%;
+        padding-right: 15px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .subscribe-form .en__field {
+        width: 41%;
+        margin-bottom: 16px;
+      }
+      .subscribe-form .en__field--select {
+        width: 33%;
+      }
+      .subscribe-form .en__submit {
+        width: 25%;
+        margin-bottom: 10px;
+        float: left;
+      }
+      .subscribe-text {
+        float: right;
+        width: 24%;
+        padding-right: 15px;
+      }
+    }
