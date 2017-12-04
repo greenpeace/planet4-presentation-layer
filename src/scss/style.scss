@@ -24,10 +24,10 @@
 @import "common/static-four-column";
 @import "common/content-two-column";
 @import "common/split-box-out";
-@import "common/article";
+@import "common/article-listing";
 @import "common/page-header";
+@import "common/page-section";
 @import "common/carousel";
-@import "common/subheader";
 @import "common/covers";
 @import "common/block-media";
 @import "common/tag-cloud";
@@ -38,18 +38,20 @@
 @import "common/video-block";
 @import "common/campaign-thumbnail-block";
 @import "common/content-three-column";
-@import "common/comments-block";
 @import "common/post-block";
 @import "common/boxout-block";
 @import "common/search-block";
 @import "common/cookie-block";
 @import "common/campaign-covers-4col-wrap";
 @import "common/skewed-overlay";
-
+@import "common/tags-list";
 
 // Page-specific styles
 @import "pages/post/author-block";
 @import "pages/take-action"; // TODO: Break this down into blocks
+@import "pages/post/comments-block";
+@import "pages/post/comments-form";
+@import "pages/issue";
 
 /* 
  *
@@ -57,6 +59,12 @@
  * JS Coding guidelines to be followed : https://make.wordpress.org/core/handbook/best-practices/coding-standards/javascript/
  * 
 */
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 body {
   overflow-x: hidden;

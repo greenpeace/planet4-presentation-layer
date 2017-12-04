@@ -35,6 +35,10 @@ Stylesheet: Button Styles
 
 } // end .button
 
+.btn-small {
+  height: 32px;
+}
+
 /*
  * Primary Call to action button
  */
@@ -253,7 +257,7 @@ Stylesheet: Button Styles
     }
 
     &.btn-primary, &.yellow-button {
-      padding: 0 50px;
+      padding: 16px 10px;
     }
 
     &.secondary-button {

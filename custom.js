@@ -1,13 +1,3 @@
-$(function() {
-  $('li.article-mobile-view').css('cursor', 'pointer').click(function() {
-    window.location.href = "#";
-    return false;
-    });
-});
-
-$('.topicwise-article-image, .article-headline, .article-content').hover(function(){
- $(this).parents('.topicwise-article-list-item').toggleClass('imghover');
-});
   $(document).ready(function() {
     $(".step-info-wrap").click(function(){
     if($(this).parent().hasClass('active')){
@@ -162,6 +152,36 @@ if($( window ).width() <= 768) {
       $searchBox.slideToggle().toggleClass('active');
   });
 };
+$(function() {
+  $('.publications-slider').slick({
+    infinite: false,
+    mobileFirst: true,
+    slidesToShow: 2.2,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: "unslick"
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+});
 $(function() {
   $('#search-type button').click(function() {
      $('#search-type button').removeClass("active");
