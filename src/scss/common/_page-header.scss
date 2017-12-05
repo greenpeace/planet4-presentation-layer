@@ -61,40 +61,30 @@
 	margin: auto;
 }
 
+
 .top-page-tags {
 	font-size: rem(14);
-}
 
-.top-tag {
-	color: $yellow;
-	font-weight: 400;
-	margin-right: 20px;
-	position: relative;
-
-	&:after {
-		content: "\2022";
-		pointer-events: none;
-		display: inline-block;
-		position: absolute;
-		right: -15px;
-	}
-
-	&:hover {
+	.tag-item {
 		color: $yellow;
+		font-weight: 400;
 	}
 
-	&:last-of-type {
-		margin-right: 0;
-
-		&:after {
-			display: none;
-		}
+	@include small-and-up {
+		font-size: rem(16);
 	}
-}
 
-.top-tag--category {
-	text-transform: uppercase;
-	font-weight: 400;
+	@include medium-and-up {
+		font-size: rem(18);
+	}
+
+	@include large-and-up {
+		font-size: rem(20);
+	}
+
+	@include x-large-and-up {
+		font-size: rem(22);
+	}
 }
 
 .page-header-title {
@@ -146,7 +136,7 @@
 	@include medium-and-up {
 		display: block;
 		font-size: rem(19);
-		line-height: 1.6;
+		line-height: 2;
 	}
 
 	@include large-and-up {

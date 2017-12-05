@@ -1,95 +1,126 @@
 .four-coloum-content {
-  color: $purple;
-  padding: 104px 0 0 0;
-  h2 {
-    font-size: rem(40);
-    margin: 0;
+	color: $black;
+	padding: 80px 0 0 0;
+	
+	h2 {
+		font-size: rem(26);
+		margin: 0;
+		color: $black;
+	}
+	
+	a {
+		color: $grey;
+	}
 
-  }
-  .four-coloum-content-wrap{
-    .four-coloum-content-symbol {
-      position: relative;
-      margin: 32px 0 32px 0;
-      -webkit-box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
-      -moz-box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
-      box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
-      img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-      }
-      &.dark-img {
-          a {
-            color: $white;
-          }
-        }
-    }
-    .four-coloum-content-info {
-      h4 {
-        font-size : 1.5rem;
-        line-height: 1.875rem;
-        font-weight: 600;
-        padding: 0;
-        margin: 0;
-      }
-      p {
-        font-size: rem(16);
-        line-height: 1.875rem;
-        font-family: roboto;
-        &.publication-date {
-          font-size: rem(14.5);
-          font-style: italic;
-          margin-bottom: 20px;
-          color: #868e96;
-        }
-      } 
-      a {
-        color: $blue-text;
-        font-size: rem(14);
-        opacity: 0.75;
-        text-decoration: underline; 
-      }
-      .blue-button { 
-        width: 100%; 
-      }
-      .four-coloum-content-information {
-      }
-    }
-  }
+	.col-md-4 {
+		width: 157px;
+		outline: none;
+	}
+
+	.four-coloum-content-wrap {
+
+		.four-coloum-content-symbol {
+			position: relative;
+			margin: 32px 0 24px 0;
+			box-shadow: 0px 5px 20px 0px rgba(114,114,114,0.5);
+			
+			img {
+				width: 100%;
+				height: auto;
+				object-fit: cover;
+			}
+
+			&.dark-img {
+				a {
+					color: $white;
+				}
+			}
+		}
+
+		.four-coloum-content-info {
+
+			h4 {
+				font-size : rem(16);
+				font-weight: 600;
+				padding: 0;
+				margin: 0;
+			}
+
+			p {
+				font-size: rem(16);
+				line-height: 1.875rem;
+				font-family: $roboto;
+				&.publication-date {
+					font-size: rem(14.5);
+					font-style: italic;
+					margin-bottom: 16px;
+					color: $publish-date-grey;
+				}
+			}
+
+			a {
+				color: $blue-text;
+				font-size: rem(14);
+				opacity: 0.75;
+				text-decoration: underline; 
+			}
+
+			.blue-button { 
+				width: 100%; 
+			}
+			
+		}
+	}
 }
 
 
 // Small devices (landscape phones, 576px and up)
- @include mobile-only {
-  .four-coloum-content {
-    h2 {
-      font-size: rem(36);
-    }
-    .four-coloum-content-info {
-      h4 {
-        font-size : 1.5rem;
-      }
-    }
-    .four-coloum-content-wrap{
-      .four-coloum-content-symbol {
-        margin: 20px 0;
-        img {height: 363px;}
-      }
-    }    
-  }
+ @include small-and-up {
+
+	.four-coloum-content {
+		
+		
+		.four-coloum-content-wrap{
+			
+			.four-coloum-content-symbol {
+				margin: 20px 0;
+			}
+
+		}
+	}
 }
 
 
 // Medium devices (tablets, 768px and up)
 @include medium-and-up {
-  .four-coloum-content {
-    h2 {
-      font-size: rem(36);
-    }
-    .four-coloum-content-info {
-      h4 {
-        font-size : 1.5rem;
-      }
-    }
-  }
+
+	.four-coloum-content {
+		
+		h2 {
+			font-size: rem(34);
+		}
+
+		.four-coloum-content-wrap {
+			.four-coloum-content-info {
+
+				h4 {
+					font-size : rem(22);
+				}
+			}
+		}
+		
+	}
+}
+
+
+// Large devices (desktops, 992px and up)
+@include medium-large-and-up {
+
+	.four-coloum-content {
+
+		h2 {
+			font-size: rem(38);
+		}
+	}
+
 }
