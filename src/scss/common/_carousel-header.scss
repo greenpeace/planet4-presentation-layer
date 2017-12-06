@@ -49,7 +49,7 @@
   .carousel-item.active img, 
   .carousel-item-next img,
   .carousel-item-prev img {
-    max-height: 530px;
+    max-height: 500px;
     object-fit: cover;
     width: 100%;
   }
@@ -84,10 +84,6 @@
     display: none;
   }
   .carousel-indicators {
-    right: 42%;
-    bottom: 79px;
-    left: auto;
-    margin-right: 0;
     li {
       width: 8px;
       height: 8px;
@@ -103,7 +99,9 @@
 }
 
 // Temp fix for button placement
-@media screen and (min-width: 310px) and (max-width: 768px) {
+@media screen and 
+  (min-width: $extra-small-width) and 
+  (max-width: 767px) {
   .carousel-caption {
     padding-bottom: 0;
     .main-header {
@@ -118,6 +116,18 @@
         position: absolute;
         margin-left: -15px;
       }
+    }
+  }
+  .carousel-indicators {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 85px;
+    margin: 0;
+      li {
+      border-radius: 8px;
+      margin: 12px;
+      max-width: 8px;
     }
   }
 }
@@ -169,15 +179,6 @@
         height: 45px;
       }
     }       
-    .carousel-indicators {
-      margin-right: 42%;
-      right: 0;
-      li{
-        width: 8px;
-        height: 8px;
-        margin: 0 8px;
-      }
-    } 
   }  
 }
 
@@ -205,7 +206,7 @@
           }
           p {
             font-size: rem(19);
-            margin-bottom: 36px;
+            margin-bottom: 51px;
             line-height: 33px;
             width: 62%;
             display: block;
@@ -219,7 +220,7 @@
     .carousel-item.active img, 
     .carousel-item-next img,
     .carousel-item-prev img {
-      max-height: 588px;
+      max-height: 620px;
     }
     .carousel-control-next {
       top :0;
@@ -232,13 +233,14 @@
     }      
     .carousel-indicators {
       margin-right: 40px;
-      margin-bottom: 54px;
+      margin-bottom: 40px;
       bottom: 0;
-      right: 0;
-      li{
+      left: auto;
+      li {
         width: 12px;
         height: 12px;
         margin: 0 12px;
+        max-width: 12px;
       }
     } 
   }  
@@ -268,7 +270,7 @@
           }
           p {
             font-size: rem(20);
-            margin-bottom: 48px;
+            margin-bottom: 60px;
             line-height: 34px;
             width: 62%;
             display: block;
@@ -282,7 +284,7 @@
     .carousel-item.active img, 
     .carousel-item-next img,
     .carousel-item-prev img {
-      max-height: 660px;
+      max-height: 720px;
     }
     .carousel-control-next {
       top :0;
@@ -301,6 +303,7 @@
       margin-bottom: 32px;
       bottom: 0;
       right: 0;
+      left: auto;
       li{
         width: 12px;
         height: 12px;
@@ -367,6 +370,7 @@
       margin-bottom: 50px;
       bottom: 0;
       right: 0;
+      left: auto;
       li{
         width: 12px;
         height: 12px;
