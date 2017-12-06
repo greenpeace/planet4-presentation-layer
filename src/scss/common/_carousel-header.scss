@@ -1,5 +1,4 @@
 .split-carousel-wrap.carousel-header {
-  padding-top: 55px;
   overflow: hidden;
   .carousel-item {
     .carousel-caption {
@@ -13,7 +12,7 @@
       background : linear-gradient(210deg, rgba(136, 196, 213, 0.2) 0%, rgba(184, 216, 232, 1) 100%);
       .main-header {
         color: $article-heading-color;
-        padding-top: 69px;
+        padding-top: 124px;
         padding-bottom: 70px;
         h1 {
           font-size: rem(28);
@@ -50,7 +49,7 @@
   .carousel-item.active img, 
   .carousel-item-next img,
   .carousel-item-prev img {
-    max-height: 450px;
+    max-height: 530px;
     object-fit: cover;
     width: 100%;
   }
@@ -126,13 +125,12 @@
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
   .split-carousel-wrap.carousel-header {
-    padding-top: 55px;
     .carousel-item {
       .carousel-caption {
         height: 100%;
         padding: 0;
         .main-header {
-          padding-top: 69px;
+          padding-top: 124px;
           padding-bottom: 54px;
           h1 {
             font-size: rem(40);
@@ -186,13 +184,12 @@
 // Medium devices (tablets, 768px and up)
 @include medium-and-up {
   .split-carousel-wrap.carousel-header {
-    padding-top: 55px;
     .carousel-item {
       .carousel-caption {
         height: 100%;
         padding: 0;
         .main-header {
-          padding-top: 79px;
+          padding-top: 134px;
           padding-bottom: 54px;
           h1 {
             font-size: rem(48);
@@ -250,13 +247,12 @@
 // Large devices (desktops, 992px and up)
 @include medium-large-and-up {
   .split-carousel-wrap.carousel-header {
-    padding-top: 64px;
     .carousel-item {
       .carousel-caption {
         height: 100%;
         padding: 0;
         .main-header {
-          padding-top: 85px;
+          padding-top: 149px;
           padding-bottom: 32px;
           h1 {
             font-size: rem(56);
@@ -317,13 +313,12 @@
 // Extra large devices (large desktops, 1200px and up)
 @include large-large-and-up {
   .split-carousel-wrap.carousel-header {
-    padding-top: 64px;
     .carousel-item {
       .carousel-caption {
         height: 100%;
         padding: 0;
         .main-header {
-          padding-top: 116px;
+          padding-top: 180px;
           padding-bottom: 50px;
           h1 {
             font-size: rem(66);
