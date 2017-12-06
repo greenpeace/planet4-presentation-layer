@@ -102,32 +102,34 @@
 @media screen and 
   (min-width: $extra-small-width) and 
   (max-width: 767px) {
-  .carousel-caption {
-    padding-bottom: 0;
-    .main-header {
-      position: relative;
+  .carousel-header {
+    .carousel-caption {
       padding-bottom: 0;
-      height: 100%;
-      h3 {
-        margin-bottom: 0;
-      }
-      .action-button {
-        bottom: 10px;
-        position: absolute;
-        margin-left: -15px;
+      .main-header {
+        position: relative;
+        padding-bottom: 0;
+        height: 100%;
+        h3 {
+          margin-bottom: 0;
+        }
+        .action-button {
+          bottom: 10px;
+          position: absolute;
+          margin-left: -15px;
+        }
       }
     }
-  }
-  .carousel-indicators {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 85px;
-    margin: 0;
-      li {
-      border-radius: 8px;
-      margin: 12px;
-      max-width: 8px;
+    .carousel-indicators {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 85px;
+      margin: 0;
+        li {
+        border-radius: 8px;
+        margin: 12px;
+        max-width: 8px;
+      }
     }
   }
 }
