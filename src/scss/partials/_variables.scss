@@ -135,13 +135,15 @@ $primary-button-hover:  $orange-hover;
 $secondary-button-hover:#9af9f3;
 $secondary-button:      $spray;
 $step-normal-bg:        #E4E7DA;
-$steps-deactive-text:   #06747A;
+$steps-deactive-text:   #0A4F45;
 $top-nav:               #1e5f65;
 $yellow-button-color:   #301c01;
 $yellow-button-hover:   #fac235;
 $yellow-button:         $yellow;
 $light-grey:            #e0ddd4;
 $publish-date-grey:     #676767;
+$donate-btn-bg:         #68dfde;
+$donate-btn-hover:      #77ebe0;
 
 // Used once.
 $blue-btn:              #0EC2DE;
@@ -185,9 +187,10 @@ $hover-nav:             #052A30;
 $tag-color:             #258CCB;
 
 // Media queries
-$small-width: 575px;
-$medium-width: 768px;
+$extra-small-width:  320px;
+$small-width:        575px;
+$medium-width:       768px;
 $medium-large-width: 992px;
-$large-width: 1024px;
-$large-large-width: 1480px;
-$extra-large-width: 1538px;
+$large-width:        1024px;
+$large-large-width:  1480px;
+$extra-large-width:  1538px;

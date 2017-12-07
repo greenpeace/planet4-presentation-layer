@@ -53,6 +53,9 @@
 @import "pages/post/comments-form";
 @import "pages/issue";
 
+// Third-party CSS
+@import "external/happy-point-form";
+
 /* 
  *
  * CSS Coding guidelines to be followed : https://make.wordpress.org/core/handbook/best-practices/coding-standards/css/
@@ -68,7 +71,6 @@ html {
 
 body {
   overflow-x: hidden;
-  background: $body-bg;
   font-family: $roboto;
   position: relative;
   &.brown-bg {

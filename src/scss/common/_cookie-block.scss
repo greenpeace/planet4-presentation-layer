@@ -2,6 +2,7 @@ $cookie-bkg: #C0DBE2;
 $cookie-blue: #094464;
 
 .cookie-block {
+  z-index: 100;
   display: none;
   position: fixed;
   bottom: 0;
