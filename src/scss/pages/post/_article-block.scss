@@ -1,0 +1,24 @@
+.post-image {
+
+  .credit-wrapper{
+    position: relative;
+    display: inline-block;
+    width: auto;
+  }
+
+  @include medium-and-up {
+    .image-credit {
+      position: absolute;
+      text-align: right;
+      right: 10px;
+      width: 100%;
+      color: $white;
+      z-index: 2;
+    }
+  }
+
+  .image-desc {
+    display: block;
+  }
+}
+
