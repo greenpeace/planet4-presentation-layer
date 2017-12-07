@@ -1,5 +1,16 @@
-.post-block {
+.single-post {
+  .skewed-overlay:before {
+    @include skewed-gradient(
+      transparent,
+      transparent,
+      transparentize($dark-blue, .2),
+      transparentize($dark-blue, .2),
+      transparentize($dark-blue, .3)
+    );
+  }
+}
 
+.single-post {
   h1 {
     hyphens: none;
   }
