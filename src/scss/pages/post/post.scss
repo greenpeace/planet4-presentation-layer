@@ -3,8 +3,8 @@
     &:before {
       @include skewed-gradient(
         transparent,
-        transparentize($dark-blue, .2),
-        transparentize($dark-blue, .2),
+        transparentize($dark-blue, .1),
+        transparentize($dark-blue, .1),
         transparentize($dark-blue, .8),
         transparentize($dark-blue, .6)
       );
