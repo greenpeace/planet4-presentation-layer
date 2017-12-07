@@ -159,9 +159,10 @@
   display: none;
 }
 .subscribe-form .en__field {
-  width: 41%;
+  width: 100%;
   float: left;
   padding: 0 15px;
+  margin-bottom: 10px;
 }
 .subscribe-form .en__field__input {
   width: 100%;
@@ -171,7 +172,7 @@
   padding: 10px;
 }
 .subscribe-form .en__field--select {
-  width: 33%;
+  // width: 33%;
   float: left;
   padding: 0 15px;
 }
@@ -201,10 +202,6 @@
   padding-right: 15px;
 }
 @media (max-width: 575px) {
-  .subscribe-form .en__field {
-    width: 100%;
-    margin-bottom: 10px;
-  }
   .subscribe-form .en__submit {
     width: 100%;
     margin-bottom: 10px;
@@ -219,10 +216,6 @@
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .subscribe-form .en__field {
-    width: 100%;
-    margin-bottom: 10px;
-  }
   .subscribe-form .en__submit {
     width: 100%;
     margin-bottom: 10px;
@@ -264,7 +257,7 @@
 @media (min-width: 992px) {
   .subscribe-form .en__field {
     width: 41%;
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
   }
   .subscribe-form .en__field--select {
     width: 33%;
@@ -285,8 +278,8 @@
 
 @media (min-width: 1200px) {
   .subscribe-form .en__field {
-    width: 41%;
-    margin-bottom: 16px;
+    // width: 41%;
+    // margin-bottom: 16px;
   }
   .subscribe-form .en__field--select {
     width: 33%;
