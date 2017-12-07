@@ -70,6 +70,7 @@ body {
   overflow-x: hidden;
   background: $body-bg;
   font-family: $roboto;
+  position: relative;
   
   &.white-bg {
     background-color: $white;
