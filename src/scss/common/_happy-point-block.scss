@@ -128,7 +128,7 @@
     @include happy-point-block-background-image;
     @include background-before-opacity($light-blue-bg);
     .pt-20 {
-      padding-top: 350px;
+      padding-top: 270px;
     }
     h2 {
       font-size: rem(36);
@@ -172,7 +172,6 @@
   padding: 10px;
 }
 .subscribe-form .en__field--select {
-  // width: 33%;
   float: left;
   padding: 0 15px;
 }
@@ -198,8 +197,7 @@
 }
 .subscribe-text {
   float: right;
-  width: 24%;
-  padding-right: 15px;
+  padding-left: 15px;
 }
 @media (max-width: 575px) {
   .subscribe-form .en__submit {
@@ -210,25 +208,16 @@
     width: 100%;
   }
   .subscribe-text {
-    float: right;
+    float: unset;
     width: 94%;
     padding-right: 15px;
   }
 }
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) {
   .subscribe-form .en__submit {
     width: 100%;
     margin-bottom: 10px;
     text-align: center;
-  }
-  .subscribe-form .en__submit button {
-    width: 330px;
-  }
-  .subscribe-text {
-    margin: 0 auto;
-    width: 330px;
-    float: unset;
-    padding: 0;
   }
 }
 
@@ -237,27 +226,20 @@
     width: 50%;
     margin-bottom: 16px;
   }
-  .subscribe-form .en__submit {
-    width: 100%;
-    margin-bottom: 10px;
-    text-align: center;
-  }
   .subscribe-form .en__submit button {
     width: 330px;
   }
   .subscribe-text {
-    width: 100%;
-    padding: 0;
-    width: 330px;
     margin: 0 auto;
+    width: 330px;
     float: unset;
+    padding: 0;
   }
 }
 
 @media (min-width: 992px) {
   .subscribe-form .en__field {
     width: 41%;
-    // margin-bottom: 16px;
   }
   .subscribe-form .en__field--select {
     width: 33%;
@@ -276,21 +258,5 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .subscribe-form .en__field {
-    // width: 41%;
-    // margin-bottom: 16px;
-  }
-  .subscribe-form .en__field--select {
-    width: 33%;
-  }
-  .subscribe-form .en__submit {
-    width: 25%;
-    margin-bottom: 10px;
-  }
-  .subscribe-text {
-    float: right;
-    width: 24%;
-    padding-right: 15px;
-  }
-}
+// Most design from large-large-up is used
+@media (min-width: 1200px) { }
