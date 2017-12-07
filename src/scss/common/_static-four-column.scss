@@ -15,14 +15,14 @@
     .four-coloum-info {
       h5 {
         text-align: center;
-        font-size : 22px;
+        font-size : rem(22);
         line-height : normal;
         font-weight: 500;
         color : $steps-deactive-text;
         margin-bottom: 24px;
       }
       p {
-        color: #1a1a1a;
+        color: $dark-shade-black;
         font-size: rem(15);
         line-height: 25px;
       }
