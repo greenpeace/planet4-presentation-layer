@@ -126,11 +126,11 @@
           width: 15%;
           a {
             color: $grey;
-            background: #68dfde;
+            background: $donate-btn-bg;
           }
           a:hover {
             color: $black;
-            background: #77ebe0;
+            background: $donate-btn-hover;
           }
         } 
         a {
