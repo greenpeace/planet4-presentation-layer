@@ -28,7 +28,6 @@
 
 @media (max-width: 767px) {
   .happy-point-block-wrap {
-    height: 470px;
     padding-left: 15px;
     padding-right: 15px;
     .pt-20 {
@@ -64,7 +63,7 @@
 
 @include medium-and-up {
   .happy-point-block-wrap {
-    height: 470px;
+    min-height: 470px;
     .pt-20 {
       padding-top: 250px;
       padding-left: 0;
@@ -93,7 +92,7 @@
 
 @include medium-large-and-up {
   .happy-point-block-wrap {
-    height: 470px;
+    
     .pt-20 {
       padding-top: 260px;
       padding-left: 0;
@@ -178,7 +177,7 @@
       padding: 0 15px;
     }
     .subscribe-form .en__submit button {
-      background-color: #F36D3A;
+      background-color: $orange;
       height: 42px;
       line-height: 42px;
       color: #fff;

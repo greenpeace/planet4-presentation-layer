@@ -9,22 +9,76 @@
 		
 		.three-column-info { 
 
+			margin-bottom: 0; 
+
 			h2 { 
 				font-size: rem(26);
-				margin-bottom: 32px; 
+				color: $black;
+				margin-bottom: 22px; 
+
+				@include medium-and-up {
+					font-size: rem(34);
+					margin-bottom: 50px; 
+				}
+
+				@include medium-large-and-up {
+					font-size: rem(38);
+				}
+
+				@include large-large-and-up {
+					font-size: rem(40);
+				}
 			} 
 
 			p { 
+				display: block;
 				font-size: rem(17);
 				line-height: 1.25rem; 
+				color: $black;
 				margin-bottom: 40px; 
+
+				@include medium-and-up {
+					font-size: rem(20);
+					line-height: 1.85;
+					margin-bottom: 40px; 
+					&:last-child {
+						margin-bottom: 72px;
+					}
+				}
+
+				@include large-large-and-up {
+					margin-bottom: 2rem;
+					display: inline;
+					&:last-child {
+						margin-bottom: 5rem;
+					}
+				}
+
 			} 
+
+			@include medium-and-up {
+				padding-top: 40px;
+			}
+
+			@include large-large-and-up {
+				margin-bottom: 40px;
+			}
 		}
 
 		.three-column-images { 
 			min-height: 184px; 
 			position: relative;
 			overflow: hidden;
+
+			@include medium-and-up {
+				min-height: 330px; 
+				margin-left: 0;
+			    margin-right: 0;
+			}
+
+			@include large-large-and-up {
+				min-height: 430px; 
+			}
 		} 
 
 		.split-image { 
@@ -32,6 +86,13 @@
 			img {
 				object-fit: cover;
 				height: 184px;
+
+				@include medium-and-up {
+					height: 330px;
+				}
+				@include large-large-and-up {
+					height: 430px;
+				}
 			}
 		}
 
@@ -49,157 +110,67 @@
 			left: 0;
 			top: 0;
 			overflow: hidden;
+			
 			img {
 				transform: skew(-25deg); 
 				margin-left: -40px;
+
+				@include medium-and-up {
+					margin-left: -90px;
+				}
+
+				@include medium-large-and-up {
+					margin-left: -90px;
+				}
+
+				@include large-large-and-up {
+					margin-left: -100px;
+				}
 			} 
+
+			@include medium-and-up {
+				width: 110%;
+			}
+
+			@include medium-large-and-up {
+				width: 100%;  
+			}
+
+			@include large-large-and-up {
+				width: 100%;
+			}
 		} 
 
 		.third-column { 
 			z-index: 1;
 			right: -100px;  
+
+			@include small-and-up {
+				right: -85px; 
+			}
+
+			@include medium-and-up {
+				right: -190px;
+			}
+
+			@include medium-large-and-up{
+				right: -110px;
+			}
+
+			@include large-large-and-up {
+				right: -150px; 
+
+			} 
+
+			img {
+				@include medium-large-and-up{
+					margin-right: 66px;
+				}
+			}
 		} 
 	}
-}
 
-// Small devices ( 575px and up )
-@include small-and-up {
-	.split-three-column { 
-		.three-column-box { 
-			.third-column { 
-				right: -85px;  
-			}
-		}
-	} 
-}
-
-
-// Medium devices (tablets, 768px and up)
-@include medium-and-up {
-	
-	.split-three-column { 
-		
-		.three-column-box { 
-			
-			.three-column-info { 
-				
-				h2 { 
-					font-size: rem(35);
-					margin-bottom: 64px; 
-				} 
-
-				p { 
-					font-size: rem(27.5);
-					line-height: 2.25rem; 
-					margin-bottom: 40px; 
-
-					&:last-child {
-						margin-bottom: 72px;
-					}
-				} 
-			}
-
-			.three-column-images { 
-				min-height: 330px; 
-			}
-
-			.split-image { 
-				position: absolute;
-				img {
-					object-fit: cover;
-					height: 330px;
-				}    
-			} 
-
-			.second-column { 
-				width: 110%;
-				img {
-					margin-left: -90px;
-				}   
-			} 
-
-			.third-column { 
-				right: -190px;
-			} 
-		}
-	}
-}
-
-// Large devices (desktops, 992px and up)
-@include medium-large-and-up {
-	
-	.split-three-column { 
-	
-		.three-column-box { 
-	
-			.three-column-info { 
-				
-				p {
-					&:last-child {
-						margin-bottom: 100px;
-					}
-				} 
-			} 
-
-			.split-image { 
-				position: absolute;
-				img {
-					object-fit: cover;
-					height: 330px;
-				} 
-			}
-
-			.second-column { 
-				width: 110%;  
-			}
-
-			.third-column { 
-				right: -110px; 
-			} 
-		}
-	}
-}
-
-// Desktop / 1200px and up
-@include large-large-and-up {
-	
-	.split-three-column { 
-		margin-top: 104px;
-		
-		.three-column-box {
-
-			.three-column-info { 
-	
-				h2 { 
-					font-size: rem(40);
-					font-weight: bold;
-				} 
-				
-				p { 
-					font-size: rem(22);
-					margin-bottom: 2rem;
-				}
-			} 
-
-			.three-column-images { 
-				min-height: 430px; 
-			}
-
-			.split-image { 
-				position: absolute;
-				img {
-					object-fit: cover;
-					height: 430px;
-				}
-			}
-
-			.second-column { 
-				width: 100%;
-			} 
-
-			.third-column { 
-				right: -155px;  
-			}  
-		}
+	@include large-large-and-up {
+		margin-top: 340px;
 	}
 }

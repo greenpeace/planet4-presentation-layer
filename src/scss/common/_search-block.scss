@@ -1,4 +1,4 @@
-$search-grey:  #666;
+$search-grey:  $grey-60;
 $search-blue:  #0E538E;
 $search-black: #1A1A1A;
 
@@ -307,7 +307,7 @@ $search-black: #1A1A1A;
                 margin-bottom: 16px;
                 font-size: rem(16);
                 .search-result-item-title {
-                  background: #CCCCCC;
+                  background: $grey-20;
                   color: $white;
                   font-weight: bold;
                   padding: 2px 10px;
@@ -626,7 +626,7 @@ $search-black: #1A1A1A;
                 margin-bottom: 0;
                 font-size: rem(14);
                 .search-result-item-title {
-                  background: #CCCCCC;
+                  background: $grey-20;
                   color: $white;
                   font-weight: bold;
                   padding: 2px 10px;

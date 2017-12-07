@@ -8,17 +8,106 @@ Here is where we declare all our variables like colors, fonts,
 base values, and defaults.
 ******************************************************************/
 
-// Colors.
-$black:     #000;
-$white:     #fff;
-$grey:      #333;
-$red:       #ad2330;
-$yellow:    #FFD204;
+/**
+ * A note on colors:
+ *
+ * Every single color on this site should use a color variable as defined
+ * in this file for brand consistency and code maintenance.
+ *
+ * Once a color is defined here, it should not change and will remain
+ * consistent.
+ */
+
+// Primary Colors.
+$black:       #000;
+$white:       #fff;
+
+$grey-80:     #191919;
+$grey:        #333;
+$grey-60:     #666;
+$grey-40:     #999;
+$grey-20:     #ccc;
+$grey-10:     #e5e5e5;
+
+$gp-green:    #66cc00; // Should only ever be used on the GP logo/wordmark.
+$gp-green-80: #8bcc49;
+$gp-green-60: #abd879;
+$gp-green-40: #c7e5a5;
+$gp-green-20: #e3f2d3;
+
+$green:       #003300;
+$green-80:    #1b4a1b;
+$green-60:    #4a7a4a;
+$green-40:    #94b794;
+$green-20:    #d9e6d7;
+
+$blue:        #2077bf;
+$blue-80:     #3290de;
+$blue-60:     #63bbfd;
+$blue-40:     #86cafb;
+$blue-20:     #b8e0fa;
+
+$yellow:      #ffd204;
+$yellow-80:   #ffdb34;
+$yellow-60:   #ffe467;
+$yellow-40:   #ffed98;
+$yellow-20:   #fff6cd;
+
+// Oranges:
+$orange:       #f36d3a;
+$orange-hover: #ee562d;
+
+// Various greens:
+$shamrock:          #37d88d;
+$dark-shamrock:     #32ca89;
+$elm:               #229073;
+$eden:              #0f6459;
+$deep-sea-green:    #0a4f45;
+$tiber:             #043029;
+$dark-tiber:        #052a30;
+$inch-worm:         #a7e021;
+$pastel-green:      #72e360;
+$dark-pastel-green: #6ed961;
+$emerald:           #47c46c;
+$ocean-grean:       #3aa974;
+$sea-green:         #26774e;
+
+// Various blues:
+$dark-blue:    #074365;
+$body-blue:    #afd4c7;
+$spray:        #86eee7;
+$aquamarine:   #68dfde;
+$scooter:      #25c9dc;
+$java:         #1bb6d6;
+$java-2:       #1bdfdf;
+$java-dark:    #21cbca;
+$cerulean:     #03aad6;
+$allports:     #007799;
+$blue-elm:     #22938d;
+$faded-jade:   #418482;
+$genoa:        #186a70;
+$blue-tiber:   #093944;
+$mirage:       #111b25;
+
+// Various reds:
+$peach:       #eaccbb;
+$dark-pink:   #d39c92;
+$apricot:     #ea8e75;
+$crimson:     #e51538;
+$red:         #a01604;
+$dark-copper: #7a1805;
+$maroon:      #3f0901;
+
+// Need to be re-assigned colors.
 $blue:      #2980b9;
+$brown-bg:  #FAF7EC;
+$red:       #ad2330;
 $med-blue:  #0A3351;
 $dark-blue: #152431;
-$purple:    #200721;
 
+/**
+ * From this point on only the above color variables should be used in the codebase.
+ */
 
 
 // Used colors
@@ -41,10 +130,10 @@ $light-blue:            #67B2AF;
 $nav-link:              #a6df20;
 $para-text:             #005552;
 $percentage-text:       #017e7a;
-$primary-button:        #F36D3A;
-$primary-button-hover:  #ee562d;
+$primary-button:        $orange;
+$primary-button-hover:  $orange-hover;
 $secondary-button-hover:#9af9f3;
-$secondary-button:      #86eee7;
+$secondary-button:      $spray;
 $step-normal-bg:        #E4E7DA;
 $steps-deactive-text:   #06747A;
 $top-nav:               #1e5f65;
@@ -52,20 +141,21 @@ $yellow-button-color:   #301c01;
 $yellow-button-hover:   #fac235;
 $yellow-button:         $yellow;
 $light-grey:            #e0ddd4;
+$publish-date-grey:     #676767;
 
 // Used once.
 $blue-btn:              #0EC2DE;
 $body-bg:               #b0d4c8;
 $border:                $grey;
 $brown-bg-tags-link:    #E88D75;
-$container-bg:          #AFD4C7;
+$container-bg:          $body-blue;
 $dark-para-text:        #011D1E;
 $green-link-hover:      #77dd11;
 $heading:               #004d53;
 $secondary-button-bg:   #9fd0c8;
 $step-number-hover:     #42b3aa;
 $step-number:           #dc9509;
-
+$brown-header:          #5C1F10;
 
 // As-of-yet-unused.
 $blue-btn-hover:        #064364; // Duplicate
@@ -80,22 +170,17 @@ $red-text:              $red;
 $tags-text:             #007e7a;
 $tags:                  #326a69;
 
-$green-80:    #1b4a1b;
-$grey-20:     #ccc;
-$crimson:     #e51538;
-
-
 // Colors to be fixed/addressed:
 $article-anchor:        #2B092C;
 $article-heading-color:	#152431;
 $credit-color:          #5A5A5A;
 $search-text-colour:    #115247;
-$blue-top-nav:          #074365;
+$blue-top-nav:          $dark-blue;
 $dark-shade-black:      #1a1a1a;
 $carousel-indi-color:   #8BCC49;
-$shadow-color:          #666666;
-$article-tag:           #3290de;
-$four-column-heading:   #186A70;
+$shadow-color:          $grey-60;
+$article-tag:           $blue-80;
+$four-column-heading:   $genoa;
 $hover-nav:             #052A30;
 $tag-color:             #258CCB;
 
