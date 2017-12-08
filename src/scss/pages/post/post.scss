@@ -29,33 +29,6 @@
   }
 }
 
-.post-content {
-  p {
-    line-height: 1.8;
-    margin: 15px 0;
-
-    @include small-and-up {
-      font-size: rem(19);
-    }
-
-    @include medium-and-up {
-      font-size: rem(20);
-      margin: 25px 0;
-    }
-
-    @include large-and-up {
-      margin: 30px 0;
-    }
-  }
-}
-
-.post-content-lead {
-  p:first-of-type {
-    color: $white;
-    margin-top: 0;
-  }
-}
-
 .single-post-meta {
   color: $grey-20;
   margin: 30px 0 0;
