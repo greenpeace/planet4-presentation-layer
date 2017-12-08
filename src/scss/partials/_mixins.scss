@@ -125,7 +125,7 @@ TRANSITION
   }
 }
 
-@mixin background-before-opacity($color) {
+@mixin background-before-opacity($color, $opacity: 0.6) {
   &:before {
     content: "";
     background: ($color);
@@ -134,7 +134,7 @@ TRANSITION
     top: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.6;
+    opacity: $opacity;
   }
 }
 

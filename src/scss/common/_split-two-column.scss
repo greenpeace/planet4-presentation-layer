@@ -1,54 +1,105 @@
 .split-two-column {
 	background-color: $black;
 	color: $white;
-}
-
-
-.split-two-column {
-	background: $black;
-	color: $white;
-	padding: 2em;
-	height: 616px;
 	display: flex;
 	position: relative;
 	overflow: hidden;
-	margin-bottom: 25px;
 	z-index: 2;
-	
-	.split-two-column-skewed-right,
-	.split-two-column-skewed-left {
+	margin-bottom: 5px;
+}
+
+.split-two-column-item-image {
+	@include background-before-opacity($black, 0.3);
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+	top: 0;
+}
+
+// Including mobile-only styles as the mobile view is dramatically disparate.
+@include mobile-only {
+	.item--right,
+	.split-two-column-item-subtitle,
+	.split-two-column-item-tag,
+	.split-two-column-item-button,
+	.split-two-column-item-link {
+		display: none;
+	}
+
+	.item--left {
+		width: 100%;
+	}
+
+	.split-two-column-item-title {
+		font-size: rem(42);
+		margin: 0;
+		position: relative;
+
+		a {
+			display: block;
+			padding: 45px 15px;
+			color: $white;
+		}
+
+		&:after {
+			font-family: 'greenpeace-icon';
+			content: '\e901';
+			color: $yellow;
+			position: absolute;
+			top: 50%;
+			transform: translate( 0, -50% );
+			right: 15px;
+		}
+	}
+
+	.split-two-column-item-content {
+		position: relative;
+	}
+}
+
+@include small-and-up {
+	.split-two-column-item {
 		top: 0;
 		height: 100%;
 		width: 75%;
 		position: absolute;
 		overflow: hidden;
 		transform: skew(30deg, 0deg);
-		
-		.unskewed--left,
-		.unskewed--right {
-			height: 100%;
-			width: 100%;
-			position: absolute;
-			background-size: cover;
-			background-position: center;
-			transform: skew(-30deg, 0deg);
-		}
-
-		.part-right,
-		.part-left {
-			transform: skew(-30deg, 0deg);
-			position: absolute;
-			top: 0;
-			z-index: 1;
-			width: 40%;
-		}
 	}
+
+	.split-two-column-item-content,
+	.split-two-column-item-image {
+		position: absolute;
+		transform: skew(-30deg, 0deg);
+	}
+
+	.split-two-column-item-content {
+		top: 0;
+		z-index: 1;
+		width: 40%;
+	}
+}
+
+
+
+
+
+
+
+.split-two-column---old {
+	padding: 2em;
+	height: 616px;
+
+	margin-bottom: 25px;
+	z-index: 2;
+
 
 	.split-two-column-skewed-left {
 		left: -33%;
 
 		.unskewed--left {
-			background-image: url(images/GP04JE6.jpg);
 			left: 24%;
 		}
 
@@ -156,14 +207,6 @@
 		  padding: 25px 15px;  
 		  color: $white;
 		  text-decoration: none;
-
-		  &:after {
-				font-family: 'greenpeace-icon';
-				content: '\e901';
-				height: 100%;
-				color: $yellow;
-				float: right;
-		  }
 		}
 	  }
 	}  
@@ -172,7 +215,7 @@
 
 // Medium devices (tablets, 768px and up)
 @include medium-and-up {
-  .split-two-column {
+  .split-two-column--old {
 	height: 430px;
 	margin-bottom: 18px;
 	.split-two-column-skewed-left {
@@ -224,7 +267,7 @@
 
 // Large devices (desktops, 992px and up)
 @include medium-large-and-up {
-  .split-two-column {
+  .split-two-column--old {
 	height: 440px;
 	.split-two-column-skewed-left {
 	  .part-left{
@@ -269,7 +312,7 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @include large-large-and-up {
-  .split-two-column {
+  .split-two-column--old {
 	height: 616px;
 	margin-bottom: 25px;
 	.split-two-column-skewed-left {
