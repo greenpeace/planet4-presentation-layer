@@ -10,8 +10,8 @@
 
 1. Start a new branch on local with a title that represents your work. i.e. `article-list-block`
 2. Push granular and atomic commits to your branch as you continue work and push your changes up to GitHub in blocks of work.
-3. After your work is complete & tested, open a Pull Request with a useful title & description
-4. Request a review from another developer on the presentation-repo.
+3. After your work is complete & tested, open a Pull Request with a useful title, description and screenshots or links to the designs.
+4. Request a review from another collaborator on the `planet4-presentation-layer` repository.
 5. The developer will review your work and request changes or approved.
 6. Once approved the reviewer will merge your Pull Request into `master`.
 6. The reviewer will then merge `master` into the `gh-pages` branch for design review. 
