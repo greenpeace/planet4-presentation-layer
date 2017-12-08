@@ -144,7 +144,9 @@
 	}
 }
 
-// Including mobile-only styles as the mobile view is dramatically disparate.
+/**
+ * Including mobile-only styles as the mobile view is dramatically different from desktop.
+ */
 @include mobile-only {
 	.item--right,
 	.split-two-column-item-subtitle,
