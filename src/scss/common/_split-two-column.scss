@@ -6,6 +6,20 @@
 	overflow: hidden;
 	z-index: 2;
 	margin-bottom: 5px;
+
+	@include small-and-up {
+		height: 400px;
+	}
+
+	@include medium-and-up {
+		height: 440px;
+		margin-bottom: 15px;
+	}
+
+	@include large-and-up {
+		height: 616px;
+		margin-bottom: 25px;
+	}
 }
 
 .split-two-column-item-image {
@@ -51,6 +65,7 @@
 			top: 50%;
 			transform: translate( 0, -50% );
 			right: 15px;
+			pointer-events: none;
 		}
 	}
 
@@ -69,6 +84,42 @@
 		transform: skew(30deg, 0deg);
 	}
 
+	.item--left {
+		left: -33%;
+
+		.split-two-column-item-content {
+			right: 0;
+		}
+
+		.split-two-column-item-image {
+			left: 24%;
+		}
+
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			background: rgba(23, 23, 23, 0.44);
+		}
+	}
+
+	.item--right {
+		right: -17%;
+
+		.split-two-column-item-content {
+			left: 25%;
+		}
+
+		.split-two-column-item-image {
+			right: 0;
+			left: -20%;
+		}
+	}
+
 	.split-two-column-item-content,
 	.split-two-column-item-image {
 		position: absolute;
@@ -76,7 +127,8 @@
 	}
 
 	.split-two-column-item-content {
-		top: 0;
+		top: 50%;
+		transform: translate( 0, -50% ) skew(-30deg, 0deg);
 		z-index: 1;
 		width: 40%;
 	}
@@ -90,20 +142,13 @@
 
 .split-two-column---old {
 	padding: 2em;
-	height: 616px;
-
-	margin-bottom: 25px;
-	z-index: 2;
-
 
 	.split-two-column-skewed-left {
-		left: -33%;
-
-		.unskewed--left {
+		.unskewed--left { // aka image
 			left: 24%;
 		}
 
-		.part-left {
+		.part-left { // aka content
 			right: 0;
 			margin: 92px 0 0 166px;
 			
@@ -127,29 +172,16 @@
 			}
 		}
 
-		&:after {
-			position: absolute;
-			top: 0;
-			left: 0;
-			content: "";
-			display: block;
-			height: 100%;
-			width: 100%;
-			background: rgba(23, 23, 23, 0.44);
-		}
+
 	}
 
 	.split-two-column-skewed-right {
-		right: -17%;
 
 		.unskewed--right {
-			background-image: url(images/GP028BP.jpg);
 			right: 0;
-			left: 20%;
 		}
 
 		.part-right {
-			left: 0;
 			margin-left: 160px;
 			margin-top: 215px;
 
@@ -216,7 +248,6 @@
 // Medium devices (tablets, 768px and up)
 @include medium-and-up {
   .split-two-column--old {
-	height: 430px;
 	margin-bottom: 18px;
 	.split-two-column-skewed-left {
 	  .part-left{
@@ -268,7 +299,6 @@
 // Large devices (desktops, 992px and up)
 @include medium-large-and-up {
   .split-two-column--old {
-	height: 440px;
 	.split-two-column-skewed-left {
 	  .part-left{
 			width: 40%;
@@ -313,8 +343,6 @@
 // Extra large devices (large desktops, 1200px and up)
 @include large-large-and-up {
   .split-two-column--old {
-	height: 616px;
-	margin-bottom: 25px;
 	.split-two-column-skewed-left {
 	  .part-left{
 			margin: 104px 0 0 166px;
