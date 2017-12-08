@@ -82,7 +82,7 @@ $('.country-select-box .country-list li').click(function(){
 // Returns width of browser viewport
 if($( window ).width() >= 768) {
   // $(window).scroll(function() {
-  //   if ($(this).scrollTop() > 130){  
+  //   if ($(this).scrollTop() > 130){
   //       $('.fixed-element, .md-navigation').addClass("sticky");
   //   }
   //   else{
@@ -90,6 +90,12 @@ if($( window ).width() >= 768) {
   //   }
   // });
 };
+
+console.log('hi');
+$(document).on('click', '.country-dropdown-toggle', function(evt) {
+  evt.preventDefault();
+  $('.country-list').toggleClass('open');
+});
 
 // Hide Header on on scroll down
 if($( window ).width() <= 768) {
@@ -152,6 +158,7 @@ if($( window ).width() <= 768) {
       $searchBox.slideToggle().toggleClass('active');
   });
 };
+
 $(function() {
 	$('.publications-slider').slick({
 		infinite:       false,
