@@ -102,13 +102,15 @@
 }
 
 .split-two-column-item-content {
-	.item--left & {
-		right: 15%;
-		width: 45%;
-	}
+	@include small-and-up {
+		.item--left & {
+			right: 15%;
+			width: 45%;
+		}
 
-	.item--right & {
-		left: 20%;
+		.item--right & {
+			left: 20%;
+		}
 	}
 
 	@include medium-and-up {
