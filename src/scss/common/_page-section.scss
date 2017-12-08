@@ -5,18 +5,18 @@
  */
 
 .page-section {
-	margin: 50px 0;
+	margin: 50px auto;
 
 	@include medium-and-up {
-		margin: 75px 0;
+		margin: 75px auto;
 	}
 
 	@include large-and-up {
-		margin: 85px 0;
+		margin: 85px auto;
 	}
 
 	@include x-large-and-up {
-		margin: 100px 0;
+		margin: 100px auto;
 	}
 }
 

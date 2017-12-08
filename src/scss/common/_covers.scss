@@ -51,9 +51,12 @@
     transition: opacity 150ms linear;
   }
   @include large-and-up {
-    box-shadow: none;
     transition: box-shadow 150ms linear;
     padding-bottom: 70px;
+
+    &:not(.single-cover){
+      box-shadow: none;
+    }
   }
 }
 

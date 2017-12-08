@@ -52,6 +52,10 @@
 		.brown-bg & {
 			@include linear-gradient( 360deg, $brown-bg 0%, transparent 100% );
 		}
+
+		.white-bg & {
+			@include linear-gradient( 360deg, $white 0%, transparent 100% );
+		}
 	}
 }
 
@@ -64,6 +68,7 @@
 
 .top-page-tags {
 	font-size: rem(14);
+	margin-bottom: 10px;
 
 	.tag-item {
 		color: $yellow;
