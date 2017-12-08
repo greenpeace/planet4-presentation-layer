@@ -38,6 +38,7 @@
 		p {
 			font-size: rem(17);
 			margin-bottom: 3rem;
+
 			@include small-and-up {
 				font-size: rem(19);
 			}
