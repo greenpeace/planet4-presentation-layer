@@ -2,12 +2,6 @@
 	color: $black;
 	padding: 80px 0 0 0;
 	
-	h2 {
-		font-size: rem(26);
-		margin: 0;
-		color: $black;
-	}
-	
 	a {
 		color: $grey;
 	}
@@ -18,10 +12,9 @@
 	}
 
 	.four-coloum-content-wrap {
-
 		.four-coloum-content-symbol {
 			position: relative;
-			margin: 32px 0 24px 0;
+			margin-bottom: 24px;
 			box-shadow: 0px 5px 20px 0px rgba(114,114,114,0.5);
 			
 			img {
@@ -79,11 +72,11 @@
 
 	.four-coloum-content {
 		
-		
 		.four-coloum-content-wrap{
+			margin-bottom: 20px;
 			
 			.four-coloum-content-symbol {
-				margin: 20px 0;
+				margin-bottom: 20px;
 			}
 
 		}
@@ -95,10 +88,6 @@
 @include medium-and-up {
 
 	.four-coloum-content {
-		
-		h2 {
-			font-size: rem(34);
-		}
 
 		.four-coloum-content-wrap {
 			.four-coloum-content-info {
@@ -110,17 +99,4 @@
 		}
 		
 	}
-}
-
-
-// Large devices (desktops, 992px and up)
-@include medium-large-and-up {
-
-	.four-coloum-content {
-
-		h2 {
-			font-size: rem(38);
-		}
-	}
-
 }
