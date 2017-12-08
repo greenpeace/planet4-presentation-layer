@@ -38,8 +38,6 @@
 @import "common/video-block";
 @import "common/campaign-thumbnail-block";
 @import "common/content-three-column";
-@import "common/post-block";
-@import "common/boxout-block";
 @import "common/search-block";
 @import "common/cookie-block";
 @import "common/campaign-covers-4col-wrap";
@@ -47,6 +45,8 @@
 @import "common/tags-list";
 
 // Page-specific styles
+@import "pages/post/post";
+@import "pages/post/article-content";
 @import "pages/post/author-block";
 @import "pages/take-action"; // TODO: Break this down into blocks
 @import "pages/post/comments-block";
@@ -63,16 +63,15 @@
  * 
 */
 
-html {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 body {
   overflow-x: hidden;
   font-family: $roboto;
   position: relative;
+  
+  &.white-bg {
+    background-color: $white;
+  }
+
   &.brown-bg {
     background: $brown-bg;
   }

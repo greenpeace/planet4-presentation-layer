@@ -1,0 +1,49 @@
+.post-content {
+  p {
+    line-height: 1.8;
+    margin: 15px 0;
+
+    @include small-and-up {
+      font-size: rem(19);
+    }
+
+    @include medium-and-up {
+      font-size: rem(20);
+      margin: 25px 0;
+    }
+
+    @include large-and-up {
+      margin: 30px 0;
+    }
+  }
+}
+
+.post-content-lead {
+  p:first-of-type {
+    color: $white;
+    margin-top: 0;
+  }
+}
+
+.post-image {
+  .credit-wrapper{
+    position: relative;
+    display: inline-block;
+    width: auto;
+  }
+
+  @include medium-and-up {
+    .image-credit {
+      position: absolute;
+      text-align: right;
+      right: 10px;
+      width: 100%;
+      color: $white;
+      z-index: 2;
+    }
+  }
+
+  .image-desc {
+    display: block;
+  }
+}
