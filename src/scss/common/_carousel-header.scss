@@ -131,7 +131,6 @@
   }
 }
 
-// Medium devices (tablets, 576px and up)
 @include small-and-up {
   .split-carousel-wrap.carousel-header {
     .carousel-item {
@@ -181,7 +180,6 @@
   }  
 }
 
-// Medium devices (tablets, 768px and up)
 @include medium-and-up {
   .split-carousel-wrap.carousel-header {
     .carousel-item {
@@ -235,8 +233,7 @@
   }  
 }
 
-// Large devices (desktops, 992px and up)
-@include medium-large-and-up {
+@include large-and-up {
   .split-carousel-wrap.carousel-header {
     .carousel-item {
       .carousel-caption {
@@ -285,8 +282,7 @@
   }  
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@include large-large-and-up {
+@include x-large-and-up {
   .split-carousel-wrap.carousel-header {
     .carousel-item {
       .carousel-caption {

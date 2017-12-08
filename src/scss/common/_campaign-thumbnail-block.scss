@@ -88,9 +88,7 @@
 	}
 }
 
-
-// Large devices (desktops, 992px and up)
-@include medium-large-and-up {
+@include large-and-up {
 
 	.campaign-thumbnail-block {
 

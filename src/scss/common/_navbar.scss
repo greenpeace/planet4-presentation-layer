@@ -330,7 +330,6 @@
   }
 }
 
-// Medium devices (tablets, 768px and up)
 @include medium-and-up {
   #header {
     .navbar-brand {
@@ -422,8 +421,7 @@
   }
 }
 
-// Large devices (desktops, 992px and up)
-@include medium-large-and-up {
+@include large-and-up {
   #header.top-navigation {
     .navbar {
       li {
@@ -447,8 +445,7 @@
   }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@include large-large-and-up {
+@include x-large-and-up {
   #header.top-navigation {
     position: fixed;
     padding: 0;

@@ -184,7 +184,6 @@ Stylesheet: Button Styles
   }
 }
 
-// Small devices (landscape phones, 576px and up)
 @include mobile-only {
   .btn {
     padding: 0 15px;
@@ -212,7 +211,6 @@ Stylesheet: Button Styles
   }
 }
 
-// Medium devices (tablets, 768px and up)
 @include medium-and-up {
   .btn {
     padding: 0 15px;
@@ -229,8 +227,7 @@ Stylesheet: Button Styles
   }
 }
 
-// Large devices (desktops, 992px and up)
-@include medium-large-and-up {
+@include large-and-up {
   .btn {
     padding: 0 15px;
     &.btn-medium {
@@ -246,8 +243,7 @@ Stylesheet: Button Styles
   }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@include large-large-and-up {
+@include x-large-and-up {
   .btn {
     padding: 0 15px;
     &.btn-medium {

@@ -15,11 +15,11 @@
 			font-size: rem(34);
 		}
 
-		@include medium-large-and-up {
+		@include large-and-up {
 			font-size: rem(38);
 		}
 
-		@include large-large-and-up {
+		@include x-large-and-up {
 			font-size: rem(40);
 			margin-bottom: 64px;
 		}
@@ -35,11 +35,11 @@
 			height: 400px;
 		}
 	
-		@include medium-large-and-up {
+		@include large-and-up {
 			height: 530px;
 		}
 
-		@include large-large-and-up {
+		@include x-large-and-up {
 			height: 630px;
 		}
 	}
