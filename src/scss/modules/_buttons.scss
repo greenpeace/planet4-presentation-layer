@@ -33,6 +33,25 @@ Stylesheet: Button Styles
   }
 }
 
+.btn-primary {
+
+  &:hover {
+
+  }
+}
+
+.btn-secondary {
+  background: $secondary-button;
+  border-color: $secondary-button;
+  color: $black;
+  text-transform: uppercase;
+
+  &:hover {
+    background: $secondary-button-hover;
+    border-color: $secondary-button-hover;
+  }
+}
+
 .btn-small {
   height: 32px;
 }
@@ -47,18 +66,6 @@ Stylesheet: Button Styles
 .btn-primary:hover {
   background: $primary-button-hover;
   border-color: $primary-button-hover;
-}
-
-.btn-secondary {
-  background: $secondary-button;
-  border-color: $secondary-button;
-  color: $black;
-  text-transform: uppercase;
-}
-
-.btn-secondary:hover {
-  background: $secondary-button-hover;
-  border-color: $secondary-button-hover;
 }
 
 .btn-green {
@@ -97,24 +104,6 @@ Stylesheet: Button Styles
   }
 }
 
-.secondary-button {
-  background: $secondary-button-bg;
-  color: $med-blue;
-  border: solid 1px $med-blue;
-  text-transform: uppercase;
-  font-weight: 500;
-  &:hover {
-    background: $med-blue;
-    color: $white;
-  }
-  &:focus {
-    outline: none;
-    box-shadow: none;
-  }
-  &:active {
-    background: #3B5C74;
-  }
-}
 .btn-transparent {
   background: transparent;
   color: $med-blue;
@@ -222,10 +211,6 @@ Stylesheet: Button Styles
       font-size: rem(18);
       height: 56px;
       line-height: 56px;
-    }
-
-    &.secondary-button {
-      padding: 0 30px;
     }
   }
   .btn-normal {
