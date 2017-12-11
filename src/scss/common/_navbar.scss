@@ -44,7 +44,8 @@
   z-index: 5000;
   height: calc(100vh);
   @include background-before-opacity(rgba(22,22,22,0.65));
-  .btn-secondary {
+
+  .btn-donate {
     width: 250px;
     margin: 0 auto;
     display: block;
@@ -105,6 +106,12 @@
         margin-right: 15px;
         &.big-screen-nav-link {
           text-align: center;
+          a {
+            color: $white;
+            font-size: rem(16);
+            display: inline-block;
+            line-height: 40px;
+          }
           &:hover {
             transition: 0.5s;
             border-bottom: 2px solid $white;
@@ -124,26 +131,9 @@
         }  
         &.donatebtn {
           width: 15%;
-          a {
-            color: $grey;
-            background: $donate-btn-bg;
-          }
-          a:hover {
-            color: $black;
-            background: $donate-btn-hover;
-          }
-        } 
-        a {
-          color: $white;
-          font-size: rem(16);
-          display: inline-block; 
-          line-height: 40px;
         }
-        .btn-secondary {
-          font-size: rem(12);
-          color: $black;
+        .btn-donate {
           margin-top: 3px;
-          font-weight: 500;
         }
         &.loginSignUpWrap {
           color: $nav-link;
@@ -433,12 +423,6 @@
         }
         &.big-screen-nav-link {
         }
-        .btn-secondary {
-          height: 42px;
-          line-height: 42px;
-          font-size: rem(16);
-          margin: 0;
-        }
       }
     }
     .navbar-nav {
@@ -460,12 +444,6 @@
     .navbar {
       li {
         width: 20%;
-        .btn-secondary {
-          height: rem(36);
-          line-height: 42px;
-          min-height: 42px;
-          margin: 0;
-        }
       }
     }
     .navbar-nav {

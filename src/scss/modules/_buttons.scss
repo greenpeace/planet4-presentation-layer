@@ -29,11 +29,6 @@ Stylesheet: Button Styles
     outline: none;
   }
 
-  // Adds a tiny hop to the click.
-  &:active {
-    top: 1px;
-  }
-
   &:disabled {
     opacity: .5;
   }
@@ -85,7 +80,7 @@ Stylesheet: Button Styles
   }
 
   &:active {
-    backkground-color: $x-dark-blue;
+    background-color: $x-dark-blue;
   }
 }
 
@@ -94,6 +89,7 @@ Stylesheet: Button Styles
  */
 .btn-action {
   background-color: transparentize($white, .8);
+  border-color: $white;
 
   &:hover,
   &:focus {
@@ -105,10 +101,26 @@ Stylesheet: Button Styles
   }
 }
 
+/**
+ * Donate button used in the navbar.
+ */
+.btn-donate {
+  background-color: $aquamarine;
+  color: $grey;
+  font-size: rem(16);
+  line-height: 2.25;
 
+  &:hover,
+  &:focus {
+    background-color: $spray;
+    color: $black;
+  }
 
+  &:active {
+    background-color: $java-dark;
+  }
 
-.btn-green {
-  background: #65cb00;
-  color: $white;
+  @include large-and-up {
+    font-size: rem(18);
+  }
 }
