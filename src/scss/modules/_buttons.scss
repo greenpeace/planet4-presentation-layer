@@ -9,6 +9,7 @@ Stylesheet: Button Styles
   display: inline-block;
   position: relative;
   font-family: $roboto;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   color: $white;
@@ -17,7 +18,7 @@ Stylesheet: Button Styles
   border: 1px solid transparent;
   cursor: pointer;
   line-height: 3;
-  padding: 0;
+  padding: 0 30px;
   appearance: none;
   // `all` here is not the most performant, but we really do want to modify all of the color/opacity attributes.
   transition: all 150ms linear;
