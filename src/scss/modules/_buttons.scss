@@ -10,6 +10,7 @@ Stylesheet: Button Styles
   position: relative;
   font-family: $roboto;
   text-decoration: none;
+  text-transform: uppercase;
   color: $white;
   font-weight: 500;
   border-radius: 4px;
@@ -76,6 +77,7 @@ Stylesheet: Button Styles
   background-color: transparentize($white, .8);
   border-color: $dark-blue;
   color: $dark-blue;
+  box-shadow: none;
 
   &:hover,
   &:focus {
@@ -87,7 +89,21 @@ Stylesheet: Button Styles
   }
 }
 
+/**
+ * Similar to the primary button, but transparent by default.
+ */
+.btn-action {
+  background-color: transparentize($white, .8);
 
+  &:hover,
+  &:focus {
+    background-color: $orange;
+  }
+
+  &:active {
+    background-color: $orange-hover;
+  }
+}
 
 
 
@@ -95,61 +111,4 @@ Stylesheet: Button Styles
 .btn-green {
   background: #65cb00;
   color: $white;
-}
-
-.styled-select {
-  select {
-    background: transparent;
-    padding: 5px;
-    font-size: rem(16);
-    color: $white;
-    line-height: 1;
-    border: 0;
-    border-radius: 0;
-    height: 34px;
-    -webkit-appearance: none;
-    width: 240px;
-
-    option {
-      background: transparent;
-      color: $black;
-    }
-
-    &:focus {
-      outline: none;
-    }
-  }
-}
-
-.btn-transparent {
-  background: transparent;
-  color: $med-blue;
-  border: solid 1px $med-blue;
-  text-transform: uppercase;
-  font-weight: 500;
-
-  &:hover {
-    background: $med-blue;
-    color: $white;
-  }
-
-  &:focus {
-    outline: none;
-    box-shadow: none;
-  }
-
-  &:active {
-    background: #3B5C74;
-  }
-}
-
-.btn-light-blue {
-  background: rgba(255,255,255,0.2);
-  color: $blue-top-nav;
-  border: 1px solid $blue-top-nav;
-
-  &:hover {
-    color: $white;
-    background: $blue-top-nav;
-  }
 }
