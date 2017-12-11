@@ -54,6 +54,7 @@ Stylesheet: Button Styles
  */
 .btn-primary {
   background-color: $orange;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
 
   &:hover,
   &:focus {
@@ -69,7 +70,7 @@ Stylesheet: Button Styles
  * Secondary, semi-transparent button. Most buttons are this button.
  */
 .btn-secondary {
-  background-color: transparentize($white, .8);
+  background-color: transparentize($white, .7);
   border-color: $dark-blue;
   color: $dark-blue;
   box-shadow: none;
@@ -90,14 +91,17 @@ Stylesheet: Button Styles
 .btn-action {
   background-color: transparentize($white, .8);
   border-color: $white;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
 
   &:hover,
   &:focus {
     background-color: $orange;
+    border-color: $orange;
   }
 
   &:active {
     background-color: $orange-hover;
+    border-color: $orange-hover;
   }
 }
 
@@ -109,6 +113,7 @@ Stylesheet: Button Styles
   color: $grey;
   font-size: rem(16);
   line-height: 2.25;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
 
   &:hover,
   &:focus {
