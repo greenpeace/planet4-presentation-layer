@@ -5,80 +5,95 @@ Author: Ashish Singh(ashish.singh@greepeace.org)
 Stylesheet: Button Styles
 ******************************************************************/
 
-%btn {
+.btn {
   display: inline-block;
   position: relative;
   font-family: $roboto;
   text-decoration: none;
   color: $white;
-  font-size: rem(34);
-  line-height: 34px;
-  font-weight: normal;
-  padding: 0 24px;
+  font-weight: 500;
   border-radius: 4px;
-  border: 0;
+  border: 1px solid transparent;
   cursor: pointer;
-  @include transition(background-color 0.14s ease-in-out);
+  line-height: 3;
+  padding: 0 3em;
+  appearance: none;
+  // `all` here is not the most performant, but we really do want to modify all of the color/opacity attributes.
+  transition: all 150ms linear;
 
-  // Hovering on the btn.
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $white;
     text-decoration: none;
     outline: none;
   }
 
-  // Clicking on the button.
+  // Adds a tiny hop to the click.
   &:active {
-    top: 1px; // adds a tiny hop to the click
+    top: 1px;
   }
-}
 
-.btn-primary {
-
-  &:hover {
-
-  }
-}
-
-.btn-secondary {
-  background: $secondary-button;
-  border-color: $secondary-button;
-  color: $black;
-  text-transform: uppercase;
-
-  &:hover {
-    background: $secondary-button-hover;
-    border-color: $secondary-button-hover;
+  &:disabled {
+    opacity: .5;
   }
 }
 
 .btn-small {
-  height: 32px;
+  font-size: rem(14);
+  line-height: 2.8;
 }
 
+.btn-medium {
+  font-size: rem(16);
+  line-height: 3;
+}
+
+.btn-large {
+  font-size: rem(18);
+  line-height: 3.1;
+}
+
+/**
+ * Primary, orange button.
+ */
 .btn-primary {
-  background: $primary-button;
-  border-color: $primary-button;
-  color: $white;
-  text-transform: uppercase;
+  background-color: $orange;
+
+  &:hover,
+  &:focus {
+    background-color: $orange-hover;
+  }
+
+  &:active {
+    background-color: $dark-copper;
+  }
 }
 
-.btn-primary:hover {
-  background: $primary-button-hover;
-  border-color: $primary-button-hover;
+/**
+ * Secondary, semi-transparent button. Most buttons are this button.
+ */
+.btn-secondary {
+  background-color: transparentize($white, .8);
+  border-color: $dark-blue;
+  color: $dark-blue;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-blue;
+  }
+
+  &:active {
+    backkground-color: $x-dark-blue;
+  }
 }
+
+
+
+
+
 
 .btn-green {
   background: #65cb00;
-  color: $white;
-}
-.btn-blue {
-  background: $blue-btn;
-  border: solid 1px $blue-btn-border;
-  color: $blue-btn-border;
-}
-.btn-blue:hover {
-  background-color: $blue-btn-border;
   color: $white;
 }
 
@@ -94,10 +109,12 @@ Stylesheet: Button Styles
     height: 34px;
     -webkit-appearance: none;
     width: 240px;
+
     option {
       background: transparent;
       color: $black;
     }
+
     &:focus {
       outline: none;
     }
@@ -110,112 +127,29 @@ Stylesheet: Button Styles
   border: solid 1px $med-blue;
   text-transform: uppercase;
   font-weight: 500;
+
   &:hover {
     background: $med-blue;
     color: $white;
   }
+
   &:focus {
     outline: none;
     box-shadow: none;
   }
+
   &:active {
     background: #3B5C74;
   }
 }
-.btn-normal {
-  height: 40px;
-  line-height: 40px;
-  font-size: rem(14);
-  font-weight: 500;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-family: $roboto;
-}
+
 .btn-light-blue {
   background: rgba(255,255,255,0.2);
   color: $blue-top-nav;
   border: 1px solid $blue-top-nav;
+
   &:hover {
     color: $white;
     background: $blue-top-nav;
-  }
-}
-
-// Small devices (landscape phones, 576px and up)
-@include mobile-only {
-  .btn {
-    padding: 0 15px;
-    &.btn-small {
-      font-size: rem(14);
-      height: 40px;
-      line-height: 40px;
-    }
-  }
-}
-
-@include small-and-up {
-  .btn {
-    padding: 0 15px;
-    &.btn-small {
-      font-size: rem(14);
-      height: 40px;
-      line-height: 40px;
-    }
-  }
-  .btn-normal {
-    height: 40px;
-    line-height: 40px;
-    font-size: rem(14);
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@include medium-and-up {
-  .btn {
-    padding: 0 15px;
-    &.btn-medium {
-      font-size: rem(16);
-      height: 48px;
-      line-height: 48px;
-    }
-  }
-  .btn-normal {
-    height: 48px;
-    line-height: 48px;
-    font-size: rem(16);
-  }
-}
-
-// Large devices (desktops, 992px and up)
-@include medium-large-and-up {
-  .btn {
-    padding: 0 15px;
-    &.btn-medium {
-      font-size: rem(18);
-      height: 52px;
-      line-height: 52px;
-    }
-  }
-  .btn-normal {
-    height: 52px;
-    line-height: 52px;
-    font-size: rem(18);
-  }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@include large-large-and-up {
-  .btn {
-    padding: 0 15px;
-    &.btn-medium {
-      font-size: rem(18);
-      height: 56px;
-      line-height: 56px;
-    }
-  }
-  .btn-normal {
-    height: 52px;
-    line-height: 52px;
-    font-size: rem(18);
   }
 }
