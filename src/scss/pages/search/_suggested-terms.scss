@@ -15,7 +15,7 @@
 	}
 
 	.suggested-list {
-		background-color: $grey-20;
+		background-color: transparentize($white, .8);
 		padding: 32px 17px;
 		margin: 0;
 
@@ -27,7 +27,7 @@
 			text-align: center;
 
 			a {
-				color: $search-blue;
+				color: $blue-elm;
 				text-decoration: none;
 				font-size: rem(18);
 				line-height: 2.3;

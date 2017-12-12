@@ -1,0 +1,44 @@
+.search-info {
+	font-size: rem(16);
+	margin-bottom: 0;
+	font-family: $roboto;
+	font-style: italic;
+	color: $search-grey;
+	line-height: normal;
+
+	@include medium-and-up {
+		font-size: rem(18);
+	}
+
+	@include large-and-up {
+		font-size: rem(28);
+	}
+
+	@include x-large-and-up {
+		font-size: rem(32);
+	}
+}
+
+.search-tag {
+	font-size: rem(14);
+	line-height: 1.7;
+	padding: 0 15px;
+	font-style: normal;
+	color: #002341;
+	border: 1px solid #002341;
+	border-radius: 6px;
+	display: inline-block;
+	margin-left: 10px;
+
+	@include small-and-up {
+		font-size: rem(22);
+		line-height: 1.9;
+		padding: 0 20px;
+	}
+
+	i {
+		font-size: rem(12);
+		float: right;
+		line-height: 2;
+	}
+}
