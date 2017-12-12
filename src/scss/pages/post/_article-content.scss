@@ -19,11 +19,12 @@
 
   .more-link {
     @extend .btn;
+    @extend .btn-secondary;
 
   }
 
   div.entry-summary {
-      @extend .white-text;
+    @extend .white-text;
   }
 
 
@@ -91,8 +92,8 @@
   }
 
   .alignleft {
-      float: left;
-      margin: 10px 10px 0 0;
+    float: left;
+    margin: 10px 10px 0 0;
 
   }
 
