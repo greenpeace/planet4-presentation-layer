@@ -56,11 +56,18 @@
     }
   }
 
-  blockquote cite {
+  cite {
     display: block;
     margin-top: 15px;
   }
 
+  code {
+    word-wrap: break-word;
+  }
+
+  q {
+    font-style: italic;
+  }
 
   table {
 
@@ -81,8 +88,23 @@
     tr.even {
       background-color: $grey-20;
     }
+  }
+
+  .alignleft {
+      float: left;
+      margin: 10px 10px 0 0;
 
   }
+
+  .alignright {
+    float: right;
+    margin: 0 0 0 10px;
+  }
+
+  .aligncenter {
+    margin: auto;
+  }
+
 }
 
 .post-content-lead {
