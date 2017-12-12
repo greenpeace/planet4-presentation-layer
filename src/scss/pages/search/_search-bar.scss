@@ -11,11 +11,13 @@
 
 	input {
 		font-size: rem(16);
+		height: 2.75em;
 		line-height: 2.75;
 		appearance: none;
 
 		@include large-and-up {
 			font-size: rem(18);
+			height: 3em;
 			line-height: 3;
 		}
 	}
