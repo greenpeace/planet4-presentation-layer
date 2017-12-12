@@ -39,8 +39,8 @@
 		font-size: rem(16);
 		padding: 0 10px;
 		border-radius: 6px;
-		border-color: #6E98BB;
-		background: #F1F4F8;
+		border-color: $blue-40;
+		background: transparent;
 
 		@include small-and-up {
 			width: 210px;

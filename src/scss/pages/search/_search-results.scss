@@ -53,7 +53,8 @@
 
 			&:hover {
 				.search-result-item-headline,
-				.search-result-item-content, img {
+				.search-result-item-content,
+				img {
 					cursor: pointer;
 					text-decoration: underline;
 				}

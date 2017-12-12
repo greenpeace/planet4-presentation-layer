@@ -10,7 +10,7 @@
 	.filteritem {
 		a {
 			display: block;
-			border: 1px solid $faded-jade;
+			border: 1px solid $dark-blue;
 			border-top: 0;
 			border-bottom-width: 4px;
 			padding: 11px 30px;
@@ -23,8 +23,14 @@
 			margin-bottom: 24px;
 
 			@include small-and-up {
-				font-size: rem(20);
+				padding: 13px 30px;
+				font-size: rem(18);
 				margin-bottom: 32px;
+			}
+
+			@include large-and-up {
+				padding: 11px 30px;
+				font-size: rem(20);
 			}
 
 			span {
@@ -93,6 +99,10 @@
 			color: $border;
 
 			@include small-and-up {
+				font-size: rem(16);
+			}
+
+			@include large-and-up {
 				font-size: rem(18);
 			}
 		}
@@ -145,7 +155,6 @@
 					color: $white;
 				}
 			}
-
 
 			&.disabled {
 				background: $grey-40;
@@ -200,60 +209,6 @@
 				width: 100%;
 				background: $med-blue;
 				color: $white;
-			}
-		}
-	}
-}
-
-@include medium-and-up {
-	.filter-sidebar {
-		h4 {
-			font-size: rem(26);
-			margin-bottom: 48px;
-		}
-
-		.filteritem {
-			a {
-				border: 1px solid $faded-jade;
-				border-top: 0;
-				border-bottom-width: 4px;
-				padding: 13px 30px;
-				font-size: rem(18);
-				font-weight: bold;
-				margin-bottom: 32px;
-			}
-
-			ul {
-				li {
-					height: 42px;
-
-					.custom-control-description {
-						font-size: rem(16);
-					}
-				}
-			}
-		}
-	}
-}
-
-@include x-large-and-up {
-	.filter-sidebar {
-		h4 {
-			font-size: rem(28);
-		}
-
-		.filteritem {
-			a {
-				padding: 11px 30px;
-				font-size: rem(20);
-			}
-
-			ul {
-				li {
-					.custom-control-description {
-						font-size: rem(18);
-					}
-				}
 			}
 		}
 	}
