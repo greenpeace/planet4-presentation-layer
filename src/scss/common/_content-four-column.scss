@@ -1,4 +1,4 @@
-.four-coloum-content {
+.four-column-content {
 	color: $black;
 	padding: 80px 0 0 0;
 	
@@ -17,9 +17,9 @@
 		outline: none;
 	}
 
-	.four-coloum-content-wrap {
+	.four-column-content-wrap {
 
-		.four-coloum-content-symbol {
+		.four-column-content-symbol {
 			position: relative;
 			margin: 32px 0 24px 0;
 			box-shadow: 0px 5px 20px 0px rgba(114,114,114,0.5);
@@ -37,7 +37,7 @@
 			}
 		}
 
-		.four-coloum-content-info {
+		.four-column-content-info {
 
 			h4 {
 				font-size : rem(16);
@@ -77,12 +77,12 @@
 // Small devices (landscape phones, 576px and up)
  @include small-and-up {
 
-	.four-coloum-content {
+	.four-column-content {
 		
 		
-		.four-coloum-content-wrap{
+		.four-column-content-wrap{
 			
-			.four-coloum-content-symbol {
+			.four-column-content-symbol {
 				margin: 20px 0;
 			}
 
@@ -94,14 +94,14 @@
 // Medium devices (tablets, 768px and up)
 @include medium-and-up {
 
-	.four-coloum-content {
+	.four-column-content {
 		
 		h2 {
 			font-size: rem(34);
 		}
 
-		.four-coloum-content-wrap {
-			.four-coloum-content-info {
+		.four-column-content-wrap {
+			.four-column-content-info {
 
 				h4 {
 					font-size : rem(22);
@@ -116,7 +116,7 @@
 // Large devices (desktops, 992px and up)
 @include medium-large-and-up {
 
-	.four-coloum-content {
+	.four-column-content {
 
 		h2 {
 			font-size: rem(38);
