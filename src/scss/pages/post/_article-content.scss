@@ -27,14 +27,22 @@
     // make it like a button
   }
 
-  blockquote p {
+  blockquote {
+    background-color: $white;
+    color: $grey-60;
+    font-style: italic;
+    padding: 30px;
 
+    p {
+      margin: 0;
+    }
   }
 
-  blockquote p cite {
-
+  blockquote cite {
+    display: block;
+    margin-top: 15px;
   }
-
+  
   table {
 
     th, td {
