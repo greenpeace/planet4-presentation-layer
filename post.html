@@ -797,22 +797,6 @@
               <p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
               <p>This post tests WordPress&#8217; <a title="Twitter Embeds" href="#" target="_blank">Twitter Embeds</a> feature.</p>
             </div>
-            <h2><a href="#" rel="bookmark">Featured Image (Vertical)</a></h2>
-            <a href="#" aria-hidden="true">
-              <img width="300" height="580" src="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/featured-image-vertical.jpg"  alt="Featured Image (Vertical)" srcset="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/featured-image-vertical.jpg 300w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/featured-image-vertical-155x300.jpg 155w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 60vw, (max-width: 1362px) 62vw, 840px" />	</a>
-            <div >
-              <p>This post should display a <a title="Featured Images" href="http://en.support.wordpress.com/featured-images/#setting-a-featured-image" target="_blank">featured image</a>, if the theme <a title="Post Thumbnails" href="http://codex.wordpress.org/Post_Thumbnails" target="_blank">supports it</a>.</p>
-              <p>Non-square images can provide some unique styling issues.</p>
-              <p>This post tests a vertical featured image.</p>
-            </div>
-            <h2><a href="#" rel="bookmark">Featured Image (Horizontal)</a></h2>
-            <a href="#" aria-hidden="true">
-              <img width="580" height="300" src="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/featured-image-horizontal.jpg"  alt="Featured Image (Horizontal)" srcset="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/featured-image-horizontal.jpg 580w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/featured-image-horizontal-300x155.jpg 300w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 60vw, (max-width: 1362px) 62vw, 840px" />	</a>
-            <div >
-              <p>This post should display a <a title="Featured Images" href="http://en.support.wordpress.com/featured-images/#setting-a-featured-image" target="_blank">featured image</a>, if the theme <a title="Post Thumbnails" href="http://codex.wordpress.org/Post_Thumbnails" target="_blank">supports it</a>.</p>
-              <p>Non-square images can provide some unique styling issues.</p>
-              <p>This post tests a horizontal featured image.</p>
-            </div>
             <h2><a href="#" rel="bookmark">Nested And Mixed Lists</a></h2>
             <div class="entry-content">
               <p>Nested and mixed lists are an interesting beast. It&#8217;s a corner case to make sure that</p>
@@ -1031,7 +1015,7 @@
               <p><strong>Big Tag</strong></p>
               <p>These tests are a <big>big</big> deal, but this tag is no longer supported in HTML5.</p>
               <p><strong>Cite Tag</strong></p>
-              <p>&#8220;Code is poetry.&#8221; &#8212;<cite>Automattic</cite></p>
+              <p>&#8220;Code is poetry.&#8221; <cite>&#8212; Automattic</cite></p>
               <p><strong>Code Tag</strong></p>
               <p>You will learn later on in these tests that <code>word-wrap: break-word;</code> will be your best friend.</p>
               <p><strong>Delete Tag</strong></p>
@@ -1064,45 +1048,32 @@
               <p>This allows you to denote <var>variables</var>.</p>
             </div>
             <h2><a href="#" rel="bookmark">Image Alignment</a></h2>
-            <div >
+
+
+            <div class="entry-content">
               <p>Welcome to image alignment! The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let&#8217;s get started.</p>
               <p>On the topic of alignment, it should be noted that users can choose from the options of <em>None</em>, <em>Left</em>, <em>Right, </em>and <em>Center</em>. In addition, they also get the options of <em>Thumbnail</em>, <em>Medium</em>, <em>Large</em> &amp; <em>Fullsize</em>.</p>
-              <p style="text-align: center"><img  title="Image Alignment 580x300" alt="Image Alignment 580x300" src="http://wptest.iodemo/wp-content/uploads/sites/2/2013/03/image-alignment-580x300.jpg" width="580" height="300" srcset="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-580x300.jpg 580w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-580x300-300x155.jpg 300w" sizes="(max-width: 580px) 85vw, 580px" /></p>
+              <p style="text-align: center"><img class="size-full wp-image-906 aligncenter" title="Image Alignment 580x300" alt="Image Alignment 580x300" src="http://wptest.iodemo/wp-content/uploads/sites/2/2013/03/image-alignment-580x300.jpg" width="580" height="300" srcset="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-580x300.jpg 580w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-580x300-300x155.jpg 300w" sizes="(max-width: 580px) 85vw, 580px" /></p>
               <p>The image above happens to be <em><strong>centered</strong></em>.</p>
-              <p><strong><img  title="Image Alignment 150x150" alt="Image Alignment 150x150" src="http://wptest.iodemo/wp-content/uploads/sites/2/2013/03/image-alignment-150x150.jpg" width="150" height="150" /></strong>The rest of this paragraph is filler for the sake of seeing the text wrap around the 150&#215;150 image, which is <em><strong>left aligned</strong></em>. <strong></strong></p>
-              <p>As you can see the should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we&#8217;ll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it&#8217;s thang. Mission accomplished!</p>
+              <p><strong><img class="size-full alignleft" title="Image Alignment 150x150" alt="Image Alignment 150x150" src="https://upload.wikimedia.org/wikipedia/commons/2/2e/R136_150x150.jpg" width="150" height="150" /></strong>The rest of this paragraph is filler for the sake of seeing the text wrap around the 150&#215;150 image, which is <em><strong>left aligned</strong></em>. <strong></strong>
+              As you can see the should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we&#8217;ll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it&#8217;s thang. Mission accomplished!</p>
               <p>And now for a <em><strong>massively large image</strong></em>. It also has <em><strong>no alignment</strong></em>.</p>
-              <p><img  title="Image Alignment 1200x400" alt="Image Alignment 1200x400" src="http://wptest.iodemo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002.jpg" width="1200" height="400" srcset="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002.jpg 1200w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002-300x100.jpg 300w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002-768x256.jpg 768w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002-1024x341.jpg 1024w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></p>
+              <p><img class="alignnone " title="Image Alignment 1200x400" alt="Image Alignment 1200x400" src="http://wptest.iodemo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002.jpg" width="1200" height="400" srcset="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002.jpg 1200w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002-300x100.jpg 300w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002-768x256.jpg 768w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002-1024x341.jpg 1024w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></p>
               <p>The image above, though 1200px wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.</p>
-              <p><img  title="Image Alignment 300x200" alt="Image Alignment 300x200" src="http://wptest.iodemo/wp-content/uploads/sites/2/2013/03/image-alignment-300x200.jpg" width="300" height="200" /></p>
-              <p>And now we&#8217;re going to shift things to the <em><strong>right align</strong></em>. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there&#8230; Hey guy! Way to rock that right side. I don&#8217;t care what the left aligned image says, you look great. Don&#8217;t let anyone else tell you differently.</p>
+              <p><img class="size-full alignright" title="Image Alignment 300x200" alt="Image Alignment 300x200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Wikipedia_Connection_at_Ohio_History_Center.jpg/300px-Wikipedia_Connection_at_Ohio_History_Center.jpg" width="300" height="200" />
+              And now we&#8217;re going to shift things to the <em><strong>right align</strong></em>. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there&#8230; Hey guy! Way to rock that right side. I don&#8217;t care what the left aligned image says, you look great. Don&#8217;t let anyone else tell you differently.</p>
               <p>In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah&#8230; Just like that. It never felt so good to be right.</p>
               <p>And just when you thought we were done, we&#8217;re going to do them all over again with captions!</p>
-              <figure id="attachment_906" style="width: 580px" >
-                <img  title="Image Alignment 580x300" alt="Image Alignment 580x300" src="http://wptest.iodemo/wp-content/uploads/sites/2/2013/03/image-alignment-580x300.jpg" width="580" height="300" srcset="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-580x300.jpg 580w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-580x300-300x155.jpg 300w" sizes="(max-width: 580px) 85vw, 580px" />
-                <figcaption >Look at 580&#215;300 getting some <a title="Image Settings" href="#">caption</a> love.</figcaption>
+              <figure id="attachment_906" style="width: 580px" class="wp-caption aligncenter">
+                <img class="size-full aligncenter " title="Image Alignment 580x300" alt="Image Alignment 580x300" src="http://wptest.iodemo/wp-content/uploads/sites/2/2013/03/image-alignment-580x300.jpg" width="580" height="300" srcset="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-580x300.jpg 580w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-580x300-300x155.jpg 300w" sizes="(max-width: 580px) 85vw, 580px" />
+                <figcaption class="wp-caption-text">Look at 580&#215;300 getting some <a title="Image Settings" href="http://en.support.wordpress.com/images/image-settings/">caption</a> love.</figcaption>
               </figure>
               <p>The image above happens to be <em><strong>centered</strong></em>. The caption also has a link in it, just to see if it does anything funky.</p>
-              <figure id="attachment_904" style="width: 150px" >
-                <img  title="Image Alignment 150x150" alt="Image Alignment 150x150" src="http://wptest.iodemo/wp-content/uploads/sites/2/2013/03/image-alignment-150x150.jpg" width="150" height="150" />
-                <figcaption >Itty-bitty caption.</figcaption>
-              </figure>
-              <p><strong></strong>The rest of this paragraph is filler for the sake of seeing the text wrap around the 150&#215;150 image, which is <em><strong>left aligned</strong></em>. <strong></strong></p>
-              <p>As you can see the should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we&#8217;ll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it&#8217;s thang. Mission accomplished!</p>
-              <p>And now for a <em><strong>massively large image</strong></em>. It also has <em><strong>no alignment</strong></em>.</p>
-              <figure id="attachment_907" style="width: 1200px" >
-                <img  title="Image Alignment 1200x400" alt="Image Alignment 1200x400" src="http://wptest.iodemo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002.jpg" width="1200" height="400" srcset="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002.jpg 1200w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002-300x100.jpg 300w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002-768x256.jpg 768w, http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002-1024x341.jpg 1024w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" />
-                <figcaption >Massive image comment for your eyeballs.</figcaption>
-              </figure>
-              <p>The image above, though 1200px wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.</p>
-              <figure id="attachment_905" style="width: 300px" >
-                <img  title="Image Alignment 300x200" alt="Image Alignment 300x200" src="http://wptest.iodemo/wp-content/uploads/sites/2/2013/03/image-alignment-300x200.jpg" width="300" height="200" />
-                <figcaption >Feels good to be right all the time.</figcaption>
-              </figure>
-              <p>And now we&#8217;re going to shift things to the <em><strong>right align</strong></em>. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there&#8230; Hey guy! Way to rock that right side. I don&#8217;t care what the left aligned image says, you look great. Don&#8217;t let anyone else tell you differently.</p>
-              <p>In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah&#8230; Just like that. It never felt so good to be right.</p>
               <p>And that&#8217;s a wrap, yo! You survived the tumultuous waters of alignment. Image alignment achievement unlocked!</p>
             </div>
+            <!-- .entry-content -->
+
+
             <h2><a href="#" rel="bookmark">Text Alignment</a></h2>
             <div >
               <h3>Default</h3>
