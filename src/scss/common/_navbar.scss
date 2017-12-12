@@ -89,6 +89,15 @@
     width: 100%;
     z-index: 500;
     opacity: 0.8;
+
+    .admin-bar & {
+      top: 46px;
+
+      @media screen and (min-width: 783px) {
+        top: 32px;
+      }
+    }
+
     .navbar-brand {
       margin: 0;
     }

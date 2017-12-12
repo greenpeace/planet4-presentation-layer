@@ -1,9 +1,16 @@
-// Include the buttons
+/**
+ * Overrides and hacks.
+ */
+@import "partials/custom";
+@import "partials/hacks";
+
+/**
+ * Setup global styles
+ */
 @import "partials/variables";
 @import "partials/functions";
 @import "partials/mixins";
 @import "partials/typography";
-@import "partials/custom";
 @import "partials/font-icon";
 @import "modules/buttons";
 
