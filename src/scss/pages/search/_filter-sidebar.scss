@@ -1,0 +1,260 @@
+.filter-sidebar {
+	position: relative;
+
+	h4 {
+		font-size: rem(28);
+		margin-bottom: 48px;
+		font-weight: bold;
+	}
+
+	.filteritem {
+		a {
+			display: block;
+			border: 1px solid $faded-jade;
+			border-top: 0;
+			border-bottom-width: 4px;
+			padding: 11px 30px;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $header-footer-bg;
+			font-weight: bold;
+			position: relative;
+			font-size: rem(16);
+			margin-bottom: 24px;
+
+			@include small-and-up {
+				font-size: rem(20);
+				margin-bottom: 32px;
+			}
+
+			span {
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				right: 0;
+				top: 0;
+				background-color: transparent;
+				margin: 16px;
+
+				&:before,
+				&:after {
+					content: "";
+					position: absolute;
+					background-color: $black;
+					transition: transform 0.25s ease-out;
+				}
+
+				/* vertical line */
+				&:before {
+					top: 0;
+					left: 50%;
+					width: 4px;
+					height: 100%;
+					margin-left: -2px;
+				}
+
+				/* horizontal line */
+				&:after {
+					top: 50%;
+					left: 0;
+					width: 100%;
+					height: 4px;
+					margin-top: -2px;
+				}
+
+				&:before {
+					transform: rotate(90deg);
+				}
+			}
+
+			&.collapsed {
+				border-bottom-width: 2px;
+				span {
+					&:before {
+						transform: rotate(180deg);
+					}
+
+					&:after {
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+
+		ul {
+			li {
+				height: 42px;
+				display: block;
+			}
+		}
+
+		.custom-control-description {
+			font-size: rem(18);
+			color: $border;
+
+			@include small-and-up {
+				font-size: rem(18);
+			}
+		}
+	}
+
+	.filter-button {
+		position: absolute;
+		top:0;
+		left: 0;
+		margin-top: 29px;
+		z-index: 2;
+
+		@include small-and-up {
+			margin-top: -14px;
+		}
+
+		.btn-filter {
+			font-size: rem(16);
+			height: 40px;
+			width: 130px;
+			line-height: 40px;
+			background: $orange;
+			font-weight: bold;
+			padding: 0 10px;
+			text-transform: uppercase;
+			color: $white;
+
+			&:hover {
+				color: $black;
+			}
+
+			i {
+				font-size: rem(20);
+				vertical-align: middle;
+				margin-right: 20px;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			@include small-and-up {
+				font-size: rem(16);
+				height: 48px;
+				width: 150px;
+				line-height: 48px;
+
+				&:hover {
+					background: $orange-hover;
+					color: $white;
+				}
+			}
+
+
+			&.disabled {
+				background: $grey-40;
+
+				&:hover {
+					color: $white;
+					cursor: not-allowed;
+				}
+			}
+		}
+	}
+
+	.active-filter{
+		h5 {
+			font-size: rem(20);
+			color: $grey-40;
+			margin-bottom: 20px;
+		}
+
+		.activefilter-list {
+			margin-bottom: 20px;
+			border-bottom: 1px solid $grey-20;
+			padding-bottom: 10px;
+
+			.activefilter-tag,
+			.clearall {
+				font-size: rem(18);
+				font-style: normal;
+				color: $blue-tiber;
+				border: 1px solid $blue-tiber;
+				border-radius: 6px;
+				padding: 0 40px 0 20px;
+				display: inline-block;
+				margin-right: 8px;
+				margin-bottom: 16px;
+				line-height: 42px;
+				text-decoration: none;
+				position: relative;
+				min-width: 40%;
+
+				i {
+					font-size: rem(12);
+					position: absolute;
+					right: 0;
+					top: 0;
+					margin: 15px;
+				}
+			}
+
+			.clearall {
+				text-align: center;
+				width: 100%;
+				background: $med-blue;
+				color: $white;
+			}
+		}
+	}
+}
+
+@include medium-and-up {
+	.filter-sidebar {
+		h4 {
+			font-size: rem(26);
+			margin-bottom: 48px;
+		}
+
+		.filteritem {
+			a {
+				border: 1px solid $faded-jade;
+				border-top: 0;
+				border-bottom-width: 4px;
+				padding: 13px 30px;
+				font-size: rem(18);
+				font-weight: bold;
+				margin-bottom: 32px;
+			}
+
+			ul {
+				li {
+					height: 42px;
+
+					.custom-control-description {
+						font-size: rem(16);
+					}
+				}
+			}
+		}
+	}
+}
+
+@include x-large-and-up {
+	.filter-sidebar {
+		h4 {
+			font-size: rem(28);
+		}
+
+		.filteritem {
+			a {
+				padding: 11px 30px;
+				font-size: rem(20);
+			}
+
+			ul {
+				li {
+					.custom-control-description {
+						font-size: rem(18);
+					}
+				}
+			}
+		}
+	}
+}

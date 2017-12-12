@@ -1,0 +1,41 @@
+.suggested-search-terms {
+	margin: 104px 0;
+
+	h3 {
+		font-size: rem(26);
+		margin-bottom: 16px;
+
+		@include small-and-up {
+			font-size: rem(34);
+		}
+
+		@include large-and-up {
+			font-size: rem(36);
+		}
+	}
+
+	.suggested-list {
+		background-color: $grey-20;
+		padding: 32px 17px;
+		margin: 0;
+
+		ul {
+			margin-bottom: 0;
+		}
+
+		li {
+			text-align: center;
+
+			a {
+				color: $search-blue;
+				text-decoration: none;
+				font-size: rem(18);
+				line-height: 2.3;
+
+				@include large-and-up {
+					font-size: rem(22);
+				}
+			}
+		}
+	}
+}
