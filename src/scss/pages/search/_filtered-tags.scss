@@ -24,8 +24,8 @@
 	line-height: 1.7;
 	padding: 0 15px;
 	font-style: normal;
-	color: #002341;
-	border: 1px solid #002341;
+	color: $blue-tiber;
+	border: 1px solid $blue-tiber;
 	border-radius: 6px;
 	display: inline-block;
 	margin-left: 10px;
@@ -40,5 +40,9 @@
 		font-size: rem(12);
 		float: right;
 		line-height: 2;
+
+		@include medium-and-up {
+			line-height: 3.5;
+		}
 	}
 }

@@ -15,70 +15,7 @@ $search-black: $black;
       margin-bottom: 40px;
       padding-left: 50px;
     }
-    .search-bar {
-      width: 100%;
-      background: #EBEEF1;
-      padding: 32px;
-      border-radius: 5px;
-      border: 1px solid #CEDBE7;
-      input {
-        height: 56px;
-        line-height: 56px;
-        font-size: rem(18);
-      }
-      .btn-group {
-        .btn-secondary {
-          background-color: #F2F2F2;
-          border-color: #B3B3B3;
-          color: #4D4D4D;
-          text-transform: capitalize;
-          width: 50%;
-          cursor: pointer;
-          &.active {
-            background-color: $search-blue;
-            border-color: transparent;
-            color: $white;
-            &:before {
-              content:"";
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 8px;
-              height: 8px;
-              border-radius: 5px;
-              background-color: $white;
-              margin-top: 25px;
-              margin-left: 12px;
 
-            }
-            &:hover {
-              z-index: 2;
-              background-color: $search-blue;
-            }
-          }
-          &:hover {
-            z-index: 0;
-            background-color: #CFDDE8;
-          }
-        }
-      }
-      .search-btn,
-      .btn-secondary {
-        font-size: rem(18);
-        height: 56px;
-        line-height: 56px;
-        i {
-          font-size: rem(18);
-          font-weight: normal;
-          line-height: 0;
-          float: left;
-          margin-top: 27px;
-        }
-      }
-      .search-btn {
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-      }
-    }
   }
   .search-result {
     margin-top: 120px;
@@ -246,36 +183,6 @@ $search-black: $black;
         line-height: 28px;
         margin-bottom: 24px;
         padding-left: 20px;
-      }
-      .search-bar {
-        width: 100%;
-        padding: 24px 15px;
-        input {
-          height: 44px;
-          line-height: 44px;
-          font-size: rem(16);
-        }
-        .btn-group {
-          .btn-secondary {
-            width: 50%;
-            margin-bottom: 10px;
-            &.active {
-              &:before {
-                margin-top: 18px;
-                margin-left: 5px;
-              }
-            }
-          }
-        }
-        .search-btn, .btn-secondary {
-          font-size: rem(16);
-          height: 44px;
-          line-height: 44px;
-          i {
-            font-size: rem(18);
-            margin-top: 22px;
-          }
-        }
       }
     }
     .search-result {
@@ -456,36 +363,7 @@ $search-black: $black;
         margin-bottom: 32px;
         padding-left: 20px;
       }
-      .search-bar {
-        width: 100%;
-        padding: 26px 15px;
-        input {
-          height: 44px;
-          line-height: 44px;
-          font-size: rem(16);
-        }
-        .btn-group {
-          .btn-secondary {
-            width: 50%;
-            &.active {
-              &:before {
-                margin-top: 18px;
-                margin-left: 5px;
-              }
-            }
-          }
-        }
-        .search-btn,
-        .btn-secondary {
-          font-size: rem(16);
-          height: 44px;
-          line-height: 44px;
-          i {
-            font-size: rem(16);
-            margin-top: 22px;
-          }
-        }
-      }
+
     }    
     .search-result {
       margin-top: 0;
@@ -558,35 +436,7 @@ $search-black: $black;
         margin-bottom: 45px;
         padding-left: 30px;
       }
-      .search-bar {
-        width: 100%;
-        padding: 32px;
-        input {
-          height: 56px;
-          line-height: 56px;
-          font-size: rem(18);
-        }
-        .btn-group {
-          .btn-secondary {
-            &.active {
-              &:before {
-                margin-top: 25px;
-                margin-left: 12px;
-              }
-            }
-          }
-        }
-        .search-btn,
-        .btn-secondary {
-          font-size: rem(18);
-          height: 56px;
-          line-height: 56px;
-          i {
-            font-size: rem(18);
-            margin-top: 27px;
-          }
-        }
-      }
+
     }
     .result-statement {
       font-size: rem(56);
