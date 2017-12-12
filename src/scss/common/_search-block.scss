@@ -5,8 +5,10 @@ $search-black: $black;
 .search-block {
   padding-top: 64px;
   background: #ECF0F6;
+
   .without-search-result {
     margin-top: 120px;
+
     .search-help-info {
       font-size: rem(22);
       font-family: $lora;
@@ -15,42 +17,24 @@ $search-black: $black;
       margin-bottom: 40px;
       padding-left: 50px;
     }
-
   }
+
   .search-result {
     margin-top: 120px;
-
   }
+
   .result-statement {
     font-size: rem(66);
     margin-bottom: 40px;
   }
 
+  .search-result-list {
+    height: 208px;
+  }
+
   .search-filter-results {
     margin-top: 104px;
-    .result-area {
-      .sort-filter {
-        label {
-          font-size: rem(28);
-          font-weight: bold;
-        }
-        select {
-          height: 44px;
-          width: 270px;
-          font-size: rem(22);
-          padding: 0 10px;
-          border-radius: 6px;
-          border-color: #6E98BB;
-          background: #F1F4F8;
-        }
-        div {
-          margin-top: -7px;
-        }
-      }
-      .search-result-list {
-        height: 208px;
-      }
-    }
+
   }
 }
 
@@ -59,8 +43,10 @@ $search-black: $black;
 @include mobile-only {
   .search-block {
     padding-top: 56px;
+
     .without-search-result {
       margin-top: 48px;
+
       .search-help-info {
         font-size: rem(16);
         line-height: 28px;
@@ -68,9 +54,11 @@ $search-black: $black;
         padding-left: 20px;
       }
     }
+
     .search-result {
       margin-top: 0;
-    }  
+    }
+
     .result-statement {
       font-size: rem(28);
       margin-bottom: 8px;
@@ -79,29 +67,8 @@ $search-black: $black;
     .search-filter-results {
       margin-top: 48px;
 
-      .result-area {
-        .sort-filter {
-          width: 50%;
-          float: right;
-          label {
-            font-size: rem(18);
-            font-weight: bold;
-            margin-right: 90px;
-          }
-          select {
-            height: 40px;
-            width: 151px;
-            font-size: rem(16);
-            padding: 0 10px;
-          }
-          div {
-            margin-top: -7px;
-            text-align: right;
-          }
-        }
-        .search-result-list {
-          height: 150px;
-        }
+      .search-result-list {
+        height: 150px;
       }
     }  
   }
@@ -111,20 +78,22 @@ $search-black: $black;
 @include medium-and-up {
   .search-block {
     padding-top: 64px;
+
     .without-search-result {
       margin-top: 0;
+
       .search-help-info {
         font-size: rem(18);
         line-height: 33px;
         margin-bottom: 32px;
         padding-left: 20px;
       }
+    }
 
-    }    
     .search-result {
       margin-top: 0;
-
     }
+
     .result-statement {
       font-size: rem(48);
       margin-bottom: 24px;
@@ -133,27 +102,10 @@ $search-black: $black;
     .search-filter-results {
       margin-top: 104px;
 
-      .result-area {
-        .sort-filter {
-          label {
-            font-size: rem(18);
-            font-weight: bold;
-          }
-          select {
-            height: 40px;
-            width: 210px;
-            font-size: rem(16);
-            padding: 0 10px;
-          }
-          div {
-            margin-top: -7px;
-          }
-        }
-        .search-result-list {
-          height: 120px;
-        }
+      .search-result-list {
+        height: 120px;
       }
-    }  
+    }
   }
 }
 
@@ -161,14 +113,15 @@ $search-black: $black;
   .search-block {
     .without-search-result {
       margin-top: 94px;
+
       .search-help-info {
         font-size: rem(20);
         line-height: 34px;
         margin-bottom: 45px;
         padding-left: 30px;
       }
-
     }
+
     .result-statement {
       font-size: rem(56);
       margin-bottom: 30px;
@@ -176,17 +129,6 @@ $search-black: $black;
 
     .search-filter-results {
       .result-area {
-        .sort-filter {
-          label {
-            font-size: rem(26);
-          }
-          select {
-            height: 44px;
-            width: 224px;
-            font-size: rem(20);
-          }
-
-        }
         .search-result-list {
           height: 235px;
         }
@@ -220,15 +162,7 @@ $search-black: $black;
     .search-filter-results {
 
       .result-area {
-        .sort-filter {
-          label {
-            font-size: rem(28);
-          }
-          select {
-            width: 270px;
-            font-size: rem(22);
-          }
-        }
+
         .search-result-list {
           height: 208px;
         }
