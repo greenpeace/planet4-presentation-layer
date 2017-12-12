@@ -38,7 +38,6 @@
 @import "common/video-block";
 @import "common/campaign-thumbnail-block";
 @import "common/content-three-column";
-@import "common/search-block";
 @import "common/cookie-block";
 @import "common/campaign-covers-4col-wrap";
 @import "common/skewed-overlay";
@@ -65,6 +64,7 @@
 @import "pages/issue";
 
 // Search page.
+@import "pages/search/search";
 @import "pages/search/filter-modal";
 @import "pages/search/filter-sidebar";
 @import "pages/search/filtered-tags";

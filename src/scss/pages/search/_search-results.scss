@@ -1,3 +1,19 @@
+.search-result-list {
+	height: 150px;
+
+	@include small-and-up {
+		height: 120px;
+	}
+
+	@include large-and-up {
+		height: 235px;
+	}
+
+	@include x-large-and-up {
+		height: 208px;
+	}
+}
+
 .multiple-search-result {
 	height: 100%;
 	padding-top: 100px;
@@ -154,7 +170,7 @@
 .search-result-item-content {
 	display: none;
 	font-size: rem(16);
-	color: $search-black;
+	color: $black;
 	line-height: 30px;
 	margin-bottom: 0;
 
