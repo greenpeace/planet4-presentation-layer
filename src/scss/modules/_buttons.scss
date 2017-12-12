@@ -20,8 +20,9 @@ Stylesheet: Button Styles
   line-height: 3;
   padding: 0 30px;
   appearance: none;
-  // `all` here is not the most performant, but we really do want to modify all of the color/opacity attributes.
-  transition: all 150ms linear;
+  transition-property: color, background-color, border-color;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
 
   &:hover,
   &:focus {
@@ -60,10 +61,12 @@ Stylesheet: Button Styles
   &:hover,
   &:focus {
     background-color: $orange-hover;
+    border-color: $orange-hover;
   }
 
   &:active {
     background-color: $dark-copper;
+    border-color: $dark-copper;
   }
 }
 
@@ -83,6 +86,7 @@ Stylesheet: Button Styles
 
   &:active {
     background-color: $x-dark-blue;
+    border-color: $x-dark-blue;
   }
 }
 
