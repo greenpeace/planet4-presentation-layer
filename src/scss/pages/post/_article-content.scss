@@ -17,14 +17,32 @@
     }
   }
 
-  .entry-summary {
-    // for excerpt
-    // increase size to halfway between header and p size
-    // lighten text
+  .more-link {
+    @extend .btn;
+
   }
 
-  .more-link {
-    // make it like a button
+  div.entry-summary {
+      @extend .white-text;
+  }
+
+
+  dt {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding: .25em;
+    clear: left;
+  }
+  dd {
+    float: left;
+    width: 80%;
+    padding: .25em 0;
+  }
+  dl:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
   blockquote {
@@ -42,7 +60,8 @@
     display: block;
     margin-top: 15px;
   }
-  
+
+
   table {
 
     th, td {
