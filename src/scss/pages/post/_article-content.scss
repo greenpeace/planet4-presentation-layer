@@ -16,6 +16,46 @@
       margin: 30px 0;
     }
   }
+
+  .entry-summary {
+    // for excerpt
+    // increase size to halfway between header and p size
+    // lighten text
+  }
+
+  .more-link {
+    // make it like a button
+  }
+
+  blockquote p {
+
+  }
+
+  blockquote p cite {
+
+  }
+
+  table {
+
+    th, td {
+      border: 1px solid $green-80;
+      padding: 6px;
+    }
+
+    th {
+      background-color: $grey-40;
+      color: $white;
+    }
+
+    tr.odd {
+      background-color: $white;
+    }
+
+    tr.even {
+      background-color: $grey-20;
+    }
+
+  }
 }
 
 .post-content-lead {
