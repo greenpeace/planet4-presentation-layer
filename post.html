@@ -791,13 +791,10 @@
             </p>
             <h2><a href="#" rel="bookmark">Twitter Embeds</a></h2>
             <div >
-              <blockquote  data-width="550">
+              <blockquote class="twitter-tweet" data-width="550">
                 <p lang="en" dir="ltr">Doing what you “know” locks you in a prison of the past. Uncertainty is the path to an innovative future.</p>
-                <p>&mdash; Carl Smith (@carlsmith) <a href="#">October 16, 2012</a></p>
-              </blockquote>
-              <p>
-                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </p>
+                <p>&mdash; Carl Smith (@carlsmith) <a href="https://twitter.com/carlsmith/status/258214236126322689">October 16, 2012</a></p></blockquote>
+              <p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
               <p>This post tests WordPress&#8217; <a title="Twitter Embeds" href="#" target="_blank">Twitter Embeds</a> feature.</p>
             </div>
             <h2><a href="#" rel="bookmark">Featured Image (Vertical)</a></h2>
@@ -817,7 +814,7 @@
               <p>This post tests a horizontal featured image.</p>
             </div>
             <h2><a href="#" rel="bookmark">Nested And Mixed Lists</a></h2>
-            <div >
+            <div class="entry-content">
               <p>Nested and mixed lists are an interesting beast. It&#8217;s a corner case to make sure that</p>
               <ul>
                 <li>Lists within lists do not break the ordered list numbering order</li>
@@ -901,19 +898,18 @@
               </ul>
             </div>
             <h2><a href="#" rel="bookmark">More Tag</a></h2>
-            <div >
-              <p>This content is before the <a title="The More Tag" href="#" target="_blank">more tag</a>.</p>
-              <p>Right after this sentence should be a &#8220;continue reading&#8221; button of some sort.</p>
-              <p> <a href="http://wptest.io/demo/2013/03/15/more-tag/#more-996" >Continue reading<span > &#8220;More Tag&#8221;</span></a></p>
+              <div class="entry-content">
+                <p>This content is before the <a title="The More Tag" href="http://en.support.wordpress.com/splitting-content/more-tag/" target="_blank">more tag</a>.</p>
+                <p>Right after this sentence should be a &#8220;continue reading&#8221; button of some sort.</p>
+                <p> <a href="http://wptest.io/demo/2013/03/15/more-tag/#more-996" class="more-link">Continue reading<span class="screen-reader-text"> &#8220;More Tag&#8221;</span></a></p>
             </div>
             <h2><a href="#" rel="bookmark">Excerpt</a></h2>
-            <div >
+            <div class="entry-summary">
               <p>This is a post excerpt.</p>
-            </div>
-            <!-- .entry-summary -->
-            <div >
+            </div><!-- .entry-summary -->
+            <div class="entry-content">
               <p>This is the post content.</p>
-            </div>
+            </div><!-- .entry-content -->
             <h2><a href="#" rel="bookmark">Markup And Formatting</a></h2>
             <div >
               <h2>Headings</h2>
@@ -937,26 +933,26 @@
                 <tbody>
                 <tr>
                   <th>Employee</th>
-                  <th >Salary</th>
+                  <th class="views">Salary</th>
                   <th></th>
                 </tr>
-                <tr >
-                  <td><a href="#">John Saddington</a></td>
+                <tr class="odd">
+                  <td><a href="http://john.do/">John Saddington</a></td>
                   <td>$1</td>
                   <td>Because that&#8217;s all Steve Job&#8217; needed for a salary.</td>
                 </tr>
-                <tr >
-                  <td><a href="#">Tom McFarlin</a></td>
+                <tr class="even">
+                  <td><a href="http://tommcfarlin.com/">Tom McFarlin</a></td>
                   <td>$100K</td>
                   <td>For all the blogging he does.</td>
                 </tr>
-                <tr >
-                  <td><a href="#">Jared Erickson</a></td>
+                <tr class="odd">
+                  <td><a href="http://jarederickson.com/">Jared Erickson</a></td>
                   <td>$100M</td>
                   <td>Pictures are worth a thousand words, right? So Tom x 1,000.</td>
                 </tr>
-                <tr >
-                  <td><a href="#">Chris Ames</a></td>
+                <tr class="even">
+                  <td><a href="http://chrisam.es/">Chris Ames</a></td>
                   <td>$100B</td>
                   <td>With hair like that?! Enough said&#8230;</td>
                 </tr>
@@ -1461,8 +1457,8 @@ word-wrap: break-word;</pre>
             </div>
           </article>
           </div>
-        </div> 
-      </div>  
+        </div>
+      </div>
     </div>
   <!-- Post Page Block End -->
 
