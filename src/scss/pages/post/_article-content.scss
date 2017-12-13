@@ -17,7 +17,25 @@
     }
   }
 
+  .alignleft {
+    float: left;
+    margin: 10px 10px 0 0;
 
+  }
+
+  .alignright {
+    float: right;
+    margin: 0 0 0 10px;
+  }
+
+  .aligncenter {
+    margin: auto;
+  }
+
+  .alignnone {
+    max-width: 100%;
+    height: auto;
+  }
 
   blockquote {
     background-color: $white;
@@ -131,6 +149,11 @@
 
   .aligncenter {
     margin: auto;
+  }
+
+  .alignnone .size-full {
+    max-width: 100%;
+    height: auto;
   }
 
 }
