@@ -156,8 +156,7 @@
   }  
 }
 
-// Medium devices (tablets, 768px and up)
-@include medium-large-and-up {
+@include large-and-up {
   .split-carousel-wrap {
     h1 {
       font-size:  rem(34);
@@ -218,7 +217,6 @@
   } 
 }
 
-// Large devices (desktops, 992px and up)
 @include large-and-up {
   .split-carousel-wrap {
     h1 {
@@ -289,8 +287,7 @@
   }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@include large-large-and-up {
+@include x-large-and-up {
   .split-carousel-wrap {
     h1 {
       font-size:  rem(38);

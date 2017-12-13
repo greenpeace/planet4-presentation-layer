@@ -30,21 +30,12 @@ $cookie-blue: #094464;
     height: 32px;
     line-height: 32px;
     font-size: rem(15);
-    font-weight: 500;
-    color: $cookie-blue;
-    background: #E4F2F9;
-    border: 1px solid #004766;
     width: 100%;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    &:hover {
-      cursor: pointer;
-      background: #004766;
-      color: $white;
-    }
+    background-color: transparentize($white, .2);
   }
 }
 
-// Small devices (landscape phones, 576px and up)
 @include mobile-only {
   .cookie-block {
     max-height: 120px;
@@ -68,10 +59,8 @@ $cookie-blue: #094464;
       font-size: rem(14);
     }  
   }
-
 }
 
-// Medium devices (tablets, 768px and up)
 @include medium-and-up {
   .cookie-block {
     max-height: 56px;
@@ -87,8 +76,7 @@ $cookie-blue: #094464;
   }
 }
 
-// Large devices (desktops, 992px and up)
-@include medium-large-and-up {
+@include large-and-up {
   .cookie-block {
     max-height: 50px;
     background: $cookie-bkg url("images/cookie-right-gradient.png") no-repeat right;
@@ -104,8 +92,7 @@ $cookie-blue: #094464;
 }
 
 
-// Extra large devices (large desktops, 1200px and up)
-@include large-large-and-up {
+@include x-large-and-up {
   .cookie-block {
     max-height: 50px;
     background: $cookie-bkg url("images/cookie-right-gradient.png") no-repeat right;

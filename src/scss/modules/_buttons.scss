@@ -5,263 +5,132 @@ Author: Ashish Singh(ashish.singh@greepeace.org)
 Stylesheet: Button Styles
 ******************************************************************/
 
-%btn {
+.btn {
   display: inline-block;
   position: relative;
   font-family: $roboto;
+  text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   color: $white;
-  font-size: 0.9em;
-  font-size: rem(34);
-  line-height: 34px;
-  font-weight: normal;
-  padding: 0 24px;
+  font-weight: 500;
   border-radius: 4px;
-  border: 0;
+  border: 1px solid transparent;
   cursor: pointer;
-  @include transition(background-color 0.14s ease-in-out);
-
-  // hovering on the btn
-  &:hover, &:focus {
-    color: $white;
-    text-decoration: none;
-    outline: none;
-  } // end hover
-
-  // clicking on the button
-  &:active {
-    top: 1px; // adds a tiny hop to the click
-  } // end active
-
-} // end .button
-
-.btn-small {
-  height: 32px;
-}
-
-/*
- * Primary Call to action button
- */
-.primary-cta-btn {
-  @extend %btn; // here we load the btn defaults
-  background-color: $blue;
+  line-height: 3;
+  padding: 0 30px;
+  appearance: none;
+  transition-property: color, background-color, border-color;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
 
   &:hover,
   &:focus {
-    background-color: darken($blue, 4%);
-  } // end hover
-
-  &:active {
-    background-color: darken($blue, 5%);
-  } // end active
-
-} // end primary-cta-button
-
-.btn-primary {
-  background: $primary-button;
-  border-color: $primary-button;
-  color: $white;
-  text-transform: uppercase;
-}
-
-.btn-primary:hover {
-  background: $primary-button-hover;
-  border-color: $primary-button-hover;
-}
-
-.btn-secondary {
-  background: $secondary-button;
-  border-color: $secondary-button;
-  color: $black;
-  text-transform: uppercase;
-}
-
-.btn-secondary:hover {
-  background: $secondary-button-hover;
-  border-color: $secondary-button-hover;
-}
-
-.yellow-button {
-  border-color: $yellow-button;
-  color: $yellow-button-color;
-  background: $yellow-button;
-  text-transform: uppercase;
-}
-.yellow-button:hover {
-  background-color: $yellow-button-hover;
-  border-color: $yellow-button;
-  color: $yellow-button-color;
-}
-
-.btn-green {
-  background: #65cb00;
-  color: $white;
-}
-.btn-blue {
-  background: $blue-btn;
-  border: solid 1px $blue-btn-border;
-  color: $blue-btn-border;
-}
-.btn-blue:hover {
-  background-color: $blue-btn-border;
-  color: $white;
-}
-
-.styled-select {
-  select {
-    background: transparent;
-    padding: 5px;
-    font-size: rem(16);
     color: $white;
-    line-height: 1;
-    border: 0;
-    border-radius: 0;
-    height: 34px;
-    -webkit-appearance: none;
-    width: 240px;
-    option {
-      background: transparent;
-      color: $black;
-    }
-    &:focus {
-      outline: none;
-    }
-  }
-}
-
-.secondary-button {
-  background: $secondary-button-bg;
-  color: $med-blue;
-  border: solid 1px $med-blue;
-  text-transform: uppercase;
-  font-weight: 500;
-  &:hover {
-    background: $med-blue;
-    color: $white;
-  }
-  &:focus {
+    text-decoration: none;
     outline: none;
-    box-shadow: none;
   }
-  &:active {
-    background: #3B5C74;
-  }
-}
-.btn-transparent {
-  background: transparent;
-  color: $med-blue;
-  border: solid 1px $med-blue;
-  text-transform: uppercase;
-  font-weight: 500;
-  &:hover {
-    background: $med-blue;
-    color: $white;
-  }
-  &:focus {
-    outline: none;
-    box-shadow: none;
-  }
-  &:active {
-    background: #3B5C74;
+
+  &:disabled {
+    opacity: .5;
   }
 }
-.btn-normal {
-  height: 40px;
-  line-height: 40px;
+
+.btn-small {
   font-size: rem(14);
-  font-weight: 500;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-family: $roboto;
+  line-height: 2.8;
 }
-.btn-light-blue {
-  background: rgba(255,255,255,0.2);
-  color: $blue-top-nav;
-  border: 1px solid $blue-top-nav;
-  &:hover {
-    color: $white;
-    background: $blue-top-nav;
+
+.btn-medium {
+  font-size: rem(16);
+  line-height: 3;
+}
+
+.btn-large {
+  font-size: rem(18);
+  line-height: 3.1;
+}
+
+/**
+ * Primary, orange button.
+ */
+.btn-primary {
+  background-color: $orange;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+
+  &:hover,
+  &:focus {
+    background-color: $orange-hover;
+    border-color: $orange-hover;
+  }
+
+  &:active {
+    background-color: $dark-copper;
+    border-color: $dark-copper;
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@include mobile-only {
-  .btn {
-    padding: 0 15px;
-    &.btn-small {
-      font-size: rem(14);
-      height: 40px;
-      line-height: 40px;
-    }
+/**
+ * Secondary, semi-transparent button. Most buttons are this button.
+ */
+.btn-secondary {
+  background-color: transparentize($white, .7);
+  border-color: $dark-blue;
+  color: $dark-blue;
+  box-shadow: none;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-blue;
+  }
+
+  &:active {
+    background-color: $x-dark-blue;
+    border-color: $x-dark-blue;
   }
 }
 
-@include small-and-up {
-  .btn {
-    padding: 0 15px;
-    &.btn-small {
-      font-size: rem(14);
-      height: 40px;
-      line-height: 40px;
-    }
+/**
+ * Similar to the primary button, but transparent by default.
+ */
+.btn-action {
+  background-color: transparentize($white, .8);
+  border-color: $white;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+
+  &:hover,
+  &:focus {
+    background-color: $orange;
+    border-color: $orange;
   }
-  .btn-normal {
-    height: 40px;
-    line-height: 40px;
-    font-size: rem(14);
+
+  &:active {
+    background-color: $orange-hover;
+    border-color: $orange-hover;
   }
 }
 
-// Medium devices (tablets, 768px and up)
-@include medium-and-up {
-  .btn {
-    padding: 0 15px;
-    &.btn-medium {
-      font-size: rem(16);
-      height: 48px;
-      line-height: 48px;
-    }
-  }
-  .btn-normal {
-    height: 48px;
-    line-height: 48px;
-    font-size: rem(16);
-  }
-}
+/**
+ * Donate button used in the navbar.
+ */
+.btn-donate {
+  background-color: $aquamarine;
+  color: $grey;
+  font-size: rem(16);
+  line-height: 2.25;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
 
-// Large devices (desktops, 992px and up)
-@include medium-large-and-up {
-  .btn {
-    padding: 0 15px;
-    &.btn-medium {
-      font-size: rem(18);
-      height: 52px;
-      line-height: 52px;
-    }
+  &:hover,
+  &:focus {
+    background-color: $spray;
+    color: $black;
   }
-  .btn-normal {
-    height: 52px;
-    line-height: 52px;
-    font-size: rem(18);
-  }
-}
 
-// Extra large devices (large desktops, 1200px and up)
-@include large-large-and-up {
-  .btn {
-    padding: 0 15px;
-    &.btn-medium {
-      font-size: rem(18);
-      height: 56px;
-      line-height: 56px;
-    }
-    &.secondary-button {
-      padding: 0 30px;
-    }
+  &:active {
+    background-color: $java-dark;
   }
-  .btn-normal {
-    height: 52px;
-    line-height: 52px;
+
+  @include large-and-up {
     font-size: rem(18);
   }
 }

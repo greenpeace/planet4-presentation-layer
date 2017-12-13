@@ -31,27 +31,13 @@ Stylesheet: Mixins Stylesheet
 }
 
 // Large Tablet & Up (greater than 992px)
-@mixin medium-large-and-up {
-  @media (min-width: #{$medium-large-width}) {
-    @content;
-  }
-}
-
-// Small Desktop & Up (greater than 1024px)
 @mixin large-and-up {
   @media (min-width: #{$large-width}) {
     @content;
   }
 }
 
-// Medium Tablet & Up (greater than 1200px)
-@mixin large-large-and-up {
-  @media (min-width: #{$large-large-width}) {
-    @content;
-  }
-}
-
-// Large Desktop & Up (greater than 1438px)
+// Large Desktop & Up (greater than 1480px)
 @mixin x-large-and-up {
   @media (min-width: #{$extra-large-width}) {
     @content;
@@ -125,7 +111,7 @@ TRANSITION
   }
 }
 
-@mixin background-before-opacity($color) {
+@mixin background-before-opacity($color, $opacity: 0.6) {
   &:before {
     content: "";
     background: ($color);
@@ -134,7 +120,7 @@ TRANSITION
     top: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.6;
+    opacity: $opacity;
   }
 }
 

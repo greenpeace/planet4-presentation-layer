@@ -467,7 +467,6 @@ $search-black: #1A1A1A;
   }
 }
 
-// Small devices (landscape phones, 576px and up)
 @include mobile-only {
   .search-block {
     padding-top: 56px;
@@ -792,7 +791,6 @@ $search-black: #1A1A1A;
   }
 }
 
-// Medium devices (tablets, 768px and up)
 @include medium-and-up {
   .search-block {
     padding-top: 64px;
@@ -948,8 +946,7 @@ $search-black: #1A1A1A;
   }
 }
 
-// Large devices (desktops, 992px and up)
-@include medium-large-and-up {
+@include large-and-up {
   .search-block {
     padding-top: 64px;
     .without-search-result {
@@ -1080,8 +1077,7 @@ $search-black: #1A1A1A;
   }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@include large-large-and-up {
+@include x-large-and-up {
   .search-block {
     padding-top: 64px;
     .without-search-result {
@@ -1105,7 +1101,8 @@ $search-black: #1A1A1A;
             width: 50%;
           }
         }
-        .search-btn, .btn-secondary {
+        .search-btn,
+        .btn-secondary {
           font-size: rem(18);
           height: 56px;
           line-height: 56px;

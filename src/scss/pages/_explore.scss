@@ -1,0 +1,58 @@
+.page-explore-page {
+
+	#header.top-navigation {
+		background: $black;
+	}
+
+	.page-header-subtitle {
+		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.85);
+	}
+
+	.page-header-content {
+		margin-bottom: 3rem;
+		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.85);
+		
+		@include large-and-up {
+			margin-bottom: 5rem;
+		}
+	}
+
+	.page-header-btn {
+		margin-bottom: 0;
+		
+		@include medium-and-up {
+			margin-bottom: 1rem;
+		}
+		@include large-and-up {
+			margin-bottom: 4rem;
+		}
+	}
+
+	.main-content-intro {
+		color: $black;
+
+		p {
+			font-size: rem(17);
+			margin-bottom: 3rem;
+
+			@include small-and-up {
+				font-size: rem(19);
+			}
+
+			@include large-and-up {
+				font-size: rem(20);
+			}
+
+			@include x-large-and-up {
+				font-size: rem(22);
+			}
+		}
+		@include small-and-up {
+			color: $white;
+		}
+	}
+}
+
+.main-content-intro-title {
+	margin-bottom: 1.5rem;
+}

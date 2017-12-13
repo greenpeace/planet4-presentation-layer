@@ -25,6 +25,7 @@
 	font-size: rem(26);
 	font-weight: 500;
 	color: $black;
+	margin-bottom: 2rem;
 
 	@include medium-and-up {
 		font-size: rem(34);
