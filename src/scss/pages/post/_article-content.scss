@@ -84,6 +84,55 @@
     word-wrap: break-word;
   }
 
+
+
+  .gallery {
+    margin: 0 auto 18px;
+
+    .gallery-icon img {
+      width: 100%;
+      height: auto;
+    }
+
+    .gallery-item {
+      float: left;
+      margin-top: 0;
+      text-align: center;
+      width: 25%;
+      position: relative;
+
+      .gallery-caption {
+        display: none;
+      }
+    }
+
+    img {
+      padding: 8px;
+    }
+
+    .gallery img:hover {
+
+    }
+
+    .gallery-columns-2 .attachment-medium {
+      max-width: 92%;
+      height: auto;
+    }
+
+    .gallery-columns-4 .attachment-thumbnail {
+      max-width: 84%;
+      height: auto;
+    }
+
+    dl, dt {
+      margin: 0;
+    }
+    br+br {
+      display: none;
+    }
+
+  }
+
   .more-link {
     @extend .btn;
     @extend .btn-secondary;
@@ -136,25 +185,6 @@
     }
   }
 
-  .alignleft {
-    float: left;
-    margin: 10px 10px 0 0;
-
-  }
-
-  .alignright {
-    float: right;
-    margin: 0 0 0 10px;
-  }
-
-  .aligncenter {
-    margin: auto;
-  }
-
-  .alignnone .size-full {
-    max-width: 100%;
-    height: auto;
-  }
 
 }
 
