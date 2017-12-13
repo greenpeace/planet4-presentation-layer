@@ -1,14 +1,6 @@
 .search {
-	@include linear-gradient(to bottom, transparentize($green-20, .75) 0%, $white 100%);
+	@include linear-gradient(to bottom, transparentize($green-20, .25) 0%, transparentize($grey-10, .5) 100%);
 }
-
-/**
- * Search colors:
- *
- * dark-blue: $blue-tiber
- * lighter-blue $faded-jade
- * lightest $blue-elm
- */
 
 .search-block {
 	padding-top: 56px;

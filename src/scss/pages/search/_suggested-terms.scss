@@ -1,5 +1,5 @@
 .suggested-search-terms {
-	margin: 104px 0;
+	margin: 50px 0 104px;
 
 	h3 {
 		font-size: rem(26);
@@ -16,7 +16,7 @@
 }
 
 .suggested-list {
-	background-color: transparentize($white, .8);
+	background-color: transparentize($white, .6);
 	padding: 32px 17px;
 	margin: 0;
 
@@ -27,13 +27,25 @@
 	li {
 		text-align: center;
 
+		@include medium-and-up {
+			text-align: left;
+		}
+
 		a {
 			color: $blue-elm;
 			text-decoration: none;
 			font-size: rem(18);
 			line-height: 2.3;
 
+			@include medium-and-up {
+				font-size: rem(22);
+			}
+
 			@include large-and-up {
+				font-size: rem(18);
+			}
+
+			@include x-large-and-up {
 				font-size: rem(22);
 			}
 		}
