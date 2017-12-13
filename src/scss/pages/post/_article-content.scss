@@ -17,34 +17,7 @@
     }
   }
 
-  .more-link {
-    @extend .btn;
-    @extend .btn-secondary;
 
-  }
-
-  div.entry-summary {
-    @extend .white-text;
-  }
-
-
-  dt {
-    float: left;
-    width: 20%;
-    text-align: right;
-    padding: .25em;
-    clear: left;
-  }
-  dd {
-    float: left;
-    width: 80%;
-    padding: .25em 0;
-  }
-  dl:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
   blockquote {
     background-color: $white;
@@ -64,6 +37,60 @@
 
   code {
     word-wrap: break-word;
+  }
+
+  div.entry-summary {
+    @extend .white-text;
+  }
+
+  dt {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding: .25em;
+    clear: left;
+  }
+  dd {
+    float: left;
+    width: 80%;
+    padding: .25em 0;
+  }
+  dl:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .entry-title {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .more-link {
+    @extend .btn;
+    @extend .btn-secondary;
+  }
+
+  .page-links {
+
+    a {
+      @extend .btn;
+      @extend .btn-secondary;
+      @extend .btn-small;
+    }
+
+
+    /** Hides the word "Page" but leaves it available to screen readers */
+    span.screen-reader-text {
+      clip: rect(1px, 1px, 1px, 1px);
+      height: 1px;
+      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      position: absolute !important;
+      width: 1px;
+      word-wrap: normal !important;
+    }
   }
 
   q {
