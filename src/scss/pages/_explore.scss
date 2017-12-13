@@ -12,7 +12,7 @@
 		margin-bottom: 3rem;
 		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.85);
 		
-		@include medium-large-and-up {
+		@include large-and-up {
 			margin-bottom: 5rem;
 		}
 	}
@@ -23,7 +23,7 @@
 		@include medium-and-up {
 			margin-bottom: 1rem;
 		}
-		@include medium-large-and-up {
+		@include large-and-up {
 			margin-bottom: 4rem;
 		}
 	}
@@ -39,11 +39,11 @@
 				font-size: rem(19);
 			}
 
-			@include medium-large-and-up {
+			@include large-and-up {
 				font-size: rem(20);
 			}
 
-			@include large-large-and-up {
+			@include x-large-and-up {
 				font-size: rem(22);
 			}
 		}

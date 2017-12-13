@@ -349,7 +349,6 @@
   }
 }
 
-// Small devices (landscape phones, 576px and up)
 @include small-and-up {
   .hero-img-wrap {
     background-image: url("images/clouds_576.png");
@@ -420,7 +419,6 @@
   }
 }
 
-// Medium devices (tablets, 768px and up)
 @include medium-and-up {
   .can-do-steps {
     margin-bottom: 50px;
@@ -472,8 +470,7 @@
   }
 }
 
-// Large devices (desktops, 992px and up)
-@include medium-large-and-up {
+@include large-and-up {
   .hero-img-wrap {
     background-image: url("images/clouds_1140.png");
     background-repeat: no-repeat;
@@ -567,8 +564,7 @@
   }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@include large-large-and-up {
+@include x-large-and-up {
   .page-content-wrap {
     padding-top: 200px;
     .about-info {

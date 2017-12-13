@@ -3,6 +3,10 @@
 	
 	h2 {
 		padding-left: 15px;
+		
+		@include small-and-up {
+			padding-left: 0;
+		}
 	}
 
 	.video-section {
@@ -15,11 +19,11 @@
 			height: 400px;
 		}
 	
-		@include medium-large-and-up {
+		@include large-and-up {
 			height: 530px;
 		}
 
-		@include large-large-and-up {
+		@include x-large-and-up {
 			height: 630px;
 		}
 	}
