@@ -98,6 +98,19 @@
 		}
 	}
 
+	.btn-secondary {
+		color: $black;
+		border-color: $black;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $white;
+			background-color: $grey-80;
+			border-color: $grey-80;
+		}
+	}
+
 	.more-btn {
 		margin-top: 25px;
 
@@ -110,14 +123,6 @@
 .search-result-item-body {
 	.btn-secondary {
 		width: 100%;
-
-		&:hover,
-		&:focus,
-		&:active {
-			color: $white;
-			background-color: $grey-80;
-			border-color: $grey-80;
-		}
 
 		@include medium-and-up {
 			width: auto;
