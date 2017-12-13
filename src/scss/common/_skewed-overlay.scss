@@ -1,6 +1,16 @@
 .skewed-overlay {
 	pointer-events: none;
 	height: 100%;
+
+	/* To accomodate very long content. */
+	@include mobile-only {
+		max-height: 5000px;
+	}
+
+	@include medium-and-up {
+		max-height: 10000px;
+	}
+
 	width: 100%;
 	position: absolute;
 	z-index: 1;
