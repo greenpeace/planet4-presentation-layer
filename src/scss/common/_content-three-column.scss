@@ -9,26 +9,7 @@
 		
 		.three-column-info { 
 
-			margin-bottom: 0; 
-
-			h2 { 
-				font-size: rem(26);
-				color: $black;
-				margin-bottom: 22px; 
-
-				@include medium-and-up {
-					font-size: rem(34);
-					margin-bottom: 50px; 
-				}
-
-				@include medium-large-and-up {
-					font-size: rem(38);
-				}
-
-				@include large-large-and-up {
-					font-size: rem(40);
-				}
-			} 
+			margin-bottom: 0;
 
 			p { 
 				display: block;
