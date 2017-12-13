@@ -73,6 +73,7 @@ $ocean-grean:       #3aa974;
 $sea-green:         #26774e;
 
 // Various blues:
+$x-dark-blue:  #042233;
 $dark-blue:    #074365;
 $body-blue:    #afd4c7;
 $spray:        #86eee7;
@@ -114,7 +115,6 @@ $med-blue:  #0A3351;
 $active:                #aed4c7;
 $blue-bg-anchor:        #30a7af;
 $blue-bg:               #03484f;
-$blue-btn-border:       #064364; // Duplicate
 $blue-heading:          #004950;
 $blue-text:             #12757B;
 $border-color:          #07403a;
@@ -132,20 +132,12 @@ $para-text:             #005552;
 $percentage-text:       #017e7a;
 $primary-button:        $orange;
 $primary-button-hover:  $orange-hover;
-$secondary-button-hover:#9af9f3;
-$secondary-button:      $spray;
 $step-normal-bg:        #E4E7DA;
 $steps-deactive-text:   #0A4F45;
 $top-nav:               #1e5f65;
-$yellow-button-color:   #301c01;
-$yellow-button-hover:   #fac235;
-$yellow-button:         $yellow;
 $light-grey:            #e0ddd4;
-$donate-btn-bg:         #68dfde;
-$donate-btn-hover:      #77ebe0;
 
 // Used once.
-$blue-btn:              #0EC2DE;
 $body-bg:               #b0d4c8;
 $border:                $grey;
 $brown-bg-tags-link:    #E88D75;
@@ -153,13 +145,11 @@ $container-bg:          $body-blue;
 $dark-para-text:        #011D1E;
 $green-link-hover:      #77dd11;
 $heading:               #004d53;
-$secondary-button-bg:   #9fd0c8;
 $step-number-hover:     #42b3aa;
 $step-number:           #dc9509;
 $brown-header:          #5C1F10;
 
 // As-of-yet-unused.
-$blue-btn-hover:        #064364; // Duplicate
 $carousel-active:       #064364; // Duplicate
 $greenpeace-dark-green: #264725;
 $greenpeace-green:      #7dd667;
