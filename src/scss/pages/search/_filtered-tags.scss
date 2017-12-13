@@ -1,5 +1,5 @@
 .search-info {
-	font-size: rem(16);
+	font-size: rem(14);
 	margin-bottom: 0;
 	font-family: $roboto;
 	font-style: italic;
@@ -22,27 +22,30 @@
 .search-tag {
 	font-size: rem(14);
 	line-height: 1.7;
-	padding: 0 15px;
+	padding: 0 30px 0 10px;
 	font-style: normal;
 	color: $blue-tiber;
 	border: 1px solid $blue-tiber;
 	border-radius: 6px;
 	display: inline-block;
 	margin-left: 10px;
+	position: relative;
 
 	@include small-and-up {
-		font-size: rem(22);
+		font-size: rem(16);
 		line-height: 1.9;
-		padding: 0 20px;
+		padding: 0 40px 0 15px;
+	}
+
+	@include large-and-up {
+		font-size: rem(22);
 	}
 
 	i {
-		font-size: rem(12);
-		float: right;
-		line-height: 2;
-
-		@include medium-and-up {
-			line-height: 3.5;
-		}
+		position: absolute;
+		font-size: .7em;
+		right: 10px;
+		top: 50%;
+		transform: translate( 0, -40% );
 	}
 }

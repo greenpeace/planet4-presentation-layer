@@ -2,6 +2,14 @@
 	@include linear-gradient(to bottom, transparentize($green-20, .75) 0%, $white 100%);
 }
 
+/**
+ * Search colors:
+ *
+ * dark-blue: $blue-tiber
+ * lighter-blue $faded-jade
+ * lightest $blue-elm
+ */
+
 .search-block {
 	padding-top: 56px;
 
@@ -16,17 +24,14 @@
 
 	@include small-and-up {
 		font-size: rem(48);
-		margin-bottom: 24px;
 	}
 
 	@include large-and-up {
 		font-size: rem(56);
-		margin-bottom: 30px;
 	}
 
 	@include x-large-and-up {
 		font-size: rem(66);
-		margin-bottom: 40px;
 	}
 }
 
