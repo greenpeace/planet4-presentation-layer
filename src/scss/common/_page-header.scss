@@ -75,6 +75,10 @@
 		font-weight: 400;
 	}
 
+	.tag-item--main {
+		font-weight: 500;
+	}
+
 	@include small-and-up {
 		font-size: rem(16);
 	}

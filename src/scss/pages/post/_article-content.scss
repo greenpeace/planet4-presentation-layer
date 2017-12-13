@@ -1,4 +1,6 @@
 .post-content {
+  color: $grey-80;
+
   p {
     line-height: 1.8;
     margin: 15px 0;
@@ -20,7 +22,6 @@
 
 .post-content-lead {
   p:first-of-type {
-    color: $white;
     margin-top: 0;
   }
 }
