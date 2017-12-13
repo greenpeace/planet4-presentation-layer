@@ -1,17 +1,12 @@
+.search {
+	@include linear-gradient(to bottom, transparentize($green-20, .75) 0%, $white 100%);
+}
+
 .search-block {
 	padding-top: 56px;
-	background-color: #ecf0f6;
 
 	@include small-and-up {
 		padding-top: 64px;
-	}
-}
-
-.search-result {
-	margin-top: 0;
-
-	@include large-and-up {
-		margin-top: 120px;
 	}
 }
 
