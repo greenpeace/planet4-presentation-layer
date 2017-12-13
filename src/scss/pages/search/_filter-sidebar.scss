@@ -10,7 +10,7 @@
 	.filteritem {
 		a {
 			display: block;
-			border: 1px solid $dark-blue;
+			border: 1px solid $faded-jade;
 			border-top: 0;
 			border-bottom-width: 4px;
 			padding: 11px 30px;
@@ -75,6 +75,7 @@
 
 			&.collapsed {
 				border-bottom-width: 2px;
+
 				span {
 					&:before {
 						transform: rotate(180deg);
@@ -87,6 +88,17 @@
 			}
 		}
 
+		.custom-control-indicator {
+			appearance: none;
+			border: 1px solid $black;
+			background-color: transparent;
+		}
+
+		.custom-control-input:checked + .custom-control-indicator {
+			background-color: $faded-jade;
+			border-color: $faded-jade;
+		}
+
 		ul {
 			li {
 				height: 42px;
@@ -95,14 +107,13 @@
 		}
 
 		.custom-control-description {
-			font-size: rem(18);
-			color: $border;
+			color: $grey;
 
 			@include small-and-up {
 				font-size: rem(16);
 			}
 
-			@include large-and-up {
+			@include x-large-and-up {
 				font-size: rem(18);
 			}
 		}
