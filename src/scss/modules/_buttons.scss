@@ -134,3 +134,60 @@ Stylesheet: Button Styles
     font-size: rem(18);
   }
 }
+
+/**
+ * Filter and filter-clearing buttons used in the search-results.
+ */
+.btn-filter-item {
+  background-color: transparent;
+  border-color: $blue-tiber;
+  color: $blue-tiber;
+  padding: 0 50px 0 30px;
+  position: relative;
+  font-weight: 400;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-tiber;
+    border-color: $blue-tiber;
+  }
+
+  &:active {
+    background-color: $dark-tiber;
+    border-color: $dark-tiber;
+  }
+
+  i {
+    position: absolute;
+    font-size: .7em;
+    right: 10px;
+    top: 50%;
+    transform: translate( 0, -40% );
+  }
+}
+
+.btn-filter-item-solid {
+  background-color: $blue-tiber;
+  border-color: $blue-tiber;
+  padding: 0 50px 0 30px;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    background-color: $genoa;
+    border-color: $genoa;
+  }
+
+  &:active {
+    background-color: $dark-tiber;
+    border-color: $dark-tiber;
+  }
+
+  i {
+    position: absolute;
+    font-size: .7em;
+    right: 10px;
+    top: 50%;
+    transform: translate( 0, -40% );
+  }
+}

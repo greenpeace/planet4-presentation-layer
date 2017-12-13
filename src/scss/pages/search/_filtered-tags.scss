@@ -17,35 +17,22 @@
 	@include x-large-and-up {
 		font-size: rem(32);
 	}
-}
 
-.search-tag {
-	font-size: rem(14);
-	line-height: 1.7;
-	padding: 0 30px 0 10px;
-	font-style: normal;
-	color: $blue-tiber;
-	border: 1px solid $blue-tiber;
-	border-radius: 6px;
-	display: inline-block;
-	margin-left: 10px;
-	position: relative;
+	.btn-filter-item {
+		font-size: rem(14);
+		line-height: 1.7;
+		font-style: normal;
+		margin-left: 10px;
+		padding: 0 30px 0 10px;
 
-	@include small-and-up {
-		font-size: rem(16);
-		line-height: 1.9;
-		padding: 0 40px 0 15px;
-	}
+		@include small-and-up {
+			font-size: rem(16);
+			line-height: 1.9;
+			padding: 0 40px 0 15px;
+		}
 
-	@include large-and-up {
-		font-size: rem(22);
-	}
-
-	i {
-		position: absolute;
-		font-size: .7em;
-		right: 10px;
-		top: 50%;
-		transform: translate( 0, -40% );
+		@include large-and-up {
+			font-size: rem(22);
+		}
 	}
 }
