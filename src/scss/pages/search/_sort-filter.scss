@@ -1,5 +1,6 @@
-.search-filter-results {
+div.search-filter-results {
 	margin-top: 48px;
+	z-index: auto;
 
 	@include small-and-up {
 		margin-top: 104px;
