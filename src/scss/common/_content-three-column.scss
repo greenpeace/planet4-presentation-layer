@@ -8,27 +8,7 @@
 	.three-column-box { 
 		
 		.three-column-info { 
-
-			margin-bottom: 0; 
-
-			h2 { 
-				font-size: rem(26);
-				color: $black;
-				margin-bottom: 22px; 
-
-				@include medium-and-up {
-					font-size: rem(34);
-					margin-bottom: 50px; 
-				}
-
-				@include medium-large-and-up {
-					font-size: rem(38);
-				}
-
-				@include large-large-and-up {
-					font-size: rem(40);
-				}
-			} 
+			margin-bottom: 0;
 
 			p { 
 				display: block;
@@ -46,7 +26,7 @@
 					}
 				}
 
-				@include large-large-and-up {
+				@include x-large-and-up {
 					margin-bottom: 2rem;
 					display: inline;
 					&:last-child {
@@ -60,7 +40,7 @@
 				padding-top: 40px;
 			}
 
-			@include large-large-and-up {
+			@include x-large-and-up {
 				margin-bottom: 40px;
 			}
 		}
@@ -76,7 +56,7 @@
 			    margin-right: 0;
 			}
 
-			@include large-large-and-up {
+			@include x-large-and-up {
 				min-height: 430px; 
 			}
 		} 
@@ -90,7 +70,7 @@
 				@include medium-and-up {
 					height: 330px;
 				}
-				@include large-large-and-up {
+				@include x-large-and-up {
 					height: 430px;
 				}
 			}
@@ -119,11 +99,11 @@
 					margin-left: -90px;
 				}
 
-				@include medium-large-and-up {
+				@include large-and-up {
 					margin-left: -90px;
 				}
 
-				@include large-large-and-up {
+				@include x-large-and-up {
 					margin-left: -100px;
 				}
 			} 
@@ -132,11 +112,11 @@
 				width: 110%;
 			}
 
-			@include medium-large-and-up {
+			@include large-and-up {
 				width: 100%;  
 			}
 
-			@include large-large-and-up {
+			@include x-large-and-up {
 				width: 100%;
 			}
 		} 
@@ -153,24 +133,24 @@
 				right: -190px;
 			}
 
-			@include medium-large-and-up{
+			@include large-and-up{
 				right: -110px;
 			}
 
-			@include large-large-and-up {
+			@include x-large-and-up {
 				right: -150px; 
 
 			} 
 
 			img {
-				@include medium-large-and-up{
+				@include large-and-up{
 					margin-right: 66px;
 				}
 			}
 		} 
 	}
 
-	@include large-large-and-up {
+	@include x-large-and-up {
 		margin-top: 340px;
 	}
 }
