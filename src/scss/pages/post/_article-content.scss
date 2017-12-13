@@ -32,16 +32,14 @@
     margin: auto;
   }
 
-  .alignnone, .alignnone img {
+  .alignnone,
+  .alignnone img {
     max-width: 100%;
     height: auto;
   }
 
   blockquote {
-    background-color: $white;
-    color: $grey-60;
-    font-style: italic;
-    padding: 30px;
+    // find style in the design and use it
 
     p {
       margin: 0;
@@ -139,7 +137,6 @@
     br+br {
       display: none;
     }
-
   }
 
   .more-link {
@@ -155,9 +152,8 @@
       @extend .btn-small;
     }
 
-
     /** Hides the word "Page" but leaves it available to screen readers */
-    span.screen-reader-text {
+    .screen-reader-text {
       clip: rect(1px, 1px, 1px, 1px);
       height: 1px;
       overflow: hidden;
@@ -167,6 +163,7 @@
       width: 1px;
       word-wrap: normal !important;
     }
+
   }
 
   q {
