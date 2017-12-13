@@ -1110,7 +1110,7 @@
               </a>
             </div><!-- .entry-content -->
             <h2 class="entry-title"><a href="#" rel="bookmark">Sticky</a></h2>
-            <div>
+            <div class="entry-content">
               <p>This is a sticky post.</p>
               <p>There are a few things to verify:</p>
               <ul>
@@ -1121,10 +1121,10 @@
               </ul>
             </div>
             <h2 class="entry-title"><a href="#" rel="bookmark">No Content</a></h2>
-            <div>
+            <div class="entry-content">
             </div>
             <h2 class="entry-title"><a href="#" rel="bookmark">Super/Duper/Long/NonBreaking/Path/Name/To/A/File/That/Is/Way/Deep/Down/In/Some/Mysterious/Remote/Desolate/Part/Of/The/Operating/System/To/A/File/That/Just/So/Happens/To/Be/Strangely/Named/Supercalifragilisticexpialidocious.txt</a></h2>
-            <div>
+            <div class="entry-content">
               <p>Super/Duper/Long/NonBreaking/Path/Name/To/A/File/That/Is/Way/Deep/Down/In/Some/Mysterious/Remote/Desolate/Part/Of/The/Operating/System/To/A/File/That/Just/So/Happens/To/Be/Strangely/Named/Supercalifragilisticexpialidocious.txt</p>
               <p>A few things to check for:</p>
               <ul>
@@ -1137,24 +1137,24 @@
 word-wrap: break-word;</pre>
             </div>
             <h2 class="entry-title"><a href="#" rel="bookmark">Title With Special Characters ~`!@#$%^&amp;*()-_=+{}[]/\;:'&#8221;?,.&gt;</a></h2>
-            <div>
+            <div class="entry-content">
               <p>Putting special characters in the title should have no adverse effect on the layout or functionality.</p>
               <p>Special characters in the post title have been known to cause issues with JavaScript when it is minified, especially in the admin when editing the post itself (ie. issues with metaboxes, media upload, etc.).</p>
             </div>
             <h2 class="entry-title"><a href="#" rel="bookmark">Title With Markup</a></h2>
-            <div>
+            <div class="entry-content">
               <p>Verify that:</p>
               <ul>
                 <li>The post title renders the word &#8220;with&#8221; in <em>italics</em> and the word &#8220;markup&#8221; in <strong>bold</strong>.</li>
                 <li>The post title markup should be removed from the browser window / tab.</li>
               </ul>
             </div>
-            <div>
+            <div class="entry-content">
               <p>This post has no title, but it still must link to the single post view somehow.</p>
               <p>This is typically done by placing the permalink on the post date.</p>
             </div>
             <h2 class="entry-title"><a href="#" rel="bookmark">Post Format: Standard</a></h2>
-            <div>
+            <div class="entry-content">
               <p><strong>This is an example of a standard post format</strong>.</p>
               <p>Inspiration is a spark. A flash of light. Ignition. But without the proper mixture of oxygen and fuel, inspiration both lives and dies in the same instant. My life, my experiences, my research; these things are fertile soil for the great blog posts hidden within me. I carry them always and they are present when I sit down to do my work.</p>
               <p>But all too often, it’s a struggle. The raw material is there, but the inspiration is not. The oxygen is abundant, but the fuel is scarce. And I’m left wondering, “How?”</p>
@@ -1165,7 +1165,7 @@ word-wrap: break-word;</pre>
               <p>Only then can you give life… to words.</p>
             </div>
             <h2 class="entry-title"><a href="#" rel="bookmark">Post Format: Gallery</a></h2>
-            <a href="#" aria-hidden="true">
+
               <div id='gallery-1' class='gallery galleryid-555 gallery-columns-3 gallery-size-thumbnail'>
                 <figure class='gallery-item'>
                   <div class='gallery-icon landscape'>
@@ -1361,14 +1361,17 @@ word-wrap: break-word;</pre>
                   </div>
                 </figure>
               </div>
-            </div>
+
+            <div style="clear: both;"></div>
+
+
             <h2 class="entry-title"><a href="#" rel="bookmark">Post Format: Aside</a></h2>
-            <div>
+            <div class="entry-content">
               <p>We fundamentally believe that our customers are more interested in a simple, attractive, and functional WordPress theme than they are having 12 color schemes to choose from, and a fancy slider with 8 transition effects.</p>
               <p>If you pick out a WordPress theme like you pick out drapes, you’re doing something wrong.</p>
             </div>
             <h2 class="entry-title"><a href="#" rel="bookmark">Post Format: Chat</a></h2>
-            <div>
+            <div class="entry-content">
               <p>John: Are we still meeting for breakfast this morning?</p>
               <p>John: Where is the rest of the team? I&#8217;ve been here since 3:00am.</p>
               <p>Tom: Umm&#8230; We actually sleep. Go back to bed, dude.</p>
@@ -1376,18 +1379,18 @@ word-wrap: break-word;</pre>
               <p>Tom: Fine. But if I show up, I am not wearing pants.</p>
             </div>
             <h2 class="entry-title"><a href="#" rel="bookmark">Post Format: Link</a></h2>
-            <div>
+            <div class="entry-content">
               <p><a title="Video Game Inspired Mural [Pics, Videos]" href="#" target="_blank">8BIT&#8217;s Office &#8211; Video Game Inspired Mural</a></p>
             </div>
             <h2 class="entry-title"><a href="#" rel="bookmark">Post Format: Image (Caption)</a></h2>
-            <div>
-              <figure id="attachment_963" style="width: 1131px">
+            <div class="entry-content">
+              <figure id="attachment_963" class="alignnone" style="width: 1131px">
                 <img title="Triforce Wallpaper" alt="Triforce Wallpaper" src="http://wptest.iodemo/wp-content/uploads/sites/2/2012/12/triforce-wallpaper.jpg" width="1131" height="707" srcset="http://wptest.io/demo/wp-content/uploads/sites/2/2012/12/triforce-wallpaper.jpg 1131w, http://wptest.io/demo/wp-content/uploads/sites/2/2012/12/triforce-wallpaper-300x188.jpg 300w, http://wptest.io/demo/wp-content/uploads/sites/2/2012/12/triforce-wallpaper-768x480.jpg 768w, http://wptest.io/demo/wp-content/uploads/sites/2/2012/12/triforce-wallpaper-1024x640.jpg 1024w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" />
                 <figcaption>It&#8217;s dangerous to go alone! Take this.</figcaption>
               </figure>
             </div>
             <h2 class="entry-title"><a href="#" rel="bookmark">Post Format: Image</a></h2>
-            <div>
+            <div class="entry-content">
               <dl id="attachment_612" style="width: 650px">
                 <dt></dt>
               </dl>
@@ -1395,14 +1398,14 @@ word-wrap: break-word;</pre>
               <p>I really love this wallpaper. It makes me think fondly of <a title="Chris Ames" href="#" target="_blank">Chris Ames</a>.</p>
             </div>
             <h2 class="entry-title"><a href="#" rel="bookmark">Post Format: Quote</a></h2>
-            <div>
+            <div class="entry-content">
               <blockquote>
                 <p>I suggest a new strategy to you&#8230; Let the Wookie win.</p>
                 <p><a title="Let The Wookie Win" href="http://www.youtube.com/watch?feature=player_detailpage&amp;v=mO6M4ngKRp0#t=30s" target="_blank">C-3PO</a></p>
               </blockquote>
             </div>
             <h2 class="entry-title"><a href="#" rel="bookmark">Post Format: Video (VideoPress)</a></h2>
-            <div>
+            <div class="entry-content">
               <div id="v-tFnqC9XQ-1">
                 <iframe width='680' height='382' src='https://videopress.com/embed/tFnqC9XQ?hd=1&amp;loop=0&amp;autoPlay=0&amp;permalink=1' frameborder='0' allowfullscreen></iframe><script src='https://s0.wp.com/wp-content/plugins/video/assets/js/next/videopress-iframe.js'></script>
               </div>
@@ -1410,13 +1413,13 @@ word-wrap: break-word;</pre>
               <p>You will need to install <a title="Jetpack for WordPress" href="#" target="_blank">Jetpack</a> or <a title="Slim Jetpack" href="#" target="_blank">Slim Jetpack</a> plugin to turn the shortcode into a viewable video.</p>
             </div>
             <h2 class="entry-title"><a href="#" rel="bookmark">Post Format: Video</a></h2>
-            <div>
-              <div><span style="text-align:center; display: block;"><iframe class='youtube-player' type='text/html' width='840' height='503' src='http://www.youtube.com/embed/nwe-H6l4beM?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></span></div>
+            <div class="entry-content">
+              <div class="entry-content"><span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' type='text/html' width='840' height='503' src='http://www.youtube.com/embed/nwe-H6l4beM?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></span></div>
               <p>The official music video of &#8220;Rise Up&#8221; from <a title="Eddy Music" href="#" target="_blank">Eddy&#8217;s</a> <a title="Eddy - Start An Uproar! EP" href="#" target="_blank">Start An Uproar!</a> EP.</p>
               <p>Learn more about <a title="WordPress Embeds" href="#" target="_blank">WordPress Embeds</a>.</p>
             </div>
             <h2 class="entry-title"><a href="#" rel="bookmark">Post Format: Audio</a></h2>
-            <div>
+            <div class="entry-content">
               <audio controls>
                 <source type="audio/mpeg" src="http://litkraft.co.uk/wp-content/uploads/2013/03/Eddy-Need-Remix.mp3?_=1">
                 <a href="http://litkraft.co.uk/wp-content/uploads/2013/03/Eddy-Need-Remix.mp3?_=1"> Eddy &#8211; Need (Remix)</a>
