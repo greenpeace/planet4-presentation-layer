@@ -2,26 +2,10 @@
 	padding-top: 5rem;
 	
 	h2 {
-		font-size: rem(26);
-		margin-bottom: 2rem;
-		color: $black;
 		padding-left: 15px;
 		
 		@include small-and-up {
-			padding-left: 0px;
-		}
-
-		@include medium-and-up {
-			font-size: rem(34);
-		}
-
-		@include large-and-up {
-			font-size: rem(38);
-		}
-
-		@include x-large-and-up {
-			font-size: rem(40);
-			margin-bottom: 64px;
+			padding-left: 0;
 		}
 	}
 

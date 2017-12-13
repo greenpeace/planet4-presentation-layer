@@ -255,21 +255,11 @@
       .step-number {
         background: $step-number-hover;
       }
-      .secondary-button {
-        background: $carr-arrow;
-        color: $white;
-      }
     }
   }
 
   .active {
     .step-info-wrap {
-      .steps-action {
-        .secondary-button {
-          background-color: $med-blue;
-          color: $white;
-        }
-      }
       .step-number {
         background: $percentage-text;
         color: $active;
@@ -425,11 +415,6 @@
         width: 57%;
         font-size: rem(12);
       }
-      .yellow-button {
-        width: 35%;
-        font-size: rem(12);
-        margin-left: 15px;
-      }
     }
   }
 }
@@ -473,10 +458,6 @@
       margin: 20px 0 0;
       .btn-primary {
         width: 60%;
-      }
-      .yellow-button {
-        width: 37%;
-        margin-left: 15px;
       }
     }
     .friends-take-action-button {
@@ -524,14 +505,6 @@
         color: $white;
         font-size: rem(18);
         font-weight: 500;
-      }
-      &.donate-btn {
-        a {
-          background: $secondary-button;
-          color: $black;
-          width: 180px;
-          text-align: center;
-        }
       }
     }
     &.sticky {
