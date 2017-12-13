@@ -528,6 +528,15 @@
   opacity: 0.8;
   // background: $blue-top-nav;
   @include background-before-opacity($dark-blue, 0.9);
+
+  // Move header down when WordPress Admin Bar is present
+  .admin-bar & {
+    top: 46px;
+
+    @media screen and (min-width: 783px) {
+      top: 32px;
+    }
+  }
 }
 
 .top-navigation {
