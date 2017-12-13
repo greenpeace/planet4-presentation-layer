@@ -65,6 +65,7 @@
 				padding: 24px 15px 30px;
 				margin: 0;
 				box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+				border-bottom: 0;
 
 				@include small-and-up {
 					padding-top: 32px;
@@ -80,7 +81,11 @@
 					}
 				}
 
-				.btn {
+				.search-result-item-content {
+					display: block;
+				}
+
+					.btn {
 					width: 100%;
 					margin-top: 32px;
 					cursor: pointer;
@@ -92,19 +97,34 @@
 			}
 		}
 	}
+
+	.more-btn {
+		margin-top: 25px;
+
+		@include large-and-up {
+			margin-top: 35px
+		}
+	}
 }
 
 .search-result-item-body {
-	.action-btn {
-		height: 56px;
-		line-height: 56px;
-		border: 1px solid $header-footer-bg;
-		text-transform: uppercase;
-		cursor: pointer;
-		margin-top: 10px;
+	.btn-secondary {
+		width: 100%;
 
-		@include small-and-up {
-			margin-top: 0;
+		&:hover,
+		&:focus,
+		&:active {
+			color: $white;
+			background-color: $grey-80;
+			border-color: $grey-80;
+		}
+
+		@include medium-and-up {
+			width: auto;
+			position: absolute;
+			top: 20px;
+			right: 0;
+			padding: 0 15px;
 		}
 
 		i {
@@ -112,7 +132,7 @@
 			font-weight: bold;
 			margin-right: 10px;
 			float: left;
-			line-height: 56px;
+			line-height: 2.2rem;
 		}
 	}
 }
@@ -132,16 +152,15 @@
 
 .search-result-item-headline {
 	font-size: rem(18);
-	margin-bottom: 0;
-	color: $black;
+	color: $grey-80;
 	text-decoration: none;
 	font-weight: 500;
 	display: block;
 	line-height: normal;
+	margin-bottom: 10px;
 
 	@include small-and-up {
 		font-size: rem(22);
-		margin-bottom: 24px;
 	}
 
 	@include large-and-up {
@@ -151,16 +170,10 @@
 }
 
 .search-result-item-info {
-	display: none;
 	font-size: rem(14);
-	margin-bottom: 32px;
 	font-style: italic;
 	color: $grey-60;
 	line-height: normal;
-
-	@include small-and-up {
-		display: block;
-	}
 
 	@include large-and-up {
 		font-size: rem(16);
@@ -208,10 +221,10 @@
 	}
 
 	.search-result-item-head {
-		color: $dark-blue;
+		color: $blue-elm;
 		font-weight: bold;
 		text-decoration: none;
-		margin-right: 20px;
+		margin-right: 15px;
 		position: relative;
 
 		@include small-and-up {
@@ -223,12 +236,12 @@
 			position: absolute;
 			top: 0;
 			right: 0;
-			width: 8px;
-			height: 8px;
-			border-radius: 5px;
-			background-color: $dark-blue;
-			margin-right: -15px;
-			margin-top: 5px;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background-color: $blue-elm;
+			margin-right: -12px;
+			margin-top: 8px;
 
 			@include small-and-up {
 				margin-right: -20px;
@@ -236,16 +249,17 @@
 		}
 
 		&:hover {
-			color: #1680DA;
+			color: $blue-tiber;
 		}
 	}
 
 	.search-result-item-tag {
-		color: $dark-blue;
+		color: $blue-elm;
 		text-decoration: none;
+		transition: color 150ms linear;
 
 		&:hover {
-			color: #1680DA;
+			color: $blue-tiber;
 		}
 	}
 }
