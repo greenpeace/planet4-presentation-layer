@@ -40,9 +40,9 @@
 
   blockquote {
     p {
-      font-size: 2rem;
-      font-style: italic;
-    }
+        font-size: 2rem;
+        font-style: italic;
+      }
   }
 
   cite {
@@ -52,10 +52,6 @@
 
   code {
     word-wrap: break-word;
-  }
-
-  div.entry-summary {
-    @extend .white-text;
   }
 
   dt {
@@ -80,11 +76,15 @@
     max-width: 100%;
     }
 
+  .entry-content,
   .entry-title {
     -ms-word-wrap: break-word;
     word-wrap: break-word;
   }
 
+  .entry-summary {
+    @extend .post-content-lead;
+  }
 
   .gallery {
     margin: 0 auto 18px;
@@ -100,15 +100,7 @@
       margin-top: 0;
 
       @include mobile-only {
-        /* Firefox */
-        width: -moz-calc(50% - 10px);
-        /* WebKit */
-        width: -webkit-calc(50% - 10px);
-        /* Opera */
-        width: -o-calc(50% - 10px);
-        /* Standard */
         width: calc(50% - 10px);
-
       }
 
       .gallery-caption {
@@ -141,6 +133,8 @@
   .more-link {
     @extend .btn;
     @extend .btn-secondary;
+    @extend .btn-large;
+
   }
 
   .page-links {
@@ -201,6 +195,10 @@
 }
 
 .post-image {
+  img {
+    max-width: 100%;
+  }
+
   .credit-wrapper{
     position: relative;
     display: inline-block;
