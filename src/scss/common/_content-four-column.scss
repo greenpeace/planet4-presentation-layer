@@ -1,4 +1,4 @@
-.four-coloum-content {
+.four-column-content {
 	color: $black;
 	padding: 80px 0 0 0;
 	
@@ -11,12 +11,16 @@
 		outline: none;
 	}
 
-	.four-coloum-content-wrap {
-		.four-coloum-content-symbol {
+	.four-column-content-wrap {
+		.four-column-content-symbol {
 			position: relative;
-			margin-bottom: 24px;
-			box-shadow: 0px 5px 20px 0px rgba(114,114,114,0.5);
-			
+			margin: 32px 0 24px 0;
+			box-shadow: 0 5px 20px 0 rgba(114,114,114,0.5);
+
+			@include small-and-up {
+				margin: 20px 0;
+			}
+
 			img {
 				width: 100%;
 				height: auto;
@@ -30,29 +34,38 @@
 			}
 		}
 
-		.four-coloum-content-info {
-
+		.four-column-content-info {
 			h4 {
 				font-size : rem(16);
+				line-height: 1.2;
 				font-weight: 600;
 				padding: 0;
 				margin: 0;
+
+				@include medium-and-up {
+					font-size : rem(20);
+				}
 			}
 
 			p {
 				font-size: rem(16);
-				line-height: 1.875rem;
 				font-family: $roboto;
+
 				&.publication-date {
-					font-size: rem(14.5);
+					font-size: rem(14);
+					line-height: 1.6;
 					font-style: italic;
 					margin-bottom: 16px;
-					color: $publish-date-grey;
+					color: $grey-60;
+
+					@include x-large-and-up {
+						font-size: rem(16);
+					}
 				}
 			}
 
 			a {
-				color: $blue-text;
+				color: $genoa;
 				font-size: rem(14);
 				opacity: 0.75;
 				text-decoration: underline; 
@@ -61,42 +74,14 @@
 			.blue-button { 
 				width: 100%; 
 			}
-			
 		}
 	}
-}
 
+	.btn {
+		display: none;
 
-// Small devices (landscape phones, 576px and up)
- @include small-and-up {
-
-	.four-coloum-content {
-		
-		.four-coloum-content-wrap{
-			margin-bottom: 20px;
-			
-			.four-coloum-content-symbol {
-				margin-bottom: 20px;
-			}
-
+		@include medium-and-up {
+			display: block;
 		}
-	}
-}
-
-
-// Medium devices (tablets, 768px and up)
-@include medium-and-up {
-
-	.four-coloum-content {
-
-		.four-coloum-content-wrap {
-			.four-coloum-content-info {
-
-				h4 {
-					font-size : rem(22);
-				}
-			}
-		}
-		
 	}
 }
