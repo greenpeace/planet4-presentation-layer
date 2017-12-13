@@ -510,11 +510,11 @@
     position: absolute;
     top: 0;
     right: 15px;
-    font-size: 20px;
+    font-size: rem(20);
     line-height: 38px;
     i {
       vertical-align: middle;
-      font-size: 1.3rem;
+      font-size: rem(21);
       margin-right: -10px;
     }
   }
