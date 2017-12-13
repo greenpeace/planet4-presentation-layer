@@ -36,6 +36,12 @@
   .top-page-tags a {
     color: $crimson;
   }
+
+  @include mobile-only {
+    .tag-item {
+      display: block;
+    }
+  }
 }
 
 .single-post-meta {
