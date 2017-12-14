@@ -7,6 +7,7 @@
   box-shadow: 0 0 10px rgba(0,0,0,.35);
   background-size: cover;
   background-position: center;
+  color: $grey-80;
 
   &:before {
     content: "";
@@ -20,12 +21,17 @@
 
     h2,
     p {
-      color: $black;
+      color: $grey-80;
     }
 
     p {
       opacity: 1;
       visibility: visible;
+    }
+
+    .btn {
+      background-color: $orange-hover;
+      border-color: $orange-hover;
     }
   }
 
@@ -33,7 +39,7 @@
     @include background-before-opacity($black, .25);
 
     &:hover {
-      @include background-before-opacity($green-80);
+      @include background-before-opacity($green-80, .7);
 
       h2,
       p {
@@ -51,22 +57,30 @@
   }
 
   h2 {
-    font-size: rem(28);
+    font-size: rem(24);
     line-height: 1.2;
     font-weight: 500;
     margin-bottom: 32px;
     max-width: 80%;
     transition: color 100ms linear;
+
+    @include large-and-up {
+      font-size: rem(28);
+    }
   }
 
   p {
-    font-size: rem(20);
+    font-size: rem(16);
     font-weight: 300;
     line-height: 1.6;
     color: $white;
     opacity: 0;
     visibility: hidden;
     transition: opacity 150ms linear;
+
+    @include large-and-up {
+      font-size: rem(18);
+    }
   }
 
   @include large-and-up {
@@ -89,6 +103,7 @@
   display: inline-block;
   margin-bottom: 8px;
   text-decoration: none;
+
   &:hover {
     color: $yellow;
   }
