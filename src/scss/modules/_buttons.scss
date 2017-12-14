@@ -143,8 +143,7 @@ Stylesheet: Button Styles
   cursor: pointer;
   color: $gp-green;
   background-color: transparent;
-  border-radius: 0;
-  transition: color 100ms;
+  transition: background-color color font-weight 100ms;
   display: inline-block;
 
   &:hover,
@@ -152,5 +151,19 @@ Stylesheet: Button Styles
   &:active {
     color: $white;
     box-shadow: none;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $x-dark-blue;
+    border: 1px solid transparent;
+  }
+
+  @include small-and-up {
+    background-color: $dark-blue;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px rgba(0,0,0,.25);
   }
 }

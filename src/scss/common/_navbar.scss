@@ -10,7 +10,7 @@
   flex-direction: row;
   justify-content: space-between;
 
-  background: fade-out($top-nav, 0.10);
+  background: fade-out($top-nav, 0.20);
 
   a {
     color: $white;
@@ -60,6 +60,11 @@
   }
 }
 .navbar-search-toggle {
+  cursor: pointer;
+  border: 0;
+  background: url('images/search.svg') center center no-repeat;
+  background-size: 28px;
+
   @include large-and-up {
     display: none;
   }
@@ -67,6 +72,7 @@
 
 .site-logo,
 .btn-navbar-toggle,
+.navbar-search-toggle,
 .country-dropdown-toggle,
 .nav-item,
 .nav-link {
@@ -93,20 +99,24 @@
   }
 }
 
+.navbar-search-toggle,
 .btn-navbar-toggle {
+  line-height: rem(54 - 22);
+  margin: 11px;
+  padding: 0 22px;
+  color: $white;
+
   fa {
     font-size: rem(18);
-  }
-  border-bottom: 2px solid transparent;
-  &.active,
-  &:hover,
-  &:focus,
-  &:active {
-    border-bottom: 2px solid $white;
   }
 }
 
 .site-logo {
+  @media (max-width: #{large-width}) {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
   &:focus {
     box-shadow: none;
   }
@@ -158,8 +168,7 @@
     height: calc( 100vh - #{rem(54)} );
     padding: 0.5em 0 20px;
     border-left: 8px solid $top-nav;
-    background-color: fade-out($top-nav, 0.15);
-    background-size: cover;
+    background: fade-out($top-nav, 0.15) url('images/dropdown-gradient.svg') right top no-repeat;
     overflow-y: auto;
 
     .country-dropdown-toggle {
@@ -315,17 +324,21 @@
     margin-left: 10px;
   }
 
-  &[aria-expanded="true"]::after {
-    transform: rotate(180deg);
+  &[aria-expanded="true"] {
+    background: fade-out($blue-bg, 0.10);
+
+    &::after {
+      transform: rotate(180deg);
+    }
   }
 }
 
 .country-list {
   display: none;
   text-transform: none;
-  background: $blue-bg;
+  background: fade-out($blue-bg, 0.10);
   line-height: 1.5;
-  padding: 1.5em 0 0;
+  padding: 1.5em 0;
 
   &.open {
     display: block;
@@ -363,7 +376,7 @@
   > a,
   li {
     position: relative;
-    list-style-type: none;
+    list-style: none;
     padding-left: 40px;
     font-size: rem(16);
 
@@ -379,7 +392,7 @@
 
     li {
       padding-left: 0;
-      list-style-type: none;
+      list-style: none;
     }
   }
 

@@ -1,6 +1,10 @@
 // Header JS goes in this.
 
-$(document).on('click', '.btn-navbar-toggle, .country-dropdown-toggle', function toggleNavDropdown(evt) {
+$(document).on('click', [
+  '.btn-navbar-toggle',
+  '.country-dropdown-toggle',
+  '.navbar-search-toggle',
+].join(), function toggleNavDropdown(evt) {
   evt.preventDefault();
   evt.stopPropagation();
 
