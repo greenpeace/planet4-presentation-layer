@@ -1,17 +1,5 @@
 // Header JS goes in this.
 
-// Returns width of browser viewport
-if($( window ).width() >= 768) {
-  // $(window).scroll(function() {
-  //   if ($(this).scrollTop() > 130){
-  //       $('.fixed-element, .md-navigation').addClass("sticky");
-  //   }
-  //   else{
-  //       $('.fixed-element, .md-navigation').removeClass("sticky");
-  //   }
-  // });
-};
-
 $(document).on('click', '.btn-navbar-toggle, .country-dropdown-toggle', function toggleNavDropdown(evt) {
   evt.preventDefault();
   evt.stopPropagation();

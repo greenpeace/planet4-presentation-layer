@@ -105,26 +105,6 @@
   &:active {
     border-bottom: 2px solid $white;
   }
-
-  /*
-  @include small-and-up {
-    line-height: rem(54 - 22);
-    margin: 11px;
-    padding: 0 22px;
-    color: $white;
-    font-weight: normal;
-    border: 1px solid transparent;
-
-    &.active,
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: $x-dark-blue;
-      font-weight: bold;
-      border: 1px solid transparent;
-    }
-  }
-  */
 }
 
 .site-logo {
@@ -208,23 +188,24 @@
       line-height: rem(45);
       font-size: rem(16);
       margin-bottom: 0.5em;
+    }
 
-      &[aria-expanded="true"],
-      .active &,
-      &:focus,
-      &:hover {
-        // font-weight: bold;
-        position: relative;
+    .active .nav-link,
+    [aria-expanded="true"],
+    .country-dropdown-toggle:focus,
+    .nav-link:focus,
+    .country-dropdown-toggle:hover,
+    .nav-link:hover {
+      position: relative;
 
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          background: $black;
-          width: 8px;
-          margin-left: -48px;
-        }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background: $black;
+        width: 8px;
+        margin-left: -48px;
       }
     }
 
@@ -252,12 +233,14 @@
       text-align: center;
       border-bottom: 2px solid transparent;
 
-      .active > &,
       &:hover,
       &:focus,
       &:active {
         border-bottom: 2px solid $white;
       }
+    }
+    .active .nav-link {
+      border-bottom: 2px solid $white;
     }
   }
 
