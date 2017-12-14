@@ -79,20 +79,14 @@ $('.country-select-box .country-list li').click(function(){
 // Footer JS goes in this
 // Header JS goes in this.
 
-// Returns width of browser viewport
-if($( window ).width() >= 768) {
-  // $(window).scroll(function() {
-  //   if ($(this).scrollTop() > 130){
-  //       $('.fixed-element, .md-navigation').addClass("sticky");
-  //   }
-  //   else{
-  //       $('.fixed-element, .md-navigation').removeClass("sticky");
-  //   }
-  // });
-};
-
-function toggleNavDropdown(evt) {
+$(document).on('click', [
+  '.btn-navbar-toggle',
+  '.country-dropdown-toggle',
+  '.navbar-search-toggle',
+].join(), function toggleNavDropdown(evt) {
   evt.preventDefault();
+  evt.stopPropagation();
+
   var $button = $(this);
   var target = $button.data('target');
   if (!target) {
@@ -102,16 +96,31 @@ function toggleNavDropdown(evt) {
   if (!toggleClass) {
     throw new Error('Missing `data-toggle` attribute: specify the class to toggle');
   }
+
   // Toggle visibility of the target specified via data-target.
-  $(target).toggleClass(target);
+  $(target).toggleClass(toggleClass);
   // Toggle aria-expanded attribute.
   $button.attr('aria-expanded', function(i, attr) {
     return attr === 'false' ? 'true' : 'false';
   });
-}
+});
 
-$(document).on('click', '#country-dropdown-toggle', toggleNavDropdown);
-$(document).on('click', '#navigation-dropdown-toggle', toggleNavDropdown);
+/**
+ * Close a menu if the user clicks elsewhere.
+ *
+ * TODO: Is this desireable behavior?
+ */
+$(document).on('click', function closeInactiveMenus(evt) {
+  var clickedElement = evt.target;
+  $('.btn-navbar-toggle[aria-expanded="true"]').each(function(i, button) {
+    var $button = $(button);
+    var buttonTarget = $($button.data('target')).get( 0 );
+    if (buttonTarget && ! $.contains(buttonTarget, clickedElement)) {
+      // Spoof a click on the open menu's toggle to close that menu.
+      $button.trigger('click');
+    }
+  });
+});
 
 // Hide Header on on scroll down
 if($( window ).width() <= 768) {
