@@ -12,10 +12,43 @@ if($( window ).width() >= 768) {
   // });
 };
 
-console.log('hi');
-$(document).on('click', '.country-dropdown-toggle', function(evt) {
+$(document).on('click', '.btn-navbar-toggle', function toggleNavDropdown(evt) {
   evt.preventDefault();
-  $('.country-list').toggleClass('open');
+  evt.stopPropagation();
+
+  var $button = $(this);
+  var target = $button.data('target');
+  if (!target) {
+    throw new Error('Missing `data-target` attribute: specify the container to be toggled');
+  }
+  var toggleClass = $button.data('toggle');
+  if (!toggleClass) {
+    throw new Error('Missing `data-toggle` attribute: specify the class to toggle');
+  }
+
+  // Toggle visibility of the target specified via data-target.
+  $(target).toggleClass(toggleClass);
+  // Toggle aria-expanded attribute.
+  $button.attr('aria-expanded', function(i, attr) {
+    return attr === 'false' ? 'true' : 'false';
+  });
+});
+
+/**
+ * Close a menu if the user clicks elsewhere.
+ *
+ * TODO: Is this desireable behavior?
+ */
+$(document).on('click', function closeInactiveMenus(evt) {
+  var clickedElement = evt.target;
+  $('.btn-navbar-toggle[aria-expanded="true"]').each(function(i, button) {
+    var $button = $(button);
+    var buttonTarget = $($button.data('target')).get( 0 );
+    if (buttonTarget && ! $.contains(buttonTarget, clickedElement)) {
+      // Spoof a click on the open menu's toggle to close that menu.
+      $button.trigger('click');
+    }
+  });
 });
 
 // Hide Header on on scroll down

@@ -475,59 +475,47 @@
 */
 
 // TODO: is this in use at all?
-.loginSignUpWrap {
-  color: $nav-link;
-  width: 220px;
-  margin-left: 10px;
-  visibility: hidden;
-  display: none;
-  i {
-    // display: inline-block;
-    float: left;
-    font-size: rem(30);
-    margin-top: 5px;
-  }
-  a {
-    color: $nav-link;
-    font-size: rem(16);
-    margin: 9px 2px 0;
-    &:hover {
-      transition: 0.5s;
-      color: $green-link-hover;
-    }
-  }
-}
-.nav-search-wrap {
-  position: relative;
-  max-width: 30%;
-  color: $search-text-colour;
-  input::-webkit-input-placeholder {
-    color: $grey-40;
-  }
-  .top-nav-search-btn {
-    background: none;
-    border: none;
-    position: absolute;
-    top: 0;
-    right: 15px;
-    font-size: rem(20);
-    line-height: 38px;
-    i {
-      vertical-align: middle;
-      font-size: rem(21);
-      margin-right: -10px;
-    }
-  }
-  .form-control {
-    border-radius: 0;
-    padding: 10px;
-  }
-}
+// .loginSignUpWrap {
+//   color: $nav-link;
+//   width: 220px;
+//   margin-left: 10px;
+//   visibility: hidden;
+//   display: none;
+//   i {
+//     // display: inline-block;
+//     float: left;
+//     font-size: rem(30);
+//     margin-top: 5px;
+//   }
+//   a {
+//     color: $nav-link;
+//     font-size: rem(16);
+//     margin: 9px 2px 0;
+//     &:hover {
+//       transition: 0.5s;
+//       color: $green-link-hover;
+//     }
+//   }
+// }
 
 .top-navigation {
-  opacity: 0.8;
-  // background: $blue-top-nav;
-  @include background-before-opacity($dark-blue, 0.9);
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include background-before-opacity($top-nav, 0.9);
+
+  a {
+    color: $white;
+  }
+  .btn-donate {
+    color: $grey;
+  }
 
   // Move header down when WordPress Admin Bar is present
   .admin-bar & {
@@ -539,56 +527,257 @@
   }
 }
 
-.top-navigation {
-  position: relative;
-  z-index: 3;
-  padding: 0;
-}
-
-.navbar {
-  display: flex;
-  flex-direction: row;
-}
-
-.donatebtn {
-  // width: 15%;
-  a {
-    color: $grey;
-    background: $donate-btn-bg;
+.navbar-dropdown-toggle {
+  &[aria-expanded="true"] {
+    .fa-bars {
+      display: none;
+    }
+    .fa-times {
+      display: inline-block;
+    }
   }
-  a:hover {
-    color: $black;
-    background: $donate-btn-hover;
+  &[aria-expanded="false"] {
+    .fa-bars {
+      display: inline-block;
+    }
+    .fa-times {
+      display: none;
+    }
+  }
+  // Hide button text on smallest screens
+  .navbar-toggle-label {
+    display: none;
+    @include small-and-up {
+      display: inline;
+    }
   }
 }
-a {
-  color: $white;
-  font-size: rem(16);
-  display: inline-block;
-  line-height: 40px;
+
+.site-logo,
+.btn-navbar-toggle,
+.nav-item,
+.nav-link {
+  flex: 0 1 auto;
+  line-height: rem(54);
+  padding: 0 15px;
+
+  @include medium-and-up {
+    line-height: rem(60);
+    font-size: rem(18);
+  }
+}
+.site-logo,
+.btn-navbar-toggle {
+  border-bottom: 2px solid transparent;
 }
 
-.nav-item-logo,
-.nav-item-country {
+.btn-navbar-toggle,
+.nav-link {
+  &.active,
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    box-shadow: none;
+    outline: 0;
+  }
+}
+
+.btn-navbar-toggle {
+  fa {
+    font-size: rem(18);
+  }
+  &.active,
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid $white;
+  }
+
+  /*
+  @include small-and-up {
+    line-height: rem(54 - 22);
+    margin: 11px;
+    padding: 0 22px;
+    color: $white;
+    font-weight: normal;
+    border: 1px solid transparent;
+
+    &.active,
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $x-dark-blue;
+      font-weight: bold;
+      border: 1px solid transparent;
+    }
+  }
+  */
+  @include large-and-up {
+    display: none;
+  }
+}
+
+.site-logo {
+  // text-align: center;
+  // width: 100%;
+  z-index: 1; // Force over background-before-opacity
+
+  &:focus {
+    color: $white;
+    border-bottom: 2px solid $white;
+    box-shadow: none;
+    outline: 0;
+  }
+
+  img {
+    height: rem(20);
+    @include small-and-up {
+      height: rem(24);
+    }
+    @include large-and-up {
+      height: rem(30);
+    }
+  }
+}
+
+.navbar-dropdown-toggle {
   order: -1;
 }
 
-.nav-item {
-  flex: auto;
+.navbar-dropdown {
+  display: none;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+
+  &.open {
+    display: flex;
+  }
+
+  @media (min-width: #{$medium-width}) and (max-width: #{$large-width}) {
+    max-height: calc( 100vh - #{rem(60)} );
+  }
+  // Equiv. to "large-and-down", to avoid need to override all styles below
+  @media (max-width: #{$large-width}) {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    min-width: 300px;
+    max-height: calc( 100vh - #{rem(54)} );
+    padding: 20px 0;
+    border-left: 8px solid $top-nav;
+    background-color: fade-out($top-nav, 0.15);
+    background-size: cover;
+
+    .nav-link {
+      padding: 0 40px;
+      display: block;
+
+      .active &,
+      &:focus,
+      &:hover {
+        font-weight: bold;
+
+        &::before {
+          content: "";
+          height: 2em;
+          background: $black;
+          width: 8px;
+          margin: 0 40px 0 -48px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .btn-donate {
+      display: block;
+      width: 200px;
+      margin: 8em auto 1em;
+      padding: 5px 30px;
+    }
+  }
+
+  @include large-and-up {
+    display: flex;
+    flex: 4 1 auto;
+    justify-content: space-evenly;
+    margin: 0 11px;
+
+    .nav-link {
+      padding: 0 20px;
+      min-width: 20%;
+      text-align: center;
+
+      .active > &,
+      &:hover,
+      &:focus,
+      &:active {
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+
+  .nav-item {
+    flex: 0 1 auto;
+    margin: 0;
+    padding: 0;
+  }
 }
 
-.navbar-logo,
-.nav-item button,
-.nav-item a {
-  height: 44px;
-  line-height: 44px;
-}
-.navbar-logo img {
-  max-height: 1.5em;
-}
-.nav-item .btn-secondary {
-  height: 42px;
-  line-height: 42px;
+.nav-search-wrap {
+  display: none;
+  position: relative;
+  color: $search-text-colour;
+
+  &.open {
+    display: block;
+  }
+
+  // Equiv. to "large-and-down", to avoid need to override all styles below
+  @media (max-width: #{$large-width}) {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    padding: 11px;
+    max-width: 80%;
+    background: fade-out($top-nav, 0.15);
+  }
+
+  @include large-and-up {
+    margin-top: 11px;
+    max-width: 20%;
+    display: inline-block;
+    flex: 0 1 auto;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $grey-40;
+  }
+  .top-nav-search-btn {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 11px;
+    right: 16px;
+    font-size: rem(20);
+    line-height: 38px;
+    i {
+      vertical-align: middle;
+      font-size: rem(21);
+    }
+
+    @include large-and-up {
+      top: 0;
+    }
+  }
+
+  .form-control {
+    border-radius: 0;
+    padding: 10px;
+  }
 }
 
 .country-dropdown-toggle {
@@ -609,21 +798,6 @@ a {
 
 .search-box {
   background: $blue-bg;
-}
-
-.nav-item {
-  // position: relative;
-  list-style-type: none;
-  // width: 20%;
-  // padding: 11px 0;
-  margin: 0 15px 0 0;
-  line-height: 22px;
-  text-align: left;
-  text-transform: uppercase;
-
-  @include small-and-up {
-    flex: auto;
-  }
 }
 
 .country-list {

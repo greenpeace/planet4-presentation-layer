@@ -91,11 +91,27 @@ if($( window ).width() >= 768) {
   // });
 };
 
-console.log('hi');
-$(document).on('click', '.country-dropdown-toggle', function(evt) {
+function toggleNavDropdown(evt) {
   evt.preventDefault();
-  $('.country-list').toggleClass('open');
-});
+  var $button = $(this);
+  var target = $button.data('target');
+  if (!target) {
+    throw new Error('Missing `data-target` attribute: specify the container to be toggled');
+  }
+  var toggleClass = $button.data('toggle');
+  if (!toggleClass) {
+    throw new Error('Missing `data-toggle` attribute: specify the class to toggle');
+  }
+  // Toggle visibility of the target specified via data-target.
+  $(target).toggleClass(target);
+  // Toggle aria-expanded attribute.
+  $button.attr('aria-expanded', function(i, attr) {
+    return attr === 'false' ? 'true' : 'false';
+  });
+}
+
+$(document).on('click', '#country-dropdown-toggle', toggleNavDropdown);
+$(document).on('click', '#navigation-dropdown-toggle', toggleNavDropdown);
 
 // Hide Header on on scroll down
 if($( window ).width() <= 768) {
