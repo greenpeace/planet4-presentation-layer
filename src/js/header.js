@@ -12,7 +12,7 @@ if($( window ).width() >= 768) {
   // });
 };
 
-$(document).on('click', '.btn-navbar-toggle', function toggleNavDropdown(evt) {
+$(document).on('click', '.btn-navbar-toggle, .country-dropdown-toggle', function toggleNavDropdown(evt) {
   evt.preventDefault();
   evt.stopPropagation();
 

@@ -1,505 +1,7 @@
-/*
-.mobile-header-wrap {
-  padding: 8px 15px;
-  .search-link {
-    padding-top: 4px;
-  }
-  .menu {
-    width: 80px;
-    height: 35px;
-    display: inline-block;
-    line-height: 35px;
-    background: rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: $white;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-size: rem(14);
-    .fa {
-      &.fa-bars,
-      &.fa-times {
-        display: none;
-      }
-    }
-    &.active {
-      .fa-bars {
-        display: none;
-      }
-      .fa-times {
-        display: inline-block;
-      }
-    }
-  }
-  .mobile-search-wrap {
-    text-align: right;
-  }
-}
-.mobile-menus {
-  background: #234448; // Old browsers
-  background: linear-gradient(124deg, #234448 0%,#2b5459 50%,#356268 50%,#356268 50%,#356268 51%,#2b5459 100%); // W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
-  width: 300px;
-  position: fixed;
-  left: -320px;
-  top: 0;
-  padding: 20px 20px 20px 0;
-  z-index: 5000;
-  height: calc(100vh);
-  @include background-before-opacity(rgba(22,22,22,0.65));
-
-  .btn-donate {
-    width: 250px;
-    margin: 0 auto;
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    left: 7%;
-  }
-}
-
-.country-icon {
-  width: 28px;
-  height: 28px;
-  float: left;
-  margin: 6px 10px 0 0;
-}
-.styled-select {
-  overflow: hidden;
-  background: url('images/down-arrow-green.png') no-repeat 100% 10px;
-  }
-
-.search-box {
-  display: none;
-  position: absolute;
-  top: 46px;
-  right: 0;
-  width: 320px;
-  padding: 10px 5px;
-  background: #;
-  input[type="text"] {
-    padding: 0 10px;
-    border-radius: 5px;
-    border: none;
-    line-height: 38px;
-    float: left;
-  }
-}
-
-#header {
-  &.top-navigation {
-    background: $blue-top-nav;
-    padding: 0;
-    width: 100%;
-    z-index: 500;
-    opacity: 0.8;
-
-    .admin-bar & {
-      top: 46px;
-
-      @media screen and (min-width: 783px) {
-        top: 32px;
-      }
-    }
-
-    .navbar-brand {
-      margin: 0;
-    }
-    .navbar {
-      padding: 0;
-      width: 100%;
-      li {
-        width: 20%;
-        text-align: left;
-        position: relative;
-        line-height: 22px;
-        padding: 11px 0;
-        margin-top: 0;
-        margin-right: 15px;
-        &.big-screen-nav-link {
-          text-align: center;
-          a {
-            color: $white;
-            font-size: rem(16);
-            display: inline-block;
-            line-height: 40px;
-          }
-          &:hover {
-            transition: 0.5s;
-            border-bottom: 2px solid $white;
-            a {
-              color: $white;
-              text-decoration: none;
-            }
-          }
-          &.active {
-            transition: 0.5s;
-            border-bottom: 3px solid $blue-bg-anchor;
-            a {
-              color: $blue-bg-anchor;
-              text-decoration: none;
-            }
-          }
-        }
-        &.donatebtn {
-          width: 15%;
-        }
-        .btn-donate {
-          margin-top: 3px;
-        }
-        &.loginSignUpWrap {
-          color: $nav-link;
-          width: 220px;
-          margin-left: 10px;
-          visibility: hidden;
-          display: none;
-          i {
-            display: inline-block;
-            float: left;
-            font-size: rem(30);
-            margin-top: 5px;
-          }
-          a {
-            color: $nav-link;
-            font-size: rem(16);
-            margin: 9px 2px 0;
-            &:hover {
-              transition: 0.5s;
-              color: $green-link-hover;
-              }
-            }
-          }
-        &.nav-search-wrap {
-          width: 30%;
-          color: $search-text-colour;
-          input::-webkit-input-placeholder {
-            color: $grey-40;
-          }
-          .top-nav-search-btn {
-            background: none;
-            border: none;
-            position: absolute;
-            top: 18px;
-            right: 15px;
-            font-size: 20px;
-            i {
-              vertical-align: middle;
-              font-size: 1.3rem;
-              margin-right: -10px;
-            }
-          }
-          .form-control {
-            border-radius: 0;
-            padding: 10px;
-          }
-        }
-        &.active-li {
-          background-color: $hover-nav;
-          .country-select-dropdown {
-            & > span:after {
-              transform: rotate(180deg);
-            }
-          }
-        }
-      }
-      .country-select-dropdown {
-        padding-left: 15px;
-        position: relative;
-        & > span:after {
-          content: "";
-          width: 8px;
-          height: 8px;
-          background-repeat: no-repeat;
-          background-image: url('images/down-arrow-green.png');
-          background-position: center;
-          background-size: contain;
-          display: inline-block;
-          margin-left: 10px;
-        }
-        .selected-option {
-          font-size: rem(14.5);
-          color: $white;
-          line-height: 40px;
-          display: block;
-          position: relative;
-          padding-right: 15px;
-          cursor: pointer;
-        }
-      }
-      .country-select-box {
-        display: none;
-        position: absolute;
-        left: 0;
-        width: 920px;
-        z-index: 1;
-        margin-top: 13px;
-        background: $blue-bg;
-        padding: 20px 20px 20px 70px;
-        margin-left: -65%;
-        .country-selection-option {
-          height: 350px;
-          overflow-y: scroll;
-          &::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-            background-color: $blue-bg;
-          }
-          &::-webkit-scrollbar {
-            width: 4px;
-          }
-          &::-webkit-scrollbar-thumb {
-            background-color: #4d8b42;
-          }
-          .country-option-box {
-            color: $white;
-            text-align: left;
-            font-size: rem(14.5);
-            line-height: 24px;
-            width: 100%;
-            .default-lang {
-              margin-bottom: 20px;
-              display: inline-block;
-              padding-left: 20px;
-            }
-            .country-list {
-              display: -ms-flexbox;
-              -ms-flex-direction: column;
-              -ms-flex-wrap: wrap;
-              display: flex;
-              flex-direction: column;
-              flex-wrap: wrap;
-              // NEED TO INCRESE THESE HEIGHT ACCORDING TO RECORDS
-              height: 2500px;
-              ul {
-                width: 33.33%;
-                margin-bottom: 20px;
-                padding-left: 20px;
-                display: inline-block;
-                vertical-align: top;
-                li {
-                  width: 100%;
-                  text-align: left;
-                  cursor: pointer;
-                  line-height: 24px;
-                  padding: 0;
-                  a {
-                    font-size: rem(14);
-                    text-decoration: none;
-                  }
-                  &.active {
-                    color: #a4df23;
-                    a {
-                      color: #a4df23;
-                    }
-                  }
-                  &.list-title {
-                    position: relative;
-                    .country-alphabet {
-                      position: absolute;
-                      left: 0;
-                      top: 0;
-                      z-index: 1;
-                      margin-left: -20px;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    .pr-15 {
-      padding-right: 15px;
-    }
-    .pl-15 {
-      padding-left: 15px;
-    }
-  }
-}
-
-
-.fixedElement {
-  &.fixed {
-    top: 20px;
-    right: 120px;
-    z-index: 5;
-  }
-}
-
-.mobile-search-wrap {
-  .fa {
-    color: #66CB00;
-  }
-}
-
-@include medium-and-up {
-  #header {
-    .navbar-brand {
-      padding: 0 11px 0 15px;
-      img {
-        width: 100%;
-      }
-    }
-    &.top-navigation {
-      .mobile-menus {
-        .country-select-box {
-          width: 300px;
-          padding: 10px 20px 0 35px;
-          margin-left: 0;
-          .country-selection-option {
-            height: 400px;
-            .country-option-box {
-              .country-list {
-                height: auto;
-                ul {
-                  width: 100%;
-                }
-              }
-            }
-          }
-        }
-        li {
-          text-align: left;
-          border-bottom: solid 1px $border-color;
-          padding: 10px 0 10px 15px;
-          width: auto;
-          &.loginSignUpWrap {
-            i {
-              margin-right: 10px;
-            }
-          }
-          &.nav-search-wrap {
-            width: 100%;
-          }
-          &.active {
-            border-left: solid 5px $black;
-          }
-          .styled-select {
-            margin-top: 0;
-          }
-          &.active-li {
-            background-color: transparent;
-          }
-        }
-      }
-    }
-  }
-  .mobile-search-wrap {
-    .fa {
-      color: #66CB00;
-    }
-    .mobile-search-input {
-      display: block;
-      width: 88%;
-      border: 0;
-      outline: none;
-      padding: 0;
-      font-size: rem(14);
-      font-weight: bold;
-      color: #676767;
-    }
-    #searchsubmit {
-      display: block;
-      float: right;
-      background: none;
-      color: #717171;
-      border: 0;
-      outline: none;
-      cursor: pointer;
-      font-size: rem(15);
-    }
-    #searchbar {
-      display: none;
-      position: absolute;
-      left: 0;
-      top: 48px;
-      width: 100%;
-      padding: 10px 20px;
-      border-top: 1px solid #d8d8d8;
-      z-index: 9999;
-      background: $white;
-      box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
-    }
-  }
-}
-
-@include large-and-up {
-  #header.top-navigation {
-    .navbar {
-      li {
-        width: 28%;
-        a {
-          font-size: rem(18);
-        }
-        &.big-screen-nav-link {
-        }
-      }
-    }
-    .navbar-nav {
-      width: 100%;
-    }
-  }
-}
-
-@include x-large-and-up {
-  #header.top-navigation {
-    position: fixed;
-    padding: 0;
-    top: 0;
-    .navbar-branf {
-      padding: 0 25px 0 15px;
-      margin: 0;
-    }
-    .navbar {
-      li {
-        width: 20%;
-      }
-    }
-    .navbar-nav {
-      width: 100%;
-    }
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .navbar {
-    .mobile-header-wrap {
-      padding: 9px 0;
-      img {
-        height: 20px;
-      }
-      .mobile-search-wrap {
-        padding: 5px 5px 0 0;
-      }
-    }
-  }
-}
-*/
-
-// TODO: is this in use at all?
-// .loginSignUpWrap {
-//   color: $nav-link;
-//   width: 220px;
-//   margin-left: 10px;
-//   visibility: hidden;
-//   display: none;
-//   i {
-//     // display: inline-block;
-//     float: left;
-//     font-size: rem(30);
-//     margin-top: 5px;
-//   }
-//   a {
-//     color: $nav-link;
-//     font-size: rem(16);
-//     margin: 9px 2px 0;
-//     &:hover {
-//       transition: 0.5s;
-//       color: $green-link-hover;
-//     }
-//   }
-// }
-
 .top-navigation {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
   z-index: 3;
   padding: 0;
   text-transform: uppercase;
@@ -508,11 +10,12 @@
   flex-direction: row;
   justify-content: space-between;
 
-  @include background-before-opacity($top-nav, 0.9);
+  background: fade-out($top-nav, 0.10);
 
   a {
     color: $white;
   }
+
   .btn-donate {
     color: $grey;
   }
@@ -551,27 +54,35 @@
       display: inline;
     }
   }
+
+  @include large-and-up {
+    display: none;
+  }
+}
+.navbar-search-toggle {
+  @include large-and-up {
+    display: none;
+  }
 }
 
 .site-logo,
 .btn-navbar-toggle,
+.country-dropdown-toggle,
 .nav-item,
 .nav-link {
   flex: 0 1 auto;
   line-height: rem(54);
   padding: 0 15px;
 
-  @include medium-and-up {
+  // Use (min-width: 783px) for parity with WP's .admin-bar
+  @media screen and (min-width: 783px) {
     line-height: rem(60);
     font-size: rem(18);
   }
 }
-.site-logo,
-.btn-navbar-toggle {
-  border-bottom: 2px solid transparent;
-}
 
 .btn-navbar-toggle,
+.country-dropdown-toggle,
 .nav-link {
   &.active,
   &:hover,
@@ -587,6 +98,7 @@
   fa {
     font-size: rem(18);
   }
+  border-bottom: 2px solid transparent;
   &.active,
   &:hover,
   &:focus,
@@ -613,16 +125,10 @@
     }
   }
   */
-  @include large-and-up {
-    display: none;
-  }
 }
 
 .site-logo {
-  // text-align: center;
-  // width: 100%;
-  z-index: 1; // Force over background-before-opacity
-
+  border-bottom: 2px solid transparent;
   &:focus {
     color: $white;
     border-bottom: 2px solid $white;
@@ -649,7 +155,6 @@
   display: none;
   margin: 0;
   list-style-type: none;
-  position: relative;
 
   &.open {
     display: flex;
@@ -658,35 +163,67 @@
   @media (min-width: #{$medium-width}) and (max-width: #{$large-width}) {
     max-height: calc( 100vh - #{rem(60)} );
   }
+  .admin-bar & {
+    @media screen and (max-width: 782px) {
+      max-height: calc( 100vh - #{rem(60)} - 46px );
+    }
+    @media screen and (min-width: 783px) and (max-width: #{$large-width}) {
+      max-height: calc( 100vh - #{rem(60)} - 32px );
+    }
+  }
+
   // Equiv. to "large-and-down", to avoid need to override all styles below
   @media (max-width: #{$large-width}) {
     flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     top: 100%;
+    left: 0;
     min-width: 300px;
-    max-height: calc( 100vh - #{rem(54)} );
-    padding: 20px 0;
+    height: calc( 100vh - #{rem(54)} );
+    padding: 0.5em 0 20px;
     border-left: 8px solid $top-nav;
     background-color: fade-out($top-nav, 0.15);
     background-size: cover;
+    overflow-y: auto;
 
+    .country-dropdown-toggle {
+      background: url('images/country-icon.png') 0.5em center no-repeat;
+      background-size: 1.5em;
+    }
+
+    .nav-item {
+      position: relative;
+
+      &:last-child {
+        margin: auto 0 0.5em;
+        flex: 0;
+      }
+    }
+
+    .country-dropdown-toggle,
     .nav-link {
       padding: 0 40px;
       display: block;
+      line-height: rem(45);
+      font-size: rem(16);
+      margin-bottom: 0.5em;
 
+      &[aria-expanded="true"],
       .active &,
       &:focus,
       &:hover {
-        font-weight: bold;
+        // font-weight: bold;
+        position: relative;
 
         &::before {
           content: "";
-          height: 2em;
+          position: absolute;
+          top: 0;
+          bottom: 0;
           background: $black;
           width: 8px;
-          margin: 0 40px 0 -48px;
-          display: inline-block;
-          vertical-align: middle;
+          margin-left: -48px;
         }
       }
     }
@@ -694,7 +231,7 @@
     .btn-donate {
       display: block;
       width: 200px;
-      margin: 8em auto 1em;
+      margin: 0 auto;
       padding: 5px 30px;
     }
   }
@@ -703,12 +240,17 @@
     display: flex;
     flex: 4 1 auto;
     justify-content: space-evenly;
-    margin: 0 11px;
 
+    .nav-item {
+      flex: 0 1 0;
+    }
+
+    .country-dropdown-toggle,
     .nav-link {
       padding: 0 20px;
       min-width: 20%;
       text-align: center;
+      border-bottom: 2px solid transparent;
 
       .active > &,
       &:hover,
@@ -720,7 +262,6 @@
   }
 
   .nav-item {
-    flex: 0 1 auto;
     margin: 0;
     padding: 0;
   }
@@ -743,7 +284,7 @@
     width: 300px;
     padding: 11px;
     max-width: 80%;
-    background: fade-out($top-nav, 0.15);
+    background: fade-out($blue-bg, 0.15);
   }
 
   @include large-and-up {
@@ -781,11 +322,16 @@
 }
 
 .country-dropdown-toggle {
+  cursor: pointer;
+  font-size: rem(16);
   border: 0;
   color: $white;
   background: transparent;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
-  &:after {
+  &::after {
     content: "";
     width: 8px;
     height: 8px;
@@ -794,19 +340,18 @@
     display: inline-block;
     margin-left: 10px;
   }
-}
 
-.search-box {
-  background: $blue-bg;
+  &[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+  }
 }
 
 .country-list {
   display: none;
   text-transform: none;
   background: $blue-bg;
-  padding: 20px;
-  margin: auto;
   line-height: 1.5;
+  padding: 1.5em 0 0;
 
   &.open {
     display: block;
@@ -822,48 +367,67 @@
     color: $gp-green-80;
   }
 
-  li {
-    break-inside: avoid;
-    padding-left: 2em;
-  }
+  .country-group-letter {
+    font-size: rem(16);
+    position: absolute;
+    line-height: 1.5;
+    font-weight: bold;
+    color: $grey-40;
+    margin-left: -1.5em;
 
-  @include small-and-up {
-    position: fixed;
-    max-height: 100vh;
-    overflow: scroll;
-    column-count: 2;
-    padding: 2em;
-  }
-  @include large-and-up {
-    column-count: 3;
-    padding: 4em;
-  }
-}
-
-$alphabet: "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z";
-@each $letter in $alphabet {
-  .country-#{$letter} {
-    position: relative;
-    margin-top: 1.5em;
-    break-before: auto;
-
-    &::before {
-      position: absolute;
+    @include large-and-up {
       margin-left: -2em;
-      content: $letter;
-      font-weight: bold;
-      color: $grey-40;
+    }
+  }
+
+  > ul {
+    padding: 0 0 2em;
+    margin-top: 1.5em;
+  }
+
+  > a,
+  li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 40px;
+    font-size: rem(16);
+
+    @include large-and-up {
+      padding-left: 2em;
     }
 
-    // Remove the padding and alphabet letter on subsequent occurrences of this class
-    & ~ .country-#{$letter} {
-      margin-top: 0;
-      // Try not to break within a letter group (doesn't work properly)
-      break-before: avoid !important;
-
-      &::before {
-        content: none;
-      }
+    ul {
+      break-inside: avoid;
+      padding: 0;
+      margin: 0 1em 1.5em 0;
     }
+
+    li {
+      padding-left: 0;
+    }
+  }
+
+  @include large-and-up {
+    position: absolute;
+    height: 100vh;
+    width: 90%;
+    padding: 2em;
+    left: 10%;
+    // overflow-x: none;
+    overflow-y: scroll;
+    max-height: calc( 100vh - #{rem(60)} );
+
+    .admin-bar & {
+      max-height: calc( 100vh - #{rem(60)} - 32px );
+    }
+
+    > ul {
+      column-count: 3;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 2em 4em 4em;
+    width: 80%;
+    left: 10%;
   }
 }

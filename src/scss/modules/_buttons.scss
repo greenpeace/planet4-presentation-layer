@@ -140,6 +140,7 @@ Stylesheet: Button Styles
  * Top navigation dropdown toggle button used in the navbar.
  */
 .btn-navbar-toggle {
+  cursor: pointer;
   color: $gp-green;
   background-color: transparent;
   border-radius: 0;
