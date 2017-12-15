@@ -61,11 +61,13 @@
     padding: .25em;
     clear: left;
   }
+
   dd {
     float: left;
     width: 80%;
     padding: .25em 0;
   }
+
   dl:after {
     content: "";
     display: table;
@@ -74,7 +76,7 @@
 
   .youtube-player {
     max-width: 100%;
-    }
+  }
 
   .entry-content,
   .entry-title {
@@ -122,10 +124,11 @@
       height: auto;
     }
 
-    dl, dt {
+    dl,
+    dt {
       margin: 0;
     }
-    br+br {
+    br + br {
       display: none;
     }
   }
@@ -138,25 +141,11 @@
   }
 
   .page-links {
-
     a {
       @extend .btn;
       @extend .btn-secondary;
       @extend .btn-small;
     }
-
-    /** Hides the word "Page" but leaves it available to screen readers */
-    .screen-reader-text {
-      clip: rect(1px, 1px, 1px, 1px);
-      height: 1px;
-      overflow: hidden;
-      overflow-x: hidden;
-      overflow-y: hidden;
-      position: absolute !important;
-      width: 1px;
-      word-wrap: normal !important;
-    }
-
   }
 
   q {
@@ -164,8 +153,8 @@
   }
 
   table {
-
-    th, td {
+    th,
+    td {
       border: 1px solid $green-80;
       padding: 6px;
     }
@@ -183,8 +172,6 @@
       background-color: $grey-20;
     }
   }
-
-
 }
 
 .post-content-lead {
