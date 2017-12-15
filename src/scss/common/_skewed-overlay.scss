@@ -4,11 +4,11 @@
 
 	/* To accomodate very long content. */
 	@include mobile-only {
-		max-height: 5000px;
+		max-height: 4500px;
 	}
 
 	@include medium-and-up {
-		max-height: 10000px;
+		max-height: 9000px;
 	}
 
 	width: 100%;
