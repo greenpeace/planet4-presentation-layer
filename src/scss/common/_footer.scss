@@ -1,7 +1,7 @@
 .site-footer {
   font-family: $roboto;
   padding: 45px 0 25px;
-  background: $blue-top-nav;
+  background: $green;
   position: relative;
   z-index: 2;
   text-align: center;
@@ -14,8 +14,16 @@
     padding: 50px 0 40px;
   }
 
-  .brown-bg & {
-    background: $header-footer-bg;
+  /**
+   * Handle specific-page backgrounds.
+   */
+  .home &,
+  .single-post & {
+    background-color: $dark-blue;
+  }
+
+  .search {
+    background-color: $blue-tiber;
   }
 
   a {
@@ -45,11 +53,8 @@
 
 .footer-links,
 .footer-links-secondary {
-  @include medium-and-up {
-    font-size: rem(16);
-    margin-bottom: 10px;
-
-    li {
+  li {
+    @include medium-and-up {
       display: inline-block;
 
       &:after {
@@ -60,6 +65,12 @@
 
       &:last-of-type:after {
         display: none;
+      }
+    }
+
+    @include large-and-up {
+      &:after {
+        margin: 0 24px;
       }
     }
   }
