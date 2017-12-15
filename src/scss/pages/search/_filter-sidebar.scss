@@ -94,9 +94,15 @@
 			background-color: transparent;
 		}
 
-		.custom-control-input:checked + .custom-control-indicator {
-			background-color: $faded-jade;
-			border-color: $faded-jade;
+		.custom-control-input:checked {
+			& + .custom-control-indicator {
+				background-color: $faded-jade;
+				border-color: $faded-jade;
+			}
+
+			& ~ .custom-control-description {
+				font-weight: bold;
+			}
 		}
 
 		ul {
