@@ -171,6 +171,7 @@ Stylesheet: Button Styles
   border-color: $blue-tiber;
   padding: 0 50px 0 30px;
   position: relative;
+  text-transform: none;
 
   &:hover,
   &:focus {
@@ -185,7 +186,7 @@ Stylesheet: Button Styles
 
   i {
     position: absolute;
-    font-size: .7em;
+    font-size: .6em;
     right: 10px;
     top: 50%;
     transform: translate( 0, -40% );
