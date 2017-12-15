@@ -39,8 +39,19 @@
   }
 
   blockquote {
-    font-size: 2rem;
+    font-family: $lora;
+    font-size: rem(36);
+    line-height: 1.5;
     font-style: italic;
+    margin: 15px 0;
+
+    @include large-and-up {
+      max-width: 80%;
+    }
+
+    @include x-large-and-up {
+      font-size: rem(40);
+    }
   }
 
   cite {
@@ -185,6 +196,7 @@
   position: relative;
   display: inline-block;
   width: auto;
+  margin-bottom: 0;
 
   img {
     max-width: 100%;
@@ -203,5 +215,9 @@
 
   .image-desc {
     display: block;
+  }
+
+  figcaption {
+    margin-top: 10px;
   }
 }
