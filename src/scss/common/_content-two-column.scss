@@ -1,8 +1,22 @@
 .content-two-column-block {
   padding-top: 46px;
+
+  @include medium-and-up {
+    padding-top: 74px;
+  }
+
+  @include large-and-up {
+    padding-top: 85px;
+  }
+
+  @include x-large-and-up {
+    padding-top: 108px;
+  }
+
   .heading {
     padding-left: 0;
   }
+
   h2 {
     font-size: rem(24);
     font-weight: bold;
@@ -10,92 +24,60 @@
     margin-bottom: 20px;
     width: 60%;
     color: $black;
-  }
-  p {
-    font-size: rem(17);
-    line-height: 28.9px;
-    margin-bottom: 37px;
-    color: $dark-shade-black;
-  }
-  .btn {
-    margin-bottom: 59px;
-    width: 100%;
-  }
-}
 
-@include small-and-up {
-  .content-two-column-block {
-    padding-top: 46px;
-    h2 {
-      font-size: rem(26);
-      margin-bottom: 20px;
-      width: 60%;
-    }
-    p {
-      font-size: rem(17);
-      line-height: 28.9px;
-      margin-bottom: 37px;
-    }
-    .btn {
-      margin-bottom: 59px;
-      width: 100%;
-    }
-  }
-}
-
-@include medium-and-up {
-  .content-two-column-block {
-    padding-top: 74px;
-    h2 {
+    @include medium-and-up {
       font-size: rem(34);
-      margin-bottom: 21px;
       width: 80%;
     }
-    p {
-      font-size: rem(19);
-      line-height: 33px;
-      margin-bottom: 46px;
-    }
-    .btn {
-      margin-bottom: 73px;
-      width: 50%;
-    }
-  }
-}
 
-@include large-and-up {
-  .content-two-column-block {
-    padding-top: 85px;
-    h2 {
+    @include large-and-up {
       font-size: rem(36);
       margin-bottom: 25px;
-      width: 80%;
     }
-    p {
-      font-size: rem(20);
-      line-height: 34px;
-      margin-bottom: 56px;
-    }
-    .btn {
-      margin-bottom: 99px;
-      width: 80%;
-    }
-  }
-}
 
-@include x-large-and-up {
-  .content-two-column-block {
-    padding-top: 108px;
-    h2 {
+    @include x-large-and-up {
       font-size: rem(38);
       margin-bottom: 32px;
     }
-    p {
+  }
+
+  p {
+    font-size: rem(17);
+    line-height: 1.7;
+    margin-bottom: 37px;
+    color: $grey-80;
+
+    @include medium-and-up {
+      font-size: rem(19);
+      margin-bottom: 46px;
+    }
+
+    @include large-and-up {
+      font-size: rem(20);
+      margin-bottom: 56px;
+    }
+
+    @include x-large-and-up {
       font-size: rem(22);
-      line-height: 38px;
       margin-bottom: 69px;
     }
-    .btn {
+  }
+
+  .btn {
+    margin-bottom: 59px;
+    width: 100%;
+
+    @include medium-and-up {
+      margin-bottom: 73px;
+      width: 50%;
+    }
+
+    @include large-and-up {
+      margin-bottom: 99px;
+      width: 80%;
+    }
+
+    @include x-large-and-up {
       margin-bottom: 119px;
       width: 60%;
     }
