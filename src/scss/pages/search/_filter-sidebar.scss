@@ -221,11 +221,19 @@
 				}
 			}
 
+			.activefilter-tag {
+				background-color: transparent;
+				cursor: pointer;
+				text-align: left;
+			}
+
 			.clearall {
 				text-align: center;
 				width: 100%;
 				background: $med-blue;
 				color: $white;
+				text-transform: uppercase;
+				cursor: pointer;
 			}
 		}
 	}
