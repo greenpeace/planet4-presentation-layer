@@ -3,7 +3,11 @@ div.search-filter-results {
 	z-index: auto;
 
 	@include small-and-up {
-		margin-top: 104px;
+		margin-top: 75px;
+	}
+
+	@include large-and-up {
+		margin-top: 100px;
 	}
 }
 

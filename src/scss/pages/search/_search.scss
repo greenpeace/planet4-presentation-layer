@@ -1,5 +1,5 @@
 .search {
-	@include linear-gradient(to bottom, transparentize($green-20, .25) 0%, transparentize($grey-10, .5) 100%);
+	@include linear-gradient(to bottom, transparentize($green-20, .15) 0%, transparentize($grey-10, .5) 100%);
 }
 
 .search-block {

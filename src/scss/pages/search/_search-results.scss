@@ -18,7 +18,7 @@
 	height: 100%;
 	padding-top: 100px;
 
-	@include medium-and-up {
+	@include small-and-up {
 		padding-top: 32px;
 	}
 
@@ -36,7 +36,7 @@
 			position: relative;
 
 			@include small-and-up {
-				margin-bottom: 32px;
+				margin: 0 auto 32px;
 				padding-bottom: 32px;
 			}
 
@@ -101,6 +101,7 @@
 	.btn-secondary {
 		color: $black;
 		border-color: $black;
+		border-width: 2px;
 
 		&:hover,
 		&:focus,
@@ -179,6 +180,7 @@
 	font-style: italic;
 	color: $grey-60;
 	line-height: normal;
+	margin-bottom: 10px;
 
 	@include large-and-up {
 		font-size: rem(16);
