@@ -53,7 +53,7 @@
 			@include medium-and-up {
 				min-height: 330px; 
 				margin-left: 0;
-			    margin-right: 0;
+				margin-right: 0;
 			}
 
 			@include x-large-and-up {
@@ -63,13 +63,20 @@
 
 		.split-image { 
 			position: absolute;
+
 			img {
-				object-fit: cover;
 				height: 184px;
+				position: relative;
+				left: -30%;
 
 				@include medium-and-up {
 					height: 330px;
 				}
+
+				@include large-and-up {
+					left: -25%;
+				}
+
 				@include x-large-and-up {
 					height: 430px;
 				}
@@ -78,7 +85,11 @@
 
 		.first-column {
 			margin-left: -50px;
-			margin-right: -130px;  
+			margin-right: -130px;
+
+			img {
+				left: 35px;
+			}
 		} 
 
 		.second-column { 
@@ -86,67 +97,18 @@
 			border-left: 10px solid $brown-bg; 
 			border-right: 10px solid $brown-bg;
 			z-index: 2;
-			width: 120%;
+			width: 110%;
 			left: 0;
 			top: 0;
 			overflow: hidden;
-			
+
 			img {
-				transform: skew(-25deg); 
-				margin-left: -40px;
-
-				@include medium-and-up {
-					margin-left: -90px;
-				}
-
-				@include large-and-up {
-					margin-left: -90px;
-				}
-
-				@include x-large-and-up {
-					margin-left: -100px;
-				}
-			} 
-
-			@include medium-and-up {
-				width: 110%;
-			}
-
-			@include large-and-up {
-				width: 100%;  
-			}
-
-			@include x-large-and-up {
-				width: 100%;
+				transform: skew(-25deg);
 			}
 		} 
 
 		.third-column { 
 			z-index: 1;
-			right: -100px;  
-
-			@include small-and-up {
-				right: -85px; 
-			}
-
-			@include medium-and-up {
-				right: -190px;
-			}
-
-			@include large-and-up{
-				right: -110px;
-			}
-
-			@include x-large-and-up {
-				right: -150px; 
-
-			} 
-
-			img {
-				@include large-and-up{
-					margin-right: 66px;
-				}
-			}
 		} 
 	}
 
