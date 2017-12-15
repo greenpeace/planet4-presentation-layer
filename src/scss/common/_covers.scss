@@ -1,3 +1,9 @@
+.covers-block .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .cover-card {
   min-height: 440px;
   flex-basis: 100%;
@@ -7,51 +13,100 @@
   box-shadow: 0 0 10px rgba(0,0,0,.35);
   background-size: cover;
   background-position: center;
+  color: $grey-80;
+
+  @include medium-and-up {
+    flex-basis: 48%;
+  }
+
+  @include large-and-up {
+    flex-basis: 32%;
+  }
+
   &:before {
     content: "";
     opacity: 0;
     transition: opacity 100ms linear;
   }
+
   &:hover {
-    @include background-before-opacity($green-80);
+    @include background-before-opacity($white, .55);
     box-shadow: 0 0 10px transparentize($black, .5);
-    h2 {
-      color: $white
+
+    h2,
+    p {
+      color: $grey-80;
     }
+
     p {
       opacity: 1;
       visibility: visible;
     }
+
+    .btn {
+      background-color: $orange-hover;
+      border-color: $orange-hover;
+    }
   }
+
+  &--evergreen {
+    @include background-before-opacity($black, .25);
+
+    &:hover {
+      @include background-before-opacity($green-80, .7);
+
+      h2,
+      p {
+        color: $white;
+      }
+    }
+  }
+
   &.dark-card-bg {
     color: $white;
   }
+
   & > * {
     position: relative;
   }
+
   h2 {
-    font-size: rem(28);
+    font-size: rem(24);
     line-height: 1.2;
     font-weight: 500;
     margin-bottom: 32px;
     max-width: 80%;
     transition: color 100ms linear;
-  } 
+
+    @include large-and-up {
+      font-size: rem(28);
+    }
+  }
+
   p {
-    font-size: rem(20);
+    font-size: rem(16);
     font-weight: 300;
     line-height: 1.6;
     color: $white;
     opacity: 0;
     visibility: hidden;
     transition: opacity 150ms linear;
+
+    @include large-and-up {
+      font-size: rem(18);
+    }
   }
+
   @include large-and-up {
     transition: box-shadow 150ms linear;
     padding-bottom: 70px;
 
     &:not(.single-cover){
       box-shadow: none;
+
+      &:hover {
+        box-shadow: 0 0 10px transparentize($black, .5);
+      }
     }
   }
 }
@@ -62,6 +117,7 @@
   display: inline-block;
   margin-bottom: 8px;
   text-decoration: none;
+
   &:hover {
     color: $yellow;
   }
