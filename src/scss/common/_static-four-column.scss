@@ -1,5 +1,10 @@
 .four-column {
-  color: $genoa;
+  color: $deep-sea-green;
+  margin: 40px 0;
+
+  @include medium-and-up {
+    margin: 60px 0;
+  }
 
   h2 {
     font-size: rem(30);
@@ -8,7 +13,7 @@
     margin: 60px 0 35px 0;
 
     @include medium-and-up {
-      font-size: rem(43);
+      font-size: rem(38);
       margin-top: 74px;
       margin-bottom: 57px;
     }
@@ -29,22 +34,24 @@
 
   a {
     color: inherit;
+    text-decoration: none;
+
+    &:after {
+      content: "\003E";
+      padding-left: 5px;
+    }
   }
 }
 
 .four-column-wrap {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 
   @include medium-and-up {
-    margin-bottom: 74px;
+    margin-bottom: 54px;
   }
 
-  @include medium-and-up {
-    margin-bottom: 86px;
-  }
-
-  @include medium-and-up {
-    margin-bottom: 104px;
+  @include large-and-up {
+    margin-bottom: 0;
   }
 }
 
@@ -64,7 +71,6 @@
 
 .four-column-information {
   float: left;
-  min-height: 230px;
 
   h5 {
     text-align: center;
@@ -75,10 +81,6 @@
 
     @include medium-and-up {
       text-align: left;
-      margin-bottom: 40px;
-    }
-
-    @include large-and-up {
       margin-bottom: 16px;
     }
 
@@ -89,19 +91,17 @@
 
   p {
     font-size: rem(15);
-    line-height: 25px;
+    line-height: 1.6;
+    color: $grey-80;
 
     @include medium-and-up {
       margin-bottom: 24px;
     }
 
     @include x-large-and-up {
+      font-size: rem(16);
       margin-bottom: 48px;
     }
-  }
-
-  a {
-    text-decoration: none;
   }
 
   a:hover {
