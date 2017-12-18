@@ -1,3 +1,6 @@
+$menu-height-small: rem(54);
+$menu-height-large: rem(60);
+
 .top-navigation {
   position: fixed;
   width: 100%;
@@ -10,7 +13,12 @@
   flex-direction: row;
   justify-content: space-between;
 
-  background: fade-out($top-nav, 0.20);
+  background: transparentize($top-nav, 0.20);
+  height: $menu-height-small;
+
+  @include medium-and-up {
+    height: $menu-height-large + rem(2);
+  }
 
   a {
     color: $white;
@@ -30,58 +38,18 @@
   }
 }
 
-.navbar-dropdown-toggle {
-  &[aria-expanded="true"] {
-    .fa-bars {
-      display: none;
-    }
-    .fa-times {
-      display: inline-block;
-    }
-  }
-  &[aria-expanded="false"] {
-    .fa-bars {
-      display: inline-block;
-    }
-    .fa-times {
-      display: none;
-    }
-  }
-  // Hide button text on smallest screens
-  .navbar-toggle-label {
-    display: none;
-    @include small-and-up {
-      display: inline;
-    }
-  }
-
-  @include large-and-up {
-    display: none;
-  }
-}
-.navbar-search-toggle {
-  cursor: pointer;
-  border: 0;
-  background: url('images/search.svg') center center no-repeat;
-  background-size: 28px;
-
-  @include large-and-up {
-    display: none;
-  }
-}
-
 .site-logo,
 .btn-navbar-toggle,
 .navbar-search-toggle,
 .country-dropdown-toggle,
 .nav-item,
 .nav-link {
-  line-height: rem(54);
+  line-height: $menu-height-small;
   padding: 0 15px;
 
   // Use (min-width: 783px) for parity with WP's .admin-bar
   @media screen and (min-width: 783px) {
-    line-height: rem(60);
+    line-height: $menu-height-large;
     font-size: rem(18);
   }
 }
@@ -111,8 +79,55 @@
   }
 }
 
+.navbar-dropdown-toggle {
+  &[aria-expanded="true"] {
+    z-index: 2;
+    background: transparent url('images/close-icon.svg') right center no-repeat;
+    background-size: 1.5em;
+    width: $menu-height-small;
+    position: absolute;
+    left: 250px;
+    height: rem(32);
+    width: rem(32);
+    outline: 0;
+    box-shadow: none;
+    padding: 0;
+
+    @include small-and-up {
+      left: 320px;
+    }
+    // Use (min-width: 783px) for parity with WP's .admin-bar
+    @media screen and (min-width: 783px) {
+      left: 365px;
+      width: rem(40);
+      height: rem(40);
+    }
+
+    span {
+      @extend .screen-reader-text;
+    }
+  }
+
+  @include large-and-up {
+    display: none;
+  }
+}
+
+.navbar-search-toggle {
+  cursor: pointer;
+  border: 0;
+  background: url('images/search.svg') center center no-repeat;
+  background-size: 28px;
+  margin-left: auto;
+  z-index: 0;
+
+  @include large-and-up {
+    display: none;
+  }
+}
+
 .site-logo {
-  @media (max-width: #{large-width}) {
+  @media (max-width: #{$large-width}) {
     position: absolute;
     width: 100%;
     text-align: center;
@@ -138,6 +153,7 @@
 
 .navbar-dropdown {
   display: none;
+  // display: flex;
   margin: 0;
   list-style-type: none;
 
@@ -145,47 +161,102 @@
     display: flex;
   }
 
-  @media (min-width: #{$medium-width}) and (max-width: #{$large-width}) {
-    max-height: calc( 100vh - #{rem(60)} );
+  // Dropdown width permutations
+  @media screen and (max-width: #{$small-width}) {
+    &,
+    .country-dropdown-toggle {
+      width: 300px;
+    }
+    &:before {
+      left: 300px;
+    }
   }
+  // Use (min-width: 783px) for parity with WP's .admin-bar
+  @media screen and (min-width: #{$small-width}) and (max-width: 782px) {
+    &,
+    .country-dropdown-toggle {
+      width: 375px;
+    }
+    &:before {
+      left: 375px;
+    }
+  }
+  // Use (min-width: 783px) for parity with WP's .admin-bar
+  @media screen and (min-width: 783px) and (max-width: #{$large-width}) {
+    &,
+    .country-dropdown-toggle {
+      width: 425px;
+    }
+    &:before {
+      left: 425px;
+    }
+  }
+  // Dropdown height permutations, with and without WP admin bar
+  height: 100vh;
   .admin-bar & {
     @media screen and (max-width: 782px) {
-      max-height: calc( 100vh - #{rem(60)} - 46px );
+      height: calc( 100vh - 46px );
     }
     @media screen and (min-width: 783px) and (max-width: #{$large-width}) {
-      max-height: calc( 100vh - #{rem(60)} - 32px );
+      height: calc( 100vh - 32px );
     }
   }
 
-  // Equiv. to "large-and-down", to avoid need to override all styles below
+  // All other dropdown styles
   @media (max-width: #{$large-width}) {
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
-    min-width: 300px;
-    height: calc( 100vh - #{rem(54)} );
-    padding: 0.5em 0 20px;
-    border-left: 8px solid $top-nav;
-    background: fade-out($top-nav, 0.15) url('images/dropdown-gradient.svg') right top no-repeat;
+    border-left: 8px solid transparentize($top-nav, 0.1);
+    background: transparentize($top-nav, 0.2) url('images/dropdown-gradient.svg') no-repeat;
     overflow-y: auto;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      display: block;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: transparentize($black, 0.5);
+      z-index: 0;
+    }
 
     .country-dropdown-toggle {
-      background: url('images/country-icon.png') 0.5em center no-repeat;
-      background-size: 1.5em;
+      text-align: left;
+      margin-left: -8px;
+      padding: 2px 70px 0 48px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        margin-left: -48px;
+        width: 44px;
+        display: inline-block;
+        vertical-align: middle;
+        height: 1.75em;
+        background: $blue-bg url('images/country-icon.png') center center no-repeat;
+        border-right: 1px solid $grey-60;
+        background-size: contain;
+      }
     }
 
     .nav-item {
-      position: relative;
+      // position: relative;
+      z-index: 2;
 
       &:last-child {
-        margin: auto 0 0.5em;
+        margin: auto 0 1.5em;
         flex: 0;
       }
     }
 
-    .country-dropdown-toggle,
     .nav-link {
       padding: 0 40px;
       display: block;
@@ -194,22 +265,20 @@
       margin-bottom: 0.5em;
     }
 
-    .active .nav-link,
-    [aria-expanded="true"],
-    .country-dropdown-toggle:focus,
+    .nav-link,
     .nav-link:focus,
-    .country-dropdown-toggle:hover,
     .nav-link:hover {
       position: relative;
+      z-index: 2;
 
-      &::before {
+      &:before {
         content: "";
         position: absolute;
-        top: 0;
-        bottom: 0;
+        height: 1em;
         background: $black;
         width: 8px;
         margin-left: -48px;
+        z-index: 2;
       }
     }
 
@@ -219,6 +288,14 @@
       margin: 0 auto;
       padding: 5px 30px;
     }
+  }
+
+  // Background position control
+  @media (max-width: #{$medium-width}) {
+    background-position: right $menu-height-small;
+  }
+  @media (min-width: #{$medium-width}) and (max-width: #{$large-width}) {
+    background-position: right $menu-height-large;
   }
 
   @include large-and-up {
@@ -268,7 +345,7 @@
     width: 300px;
     padding: 11px;
     max-width: 80%;
-    background: fade-out($blue-bg, 0.15);
+    background: transparentize($blue-bg, 0.15);
   }
 
   @include large-and-up {
@@ -314,6 +391,11 @@
   text-overflow: ellipsis;
   overflow: hidden;
 
+  background-color: $blue-bg;
+  @include large-and-up {
+    background-color: transparent;
+  }
+
   &::after {
     content: "";
     width: 8px;
@@ -322,10 +404,11 @@
     background-size: contain;
     display: inline-block;
     margin-left: 10px;
+    transition: transform 100ms ease-in-out;
   }
 
   &[aria-expanded="true"] {
-    background: fade-out($blue-bg, 0.10);
+    background-color: transparentize($blue-bg, 0.10);
 
     &::after {
       transform: rotate(180deg);
@@ -336,7 +419,7 @@
 .country-list {
   display: none;
   text-transform: none;
-  background: fade-out($blue-bg, 0.10);
+  background: transparentize($blue-bg, 0.10);
   line-height: 1.5;
   padding: 1.5em 0;
 
@@ -404,10 +487,10 @@
     left: 10%;
     // overflow-x: none;
     overflow-y: scroll;
-    max-height: calc( 100vh - #{rem(60)} );
+    max-height: calc( 100vh - #{$menu-height-large} );
 
     .admin-bar & {
-      max-height: calc( 100vh - #{rem(60)} - 32px );
+      max-height: calc( 100vh - #{$menu-height-large} - 32px );
     }
 
     > ul {
