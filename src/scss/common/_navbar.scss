@@ -16,8 +16,9 @@ $menu-height-large: rem(60);
   background: transparentize($top-nav, 0.20);
   height: $menu-height-small;
 
-  @include medium-and-up {
-    height: $menu-height-large + rem(2);
+  // Use (min-width: 783px) for parity with WP's .admin-bar
+  @media screen and (min-width: 783px) {
+    height: $menu-height-large + rem(1);
   }
 
   a {
@@ -73,6 +74,7 @@ $menu-height-large: rem(60);
   margin: 11px;
   padding: 0 22px;
   color: $white;
+  z-index: 1;
 
   fa {
     font-size: rem(18);
@@ -80,28 +82,21 @@ $menu-height-large: rem(60);
 }
 
 .navbar-dropdown-toggle {
+  // When menu is open, turn the button into the background overlay
   &[aria-expanded="true"] {
     z-index: 2;
-    background: transparent url('images/close-icon.svg') right center no-repeat;
-    background-size: 1.5em;
-    width: $menu-height-small;
-    position: absolute;
-    left: 250px;
-    height: rem(32);
-    width: rem(32);
+    background: transparentize($black, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
     outline: 0;
+    border: 0;
     box-shadow: none;
     padding: 0;
-
-    @include small-and-up {
-      left: 320px;
-    }
-    // Use (min-width: 783px) for parity with WP's .admin-bar
-    @media screen and (min-width: 783px) {
-      left: 365px;
-      width: rem(40);
-      height: rem(40);
-    }
+    margin: 0;
 
     span {
       @extend .screen-reader-text;
@@ -119,7 +114,6 @@ $menu-height-large: rem(60);
   background: url('images/search.svg') center center no-repeat;
   background-size: 28px;
   margin-left: auto;
-  z-index: 0;
 
   @include large-and-up {
     display: none;
@@ -153,7 +147,6 @@ $menu-height-large: rem(60);
 
 .navbar-dropdown {
   display: none;
-  // display: flex;
   margin: 0;
   list-style-type: none;
 
@@ -163,33 +156,15 @@ $menu-height-large: rem(60);
 
   // Dropdown width permutations
   @media screen and (max-width: #{$small-width}) {
-    &,
-    .country-dropdown-toggle {
-      width: 300px;
-    }
-    &:before {
-      left: 300px;
-    }
+    width: 300px;
   }
   // Use (min-width: 783px) for parity with WP's .admin-bar
   @media screen and (min-width: #{$small-width}) and (max-width: 782px) {
-    &,
-    .country-dropdown-toggle {
-      width: 375px;
-    }
-    &:before {
-      left: 375px;
-    }
+    width: 375px;
   }
   // Use (min-width: 783px) for parity with WP's .admin-bar
   @media screen and (min-width: 783px) and (max-width: #{$large-width}) {
-    &,
-    .country-dropdown-toggle {
-      width: 425px;
-    }
-    &:before {
-      left: 425px;
-    }
+    width: 400px;
   }
   // Dropdown height permutations, with and without WP admin bar
   height: 100vh;
@@ -210,46 +185,69 @@ $menu-height-large: rem(60);
     position: absolute;
     top: 0;
     left: 0;
-    border-left: 8px solid transparentize($top-nav, 0.1);
-    background: transparentize($top-nav, 0.2) url('images/dropdown-gradient.svg') no-repeat;
+    background: $deep-sea-green url('images/dropdown-gradient.svg') no-repeat;
     overflow-y: auto;
-    z-index: 1;
+    overflow-x: hidden;
+    z-index: 2;
+
+    .close-navbar-dropdown {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      height: $menu-height-small;
+      width: $menu-height-small;
+      background: url('images/close-icon.svg') center center no-repeat;
+      z-index: 2;
+      border: 0;
+
+      // Use (min-width: 783px) for parity with WP's .admin-bar
+      @media (min-width: 783px) and (max-width: #{$large-width}) {
+        height: $menu-height-large;
+      }
+
+      &:focus {
+        border: 1px dotted transparentize($white, 0.5);
+      }
+    }
 
     &::before {
       content: "";
-      display: block;
-      position: fixed;
+      position: absolute;
+      left: 0;
       top: 0;
       bottom: 0;
-      right: 0;
-      background-color: transparentize($black, 0.5);
+      width: 8px;
+      background: transparentize( $black, 0.9 );
       z-index: 0;
     }
 
     .country-dropdown-toggle {
+      box-sizing: border-box;
+      width: 100%;
       text-align: left;
-      margin-left: -8px;
-      padding: 2px 70px 0 48px;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
+      padding: 0 70px 0 67px;
 
       &::before {
         content: "";
-        margin-left: -48px;
-        width: 44px;
-        display: inline-block;
-        vertical-align: middle;
+        position: absolute;
+        top: 13px;
+        left: 0;
         height: 1.75em;
-        background: $blue-bg url('images/country-icon.png') center center no-repeat;
-        border-right: 1px solid $grey-60;
+        width: 50px;
+        display: inline-block;
+        height: 1.75em;
+        background: url('images/country-icon.svg') center center no-repeat;
+        border-right: 1px solid transparentize($white, 0.9);
         background-size: contain;
+
+        @media screen and (min-width: 783px) {
+          top: 17px;
+        }
       }
     }
 
     .nav-item {
-      // position: relative;
-      z-index: 2;
+      z-index: 1;
 
       &:last-child {
         margin: auto 0 1.5em;
@@ -258,28 +256,30 @@ $menu-height-large: rem(60);
     }
 
     .nav-link {
-      padding: 0 40px;
+      padding: 0 40px 0 50px;
       display: block;
       line-height: rem(45);
       font-size: rem(16);
-      margin-bottom: 0.5em;
+      margin: 0.5em 0;
     }
 
-    .nav-link,
+    .active .nav-link,
     .nav-link:focus,
     .nav-link:hover {
       position: relative;
       z-index: 2;
+      color: $spray;
+    }
 
-      &:before {
-        content: "";
-        position: absolute;
-        height: 1em;
-        background: $black;
-        width: 8px;
-        margin-left: -48px;
-        z-index: 2;
-      }
+    .active .nav-link::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background: $spray;
+      width: 8px;
+      margin-left: -50px;
+      z-index: 2;
     }
 
     .btn-donate {
@@ -303,6 +303,10 @@ $menu-height-large: rem(60);
     flex-grow: 1;
     justify-content: space-between;
     padding: 0 5%;
+
+    .close-navbar-dropdown {
+      display: none;
+    }
 
     .nav-link {
       padding: 0 20px;
@@ -385,13 +389,14 @@ $menu-height-large: rem(60);
   cursor: pointer;
   font-size: rem(16);
   border: 0;
-  color: $white;
+  color: transparentize($white, 0.2);
   background: transparent;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  transition: color 100ms;
 
-  background-color: $blue-bg;
+  background-color: $dark-tiber;
   @include large-and-up {
     background-color: transparent;
   }
@@ -400,15 +405,24 @@ $menu-height-large: rem(60);
     content: "";
     width: 8px;
     height: 8px;
-    background: url('images/down-arrow-green.png') no-repeat center center;
+    background: url('images/down-arrow-green.svg') no-repeat center center;
     background-size: contain;
     display: inline-block;
     margin-left: 10px;
     transition: transform 100ms ease-in-out;
   }
 
+  &:focus,
+  &:hover {
+    color: $white;
+
+    &::after {
+      background-image: url('images/down-arrow-white.svg');
+    }
+  }
+
   &[aria-expanded="true"] {
-    background-color: transparentize($blue-bg, 0.10);
+    background-color: $dark-tiber;
 
     &::after {
       transform: rotate(180deg);
@@ -419,7 +433,7 @@ $menu-height-large: rem(60);
 .country-list {
   display: none;
   text-transform: none;
-  background: transparentize($blue-bg, 0.10);
+  background: $dark-tiber;
   line-height: 1.5;
   padding: 1.5em 0;
 
@@ -460,7 +474,7 @@ $menu-height-large: rem(60);
   li {
     position: relative;
     list-style: none;
-    padding-left: 40px;
+    padding-left: 50px;
     font-size: rem(16);
 
     @include large-and-up {
@@ -482,10 +496,11 @@ $menu-height-large: rem(60);
   @include large-and-up {
     position: absolute;
     height: 344px;
+    max-height: 344px;
     width: 90%;
     padding: 2em;
     left: 10%;
-    // overflow-x: none;
+    overflow-x: hidden;
     overflow-y: scroll;
     max-height: calc( 100vh - #{$menu-height-large} );
 

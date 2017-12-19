@@ -1,7 +1,7 @@
 // Header JS goes in this.
 
 $(document).on('click', [
-  '.btn-navbar-toggle',
+  '.navbar-dropdown-toggle',
   '.country-dropdown-toggle',
   '.navbar-search-toggle',
 ].join(), function toggleNavDropdown(evt) {
@@ -26,11 +26,6 @@ $(document).on('click', [
   });
 });
 
-/**
- * Close a menu if the user clicks elsewhere.
- *
- * TODO: Is this desireable behavior?
- */
 $(document).on('click', function closeInactiveMenus(evt) {
   var clickedElement = evt.target;
   $('.btn-navbar-toggle[aria-expanded="true"]').each(function(i, button) {
@@ -41,6 +36,14 @@ $(document).on('click', function closeInactiveMenus(evt) {
       $button.trigger('click');
     }
   });
+});
+/**
+ * Close the menu if the user clicks the dedicated dropdown close button.
+ */
+$(document).on('click', '.close-navbar-dropdown', function (evt) {
+  evt.preventDefault();
+  // Proxy to the main navbar close button
+  $('.navbar-dropdown-toggle').trigger('click');
 });
 
 // Hide Header on on scroll down
