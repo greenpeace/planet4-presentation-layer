@@ -1,473 +1,524 @@
-.mobile-header-wrap {
-  padding: 8px 15px;
-  .search-link {
-    padding-top: 4px;
-  }
-  .menu {
-    width: 80px;
-    height: 35px;
-    display: inline-block;
-    line-height: 35px;
-    background: rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: $white;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-size: rem(14);
-    .fa {
-      &.fa-bars,
-      &.fa-times {
-        display: none;
-      }
-    }
-    &.active {
-      .fa-bars {
-        display: none;
-      }
-      .fa-times {
-        display: inline-block;
-      }
-    }
-  }
-  .mobile-search-wrap {
-    text-align: right;
-  }
-}
-.mobile-menus {
-  background: #234448; /* Old browsers */
-  background: linear-gradient(124deg, #234448 0%,#2b5459 50%,#356268 50%,#356268 50%,#356268 51%,#2b5459 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  width: 300px; 
-  position: fixed; 
-  left: -320px; 
+$menu-height-small: rem(54);
+$menu-height-large: rem(60);
+
+.top-navigation {
+  position: fixed;
+  width: 100%;
   top: 0;
-  padding: 20px 20px 20px 0;
-  z-index: 5000;
-  height: calc(100vh);
-  @include background-before-opacity(rgba(22,22,22,0.65));
+  z-index: 3;
+  padding: 0;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background: transparentize($top-nav, 0.20);
+  height: $menu-height-small;
+
+  // Use (min-width: 783px) for parity with WP's .admin-bar
+  @media screen and (min-width: 783px) {
+    height: $menu-height-large + rem(1);
+  }
+
+  a {
+    color: $white;
+  }
 
   .btn-donate {
-    width: 250px;
-    margin: 0 auto;
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    left: 7%;
+    color: $grey;
+  }
+
+  // Move header down when WordPress Admin Bar is present
+  .admin-bar & {
+    top: 46px;
+
+    @media screen and (min-width: 783px) {
+      top: 32px;
+    }
   }
 }
 
-.country-icon {
-  width: 28px;
-  height: 28px;
-  float: left;
-  margin: 6px 10px 0 0;
-}
-.styled-select {
-  overflow: hidden;
-  background: url('images/down-arrow-green.png') no-repeat 100% 10px;
-  }
+.site-logo,
+.btn-navbar-toggle,
+.navbar-search-toggle,
+.country-dropdown-toggle,
+.nav-item,
+.nav-link {
+  line-height: $menu-height-small;
+  padding: 0 15px;
 
-.search-box {
-  display: none;
-  position: absolute;
-  top: 46px;
-  right: 0;
-  width: 320px;
-  padding: 10px 5px;
-  background: #02484e;
-  input[type="text"] {
-    padding: 0 10px;
-    border-radius: 5px;
-    border: none;
-    line-height: 38px;
-    float: left;
+  // Use (min-width: 783px) for parity with WP's .admin-bar
+  @media screen and (min-width: 783px) {
+    line-height: $menu-height-large;
+    font-size: rem(18);
   }
 }
 
-#header {
-  &.top-navigation {
-    background: $blue-top-nav;
-    padding: 0;
+.btn-navbar-toggle,
+.country-dropdown-toggle,
+.nav-link {
+  &.active,
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    box-shadow: none;
+    outline: 0;
+  }
+}
+
+.navbar-search-toggle,
+.btn-navbar-toggle {
+  line-height: rem(54 - 22);
+  margin: 11px;
+  padding: 0 22px;
+  color: $white;
+  z-index: 1;
+
+  fa {
+    font-size: rem(18);
+  }
+}
+
+.navbar-dropdown-toggle {
+  // When menu is open, turn the button into the background overlay
+  &[aria-expanded="true"] {
+    z-index: 2;
+    background: transparentize($black, 0.5);
+    position: fixed;
     width: 100%;
-    z-index: 500;
-    opacity: 0.8;
+    height: 100%;
+    top: 0;
+    left: 0;
 
-    .admin-bar & {
-      top: 46px;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
 
-      @media screen and (min-width: 783px) {
-        top: 32px;
-      }
+    span {
+      @extend .screen-reader-text;
     }
+  }
 
-    .navbar-brand {
-      margin: 0;
+  @include large-and-up {
+    display: none;
+  }
+}
+
+.navbar-search-toggle {
+  cursor: pointer;
+  border: 0;
+  background: url('images/search.svg') center center no-repeat;
+  background-size: 28px;
+  margin-left: auto;
+
+  @include large-and-up {
+    display: none;
+  }
+}
+
+.site-logo {
+  @media (max-width: #{$large-width}) {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  img {
+    height: rem(20);
+    @include small-and-up {
+      height: rem(24);
     }
-    .navbar {
-      padding: 0;
-      width: 100%;
-      li {
-        width: 20%;
-        text-align: left;
-        position: relative;
-        line-height: 22px;
-        padding: 11px 0;
-        margin-top: 0;
-        margin-right: 15px;
-        &.big-screen-nav-link {
-          text-align: center;
-          a {
-            color: $white;
-            font-size: rem(16);
-            display: inline-block;
-            line-height: 40px;
-          }
-          &:hover {
-            transition: 0.5s;
-            border-bottom: 2px solid $white;
-            a {
-              color: $white;
-              text-decoration: none;
-            }
-          }
-          &.active {
-            transition: 0.5s;
-            border-bottom: 3px solid $blue-bg-anchor;
-            a {
-              color: $blue-bg-anchor;
-              text-decoration: none;
-            }
-          }
-        }  
-        &.donatebtn {
-          width: 15%;
-        }
-        .btn-donate {
-          margin-top: 3px;
-        }
-        &.loginSignUpWrap {
-          color: $nav-link;
-          width: 220px;
-          margin-left: 10px;
-          visibility: hidden;
-          display: none;
-          i {
-            display: inline-block;
-            float: left;
-            font-size: rem(30);
-            margin-top: 5px;
-          }
-          a {
-            color: $nav-link;
-            font-size: rem(16);
-            margin: 9px 2px 0;
-            &:hover {
-              transition: 0.5s;
-              color: $green-link-hover;
-              }
-            }
-          }
-        &.nav-search-wrap {
-          width: 30%;
-          color: $search-text-colour;
-          input::-webkit-input-placeholder {
-            color: $grey-40;
-          }
-          .top-nav-search-btn {
-            background: none;
-            border: none;
-            position: absolute;
-            top: 18px;
-            right: 15px;
-            font-size: 20px; 
-            i {
-              vertical-align: middle;
-              font-size: 1.3rem;
-              margin-right: -10px;
-            }
-          }
-          .form-control {
-            border-radius: 0;
-            padding: 10px;
-          }
-        }
-        &.active-li {
-          background-color: $hover-nav;
-          .country-select-dropdown {
-            & > span:after {
-              transform: rotate(180deg);
-            }
-          }  
-        }
-      }
-      .country-select-dropdown {
-        padding-left: 15px;
-        position: relative;
-        & > span:after {
-          content: "";
-          width: 8px;
-          height: 8px;
-          background-repeat: no-repeat;
-          background-image: url('images/down-arrow-green.png');
-          background-position: center;
-          background-size: contain;
-          display: inline-block;
-          margin-left: 10px;
-        }
-        .selected-option {
-          font-size: rem(14.5);
-          color: $white;
-          line-height: 40px;
-          display: block;
-          position: relative;
-          padding-right: 15px;
-          cursor: pointer;
-        }
-      }
-      .country-select-box {
-        display: none;
-        position: absolute;
-        left: 0;
-        width: 920px;
-        z-index: 1;
-        margin-top: 13px;
-        background: $blue-bg;
-        padding: 20px 20px 20px 70px;
-        margin-left: -65%;
-        .country-selection-option {
-          height: 350px;
-          overflow-y: scroll;
-          &::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-            background-color: $blue-bg;
-          }
-          &::-webkit-scrollbar {
-            width: 4px;
-          }
-          &::-webkit-scrollbar-thumb {
-            background-color: #4d8b42;
-          }
-          .country-option-box {
-            color: $white;
-            text-align: left;
-            font-size: rem(14.5);
-            line-height: 24px;
-            width: 100%;
-            .default-lang {
-              margin-bottom: 20px;
-              display: inline-block;
-              padding-left: 20px;
-            }
-            .country-list {
-              display: -ms-flexbox;
-              -ms-flex-direction: column;
-              -ms-flex-wrap: wrap;
-              display: flex;
-              flex-direction: column;
-              flex-wrap: wrap;
-              /*NEED TO INCRESE THESE HEIGHT ACCORDING TO RECORDS*/
-              height: 2500px; 
-              ul {
-                width: 33.33%;
-                margin-bottom: 20px;
-                padding-left: 20px;
-                display: inline-block;
-                vertical-align: top;
-                li {
-                  width: 100%;
-                  text-align: left;
-                  cursor: pointer;
-                  line-height: 24px;
-                  padding: 0;
-                  a {
-                    font-size: rem(14);
-                    text-decoration: none;
-                  }
-                  &.active {
-                    color: #a4df23;
-                    a {
-                      color: #a4df23;
-                    }
-                  }
-                  &.list-title {
-                    position: relative;
-                    .country-alphabet {
-                      position: absolute;
-                      left: 0;
-                      top: 0;
-                      z-index: 1;
-                      margin-left: -20px;
-                    }
-                  }
-                }
-              }  
-            }
-          }
-        }
-      }
-    }
-    .pr-15 {
-      padding-right: 15px;
-    }
-    .pl-15 {
-      padding-left: 15px;
+    @include large-and-up {
+      height: rem(30);
     }
   }
 }
 
-
-.fixedElement {
-  &.fixed {
-    top: 20px;
-    right: 120px;
-    z-index: 5;
-  }
+.navbar-dropdown-toggle {
+  order: -1;
 }
 
-.mobile-search-wrap {
-  .fa {
-    color: #66CB00;
-  }
-}
+.navbar-dropdown {
+  display: none;
+  margin: 0;
+  list-style-type: none;
 
-@include medium-and-up {
-  #header {
-    .navbar-brand {
-      padding: 0 11px 0 15px;
-      img {
-        width: 100%;
-      }
+  &.open {
+    display: flex;
+  }
+
+  // Dropdown width permutations
+  @media screen and (max-width: #{$small-width}) {
+    width: 300px;
+  }
+  // Use (min-width: 783px) for parity with WP's .admin-bar
+  @media screen and (min-width: #{$small-width}) and (max-width: 782px) {
+    width: 375px;
+  }
+  // Use (min-width: 783px) for parity with WP's .admin-bar
+  @media screen and (min-width: 783px) and (max-width: #{$large-width}) {
+    width: 400px;
+  }
+  // Dropdown height permutations, with and without WP admin bar
+  height: 100vh;
+  .admin-bar & {
+    @media screen and (max-width: 782px) {
+      height: calc( 100vh - 46px );
     }
-    &.top-navigation {
-      .mobile-menus {
-        .country-select-box {
-          width: 300px;
-          padding: 10px 20px 0 35px;
-          margin-left: 0;
-          .country-selection-option {
-            height: 400px;
-            .country-option-box {            
-              .country-list {
-                height: auto;
-                ul {
-                  width: 100%;
-                }
-              }
-            }
-          }
-        }
-        li {
-          text-align: left;
-          border-bottom: solid 1px $border-color;
-          padding: 10px 0 10px 15px;
-          width: auto;
-          &.loginSignUpWrap {
-            i {
-              margin-right: 10px;
-            }
-          }
-          &.nav-search-wrap {
-            width: 100%;
-          }
-          &.active {
-            border-left: solid 5px $black;
-          }
-          .styled-select {
-            margin-top: 0;
-          }
-          &.active-li {
-            background-color: transparent;
-          }
-        }
-      }
+    @media screen and (min-width: 783px) and (max-width: #{$large-width}) {
+      height: calc( 100vh - 32px );
     }
   }
-  .mobile-search-wrap {
-    .fa {
-      color: #66CB00;
-    }
-    .mobile-search-input {
-      display: block;
-      width: 88%;
-      border: 0;
-      outline: none;
-      padding: 0;
-      font-size: rem(14);
-      font-weight: bold;
-      color: #676767;
-    }
-    #searchsubmit {
-      display: block;
-      float: right;
-      background: none;
-      color: #717171;
-      border: 0;
-      outline: none;
+
+  // All other dropdown styles
+  @media (max-width: #{$large-width}) {
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $deep-sea-green url('images/dropdown-gradient.svg') no-repeat;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 2;
+
+    .close-navbar-dropdown {
       cursor: pointer;
-      font-size: rem(15);
+      position: absolute;
+      right: 0;
+      height: $menu-height-small;
+      width: $menu-height-small;
+      background: url('images/close-icon.svg') center center no-repeat;
+      z-index: 2;
+      border: 0;
+
+      // Use (min-width: 783px) for parity with WP's .admin-bar
+      @media (min-width: 783px) and (max-width: #{$large-width}) {
+        height: $menu-height-large;
+      }
+
+      &:focus {
+        border: 1px dotted transparentize($white, 0.5);
+      }
     }
-    #searchbar {
-      display: none;
+
+    &::before {
+      content: "";
       position: absolute;
       left: 0;
-      top: 48px;
-      width: 100%;
-      padding: 10px 20px;
-      border-top: 1px solid #d8d8d8;
-      z-index: 9999;
-      background: $white;
-      box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
+      top: 0;
+      bottom: 0;
+      width: 8px;
+      background: transparentize( $black, 0.9 );
+      z-index: 0;
     }
-  }
-}
 
-@include large-and-up {
-  #header.top-navigation {
-    .navbar {
-      li {
-        width: 28%;
-        a {
-          font-size: rem(18);
-        }
-        &.big-screen-nav-link {
+    .country-dropdown-toggle {
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      padding: 0 70px 0 67px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 0;
+        height: 1.75em;
+        width: 50px;
+        display: inline-block;
+        background: url('images/country-icon.svg') center center no-repeat;
+        border-right: 1px solid transparentize($white, 0.9);
+        background-size: contain;
+
+        @media screen and (min-width: 783px) {
+          top: 17px;
         }
       }
     }
-    .navbar-nav {
-      width: 100%;
+
+    .nav-item {
+      z-index: 1;
+
+      &:last-child {
+        margin: auto 0 1.5em;
+        flex: 0;
+      }
+    }
+
+    .nav-link {
+      padding: 0 40px 0 50px;
+      display: block;
+      line-height: rem(45);
+      font-size: rem(16);
+      margin: 0.5em 0;
+    }
+
+    .active .nav-link,
+    .nav-link:focus,
+    .nav-link:hover {
+      position: relative;
+      z-index: 2;
+      color: $spray;
+    }
+
+    .active .nav-link::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background: $spray;
+      width: 8px;
+      margin-left: -50px;
+      z-index: 2;
+    }
+
+    .btn-donate {
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      padding: 5px 30px;
     }
   }
-}
 
-@include x-large-and-up {
-  #header.top-navigation {
-    position: fixed;
+  // Background position control
+  @media (max-width: #{$medium-width}) {
+    background-position: right $menu-height-small;
+  }
+
+  @media (min-width: #{$medium-width}) and (max-width: #{$large-width}) {
+    background-position: right $menu-height-large;
+  }
+
+  @include large-and-up {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 0 5%;
+
+    .close-navbar-dropdown {
+      display: none;
+    }
+
+    .nav-link {
+      padding: 0 20px;
+      min-width: 20%;
+      text-align: center;
+      border-bottom: 2px solid transparent;
+
+      &:hover,
+      &:focus,
+      &:active {
+        border-bottom: 2px solid $white;
+      }
+    }
+
+    .active .nav-link {
+      color: $spray;
+      border-bottom: 2px solid $spray;
+    }
+  }
+
+  .nav-item {
+    margin: 0;
     padding: 0;
-    top: 0;
-    .navbar-brand {
-      padding: 0 25px 0 15px;
-      margin: 0;
+  }
+}
+
+.nav-search-wrap {
+  display: none;
+  position: relative;
+  color: $search-text-colour;
+
+  &.open {
+    display: block;
+  }
+
+  // Equiv. to "large-and-down", to avoid need to override all styles below
+  @media (max-width: #{$large-width}) {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    padding: 11px;
+    max-width: 80%;
+    background: transparentize($blue-bg, 0.15);
+  }
+
+  @include large-and-up {
+    margin-top: 11px;
+    max-width: 20%;
+    display: inline-block;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $grey-40;
+  }
+
+  .top-nav-search-btn {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 11px;
+    right: 16px;
+    font-size: rem(20);
+    line-height: 38px;
+
+    i {
+      vertical-align: middle;
+      font-size: rem(21);
     }
-    .navbar {
-      li {
-        width: 20%;
-      }
+
+    @include large-and-up {
+      top: 0;
     }
-    .navbar-nav {
-      width: 100%;
+  }
+
+  .form-control {
+    border-radius: 0;
+    padding: 10px;
+  }
+}
+
+.country-dropdown-toggle {
+  cursor: pointer;
+  font-size: rem(16);
+  border: 0;
+  color: transparentize($white, 0.2);
+  background: transparent;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: color 100ms;
+
+  background-color: $dark-tiber;
+  @include large-and-up {
+    background-color: transparent;
+  }
+
+  &::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: url('images/down-arrow-green.svg') no-repeat center center;
+    background-size: contain;
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 100ms ease-in-out;
+  }
+
+  &:focus,
+  &:hover {
+    color: $white;
+
+    &::after {
+      background-image: url('images/down-arrow-white.svg');
+    }
+  }
+
+  &[aria-expanded="true"] {
+    background-color: $dark-tiber;
+
+    &::after {
+      transform: rotate(180deg);
     }
   }
 }
 
-@media screen and (max-width: 375px) {
-  .navbar {
-    .mobile-header-wrap {
-      padding: 9px 0;
-      img {
-        height: 20px;
-      }
-      .mobile-search-wrap {
-        padding: 5px 5px 0 0;
-      }
+.country-list {
+  display: none;
+  text-transform: none;
+  background: $dark-tiber;
+  line-height: 1.5;
+  padding: 1.5em 0;
+
+  &.open {
+    display: block;
+  }
+
+  a {
+    display: block;
+    color: $white;
+  }
+
+  a:hover,
+  .active a {
+    color: $gp-green-80;
+    text-decoration: none;
+  }
+
+  .country-group-letter {
+    font-size: rem(16);
+    position: absolute;
+    line-height: 1.5;
+    font-weight: bold;
+    color: $grey-40;
+    margin-left: -1.5em;
+
+    @include large-and-up {
+      margin-left: -2em;
     }
+  }
+
+  > ul {
+    padding: 0 0 2em;
+    margin-top: 1.5em;
+  }
+
+  > a,
+  li {
+    position: relative;
+    list-style: none;
+    padding-left: 50px;
+    font-size: rem(16);
+
+    @include large-and-up {
+      padding-left: 2em;
+    }
+
+    ul {
+      break-inside: avoid;
+      padding: 0;
+      margin: 0 1em 1.5em 0;
+    }
+
+    li {
+      padding-left: 0;
+      list-style: none;
+    }
+  }
+
+  @include large-and-up {
+    position: absolute;
+    height: 344px;
+    max-height: 344px;
+    width: 90%;
+    padding: 2em;
+    left: 10%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: calc( 100vh - #{$menu-height-large} );
+
+    .admin-bar & {
+      max-height: calc( 100vh - #{$menu-height-large} - 32px );
+    }
+
+    > ul {
+      column-count: 3;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 2em 4em 4em;
+    width: 80%;
+    left: 10%;
   }
 }

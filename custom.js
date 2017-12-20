@@ -79,17 +79,51 @@ $('.country-select-box .country-list li').click(function(){
 // Footer JS goes in this
 // Header JS goes in this.
 
-// Returns width of browser viewport
-if($( window ).width() >= 768) {
-  // $(window).scroll(function() {
-  //   if ($(this).scrollTop() > 130){  
-  //       $('.fixed-element, .md-navigation').addClass("sticky");
-  //   }
-  //   else{
-  //       $('.fixed-element, .md-navigation').removeClass("sticky");
-  //   }
-  // });
-};
+$(document).on('click', [
+  '.navbar-dropdown-toggle',
+  '.country-dropdown-toggle',
+  '.navbar-search-toggle',
+].join(), function toggleNavDropdown(evt) {
+  evt.preventDefault();
+  evt.stopPropagation();
+
+  var $button = $(this);
+  var target = $button.data('target');
+  if (!target) {
+    throw new Error('Missing `data-target` attribute: specify the container to be toggled');
+  }
+  var toggleClass = $button.data('toggle');
+  if (!toggleClass) {
+    throw new Error('Missing `data-toggle` attribute: specify the class to toggle');
+  }
+
+  // Toggle visibility of the target specified via data-target.
+  $(target).toggleClass(toggleClass);
+  // Toggle aria-expanded attribute.
+  $button.attr('aria-expanded', function(i, attr) {
+    return attr === 'false' ? 'true' : 'false';
+  });
+});
+
+$(document).on('click', function closeInactiveMenus(evt) {
+  var clickedElement = evt.target;
+  $('.btn-navbar-toggle[aria-expanded="true"]').each(function(i, button) {
+    var $button = $(button);
+    var buttonTarget = $($button.data('target')).get( 0 );
+    if (buttonTarget && ! $.contains(buttonTarget, clickedElement)) {
+      // Spoof a click on the open menu's toggle to close that menu.
+      $button.trigger('click');
+    }
+  });
+});
+/**
+ * Close the menu if the user clicks the dedicated dropdown close button.
+ */
+$(document).on('click', '.close-navbar-dropdown', function (evt) {
+  evt.preventDefault();
+  // Proxy to the main navbar close button
+  $('.navbar-dropdown-toggle').trigger('click');
+});
 
 // Hide Header on on scroll down
 if($( window ).width() <= 768) {
@@ -152,6 +186,7 @@ if($( window ).width() <= 768) {
       $searchBox.slideToggle().toggleClass('active');
   });
 };
+
 $(function() {
 	$('.publications-slider').slick({
 		infinite:       false,

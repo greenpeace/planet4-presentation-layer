@@ -10,720 +10,228 @@
 	<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a1dff4b3ab783001260564c&product=inline-share-buttons"></script>
 </head>
 <body class="brown-bg page-issue-page">
+
+  <nav id="header" class="top-navigation">
+    <a class="site-logo" href="/">
+      <img src="images/gp-logo.svg" alt="Greenpeace" />
+    </a>
+    <button
+      class="btn btn-navbar-toggle navbar-dropdown-toggle"
+      data-toggle="open"
+      data-target="#navbar-dropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation menu"
+    >
+      <span>Menu</span>
+    </button>
+    <ul id="navbar-dropdown" class="navbar-dropdown list-unstyled">
+      <li class="nav-item">
+        <button class="close-navbar-dropdown">
+          <span class="screen-reader-text">Close Menu</span>
+        </button>
+        <button
+          class="country-dropdown-toggle"
+          data-toggle="open"
+          data-target="#country-list"
+          aria-expanded="false"
+          aria-label="Toggle worldwide site selection menu"
+        >
+          <span class="screen-reader-text">Selected:</span> Australia (English)
+          <span class="screen-reader-text">Change Country</span>
+        </button>
+        <div id="country-list" class="country-list">
+          <a href="http://www.greenpeace.org/international">International (English)</a>
+
+          <ul>
+            <li>
+              <h3 class="country-group-letter">A</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.org/afrique/">Africa - Congo (Français)</a></li>
+                <li><a href="http://www.greenpeace.org/afrique/">Africa - Senegal (Français)</a></li>
+                <li><a href="http://www.greenpeace.org/africa/">Africa - South Africa (English)</a></li>
+                <li><a href="http://www.greenpeacearabic.org">Arabic (العربية)</a></li>
+                <li><a href="http://www.greenpeace.org/argentina/">Argentina (Español)</a></li>
+                <li class="active"><a href="http://www.greenpeace.org/australia/">Australia (English)</a></li>
+                <li><a href="http://www.greenpeace.org/austria/">Austria (Deutsch)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">B</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.org/belgium/">Belgium (Nederlands/Français)</a></li>
+                <li><a href="http://www.greenpeace.org/brasil/">Brazil (Português)</a></li>
+                <li><a href="http://www.greenpeace.org/bulgaria/">Bulgaria (български)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">C</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.org/canada/">Canada (English/Français)</a></li>
+                <li><a href="http://www.greenpeace.org/chile/">Chile (Español)</a></li>
+                <li><a href="http://www.greenpeace.org.cn">China Mainland (简体中文)</a></li>
+                <li><a href="http://www.greenpeace.org/colombia/">Colombia (Español)</a></li>
+                <li><a href="http://www.greenpeace.org/croatia">Croatia (Hrvatski)</a></li>
+                <li><a href="http://www.greenpeace.cz">Czech Republic (Česky)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">D</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.dk">Denmark (Dansk)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">E</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.org/eastasia/">East Asia (English)</a></li>
+                <li><a href="http://www.greenpeace.org/eu-unit">European Union (English)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">F</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.org/australia">Fiji (English)</a></li>
+                <li><a href="http://www.greenpeace.org/finland">Finland (Suomea)</a></li>
+                <li><a href="http://www.greenpeace.org/france">France (Français)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">G</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.de">Germany (Deutsch)</a></li>
+                <li><a href="http://www.greenpeace.gr">Greece (Ελληνικά)</a></li>
+                <li><a href="http://www.greenpeace.org/greenland/">Greenland (Kalaallisut/Dansk)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">H</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.org/hk/">Hong Kong (繁體中文)</a></li>
+                <li><a href="http://www.greenpeace.hu">Hungary (Magyar)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">I</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.org/india/">India (English/Hindi)</a></li>
+                <li><a href="http://www.greenpeace.org/seasia/id/">Indonesia (Indonesia)</a></li>
+                <li><a href="http://www.greenpeace.org/israel/">Israel (עברית)</a></li>
+                <li><a href="http://www.greenpeace.org/italy/">Italy (Italiano)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">J</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.org/japan/">Japan (日本語)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">K</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.org/korea/">Korea (한국어)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">L</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.lu">Luxembourg (Français)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">M</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.org/mediterranean/">Malta (English)</a></li>
+                <li><a href="http://www.greenpeace.org/mexico/">Mexico (Español)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">N</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.nl">Netherlands (Nederlands)</a></li>
+                <li><a href="http://www.greenpeace.org.nz">New Zealand (English)</a></li>
+                <li><a href="http://www.greenpeace.no">Norway (Norsk)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">P</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.org.au">Papua New Guinea (English)</a></li>
+                <li><a href="http://www.greenpeace.org/peru/">Perú (Español)</a></li>
+                <li><a href="http://www.greenpeace.org/seasia/ph/">Philippines (English)</a></li>
+                <li><a href="http://www.greenpeace.pl">Poland (Polska)</a></li>
+                <li><a href="http://www.greenpeace.org/portugal/">Portugal (Português)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">R</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.ro">Romania (Român)</a></li>
+                <li><a href="http://www.greenpeace.org/russia/ru/">Russia (Русский)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">S</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.sk">Slovakia (Slovenčina)</a></li>
+                <li><a href="http://www.greenpeace.org/slovenia/">Slovenia (Slovenjia)</a></li>
+                <li><a href="http://www.greenpeace.org/seasia/">Southeast Asia (English)</a></li>
+                <li><a href="http://www.greenpeace.org/espana/">Spain (Español)</a></li>
+                <li><a href="http://www.greenpeace.se">Sweden (Svenska)</a></li>
+                <li><a href="http://www.greenpeace.org/switzerland/de/">Switzerland (Deutsch)</a></li>
+                <li><a href="http://www.greenpeace.org/switzerland/fr/">Switzerland (Français)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">T</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.org/taiwan/">Taiwan (正體中文)</a></li>
+                <li><a href="http://www.greenpeace.org/seasia/th/">Thailand (ไทย)</a></li>
+                <li><a href="http://www.greenpeace.org/turkey/">Turkey (Türk)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="country-group-letter">U</h3>
+              <ul>
+                <li><a href="http://www.greenpeace.org.uk">United Kingdom (English)</a></li>
+                <li><a href="http://www.greenpeace.org/usa/">USA (English)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="act.html">Act</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="explore.html">Explore</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-donate" href="#">Donate</a>
+      </li>
+    </ul>
+    <button
+      class="navbar-search-toggle"
+      data-toggle="open"
+      data-target="#navbar-search"
+      aria-expanded="false"
+      aria-label="Toggle search box"
+    >
+      <span class="screen-reader-text">Toggle search form</span>
+    </button>
+    <form id="navbar-search" class="form nav-item nav-search-wrap">
+      <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+      <button class="top-nav-search-btn" type="submit">
+        <i class="fa fa-search"></i>
+        <span class="screen-reader-text">Search</span>
+      </button>
+    </form>
+  </nav>
 	<div class="skewed-overlay"></div>
 	<div class="hero-img-wrap">
-		<div id="header" class="top-navigation">
-			<!-- Main container for main headline -->
-			<div class="container-fluid">
-				<div class="row">
-					<div class="navbar navbar-toggleable-md navbar-light">
-						<div class="mobile-header-wrap hidden-lg-up row">
-							<div class="col text-left">
-								<span class="menu">
-									Menu
-									<i class="fa fa-bars"></i>
-									<i class="fa fa-times"></i>
-								</span>
-								<div class="mobile-menus">
-									<ul class="list-unstyled">
-										<li>
-											<div class="country-select-dropdown">
-											<img class="country-icon" src="images/country-icon.png" alt=""/>
-												<span class="selected-option">Australia (English)</span>
-											</div>
-											<div class="country-select-box">
-												<div class="country-selection-option">
-													<div class="country-option-box">
-														<span class="default-lang">International (English)</span>
-														<ul class="list-unstyled country-list">
-															<ul class="list-unstyled a-country-list">
-																<li class="list-title"><span class="country-alphabet">A</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled b-country-list">  
-																<li class="list-title"><span class="country-alphabet">B</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title active"><span class="country-alphabet">C</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled d-country-list">  
-																<li class="list-title"><span class="country-alphabet">D</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">E</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled d-country-list">  
-																<li class="list-title"><span class="country-alphabet">F</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">G</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															 <ul class="list-unstyled a-country-list">
-																<li class="list-title"><span class="country-alphabet">H</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled b-country-list">  
-																<li class="list-title"><span class="country-alphabet">I</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">J</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled d-country-list">  
-																<li class="list-title"><span class="country-alphabet">K</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															 <ul class="list-unstyled a-country-list">
-																<li class="list-title"><span class="country-alphabet">L</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled b-country-list">  
-																<li class="list-title"><span class="country-alphabet">M</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">N</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															 <ul class="list-unstyled a-country-list">
-																<li class="list-title"><span class="country-alphabet">O</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled b-country-list">  
-																<li class="list-title"><span class="country-alphabet">P</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">Q</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															 <ul class="list-unstyled a-country-list">
-																<li class="list-title"><span class="country-alphabet">R</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled b-country-list">  
-																<li class="list-title"><span class="country-alphabet">S</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">T</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															 <ul class="list-unstyled a-country-list">
-																<li class="list-title"><span class="country-alphabet">U</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled b-country-list">  
-																<li class="list-title"><span class="country-alphabet">V</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">W</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															 <ul class="list-unstyled a-country-list">
-																<li class="list-title"><span class="country-alphabet">X</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled b-country-list">  
-																<li class="list-title"><span class="country-alphabet">Y</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">Z</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-														</ul>  
-													</div>
-												</div>
-											</div>
-										</li>
-										<li class="nav-item active act-nav-link">
-											<a href="act.html">Act</a>
-										</li>
-										<li class="nav-item explore-nav-link">
-											<a href="explore.html">Explore</a>
-										</li>
-									</ul>
-									<a href="#" class="btn btn-donate">DONATE</a>
-								</div>
-							</div>
-							<div class="col">
-								<a class="navbar-brand" href="#"><img src="images/greenpeace-logo.png" alt="greenpeace" /></a>
-							</div>
-							<div class="col text-right">
-								 <div id="search" class="mobile-search-wrap">
-									<div class="search-link">
-										<a href="#search" id="search-trigger"><i class="fa fa-search fa-lg"></i></a> 
-									</div>
-									<div class="search-box">
-										<form action="/search" id="search_form">
-												<input placeholder="Search" type="text" />
-												<input id="search-submit" type="submit" class="btn btn-action" value="Search" />
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-xl-2 hidden-md-down">
-							<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-										Menu
-							</button>
-							<a class="navbar-brand" href="#"><img src="images/greenpeace-logo.png" alt="greenpeace" /></a>
-						</div>
-						<div class="col-lg-9 col-xl-10">
-							<nav class="navbar navbar-toggleable-md navbar-light">
-								<div class="collapse navbar-collapse" id="navbarSupportedContent">
-									<ul class="navbar-nav">
-										<li>
-											<div class="country-select-dropdown">
-												<span class="selected-option">Australia (English)</span>
-											</div>
-											<div class="country-select-box">
-												<div class="country-selection-option">
-													<div class="country-option-box">
-														<span class="default-lang">International (English)</span>
-														<ul class="list-unstyled country-list">
-															<ul class="list-unstyled a-country-list">
-																<li class="list-title"><span class="country-alphabet">A</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled b-country-list">  
-																<li class="list-title"><span class="country-alphabet">B</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title active"><span class="country-alphabet">C</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled d-country-list">  
-																<li class="list-title"><span class="country-alphabet">D</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">E</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled d-country-list">  
-																<li class="list-title"><span class="country-alphabet">F</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">G</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															 <ul class="list-unstyled a-country-list">
-																<li class="list-title"><span class="country-alphabet">H</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled b-country-list">  
-																<li class="list-title"><span class="country-alphabet">I</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">J</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled d-country-list">  
-																<li class="list-title"><span class="country-alphabet">K</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															 <ul class="list-unstyled a-country-list">
-																<li class="list-title"><span class="country-alphabet">L</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled b-country-list">  
-																<li class="list-title"><span class="country-alphabet">M</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">N</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															 <ul class="list-unstyled a-country-list">
-																<li class="list-title"><span class="country-alphabet">O</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled b-country-list">  
-																<li class="list-title"><span class="country-alphabet">P</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">Q</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															 <ul class="list-unstyled a-country-list">
-																<li class="list-title"><span class="country-alphabet">R</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled b-country-list">  
-																<li class="list-title"><span class="country-alphabet">S</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">T</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															 <ul class="list-unstyled a-country-list">
-																<li class="list-title"><span class="country-alphabet">U</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled b-country-list">  
-																<li class="list-title"><span class="country-alphabet">V</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">W</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															 <ul class="list-unstyled a-country-list">
-																<li class="list-title"><span class="country-alphabet">X</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled b-country-list">  
-																<li class="list-title"><span class="country-alphabet">Y</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""><span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-															<ul class="list-unstyled c-country-list">  
-																<li class="list-title"><span class="country-alphabet">Z</span> <span class="">Africa - Congo (Francias)</span></li>
-																<li class=""<span class="">Africa - Senegal (Francias)</span></li>
-																<li class=""><span class="">Africa - South Africa (English)</span></li>
-																<li class=""><span class="">Arebic (Francias)</span></li>
-																<li class=""><span class="">Argentina (Espanol)</span></li>
-																<li class=""><span class="">Australia (English)</span></li>
-															</ul>
-														</ul>  
-													</div>
-												</div>
-											</div>
-										</li>
-										<li class="nav-item hidden-md-down hidden-lg-down big-screen-nav-link">
-											<a href="act.html">Act</a>
-										</li>
-										<li class="nav-item hidden-md-down hidden-lg-down big-screen-nav-link">
-											<a href="explore.html">Explore</a>
-										</li>
-										<li class="nav-item hidden-md-down hidden-lg-down">
-											<a href="#" class="btn btn-donate btn-block">DONATE</a>
-										</li>
-										<li class="nav-item loginSignUpWrap">
-											<i class="fa fa-user-circle-o"></i>
-											<a href="#">Log in</a> <span> / </span>
-											<a href="#">Sign up</a>
-										</li>
-										<li class="nav-item nav-search-wrap">
-											<form class="form">
-												<input class="form-control" type="text" placeholder="Search" aria-label="Search">
-												<button class="top-nav-search-btn" type="submit"><i class="fa fa-search"></i></button>
-											</form>
-										</li>
-									</ul>
-								</div>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="clearfix"></div>
-	</div>  
-	
-	
+	</div>
+
+
 
 	<!-- Header Start -->
 	<div class="page-header">
@@ -740,23 +248,23 @@
 				<div class="sharethis-inline-share-buttons"></div>
 			</div>
 		</div>
-		
+
 	</div>
 	<!-- Header End -->
 
-	
+
 
 	<!-- Content Three Column Start-->
-	<div class="split-three-column"> 
+	<div class="split-three-column">
 		<div class="container">
 			<div class="three-column-box">
 				<div class="three-column-info col-md-11 col-lg-9">
 					<h2 class="page-section-header">Our vision</h2>
 					<p>
-						We live in a world where people are making the conscious decision to eat more delicious, creative plant-rich dishes and better meat. 
+						We live in a world where people are making the conscious decision to eat more delicious, creative plant-rich dishes and better meat.
 					</p>
 					<p>
-						Governments are convinced that more plants and better meat is the new normal and make sure this new standard is translated into policies. 
+						Governments are convinced that more plants and better meat is the new normal and make sure this new standard is translated into policies.
 					</p>
 					<p>
 						The handful of corporations that are driving forward the current broken meat system have changed their practices and policies to create a sustainable future for our agricultural and livestock systems.
@@ -780,11 +288,11 @@
 					</div>
 				</div>
 			</div>
-		</div>      
+		</div>
 	</div>
 	<!-- Content Three Column End-->
 	<!-- Video Block Start -->
-	
+
 	<div class="video-block">
 		<div class="container">
 			<h2 class="page-section-header">What&rsquo;s at risk</h2>
@@ -792,7 +300,7 @@
 				<iframe id="ytplayer" type="text/html" width="100%" height="100%"
 				src="https://www.youtube.com/embed/wNN-Yl-SBTM?autoplay=0"
 				frameborder="0" allowfullscreen> </iframe>
-			</div>  
+			</div>
 		</div>
 	</div>
 	<!-- Video Block End -->
@@ -802,7 +310,7 @@
 	</div>
 	<!-- End Media Block -->
 	<!-- Campaign, Covers, 4 Column Wrap Start -->
-	<div class="campaign-covers-4col-wrap">	
+	<div class="campaign-covers-4col-wrap">
 
 		<!-- Campaign Thumbnail Block Start -->
 		<div class="campaign-thumbnail-block">
@@ -822,7 +330,7 @@
 							<div class="thumbnail-large">
 								<img src="images/article-first.png">
 								<span class="yellow-cta">#SaveMahan</span>
-							</div>	
+							</div>
 						</a>
 					</div>
 					<div class="col-md-4">
@@ -835,7 +343,7 @@
 					</div>
 				</div>
 			</div>
-		</div>  
+		</div>
 		<!-- Campaign Thumbnail Block End -->
 
 		<!-- Covers Start -->
@@ -850,7 +358,7 @@
 						<p>Cupcake cookie cotton candy chocolate cake oat ice sweet roll pastry croissant toffee mufﬁn tiramisu. Marsh mallow tootsie roll sugar plum powder oatcake gingerbread. </p>
 						<button class="btn btn-action btn-block cover-card-btn">TAKE ACTION</button>
 					  </div>
-					</div> 
+					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="cover-card card-two dark-card-bg" style="background-image: url( 'images/covers-card-two.png');">
 						<a href="#" class="cover-card-tag">#HashTag</a>
@@ -858,7 +366,7 @@
 						<p>Cupcake cookie cotton candy chocolate cake oat ice sweet roll pastry croissant toffee mufﬁn tiramisu. Marsh mallow tootsie roll sugar plum powder oatcake gingerbread. </p>
 						<button class="btn btn-action btn-block cover-card-btn">TAKE ACTION</button>
 					  </div>
-					</div> 
+					</div>
 					<div class="col-lg-4 col-md-6">
 					  <div class="cover-card card-three dark-card-bg" style="background-image: url( 'images/covers-card-three.png');">
 						<a href="#"  class="cover-card-tag">#HashTag</a>
@@ -881,7 +389,7 @@
 								<div class="four-column-content-wrap clearfix">
 									<div class="four-column-content-info">
 										<div class="four-column-content-symbol">
-											<img src="images/four-column-content-one-img.png"> 
+											<img src="images/four-column-content-one-img.png">
 										</div>
 										<div class="four-column-content-information">
 											<h4>Sick of Too Many Cows </h4>
@@ -913,7 +421,7 @@
 								<div class="four-column-content-wrap clearfix">
 									<div class="four-column-content-info">
 										<div class="four-column-content-symbol dark-img">
-											<img src="images/four-column-content-three-img.png"> 
+											<img src="images/four-column-content-three-img.png">
 										</div>
 										<div class="four-column-content-information">
 											<h4>Fruits of the rain forest</h4>
@@ -929,7 +437,7 @@
 								<div class="four-column-content-wrap clearfix">
 									<div class="four-column-content-info">
 										<div class="four-column-content-symbol dark-img">
-											<img src="images/four-column-content-four-img.png"> 
+											<img src="images/four-column-content-four-img.png">
 										</div>
 										<div class="four-column-content-information">
 											<h4>Grow your Community</h4>
