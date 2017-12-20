@@ -126,6 +126,7 @@ $menu-height-large: rem(60);
     width: 100%;
     text-align: center;
   }
+
   &:focus {
     box-shadow: none;
   }
@@ -235,7 +236,6 @@ $menu-height-large: rem(60);
         height: 1.75em;
         width: 50px;
         display: inline-block;
-        height: 1.75em;
         background: url('images/country-icon.svg') center center no-repeat;
         border-right: 1px solid transparentize($white, 0.9);
         background-size: contain;
@@ -294,6 +294,7 @@ $menu-height-large: rem(60);
   @media (max-width: #{$medium-width}) {
     background-position: right $menu-height-small;
   }
+
   @media (min-width: #{$medium-width}) and (max-width: #{$large-width}) {
     background-position: right $menu-height-large;
   }
@@ -320,6 +321,7 @@ $menu-height-large: rem(60);
         border-bottom: 2px solid $white;
       }
     }
+
     .active .nav-link {
       color: $spray;
       border-bottom: 2px solid $spray;
@@ -361,6 +363,7 @@ $menu-height-large: rem(60);
   input::-webkit-input-placeholder {
     color: $grey-40;
   }
+
   .top-nav-search-btn {
     background: none;
     border: none;
@@ -369,6 +372,7 @@ $menu-height-large: rem(60);
     right: 16px;
     font-size: rem(20);
     line-height: 38px;
+
     i {
       vertical-align: middle;
       font-size: rem(21);
