@@ -157,10 +157,12 @@ $menu-height-large: rem(60);
 
   // Dropdown width permutations
   @media screen and (max-width: #{$small-width}) {
+    height: 100vh;
     width: 300px;
   }
   // Use (min-width: 783px) for parity with WP's .admin-bar
   @media screen and (min-width: #{$small-width}) and (max-width: 782px) {
+    height: 100vh;
     width: 375px;
   }
   // Use (min-width: 783px) for parity with WP's .admin-bar
@@ -168,7 +170,6 @@ $menu-height-large: rem(60);
     width: 400px;
   }
   // Dropdown height permutations, with and without WP admin bar
-  height: 100vh;
   .admin-bar & {
     @media screen and (max-width: 782px) {
       height: calc( 100vh - 46px );
