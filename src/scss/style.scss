@@ -29,7 +29,7 @@ Text Domain: planet4-master-theme
 
 // Customising bootstrap variables
 
-/* This should change later to include just 
+/* This should change later to include just
  * the components that are needed.
  */
 // @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -83,6 +83,9 @@ Text Domain: planet4-master-theme
 // Issues pages.
 @import "pages/issue";
 
+// 404 page.
+@import "pages/404";
+
 // Search page.
 @import "pages/search/search";
 @import "pages/search/filter-modal";
@@ -98,18 +101,18 @@ Text Domain: planet4-master-theme
  */
 @import "external/happy-point-form";
 
-/* 
+/*
  *
  * CSS Coding guidelines to be followed : https://make.wordpress.org/core/handbook/best-practices/coding-standards/css/
  * JS Coding guidelines to be followed : https://make.wordpress.org/core/handbook/best-practices/coding-standards/javascript/
- * 
+ *
 */
 
 body {
   overflow-x: hidden;
   font-family: $roboto;
   position: relative;
-  
+
   &.white-bg {
     background-color: $white;
   }
