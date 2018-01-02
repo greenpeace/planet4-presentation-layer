@@ -32,5 +32,9 @@
 		display: inline-block;
 		position: absolute;
 		right: -15px;
+
+    @include mobile-only {
+      display: none;
+    }
 	}
 }
