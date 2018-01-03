@@ -8,12 +8,12 @@
     @include small-and-up {
       font-size: rem(19);
     }
-    
+
     @include medium-and-up {
       font-size: rem(20);
     }
   }
-    
+
   p {
     line-height: 1.8;
     margin: 15px 0;
@@ -161,7 +161,6 @@
     @extend .btn;
     @extend .btn-secondary;
     @extend .btn-large;
-
   }
 
   .page-links {
@@ -206,7 +205,8 @@
   }
 }
 
-.post-image {
+.post-image,
+.wp-caption {
   position: relative;
   display: inline-block;
   width: auto;
