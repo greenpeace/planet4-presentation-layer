@@ -61,6 +61,17 @@ TRANSITION
 }
 
 /**
+ * Cause an element to match the size of its stacking context parent.
+ */
+@mixin fill-container() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/**
  * Build a linear gradient with a direction and any number of color stops.
  */
 @mixin linear-gradient( $direction, $color-stops... ) {
