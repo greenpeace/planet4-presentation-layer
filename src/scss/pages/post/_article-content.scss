@@ -205,6 +205,13 @@
   }
 }
 
+.post-details {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .post-image,
 .wp-caption {
   position: relative;
@@ -214,6 +221,7 @@
 
   img {
     max-width: 100%;
+    height: auto;
   }
 
   @include medium-and-up {
