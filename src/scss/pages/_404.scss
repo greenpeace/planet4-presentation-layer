@@ -98,13 +98,13 @@
     @include medium-and-up {
       clip-path: polygon(0% 0%, 77% 0, 100% 100%, 80% 85%, 0% 85%);
       padding: 15px 80px 30px 15px;
-      width: 400px;
+      width: 500px;
     }
 
     @include large-and-up {
       clip-path: polygon(0% 0%, 79% 0, 99% 100%, 80% 75%, 0% 75%);
       padding: 15px 110px 70px 15px;
-      width: 600px;
+      width: 700px;
     }
   }
 }
