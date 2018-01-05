@@ -5,7 +5,7 @@ $menu-height-large: rem(60);
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 3;
+  z-index: 5;
   padding: 0;
   text-transform: uppercase;
 
@@ -206,7 +206,8 @@ $menu-height-large: rem(60);
         height: $menu-height-large;
       }
 
-      &:focus {
+      &:focus,
+      &:hover {
         border: 1px dotted transparentize($white, 0.5);
       }
     }
@@ -413,7 +414,7 @@ $menu-height-large: rem(60);
     background-size: contain;
     display: inline-block;
     margin-left: 10px;
-    transition: transform 100ms ease-in-out;
+    transition: transform 300ms linear;
   }
 
   &:focus,

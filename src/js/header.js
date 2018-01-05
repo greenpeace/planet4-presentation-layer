@@ -26,9 +26,10 @@ $(document).on('click', [
   });
 });
 
+// Close all menus when clicking somewhere else
 $(document).on('click', function closeInactiveMenus(evt) {
   var clickedElement = evt.target;
-  $('.btn-navbar-toggle[aria-expanded="true"]').each(function(i, button) {
+  $('button[aria-expanded="true"]').each(function(i, button) {
     var $button = $(button);
     var buttonTarget = $($button.data('target')).get( 0 );
     if (buttonTarget && ! $.contains(buttonTarget, clickedElement)) {
@@ -36,6 +37,12 @@ $(document).on('click', function closeInactiveMenus(evt) {
       $button.trigger('click');
     }
   });
+});
+// Close all menus on escape pressed
+$(document).bind('keyup', function(event){
+  if (event.which === 27) {
+    $(document).trigger('click');
+  }
 });
 /**
  * Close the menu if the user clicks the dedicated dropdown close button.

@@ -273,6 +273,7 @@ $slide-transition-speed: 1s;
   }
 
   .carousel-indicators {
+    z-index: 4;
     li {
       width: 8px;
       height: 8px;
