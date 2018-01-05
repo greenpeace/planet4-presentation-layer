@@ -252,7 +252,7 @@ $menu-height-large: rem(60);
 
       &:last-child {
         margin: auto 0 1.5em;
-        flex: 0;
+        flex-basis: 100%;
       }
     }
 
