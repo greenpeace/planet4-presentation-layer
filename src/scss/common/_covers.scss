@@ -33,12 +33,13 @@
     @include background-before-opacity($white, .55);
     box-shadow: 0 0 10px transparentize($black, .5);
 
-    h2,
-    p {
+    h2 {
       color: $grey-80;
+      text-shadow: none;
     }
 
     p {
+      color: $grey-80;
       opacity: 1;
       visibility: visible;
     }
@@ -77,6 +78,8 @@
     margin-bottom: 32px;
     max-width: 80%;
     transition: color 100ms linear;
+    text-shadow: 2px 2px 2px $grey;
+    color: white;
 
     @include large-and-up {
       font-size: rem(28);
@@ -85,12 +88,7 @@
 
   p {
     font-size: rem(16);
-    font-weight: 300;
     line-height: 1.6;
-    color: $white;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 150ms linear;
 
     @include large-and-up {
       font-size: rem(18);
@@ -113,10 +111,10 @@
 
 .cover-card-tag {
   color: $brown-bg-tags-text;
-  font-weight: 300;
   display: inline-block;
   margin-bottom: 8px;
   text-decoration: none;
+  text-shadow: 1px 1px 1px $grey;
 
   &:hover {
     color: $yellow;
