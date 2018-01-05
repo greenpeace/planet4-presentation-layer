@@ -251,7 +251,6 @@ $menu-height-large: rem(60);
       z-index: 1;
 
       &:last-child {
-        margin: auto 0 1.5em;
         flex-basis: 100%;
       }
     }
@@ -286,7 +285,7 @@ $menu-height-large: rem(60);
     .btn-donate {
       display: block;
       width: 200px;
-      margin: 0 auto;
+      margin: 1.5em auto;
       padding: 5px 30px;
     }
   }
