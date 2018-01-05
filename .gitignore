@@ -4,3 +4,16 @@ node_modules
 style.min.css
 custom.min.js
 style.css
+
+# Logs #
+########
+*.log
+
+# OS generated files #
+######################
+.DS_Store
+Thumbs.db
+
+# IDE generated files #
+#######################
+.idea
