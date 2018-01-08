@@ -75,6 +75,12 @@
         top: 38px;
       }
     }
+
+    .container > *:not(.row) {
+      @include x-large-and-up {
+        max-width: 65%;
+      }
+    }
   }
 
   .speech-bubble {
@@ -97,13 +103,13 @@
 
     @include medium-and-up {
       clip-path: polygon(0% 0%, 77% 0, 100% 100%, 80% 85%, 0% 85%);
-      padding: 15px 80px 30px 15px;
+      padding: 15px 80px 50px 15px;
       width: 500px;
     }
 
     @include large-and-up {
       clip-path: polygon(0% 0%, 79% 0, 99% 100%, 80% 75%, 0% 75%);
-      padding: 15px 110px 70px 15px;
+      padding: 15px 110px 90px 15px;
       width: 700px;
     }
   }
