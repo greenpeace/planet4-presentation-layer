@@ -114,6 +114,34 @@ TRANSITION
   }
 }
 
+@mixin detailed-skewed-gradient( $color1, $color2, $color3, $color4, $color5, $color6, $color7, $color8 ) {
+  @include linear-gradient(
+    245deg,
+    #{$color1} 6%,
+    #{$color2} 6%,
+    #{$color3} 35%,
+    #{$color4} 35%,
+    #{$color5} 80%,
+    #{$color6} 80%,
+    #{$color7} 95%,
+    #{$color8} 95%
+  );
+
+  @include large-and-up {
+    @include linear-gradient(
+      245deg,
+      #{$color1} 15%,
+      #{$color2} 15%,
+      #{$color3} 45%,
+      #{$color4} 45%,
+      #{$color5} 80%,
+      #{$color6} 80%,
+      #{$color7} 90%,
+      #{$color8} 90%
+    );
+  }
+}
+
 @mixin clearfix() {
   &::after {
     display: block;
