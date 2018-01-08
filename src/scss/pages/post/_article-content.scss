@@ -18,6 +18,11 @@
     line-height: 1.8;
     margin: 15px 0;
 
+    iframe {
+      max-width: 100%;
+      height: auto;
+    }
+
     @include small-and-up {
       font-size: rem(19);
     }
