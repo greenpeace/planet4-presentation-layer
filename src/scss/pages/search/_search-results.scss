@@ -44,10 +44,12 @@
 			.blank-block {
 				width: 0;
 				margin-right: 0;
+        visibility: hidden;
 
 				@include small-and-up {
 					width: 25%;
 					margin-right: 30px;
+          visibility: visible;
 				}
 			}
 
