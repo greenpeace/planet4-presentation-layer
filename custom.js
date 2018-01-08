@@ -168,12 +168,10 @@ $(function() {
 });
 
 function createCookie(name,value,days) {
-  console.log('in create cookie method');
   document.cookie = encodeURI(name) + '=' + encodeURI(value) + ';domain=.' + document.domain + ';path=/;';
 }
 
 function readCookie(name) {
-  console.log('in read cookie method');  
   var nameEQ = name + "=";
   var ca = document.cookie.split(';');
   for(var i=0;i < ca.length;i++) {
@@ -187,10 +185,7 @@ function readCookie(name) {
 $(function() {
   cookie = readCookie('greenpeace');
   if (cookie == null) {
-    console.log('cookie is not present')
     $(".cookie-block").show();
-  } else {
-    console.log('cookie is present, cookie banner hidden!');
   }
 });
 
