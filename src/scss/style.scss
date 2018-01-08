@@ -81,7 +81,8 @@ Text Domain: planet4-master-theme
 @import "pages/explore";
 
 // Issues pages.
-@import "pages/issue";
+// Comment out since it not contains any rules currently.
+//@import "pages/issue";
 
 // 404 page.
 @import "pages/404";
