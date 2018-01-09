@@ -110,15 +110,10 @@
 }
 
 .cover-card-tag {
-  color: $brown-bg-tags-text;
+  color: $blue;
   display: inline-block;
   margin-bottom: 8px;
   text-decoration: none;
-  text-shadow: 1px 1px 1px $grey;
-
-  &:hover {
-    color: $yellow;
-  }
 }
 
 .cover-card-btn {
