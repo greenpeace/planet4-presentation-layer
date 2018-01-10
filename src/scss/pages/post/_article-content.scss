@@ -12,6 +12,10 @@
     @include medium-and-up {
       font-size: rem(20);
     }
+
+    li:not(:first-child) {
+      padding-top: 10px;
+    }
   }
 
   p {
