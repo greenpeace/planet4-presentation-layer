@@ -2,10 +2,10 @@
 // Mixins because extending is not possible inside media queries
 @mixin happy-point-block-background-image {
   background: url("images/happy-point-block-bg.jpg") center center no-repeat;
-  background-size: cover; 
+  background-size: cover;
   height: 620px;
   width: 100%;
-  position: relative; 
+  position: relative;
 }
 
 .happy-point-block-wrap {
@@ -61,13 +61,13 @@
       input, .custom-select {
         margin-bottom: 16px;
       }
-    }  
+    }
   }
 }
 
 @include medium-and-up {
   .happy-point-block-wrap {
-    max-height: 440px;
+    max-height: 480px;
     .pt-20 {
       padding-top: 220px;
       padding-left: 0;
