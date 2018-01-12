@@ -3,7 +3,7 @@
       h1 {
         font-size: rem(38);
         color: $dark-blue;
-        margin-bottom: 40px; 
+        margin-bottom: 40px;
       }
       .carousel-item {
         .carousal-item-credit {
@@ -44,7 +44,6 @@
         right: 0;
         bottom: 30px;
         left: auto;
-        margin-right: 5%;
         li {
           width: 12px;
           height: 12px;
@@ -53,23 +52,25 @@
           margin: 0 15px;
           cursor: pointer;
           &.active {
-            background: $carousel-active;
+            background: $carousel-indi-color;
           }
         }
       }
       .carousel-control-prev,
       .carousel-control-next {
         opacity: 1;
+        width: 10%;
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
           background-image: none;
           border: solid 1px $white;
-          height: 50px;
-          width: 50px;
+          height: 40px;
+          width: 40px;
           border-radius: 50%;
           display: block;
           text-align: center;
           background-color: $carr-arrow;
+          cursor: pointer;
           opacity: 0.4;
           i {
             background: url("images/sprite.png");
@@ -77,7 +78,7 @@
             width: 22px;
             vertical-align: middle;
             display: inline-block;
-            margin: 6px 2px 0 0;
+            margin: 2px 2px 0 0;
           }
         }
         .carousel-control-next-icon {
@@ -90,19 +91,24 @@
 
  @include mobile-only {
     .carousel-wrap {
-      padding-top: 70px;
-      padding-bottom: 70px;
+      padding-top: 0;
+      padding-bottom: 0;
         h1 {
           font-size: rem(34);
           margin-left: 0;
           margin-bottom: 40px;
         }
         .carousel-indicators {
-          bottom: 195px;
+          bottom: 235px;
           right: 22%;
+          li {
+            width: 8px;
+            height: 8px;
+            margin: 0 8px;
+          }
         }
         .carousel-item {
-          margin-bottom: 195px;
+          margin-bottom: 235px;
         }
         .carousel-caption {
           position: absolute;
@@ -111,9 +117,9 @@
           z-index: 10;
           padding: 20px 15px 20px;
           color: $white;
-          margin-bottom: -195px;
+          margin-bottom: -235px;
           width: 100%;
-          height: 195px;
+          height: 235px;
           h3 {
             font-size: rem(17);
           }
@@ -123,9 +129,10 @@
         }
         .carousel-control-prev,
         .carousel-control-next {
-          top: -25%; 
+          top: -25%;
+          width: 30%;
         }
-      }  
+      }
   }
 
 
@@ -149,8 +156,8 @@
           p {
             font-size: rem(13);
           }
-        } 
-      }  
+        }
+      }
   }
 
   @include large-and-up {
@@ -168,8 +175,8 @@
           p {
             font-size: rem(13);
           }
-        } 
-      }  
+        }
+      }
   }
 
   @include x-large-and-up {
@@ -189,6 +196,6 @@
           p {
             font-size: rem(13);
           }
-        } 
-      }  
+        }
+      }
   }

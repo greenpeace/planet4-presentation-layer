@@ -8,6 +8,7 @@
   list-style-type: none;
   display: inline-block;
   font-weight: 300;
+  font-size: 0.875rem;
   color: $blue;
 
   a {
@@ -33,9 +34,5 @@
     display: inline-block;
     position: absolute;
     right: -15px;
-
-    @include mobile-only {
-      display: none;
-    }
   }
 }

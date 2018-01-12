@@ -7,10 +7,11 @@
   }
 
   h2 {
-    font-size: rem(30);
+    font-size: 1.625rem;
     line-height: 1.2;
     text-align: center;
     margin: 60px 0 35px 0;
+    color: $deep-sea-green;
 
     @include medium-and-up {
       font-size: rem(38);
@@ -42,6 +43,10 @@
 .four-column-wrap {
   margin-bottom: 40px;
 
+  &:last-child {
+    margin-bottom: 10px;
+  }
+
   @include medium-and-up {
     margin-bottom: 54px;
   }
@@ -53,7 +58,7 @@
 
 .four-column-symbol {
   display: block;
-  margin: auto auto 16px;
+  margin: auto auto 5px;
 
   @include medium-and-up {
     margin-left: 0;
@@ -70,10 +75,10 @@
 
   h5 {
     text-align: center;
-    font-size : rem(22);
-    line-height : normal;
-    font-weight: 500;
-    margin-bottom: 24px;
+    font-size: 1.25rem;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 15px;
 
     @include medium-and-up {
       text-align: left;
@@ -88,7 +93,7 @@
   p {
     font-size: rem(15);
     line-height: 1.6;
-    color: $grey-80;
+    color: $dark-shade-black;
 
     @include medium-and-up {
       margin-bottom: 24px;
@@ -100,7 +105,16 @@
     }
   }
 
-  a:hover {
-    text-decoration: underline;
+  a {
+    font-weight: normal;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::after {
+      content: "\203A";
+      padding-left: 5px;
+    }
   }
 }

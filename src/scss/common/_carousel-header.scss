@@ -167,11 +167,11 @@ $slide-transition-speed: 1s;
   .main-header {
     color: $article-heading-color;
     padding-top: 100px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
     h2 {
       font-size: rem(28);
-      margin-bottom: 27px;
-      width: 55%;
+      margin-bottom: 10px;
+      width: 70%;
       line-height: 1.2;
       font-weight: bold;
       color: $black;
@@ -306,7 +306,7 @@ $slide-transition-speed: 1s;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      bottom: 85px;
+      bottom: 35px;
       margin: 0;
       li {
         border-radius: 8px;

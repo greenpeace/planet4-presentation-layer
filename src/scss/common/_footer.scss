@@ -82,7 +82,7 @@
   font-size: rem(18);
   line-height: 3;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   @include medium-and-up {
     font-size: rem(16);
@@ -98,6 +98,7 @@
   color: $grey-10;
   line-height: 2.5;
   text-transform: uppercase;
+  margin-bottom: 30px;
 
   @include medium-and-up {
     font-size: rem(14);
@@ -140,6 +141,7 @@
 
 .gp-year {
   color: $white;
+  font-family: $roboto;
   font-size: rem(12);
 
   @include medium-and-up {

@@ -2,7 +2,7 @@
   h1 {
     font-size: rem(26);
     color: $black;
-    margin-bottom: 33px; 
+    margin-bottom: 33px;
     line-height: 1.2;
   }
   &.not-header {
@@ -68,7 +68,7 @@
       width: 45px;
       height: 45px;
       background: none;
-    } 
+    }
     .carousel-control-prev,
     .carousel-control-next {
       opacity: 1;
@@ -96,7 +96,7 @@
           width: 100%;
           font-family: $roboto;
         }
-      } 
+      }
     }
   }
 }
@@ -106,11 +106,8 @@
 .px0 {
   padding: 0 !important;
 }
-.ml-15 {
-  margin-left: 15px;
-}
-.mt42 {
-  margin-top: 42px;
+.mt15 {
+  margin-top: 15px;
 }
 
 @media (min-width: $small-width) {
@@ -145,15 +142,15 @@
       }
       .carousel-control-prev,
       .carousel-control-next {
-        top: 0; 
+        top: 0;
       }
       .carousel-indicators {
         bottom: -128px;
         right: 0;
         margin-right: 29px;
       }
-    } 
-  }  
+    }
+  }
 }
 
 @include large-and-up {
@@ -188,7 +185,7 @@
       }
       .carousel-control-prev,
       .carousel-control-next {
-        top: 0; 
+        top: 0;
         .carousel-control-next-icon {
           margin-right: 45%;
           height: 45px;
@@ -207,14 +204,14 @@
         right: 0;
         margin-right: 29px;
       }
-    } 
-  } 
+    }
+  }
   .px0 {
     padding: 0 15px !important;
   }
   .ml-15 {
     margin-left: 0;
-  } 
+  }
 }
 
 @include large-and-up {
@@ -270,15 +267,15 @@
             background-position-x:66px;
           }
         }
-        top: 0; 
+        top: 0;
       }
       .carousel-indicators {
         bottom: -128px;
         right: 0;
         margin-right: 29px;
       }
-    }  
-  }  
+    }
+  }
   .px0 {
     padding: 0 15px !important;
   }
@@ -335,15 +332,15 @@
           height: 65px;
           width: 65px;
         }
-        top: 0; 
+        top: 0;
       }
       .carousel-indicators {
         bottom: -170px;
         right: 0;
         margin-right: 29px;
       }
-    }   
-  }  
+    }
+  }
   .px0 {
     padding: 0 15px !important;
   }
