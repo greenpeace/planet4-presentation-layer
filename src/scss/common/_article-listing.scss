@@ -23,10 +23,11 @@
 
   .tag-item {
     color: $blue-80;
+    font-size: 1rem;
   }
 
   &:first-of-type {
-    margin-top: 10px;
+    margin-top: 0;
   }
 
   &:last-of-type {
@@ -45,10 +46,6 @@
     background-color: transparent;
     box-shadow: none;
     margin: 40px 0;
-
-    .tag-item {
-      font-size: rem(18);
-    }
   }
 }
 
@@ -57,6 +54,11 @@
 
   img {
     width: 100%;
+
+    @include medium-and-up {
+      width: 80%;
+    }
+
   }
 
   @include medium-and-up {
@@ -83,22 +85,18 @@
 }
 
 .article-list-item-headline {
-  font-size: rem(20);
+  font-size: 1.25rem;
   line-height: 1.3;
   font-weight: 500;
   color: $black;
   margin: 5px 0;
 
   @include medium-and-up {
-    font-size: rem(24);
+    font-size: 1.5rem;
   }
 
   @include large-and-up {
-    font-size: rem(30);
-  }
-
-  @include large-and-up {
-    font-size: rem(32);
+    font-size: 1.4rem;
   }
 }
 
@@ -111,7 +109,7 @@
   margin: 0;
 
   @include large-and-up {
-    font-size: rem(18);
+    font-size: 0.875rem;
   }
 }
 
@@ -128,13 +126,10 @@
 
   @include large-and-up {
     display: block;
-    font-size: rem(20);
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.6;
     margin: 10px 0 0;
-  }
-
-  @include x-large-and-up {
-    font-size: rem(20);
+    width: 80%;
   }
 }

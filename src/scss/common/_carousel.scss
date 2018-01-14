@@ -1,201 +1,174 @@
 .carousel-wrap {
-    padding-top: 100px;
-      h1 {
-        font-size: rem(38);
-        color: $dark-blue;
-        margin-bottom: 40px;
-      }
-      .carousel-item {
-        .carousal-item-credit {
-          position: absolute;
-          right: 0;
-          top: 0;
-          color: $white;
-          font-size: rem(14);
-          margin: 15px;
-          font-weight: normal;
-        }
-      }
-      .carousel-item.active,
-      .carousel-item-next,
-      .carousel-item-prev {
-        display: block;
-        img{
-          width: 100%;
-        }
-      }
-      .carousel-caption {
-        text-align: left;
-        left: auto;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        padding: 30px 200px 30px 50px;
-        background : -moz-linear-gradient(66.31% -110.5% -120deg,rgba(10, 51, 81, 0) 0%,rgba(10, 51, 81, 1) 100%);
-        background : -webkit-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
-        background : -webkit-gradient(linear,66.31% -110.5% ,33.69% 210.5% ,color-stop(0,rgba(10, 51, 81, 0) ),color-stop(1,rgba(10, 51, 81, 1) ));
-        background : -o-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
-        background : -ms-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
-        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351', endColorstr='#0A3351' ,GradientType=0)";
-        background : linear-gradient(210deg, rgba(10, 51, 81, 0.2) 0%, rgba(10, 51, 81, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351',endColorstr='#0A3351' , GradientType=1);
-      }
-      .carousel-indicators {
-        right: 0;
-        bottom: 30px;
-        left: auto;
-        li {
-          width: 12px;
-          height: 12px;
-          border-radius: 50%;
-          background: $white;
-          margin: 0 15px;
-          cursor: pointer;
-          &.active {
-            background: $carousel-indi-color;
-          }
-        }
-      }
-      .carousel-control-prev,
-      .carousel-control-next {
-        opacity: 1;
-        width: 10%;
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-          background-image: none;
-          border: solid 1px $white;
-          height: 40px;
-          width: 40px;
-          border-radius: 50%;
-          display: block;
-          text-align: center;
-          background-color: $carr-arrow;
-          cursor: pointer;
-          opacity: 0.4;
-          i {
-            background: url("images/sprite.png");
-            height: 32px;
-            width: 22px;
-            vertical-align: middle;
-            display: inline-block;
-            margin: 2px 2px 0 0;
-          }
-        }
-        .carousel-control-next-icon {
-          i {
-            background-position: -21px 1px;
-          }
-        }
-      }
-  }
+  padding-top: 0;
+  padding-bottom: 0;
 
- @include mobile-only {
-    .carousel-wrap {
-      padding-top: 0;
-      padding-bottom: 0;
-        h1 {
-          font-size: rem(34);
-          margin-left: 0;
-          margin-bottom: 40px;
-        }
-        .carousel-indicators {
-          bottom: 235px;
-          right: 22%;
-          li {
-            width: 8px;
-            height: 8px;
-            margin: 0 8px;
-          }
-        }
-        .carousel-item {
-          margin-bottom: 235px;
-        }
-        .carousel-caption {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          z-index: 10;
-          padding: 20px 15px 20px;
-          color: $white;
-          margin-bottom: -235px;
-          width: 100%;
-          height: 235px;
-          h3 {
-            font-size: rem(17);
-          }
-          p {
-            font-size: rem(13);
-          }
-        }
-        .carousel-control-prev,
-        .carousel-control-next {
-          top: -25%;
-          width: 30%;
-        }
-      }
-  }
-
-
-  @include medium-and-up {
-    .carousel-wrap {
-      padding-top: 70px;
-      padding-bottom: 70px;
-        h1 {
-          font-size: rem(34);
-          margin-left: 0;
-          margin-bottom: 40px;
-        }
-        .carousel-indicators {
-          bottom: 10px;
-        }
-        .carousel-caption {
-          padding: 20px 30px;
-          h3 {
-            font-size: rem(17);
-          }
-          p {
-            font-size: rem(13);
-          }
-        }
-      }
+  @include small-and-up {
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 
   @include large-and-up {
-    .carousel-wrap {
-        h1 {
-          font-size: rem(34);
-          margin-left: 0;
-          margin-bottom: 40px;
-        }
-        .carousel-caption {
-          padding: 20px 30px;
-          h3 {
-            font-size: rem(17);
-          }
-          p {
-            font-size: rem(13);
-          }
-        }
-      }
+    padding-top: 45px;
+    padding-bottom: 0;
   }
 
   @include x-large-and-up {
-    .carousel-wrap {
-      padding-top: 104px;
-      padding-bottom: 104px;
-        h1 {
-          font-size: rem(34);
-          margin-left: 0;
-          margin-bottom: 40px;
-        }
-        .carousel-caption {
-          padding: 20px 30px;
-          h3 {
-            font-size: rem(17);
-          }
-          p {
-            font-size: rem(13);
-          }
-        }
-      }
+    padding-top: 104px;
+    padding-bottom: 104px;
   }
+
+  h1 {
+    font-size: 1.4rem;
+    color: $black;
+    margin-bottom: 22px;
+    margin-left: 0;
+
+    @include large-and-up {
+      font-size: 1.75rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  .carousel-item {
+    @include mobile-only {
+      margin-bottom: 235px;
+    }
+
+    .carousal-item-credit {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: $white;
+      font-size: rem(14);
+      margin: 15px;
+      font-weight: normal;
+    }
+  }
+
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+    display: block;
+    img{
+      width: 100%;
+    }
+  }
+
+  .carousel-caption {
+    text-align: left;
+    left: auto;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 30px 200px 30px 50px;
+    background : -moz-linear-gradient(66.31% -110.5% -120deg,rgba(10, 51, 81, 0) 0%,rgba(10, 51, 81, 1) 100%);
+    background : -webkit-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
+    background : -webkit-gradient(linear,66.31% -110.5% ,33.69% 210.5% ,color-stop(0,rgba(10, 51, 81, 0) ),color-stop(1,rgba(10, 51, 81, 1) ));
+    background : -o-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
+    background : -ms-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351', endColorstr='#0A3351' ,GradientType=0)";
+    background : linear-gradient(210deg, rgba(10, 51, 81, 0.2) 0%, rgba(10, 51, 81, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351',endColorstr='#0A3351' , GradientType=1);
+
+    @include mobile-only {
+      position: absolute;
+      z-index: 10;
+      padding: 20px 15px 20px;
+      color: $white;
+      margin-bottom: -235px;
+      height: 235px;
+    }
+
+    @include medium-and-up {
+      padding: 20px 30px;
+    }
+
+    h3 {
+      @include medium-and-up {
+        font-size: rem(17);
+        width: 60%;
+      }
+    }
+
+    p {
+      @include medium-and-up {
+        font-size: rem(13);
+        width: 60%;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    right: 25%;
+    bottom: 235px;
+    left: auto;
+
+    @include small-and-up {
+      bottom: 30px;
+      right: 0;
+    }
+
+    @include medium-and-up {
+      bottom: 10px;
+    }
+
+    li {
+      width: 8px;
+      height: 8px;
+      margin: 0 8px;
+      border-radius: 50%;
+      background: $white;
+      cursor: pointer;
+
+      @include small-and-up {
+        width: 12px;
+        height: 12px;
+        margin: 0 15px;
+      }
+
+      &.active {
+        background: $carousel-indi-color;
+      }
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 1;
+    width: 10%;
+
+    @include mobile-only {
+      top: -25%;
+      width: 30%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      border: solid 1px $white;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      display: block;
+      text-align: center;
+      background-color: $carr-arrow;
+      cursor: pointer;
+      opacity: 0.4;
+
+      i {
+        background: url("images/sprite.png");
+        height: 32px;
+        width: 22px;
+        vertical-align: middle;
+        display: inline-block;
+        margin: 2px 2px 0 0;
+      }
+    }
+
+    .carousel-control-next-icon {
+      i {
+        background-position: -21px 1px;
+      }
+    }
+  }
+}

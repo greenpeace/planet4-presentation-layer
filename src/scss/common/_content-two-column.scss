@@ -6,7 +6,7 @@
   }
 
   @include large-and-up {
-    padding-top: 85px;
+    padding-top: 45px;
   }
 
   @include x-large-and-up {
@@ -31,8 +31,9 @@
     }
 
     @include large-and-up {
-      font-size: rem(36);
-      margin-bottom: 25px;
+      font-size: 1.75rem;
+      margin-bottom: 12px;
+      width: 90%;
     }
 
     @include x-large-and-up {
@@ -53,8 +54,9 @@
     }
 
     @include large-and-up {
-      font-size: rem(20);
-      margin-bottom: 56px;
+      font-size: 1rem;
+      margin-bottom: 30px;
+      line-height: 1.6;
     }
 
     @include x-large-and-up {
@@ -73,13 +75,17 @@
     }
 
     @include large-and-up {
-      margin-bottom: 99px;
+      margin-bottom: 0;
       width: 80%;
     }
 
     @include x-large-and-up {
       margin-bottom: 119px;
       width: 60%;
+    }
+
+    &:hover {
+      border-color: $dark-blue;
     }
   }
 }

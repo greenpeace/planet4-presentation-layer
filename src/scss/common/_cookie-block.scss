@@ -25,6 +25,10 @@ $cookie-blue: #094464;
     font-weight: bold;
     color: $cookie-blue;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .btn {
     height: 32px;
@@ -33,6 +37,11 @@ $cookie-blue: #094464;
     width: 100%;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     background-color: transparentize($white, .2);
+
+    &:hover {
+      border-color: $dark-blue;
+      background-color: $dark-blue;
+    }
   }
 }
 
@@ -57,7 +66,7 @@ $cookie-blue: #094464;
     }
     a {
       font-size: rem(14);
-    }  
+    }
   }
 }
 
@@ -72,7 +81,7 @@ $cookie-blue: #094464;
     }
     a {
       font-size: rem(15);
-    }  
+    }
   }
 }
 
@@ -87,7 +96,7 @@ $cookie-blue: #094464;
     }
     a {
       font-size: rem(14.5);
-    }  
+    }
   }
 }
 
@@ -103,7 +112,6 @@ $cookie-blue: #094464;
     }
     a {
       font-size: rem(17);
-    }  
+    }
   }
 }
-
