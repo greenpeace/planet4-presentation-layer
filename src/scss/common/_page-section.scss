@@ -8,7 +8,7 @@
   margin: 30px auto;
 
   @include medium-and-up {
-    margin: 75px auto;
+    margin: 40px auto 50px auto;
   }
 
   @include large-and-up {
@@ -22,22 +22,22 @@
 
 .page-section-header {
   font-family: $roboto;
-  font-size: 1.4rem;
+  font-size: rem(22);
   font-weight: 700;
   color: $black;
   margin-bottom: 22px;
 
   @include medium-and-up {
-    font-size: rem(34);
+    font-size: rem(24);
   }
 
   @include large-and-up {
-    font-size: 1.75rem;
+    font-size: rem(28);
     margin-bottom: 20px;
   }
 
   @include x-large-and-up {
-    font-size: rem(38);
+    font-size: rem(30);
   }
 }
 

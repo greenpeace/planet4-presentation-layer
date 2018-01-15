@@ -2,11 +2,19 @@
   margin: 40px 0;
 
   @include medium-and-up {
+    margin: 40px 0 60px 0;
+  }
+
+  @include large-and-up {
     margin: 60px 0;
   }
 
+  @include x-large-and-up {
+    margin: 40px 0 80px 0;
+  }
+
   h2 {
-    font-size: 1.625rem;
+    font-size: rem(26);
     line-height: 1.2;
     text-align: center;
     margin: 60px 0 35px 0;
@@ -20,16 +28,15 @@
 
     @include large-and-up {
       text-align: left;
-      font-size: 3rem;
+      font-size: rem(48);
       font-weight: 900;
       margin-top: 84px;
       margin-bottom: 66px;
     }
 
     @include x-large-and-up {
-      font-size: rem(56);
-      margin-top: 104px;
-      margin-bottom: 80px;
+      font-size: rem(40);
+      margin-bottom: 30px;
     }
   }
 
@@ -48,7 +55,7 @@
   }
 
   @include medium-and-up {
-    margin-bottom: 54px;
+    margin-bottom: 36px;
   }
 
   @include large-and-up {
@@ -57,32 +64,20 @@
 }
 
 .four-column-symbol-container {
-  margin-bottom: 5px;
+  margin: 0 auto 5px auto;
   display: block;
   width: 102px;
   height: 102px;
 
   @include medium-and-up {
-    margin-bottom: 32px;
+    margin: 0 0 16px 0;
     text-align: inherit;
   }
 
-  @include large-and-up {
-    margin-bottom: 16px;
-  }
-
   @include x-large-and-up {
-    margin-bottom: 56px;
+    margin-bottom: 24px;
   }
 
-}
-
-.four-column-symbol {
-  display: inline-block;
-
-  a {
-    display: inline-block;
-  }
 }
 
 .four-column-information {
@@ -90,7 +85,7 @@
 
   h5 {
     text-align: center;
-    font-size: 1.25rem;
+    font-size: rem(20);
     line-height: normal;
     margin-bottom: 15px;
 
@@ -113,7 +108,7 @@
     }
 
     @include x-large-and-up {
-      margin-bottom: 32px;
+      margin-bottom: 20px;
     }
   }
 
@@ -123,25 +118,33 @@
     color: $dark-shade-black;
 
     @include medium-and-up {
+      font-size: rem(14);
       margin-bottom: 24px;
     }
 
     @include large-and-up {
       margin-bottom: 12px;
-      font-size: 0.875rem;
     }
 
     @include x-large-and-up {
-      font-size: rem(16);
-      margin-bottom: 48px;
+      font-size: rem(15);
+      margin-bottom: 24px;
     }
   }
 
   a {
     font-weight: normal;
 
+    @include medium-and-up {
+      font-size: rem(15);
+    }
+
     @include large-and-up {
-      font-size: 0.875rem;
+      font-size: rem(14);
+    }
+
+    @include x-large-and-up {
+      font-size: rem(15);
     }
 
     &:hover {

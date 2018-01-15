@@ -7,25 +7,35 @@
     padding-bottom: 70px;
   }
 
+  @include medium-and-up {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
   @include large-and-up {
     padding-top: 45px;
     padding-bottom: 0;
   }
 
   @include x-large-and-up {
-    padding-top: 104px;
-    padding-bottom: 104px;
+    padding-top: 80px;
+    padding-bottom: 0;
   }
 
   h1 {
-    font-size: 1.4rem;
+    font-size: rem(22);
     color: $black;
     margin-bottom: 22px;
     margin-left: 0;
 
     @include large-and-up {
-      font-size: 1.75rem;
+      font-size: rem(28);
       margin-bottom: 20px;
+    }
+
+    @include x-large-and-up {
+      font-size: rem(30);
+      margin-bottom: 22px;
     }
   }
 
@@ -60,6 +70,7 @@
     bottom: 0;
     right: 0;
     width: 100%;
+    font-family: $roboto;
     padding: 30px 200px 30px 50px;
     background : -moz-linear-gradient(66.31% -110.5% -120deg,rgba(10, 51, 81, 0) 0%,rgba(10, 51, 81, 1) 100%);
     background : -webkit-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
@@ -91,8 +102,14 @@
     }
 
     p {
+      font-family: $roboto;
+
       @include medium-and-up {
         font-size: rem(13);
+        width: 70%;
+      }
+
+      @include large-and-up {
         width: 60%;
       }
     }
@@ -110,6 +127,7 @@
 
     @include medium-and-up {
       bottom: 10px;
+      margin-right: 2%;
     }
 
     li {
