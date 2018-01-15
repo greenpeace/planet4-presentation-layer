@@ -250,4 +250,9 @@
   figcaption {
     margin-top: 10px;
   }
+  .wp-caption-text {
+    font-size: rem(16);
+    margin-top: 10px;
+    font-family: $roboto;
+  }
 }
