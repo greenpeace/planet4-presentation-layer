@@ -2,517 +2,481 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-	<title>Home :: Greenpeace 2017</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Home :: Greenpeace 2017</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="page-template-default page page-child brown-bg">
   <nav id="header" class="top-navigation">
     <a class="site-logo" href="/">
       <img src="images/gp-logo.svg" alt="Greenpeace" />
     </a>
     <button
-      class="btn btn-navbar-toggle navbar-dropdown-toggle"
-      data-toggle="open"
-      data-target="#navbar-dropdown"
-      aria-expanded="false"
-      aria-label="Toggle navigation menu"
+    class="btn btn-navbar-toggle navbar-dropdown-toggle"
+    data-toggle="open"
+    data-target="#navbar-dropdown"
+    aria-expanded="false"
+    aria-label="Toggle navigation menu"
     >
-      <span>Menu</span>
-    </button>
-    <ul id="navbar-dropdown" class="navbar-dropdown list-unstyled">
-      <li class="nav-item">
-        <button class="close-navbar-dropdown">
-          <span class="screen-reader-text">Close Menu</span>
-        </button>
-        <button
-          class="country-dropdown-toggle"
-          data-toggle="open"
-          data-target="#country-list"
-          aria-expanded="false"
-          aria-label="Toggle worldwide site selection menu"
-        >
-          <span class="screen-reader-text">Selected:</span> Australia (English)
-          <span class="screen-reader-text">Change Country</span>
-        </button>
-        <div id="country-list" class="country-list">
-          <a href="http://www.greenpeace.org/international">International (English)</a>
-
-          <ul>
-            <li>
-              <h3 class="country-group-letter">A</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.org/afrique/">Africa - Congo (Français)</a></li>
-                <li><a href="http://www.greenpeace.org/afrique/">Africa - Senegal (Français)</a></li>
-                <li><a href="http://www.greenpeace.org/africa/">Africa - South Africa (English)</a></li>
-                <li><a href="http://www.greenpeacearabic.org">Arabic (العربية)</a></li>
-                <li><a href="http://www.greenpeace.org/argentina/">Argentina (Español)</a></li>
-                <li class="active"><a href="http://www.greenpeace.org/australia/">Australia (English)</a></li>
-                <li><a href="http://www.greenpeace.org/austria/">Austria (Deutsch)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">B</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.org/belgium/">Belgium (Nederlands/Français)</a></li>
-                <li><a href="http://www.greenpeace.org/brasil/">Brazil (Português)</a></li>
-                <li><a href="http://www.greenpeace.org/bulgaria/">Bulgaria (български)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">C</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.org/canada/">Canada (English/Français)</a></li>
-                <li><a href="http://www.greenpeace.org/chile/">Chile (Español)</a></li>
-                <li><a href="http://www.greenpeace.org.cn">China Mainland (简体中文)</a></li>
-                <li><a href="http://www.greenpeace.org/colombia/">Colombia (Español)</a></li>
-                <li><a href="http://www.greenpeace.org/croatia">Croatia (Hrvatski)</a></li>
-                <li><a href="http://www.greenpeace.cz">Czech Republic (Česky)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">D</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.dk">Denmark (Dansk)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">E</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.org/eastasia/">East Asia (English)</a></li>
-                <li><a href="http://www.greenpeace.org/eu-unit">European Union (English)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">F</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.org/australia">Fiji (English)</a></li>
-                <li><a href="http://www.greenpeace.org/finland">Finland (Suomea)</a></li>
-                <li><a href="http://www.greenpeace.org/france">France (Français)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">G</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.de">Germany (Deutsch)</a></li>
-                <li><a href="http://www.greenpeace.gr">Greece (Ελληνικά)</a></li>
-                <li><a href="http://www.greenpeace.org/greenland/">Greenland (Kalaallisut/Dansk)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">H</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.org/hk/">Hong Kong (繁體中文)</a></li>
-                <li><a href="http://www.greenpeace.hu">Hungary (Magyar)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">I</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.org/india/">India (English/Hindi)</a></li>
-                <li><a href="http://www.greenpeace.org/seasia/id/">Indonesia (Indonesia)</a></li>
-                <li><a href="http://www.greenpeace.org/israel/">Israel (עברית)</a></li>
-                <li><a href="http://www.greenpeace.org/italy/">Italy (Italiano)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">J</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.org/japan/">Japan (日本語)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">K</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.org/korea/">Korea (한국어)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">L</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.lu">Luxembourg (Français)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">M</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.org/mediterranean/">Malta (English)</a></li>
-                <li><a href="http://www.greenpeace.org/mexico/">Mexico (Español)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">N</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.nl">Netherlands (Nederlands)</a></li>
-                <li><a href="http://www.greenpeace.org.nz">New Zealand (English)</a></li>
-                <li><a href="http://www.greenpeace.no">Norway (Norsk)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">P</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.org.au">Papua New Guinea (English)</a></li>
-                <li><a href="http://www.greenpeace.org/peru/">Perú (Español)</a></li>
-                <li><a href="http://www.greenpeace.org/seasia/ph/">Philippines (English)</a></li>
-                <li><a href="http://www.greenpeace.pl">Poland (Polska)</a></li>
-                <li><a href="http://www.greenpeace.org/portugal/">Portugal (Português)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">R</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.ro">Romania (Român)</a></li>
-                <li><a href="http://www.greenpeace.org/russia/ru/">Russia (Русский)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">S</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.sk">Slovakia (Slovenčina)</a></li>
-                <li><a href="http://www.greenpeace.org/slovenia/">Slovenia (Slovenjia)</a></li>
-                <li><a href="http://www.greenpeace.org/seasia/">Southeast Asia (English)</a></li>
-                <li><a href="http://www.greenpeace.org/espana/">Spain (Español)</a></li>
-                <li><a href="http://www.greenpeace.se">Sweden (Svenska)</a></li>
-                <li><a href="http://www.greenpeace.org/switzerland/de/">Switzerland (Deutsch)</a></li>
-                <li><a href="http://www.greenpeace.org/switzerland/fr/">Switzerland (Français)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">T</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.org/taiwan/">Taiwan (正體中文)</a></li>
-                <li><a href="http://www.greenpeace.org/seasia/th/">Thailand (ไทย)</a></li>
-                <li><a href="http://www.greenpeace.org/turkey/">Turkey (Türk)</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="country-group-letter">U</h3>
-              <ul>
-                <li><a href="http://www.greenpeace.org.uk">United Kingdom (English)</a></li>
-                <li><a href="http://www.greenpeace.org/usa/">USA (English)</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="act.html">Act</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="explore.html">Explore</a>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-donate" href="#">Donate</a>
-      </li>
-    </ul>
-    <button
-      class="navbar-search-toggle"
-      data-toggle="open"
-      data-target="#navbar-search"
-      aria-expanded="false"
-      aria-label="Toggle search box"
-    >
-      <span class="screen-reader-text">Toggle search form</span>
-    </button>
-    <form id="navbar-search" class="form nav-item nav-search-wrap">
-      <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-      <button class="top-nav-search-btn" type="submit">
-        <i class="fa fa-search"></i>
-        <span class="screen-reader-text">Search</span>
+    <span>Menu</span>
+  </button>
+  <ul id="navbar-dropdown" class="navbar-dropdown list-unstyled">
+    <li class="nav-item">
+      <button class="close-navbar-dropdown">
+        <span class="screen-reader-text">Close Menu</span>
       </button>
-    </form>
-  </nav>
+      <button
+      class="country-dropdown-toggle"
+      data-toggle="open"
+      data-target="#country-list"
+      aria-expanded="false"
+      aria-label="Toggle worldwide site selection menu"
+      >
+      <span class="screen-reader-text">Selected:</span> Australia (English)
+      <span class="screen-reader-text">Change Country</span>
+    </button>
+    <div id="country-list" class="country-list">
+      <a href="http://www.greenpeace.org/international">International (English)</a>
+
+      <ul>
+        <li>
+          <h3 class="country-group-letter">A</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.org/afrique/">Africa - Congo (Français)</a></li>
+            <li><a href="http://www.greenpeace.org/afrique/">Africa - Senegal (Français)</a></li>
+            <li><a href="http://www.greenpeace.org/africa/">Africa - South Africa (English)</a></li>
+            <li><a href="http://www.greenpeacearabic.org">Arabic (العربية)</a></li>
+            <li><a href="http://www.greenpeace.org/argentina/">Argentina (Español)</a></li>
+            <li class="active"><a href="http://www.greenpeace.org/australia/">Australia (English)</a></li>
+            <li><a href="http://www.greenpeace.org/austria/">Austria (Deutsch)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">B</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.org/belgium/">Belgium (Nederlands/Français)</a></li>
+            <li><a href="http://www.greenpeace.org/brasil/">Brazil (Português)</a></li>
+            <li><a href="http://www.greenpeace.org/bulgaria/">Bulgaria (български)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">C</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.org/canada/">Canada (English/Français)</a></li>
+            <li><a href="http://www.greenpeace.org/chile/">Chile (Español)</a></li>
+            <li><a href="http://www.greenpeace.org.cn">China Mainland (简体中文)</a></li>
+            <li><a href="http://www.greenpeace.org/colombia/">Colombia (Español)</a></li>
+            <li><a href="http://www.greenpeace.org/croatia">Croatia (Hrvatski)</a></li>
+            <li><a href="http://www.greenpeace.cz">Czech Republic (Česky)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">D</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.dk">Denmark (Dansk)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">E</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.org/eastasia/">East Asia (English)</a></li>
+            <li><a href="http://www.greenpeace.org/eu-unit">European Union (English)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">F</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.org/australia">Fiji (English)</a></li>
+            <li><a href="http://www.greenpeace.org/finland">Finland (Suomea)</a></li>
+            <li><a href="http://www.greenpeace.org/france">France (Français)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">G</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.de">Germany (Deutsch)</a></li>
+            <li><a href="http://www.greenpeace.gr">Greece (Ελληνικά)</a></li>
+            <li><a href="http://www.greenpeace.org/greenland/">Greenland (Kalaallisut/Dansk)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">H</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.org/hk/">Hong Kong (繁體中文)</a></li>
+            <li><a href="http://www.greenpeace.hu">Hungary (Magyar)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">I</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.org/india/">India (English/Hindi)</a></li>
+            <li><a href="http://www.greenpeace.org/seasia/id/">Indonesia (Indonesia)</a></li>
+            <li><a href="http://www.greenpeace.org/israel/">Israel (עברית)</a></li>
+            <li><a href="http://www.greenpeace.org/italy/">Italy (Italiano)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">J</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.org/japan/">Japan (日本語)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">K</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.org/korea/">Korea (한국어)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">L</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.lu">Luxembourg (Français)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">M</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.org/mediterranean/">Malta (English)</a></li>
+            <li><a href="http://www.greenpeace.org/mexico/">Mexico (Español)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">N</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.nl">Netherlands (Nederlands)</a></li>
+            <li><a href="http://www.greenpeace.org.nz">New Zealand (English)</a></li>
+            <li><a href="http://www.greenpeace.no">Norway (Norsk)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">P</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.org.au">Papua New Guinea (English)</a></li>
+            <li><a href="http://www.greenpeace.org/peru/">Perú (Español)</a></li>
+            <li><a href="http://www.greenpeace.org/seasia/ph/">Philippines (English)</a></li>
+            <li><a href="http://www.greenpeace.pl">Poland (Polska)</a></li>
+            <li><a href="http://www.greenpeace.org/portugal/">Portugal (Português)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">R</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.ro">Romania (Român)</a></li>
+            <li><a href="http://www.greenpeace.org/russia/ru/">Russia (Русский)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">S</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.sk">Slovakia (Slovenčina)</a></li>
+            <li><a href="http://www.greenpeace.org/slovenia/">Slovenia (Slovenjia)</a></li>
+            <li><a href="http://www.greenpeace.org/seasia/">Southeast Asia (English)</a></li>
+            <li><a href="http://www.greenpeace.org/espana/">Spain (Español)</a></li>
+            <li><a href="http://www.greenpeace.se">Sweden (Svenska)</a></li>
+            <li><a href="http://www.greenpeace.org/switzerland/de/">Switzerland (Deutsch)</a></li>
+            <li><a href="http://www.greenpeace.org/switzerland/fr/">Switzerland (Français)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">T</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.org/taiwan/">Taiwan (正體中文)</a></li>
+            <li><a href="http://www.greenpeace.org/seasia/th/">Thailand (ไทย)</a></li>
+            <li><a href="http://www.greenpeace.org/turkey/">Turkey (Türk)</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="country-group-letter">U</h3>
+          <ul>
+            <li><a href="http://www.greenpeace.org.uk">United Kingdom (English)</a></li>
+            <li><a href="http://www.greenpeace.org/usa/">USA (English)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="act.html">Act</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="explore.html">Explore</a>
+  </li>
+  <li class="nav-item">
+    <a class="btn btn-donate" href="#">Donate</a>
+  </li>
+</ul>
+<button
+class="navbar-search-toggle"
+data-toggle="open"
+data-target="#navbar-search"
+aria-expanded="false"
+aria-label="Toggle search box"
+>
+<span class="screen-reader-text">Toggle search form</span>
+</button>
+<form id="navbar-search" class="form nav-item nav-search-wrap">
+  <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+  <button class="top-nav-search-btn" type="submit">
+    <i class="fa fa-search"></i>
+    <span class="screen-reader-text">Search</span>
+  </button>
+</form>
+</nav>
+
 <div class="hero-img-wrap">
-
-	<div class="clearfix"></div>
-	<div id="take-action" class="page-content-wrap">
-		<div class="fixed-element clearfix">
-			<div class="container">
-				<!-- Page Header Block starts -->
-				<div class="page-header">
-					<div class="top-tags-wrap">
-						<span class="category-topic-title">FOOD</span>
-						<span class="category-topic-title-seprater"></span>
-						<span>#tagname1</span>
-						<span>#tagname2</span>
-						<span>#tagname3</span>
-					</div>
-					<h1>Show You're a food warrior</h1>
-					<!-- More markup to follow for header block -->
-				</div> <!-- Page Header block ends -->
-
-				<!-- Commented out the header buttons for now will move it to other section
-					 once that is finalised -->
-				<div class="action-buttons">
-            <span class="pull-right hidden-xs-down">
-              <a href="javascript:void(0)" class="btn btn-primary">Add to my action list</a>
-            </span>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row about-info">
-				<div class="col-md-6 col-lg-6 col-sm-12">
-					<h2>Why this matters</h2>
-					<p>The climate needs us. Livestock, especially beef, accounts for 14% of greenhouse gas emissions (CO2, methane, nitrous oxide) worldwide, which exceeds the greenhouse gases of all transportation vehicles driving on the road worldwide. Help us change the broken system.</p>
-				</div>
-				<div class="col-md-6 col-lg-6 col-sm-12">
-					<h2>The problem</h2>
-					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum  deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident. Sint occaecati cupiditate non provident </p>
-				</div>
-			</div>
-			<div id="carousel-wrapper" class="carousel slide home-page-carousel-wrap" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-wrapper" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-wrapper" data-slide-to="1"></li>
-					<li data-target="#carousel-wrapper" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner" role="listbox">
-					<div class="carousel-item active">
-						<img src="images/carousel-img.jpg" alt="First slide">
-						<div class="carousel-caption">
-							<h3>Rainbow Warrior at the Great Barrier Reef.</h3>
-							<p>The ship was on the Great Barrier Reef as UNESCO passed a decision to keep the Reef on a watching brief due to the impacts of industrialisation, agricultural run off & climate change.</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img src="images/carousel-img.jpg"  alt="Second slide">
-						<div class="carousel-caption d-none d-md-block">
-							<h3>Caption</h3>
-							<p>Credit</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img src="images/carousel-img.jpg"  alt="Third slide">
-						<div class="carousel-caption">
-							<h3>Caption</h3>
-							<p>Credit</p>
-						</div>
-					</div>
-				</div>
-				<a class="carousel-control-prev" href="#carousel-wrapper" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true">
-              <i></i>
-            </span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carousel-wrapper" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true">
-              <i></i>
-            </span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Block Media Start -->
-<div class="container">
-	<div class="block-media">
-
-	</div>
-</div>
-<!-- Block Media End -->
-<div class="what-you-can-do-wrapper">
-	<div class="container">
-		<div class="hidden-lg-up add-action-list-wrap">
-			<a href="javascript:void(0)" class="btn btn-primary btn-small btn-medium">Add to my action list</a>
-		</div>
-		<h2>What you can do </h2>
-		<div class="row">
-			<div class="col-md-6"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p></div>
-			<div class="col-md-6"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p></div>
-		</div>
-		<div class="clearfix"></div>
-		<div class="can-do-steps">
-			<div class="hidden-sm-down row">
-				<div class="col-lg-3">
-					<div class="step-info-wrap clearfix">
-						<span class="step-number">1</span>
-						<div class="step-info">
-							<div class="steps-information">
-								<h5>Read Sick of Too Many Cows</h5>
-								<p>Read how intensive livestockfarming could be endangering our health</p>
-								<div class="steps-action">
-									<img src="images/book.jpg" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="step-info-wrap  clearfix">
-						<span class="step-number">2</span>
-						<div class="step-info">
-							<div class="steps-information">
-								<h5>Talk to your friends about the report</h5>
-								<p>Read how intensive livestockfarming could be endangering our health</p>
-								<div class="steps-action">
-									<a href="javascript:void(0)" class="btn btn-small btn-medium btn-secondary">go to petition page</a>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="step-info-wrap  clearfix">
-						<span class="step-number">3</span>
-						<div class="step-info">
-							<div class="steps-information">
-								<h5>Learn about Lidl and the Pigs</h5>
-								<p>Read how intensive livestockfarming could be endangering our health</p>
-								<div class="steps-action">
-									<a href="javascript:void(0)" class="btn btn-small btn-medium btn-secondary">go to petition page</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="step-info-wrap  clearfix">
-						<span class="step-number">4</span>
-						<div class="step-info">
-							<div class="steps-information">
-								<h5>Learn about Lidl and the Pigs</h5>
-								<p>Read how intensive livestockfarming could be endangering our health</p>
-								<div class="steps-action">
-									<a href="javascript:void(0)" class="btn btn-small btn-medium btn-secondary">share with friends</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="can-do-steps-mobile hidden-md-up">
-				<div id="accordion" role="tablist" aria-multiselectable="true">
-					<div class="card">
-						<div class="card-header" role="tab" id="headingOne">
-							<h5 class="mb-0">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse-one" aria-expanded="true" aria-controls="collapseOne">
-									<span class="step-number">1</span> Read Sick of Too Many Cows
-								</a>
-							</h5>
-						</div>
-
-						<div id="collapse-one" class="collapse show" role="tabpanel" aria-labelledby="heading-one">
-							<div class="card-block info-with-image-wrap clearfix">
-								<div class="accordion-image-wrap">
-									<img src="images/book.jpg" alt="">
-								</div>
-								<div class="mobile-accordion-info">
-									<p>Read how intensive livestockfarming could be endangering our health</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" role="tab" id="heading-two">
-							<h5 class="mb-0">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
-									<span class="step-number">2</span> Talk to your friends about the report
-								</a>
-							</h5>
-						</div>
-						<div id="collapse-two" class="collapse" role="tabpanel" aria-labelledby="heading-two">
-							<div class="card-block">
-								<p>Read how intensive livestockfarming could be endangering our health</p>
-								<a href="javascript:void(0)" class="btn btn-small btn-medium btn-secondary">share with friends</a>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" role="tab" id="heading-three">
-							<h5 class="mb-0">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-three" aria-expanded="false" aria-controls="collapse-three">
-									<span class="step-number">3</span> Learn about Lidl and the Pigs
-								</a>
-							</h5>
-						</div>
-						<div id="collapse-three" class="collapse" role="tabpanel" aria-labelledby="heading-three">
-							<div class="card-block">
-								<p>Read how intensive livestockfarming could be endangering our health</p>
-								<a href="javascript:void(0)" class="btn btn-small btn-medium btn-secondary">go to petition page</a>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" role="tab" id="heading-four">
-							<h5 class="mb-0">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-four" aria-expanded="false" aria-controls="collapse-four"> <span class="step-number">4</span> Learn about Lidl and the Pigs
-								</a>
-							</h5>
-						</div>
-						<div id="collapse-four" class="collapse" role="tabpanel" aria-labelledby="heading-four">
-							<div class="card-block">
-								<p>Read how intensive livestockfarming could be endangering our health</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="hidden-md-up friends-take-action-button">
-				<a href="javascript:void(0)" class="btn btn-small btn-medium btn-primary">Ask your friends to take action</a>
-			</div>
-		</div>
-	</div>
+  <div class="clearfix"></div>
 </div>
 
-<!-- Happy Point Block Start -->
-<div class="happy-point-block-wrap">
-	<div class="container">
-		<div class="col-md-6 offset-md-6 pt-20">
-			<h2>Get action alerts in your inbox</h2>
-			<h5>Some text here about the transparency of the communications. Opt out or contact us at any time.</h5>
-			<a href="#" class="btn btn-primary btn-medium subscriber-btn">SUBSCRIBE</a>
-		</div>
-	</div>
-</div>
-<!-- Happy Point Block End -->
+<div class="skewed-overlay"></div>
 
-<!-- Site Footer -->
-<footer class="site-footer">
-	<div class="container">
-		<ul class="footer-social-media list-unstyled col-md-8 col-lg-5">
-			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-		</ul>
+<div class="page-header">
+  <div class="page-header-background">
+    <img src="https://storage.googleapis.com/p4-develop-content/international/wp-content/uploads/2017/11/Left_toxics_style_01_e2e4b2.jpg" class="page-header-image">
+  </div>
+  <div class="container">
+    <div class="top-page-tags">
+      <a class="tag-item tag-item--main" href="https://dev.p4.greenpeace.org/international/explore/nature/">Nature</a>
 
-		<ul class="list-unstyled footer-links">
-			<li><a href="#">News</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Jobs</a></li>
-			<li><a href="#">FAQ</a></li>
-			<li><a href="#">Press</a></li>
-		</ul>
+      <a class="tag-item " href="https://dev.p4.greenpeace.org/international/tag/protection/">#Protection</a>
+      <a class="tag-item " href="https://dev.p4.greenpeace.org/international/tag/truth-to-power/">#TruthToPower</a>
+    </div>
+    <h1 class="page-header-title">Justice for people and planet</h1>
+    <h3 class="page-header-subtitle">Ending the age of corporate capture, collusion and impunity</h3>
+    <p class="page-header-content">Greenpeace has been protecting the environment for decades. We’ve stopped many crimes against the planet and held many corporations responsible for their actions. But there are always more scandals, more crimes and more destruction.
+      We’re going to deal with the problem where it starts. By campaigning for a system that puts justice for people and the planet ahead of profits for corporations. For a system that holds corporations to account. Even if they try to put themselves beyond the law. A more just world is within our reach.</p>
+    </div>
+  </div>
 
-		<ul class="list-unstyled footer-links-secondary">
-			<li><a href="#">Privacy</a></li>
-			<li><a href="#">Code of Conduct</a></li>
-		</ul>
+  <div class="container">
+    <div class="row content-two-column-block">
+      <div class="col-md-12 col-lg-5 col-sm-12 col-xl-5">
+        <div class="col-lg-10 col-xl-10 heading">
+          <h2>Why this matters</h2>
+        </div>
+        <p>Big corporations are destroying precious ecosystems and trampling our rights. What’s worse is governments are letting them get away with it. We’ve stopped environmental crimes in the past and held companies to account. And our power is growing. More and more people are saying ‘no’ to trashing the oceans, forests and climate - and standing up to protect our air, land and water from pollution.</p>
+        <a href="https://act.greenpeace.org/page/18494/petition/1?utm_medium=website&amp;utm_source=p4&amp;utm_campaign=justice&amp;utm_content=lp" class="btn btn-secondary">Will you join us?</a>
+      </div>
+      <div class="col-md-12 col-lg-5 offset-lg-1 col-sm-12 col-xl-5 offset-xl-1">
+        <div class="col-lg-10 col-xl-10 heading">
+          <h2>The problem</h2>
+        </div>
+        <p>There’s a need for urgent action to establish justice for people and planet and to end corporate capture, collusion and impunity. If governments adopt the Principles for Corporate Accountability presented in this report as binding rules, the result will be a greener, more peaceful and more just planet for us all.</p>
+        <a href="https://act.greenpeace.org/page/18494/petition/1?utm_medium=website&amp;utm_source=p4&amp;utm_campaign=justice&amp;utm_content=lp" class="btn btn-secondary">Read the report</a>
+      </div>
+    </div>
+  </div>
 
-		<p class="copyright-text col-md-8">
-			<i class="fa fa-creative-commons"></i>
-			Unless otherwise stated, the content on this website is licensed under a <a href="">CC-BY-SA International License</a>
-		</p>
-		<p class="gp-year">Greenpeace 2017</p>
-	</div>
-</footer>
-<!-- Site Footer End -->
+  <div id="p4bks_tasks_container" class="what-you-can-do-wrapper">
+    <div class="container">
+      <h3>What you can do</h3>
+      <div class="row">
+      </div>
+      <div class="clearfix"></div>
+      <div class="can-do-steps">
+        <div class="hidden-md-down row">
+          <div class="col">
+            <div class="step-info-wrap clearfix">
+              <span class="step-number">1</span>
+              <div class="step-info">
+                <div class="steps-information">
+                  <h5>Learn</h5>
+                  <p>Learn why we're taking Arctic oil to court</p>
+                  <div class="steps-action">
+                    <br>
+                    <a class="btn btn-small btn-medium btn-secondary" href="https://www.savethearctic.org/en/peoplevsarcticoil/blog/why-we-are-taking-arctic-oil-to-court/">Read more
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="step-info-wrap clearfix">
+              <span class="step-number">2</span>
+              <div class="step-info">
+                <div class="steps-information">
+                  <h5>Help us beat Arctic oil in court</h5>
+                  <div class="steps-action">
+                    <br>
+                    <a class="btn btn-small btn-medium btn-secondary" href="https://www.savethearctic.org/en/peoplevsarcticoil/peopleswitnessstatement/">Add your name
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="step-info-wrap clearfix">
+              <span class="step-number">3</span>
+              <div class="step-info">
+                <div class="steps-information">
+                  <h5>Write</h5>
+                  <p>Write your contribution to the People’s Witness Statement</p>
+                  <div class="steps-action">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="step-info-wrap clearfix">
+              <span class="step-number">4</span>
+              <div class="step-info">
+                <div class="steps-information">
+                  <h5>Share Joanna's story</h5>
+                  <div class="steps-action">
+                    <br>
+                    <a class="btn btn-small btn-medium btn-secondary" href="https://facebook.com/greenpeace.international/videos/1284350215023847/">Share
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- JS Libs that we include -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <div class="can-do-steps-mobile hidden-lg-up">
+          <div id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="card">
+              <div class="card-header" role="tab" id="heading-one">
+                <h5 class="mb-0">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+                    <span class="step-number">1</span>
+                    Learn
+                  </a>
+                </h5>
+              </div>
+              <div id="collapse-one" class="collapse show" role="tabpanel" aria-labelledby="heading-one">
+                <div class="card-block info-with-image-wrap clearfix">
+                  <div class="accordion-image-wrap">
+                  </div>
+                  <div class="mobile-accordion-info">
+                    <p>Learn why we're taking Arctic oil to court</p>
+                  </div>
+                  <a class="btn btn-small btn-secondary" href="https://www.savethearctic.org/en/peoplevsarcticoil/blog/why-we-are-taking-arctic-oil-to-court/">Read more
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="heading-two">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-two" aria-expanded="true" aria-controls="collapse-two">
+                    <span class="step-number">2</span>
+                    Help us beat Arctic oil in court
+                  </a>
+                </h5>
+              </div>
+              <div id="collapse-two" class="collapse" role="tabpanel" aria-labelledby="heading-two">
+                <div class="card-block info-with-image-wrap clearfix">
+                  <div class="accordion-image-wrap">
+                  </div>
+                  <div class="mobile-accordion-info">
+                  </div>
+                  <a class="btn btn-small btn-secondary" href="https://www.savethearctic.org/en/peoplevsarcticoil/peopleswitnessstatement/">Add your name
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="heading-three">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
+                    <span class="step-number">3</span>
+                    Write
+                  </a>
+                </h5>
+              </div>
+              <div id="collapse-three" class="collapse" role="tabpanel" aria-labelledby="heading-three">
+                <div class="card-block info-with-image-wrap clearfix">
+                  <div class="accordion-image-wrap">
+                  </div>
+                  <div class="mobile-accordion-info">
+                    <p>Write your contribution to the People’s Witness Statement</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="heading-four">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-four" aria-expanded="true" aria-controls="collapse-four">
+                    <span class="step-number">4</span>
+                    Share Joanna's story
+                  </a>
+                </h5>
+              </div>
+              <div id="collapse-four" class="collapse" role="tabpanel" aria-labelledby="heading-four">
+                <div class="card-block info-with-image-wrap clearfix">
+                  <div class="accordion-image-wrap">
+                  </div>
+                  <div class="mobile-accordion-info">
+                  </div>
+                  <a class="btn btn-small btn-secondary" href="https://facebook.com/greenpeace.international/videos/1284350215023847/">Share
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!-- File for all the custom JS that we write -->
-<script type="text/javascript" src="custom.js"></script>
-<!-- <script type="text/javascript" src="take-action.js"></script> -->
+  <!-- Happy Point Block Start -->
+  <div class="happy-point-block-wrap">
+    <div class="container">
+      <div class="col-md-6 offset-md-6 pt-20">
+        <h2>Get action alerts in your inbox</h2>
+        <h5>Some text here about the transparency of the communications. Opt out or contact us at any time.</h5>
+        <a href="#" class="btn btn-primary btn-medium subscriber-btn">SUBSCRIBE</a>
+      </div>
+    </div>
+  </div>
+  <!-- Happy Point Block End -->
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-social-media list-unstyled col-md-8 col-lg-5">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+
+      <ul class="list-unstyled footer-links">
+        <li><a href="#">News</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
+
+      <ul class="list-unstyled footer-links-secondary">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Code of Conduct</a></li>
+      </ul>
+
+      <p class="copyright-text col-md-8">
+        <i class="fa fa-creative-commons"></i>
+        Unless otherwise stated, the content on this website is licensed under a <a href="">CC-BY-SA International License</a>
+      </p>
+      <p class="gp-year">Greenpeace 2017</p>
+    </div>
+  </footer>
+  <!-- Site Footer End -->
+
+  <!-- JS Libs that we include -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  <!-- File for all the custom JS that we write -->
+  <script type="text/javascript" src="custom.js"></script>
+  <!-- <script type="text/javascript" src="take-action.js"></script> -->
 
 </body>
 </html>

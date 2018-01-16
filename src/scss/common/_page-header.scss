@@ -1,158 +1,159 @@
 /* Header block
- * The main block where a heading subheading and description along with
- * a CTA button is present
- */
+* The main block where a heading subheading and description along with
+* a CTA button is present
+*/
 
 .header-wrapper {
-	height: 0;
+  height: 0;
 }
 
 .page-header {
-	color: $black;
-	padding: 110px 0 50px;
-	position: relative;
+  color: $black;
+  padding: 110px 0 50px;
+  position: relative;
 
-	@include large-and-up {
-		padding-top: 170px;
-	}
+  @include large-and-up {
+    padding-top: 170px;
+  }
 
-	.container > *:not(.row) {
-		@include medium-and-up {
-			max-width: 90%;
-		}
+  .container > *:not(.row) {
+    @include medium-and-up {
+      max-width: 80%;
+    }
 
-		@include large-and-up {
-			max-width: 70%;
-		}
+    @include x-large-and-up {
+      max-width: 60%;
+    }
+  }
 
-		@include x-large-and-up {
-			max-width: 50%;
-		}
-	}
+  h3 {
+    font-size: rem(22);
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
 }
 
 .page-header-background {
-	position: absolute;
-	z-index: 0;
-	top: 0;
-	right: 0;
-	left: 0;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  left: 0;
 
-	&:after {
-		content: "";
-		display: block;
-		position: absolute;
-		z-index: 0;
-		height: 75%;
-		bottom: -.5%;
-		left: 0;
-		right: 0;
-		@include linear-gradient( 360deg, $body-bg 0%, transparent 100% );
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    height: 75%;
+    bottom: -.5%;
+    left: 0;
+    right: 0;
+    @include linear-gradient( 360deg, $body-bg 0%, transparent 100% );
 
-		.brown-bg & {
-			@include linear-gradient( 360deg, $brown-bg 0%, transparent 100% );
-		}
+    .brown-bg & {
+      @include linear-gradient( 360deg, $brown-bg 0%, transparent 100% );
+    }
 
-		.white-bg & {
-			@include linear-gradient( 360deg, $white 0%, transparent 100% );
-		}
-	}
+    .white-bg & {
+      @include linear-gradient( 360deg, $white 0%, transparent 100% );
+    }
+  }
 }
 
 .page-header-image {
-	max-width: 100%;
-	display: block;
-	margin: auto;
+  max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 
 .top-page-tags {
-	font-size: rem(14);
-	margin-bottom: 10px;
+  font-size: rem(14);
+  margin-bottom: 6px;
 
-	.tag-item {
-		color: $blue;
-		font-weight: 400;
-	}
+  @include medium-and-up {
+    font-size: rem(16);
+  }
 
-	.tag-item--main {
-		font-weight: 500;
-	}
+  .tag-item {
+    color: $blue;
+    font-weight: 400;
 
-	@include small-and-up {
-		font-size: rem(16);
-	}
+    @include x-large-and-up {
+      font-size: rem(16);
+    }
+  }
 
-	@include large-and-up {
-		font-size: rem(18);
-	}
+  .tag-item--main {
+    font-weight: 500;
+  }
 }
 
 .page-header-title {
-	font-size: rem(28);
-	line-height: 1.2;
-	max-width: 80%;
-	margin-bottom: 0;
+  font-size: rem(28);
+  line-height: 1.2;
+  max-width: 80%;
+  margin-bottom: 0;
 
-	@include medium-and-up {
-		font-size: rem(48);
-	}
+  @include medium-and-up {
+    font-size: rem(40);
+    margin-bottom: 12px;
+  }
 
-	@include large-and-up {
-		font-size: rem(56);
-	}
+  @include large-and-up {
+    margin-bottom: 20px;
+  }
 
-	@include x-large-and-up {
-		font-size: rem(66);
-	}
+  @include x-large-and-up {
+    font-size: rem(56);
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
 }
 
 .page-header-subtitle {
-	font-size: rem(20);
-	line-height: 1.3;
-	font-weight: 300;
-	max-width: 80%;
-	margin: 20px 0 0;
+  font-size: rem(20);
+  line-height: 1.3;
+  font-weight: 300;
+  max-width: 80%;
+  margin: 20px 0 0;
 
-	@include medium-and-up {
-		font-size: rem(24);
-		margin: 20px 0;
-	}
+  @include medium-and-up {
+    font-size: rem(24);
+    margin: 20px 0;
+  }
 
-	@include large-and-up {
-		font-size: rem(30);
-	}
+  @include large-and-up {
+    font-size: rem(30);
+  }
 
-	@include x-large-and-up {
-		font-size: rem(36);
-	}
+  @include x-large-and-up {
+    font-size: rem(36);
+  }
 }
 
 .page-header-btn {
-	display: block;
-	width: 100%;
-	margin-top: 40px;
+  display: block;
+  width: 100%;
+  margin-top: 40px;
 
-	@include large-and-up {
-		margin-top: 50px;
-	}
+  @include large-and-up {
+    margin-top: 50px;
+  }
 }
 
 .page-header-content {
-	display: none;
+  display: none;
 
-	@include medium-and-up {
-		display: block;
-		font-size: rem(19);
-		line-height: 1.7;
-		margin-bottom: 0;
-	}
+  @include medium-and-up {
+    display: block;
+    font-size: rem(16);
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
 
-	@include large-and-up {
-		font-size: rem(20);
-	}
-
-	@include x-large-and-up {
-		font-size: rem(22);
-	}
+  @include x-large-and-up {
+    font-size: rem(18);
+  }
 }
