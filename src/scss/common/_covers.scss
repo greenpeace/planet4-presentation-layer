@@ -4,6 +4,20 @@
   justify-content: space-between;
 }
 
+// Visibility  of covers in different screens 
+// S,M should have 4 covers
+// L & XL should have all sent from backend
+
+.cover-card:nth-child(n+5) {
+  display: none;
+}
+
+@include large-and-up {
+  .cover-card:nth-child(n+5) {
+    display: block;
+  }
+}
+
 .cover-card {
   min-height: 440px;
   flex-basis: 100%;
