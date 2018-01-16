@@ -11,6 +11,11 @@
     margin-bottom: 0;
   }
 
+  @include x-large-and-up {
+    padding-top: 0;
+    margin-bottom: 80px;
+  }
+
   h2 {
     padding-left: 15px;
 
