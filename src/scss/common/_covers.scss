@@ -7,14 +7,16 @@
 // Visibility  of covers in different screens 
 // S,M should have 4 covers
 // L & XL should have all sent from backend
-
-.cover-card:nth-child(n+5) {
-  display: none;
-}
-
-@include large-and-up {
+// remove limit visibility class on load more button click 
+.limit-visibility {
   .cover-card:nth-child(n+5) {
-    display: block;
+    display: none;
+  }
+
+  @include large-and-up {
+    .cover-card:nth-child(n+5) {
+      display: block;
+    }
   }
 }
 
