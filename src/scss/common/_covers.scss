@@ -1,13 +1,47 @@
-.covers-block .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.covers-block {
+  padding-bottom: 30px;
+
+  @include medium-and-up {
+    margin-bottom: 80px;
+  }
+
+  @include large-and-up {
+    margin-bottom: 60px;
+  }
+
+  @include x-large-and-up {
+    margin-bottom: 80px;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+
+    @include medium-and-up {
+      margin-bottom: 22px;
+    }
+
+    @include large-and-up {
+      margin-bottom: 20px;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .btn-secondary {
+    @include medium-and-up {
+      margin-left: -15px;
+    }
+  }
 }
 
-// Visibility  of covers in different screens 
+// Visibility  of covers in different screens
 // S,M should have 4 covers
 // L & XL should have all sent from backend
-// remove limit visibility class on load more button click 
+// remove limit visibility class on load more button click
 .limit-visibility {
   .cover-card:nth-child(n+5) {
     display: none;
@@ -33,10 +67,18 @@
 
   @include medium-and-up {
     flex-basis: 48%;
+    min-height: 414px;
+    padding: 18px 15px 60px;
+    margin-bottom: 24px;
   }
 
   @include large-and-up {
     flex-basis: 32%;
+    min-height: 364px;
+  }
+
+  @include x-large-and-up {
+    padding: 32px 24px 60px;
   }
 
   &:before {
@@ -58,6 +100,11 @@
       color: $grey-80;
       opacity: 1;
       visibility: visible;
+
+      @include x-large-and-up {
+        font-size: rem(14);
+        color: $black;
+      }
     }
 
     .btn {
@@ -95,10 +142,14 @@
     max-width: 80%;
     transition: color 100ms linear;
     text-shadow: 2px 2px 2px $grey;
-    color: white;
+    color: $white;
 
     @include large-and-up {
-      font-size: rem(28);
+      font-size: rem(24);
+      color: $grey;
+      margin-top: 8px;
+      max-width: 100%;
+      text-shadow: none;
     }
   }
 
@@ -108,6 +159,10 @@
 
     @include large-and-up {
       font-size: rem(18);
+    }
+
+    @include x-large-and-up {
+      font-size: rem(15);
     }
   }
 
@@ -130,6 +185,12 @@
   display: inline-block;
   margin-bottom: 8px;
   text-decoration: none;
+
+  @include large-and-up {
+    margin-bottom: 0;
+    font-size: rem(14);
+    margin-right: 4px;
+  }
 }
 
 .cover-card-btn {
@@ -138,10 +199,9 @@
   margin: 15px 0;
   width: 90%;
   cursor: pointer;
-}
 
-.covers-block {
-  h2 {
-    margin-bottom: 2.2rem;
+  @include x-large-and-up {
+    margin: 20px 0;
+    width: 86%;
   }
 }

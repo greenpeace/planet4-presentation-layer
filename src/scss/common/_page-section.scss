@@ -12,7 +12,7 @@
   }
 
   @include large-and-up {
-    margin: 45px auto;
+    margin: 60px auto;
   }
 
   @include x-large-and-up {
@@ -29,6 +29,7 @@
 
   @include medium-and-up {
     font-size: rem(24);
+    line-height: 1.2;
   }
 
   @include large-and-up {
@@ -43,11 +44,12 @@
 
 .page-section-description {
   font-size: rem(16);
-  line-height: 1.8;
+  line-height: 1.6;
   margin: 1em 0 2.5em;
 
   @include medium-and-up {
     font-size: rem(18);
+    width: 80%;
   }
 
   @include large-and-up {
