@@ -18,18 +18,6 @@
     font-family: $roboto;
   }
 
-  /**
-   * Handle specific-page backgrounds.
-   */
-  .home &,
-  .single-post & {
-    background-color: $dark-blue;
-  }
-
-  .search & {
-    background-color: $blue-tiber;
-  }
-
   a {
     color: inherit;
   }
