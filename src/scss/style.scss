@@ -47,6 +47,7 @@ Text Domain: planet4-master-theme
 @import "common/article-listing";
 @import "common/page-header";
 @import "common/page-section";
+@import "common/subheader";
 @import "common/carousel";
 @import "common/covers";
 @import "common/block-media";
@@ -79,10 +80,11 @@ Text Domain: planet4-master-theme
 @import "pages/take-action"; // TODO: Break this down into blocks
 
 // Explore page.
-@import "pages/explore";
+// Comment out since it does not contains any rules currently.
+//@import "pages/explore";
 
 // Issues pages.
-// Comment out since it not contains any rules currently.
+// Comment out since it does not contains any rules currently.
 //@import "pages/issue";
 
 // 404 page.
