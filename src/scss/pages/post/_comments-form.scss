@@ -1,109 +1,103 @@
 .comment-form {
-	display: block;
-	padding-bottom: 60px;
-	border-bottom: 1px solid $grey-40;
+  display: block;
+  padding-bottom: 60px;
+  border-bottom: 1px solid $grey-40;
 
-	.form-group {
-		margin-bottom: 32px;
+  .form-group {
+    margin-bottom: 32px;
 
-		@include small-and-up {
-			margin-bottom: 32px;
-		}
-	}
+    @include small-and-up {
+      margin-bottom: 32px;
+    }
 
-	label,
-	input,
-	textarea,
-	button {
-		appearance: none;
-	}
+    @include medium-and-up {
+      padding-bottom: 40px;
+    }
+  }
 
-	input,
-	textarea {
-		font-size: rem(20);
-		font-weight: 300;
-		border-radius: 0;
-		border: none;
-		transition: background-color 150ms linear;
+  input,
+  textarea {
+    font-size: rem(15);
+    font-weight: 300;
+    border-radius: 0;
+    border: none;
+    transition: background-color 150ms linear;
 
-		&:focus {
-			background-color: transparentize($white, .6);
-		}
-	}
+    @include large-and-up {
+      font-size: rem(16);
+    }
 
-	label {
-		font-size: rem(17);
-		font-weight: 500;
-	}
+    &:focus {
+      background-color: transparentize($white, .6);
+    }
+  }
 
-	textarea {
-		background-color: $grey-10;
-		padding: 13px;
-		margin-bottom: 40px;
+  label {
+    font-size: rem(16);
+    font-weight: 500;
+  }
 
-		@include small-and-up {
-			margin-bottom: 56px;
-		}
+  label[for=comments-textarea] {
+    display: none;
+  }
 
-		@include medium-and-up {
-			margin-bottom: 40px;
-		}
-	}
+  textarea {
+    background-color: $grey-10;
+    padding: 13px;
+    margin-bottom: 20px;
 
-	input {
-		border-bottom: 1px solid $black;
-		background-color: transparent;
-		padding: 7px 5px 5px;
-		width: 100%;
+    @include small-and-up {
+      margin-bottom: 56px;
+    }
 
-		&:focus {
-			border-bottom-color: $grey-60;
-		}
+    @include medium-and-up {
+      margin-bottom: 40px;
+      font-size: rem(16);
+    }
 
-		@include medium-and-up {
-			width: 50%;
-		}
+    @include large-and-up {
+      margin-bottom: 30px;
+    }
+  }
 
-		@include medium-and-up {
-			width: 80%;
-		}
-	}
+  input {
+    border-bottom: 1px solid $black;
+    background-color: transparent;
+    padding: 7px 5px 5px;
+    width: 100%;
 
-	button {
-		width: 100%;
-		height: 52px;
-		margin-top: 60px;
-		line-height: 52px;
-		font-weight: bold;
+    &:focus {
+      border-bottom-color: $grey-60;
+    }
 
-		@include medium-and-up {
-			width: 50%;
-		}
+    @include medium-and-up {
+      width: 50%;
+    }
 
-		@include large-and-up {
-			width: 25%;
-		}
-	}
+    @include medium-and-up {
+      width: 80%;
+    }
+  }
 
-	::-webkit-input-placeholder,
-	::-moz-placeholder,
-	:-ms-input-placeholder,
-	:-moz-placeholder {
-		color: $grey-40;
-	}
-}
+  button {
+    width: 100%;
+    margin-top: 60px;
 
-.comment-form-title {
-	font-size: rem(22);
-	font-weight: 500;
-	font-family: $roboto;
-	margin-bottom: 40px;
+    @include medium-and-up {
+      width: 50%;
+      margin-top: 30px;
+    }
 
-	@include medium-and-up {
-		margin-bottom: 56px;
-	}
+    @include large-and-up {
+      width: 40%;
+      margin-top: 30px;
+    }
+  }
 
-	@include large-and-up {
-		margin-bottom: 40px;
-	}
+  ::-webkit-input-placeholder,
+  ::-moz-placeholder,
+  :-ms-input-placeholder,
+  :-moz-placeholder {
+    color: $grey-40;
+  }
 }
