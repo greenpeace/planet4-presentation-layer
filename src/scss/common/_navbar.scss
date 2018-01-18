@@ -447,9 +447,11 @@ $menu-height-large: rem(60);
   line-height: 1.5;
   padding: 1.4em 0;
   margin-top: -1px;
+  overflow-y: hidden;
 
   &.open {
     display: block;
+    overflow-y: scroll !important;
   }
 
   a {
@@ -512,7 +514,7 @@ $menu-height-large: rem(60);
     padding: 2em;
     left: 10%;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: hidden !important;
     max-height: calc( 100vh - #{$menu-height-large} );
 
     .admin-bar & {
@@ -527,5 +529,33 @@ $menu-height-large: rem(60);
     padding: 2em 4em 4em;
     width: 80%;
     left: 10%;
+  }
+}
+
+// For always showing the scrollbar in country selector
+
+.navbar-dropdown {
+  ::-webkit-scrollbar {
+    width:9px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:rgba(255,255,255,0.1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:rgba(255,255,255,0.2);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background:rgba(255,255,255,0.4);
+  }
+
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background:rgba(255,255,255,0.05);
   }
 }
