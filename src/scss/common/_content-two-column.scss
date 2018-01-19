@@ -6,7 +6,8 @@
   }
 
   @include large-and-up {
-    padding-top: 45px;
+    padding-top: 0;
+    padding-bottom: 60px;
   }
 
   @include x-large-and-up {
@@ -49,7 +50,7 @@
     }
 
     @include large-and-up {
-      font-size: rem(30);
+      font-size: rem(28);
       margin-bottom: 20px;
       width: 90%;
     }
@@ -64,7 +65,7 @@
   p {
     font-size: rem(16);
     line-height: 1.6;
-    margin-bottom: 27px;
+    margin-bottom: 16px;
     color: $dark-shade-black;
 
     @include medium-and-up {
@@ -79,7 +80,7 @@
     }
 
     @include x-large-and-up {
-      margin-bottom: 80px;
+      margin-bottom: 24px;
       font-size: rem(18);
       width: 92%;
     }
@@ -88,10 +89,14 @@
   .btn {
     margin-bottom: 40px;
     width: 100%;
+    font-size: rem(14);
+    line-height: 2.8;
 
     @include medium-and-up {
       margin-bottom: 40px;
       width: 50%;
+      font-size: rem(16);
+      line-height: 3;
     }
 
     @include large-and-up {

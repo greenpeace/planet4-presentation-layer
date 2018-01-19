@@ -82,6 +82,7 @@ Stylesheet: Button Styles
   &:hover,
   &:focus {
     background-color: $dark-blue;
+    border-color: $dark-blue;
   }
 
   &:active {

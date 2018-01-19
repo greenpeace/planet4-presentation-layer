@@ -17,6 +17,10 @@ $slide-transition-speed: 1s;
     margin-bottom: 0;
   }
 
+  @include large-and-up {
+    margin-bottom: 60px;
+  }
+
   @include x-large-and-up {
     margin-bottom: 80px;
   }
@@ -204,11 +208,10 @@ $slide-transition-speed: 1s;
       color: $black;
 
       @include medium-and-up {
-        font-size: rem(48);
+        font-size: rem(40);
       }
 
       @include large-and-up {
-        font-size: rem(40);
         margin-bottom: 20px;
         line-height: 1.2;
         width: 50%;
@@ -232,10 +235,11 @@ $slide-transition-speed: 1s;
       @include medium-and-up {
         font-size: rem(24);
         margin-bottom: 34px;
+        font-weight: 300;
       }
 
       @include large-and-up {
-        font-size: rem(22);
+        font-size: rem(24);
         line-height: 1.2;
         width: 50%;
       }
@@ -265,7 +269,7 @@ $slide-transition-speed: 1s;
 
       @include x-large-and-up {
         font-size: rem(18);
-        line-height: 38px;
+        line-height: 1.6;
       }
     }
 
@@ -279,6 +283,16 @@ $slide-transition-speed: 1s;
         margin-left: 0;
         bottom: inherit;
         position: inherit;
+      }
+
+      .btn {
+        font-size: rem(14);
+        line-height: 2.8;
+
+        @include medium-and-up {
+          font-size: rem(16);
+          line-height: 3;
+        }
       }
     }
   }

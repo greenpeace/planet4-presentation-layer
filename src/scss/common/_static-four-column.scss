@@ -82,7 +82,6 @@
     width: 102px;
     height: 102px;
   }
-
 }
 
 .four-column-information {
@@ -95,6 +94,14 @@
 
     a {
       font-weight: 700;
+
+      @include medium-and-up {
+        font-size: rem(18);
+      }
+
+      @include x-large-and-up {
+        font-size: rem(20);
+      }
     }
 
     @include medium-and-up {

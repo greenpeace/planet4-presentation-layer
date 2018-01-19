@@ -6,9 +6,13 @@
   margin-bottom: 30px;
   padding-top: 0;
 
+  @include medium-and-up {
+    padding-bottom: 40px;
+  }
+
   @include large-and-up {
-    padding-top: 45px;
-    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 60px;
   }
 
   @include x-large-and-up {

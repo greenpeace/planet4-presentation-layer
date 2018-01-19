@@ -8,13 +8,12 @@
   }
 
   @include medium-and-up {
-    padding-top: 40px;
+    padding-top: 0;
     padding-bottom: 0;
   }
 
   @include large-and-up {
-    padding-top: 45px;
-    padding-bottom: 0;
+    padding-bottom: 60px;
   }
 
   @include x-large-and-up {
@@ -95,6 +94,8 @@
     }
 
     h3 {
+      font-size: rem(16);
+
       @include medium-and-up {
         font-size: rem(17);
         width: 60%;
@@ -103,9 +104,9 @@
 
     p {
       font-family: $roboto;
+      font-size: rem(13);
 
       @include medium-and-up {
-        font-size: rem(13);
         width: 70%;
       }
 
@@ -152,41 +153,96 @@
 
   .carousel-control-prev,
   .carousel-control-next {
-    opacity: 1;
-    width: 10%;
+    height: 100%;
+    top: 0;
+    width: 30%;
+    z-index: 3;
 
-    @include mobile-only {
-      top: -25%;
-      width: 30%;
+    @include small-and-up {
+      width: 50%;
+    }
+  }
+
+  .carousel-control-next {
+    @include small-and-up {
+      margin-right: -25%;
+    }
+  }
+
+  .carousel-control-prev {
+    @include small-and-up {
+      margin-left: -25%;
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    @include small-and-up {
+      width: 45px;
+      height: 45px;
     }
 
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      background-image: none;
-      border: solid 1px $white;
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      display: block;
-      text-align: center;
-      background-color: $carr-arrow;
-      cursor: pointer;
-      opacity: 0.4;
+    @include large-and-up {
+      width: 65px;
+      height: 65px;
+    }
+  }
 
-      i {
-        background: url("images/sprite.png");
-        height: 32px;
-        width: 22px;
-        vertical-align: middle;
-        display: inline-block;
-        margin: 2px 2px 0 0;
+  .carousel-control-prev-icon {
+    background: url('images/carousel-marker-prev.png');
+    background-size: cover;
+
+    @include small-and-up {
+      margin-left: 113px;
+      background: url("images/carousel-marker-prev-S-M.png");
+    }
+
+    @include medium-and-up {
+      margin-left: 25%;
+    }
+
+    @include large-and-up {
+      margin-left: 133px;
+      background: url("images/carousel-marker-prev.png");
+      &:hover {
+        background-position-x: 66px;
       }
     }
 
-    .carousel-control-next-icon {
-      i {
-        background-position: -21px 1px;
+    @include x-large-and-up {
+      margin-left: 45%;
+    }
+  }
+
+  .carousel-control-next-icon {
+    background: url('images/carousel-marker-next.png');
+    background-size: cover;
+
+    @include small-and-up {
+      margin-right: 113px;
+      background: url("images/carousel-marker-next-S-M.png");
+    }
+
+    @include medium-and-up {
+      margin-right: 25%;
+    }
+
+    @include large-and-up {
+      margin-right: 133px;
+      background: url("images/carousel-marker-next.png");
+      &:hover {
+        background-position-x: 66px;
       }
+    }
+
+    @include x-large-and-up {
+      margin-right: 45%;
     }
   }
 }
