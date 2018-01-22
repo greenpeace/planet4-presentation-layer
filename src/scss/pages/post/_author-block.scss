@@ -16,11 +16,6 @@
     padding: 25px;
     position: relative;
     z-index: 1;
-    @include skew($bg: $grey-20, $deg: 25deg, $right: -25%, $width: 50%);
-  }
-
-  @include large-and-up {
-    @include skew($bg: $grey-20, $deg: 25deg, $right: -15%, $width: 40%);
   }
 }
 
