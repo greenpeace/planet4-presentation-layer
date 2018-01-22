@@ -1,8 +1,14 @@
 .post-content {
   color: $dark-shade-black;
 
-  @include large-and-up {
-    max-width: 70%;
+  .cover-card {
+    width: auto;
+    position: relative;
+
+    @include large-and-up {
+      width: 330px;
+      float: right;
+    }
   }
 
   ul, ol {
