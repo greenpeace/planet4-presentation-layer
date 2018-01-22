@@ -49,11 +49,11 @@
   @include large-and-up {
     background-color: transparent;
     box-shadow: none;
-    margin: 40px 0;
+    margin: 20px 0;
   }
 
   @include x-large-and-up {
-    margin: 32px 0;
+    margin: 30px 0;
   }
 }
 
@@ -62,24 +62,15 @@
 
   img {
     width: 100%;
-
-    @include large-and-up {
-      width: 80%;
-    }
-
-    @include x-large-and-up {
-      width: 90%;
-    }
-
   }
 
   @include medium-and-up {
-    flex-basis: 35%;
+    flex-basis: 30%;
     order: 0;
   }
 
   @include large-and-up {
-    flex-basis: 34%;
+    flex-basis: 30%;
   }
 }
 
@@ -87,11 +78,11 @@
   padding: 15px;
 
   @include medium-and-up {
-    flex-basis: 63%;
+    flex-basis: 68%;
   }
 
   @include large-and-up {
-    flex-basis: 65%;
+    flex-basis: 68%;
     padding: 0;
   }
 }
