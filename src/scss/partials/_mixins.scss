@@ -220,3 +220,19 @@ $baseFontSize : 16;
 
   @return $pixels / $context * 1rem;
 }
+
+/* Generates mutilevel nested comments 
+  level-1 is the first level comment with a margin of 50px
+  level-2 is the first level comment with a margin of 100px
+  and so on...
+*/
+$comment-nest-level: 6;
+$nested-comment-left-margin: 50px;
+
+@mixin comment-level {
+  @for $i from 1 through $comment-nest-level {
+    .comment-level-#{$i} {
+      margin-left: $nested-comment-left-margin * $i !important;
+    }
+  }
+}
