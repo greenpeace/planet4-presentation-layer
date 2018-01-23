@@ -342,7 +342,7 @@ $(function() {
   var offset     = $sidebar.offset();
   var topPadding = 100;
 
-  if ($sidebar.size() > 0) {
+  if ($sidebar.length > 0) {
       $window.scroll(function () {
           if ($window.scrollTop() > offset.top && $sidebar.css('float') != 'none') {
               $sidebar.stop().animate({
