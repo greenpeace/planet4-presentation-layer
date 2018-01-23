@@ -108,22 +108,12 @@
   }
 
   &:hover {
-    @include background-before-opacity($white, .55);
+    @include background-before-opacity(linear-gradient(180deg, rgba(51, 51, 51, 0.6), rgba(255, 256, 256, 0.9), rgba(255, 255, 255, 0.9)), .55);
     box-shadow: 0 0 10px transparentize($black, .5);
-
-    h2 {
-      color: $grey-80;
-      text-shadow: none;
-    }
 
     p {
       color: $grey-80;
-      opacity: 1;
       visibility: visible;
-
-      @include x-large-and-up {
-        color: $black;
-      }
     }
 
     .btn {
@@ -161,7 +151,7 @@
     max-width: 80%;
     transition: color 100ms linear;
     color: $white;
-    text-shadow: 1px 1px 4px #333;
+    text-shadow: 1px 1px 3px $black;
 
     @include large-and-up {
       font-size: rem(24);
@@ -171,16 +161,9 @@
   }
 
   p {
-    font-size: rem(16);
+    font-size: rem(15);
     line-height: 1.6;
-
-    @include large-and-up {
-      font-size: rem(18);
-    }
-
-    @include x-large-and-up {
-      font-size: rem(15);
-    }
+    visibility: hidden;
   }
 
   @include large-and-up {
@@ -202,7 +185,11 @@
   display: inline-block;
   margin-bottom: 8px;
   text-decoration: none;
-  text-shadow: 0 0 4px #000;
+  text-shadow: 0.5px 0.5px 1px $black;
+
+  &:hover {
+    color: $yellow;
+  }
 
   @include large-and-up {
     margin-bottom: 0;
