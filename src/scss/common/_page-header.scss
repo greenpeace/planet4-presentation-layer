@@ -38,6 +38,18 @@
     font-size: rem(22);
     font-weight: 700;
     margin-bottom: 15px;
+
+    @include large-and-up {
+      line-height: 1.2;
+	    width: 50%;
+	    font-weight: 300;
+    }
+
+    @include x-large-and-up {
+      font-size: rem(36);
+      margin-bottom: 30px;
+    	line-height: 1.1;
+    }
   }
 }
 
@@ -148,6 +160,10 @@
 
   @include large-and-up {
     margin-top: 50px;
+  }
+
+  @include x-large-and-up {
+    margin-top: 36px;
   }
 }
 

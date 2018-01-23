@@ -5,10 +5,10 @@
 */
 
 .page-section {
-  margin: 40px auto;
+  margin: 0 auto 40px auto;
 
   @include medium-and-up {
-    margin: 40px auto 50px auto;
+    margin: 0 auto 40px auto;
   }
 
   @include large-and-up {
@@ -25,7 +25,7 @@
   font-size: rem(22);
   font-weight: 700;
   color: $black;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 
   @include medium-and-up {
     font-size: rem(24);
@@ -57,6 +57,7 @@
   }
 
   @include x-large-and-up {
-    font-size: rem(22);
+    font-size: rem(18);
+    margin: 20px 0;
   }
 }

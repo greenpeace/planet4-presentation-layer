@@ -1,116 +1,130 @@
-/* 
- * Content Three Column
- */
+/*
+* Content Three Column
+*/
 
-.split-three-column { 
-	margin-top: 48px;
-	
-	.three-column-box { 
-		
-		.three-column-info {
-			margin-bottom: 48px;
+.split-three-column {
+  margin-top: 0;
+  margin-bottom: 40px;
 
-			@include medium-and-up {
-				padding-top: 40px;
-				margin-bottom: 56px;
-			}
+  @include medium-and-up {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
 
-			@include large-and-up {
-				margin-bottom: 64px;
-			}
+  @include large-and-up {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
 
-			p { 
-				display: block;
-				font-size: rem(17);
-				line-height: 1.7;
-				color: $black;
-				margin-bottom: 30px;
+  .three-column-box {
 
+    .three-column-info {
+      margin-bottom: 24px;
+      padding-left: 0;
+      padding-right: 0;
 
-				@include medium-and-up {
-					font-size: rem(20);
-					margin-bottom: 40px;
+      @include medium-and-up {
+        padding-top: 0;
+        margin-bottom: 0;
+      }
 
-					&:last-child {
-						margin-bottom: 72px;
-					}
-				}
+      @include large-and-up {
+        margin-bottom: 0;
+      }
 
-				@include x-large-and-up {
-					font-size: rem(22);
-					display: inline;
+      p {
+        display: block;
+        font-size: rem(16);
+        line-height: 1.6;
+        color: $black;
+        margin-bottom: 20px;
 
-					&:last-child {
-						margin-bottom: 5rem;
-					}
-				}
-			}
-		}
+        @include medium-and-up {
+          margin-bottom: 40px;
 
-		.three-column-images { 
-			min-height: 184px; 
-			position: relative;
-			overflow: hidden;
+          &:last-child {
+            margin-bottom: 40px;
+          }
+        }
 
-			@include medium-and-up {
-				min-height: 330px; 
-				margin-left: 0;
-				margin-right: 0;
-			}
+        @include large-and-up {
+          &:last-child {
+            margin-bottom: 34px;
+          }
+        }
 
-			@include x-large-and-up {
-				min-height: 430px; 
-			}
-		} 
+        @include x-large-and-up {
+          font-size: rem(18);
+          margin-bottom: 20px;
+        }
+      }
+    }
 
-		.split-image { 
-			position: absolute;
+    .three-column-images {
+      min-height: 184px;
+      position: relative;
+      overflow: hidden;
 
-			img {
-				height: 184px;
-				position: relative;
-				left: -30%;
+      @include medium-and-up {
+        min-height: 330px;
+        margin-left: 0;
+        margin-right: 0;
+      }
 
-				@include medium-and-up {
-					height: 330px;
-				}
+      @include x-large-and-up {
+        min-height: 430px;
+        margin-bottom: 80px;
+      }
+    }
 
-				@include large-and-up {
-					left: -25%;
-				}
+    .split-image {
+      position: absolute;
 
-				@include x-large-and-up {
-					height: 430px;
-				}
-			}
-		}
+      img {
+        height: 184px;
+        position: relative;
+        left: -30%;
 
-		.first-column {
-			margin-left: -50px;
-			margin-right: -130px;
+        @include medium-and-up {
+          height: 330px;
+        }
 
-			img {
-				left: 35px;
-			}
-		} 
+        @include large-and-up {
+          left: -25%;
+        }
 
-		.second-column { 
-			transform: skew(25deg); 
-			border-left: 10px solid $brown-bg; 
-			border-right: 10px solid $brown-bg;
-			z-index: 2;
-			width: 110%;
-			left: 0;
-			top: 0;
-			overflow: hidden;
+        @include x-large-and-up {
+          height: 430px;
+        }
+      }
+    }
 
-			img {
-				transform: skew(-25deg);
-			}
-		} 
+    .first-column {
+      margin-left: -50px;
+      margin-right: -130px;
 
-		.third-column { 
-			z-index: 1;
-		} 
-	}
+      img {
+        left: 35px;
+      }
+    }
+
+    .second-column {
+      transform: skew(25deg);
+      border-left: 10px solid $brown-bg;
+      border-right: 10px solid $brown-bg;
+      z-index: 2;
+      width: 110%;
+      left: 0;
+      top: 0;
+      overflow: hidden;
+
+      img {
+        transform: skew(-25deg);
+      }
+    }
+
+    .third-column {
+      z-index: 1;
+    }
+  }
 }
