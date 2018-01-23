@@ -40,7 +40,7 @@
 
   .carousel-item {
     @include mobile-only {
-      margin-bottom: 235px;
+      margin-bottom: 80px;
     }
 
     .carousal-item-credit {
@@ -85,8 +85,8 @@
       z-index: 10;
       padding: 20px 15px 20px;
       color: $white;
-      margin-bottom: -235px;
-      height: 235px;
+      margin-bottom: -80px;
+      height: 80px;
     }
 
     @include medium-and-up {
@@ -118,7 +118,7 @@
 
   .carousel-indicators {
     right: 25%;
-    bottom: 235px;
+    bottom: 80px;
     left: auto;
 
     @include small-and-up {
