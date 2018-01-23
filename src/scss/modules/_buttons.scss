@@ -226,3 +226,13 @@ Stylesheet: Button Styles
     transform: translate( 0, -40% );
   }
 }
+
+.no-btn {
+  background: transparent;
+  border: transparent;
+  padding: 0;
+  cursor: pointer;
+  &:focus {
+    outline:none;
+  }
+}
