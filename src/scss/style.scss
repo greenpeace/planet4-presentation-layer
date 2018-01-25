@@ -76,6 +76,9 @@ Text Domain: planet4-master-theme
 @import "pages/post/comments-block";
 @import "pages/post/comments-form";
 
+// Default page template
+@import "pages/page";
+
 // Take Action page.
 @import "pages/take-action"; // TODO: Break this down into blocks
 
