@@ -41,7 +41,6 @@
       font-size: rem(16);
       margin: 0 0 20px 0;
       line-height: 1.6;
-      max-width: 90%;
     }
 
     @include large-and-up {
@@ -159,7 +158,6 @@
 
   .gallery {
     margin: 0 auto 18px;
-    clear: both;
 
     .gallery-icon img {
       width: 100%;
@@ -245,6 +243,11 @@
 }
 
 .post-content-lead {
+
+  @include large-and-up {
+	  max-width: 65%;
+  }
+
   p:first-of-type {
     margin-top: 0;
   }
