@@ -1,9 +1,14 @@
-/**
- * This module provides a custom slideshow mechanism for use with the header carousel.
- * The transition behavior in this block is too complex to be easily layered upon the
- * default bootstrap carousel.
- */
-$(function() {
+/* global Hammer */
+
+$(document).ready(function() {
+  'use strict';
+
+  /**
+  * This module provides a custom slideshow mechanism for use with the header carousel.
+  * The transition behavior in this block is too complex to be easily layered upon the
+  * default bootstrap carousel.
+  */
+
   // SLIDE_TRANSITION_SPEED should match $slide-transition-speed in _carousel-header.scss.
   var SLIDE_TRANSITION_SPEED = 1000;
   var $headerCarousel = $('#carousel-wrapper-header');
@@ -12,16 +17,22 @@ $(function() {
   var activeTransition = null;
 
   /**
-   * Given an active slide return the next slide, wrapping around the end of the carousel.
-   *
-   * @param {HTMLElement|jQuery} slide A slide in the carousel.
-   * @returns {jQuery} A jQuery selection of the next slide.
-   */
+  * Given an active slide return the next slide, wrapping around the end of the carousel.
+  *
+  * @param {HTMLElement|jQuery} slide A slide in the carousel.
+  * @returns {jQuery} A jQuery selection of the next slide.
+  */
   function nextSlide(el) {
     var $el = $(el);
     var $nextSlide = $el.next('.carousel-item');
     // prevAll returns items in reverse DOM order: the first slide is the last element.
     return $nextSlide.length ? $nextSlide : $el.prevAll('.carousel-item').last();
+  }
+
+  function previousSlide(el) {
+    var $el = $(el);
+    var $previousSlide = $el.prev('.carousel-item');
+    return $previousSlide.length ? $previousSlide : $el.nextAll('.carousel-item').last();
   }
 
   // Update active slide indicators
@@ -58,11 +69,14 @@ $(function() {
       .css('background-image', 'url(' + $nextImg.attr('src') + ')')
       .css('background-position', $nextImg.data('background-position'))
       .appendTo($preview);
+
+    // Populate carousel slide index
+    $slide.attr('data-slide', i);
   });
 
   /**
-   * Advance to the next slide in the carousel.
-   */
+  * Advance to the next slide in the carousel.
+  */
   function advanceCarousel() {
     var $active = $slides.filter('.active');
     var $next = nextSlide($active).addClass('next');
@@ -97,11 +111,17 @@ $(function() {
     }, SLIDE_TRANSITION_SPEED);
   }
 
+  function backwardsCarousel() {
+    var $active = $slides.filter('.active');
+    var $previous = previousSlide($active);
+    activate($previous.data('slide'));
+  }
+
   /**
-   * Switch to a specific slide.
-   *
-   * @param {Number} slideIndex The index of a slide in the carousel.
-   */
+  * Switch to a specific slide.
+  *
+  * @param {Number} slideIndex The index of a slide in the carousel.
+  */
   function activate(slideIndex) {
     var $slide = $slides.eq(slideIndex);
 
@@ -128,13 +148,29 @@ $(function() {
   }
 
   // Bind mouse interaction events
-  $headerCarousel
-    .on('click', '.carousel-control-next', function(evt) {
-      evt.preventDefault();
+  $headerCarousel.on('click', '.carousel-control-next', function(evt) {
+    evt.preventDefault();
+    advanceCarousel();
+  }).on('click', '.carousel-indicators li', function (evt) {
+    evt.preventDefault();
+    activate($(evt.target).data('slide-to'));
+  });
+
+
+  /* Carousel header swipe on mobile */
+  if($('.carousel-header').length > 0) {
+    var carousel_element = $('.carousel-header')[0];
+    var carousel_head_hammer = new Hammer(carousel_element, { recognizers: [] });
+    var hammer = new Hammer.Manager(carousel_head_hammer.element);
+    var swipe = new Hammer.Swipe();
+    hammer.add(swipe);
+
+    hammer.on('swipeleft', function(){
       advanceCarousel();
-    })
-    .on('click', '.carousel-indicators li', function (evt) {
-      evt.preventDefault();
-      activate($(evt.target).data('slide-to'));
     });
+
+    hammer.on('swiperight', function(){
+      backwardsCarousel();
+    });
+  }
 });

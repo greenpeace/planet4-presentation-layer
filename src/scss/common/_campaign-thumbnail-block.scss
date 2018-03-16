@@ -11,13 +11,11 @@
   }
 
   @include large-and-up {
-    padding-top: 0;
     padding-bottom: 60px;
   }
 
   @include x-large-and-up {
-    padding-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
 
   h2 {
@@ -78,6 +76,11 @@
         width: 100%;
         max-height: 260px;
         height: auto;
+        margin: -50px 0 -10px 0;
+
+        @include medium-and-up {
+          margin: 0;
+        }
       }
 
       .yellow-cta {

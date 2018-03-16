@@ -6,9 +6,20 @@
     width: auto;
     position: relative;
 
-    @include large-and-up {
-      width: 320px;
+    @include medium-and-up {
+      min-height: 365px;
+      width: 290px;
       float: right;
+      margin-left: 10px;
+    }
+
+    @include large-and-up {
+      margin-left: 0;
+    }
+
+    @include x-large-and-up {
+      width: 330px;
+      min-height: 415px;
     }
   }
 
@@ -21,11 +32,40 @@
     }
 
     @include medium-and-up {
-      font-size: rem(20);
+      font-size: rem(16);
+      margin-bottom: 20px;
+    }
+
+    @include x-large-and-up {
+      font-size: rem(18);
     }
 
     li:not(:first-child) {
       padding-top: 10px;
+    }
+  }
+
+  h2 {
+    font-size: rem(22);
+    line-height: 1.2;
+    margin-bottom: 15px;
+    padding-top: 8px;
+
+    @include medium-and-up {
+      font-size: rem(24);
+      padding-top: 10px;
+    }
+
+    @include large-and-up {
+      font-size: rem(28);
+      margin-bottom: 20px;
+    }
+
+    @include x-large-and-up {
+      font-size: rem(30);
+      padding-top: 20px;
+      margin-bottom: 20px;
+      line-height: 1.2;
     }
   }
 
@@ -43,35 +83,34 @@
       line-height: 1.6;
     }
 
-    @include large-and-up {
-      margin: 0 0 20px 0;
-    }
-
-    @include large-and-up {
-      margin: 0 0 20px 0;
-      font-size: rem(18)
+    @include x-large-and-up {
+      font-size: rem(18);
     }
 
     iframe {
       width: 100%;
-      height: 240px;
+      height: 53vw;
       text-align: center;
       display: block;
       margin: 0 auto;
+      border: none;
+      overflow: hidden;
 
       @include small-and-up {
-        height: 240px;
+        height: 290px;
       }
 
       @include medium-and-up {
-        height: 400px;
-        padding: 0 15px;
+        height: 390px;
+        padding: 0;
       }
 
       @include large-and-up {
-        width: 100%;
-        padding: 0 15px;
-        height: 530px;
+        height: 350px;
+      }
+
+      @include x-large-and-up {
+        height: 410px;
       }
     }
   }
@@ -79,7 +118,6 @@
   .alignleft {
     float: left;
     margin: 10px 10px 0 0;
-
   }
 
   .alignright {
@@ -195,6 +233,7 @@
     dt {
       margin: 0;
     }
+
     br + br {
       display: none;
     }
@@ -245,7 +284,7 @@
 .post-content-lead {
 
   @include large-and-up {
-	  max-width: 65%;
+    max-width: 65%;
   }
 
   p:first-of-type {
@@ -254,6 +293,20 @@
 }
 
 .post-details {
+  font-family: $lora;
+  line-height: 1.6;
+
+  @include small-and-up {
+    font-size: rem(19);
+  }
+
+  @include medium-and-up {
+    font-size: rem(16);
+  }
+
+  @include x-large-and-up {
+    font-size: rem(18);
+  }
 
   img {
     max-width: 100%;
@@ -262,7 +315,7 @@
 
   h4 {
     padding: 20px 0 10px 0;
-	  font-weight: 700;
+    font-weight: 700;
   }
 }
 
@@ -271,7 +324,22 @@
   position: relative;
   display: inline-block;
   width: auto;
-  margin-bottom: 0;
+  margin-bottom: 18px;
+
+  @include medium-and-up {
+    margin-bottom: 22px;
+    padding-top: 6px;
+  }
+
+  @include large-and-up {
+    margin-bottom: 26px;
+    padding-top: 10px;
+  }
+
+  @include x-large-and-up {
+    margin-bottom: 30px;
+    padding-top: 12px;
+  }
 
   img {
     max-width: 100%;
@@ -301,18 +369,17 @@
     font-size: rem(13);
     margin: 0;
     line-height: 1.4;
-    color: $grey;
+    color: $white;
     font-family: $roboto;
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
     max-width: 100%;
+    background: linear-gradient(210deg, transparentize($med-blue, .8) 0%, $med-blue 100%);
+    padding: 10px 20px;
 
     @include medium-and-up {
-      font-size: rem(13);
-      color: $white;
-      background: linear-gradient(210deg, transparentize($med-blue, .8) 0%, $med-blue 100%);
+      position: absolute;
+      left: 0;
+      bottom: 0;
       padding: 20px 30px;
     }
 

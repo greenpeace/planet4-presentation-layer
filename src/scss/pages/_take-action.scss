@@ -123,6 +123,7 @@
       font-weight: bold;
       margin-right: 5px;
     }
+
     .category-topic-title-seprater {
       background: $percentage-text;
       width: 5px;
@@ -178,9 +179,9 @@
       background: -webkit-gradient(linear, 66.31% -110.5%, 33.69% 210.5%, color-stop(0, rgba(10, 51, 81, 0)), color-stop(1, rgba(10, 51, 81, 1)));
       background: -o-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
       background: -ms-linear-gradient(-120deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
-      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351', endColorstr='#0A3351' ,GradientType=0)";
       background: linear-gradient(210deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351', endColorstr='#0A3351', GradientType=1);
+      filter: progid:dximagetransform.microsoft.gradient(startColorstr="#0a3351", endColorstr="#0a3351", GradientType=1);
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351', endColorstr='#0A3351' ,GradientType=0)";
 
       @include small-and-up {
         padding: 30px;
@@ -263,6 +264,7 @@
           }
         }
       }
+
       .carousel-control-next-icon {
         i {
           background-position: -21px 1px;
@@ -273,6 +275,12 @@
 }
 
 .what-you-can-do-wrapper {
+  margin-bottom: 40px;
+
+  @include medium-and-up {
+    margin-bottom: 0;
+  }
+
   h3 {
     font-size: rem(22);
     font-weight: 700;
@@ -285,18 +293,23 @@
     }
 
     @include medium-and-up {
-      padding-top: 20px;
+      padding-top: 0;
       font-size: rem(24);
     }
 
+    @include large-and-up {
+      font-size: rem(28);
+    }
+
     @include x-large-and-up {
-      padding-top: 0px;
+      padding-top: 0;
       font-size: rem(30);
       margin-bottom: 20px;
     }
   }
 
-  .col-md-6 {
+  .col-md-12 {
+    font-family: $lora;
     padding-top: 30px;
 
     @include small-and-up {
@@ -328,21 +341,18 @@
   p {
     color: $dark-para-text;
     font-size: rem(17);
-    line-height: rem(28.9);
+    line-height: 1.6;
 
     @include medium-and-up {
       font-size: rem(19);
-      line-height: rem(33);
     }
 
     @include large-and-up {
       font-size: rem(20);
-      line-height: rem(34);
     }
 
     @include x-large-and-up {
       font-size: rem(22);
-      line-height: rem(38);
     }
   }
 }
@@ -372,11 +382,11 @@
 
     @include large-and-up {
       cursor: pointer;
-      margin: 35px 0 70px 0;
+      margin: 35px 0 0 0;
     }
 
     @include x-large-and-up {
-      margin: 16px 0 0px 0;
+      margin: 16px 0 0 0;
     }
 
     .step-number {
@@ -388,9 +398,10 @@
       line-height: 74px;
       text-align: center;
       font-size: rem(44);
-      background: $step-normal-bg;
+      background: $grey;
       border-radius: 50%;
-      color: $active;
+      color: $white;
+      opacity: 0.7;
       text-transform: uppercase;
       font-weight: 500;
 
@@ -400,13 +411,8 @@
         height: 126px;
         vertical-align: middle;
         line-height: 128px;
-        text-align: center;
         font-size: rem(70);
-        background-color: $step-normal-bg;
-        border-radius: 50%;
-        color: $step-number-hover;
-        text-transform: uppercase;
-        font-weight: 500;
+        background-color: $step-number;
       }
 
       @include x-large-and-up {
@@ -432,21 +438,19 @@
 
         @include large-and-up {
           padding-top: 48px;
-          font-size: rem(22);
+          font-size: rem(20);
           line-height: rem(30);
+          color: $dark-shade-black;
         }
 
         @include x-large-and-up {
-          font-size: rem(20);
-          line-height: rem(30);
-          color: $heading;
           margin-bottom: 18px;
         }
       }
 
       p {
-        font-family: $roboto;
-        color: $blue-text;
+        font-family: $lora;
+        color: $dark-shade-black;
         font-size: rem(14);
         opacity: 0.75;
 
@@ -454,7 +458,6 @@
           font-size: rem(15);
           line-height: 1.6;
           margin-bottom: 20px;
-          color: $dark-shade-black;
         }
       }
 
@@ -475,12 +478,12 @@
           margin-top: 54px;
         }
       }
-
     }
 
     &:hover {
       .step-number {
-        background: $step-number-hover;
+        background: $grey;
+        opacity: 0.8;
         color: $white;
       }
     }
@@ -489,12 +492,14 @@
   .active {
     .step-info-wrap {
       .step-number {
-        background: $percentage-text;
-        color: $active;
+        background: $grey-60;
+        color: $white;
+        opacity: 0.7;
       }
+
       .step-info {
         p {
-          color: $blue-text;
+          color: $grey-60;
         }
       }
     }
@@ -506,19 +511,15 @@
   width: 100%;
 
   .card-header {
-    background: $card-header-bg;
+    background: $grey;
     border: none;
+    color: $white;
+    font-weight: 400;
+    font-size: rem(15);
+    text-decoration: none;
 
-    h5 {
-      a {
-        color: $percentage-text;
-        font-weight: 500;
-        font-size: rem(15);
-        text-decoration: none;
-        &:hover {
-          text-decoration: none;
-        }
-      }
+    &:hover {
+      text-decoration: none;
     }
   }
 
@@ -557,21 +558,24 @@
       margin-bottom: 10px;
 
       p {
-        font-family: $roboto;
+        font-family: $lora;
         color: $dark-shade-black;
         font-size: rem(14);
         line-height: rem(22);
+        margin-left: -10px;
+        padding-right: 20px;
       }
     }
 
     .step-number {
-      font-size: rem(18);
-      font-weight: 700;
-      color: $step-number;
-      line-height: 28px;
+      font-size: rem(16);
+      font-weight: 900;
+      color: $white;
+      line-height: 1.5;
       padding-right: 9px;
       float: left;
       vertical-align: bottom;
+      padding-bottom: 5px;
     }
   }
 }

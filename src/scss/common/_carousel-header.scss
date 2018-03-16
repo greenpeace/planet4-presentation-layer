@@ -5,47 +5,45 @@ $slide-transition-speed: 1s;
   width: $size;
   margin-left: 100% - $size;
 }
+
 @mixin preview-width($size) {
   width: $size * (100% / $size);
 }
 
-.carousel-heights {
-  height: 454px;
-
-  @include medium-and-up {
-    height: 560px;
-  }
-
-  @include large-and-up {
-    height: 600px;
-  }
-
-  @include x-large-and-up {
-    height: 712px;
-  }
-}
-
 .carousel-header {
-  position: absolute;
+  position: relative;
   width: 100vw;
-  left: 0;
 
-  @include small-and-up {
-    margin-bottom: 0;
-  }
+  &::after {
+    content: "";
+    display: block;
+    margin-bottom: 40px;
 
-  @include large-and-up {
-    margin-bottom: 60px;
-  }
+    @include large-and-up {
+      margin-bottom: 60px;
+    }
 
-  @include x-large-and-up {
-    margin-bottom: 80px;
+    @include x-large-and-up {
+      margin-bottom: 80px;
+    }
   }
 
   .carousel-inner {
-    @extend .carousel-heights;
     position: relative;
     overflow: visible;
+    height: 454px;
+
+    @include medium-and-up {
+      height: 560px;
+    }
+
+    @include large-and-up {
+      height: 600px;
+    }
+
+    @include x-large-and-up {
+      height: 712px;
+    }
   }
 
   .carousel-item {
@@ -68,11 +66,13 @@ $slide-transition-speed: 1s;
       opacity: 1;
       transition: unset;
     }
+
     &.next {
       z-index: 1;
       opacity: 1;
       transition: unset;
     }
+
     &.fade-out {
       opacity: 0;
       transition: opacity #{ $slide-transition-speed / 2 };
@@ -81,7 +81,7 @@ $slide-transition-speed: 1s;
     // Display the slide's background image, grayscaling in supported browsers.
     &::before {
       @include fill-container;
-      content: '';
+      content: "";
       background-image: inherit;
       background-size: cover;
       filter: grayscale(100%);
@@ -90,7 +90,7 @@ $slide-transition-speed: 1s;
     // Put a colored gradient in front of the background image.
     &::after {
       @include fill-container;
-      content: '';
+      content: "";
       z-index: 0;
       background: linear-gradient(210deg, rgba(136, 196, 213, 0.2) 0%, rgba(184, 216, 232, 1) 100%);
     }
@@ -136,7 +136,7 @@ $slide-transition-speed: 1s;
       // Put a colored gradient in front of the background image.
       &::after {
         @include fill-container;
-        content: '';
+        content: "";
         opacity: 0;
         background: linear-gradient(210deg, rgba(136, 196, 213, 0.2) 0%, rgba(184, 216, 232, 1) 100%);
       }
@@ -148,6 +148,8 @@ $slide-transition-speed: 1s;
       text-align: left;
       transition: opacity $slide-transition-speed;
       padding-bottom: 0;
+      padding-right: 15px;
+      padding-left: 15px;
     }
 
     &.slide-over {
@@ -158,10 +160,12 @@ $slide-transition-speed: 1s;
         width: 100%;
         margin: 0;
       }
+
       .carousel-preview {
         transform: skew(0);
         transition: transform $slide-transition-speed, width $slide-transition-speed, filter $slide-transition-speed;
         width: 100%;
+        filter: grayscale(100%);
 
         &::after {
           z-index: 1;
@@ -169,9 +173,7 @@ $slide-transition-speed: 1s;
           transition: opacity $slide-transition-speed;
         }
       }
-      .carousel-preview {
-        filter: grayscale(100%);
-      }
+
       @include small-and-up {
         .carousel-caption {
           opacity: 0;
@@ -182,22 +184,18 @@ $slide-transition-speed: 1s;
 
   .main-header {
     color: $article-heading-color;
-    padding-top: 80px;
+    padding-top: 70px;
     padding-bottom: 0;
     height: 100%;
 
-    @include small-and-up {
-      padding-top: 124px;
-    }
-
     @include medium-and-up {
       padding-bottom: 0;
-      padding-top: 104px;
+      padding-top: 84px;
       height: auto;
     }
 
     @include large-and-up {
-      padding-top: 149px;
+      padding-top: 124px;
       padding-bottom: 32px;
     }
 
@@ -213,6 +211,7 @@ $slide-transition-speed: 1s;
       line-height: 1.2;
       font-weight: bold;
       color: $black;
+      padding-left: 15px;
 
       @include medium-and-up {
         font-size: rem(40);
@@ -238,6 +237,7 @@ $slide-transition-speed: 1s;
       width: 55%;
       color: $black;
       margin-bottom: 0;
+      padding-left: 15px;
 
       @include medium-and-up {
         font-size: rem(24);
@@ -262,6 +262,7 @@ $slide-transition-speed: 1s;
       display: none;
 
       @include medium-and-up {
+        padding-left: 15px;
         line-height: 1.6;
         color: $dark-shade-black;
         margin-bottom: 24px;
@@ -283,11 +284,10 @@ $slide-transition-speed: 1s;
     .action-button {
       bottom: -1.5em;
       position: absolute;
-      margin-left: -15px;
 
       @include medium-and-up {
+        margin-left: 15px;
         padding-left: 0;
-        margin-left: 0;
         bottom: inherit;
         position: inherit;
       }
@@ -299,6 +299,11 @@ $slide-transition-speed: 1s;
         @include medium-and-up {
           font-size: rem(16);
           line-height: 3;
+          width: auto;
+        }
+
+        @include large-and-up {
+          width: 100%;
         }
       }
     }
@@ -325,7 +330,7 @@ $slide-transition-speed: 1s;
       width: 40px;
       height: 40px;
       cursor: pointer;
-      background: url('images/carousel-marker-next.png');
+      background: url("images/carousel-marker-next.png");
       background-size: cover;
 
       @include small-and-up {
@@ -344,6 +349,7 @@ $slide-transition-speed: 1s;
         background: url("images/carousel-marker-next.png");
         width: 65px;
         height: 65px;
+
         &:hover {
           background-position-x: 66px;
         }
@@ -413,11 +419,4 @@ $slide-transition-speed: 1s;
       }
     }
   }
-}
-
-.carousel-after {
-  @extend .carousel-heights;
-  display: block;
-  content: '';
-  margin-bottom: 2em;
 }
