@@ -28,15 +28,11 @@
   margin-right: 20px;
   position: relative;
 
-  &:after {
+  &:not(:last-child):after {
     content: "\2022";
     pointer-events: none;
     display: inline-block;
     position: absolute;
     right: -15px;
-
-    @include mobile-only {
-      display: none;
-    }
   }
 }

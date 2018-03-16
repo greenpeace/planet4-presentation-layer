@@ -1,7 +1,7 @@
 .site-footer {
   font-family: $roboto;
   padding: 45px 0 25px;
-  background: $deep-sea-green;
+  background: $top-nav;
   position: relative;
   z-index: 2;
   text-align: center;
@@ -34,13 +34,13 @@
     display: inline-block;
   }
 
-   a {
-     transition: color 100ms linear;
+  a {
+    transition: color 100ms linear;
 
-     &:hover {
-       color: $white;
-     }
-   }
+    &:hover {
+      color: $white;
+    }
+  }
 }
 
 .footer-links,

@@ -6,6 +6,7 @@
   overflow: hidden;
   z-index: 2;
   margin-bottom: 5px;
+  width: 100vw;
 
   @include small-and-up {
     height: 400px;
@@ -27,7 +28,6 @@
 }
 
 .split-two-column-item-image {
-  @include background-before-opacity($black, 0.3);
   position: absolute;
   background-size: cover;
   background-position: center;
@@ -35,9 +35,16 @@
   width: 100%;
   top: 0;
 
-  @include small-and-up {
-    @include background-before-opacity($black, 0.15);
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(190deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
   }
+
   img {
     width: 100%;
     height: 100%;
@@ -50,6 +57,7 @@
 
   a {
     color: $white;
+    text-shadow: 1px 1px 3px $black;
   }
 
   @include small-and-up {
@@ -82,9 +90,13 @@
   color: $yellow;
   display: block;
   margin-bottom: .75em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   &:hover {
     color: $yellow;
+    text-shadow: 1px 1px 3px $black;
   }
 
   @include medium-and-up {
@@ -147,19 +159,20 @@
 .split-two-column-item-content {
   @include small-and-up {
     .item--left & {
-      right: 15%;
       width: 45%;
+      right: 15%;
     }
 
     .item--right & {
-      left: 20%;
+      width: 45%;
+      left: 15%;
     }
   }
 
   @include medium-and-up {
     .item--left & {
-      width: 55%;
-      right: 7%;
+      width: 50%;
+      right: 10%;
     }
 
     .item--right & {
@@ -175,14 +188,18 @@
     }
 
     .item--right & {
-      width: 35%;
+      width: 42%;
+      left: 15%;
     }
   }
 
   @include x-large-and-up {
     .item--left & {
-      width: 32.8%;
-      right: 10%;
+      width: 40%;
+    }
+
+    .item--right & {
+      width: 40%;
     }
   }
 }
@@ -224,12 +241,12 @@
     }
 
     &:after {
-      font-family: 'greenpeace-icon';
-      content: '\e901';
+      font-family: greenpeace-icon;
+      content: "\e901";
       color: $yellow;
       position: absolute;
       top: 50%;
-      transform: translate( 0, -50% );
+      transform: translate(0, -50%);
       right: 15px;
       pointer-events: none;
     }
@@ -274,9 +291,8 @@
       display: block;
       height: 100%;
       width: 100%;
-      background: rgba(23, 23, 23, 0.44);
+      background: linear-gradient(100deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0));
     }
-
   }
 
   .item--right {
@@ -297,7 +313,7 @@
       z-index: 1;
       height: 100%;
       width: 25%;
-      background: transparentize($white, .95);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
     }
   }
 
@@ -309,7 +325,7 @@
 
   .split-two-column-item-content {
     top: 50%;
-    transform: translate( 0, -50% ) skew(-30deg, 0deg);
+    transform: translate(0, -50%) skew(-30deg, 0deg);
     z-index: 1;
     width: 40%;
   }

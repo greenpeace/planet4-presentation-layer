@@ -1,4 +1,4 @@
-.page-template {
+div.page-template {
   width: 540px;
   max-width: 100%;
   margin-left: auto;
@@ -8,18 +8,23 @@
 
   @include medium-and-up {
     width: 720px;
-  };
+  }
 
   @include large-and-up {
     width: 960px;
-  };
+  }
 
   @include x-large-and-up {
     width: 1140px;
-  };
+  }
 
   .container {
-     padding-left: 0;
+    padding-left: 0;
     padding-right: 0;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
   }
 }
